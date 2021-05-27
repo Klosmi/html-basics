@@ -100,8 +100,7 @@ It is essentially a dropdown menu.
 So here's a little selection, which might be useful: </u>**
 
 - [**range**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range) : `<input type="range">` 👉 
-<input type="range">
-   - we can control the "min" and "max" values (eg. `min="0" max="100"`)
+<input type="range">  - we can control the "min" and "max" values (eg. `min="0" max="100"`)
 
 - [**number**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number) : <input type="number" min="10" max="1000"  placeholder="num"> 👉   `<input type="number">` elements of type number are used to let the user enter a number.
 
