@@ -110,4 +110,26 @@ So here's a little selection, which might be useful: </u>
   - It is a multiline text input. 
   - **❗️It is NOT an input element❗️**
 
+  ---
+  # [FORM Validations](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation#what_is_form_validation)
+  Validation refers to adding constraints or validating user input / user data.  
+   *(eg. requiring that some fields can not be empty, or the length of the password)*
+
+  - clients side validation
+  - server side validation *(after the submit button the server verifies if the data meets the expectations)*
+
+  ## Basics of the built in validations
+  - [required](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/required) 👉  HTML attribute  
+    Adding the `required` attribute to any input will indicate that the user must specify a value for the input before the owning form can be submitted.
+
+    - we can specify the length of an `<input type=text>` with `minlength="4"` and `maxlength="30"` (+ add `required`).
+
+    - for numeric values length specification use `min` and `max`
+
+  - [pattern](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/pattern) 👉 HTML attribute  
+  The pattern attribute specifies a regular expression  (regex) the form control's value should match.
+    - we can use already built in pattern matching:      
+      - [`<inpute type="email" required>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email) it asks a valid email *(It is only checking if there is an `@` sign or not, so it's not 100% efficient).*
+      - [`<inpute type="url" required>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/url)  
+      it's looking for this pattern: *`urlscheme://restofurl`* *(http or https://somethingelse)*
 
