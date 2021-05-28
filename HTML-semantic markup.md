@@ -68,3 +68,7 @@
   - if the content is **time- or date-related**, the [`<time>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time) element must be used.
 
 ### There is a lot of flexibility, not super rigid. The point is the general intent of the semantics of each of these elements. 
+
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics)
