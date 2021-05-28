@@ -30,7 +30,5 @@
 
 - [`colspan`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td#attr-colspan) : this attribute contains value that indicates for indicates for how many <u>**columns**</u> the cell extends..  
 *Its default value is 1. Values higher than 1000 will be considered as incorrect and will be set to the default value (1).*
-
-
 ---
-
+[👈 go back](https://github.com/Klosmi/html-basics)
