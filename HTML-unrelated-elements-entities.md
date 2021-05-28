@@ -11,4 +11,6 @@
 - **`&`** : `&amp;` *browser thinks ampersandi is the start of an entity code* 
 - **`"`**  : `&quot;`
 - **`#`**  : `&num;`  
-etc.
+etc.   
+---
+[👈 go back](https://github.com/Klosmi/html-basics)
