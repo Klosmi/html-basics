@@ -132,4 +132,5 @@ So here's a little selection, which might be useful: </u>
       - [`<inpute type="email" required>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email) it asks a valid email *(It is only checking if there is an `@` sign or not, so it's not 100% efficient).*
       - [`<inpute type="url" required>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/url)  
       it's looking for this pattern: *`urlscheme://restofurl`* *(http or https://somethingelse)*
-
+---
+ [👈 go back](https://github.com/Klosmi/html-basics)
