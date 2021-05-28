@@ -7,4 +7,4 @@
 5. [HTML forms](https://github.com/Klosmi/html-basics/blob/master/HTML-forms.md)
 
 ##### *These are my personal notes*
-##### *Note that, some HTML elements, like `<button>`, <input type="radio">`, etc. do not show in github's markdown previwer, however in vscode's markdown previwer you can see them.* 
+##### *Note that, some HTML elements, like `<button>`, `<input type="radio">`, etc. do not show in github's markdown previwer, however in vscode's markdown previwer you can see them.* 
