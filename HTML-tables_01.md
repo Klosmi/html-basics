@@ -1,5 +1,5 @@
 # [TABLES](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)
-> `<table>` represents **tabular data** *(¡¡ Only use it for tabular data ‼️)*.   
+> `<table>` represents **tabular data** *(Only use it for tabular data ‼️)*.   
 <u>Tabular data</u>: information presented in a two-dimensional table comprised of **rows and columns of cells containing data**.
 
 &nbsp;
