@@ -48,6 +48,8 @@
   ---
 ## [CSS text properties](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals)
 - [`text-align`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align): this property sets the horizontal alignment of the content **inside a block element*** or table-cell box. This means it works like vertical-align but in the horizontal direction. 
-  ##### *\*(It does not mean how an element is aligned on the page itself, a.k.a. not spatially where it goes, but within an element.)*
+  ##### *\*(It does not mean how an element is aligned on the page itself, a.k.a. not spatially where it goes, but within an element.)*   
+    
+ ---
 
  [👈 go back](https://github.com/Klosmi/html-basics)
