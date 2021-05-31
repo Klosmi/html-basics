@@ -88,7 +88,7 @@
     ```
     font-size: 18px;
     ````
-- [tex-transform](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform) : CSS property specifies how to capitalize an element's text.
+- [text-transform](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform) : CSS property specifies how to capitalize an element's text.
     -  eg. `text-transform: uppercase;` sets the text in uppercase letters.
 - [font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) :  CSS property specifies a prioritized list of one or more font family names and/or generic family names for the selected element. 
   - [most commonly used fonts and their support in os systems, etc.](https://www.cssfontstack.com/)
