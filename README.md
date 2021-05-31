@@ -5,6 +5,6 @@
 3. [HTML unrelated elements & HTML enitites](https://github.com/Klosmi/html-basics/blob/master/HTML-unrelated-elements-entities.md)
 4. [HTML tables](https://github.com/Klosmi/html-basics/blob/master/HTML-tables_01.md)
 5. [HTML forms](https://github.com/Klosmi/html-basics/blob/master/HTML-forms.md)
-
+6. [CSS basics](https://developer.mozilla.org/en-US/docs/Web/CSS)
 ##### *These are my personal notes*
 ##### *Note that, some HTML of the elements, like `<button>`, `<input type="radio">`, etc. do not show in github's markdown previwer, however in vscode's markdown previwer you can see them and test them.* 

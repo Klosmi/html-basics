@@ -81,21 +81,23 @@ Also, `<button>` not necesseraly has to be inside of a form (eg. a "sign up" but
     - `value` attribute selects what to send through when the form was submitted. So which `radiobutton` was selected and sent when clicking on the submit button.
 
 - [`<select>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) : 
- ```
-  <select name="pets" id="pet-select">
-     <option value="">--Please choose an option--</option>
-     <option value="dog">Dog</option>
-     <option value="cat">Cat</option>
-     <option value="hamster">Cute little hamster</option>
- </select>  
- ```     
-The [`<select>`] element represents a control that provides a menu of options.  
-It is essentially a dropdown menu.     
-  - Two elements working together: `<select>` and the `<option>` elements. The `<select>` is the parent it groups together a bunch of `options`.  
+    ```
+      <select name="pets" id="pet-select">
+        <option value="">--Please choose an option--</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="hamster">Cute little hamster</option>
+    </select>  
+    ```
 
-  - `<option value="hamster">Cute little hamster</option>` the value attribute will be sent through when it is submitted *(here the `value="hamster"`)*.   
- 
-  - it can be preselected with the attribute `selected`.
+  The [`<select>`] element represents a control that provides a menu of options.  
+  It is essentially a dropdown menu   
+
+    - Two elements working together: `<select>` and the `<option>` elements. The `<select>` is the parent it groups together a bunch of `options`.  
+
+    - `<option value="hamster">Cute little hamster</option>` the value attribute will be sent through when it is submitted *(here the `value="hamster"`)*.   
+   
+    - it can be preselected with the attribute `selected`.
     
 ---
 <u>[many other `<input>` elements can be found here.](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
@@ -110,7 +112,9 @@ So here's a little selection, which might be useful: </u>
 - [**textarea**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea) : <textarea id="story" name="story" rows="1" cols="40"> This is a textarea...
 </textarea> 👉 `<textarea>`  
   - It is a multiline text input. 
-  - **❗️It is NOT an input element❗️**
+  - **❗️It is NOT an input element❗️**   
+  
+  &nbsp;
 
   ---
   # [FORM Validations](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation#what_is_form_validation)
