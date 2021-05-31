@@ -50,4 +50,49 @@
 - [`text-align`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align): this property sets the horizontal alignment of the content **inside a block element*** or table-cell box. This means it works like vertical-align but in the horizontal direction. 
   ##### *\*(It does not mean how an element is aligned on the page itself, a.k.a. not spatially where it goes, but within an element.)*
 
- [👈 go back](https://github.com/Klosmi/html-basics)
+- [font-weight](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight) :  CSS property sets the weight (or boldness) of the font. 
+  -  [values](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#common_weight_name_mapping): you can use numeric values, like 400 (which is normal), etc.
+  -  [realitve font-wieght](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#meaning_of_relative_weights): when **lighter** or **bolder** is specified.
+
+- [text-decoration](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration) :  
+- CSS property sets the appearance of decorative lines on text. It is a [shorthand](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties) for text-decoration-line, text-decoration-color, text-decoration-style, and the newer text-decoration-thickness property.
+    - we can specify the **color** of the eg. underline, and the **thickness**:
+      ``` 
+      text-decoration: blue underline 4px;
+      ```
+   - remove a default underline (usually anchor `<a>` tags):
+      ```
+      text-decoration: none;
+      ```
+- [line-height](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height)  :  controls the hieght of a line in a text.
+
+  - it is possible to just use numbers (eg. 2), which will multiply by the value(2 times) of the number of the font-size:   
+    ###### if my font-size is 10px, than 20px is the line-height
+      ```
+      line-height: 2;
+      ```
+- [letter-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing) : sets the horizontal spacing behavior between text characters.
+
+- <u>**[font-size](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)**</u> :  CSS property sets the size of the font. **Changing the font size also updates the sizes of the font size-relative <length> units**, such as em, ex, and so forth.
+- ([units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)) :
+    | realtive size | absolute size |
+    |---------------|---------------|
+    | EM            | PX            |
+    | REM           | PT            |
+    | VH and. VW    | IN            |
+    | %             | MM            |
+    | etc.          | etc.          |
+
+  - PX: 💡 *not recommended to use for responsive websites!*
+  - 
+    ```
+    font-size: 18px;
+    ````
+- [tex-transform](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform) : CSS property specifies how to capitalize an element's text.
+    -  eg. `text-transform: uppercase;` sets the text in uppercase letters.
+- [font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) :  CSS property specifies a prioritized list of one or more font family names and/or generic family names for the selected element. 
+  - [most commonly used fonts and their support in os systems, etc.](https://www.cssfontstack.com/)
+  - font-stack : a list of fonts that are used in order.  
+    eg: `font-family: Helvetica, Arial, sans-serif;` 
+    The fallback font here is the `sans-serif` *(a backup font)*, it's not a specific font, it is a family of sans-serifs.
+---
