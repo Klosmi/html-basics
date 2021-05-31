@@ -95,10 +95,6 @@
   - font-stack : a list of fonts that are used in order.  
     eg: `font-family: Helvetica, Arial, sans-serif;` 
     The fallback font here is the `sans-serif` *(a backup font)*, it's not a specific font, it is a family of sans-serifs.
-<<<<<<< HEAD
 ---
-=======
----
-
  [👈 go back](https://github.com/Klosmi/html-basics)
->>>>>>> 138b8c19bcd9dccd459c9be2402437cb8a30b23e
+
