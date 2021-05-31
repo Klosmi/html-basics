@@ -11,7 +11,7 @@
 - [`<main>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main) : 
   - **The main content of the page!** *The dominant content of the document.*  
   - It should **exclude any content of the page which will be repeated on the page**. So sidebars, navigation links, copyright information, site logos, and search forms shouldn't be included.
-  - `<main>` doesn't affect the DOM's concept *(unline `<body>` or `<h1>` and such)* of the structure of the page. It's strictly informative.
+  - `<main>` doesn't affect the DOM's concept *(unlike `<body>` or `<h1>` and such)* of the structure of the page. It's strictly informative.
 
 - [`<nav>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav) : 
   - **represent anything on the page that provides navigation links**. 
