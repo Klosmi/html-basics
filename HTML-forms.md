@@ -69,11 +69,11 @@ Also, `<button>` not necesseraly has to be inside of a form (eg. a "sign up" but
       - `name` is just a *"name"* (ususally very short, like `name="q"`)  
       -  The `<form>` will be labeled under the `name` attribute when it is sent to the server.
 
-  - [**checkbox**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox) : `<input type="checkbox">` 👉 <input type="checkbox"> <input type="checkbox"> <input type="checkbox">   
+- [**checkbox**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox) : `<input type="checkbox">` 👉 <input type="checkbox"> <input type="checkbox"> <input type="checkbox">   
   A check box allowing single values to be selected/deselected.	
     - you can specify if the checkbox is `checked` or  not.
 
-  - [**radiobutton**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio) : `<input type="radio">` 👉 <input type="radio" name="radio"> <input type="radio" name="radio">   
+- [**radiobutton**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio) : `<input type="radio">` 👉 <input type="radio" name="radio"> <input type="radio" name="radio">   
   The `radiobutton` allowing only one single value to be selected out of multiple choices with the same `name` value.  
   In  a group of `radiobuttons` you can only select one (so they are connected).
     - They are associated by the **same `name`**, so they are pointing to the same thing.
