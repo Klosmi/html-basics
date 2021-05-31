@@ -1,4 +1,4 @@
-# [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+# [CSS basics](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - we use CSS **rules**
 -  is a stylesheet language used to describe the presentation of a document written in HTML or XML. CSS describes how elements should be rendered on screen...
 -  the CSS basic pattern/template looks like this: 
