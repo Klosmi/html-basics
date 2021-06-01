@@ -1,4 +1,4 @@
-# [CSS Selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+# [CSS Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
 - asterisk <u>[**\***](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors)</u>  = universal selector : it selects everything in the document
 - **element selector**: select everything in a given type.
     eg:
