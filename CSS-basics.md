@@ -85,7 +85,7 @@
     
   - [**EM**](https://www.w3.org/TR/css-values-3/#em) unit means "my parent element's font-size, so each successive level of nesting gets progressively larger, eg.: if font size set to 1.3em, each nesting gives a 1.3 times bigger text.
 
-  - [**REM**](https://www.w3.org/TR/css-values-3/#rem) unit means "The root element's font-size" (root element `<html>`), so each successive level of nesting does not keep getting larger.
+  - [**REM**](https://www.w3.org/TR/css-values-3/#rem) unit means "The root element's font-size" (root element `<html>`), so each successive level of nesting does not keep getting larger. *(If used in the font-size property of the root element, or in a document with no root element, 1rem is equal to the initial value of the font-size property.)*
 
   - PX: 💡 *not recommended to use for responsive websites!*
   - 
