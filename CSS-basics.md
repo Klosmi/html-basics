@@ -75,7 +75,7 @@
 
 - <u>**[font-size](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)**</u> :  CSS property sets the size of the font. **Changing the font size also updates the sizes of the font size-relative <length> units**, such as em, ex, and so forth.
 - ([units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)) :
-    | realtive size | absolute size |
+    | relative size | absolute size |
     |---------------|---------------|
     | EM            | PX            |
     | REM           | PT            |
