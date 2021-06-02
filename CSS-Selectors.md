@@ -65,47 +65,47 @@
   
     - eg.:
     ###### *selecat all of those `<a>` **that are nested inside** an `<li>`*
-    ```
-   li a {
-        color: red;
-      }
-    ```   
+        ```
+       li a {
+            color: red;
+          }
+        ```   
 
 - [Adjacent combinator (selectors)](https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator) : `+ `separates two selectors and matches the second element only if it immediately follows the first element, and both are children of the same parent element.
   
    - not parent or children, they are adjacent, **one after the other**.
-  ```
-  <h2>Lorem ipsum dolor sit amet...</h2>
-  <button>Click</button>
-  ```
+      ```
+      <h2>Lorem ipsum dolor sit amet...</h2>
+      <button>Click</button>
+      ```
   ###### *select a `button` that comes right after every `h2` on the same level (so this applies all the `buttons` which  are strictly after `h2`).*
-  ```
-  h2 + button {
-    background-color: yellow;
-  }
-  ```
+      ```
+      h2 + button {
+        background-color: yellow;
+      }
+      ```
 - [Direct child combinator (selector)](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator) : `>` is placed between two CSS selectors. It selects  the children which are nested somewhere in an other element. Children which are the <u>**direct descendants**</u>. In other words, "one level down".
   - it only selects **direct** descendence of the parent element. It **doesn't select general descendents**.
   
   - eg.: an `<a href="#link">` nested directly in the `<footer>`, the other `<a>`s are nested in `<ul>`. So the direct child of the footer is  only the `<a href="#link">`.
-    ```
-    <footer>
-     <nav>
-        <ul>
-          <li> <a href="#home">Home</a></li>
-          <li> <a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="#link">Select me</a>
-    </footer>
-    ```
+        ```
+        <footer>
+         <nav>
+            <ul>
+              <li> <a href="#home">Home</a></li>
+              <li> <a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <a href="#link">Select me</a>
+        </footer>
+        ```
     so in your CSS it looks like this:
     ##### *you can select the `<a href="link">...` because it is a direct child of the footer, it is directly 1 level below the parent `footer`, compared to the other `<a>`s which are nested in a `<ul>`*.
-    ```
-    footer > a {
-      color: blue;
-    }
-    ```
+        ```
+        footer > a {
+          color: blue;
+        }
+        ```
 
 - [Attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) : matches elements based on the presence or value of a given attribute. So, it allows us to select elements based upon some particular attribute.
   - attribute selector: `[ attribute_name = something ]`
