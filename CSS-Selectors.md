@@ -1,22 +1,22 @@
-# [CSS Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+# [CSS Selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
 - asterisk <u>[**\***](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors)</u>  = universal selector : it selects everything in the document
 - **element selector**: select everything in a given type.
-    eg:
-    ###### *selects all the images*
-    ```
-    img {
-      width: 100px;
-      height: 200px;
-    }
-    ```
+   - eg.:
+      ###### *selects all the images*
+      ```
+      img {
+        width: 100px;
+        height: 200px;
+      }
+      ```
 - **selector list**: use a comma `,` to combine selectors in list.
-  eg:
-  ###### *selects all the h1 and h2*
-  ```
-  h1, h2 {
-    text-decoration: underline plum;
-  }
-  ```
+  -  eg.:
+      ###### *selects all the h1 and h2*
+      ```
+      h1, h2 {
+        text-decoration: underline plum;
+      }
+      ```
 - [ID selector](https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors) : single out a single element. It provides a hook to our CSS element. By adding an ID to your markup and you can reference it using the name of the ID and the hash sign.
     - it styles one **thing**, only used once.
   
@@ -47,7 +47,7 @@
   
   - class selectors sign is **.** so use `.classselector`   
 
-  eg.:
+  - eg.:
     ``` 
     <span class="tag">fish</span>
     ```
@@ -64,12 +64,12 @@
     -  so you can select elements which are nested inside of an other elements.
   
     - eg.:
-    ###### *selecat all of those `<a>` **that are nested inside** an `<li>`*
-        ```
-       li a {
+      ###### *selecat all of those `<a>` **that are nested inside** an `<li>`*
+      ```
+      li a {
             color: red;
           }
-        ```   
+      ```   
 
 - [Adjacent combinator (selectors)](https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator) : `+ `separates two selectors and matches the second element only if it immediately follows the first element, and both are children of the same parent element.
   
@@ -78,7 +78,7 @@
       <h2>Lorem ipsum dolor sit amet...</h2>
       <button>Click</button>
       ```
-  ###### *select a `button` that comes right after every `h2` on the same level (so this applies all the `buttons` which  are strictly after `h2`).*
+      ###### *select a `button` that comes right after every `h2` on the same level (so this applies all the `buttons` which  are strictly after `h2`).*
       ```
       h2 + button {
         background-color: yellow;
@@ -88,24 +88,24 @@
   - it only selects **direct** descendence of the parent element. It **doesn't select general descendents**.
   
   - eg.: an `<a href="#link">` nested directly in the `<footer>`, the other `<a>`s are nested in `<ul>`. So the direct child of the footer is  only the `<a href="#link">`.
-        ```
-        <footer>
-         <nav>
-            <ul>
-              <li> <a href="#home">Home</a></li>
-              <li> <a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-          <a href="#link">Select me</a>
-        </footer>
-        ```
+    ```
+    <footer>
+     <nav>
+        <ul>
+          <li> <a href="#home">Home</a></li>
+          <li> <a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#link">Select me</a>
+    </footer>
+    ```
     so in your CSS it looks like this:
     ##### *you can select the `<a href="link">...` because it is a direct child of the footer, it is directly 1 level below the parent `footer`, compared to the other `<a>`s which are nested in a `<ul>`*.
-        ```
-        footer > a {
-          color: blue;
-        }
-        ```
+    ```
+    footer > a {
+      color: blue;
+    }
+    ```
 
 - [Attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) : matches elements based on the presence or value of a given attribute. So, it allows us to select elements based upon some particular attribute.
   - attribute selector: `[ attribute_name = something ]`
@@ -149,14 +149,14 @@ For example, :hover can be used to change a button's color when the user's point
       }
       ```
 
-- [:nth-of-type()](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type) : help us to select based upon a position in a group of siblings.  
+- [:nth-of-type()](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type) : help us select based upon a position in a group of siblings.  
 *(In other words it matches elements of a given type (tag name), based on their position among a group of siblings.)*
     - eg.: I have ten `<section class="post">`s in a document, and I want to select the *third* to change the `background-color` to red.
-        ```
-        .post:nth-of-type(3){
-          background-color: red;
-        }
-        ```
+      ```
+      .post:nth-of-type(3){
+        background-color: red;
+      }
+      ```
     - to change **every third** `<section class="post">` the syntax is different: `nth-of-type(3n)`. *(number + n)* ❗️
       ```
       .post:nth-of-type(3n){
