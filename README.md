@@ -8,5 +8,6 @@
 6. [CSS basics](https://github.com/Klosmi/html-basics/blob/master/CSS-basics.md)
 7. [CSS selectors](https://github.com/Klosmi/html-basics/blob/master/CSS-Selectors.md)
 8. [CSS Cascade and **Specificity**](https://github.com/Klosmi/html-basics/blob/master/CSS-Selectors-Cascade-Specificity.md)
+9. [CSS Inheritance and the Chrom Devtool](https://github.com/Klosmi/html-basics/blob/master/CSS-Selectors-Inheritance-Devtool.md)
 ##### *These are my personal notes*
 ##### *Note that, some HTML of the elements, like `<button>`, `<input type="radio">`, etc. do not show in github's markdown previewer, however in vscode's markdown previewer you can see them and test them.* 
