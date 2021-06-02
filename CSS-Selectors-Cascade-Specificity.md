@@ -42,7 +42,7 @@ It is a measure of how __specific__ a given selector is. The __more specific__ s
    - *ignore the universal selector*
 
 ## <u>[Inline Styles](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#selecNtor_types)</u>
-*(Here they mention the inline style in one sentence)*:   
+*(in this link they mention the inline style in one sentence)*:   
 __Inline style(s)__ added to an element (e.g., style="font-weight: bold;") __always overwrite any styles in external stylesheets__, and thus can be thought of as having the __highest specificity__.
   - **bad practice!** ot recommended to use inline styling (however it is a valid way of styling elements).
 
@@ -62,4 +62,4 @@ Actually it **ignores specificity**, it just *wins*.
       }
       ```
 
---
+---
