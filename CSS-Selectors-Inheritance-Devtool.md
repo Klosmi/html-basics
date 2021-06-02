@@ -48,3 +48,6 @@ Some CSS properties inhereted by child elements, if they're not set on that elem
   -  you can tweak the styles
   -  you  can search on `Filter`
   -  when a style is ~~crossed off~~ it means, it is lost in specificity battle. Maybe it is order, maybe it is less specific.
+  
+  ---
+   [👈 go back](https://github.com/Klosmi/html-basics)
