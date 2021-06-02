@@ -170,3 +170,55 @@ For example, :hover can be used to change a button's color when the user's point
    - :not()
    - :nth-of-child()  
    ...etc.
+
+---
+## [Pseudo-**Elements**](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements) : 
+*(they are not pseudo-classes, they are a distinct concept)*  
+ ~ is a **keyword added to a selector** that lets you style a **specific part of the selected element(s)**.   
+ *(For example, `::first-line` can be used to change the font of the first line of a paragraph.)*
+  - they  are modifiers you add on selectors
+  - they select a particular part of the selected element
+  - we use two colons **`::`**   
+  
+  - - -
+
+&nbsp;
+
+- [**::first-letter**](https://developer.mozilla.org/en-US/docs/Web/CSS/::first-letter) : we can select the first letter of some selection.   
+*~ applies styles to the first letter of the first line of a block-level element, but only when not preceded by other content (such as images or inline tables).*
+  - you can select the first letter of every paragraph, every span, etc.
+
+   - eg.: select the first letter of **every** `h2`  and change it to red.     
+      ```
+      h2::first-letter {
+        color: red;
+      }
+      ```
+
+-  [**::first-line**](https://developer.mozilla.org/en-US/docs/Web/CSS/::first-line) : applies styles to the first line of a block-level element.   
+*(Note that the length of the first line depends on many factors, including the width of the element, the width of the document, and the font size of the text.)*
+    - eg.: the first line of a paragraph (`p`)
+      ```
+      p::first-line {
+        color: blue;
+      }
+      ```
+- [**::selection**](https://developer.mozilla.org/en-US/docs/Web/CSS/::selection) : applies styles to any part of a document, or some part of an element that has been highlighted/selected (such as clicking and dragging the mouse across text, and eg. the selection colour is purple), 
+   - eg.: you select a paragraph (`p`)
+      ```
+      p::selection {
+        background-color: orange;
+      }
+      ```
+      To use it to the entire document:
+      ```
+      ::selection {
+        background-color: yellow;
+      }
+      ```
+ - some other pseudo elements (check on [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#index)):
+   - ::after
+   - ::before
+   ...etc.
+
+---
