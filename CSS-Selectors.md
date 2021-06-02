@@ -152,11 +152,11 @@ For example, :hover can be used to change a button's color when the user's point
 - [:nth-of-type()](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type) : help us to select based upon a position in a group of siblings.  
 *(In other words it matches elements of a given type (tag name), based on their position among a group of siblings.)*
     - eg.: I have ten `<section class="post">`s in a document, and I want to select the *third* to change the `background-color` to red.
-    ```
-    .post:nth-of-type(3){
-      background-color: red;
-    }
-    ```
+        ```
+        .post:nth-of-type(3){
+          background-color: red;
+        }
+        ```
     - to change **every third** `<section class="post">` the syntax is different: `nth-of-type(3n)`. *(number + n)* ❗️
       ```
       .post:nth-of-type(3n){
