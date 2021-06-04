@@ -40,7 +40,7 @@ Everything in the browser treated as a box, and each box has different propertie
 
 - [border](https://developer.mozilla.org/en-US/docs/Web/CSS/border) : __it is a border around an element__. So, it is a CSS property which sets an element's border. 
 
-  It sets the values of border-width, border-style, and border-color.  
+  It sets the values of <u>border-width</u>, <u>border-style</u>, and <u>border-color</u>.  
 
   There are dozens of border properties (thickness, style, color, etc.).
 
