@@ -27,7 +27,7 @@ Everything in the browser treated as a box, and each box has different propertie
 
   -  [height](https://developer.mozilla.org/en-US/docs/Web/CSS/height): set the height of an element   
   
-      By default, the property defines the height of the content area. **If box-sizing is set to border-box, however, it instead determines the height of the border area**.
+      By default, the property defines the height of the content area. **If box-sizing is set to border-box, however, it determines the height of the border area**.
 
       eg.:
       ###### *the content takes up the 200px by 200px space, that's the __height and width of the content area__*
