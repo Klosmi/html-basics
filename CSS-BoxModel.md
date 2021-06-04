@@ -121,7 +121,7 @@ Everything in the browser treated as a box, and each box has different propertie
     Using a shorthand property, you can write more concise (and often more readable) style sheets, saving time and energy.
 
     - eg.:
-      ###### *width ● style ● color*
+      ###### *width ・ style ・ color*
       ```
       #element {
         border: 4px dashed rgba(170, 50, 220, .7);
@@ -148,7 +148,7 @@ padding property sets the padding area on all four sides of an element at once.
 
 **Padding is the space between the actual content box and the border of an element.**
 
-In the Chrome Devtool this is the green color (when inspecting an element).
+In the Chrome Devtool this is the 🟢green color (when inspecting an element).
 
 Use it when you want to spacing things out.
 
