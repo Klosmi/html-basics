@@ -87,7 +87,7 @@ Everything in the browser treated as a box, and each box has different propertie
         -  dashed grrove none dotted : *top: dashed, right: groove, bottom: none, left: dotted.*
   
       - eg.:
-        ###### *setting only the __border-width__ and __border-color__ and __border-style__, and now see the border.*
+        ###### *setting only the __border-width__ and __border-color__ and __border-style__, and now we can see the border.*
         ```
         #element {
           border-width: 5px;
