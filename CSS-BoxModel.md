@@ -148,7 +148,7 @@ padding property sets the padding area on all four sides of an element at once.
 
 **Padding is the space between the actual content box and the border of an element.**
 
-In the Chrome Devtool this is the 🟢green color (when inspecting an element).
+In the Chrome Devtool this is the *🟢green color* (when inspecting an element).
 
 Use it when you want to spacing things out.
 
