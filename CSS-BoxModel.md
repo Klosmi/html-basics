@@ -140,7 +140,7 @@ Everything in the browser treated as a box, and each box has different propertie
         - [border-top-right-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-right-radius)
         - [border-bottom-right-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-right-radius)
         - [border-bottom-left-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-left-radius)
-
+---
 <br>
 
 ## [Box Model: padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding) :    
@@ -165,8 +165,97 @@ Use it when you want to spacing things out.
     - apply to the __top__, __horizontal__ and __bottom__ side(s): `padding: 1px 2px 3px;`
     - padding: __top right bottom left__
     - eg.:
+      ###### *all four sides have separate values clockwise(top→right→bottom→left)*
       ```
       .class{
         padding: 10px 50px 30px 7px;
       }
       ```
+      ###### *top-bottom 10px | left-right: 50px*
+      ```
+      .class{
+        padding: 10px 50px;
+      }
+      ```
+      ###### *when we don't want padding give 0 eg.: top-bottom 0 | left-right: 20px*
+      ```
+      .class{
+        padding: 0 20px;
+      }
+      ```
+      ###### *quite rarely used  like this, but you can give top(10px) | horizontal(20px) | bottom(30px)*
+      ```
+      .class{
+        padding: 10px 20px 30px;
+      }
+      ```
+---
+<br>
+
+## [Box Model: margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin) :    
+The margin CSS property sets the margin area on all four sides of an element.
+
+Margin is the space outside of an element's border between an element and an other element(s).
+
+So __padding is the spacing on the inside of the border__, while <u>__margin is the spacing on the outside__</u>.*
+
+In the Chrome Devtool this is the *🟠orange color* (when inspecting an element).
+
+- **Individual properties**:
+    - [margin-left](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left)
+    - [margin-right](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-right)
+    - [margin-bottom](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom)
+    - [margin-top](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top)
+
+<br>
+
+- **[Shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties#margin_and_padding_properties) of [margin](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties#margin_and_padding_properties)** :
+  - set all four sides at once
+  - best-practice 
+  - apply to __all four__ sides (at once) `margin: 10px;`
+  - apply to __vertically__ & __horizontally__: `margin: 5px 10px;`
+  - apply to the __top__, __horizontal__ and __bottom__ side(s): `margin: 1px 2px 3px;`
+  - margin: __top right bottom left__
+  - eg.:
+    ###### *all four sides have separate values clockwise(top→right→bottom→left)*
+    ```
+    .class{
+      margin: 10px 50px 30px 7px;
+    }
+    ```
+    ###### *top-bottom 10px | left-right: 50px*
+    ```
+    .class{
+      margin: 10px 50px;
+    }
+    ```
+    ###### *when we don't want margin give 0 eg.: top-bottom 0 | left-right: 20px*
+    ```
+    .class{
+      margin: 0 20px;
+    }
+    ```
+    ###### *quite rarely used  like this, but you can give top(10px) | horizontal(20px) | bottom(30px)*
+    ```
+    .class{
+      margin: 10px 20px 30px;
+    }
+    ```
+<br>
+
+- By default, your `<body>` element has some spacing, it has some margin associated with it (8px) 👉 When we start a new website: Web page, is that we **set margin to be zero so that we don't get that extra space in our content**.
+      
+  (*Sometimes you want some margin on your site all the way across, than you can set the `<body>`'s margin to something else*)
+    ```
+    body  {
+      margin: 0;
+    }
+    ```
+
+<br>
+
+- border-box **do NOT include margin** ❗️
+ 
+- **the top and bottom margins have no effect on** non-replaced inline elements, such as **`<span>`** or **`<code>`**.
+
+---
