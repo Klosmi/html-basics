@@ -38,7 +38,7 @@ Everything in the browser treated as a box, and each box has different propertie
       }
 
 
-- [border](https://developer.mozilla.org/en-US/docs/Web/CSS/border) : __it is a border around an element__. So, it is a shorthand CSS property which sets an element's border. 
+- [border](https://developer.mozilla.org/en-US/docs/Web/CSS/border) : __it is a border around an element__. So, it is a CSS property which sets an element's border. 
 
   It sets the values of border-width, border-style, and border-color.  
 
