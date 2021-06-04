@@ -40,14 +40,14 @@ Everything in the browser treated as a box, and each box has different propertie
 
 - [border](https://developer.mozilla.org/en-US/docs/Web/CSS/border) : __it is a border around an element__. So, it is a CSS property which sets an element's border. 
 
-  It sets the values of <u>border-width</u>, <u>border-style</u>, and <u>border-color</u>.  
+  It sets the values of **border-width**, **border-style**, and **border-color**.  
 
   There are dozens of border properties (thickness, style, color, etc.).
 
   The main <u>**border properties**</u>:   
     - [border-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-width) : controls the thickness of the border.
       - eg.:
-        ###### *setting only the __border-width__ doesn't show anything, you need to add the color and style, to see it.*
+        ###### *setting only the __border-width__ doesn't show anything, you need to add the color and style, to see it❗️*
         ```
         #element {
           border-width: 5px;
