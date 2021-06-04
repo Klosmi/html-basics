@@ -1,10 +1,10 @@
 # [CSS Box Model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model) :
-it is the idea the everything in CSS is a box, and these boxes have a bunch of different properties.  
+it is the idea that everything in CSS is a box, and these boxes have a bunch of different properties.  
 So, when laying out a document, the browser's rendering engine represents each element as a rectangular box according to the standard CSS basic box model.   
 
 CSS determines the size, position, and properties (color, background, border size, etc.) of these boxes.   
 
-Everything in the browser treated a box, and each box has differnet properties: differnet pieces:
+Everything in the browser treated as a box, and each box has differnet properties: differnet pieces:
   - inner __contet box__ : the actual content in an element is. Eg.: the text in a paragraph. (In Devtool is the *🔵blue area*)
   - __padding__
   - __border__
