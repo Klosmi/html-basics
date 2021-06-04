@@ -115,7 +115,7 @@ Everything in the browser treated as a box, and each box has different propertie
           box-sizing: border-box:
         }
         ```
-  - **[border](https://developer.mozilla.org/en-US/docs/Web/CSS/border)  [shorthand](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)** :  
+  - **[border](https://developer.mozilla.org/en-US/docs/Web/CSS/border) + [shorthand](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)** :  
     *Shorthand properties:* are CSS properties that let you set the values of multiple other CSS properties simultaneously. (In case of the border properties usually in one single line.)
 
     Using a shorthand property, you can write more concise (and often more readable) style sheets, saving time and energy.
