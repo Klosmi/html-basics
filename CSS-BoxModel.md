@@ -95,7 +95,7 @@ Everything in the browser treated as a box, and each box has different propertie
           border-style: solid;
         }
         ```
-  - [border-left](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left) & [border-right](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right) & [border-top](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top) & [border-bottom](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom) : property sets an element's left, right, top and bottom border.
+  - [border-left](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left) & [border-right](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right) & [border-top](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top) & [border-bottom](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom) : property sets an element's left, right, top and bottom border. (You can also set the values combined like, border-left-width, border-right-style and border-top-color.)
     -  eg.:
         ```
         .class{
