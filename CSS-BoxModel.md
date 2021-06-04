@@ -55,11 +55,11 @@ Everything in the browser treated as a box, and each box has different propertie
         ```
       - a 5px border-width gives 5px to each side of the box, so it makes our box 10px wider and taller. 
       
-         👉 you can controll this by adding [__box-sizing: border-box__](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing#syntax) : if we have 200px width box + 10px border, it subtracts width of our box, it becomes 190px + 5px border on each side the box, together is 200px.
+         👉 you can controll this by adding [__box-sizing: border-box__](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing#syntax) : if we have 200px width box + 10px border, it subtracts the width of our box, it becomes 190px + 5px border on each side the box, together. it is 200px.
 
     - [border-color](https://developer.mozilla.org/en-US/docs/Web/CSS/border-color) :  controls the color of an element's border.
       - eg.:
-        ###### *setting only the __border-width__ and __border-color__ doesn't show anything, you need to add the style, to see it.*
+        ###### *setting only the __border-width__ and __border-color__ doesn't show anything, you need to add the style, to see it❗️*
         ```
         #element {
           border-width: 5px;
