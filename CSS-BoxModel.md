@@ -5,7 +5,7 @@ So, when laying out a document, the browser's rendering engine represents each e
 CSS determines the size, position, and properties (color, background, border size, etc.) of these boxes.   
 
 Everything in the browser treated as a box, and each box has different properties: different pieces:
-  - inner __contet box__ : the actual content in an element is. Eg.: the text in a paragraph. (In Devtool is the *🔵blue area*)
+  - inner __contet box__ : the actual content in an element. Eg.: the text in a paragraph. (In Devtool is the *🔵blue area*)
   - __padding__
   - __border__
   - __margin__
