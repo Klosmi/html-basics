@@ -12,7 +12,7 @@ it sets whether an element is treated as a **block element** or an **inline elem
 
     - paragraph elements (`p`)
 
-    - We can **change the block level element's like `h1` or `p` behaviour**.
+    - We can **change the block level element's like `h1` or `p` behaviour**: we use **`display: inline;`**
       - eg.:
         the `<h1>` block level element is behaving now as an inline element (like a `<span>`)
         ```
@@ -30,7 +30,7 @@ it sets whether an element is treated as a **block element** or an **inline elem
     Margin & padding push elements away horizontally but not vertically.  
     - `<span>`
 
-    - We can **change the inline level element's like `span` behaviour**.
+    - We can **change the inline level element's like `span` behaviour**: we use **`display: block;`**
         - eg.: 
             the `<span>` block level element is behaving now as a block level element (like an `<h1>`)
             ```
@@ -45,7 +45,7 @@ it sets whether an element is treated as a **block element** or an **inline elem
 <br>
 
 - **Inline-Block** - *(`display: inline-block;`)*:   
-    It is going to __behave like an inline element__, but __with height, margin and padding are going to be respected__.
+    It is going to __behave like an inline element__, but __with height, margin and padding are going to be respected__, we use. **`display: inline-block;`**.
      - eg.:   
      I  creat 3 `<div>`s, and I want them to be horizontally next to each other, I can give a **`display: inline-block;`**.   
      *(Note, if I give `display: inline;` it's not going to work, because `inline` doesn't respect width, padding, margin)*  
