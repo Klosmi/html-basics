@@ -8,7 +8,7 @@ it sets whether an element is treated as a **block element** or an **inline elem
 - **Block** - *(`display: inline;`)*:   
     Block elements break the flow of a document.   
     Width, Height, Margin, & Padding  are respected.
-    - all heading elements, lik `h1` are inline
+    - all heading elements, like `h1` are inline
 
     - paragraph elements (`p`)
 
