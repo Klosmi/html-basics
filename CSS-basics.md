@@ -100,5 +100,5 @@
     eg: `font-family: Helvetica, Arial, sans-serif;` 
     The fallback font here is the `sans-serif` *(a backup font)*, it's not a specific font, it is a family of sans-serifs.
 ---
- [👈 go back](https://github.com/Klosmi/html-basics)
+ [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
 
