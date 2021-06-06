@@ -7,7 +7,7 @@
 5. [HTML forms](https://github.com/Klosmi/html-basics/blob/master/HTML-forms.md)
 6. [CSS basics](https://github.com/Klosmi/html-basics/blob/master/CSS-basics.md)
 7. [CSS selectors](https://github.com/Klosmi/html-basics/blob/master/CSS-Selectors.md)
-8. [CSS Cascade and **Specificity**](https://github.com/Klosmi/html-basics/blob/master/CSS-Selectors-Cascade-Specificity.md)
+8. [CSS cascade and **specificity**](https://github.com/Klosmi/html-basics/blob/master/CSS-Selectors-Cascade-Specificity.md)
 9. [CSS Inheritance and the Google Chrome Devtool](https://github.com/Klosmi/html-basics/blob/master/CSS-Selectors-Inheritance-Devtool.md)
 10. [CSS Box Model: content (box) ・ border ・ padding ・ margin](https://github.com/Klosmi/html-basics/blob/master/CSS-BoxModel.md)
 11. [CSS Box Model: display property](https://github.com/Klosmi/html-basics/blob/master/CSS-BoxModel-Display.md)
