@@ -219,4 +219,4 @@ For example, :hover can be used to change a button's color when the user's point
    ...etc.
 
 ---
- [👈 go back](https://github.com/Klosmi/html-basics)
+ [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
