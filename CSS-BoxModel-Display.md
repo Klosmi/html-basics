@@ -63,5 +63,8 @@ it sets whether an element is treated as a **block element** or an **inline elem
     - to hide an element, just set the `display` proprty to `none`.
     - the element itself is not going to be deleted (it's there in the document)❗️ But they take up no space, and we don't see them.
 
+    <br>
+
+- [Further reading](https://css-tricks.com/when-do-you-use-inline-block/)
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
