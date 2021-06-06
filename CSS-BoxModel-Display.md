@@ -1,5 +1,5 @@
 # [CSS Box Model - Display Property](https://developer.mozilla.org/en-US/docs/Web/CSS/display) :
-it sets whether an element is treated as a **block element** or **inline element** and the layout used for its children, such as **flow layout**, **grid** or **flex**.
+it sets whether an element is treated as a **block element** or an **inline element** and the layout used for its children, such as **flow layout**, **grid** or **flex**.
 
 > Reminding: an [__inline element__](https://github.com/Klosmi/html-basics/blob/master/inlene-vs-block.md) is going to fit alongside other elements in the same line (is not pushing everyone else onto a separate line). It takes out the minimum amount of space.
 > 
