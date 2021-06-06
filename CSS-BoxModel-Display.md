@@ -49,16 +49,16 @@ it sets whether an element is treated as a **block element** or an **inline elem
      - eg.:   
      I  create 3 `<div>`s, and I want them to be horizontally next to each other, I can give a **`display: inline-block;`**.   
      *(Note, if I give `display: inline;` it's not going to work, because `inline` doesn't respect width, padding, margin)*  
-    <br>
-        The `div`s are sharing the space, the row by sitting in line together. They're not forcing each other onto a separate line, __but all the other properties with respect to the box model are going to work__ (width and height and margin will work). 
+     
+       The `<div>`s are sharing the space, the row by sitting in line together. They're not forcing each other onto a separate line, __but all the other properties with respect to the box model are going to work__ (width and height and margin will work). 
 
-        ```
-        div {
-        background-color: green;
-        border: 5px solid black;
-        display: inline-block;
-        }
-        ```  
+           ```
+            div {
+                background-color: green;
+                border: 5px solid black;
+                display: inline-block;
+            }
+            ```  
 
 - `display: none;` :
     - to hide an element, just set the `display` proprty to `none`.
