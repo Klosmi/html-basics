@@ -197,7 +197,7 @@ The margin CSS property sets the margin area on all four sides of an element.
 
 Margin is the space outside of an element's border between an element and an other element(s).
 
-So __padding is the spacing on the inside of the border__, while <u>__margin is the spacing on the outside__</u>.*
+So __padding is the spacing on the inside of the border__, while <u>__margin is the spacing on the outside__</u>.
 
 In the Chrome Devtool this is the *🟠orange color* (when inspecting an element).
 
