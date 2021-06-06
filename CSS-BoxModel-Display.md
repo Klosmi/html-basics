@@ -60,7 +60,7 @@ it sets whether an element is treated as a **block element** or an **inline elem
         ```
 
 - `display: none;` :
-    - to hide an element, just set the `display` proprty to `none`.
+    - to hide an element, just set the `display` property to `none`.
     - the element itself is not going to be deleted (it's there in the document)❗️ But they take up no space, and we don't see them.
 
 ---
