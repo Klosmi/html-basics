@@ -65,3 +65,4 @@ it sets whether an element is treated as a **block element** or **inline element
     - the element itself is not going to be deleted (it's there in the document)❗️ But they take up no space, and we don't see them.
 
 ---
+   [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
