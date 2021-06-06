@@ -27,4 +27,4 @@
 - [`<span>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span) : a generic container, but it is an inline element (*same idea as `div`, but it's inline*).
 - wrap around a text, to single out, so to use style it with CSS for instance.
 ---
-[👈 go back](https://github.com/Klosmi/html-basics)
+[👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
