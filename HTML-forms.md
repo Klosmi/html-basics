@@ -139,4 +139,4 @@ So here's a little selection, which might be useful: </u>
       - [`<inpute type="url" required>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/url)  
       it's looking for this pattern: *`urlscheme://restofurl`* *(http or https://somethingelse)*
 ---
- [👈 go back](https://github.com/Klosmi/html-basics)
+ [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
