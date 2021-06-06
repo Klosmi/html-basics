@@ -5,7 +5,7 @@ it sets whether an element is treated as a **block element** or an **inline elem
 > 
 > However a [__block level element__](https://github.com/Klosmi/html-basics/blob/master/inlene-vs-block.md) is pushing everyone else onto a separate line, it is something that it wants to exist on its own line, its own "block".
 
-- **Block** - *(`display: inline;`)*:   
+- **Block** - [changing element levels](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements#changing_element_levels): *(`display: inline;`)*:   
     Block elements break the flow of a document.   
     Width, Height, Margin, & Padding  are respected.
     - all heading elements, like `h1` are inline
@@ -25,7 +25,7 @@ it sets whether an element is treated as a **block element** or an **inline elem
     - block level elements do <u>respect</u>: **width-height, padding, margin** properties 
     <br>
 
-- **Inline** - *(`display: block;`)*:   
+- **Inline** - [changing element levels](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements#changing_element_levels): *(`display: block;`)*:   
     Width & Height are ignored.   
     Margin & padding push elements away horizontally but not vertically.  
     - `<span>`
@@ -60,7 +60,7 @@ it sets whether an element is treated as a **block element** or an **inline elem
         ```
 
 - `display: none;` :
-    - to hide an element, just set the `display` property to `none`.
+    - to hide an element, just set the `display` proprty to `none`.
     - the element itself is not going to be deleted (it's there in the document)❗️ But they take up no space, and we don't see them.
 
 ---
