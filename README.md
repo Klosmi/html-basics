@@ -12,4 +12,4 @@
 10. [CSS Box Model: content (box) ・ border ・ padding ・ margin](https://github.com/Klosmi/html-basics/blob/master/CSS-BoxModel.md)
 11. [CSS Box Model: display property](https://github.com/Klosmi/html-basics/blob/master/CSS-BoxModel-Display.md)
 ##### *These are my personal notes*
-##### *Note that, some HTML of the elements, like `<button>`, `<input type="radio">`, etc. do not show in github's markdown previewer, however in vscode's markdown previewer you can see them and test them.* 
+##### *Note that, some HTML elements, like `<button>`, `<input type="radio">`, etc. do not show in github's markdown previewer, however in vscode's markdown previewer you can see them and test them.* 
