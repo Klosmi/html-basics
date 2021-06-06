@@ -244,13 +244,12 @@ In the Chrome Devtool this is the *🟠orange color* (when inspecting an element
 <br>
 
 - By default, your `<body>` element has some spacing, it has some margin associated with it (8px) 👉 When we start a new web page we can **set margin to be zero so that we don't get that extra space in our content**.
-      
-  (*Sometimes you want some margin on your site all the way across, than you can set the `<body>`'s margin to something else*)
     ```
     body  {
       margin: 0;
     }
     ```
+  (*Sometimes you want some margin on your site all the way across, than you can set the `<body>`'s margin to something else*)
 
 <br>
 
