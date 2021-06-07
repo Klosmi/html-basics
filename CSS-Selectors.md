@@ -1,5 +1,10 @@
-# [CSS Selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+# [CSS Selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) 
+##### and some [further reading about selectors](https://css-tricks.com/how-css-selectors-work/)
+
+<br>
+
 - asterisk <u>[**\***](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors)</u>  = universal selector : it selects everything in the document
+
 - **element selector**: select everything in a given type.
    - eg.:
       ###### *selects all the images*
