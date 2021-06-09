@@ -189,4 +189,6 @@ __Relative length units__ specify a length __relative to another length__.
         ```
 
   - you can mix `em` and `rem`:
-    - eg.: when you have a `<button>`, and the `font-size` is based upon `rem`, but the `padding` the `border-radius` should change depending on what this actual `font-size` is: so using `em` for `padding` and `border-radius`.
+    - eg.: when you have a `<button>`, and the `font-size` is based upon `rem`, but the `padding` and the `border-radius` should change depending on what this actual `font-size` is: so using `em` for `padding` and `border-radius`. (*This time I don't give a code example*)
+
+---
