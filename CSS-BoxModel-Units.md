@@ -107,7 +107,7 @@ __Relative length units__ specify a length __relative to another length__.
         border-radius: 0.5em;  /* = 0 10px */
       }
       ```
-      Useful: when I want to proportionally scale the button to its content, em is handy: `padding` and `border-radius` all depends on the font-size. So if the `button`'s text is bigger the `border-radius` & `padding` will be proprtional, maintaince it's general shape.
+      Useful: when I want to proportionally scale the button to its content, em is handy: `padding` and `border-radius` all depends on the font-size. So if the `button`'s text is bigger the `border-radius` & `padding` will be proprtional, maintain it's general shape.
       
       <br>
 
