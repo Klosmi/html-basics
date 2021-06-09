@@ -1,6 +1,6 @@
 # [CSS Box Model - Units in depth](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units) [*(focus on relative units)*](https://www.w3.org/TR/css-values-3/#relative-lengths) :
 __Relative length units__ specify a length __relative to another length__.  
-*Style sheets that use relative units can more easily scale from one output environment to another.*
+*Style sheets that use **relative units can more easily scale** from one output environment to another.*
 
 - EM・REM・VH・VW・%・*etc.*
 
