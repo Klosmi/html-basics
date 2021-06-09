@@ -52,7 +52,7 @@ __Relative length units__ specify a length __relative to another length__.
 
   **With font size**: `1em` equals the font-size of the parent. `2em` is twice the font-size of the parent, etc.
     - eg.:   
-      ###### *HTML example: in an `<article>` see `h2` and `p`*
+      ###### *HTML example: in an `<article>` see `<h2>`, `<h3>` and `<p>`*
       ```
       <article>
         <h2>I am an h2</h2>
