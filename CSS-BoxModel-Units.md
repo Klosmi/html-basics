@@ -60,7 +60,7 @@ __Relative length units__ specify a length __relative to another length__.
         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
       </article> 
       ```
-      ###### *`<h2>` is twice the font size of its parent element: `<article>`. `<h3>` 1.5 times of its parent element`<article>`, `<p>` 0.8 times of its parent element `<article>`*
+      ###### *`<h2>` is twice the font size of its parent element: `<article>`.  The `<h3>` 1.5 times of its parent element: `<article>`, and `<p>` 0.8 times of its parent element: `<article>`*
       ```
       article {
         font-size: 20px;
