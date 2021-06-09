@@ -174,17 +174,17 @@ __Relative length units__ specify a length __relative to another length__.
         *the root element `<html>` has the default 16px font size , the `<ul>` is `1rem` (16px), the nested `<ul>` is also `1rem` (16px) (rem doesn't stack up) so the "Spaghetti bolognese🍝" (the child `<ul>`) will be as well `1rem` (here 16px).*
         ```
           html {
-            font-size: 16px;  /* normally I can change this from default 16px to anything */
+            font-size: 16px;      /*→ normally I can change this from default 16px to anything */
           }
 
           h2{
-            font-size: 2rem; /* = 32px */
+            font-size: 2rem;      /*→ = 32px */
           }
           article {
-            font-size: 1.5rem; /* 1.5 * 16 = 24px */
+            font-size: 1.5rem;    /*→ 1.5 * 16 = 24px */
           }
           ul {
-            font-size: 1em;  /* = 16px */
+            font-size: 1em;       /*→ = 16px */
           }
         ```
 
