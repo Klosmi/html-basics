@@ -83,7 +83,7 @@ __Relative length units__ specify a length __relative to another length__.
     Other properties like: `padding` and `margin`, and it's quite common to use `em` with these properties. 👉 **`1em` is equal to the element itself** *(and  not with the parent element❗️)*
 
     - eg.:  
-      ###### *HTML example: in an `<article>` see `<h2>` and `<p>`*
+      ###### *HTML example: in an `<article>` see `<h2>` and `<button>`*
       ```
       <article>
         <h2>I am an h2</h2>
