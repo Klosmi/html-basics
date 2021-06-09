@@ -35,7 +35,7 @@ __Relative length units__ specify a length __relative to another length__.
     -  **value from the element itself**:
           - elements are relative not to the parent but **to themselves**.  
             - eg.: an element has `font-size: 100px`, we give `line-height: 50%`, it means it is 50% of the elements itself, its own font size (not the parent).
-              ###### *HTML example: `h1`*
+              ###### *HTML example: `<h1>`*
                 ```
                 <h1>CSS Units</h1>
                 ```
