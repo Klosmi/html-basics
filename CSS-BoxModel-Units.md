@@ -141,52 +141,52 @@ __Relative length units__ specify a length __relative to another length__.
           ```
 
 - [rem](https://www.w3.org/TR/css-values-3/#rem) (= root em) :   
-  relative to the **root html element**'s font-size. Oftern easier to wrok with.    
-  The root element, is the **`<html lang="eng">`** right under the `<!DOCTYPE html>` (we can change of course the root `<html>` element's default font-size) 
+  * relative to the **root html element**'s font-size. Often easier to wrok with.    
+  * The root element, is the **`<html lang="eng">`** right under the `<!DOCTYPE html>` (we can change of course the root `<html>` element's default font-size) 
 
-  **If the root `font-size: 16px`, `1rem` is always `16px`, `2rem` is always `32px`, etc.**
+  * **If the root `font-size: 16px`, `1rem` is always `16px`, `2rem` is always `32px`, etc.**
 
-  It is constant.
+  * It is constant.
 
-  So, rather than deriving the font size from the parent element like `em`,  
-  💡  **`rem` derives the font size from the root HTML element's font size**.   
-  (*👉 `rem` is relative to this (root) font size for **the entire document**.*)
+  * So, rather than deriving the font size from the parent element like `em`,  
+    💡  **`rem` derives the font size from the root HTML element's font size**.   
+    (*👉 `rem` is relative to this (root) font size for **the entire document**.*)
 
-  If your root `<html>` element has (the default) `font-size= 16px`; it is 16px anywhere in the document.
-    - eg.:
-      ```
-        <article>
-        <h2>I am an h2 rem</h2>
-          <ul>
-            <li>
-              Pasta
-              <ul>
-                <li>Spaghetti
-                  <ul>
-                    <li>Spaghetti bolognese🍝</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </article>
-      ```
-      *the root element `<html>` has the default 16px font size , the `<ul>` is `1rem` (16px), the nested `<ul>` is also `1rem` (16px) (rem doesn't stack up) so the "Spaghetti bolognese🍝" (the child `<ul>`) will be as well `1rem` (here 16px).*
-      ```
-        html {
-          font-size: 16px;  /* normally I can change this from default 16px to anything */
-        }
+    If your root `<html>` element has (the default) `font-size= 16px`; it is 16px anywhere in the document.
+      - eg.:
+        ```
+          <article>
+          <h2>I am an h2 rem</h2>
+            <ul>
+              <li>
+                Pasta
+                <ul>
+                  <li>Spaghetti
+                    <ul>
+                      <li>Spaghetti bolognese🍝</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </article>
+        ```
+        *the root element `<html>` has the default 16px font size , the `<ul>` is `1rem` (16px), the nested `<ul>` is also `1rem` (16px) (rem doesn't stack up) so the "Spaghetti bolognese🍝" (the child `<ul>`) will be as well `1rem` (here 16px).*
+        ```
+          html {
+            font-size: 16px;  /* normally I can change this from default 16px to anything */
+          }
 
-        h2{
-          font-size: 2rem; /* = 32px */
-        }
-        article {
-          font-size: 1.5rem; /* 1.5 * 16 = 24px */
-        }
-        ul {
-          font-size: 1em;  /* = 16px */
-        }
-      ```
+          h2{
+            font-size: 2rem; /* = 32px */
+          }
+          article {
+            font-size: 1.5rem; /* 1.5 * 16 = 24px */
+          }
+          ul {
+            font-size: 1em;  /* = 16px */
+          }
+        ```
 
   - you can mix `em` and `rem`:
     - eg.: when you have a `<button>`, and the `font-size` is based upon `rem`, but the `padding` the `border-radius` should change depending on what this actual `font-size` is: so using `em` for `padding` and `border-radius`.
