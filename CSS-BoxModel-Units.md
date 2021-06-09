@@ -7,7 +7,7 @@ __Relative length units__ specify a length __relative to another length__.
 - [percentage: `%`](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage)  : percentages are always relative to some other value (*it is a percentage of something; it depends on what that something, property is that we're setting*).  
 
   - it's a value from the parent and other times it's a value from the element itself.
-    - value from the parent:
+    - **value from the parent**:
         - eg.: `width: 50%;` 👉 50% on an element which means that we are setting that element to be **half the width of the parent element**.  
             ###### *HTML example: `<section>` (parent) contain the `<div>` (child)*
             ```
@@ -30,20 +30,20 @@ __Relative length units__ specify a length __relative to another length__.
             }
             ```
             *The `<div>` is exactly half the size of its parent `<section>`.*
-  -  value from the element itself:
-        - elements are relative not to the parent but to themselves.  
-          - eg.: our font size on an element is 100px, we give `line-height: 50%`, it means it is 50% of the elements itself, its own font size (not the parent).
-            ###### *HTML example: `h1`*
-              ```
-              <h1>CSS Units</h1>
-              ```
-              ###### *CSS of the HTML above.*
-              ```
-              h1 {
-                font-size 40px;
-                line-height: 200%   /* →  200% of 40px = 80px */
-              }
-              ```
+    -  **value from the element itself((:
+          - elements are relative not to the parent but to themselves.  
+            - eg.: our font size on an element is 100px, we give `line-height: 50%`, it means it is 50% of the elements itself, its own font size (not the parent).
+              ###### *HTML example: `h1`*
+                ```
+                <h1>CSS Units</h1>
+                ```
+                ###### *CSS of the HTML above.*
+                ```
+                h1 {
+                  font-size 40px;
+                  line-height: 200%   /* →  200% of 40px = 80px */
+                }
+                ```
 
 - [em](https://www.w3.org/TR/css-values-3/#em) :   
   *"my parent element's font-size, so each successive level of nesting gets progressively larger, eg.: if font size set to 1.3em, each nesting gives a 1.3 times bigger text.*   
