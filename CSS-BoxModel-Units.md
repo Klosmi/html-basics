@@ -8,7 +8,7 @@ __Relative length units__ specify a length __relative to another length__.
 
   - it's a value from the parent and other times it's a value from the element itself.
     - value from the parent:
-        - eg.: `width: 50%;` 👉 50% on qn element which means that we are setting that element to be **half the width of the parent element**.  
+        - eg.: `width: 50%;` 👉 50% on an element which means that we are setting that element to be **half the width of the parent element**.  
             ###### *HTML example: section (parent) contain the div (child)*
             ```
             <section>
