@@ -98,7 +98,7 @@ __Relative length units__ specify a length __relative to another length__.
 
       h2 {
         font-size: 2em;
-        margin-left: 1em;    /* the current font size: 2em (2*20px = 40px), and 1em refers to that font-size → = 20px */
+        margin-left: 1em;    /* the current font-size: 2em (2*20px = 40px), and 1em refers to that font-size → = 20px */
       }
 
       button  {
