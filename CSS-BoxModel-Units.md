@@ -25,8 +25,8 @@ __Relative length units__ specify a length __relative to another length__.
 
             div {
                 background-color: red;
-                width: 50%;       /* →  going to be 400px */
-                height: 50%;      /* →  going to be 400px */
+                width: 50%;       /* →  going to be 400px (50% of 800px) */
+                height: 50%;      /* →  going to be 400px (50% of 800px) */
             }
             ```
             *The `<div>` is exactly half the size of its parent `<section>`.*
