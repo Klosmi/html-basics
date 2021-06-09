@@ -111,7 +111,7 @@ __Relative length units__ specify a length __relative to another length__.
       
       <br>
 
-      💡 Shortcomings of the `em`: a multiple nested element can stack quickly (grow or shrink extremly), because the child's property value changes depending on the parent's parent's parent element 🤓.  
+      💡 Shortcomings of the `em`: a multiple nested element can stack quickly (grow or shrink extremly), because the child's property value changes depending on the parent's parent's parent element. 🤓 
        - eg.:
             ###### *HTML example*
           ```
