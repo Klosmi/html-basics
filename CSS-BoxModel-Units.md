@@ -90,7 +90,7 @@ __Relative length units__ specify a length __relative to another length__.
         <button>Click</button>
       </article> 
       ```
-      ###### **`margin-left: 1em`: the `1em` refers to itself, the `<h2>` element, where the fontsize is `2em`, so `1em` refers to the `2em`.
+      ###### *`margin-left: 1em`: the `1em` refers to itself, the `<h2>` element, where the fontsize is `2em`, so `1em` refers to the `2em`.*
       ```
       article {
         font-size: 20px;
