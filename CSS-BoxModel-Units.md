@@ -4,7 +4,7 @@ __Relative length units__ specify a length __relative to another length__.
 
 - EM・REM・VH・VW・%・*etc.*
 
-- [percentage: `%`](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage)  : percentages are always relative to some other value (*it is a percentage of something; it depends on what that something, propert is that we're setting*).  
+- [percentage: `%`](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage)  : percentages are always relative to some other value (*it is a percentage of something; it depends on what that something, property is that we're setting*).  
 
   - it's a value from the parent and other times it's a value from the element itself.
     - value from the parent:
