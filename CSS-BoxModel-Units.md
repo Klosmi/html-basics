@@ -15,7 +15,7 @@ __Relative length units__ specify a length __relative to another length__.
                 <div></div>
             </section>   
             ```
-            ###### *CSS of the HTML above: section (parent) contain the div (child)*
+            ###### *CSS of the HTML above: `<section>` (parent) contain the `<div>` (child)*
             ```
             section {
                 background-color: grey;
