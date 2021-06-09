@@ -60,7 +60,7 @@ __Relative length units__ specify a length __relative to another length__.
         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
       </article> 
       ```
-      ###### *`h2` is twice the font size of its parent element: `<article>` `h3` 1.5 times of its parent element`<article>`, `p` 0.8 times of its parent element `<article>`*
+      ###### *`<h2>` is twice the font size of its parent element: `<article>` `<h3>` 1.5 times of its parent element`<article>`, `<p>` 0.8 times of its parent element `<article>`*
       ```
       article {
         font-size: 20px;
@@ -83,14 +83,14 @@ __Relative length units__ specify a length __relative to another length__.
     Other properties like: `padding` and `margin`, and it's quite common to use `em`s with these properties. 👉 **`1em` is equal to the element itself*** *(and  not with the parent element❗️)*
 
     - eg.:  
-      ###### *HTML example: in an `<article>` see `h2` and `p`*
+      ###### *HTML example: in an `<article>` see `<h2>` and `<p>`*
       ```
       <article>
         <h2>I am an h2</h2>
         <button>Click</button>
       </article> 
       ```
-      ###### **`margin-left: 1em`: the `1em` refers to itself, the `h2` element, where the fontsize is `2em`, so `1em` refers to the `2em`.
+      ###### **`margin-left: 1em`: the `1em` refers to itself, the `<h2>` element, where the fontsize is `2em`, so `1em` refers to the `2em`.
       ```
       article {
         font-size: 20px;
@@ -152,7 +152,7 @@ __Relative length units__ specify a length __relative to another length__.
   💡  **`rem` derives the font size from the root HTML element's font size**.   
   (*👉 `rem` is relative to this (root) font size for **the entire document**.*)
 
-  If your root `<html>` element has (the default) font-size= 16px; it is 16px anywhere in the document.
+  If your root `<html>` element has (the default) `font-size= 16px`; it is 16px anywhere in the document.
     - eg.:
       ```
         <article>
