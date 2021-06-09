@@ -48,7 +48,7 @@ __Relative length units__ specify a length __relative to another length__.
                 ```
 
 - [em](https://www.w3.org/TR/css-values-3/#em) :   
-  *"my parent element's font-size, so each successive level of nesting gets progressively larger, eg.: if font size set to 1.3em, each nesting gives a 1.3 times bigger text.*   
+  *"my parent element's font-size, so each successive level of nesting gets progressively larger, eg.: if `font-size: 1.3em`, each nesting gives a 1.3 times bigger text.*   
 
   **With font size**: `1em` equals the font-size of the parent. `2em`s is twice the font-size of the parent, etc.
     - eg.:   
