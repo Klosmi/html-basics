@@ -122,7 +122,7 @@ __Relative length units__ specify a length __relative to another length__.
                 <ul>
                   <li>Spaghetti
                     <ul>
-                      <li>Spaghetti bolognese</li>
+                      <li>Spaghetti bolognese🍝</li>
                     </ul>
                   </li>
                 </ul>
@@ -130,7 +130,7 @@ __Relative length units__ specify a length __relative to another length__.
             </ul>
           </article>
           ```
-          ###### *since the `<ul>` is `1.5em` (30px), the nested `<ul>`'s stack up, meaning that the *Spaghetti bolognese* (the child `<ul>`) will be 1.5 time 1.5 time 1.5em (67.5px)*
+          ###### *since the `<ul>` is `1.5em` (30px), the nested `<ul>`'s stack up, meaning that the *"Spaghetti bolognese🍝"* (the child `<ul>`) will be 1.5 time 1.5 time 1.5em (67.5px)*
           ```
           article {
             font-size: 20px;
@@ -163,7 +163,7 @@ __Relative length units__ specify a length __relative to another length__.
               <ul>
                 <li>Spaghetti
                   <ul>
-                    <li>Spaghetti bolognese</li>
+                    <li>Spaghetti bolognese🍝</li>
                   </ul>
                 </li>
               </ul>
@@ -171,7 +171,7 @@ __Relative length units__ specify a length __relative to another length__.
           </ul>
         </article>
       ```
-      *the root element `<html>` has the default 16px font size , the `<ul>` is `1rem` (16px), the nested `<ul>` is also `1rem` (16px) (rem doesn't stack up) so the "Spaghetti bolognese" (the child `<ul>`) will be as well `1rem` (here 16px).*
+      *the root element `<html>` has the default 16px font size , the `<ul>` is `1rem` (16px), the nested `<ul>` is also `1rem` (16px) (rem doesn't stack up) so the "Spaghetti bolognese🍝" (the child `<ul>`) will be as well `1rem` (here 16px).*
       ```
         html {
           font-size: 16px;  /* normally I can change this from default 16px to anything */
