@@ -47,7 +47,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
   The opacity CSS property **sets the opacity of an element**. Opacity is **the degree to which content behind an element is hidden**, and is the **opposite of transparency**.
 
   Opacity is not a part of a color or a channel like rgb**a**.   
-  Opacity is a property we set on an element which governs the entire element's transparency, **including its contents and any descendants**.   
+  Opacity is a property we set on an element which governs the entire element's "transparency" (although it is not transparency), **including its contents and any descendants**.   
   - eg.: 
     ###### *The HTML*
     ```
