@@ -64,7 +64,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
         opacity: 0.5;     /* → the background-color has 0.5 opacity */
       }
     ```
-    Thet text in the `#opacity` `<div>` and the `<button>` will be transparent too not just the background color. **The entire element within that `<div>` will be impacted by the `opacity`.**
+    Thet text in the `#opacity` `<div>` and the `<button>` will be "transparent" too not just the background color. **The entire element within that `<div>` will be impacted by the `opacity`.**
 
 ---
 
