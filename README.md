@@ -12,6 +12,7 @@
 10. [CSS Box Model: content (box) ・ border ・ padding ・ margin](https://github.com/Klosmi/html-basics/blob/master/CSS-BoxModel.md)
 11. [CSS Box Model: display property](https://github.com/Klosmi/html-basics/blob/master/CSS-BoxModel-Display.md)
 12. [CSS-BoxModel-Units - `em` & `rem`](https://github.com/Klosmi/html-basics/blob/master/CSS-BoxModel-Units.md)
+13. [CSS some useful properties - extra](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md)
 
 ##### *These are my personal notes*
 ##### *Note that, some HTML elements, like `<button>`, `<input type="radio">`, etc. do not show in github's markdown previewer, however in vscode's markdown previewer you can see them and test them.* 
