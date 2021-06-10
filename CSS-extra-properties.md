@@ -31,8 +31,8 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 
 
     - you can add `Alpha Channel` to hexadecimal colors : add two digits at the and of the hexadecimal color from 00 to FF.
-      - full transparency is : `00FF` (or in short `0FF`) 
-      - `00` is no transparency at all.
+      - `00` full transparency is.
+      - `FF` is no transparency at all.
         - eg.:
           ###### *CSS, hexadecimal color eg.: `#60f7ab` + `4f` alpha channel.*
           ```
