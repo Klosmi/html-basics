@@ -21,7 +21,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
               <button>Button</button>
           </div>
       ``` 
-      ###### *The CSS*
+      ###### *The CSS:  we give background-color to the `<div>` *
       ```
       #rgba {
         background-color: rgba(255,255,255,0.7) /* → 0.7 is the alpha channel, here it's partially transparent. */
