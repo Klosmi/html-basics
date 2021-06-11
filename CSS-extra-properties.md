@@ -172,38 +172,38 @@ these are a few CSS properties which are nice to know, but not crucial for the b
           When something is positioned `fixed` it is gonna **stay** there. It is positioned **relative to its containing block**, always.
   <br>
 
-    - `sticky` : it sticks. 
-        The element is positioned according to the normal flow of the document, and **then offset relative to its nearest scrolling ancestor and containing block** (nearest block-level ancestor). The offset does not affect the position of any other elements. 
+- `sticky` : it sticks. 
+  The element is positioned according to the normal flow of the document, and **then offset relative to its nearest scrolling ancestor and containing block** (nearest block-level ancestor). The offset does not affect the position of any other elements. 
 
-        In other words: it starts not fixed and then later it get fixed. So the element begins not fixed to the top. It will scroll along with content until it hits the top and then it stays there.
+  In other words: it starts not fixed and then later it get fixed. So the element begins not fixed to the top. It will scroll along with content until it hits the top and then it stays there.
 
-        It's kinda mixture of position `relative` and `fixed`.
+  It's kinda mixture of position `relative` and `fixed`.
 
-      -   eg.: 
-          ###### *The HTML `<div> `id="#second"`*
-          ```
-          <section id="sticky">
-            <h2>Sticky</h2>
-            <div></div>
-            <div id="second"></div>
-            <div></div>
-          </section>
-          ```
-          ###### *The CSS, `<div> `id="#second"`*
-          ```
-          #sticky {
-            height: 600px;  /*→#second's nearest block-level ancestor */
-          }
+  - eg.: 
+    ###### *The HTML `<div> `id="#second"`*
+      ```
+      <section id="sticky">
+        <h2>Sticky</h2>
+        <div></div>
+        <div id="second"></div>
+        <div></div>
+      </section>
+      ```
+      ###### *The CSS, `<div> `id="#second"`*
+      ```
+      #sticky {
+        height: 600px;  /*→#second's nearest block-level ancestor */
+      }
 
-          #sticky #second{   
-            position: sticky;
-            top: 0;
-          }
-          ```
-          The sticky item’s container (here is `<section id="sticky">`) is the only area in which the sticky item can sticks.  
-          In other words, the container is the scope of the sticky item, and the item can’t get out of its sticky container. So **it only sticks within its container**(here the  `<section id="sticky">`).
-          (This [video](https://www.youtube.com/watch?v=9xygOHSuzQ8) explaines it quite well.)
-          
+      #sticky #second{   
+        position: sticky;
+        top: 0;
+      }
+     ```
+    The sticky item’s container (here is `<section id="sticky">`) is the only area in which the sticky item can stick.  
+    In other words, the container is the scope of the sticky item, and the item can’t get out of its sticky container. So **it only sticks within its container**(here the  `<section id="sticky">`).
+    (This [video](https://www.youtube.com/watch?v=9xygOHSuzQ8) explaines it quite well.)
+
           
 ---
 
