@@ -209,15 +209,6 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 
 💡 Note, that normally the 'second' id's should actually be **classes**. **You should only have one unique id per page.** If it needs to replicate, then a class is the correct choice!
 
-<br>
-<br>
-
-## [Transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) 
-  Transitions enable you to define the transition between two states of an element. 
-
-   `transition` is a shorthand property for `transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`.
-
-     
 ---
 
    [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
