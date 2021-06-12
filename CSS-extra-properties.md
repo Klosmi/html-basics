@@ -180,31 +180,44 @@ these are a few CSS properties which are nice to know, but not crucial for the b
   It's kinda mixture of position `relative` and `fixed`.
 
   - eg.: 
-    ###### *The HTML `<div> `id="#second"`*
+    ###### *The HTML `<div> `class="second"`*
       ```
       <section id="sticky">
         <h2>Sticky</h2>
         <div></div>
-        <div id="second"></div>
+        <div class="second"></div>
         <div></div>
       </section>
       ```
-      ###### *The CSS, `<div> `id="#second"`*
+      ###### *The CSS, `<div> `class="second"`*
       ```
       #sticky {
-        height: 600px;  /*→#second's nearest block-level ancestor */
+        height: 600px;  /*→ .second's nearest block-level ancestor */
       }
 
-      #sticky #second{   
+      #sticky .second{   
         position: sticky;
         top: 0;
       }
      ```
     The sticky item’s container (here is `<section id="sticky">`) is the only area in which the sticky item can stick.  
-    In other words, the container is the scope of the sticky item, and the item can’t get out of its sticky container. So **it only sticks within its container**(here the  `<section id="sticky">`).
+    In other words, the container is the scope of the sticky item, and the item can’t get out of its sticky container. So **it only sticks within its container**(here the  `<section class="sticky">`).   
+
+    The above example (the sticky portperty) only works if we use classes!   
+    
     (This [video](https://www.youtube.com/watch?v=9xygOHSuzQ8) explaines it quite well.)
 
-          
+💡 Note, that normally the 'second' id's should actually be **classes**. **You should only have one unique id per page.** If it needs to replicate, then a class is the correct choice!
+
+<br>
+<br>
+
+## [Transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) 
+  Transitions enable you to define the transition between two states of an element. 
+
+   `transition` is a shorthand property for `transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`.
+
+     
 ---
 
    [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
