@@ -239,7 +239,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
     ```
     <div class="circle"></div>
     ```
-    ###### *CSS: a hover transition **duration***
+    ###### *CSS: a hover transition __`duration`__*
     ```
     .circle {
       width: 300px;
@@ -263,7 +263,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
     ```
     <div class="circle"></div>
     ```
-    ###### *CSS: only the background-color changes with a hover transition __duration__*
+    ###### *CSS: only the background-color changes with a hover transition __`duration`__*
     ```
     .circle {
       width: 300px;
@@ -283,7 +283,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 
 - **all properties**: 
   - eg.:  
-    ###### *CSS: all properties change with a hover transition __duration__*
+    ###### *CSS: all properties change with a hover transition __`duration`__*
     ```
     .circle {
       width: 300px;
@@ -317,7 +317,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
         border-radius: 50%;
     }
     ```
-    All the properties change with 3s duration and 1s delay animation. So when we hover over, it's going to take `1s` **before that transition even begins**. It goes both direction.
+    All the properties change with `3s` `duration` and `1s` `delay` animation. So when we hover over, it's going to take `1s` **before that transition even begins**. It goes both direction.
     
     <br>
 
