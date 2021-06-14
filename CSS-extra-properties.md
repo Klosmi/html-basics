@@ -466,7 +466,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
             ```
   <br>
 
-  - **transform-origin**:    
+  - [**transform-origin**](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin):    
       the `transform-origin` CSS property sets the origin for an element's transformations.
       - center ・ top left ・ 50px 50px ・ bottom right 60px;   
 
