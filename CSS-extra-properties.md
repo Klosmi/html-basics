@@ -411,7 +411,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
     the rotate function rotates an element around a fixed point on the 2D plane (without deforming it).
 
     - `rotate()` accepts different [units](https://developer.mozilla.org/en-US/docs/Web/CSS/angle#units):
-      #### [`<angle>`](https://developer.mozilla.org/en-US/docs/Web/CSS/angle):    
+      ###### [`<angle>`](https://developer.mozilla.org/en-US/docs/Web/CSS/angle):    
         - `deg` (*degrees*) 
             → `transform: rotate(45deg);`
         - `rad` (*radians*) 
