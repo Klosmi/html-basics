@@ -297,7 +297,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
         border-radius: 50%;
     }
     ```
-    All the properties changes with 3s animation.
+    All the properties changes with `3s` animation.
     
     <br>
 
@@ -353,7 +353,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
       - delay (the default is no delay)
       eg.: 
         ```
-        transition: background color 1s ease-in, border-radius 500ms;
+        transition: background-color 1s ease-in, border-radius 500ms;
         ```
 
    - eg.: 
