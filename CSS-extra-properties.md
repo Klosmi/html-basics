@@ -303,7 +303,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 
 - **delay** : 
   - eg.: 
-    ###### *CSS: specify 1s delay*
+    ###### *CSS: specify `1s` `delay`*
     ```
     .circle {
       width: 300px;
@@ -323,7 +323,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 
 - **specify different transitions at once:**
   - eg.: 
-    ###### *CSS: specify 1s delay `for background-color`, and 2s for `border-radius`*
+    ###### *CSS: specify `1s` `delay` `for background-color`, and `2s` for `border-radius`*
     ```
     .circle {
       width: 300px;
@@ -337,7 +337,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
         border-radius: 50%;
     }
     ```
-    specify 1s delay `for background-color`, and 2s for `border-radius`. We can see the background-color finishes before the border radius finishes.
+    specify `1s` `delay` `for background-color`, and `2s` for `border-radius`. We can see the background-color finishes before the border radius finishes.
 
 - **timing-function**: the whole [syntax of timing-functions](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function#syntax) !
   - linear; → *never speeds up or slow down*
