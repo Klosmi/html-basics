@@ -224,7 +224,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 
 <br>
 
-- **Syntax of `transition` property:**   
+- **Syntax of `transition` property** consists the following:   
   1. [property name](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property) → specify a specific property name, so **which `transition` effect** to use.  
 
   2. [duration](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration) → sets the **length of time a transition animation** should take to complete. So how long it takes.
