@@ -216,15 +216,15 @@ these are a few CSS properties which are nice to know, but not crucial for the b
   Transitions enable you to define the transition between two states of an element. 
 
 -  **`transition` is a shorthand property** for :   
-  &nbsp; &nbsp;[`transition-property`](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property) *(none, all, etc.),*    
-  &nbsp; &nbsp;[`transition-duration`](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration) *(3s, etc.),*    
-  &nbsp; &nbsp;[`transition-timing-function`](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function) *(eas-in, eas-out, etc.),*    
-  &nbsp; &nbsp;[`transition-delay`](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay) *(1s, 250ms, etc.)*.
+  &nbsp; &nbsp;[`transition-property`](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property) (none, all, etc.),    
+  &nbsp; &nbsp;[`transition-duration`](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration) (3s),    
+ s &nbsp;[`transition-timing-function`](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function) (eas-in, eas-out, etc.),    
+  &nbsp; &nbsp;[`transition-delay`](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay) (1s, 250ms).
 
 
 <br>
 
-- **Syntax of `transition` property** consists the following:   
+- **Syntax of `transition` property:**   
   1. [property name](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property) → specify a specific property name, so **which `transition` effect** to use.  
 
   2. [duration](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration) → sets the **length of time a transition animation** should take to complete. So how long it takes.
@@ -232,22 +232,20 @@ these are a few CSS properties which are nice to know, but not crucial for the b
   3. [timing function](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function) → sets how **intermediate values are calculated** for CSS properties being affected by a transition effect.
 
   4. [delay](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay) → specifies the duration to **wait before starting** a property's transition effect **when its value changes**.  
-    
-    <br>
-    
-- **duration:**
+
+- duration:
   - eg.:
     ###### *HTML*
     ```
     <div class="circle"></div>
     ```
-    ###### *CSS: a hover transition __`duration`__*
+    ###### *CSS: a hover transition **duration***
     ```
     .circle {
       width: 300px;
       height: 300px;
       background-color: green;
-      transition: 3s;     /* → duration is 3 seconds */
+      transition: 3s;
     }
 
     .circle:hover {
@@ -265,7 +263,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
     ```
     <div class="circle"></div>
     ```
-    ###### *CSS: only the background-color changes with a hover transition __`duration`__*
+    ###### *CSS: only the backgroun-color changes with a hover transition **duration***
     ```
     .circle {
       width: 300px;
@@ -285,7 +283,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 
 - **all properties**: 
   - eg.:  
-    ###### *CSS: all properties change with a hover transition __`duration`__*
+    ###### *CSS: all properties change with a hover transition **duration***
     ```
     .circle {
       width: 300px;
@@ -299,13 +297,13 @@ these are a few CSS properties which are nice to know, but not crucial for the b
         border-radius: 50%;
     }
     ```
-    All the properties changes with `3s` animation.
+    All the properties changes with 3s animation.
     
     <br>
 
 - **delay** : 
   - eg.: 
-    ###### *CSS: specify `1s` `delay`*
+    ###### *CSS: specify 1s delay
     ```
     .circle {
       width: 300px;
@@ -319,13 +317,13 @@ these are a few CSS properties which are nice to know, but not crucial for the b
         border-radius: 50%;
     }
     ```
-    All the properties change with `3s` `duration` and `1s` `delay` animation. So when we hover over, it's going to take `1s` **before that transition even begins**. It goes both direction.
+    All the properties change with 3s duration and 1s delay animation. So when we hover over, it's going to take `1s` **before that transition even begins**. It goes both direction.
     
     <br>
 
 - **specify different transitions at once:**
   - eg.: 
-    ###### *CSS: specify `1s` `delay` `for background-color`, and `2s` for `border-radius`*
+    ###### *CSS: specify 1s delay `for background-color`, and 2s for `border-radius`
     ```
     .circle {
       width: 300px;
@@ -339,31 +337,27 @@ these are a few CSS properties which are nice to know, but not crucial for the b
         border-radius: 50%;
     }
     ```
-    specify `1s` `delay` `for background-color`, and `2s` for `border-radius`. We can see the background-color finishes before the border radius finishes.
-    
-    <br>
-    
-- **timing-function**: on the link are all the [syntax of timing-functions](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function#syntax) !
-  - `linear;` → *never speeds up or slow down*
-  - `eas-in;` → *start slow, speeds up* ・ ease-out; ・ ease-in-out;
-  - `steps` `(6, end);` → *6 steps*
-  - `cubic-bezier``(.29, 1.01 1, -0.68);` → *goes forward and backwards*
-    
-    <br>
-    
-  - **the way it works:**   
+    specify 1s delay `for background-color`, and 2s for `border-radius`. We can see the background-color finishes before the border radius finishes.
+
+- **timing-function**: the whole [syntax of timing-functions](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function#syntax) !
+  - linear; → *never speeds up or slow down*
+  - eas-in; → *start slow, speeds up* ・ ease-out; ・ ease-in-out;
+  - steps (6, end); → *6 steps*
+  - cubic-bezier(.29, 1.01 1, -0.68); → *goes forward and backwards*
+
+  - how it works:   
     there are four things what we can specify:  
-      - `property` that we want to animate,     
-      - `duration` that can be in seconds, milliseconds (500ms),
-      - `timing-function`, like ease-in.
-      - `delay` (the default is no delay)
+      - property that we want to animate,     
+      - duration that can be in seconds, milliseconds (500ms),
+      - timing-function, like ease-in.
+      - delay (the default is no delay)
       eg.: 
         ```
-        transition: background-color 1s ease-in, border-radius 500ms;
+        transition: background color 1s ease-in, border-radius 500ms;
         ```
 
    - eg.: 
-      ###### *CSS: we have four `<div>` squares, each of them has a **separate**, different `timing-function` transition.*
+      ###### *CSS: we have four `<div>` squares, each of them has a **separate**, different `timing-function` transition.
       ```
       section div {
           height: 100px;
@@ -373,21 +367,21 @@ these are a few CSS properties which are nice to know, but not crucial for the b
           transition: margin-left 2s;
         } 
 
-      section:hover div {                       /*  → on hover all the "<div> squares" activated */
-          margin-left:500px;                    /* → on hover the "<div> squares" go till 500px*/
+      section:hover div {     /*  → on hover all the "<div> squares" activated */
+          margin-left:500px;  /* → on hover the "<div> squares" go till 500px*/
         }
 
       div:nth-of-type(1){
           transition-timing-function: ease-in;
-        }                                       /* → starts up a bit slow */
+        }     /* → starts up a bit slow */
 
       div:nth-of-type(2){
           transition-timing-function: ease-out;
-        }                                      /* → starts up quickly then slows down */
+        }     /* → starts up quickly then slows down */
 
       div:nth-of-type(3){
           transition-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
-        }                                      /* → starts very slow */
+        }     /* → starts very slow */
 
       div:nth-of-type(4){
           transition-timing-function:  cubic-bezier(0.85, 0, 0.15, 1);
@@ -398,8 +392,254 @@ these are a few CSS properties which are nice to know, but not crucial for the b
     💡 for different [timing-function or easings](https://easings.net/)❗️
 
 
-    💡 Advice: it is better to **single out those properties which you want to make the transition**❗️ *(So, don't just do `transition all` because when you will make some changes in your code later, it will make your work harder.)*
+    💡 Advice: it is better to **single out those properties which you want to make the transition**❗️ *(So, don't just do `transition all` because when you will makesome changes to your code later, makes your work harder.)*
+
+    <br>
+    <br>
+
+## [Transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform) 
+  The transform CSS property lets you **rotate, scale, skew, or translate an element**.
+
+  [`<transform-function>`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function)  : the `<transform-function>` CSS data type represents a **transformation that affects an element's appearance**. Transformation **functions can rotate, resize, distort, or move an element in 2D or 3D space**. It is used in the **transform property.**
+
+  - [**rotate**](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate()) :    
+    the rotate function rotates an element around a fixed point on the 2D plane (without deforming it).
+
+    - `rotate()` accepts different [units](https://developer.mozilla.org/en-US/docs/Web/CSS/angle#units):
+      [`<angle>`](https://developer.mozilla.org/en-US/docs/Web/CSS/angle):    
+        - `deg` (*degrees*) 
+            → `transform: rotate(45deg);`
+        - `rad` (*radians*) 
+            → `transform: rotate(3.1416rad);`
+        - `grad` (*gradiant*) 
+            → `transform: rotate(-50grad);`
+        - `grad` (*turn*) 
+            → `transform: rotate(1.75turn);`
+
+  - eg.:
+    I have a bunch of title elements (`<h2>`) and two section. Here I select the first `<section>`.
+    ###### *CSS: selecting the __the first sections first h2__*
+    ```
+    section:first-of-type h2:nth-of-type(1) {
+      transform: rotate(45deg);  /* → 45 degrees rotation  */ 
+    }
+    ```
+
+    - different [variants of rotating](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function#rotation), here are some:
+
+      - [rotate3d](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d()):   
+        The rotate3d() CSS function defines a transformation that rotates an element around a fixed axis in 3D space, without deforming it.
+          - eg.:
+            ```
+            transform: rotate3d(1, 1, 1, 45deg);
+            ```
+            A rotate3d(x, y, z, a) = 
+              - x:  **x-coordinate**, between 0 - 1
+              - y:  **y-coordinate**, between 0 - 1
+              - z:  **z-coordinate**, between 0 - 1 
+              - a:  **angle** of the rotation.   
+                A **➕ angle** denotes a **clockwise rotation**, a **➖ angle** a **counter-clockwise** one.
+
+
+      - [rotateX](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotateX()) & [rotateY](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotateY()) & [rotateZ()](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotateZ()):    
+        The `rotateX()` CSS function defines a transformation that rotates an element around the abscissa (horizontal axis) without deforming it. 
+          - eg.:
+            ```
+            transform: rotateX(45deg);
+            ```
+
+        The `rotateY()` ransformation that rotates an element around the ordinate (vertical axis) without deforming it. 
+          - eg.:
+            ```
+            transform: rotateY(-0.2turn);
+            ```
+
+        The `rotateZ()` defines a transformation that rotates an element around the z-axis without deforming it.
+        - eg.:
+            ```
+            transform: rotateZ(3.142rad);
+            ```
+  <br>
+
+  - **transform-origin**:    
+      the `transform-origin` CSS property sets the origin for an element's transformations.
+      - center ・ top left ・ 50px 50px ・ bottom right 60px;   
+
+      - eg.: 
+
+          ```
+          transform-origin: top right 30px;
+          ```
+
+          ###### *CSS: selecting the __the first sections first h2__*
+          ```
+          section:first-of-type h2:nth-of-type(1) {
+            transform-origin: top right;
+            transform: rotate(45deg);  /* → 45 degrees rotation  */ 
+          }
+          ```
+        transforming the element from the `bottom right` by `rotate: 45deg`
+
+   <br>
+
+  - [**scale**](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale())  :    
+     The `scale()` function defines a **transformation that resizes an element on the 2D plane**. Because the amount of scaling is defined by a vector, it can resize the horizontal and vertical dimensions at different scales.
+
+     **So, it can change the size of an element.** We can grow it or shrink it.
+
+     - [scale values](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale()#values) are coordinates:  
+        - **sx and sy**, where *sx* number represents the abscissa of the scaling vector, and *sy* number represents the ordinate of the scaling vector.
+          `scale(sx, sy)` or `scale(sx)`
+
+      <br>
+
+     - different [variants of scaling](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function#scaling_resizing):
+          - [`scale()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale()): *scales an element up or down on the 2D plane.*
+
+          - [`scale3d()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale3d()): *scales an element up or down in 3D space.  
+
+            - [`scaleX()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scaleX()) & [`scaleY(https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scaleY())`]() & [`scaleZ()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scaleZ()):   
+
+              - `scaleX()` scales an element up or down horizontally.
+
+              - `scale(y)` scales an element up or down vertically.
+
+              -  `scaleZ()` scales an element up or down along the z-axis.
+
+        <br>
+
+        - eg.:
+          *"regular"* `scale()`
+          ###### *CSS: selecting the __the first section's second h2__*
+          ```
+          section:first-of-type h2:nth-of-type(2) {
+            transform: sacle(0.5);  /* → scales down half the size  */ 
+          }
+          ```
+          It scales down both on the X and Y axis, shrinking by a factor of half (half as large).
+
+          ###### *CSS: selecting the __the first section's second h2__, with two values*
+          ```
+          section:first-of-type h2:nth-of-type(2) {
+            transform: sacle(2, 1);  /* → scales the width double, height stays the same(1)  */ 
+          }
+          ```
+          The height of the element stays the same, but the width is scaled by 2.
+
+          ###### *CSS: selecting the __the first section's second h2__, double the height*
+          ```
+          section:first-of-type h2:nth-of-type(2) {
+            transform: sacleY(2);  /* → double the height = scale (1, 2)  */ 
+          }
+          ```
+          Double the height of the element. You can do it with `scaleY()` or with `scale(1, 2)`.
+
+          <br>
+
+  - [**translate or translation (= moving)**](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate()) :     
+    the `translate()` function can take one element and move it around so we can move it to the right, move it up, move it down or do both at the same time.
+
+      - different [variants of translate](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function#translation_moving:)
+        - [`translate()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate()) : translates an element on the 2D plane.
+        - ]`translate3d()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d()) : translates an element in 3D space.
+        - [`translateX()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateX) & [`translateY()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateY()) & [`translateZ()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateZ()): 
+        `translateX()` translates an element horizontally.
+        `translateY()` translates an element vertically.
+        `translateZ()` translates an element along the z-axis.
+
+    - eg.:   
+      to move something horizontally: use `translateX()`. Values, are **length** or **%**.  *([Length can be any unit](https://developer.mozilla.org/en-US/docs/Web/CSS/length#units))*
+
+      ###### *CSS: selecting the __the first section'third h2__*
+      ```
+      section:h2:nth-of-type(3) {
+        transform: translateX(200px);  /* → moved to the right 200px  */ 
+        transform: translateX(-200px);  /* → moved to the left 200px  */ 
+      }
+      ```
+      <br>
+
+      the *"regular"* `translate()` takes two values, an **X** and a **Y**
+            ###### *CSS: selecting the __the first section'third h2__*
+      ```
+      section:h2:nth-of-type(3) {
+        transform: translateX(-200px, 100px );  /* → moved to the left 200px, 100px down  */ 
+      }
+      ```
+      Move the element left with 200px and down with 100px.
+
+  <br>
+
+ - [**skew** (= distortion)](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew()) :     
+    the `skew()` function defines a transformation that **skews an element on the 2D plane**.
+
+    - different [variants of skew](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function#skewing_distortion) :   
+      - [`skew()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew()) : skews an element on the 2D plane.
+      - [`skewX()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skewX()) &  [`skewY()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skewY()):   
+      `skewX()` skews an element in the horizontal direction.
+      `skewY()` skews an element in the vertical direction.
+
+    - [skew values](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew()#values):
+      - [`<angle>`](https://developer.mozilla.org/en-US/docs/Web/CSS/angle)  : `deg`, `rad`, `grad`, `turn`
+
+
+  - eg.:
+   *"regular"* `skew()`:     
+
+      I have a bunch of title elements (`<h2>`) and two section. Here I select the second `<section>`.
+      ###### *CSS: selecting the __the second section's first h2__*
+      ```
+      section:h2:nth-of-type(2) h2:nth-of-type(1) {
+        transform: skew();  30deg/* → skewing 30deg 'kinda like a left italic look'  */ 
+      }
+      ```
+      <br>
+
+      We can pass on two values as well, for the **X** and **Y**.
+      ###### *CSS: selecting the __the second section's second h2__*
+      ```
+      section:h2:nth-of-type(2) h2:nth-of-type(2) {
+        transform: skew(10deg, 30deg);  /* → skewX 10deg, skewY 30deg */
+      }
+      ```
     
+    <br>
+    <br>
+
+-  We can **combine** all these **transform functions** :
+      so eg.  we can rotate and scale, skew, translate (move) etc. at the same time.
+
+      - eg.:
+      ###### *CSS: selecting the __the second section's third h2__*
+      ```
+      section:h2:nth-of-type(2) h2:nth-of-type(3) {
+        transform: rotate(85deg) scale(1.5);  /*  → rotate 85deg scale up 1.5 */
+      } 
+      ```
+      <br>
+
+      ###### *CSS: selecting the __the second section's fourth h2__*
+      ```
+      section:h2:nth-of-type(2) h2:nth-of-type(4) {
+        transform: transalteX(-150px) rotate(0.5turn) scaleY(1.5);  /*  → moved to the left 150px, tirn upside-down, scaled up 1.5 */
+      } 
+      ```
+      <br>
+
+      scale the whole section down:
+      ###### *CSS: selecting the __the third section*
+      ```
+      section:h2:nth-of-type(3)  {
+        transform: scale(0.5);  /*  → scaled downt the whola section 0.5 */
+      } 
+      ```
+      Every element of the `<section>` is affected, they scaled down.
+
+      <br>
+
+      💡 Important: about transform *(as well)* that everything you do is going to apply to not only the parent element, but also its **contents**.
+
+      Use and reference to the **MDN** docs.
 ---
 
    [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
