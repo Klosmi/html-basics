@@ -585,7 +585,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
       `skewY()` skews an element in the vertical direction.
 
     - [skew values](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew()#values):
-      - [`<angle>`](https://developer.mozilla.org/en-US/docs/Web/CSS/angle) [or see above](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#transition)👆  : `deg`, `rad`, `grad`, `turn`
+      - [`<angle>`](https://developer.mozilla.org/en-US/docs/Web/CSS/angle) [or see above 👆](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#transition)  : `deg`, `rad`, `grad`, `turn`
 
 
   - eg.:
