@@ -339,11 +339,11 @@ these are a few CSS properties which are nice to know, but not crucial for the b
     ```
     specify `1s` `delay` `for background-color`, and `2s` for `border-radius`. We can see the background-color finishes before the border radius finishes.
 
-- **timing-function**: the whole [syntax of timing-functions](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function#syntax) !
-  - linear; → *never speeds up or slow down*
-  - eas-in; → *start slow, speeds up* ・ ease-out; ・ ease-in-out;
-  - steps (6, end); → *6 steps*
-  - cubic-bezier(.29, 1.01 1, -0.68); → *goes forward and backwards*
+- **timing-function**: on the link are all the [syntax of timing-functions](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function#syntax) !
+  - `linear;` → *never speeds up or slow down*
+  - `eas-in;` → *start slow, speeds up* ・ ease-out; ・ ease-in-out;
+  - `steps` `(6, end);` → *6 steps*
+  - `cubic-bezier``(.29, 1.01 1, -0.68);` → *goes forward and backwards*
 
   - how it works:   
     there are four things what we can specify:  
