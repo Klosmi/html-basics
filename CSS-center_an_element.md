@@ -1,4 +1,4 @@
-# A very basic code on how to center an element on the page.
+# A very basic code on how to center an element on a page 🤓
 
 ###### In HTML we have a `<button>`
   ```
