@@ -398,7 +398,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
     💡 for different [timing-function or easings](https://easings.net/)❗️
 
 
-    💡 Advice: it is better to **single out those properties which you want to make the transition**❗️ *(So, don't just do `transition all` because when you will makesome changes to your code later, makes your work harder.)*
+    💡 Advice: it is better to **single out those properties which you want to make the transition**❗️ *(So, don't just do `transition all` because when you will make some changes in your code later, it will make your work harder.)*
     
 ---
 
