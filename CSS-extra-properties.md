@@ -245,7 +245,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
       width: 300px;
       height: 300px;
       background-color: green;
-      transition: 3s;     /* duration is 3 seconds */
+      transition: 3s;     /* → duration is 3 seconds */
     }
 
     .circle:hover {
