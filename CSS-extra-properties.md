@@ -373,21 +373,21 @@ these are a few CSS properties which are nice to know, but not crucial for the b
           transition: margin-left 2s;
         } 
 
-      section:hover div {     /*  → on hover all the "<div> squares" activated */
-          margin-left:500px;  /* → on hover the "<div> squares" go till 500px*/
+      section:hover div {                       /*  → on hover all the "<div> squares" activated */
+          margin-left:500px;                    /* → on hover the "<div> squares" go till 500px*/
         }
 
       div:nth-of-type(1){
           transition-timing-function: ease-in;
-        }     /* → starts up a bit slow */
+        }                                       /* → starts up a bit slow */
 
       div:nth-of-type(2){
           transition-timing-function: ease-out;
-        }     /* → starts up quickly then slows down */
+        }                                      /* → starts up quickly then slows down */
 
       div:nth-of-type(3){
           transition-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
-        }     /* → starts very slow */
+        }                                      /* → starts very slow */
 
       div:nth-of-type(4){
           transition-timing-function:  cubic-bezier(0.85, 0, 0.15, 1);
