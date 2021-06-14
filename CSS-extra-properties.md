@@ -348,8 +348,10 @@ these are a few CSS properties which are nice to know, but not crucial for the b
   - `eas-in;` → *start slow, speeds up* ・ ease-out; ・ ease-in-out;
   - `steps` `(6, end);` → *6 steps*
   - `cubic-bezier``(.29, 1.01 1, -0.68);` → *goes forward and backwards*
-
-  - how it works:   
+    
+    <br>
+    
+  - **the way it works:**   
     there are four things what we can specify:  
       - property that we want to animate,     
       - duration that can be in seconds, milliseconds (500ms),
