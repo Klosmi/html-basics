@@ -353,10 +353,10 @@ these are a few CSS properties which are nice to know, but not crucial for the b
     
   - **the way it works:**   
     there are four things what we can specify:  
-      - property that we want to animate,     
-      - duration that can be in seconds, milliseconds (500ms),
-      - timing-function, like ease-in.
-      - delay (the default is no delay)
+      - `property` that we want to animate,     
+      - `duration` that can be in seconds, milliseconds (500ms),
+      - `timing-function`, like ease-in.
+      - `delay` (the default is no delay)
       eg.: 
         ```
         transition: background-color 1s ease-in, border-radius 500ms;
