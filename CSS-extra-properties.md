@@ -1,6 +1,11 @@
 # [(Other) Useful CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) :    
 these are a few CSS properties which are nice to know, but not crucial for the basic knowledge.
 
+[Alpha Channel + Opacity](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#alpha-channel--opacity)   
+[Position](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#position)   
+[Transition](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#transition)   
+[Transform](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#transform)   
+
 ## [Alpha Channel](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity) + [Opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
   
   <br>
