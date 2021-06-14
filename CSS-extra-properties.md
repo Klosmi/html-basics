@@ -402,10 +402,11 @@ these are a few CSS properties which are nice to know, but not crucial for the b
     <br>
     <br>
 
-## [Transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform) 
+## [Transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform).   
   The transform CSS property lets you **rotate, scale, skew, or translate an element**.
 
-  [`<transform-function>`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function)  : the `<transform-function>` CSS data type represents a **transformation that affects an element's appearance**. Transformation **functions can rotate, resize, distort, or move an element in 2D or 3D space**. It is used in the **transform property.**
+  [`<transform-function>`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function)  :    
+  the `<transform-function>` CSS data type represents a **transformation that affects an element's appearance**. Transformation **functions can rotate, resize, distort, or move an element in 2D or 3D space**. It is used in the **transform property.**
 
   - [**rotate**](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate()) :    
     the rotate function rotates an element around a fixed point on the 2D plane (without deforming it).
