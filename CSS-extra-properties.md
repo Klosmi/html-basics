@@ -595,7 +595,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
       ###### *CSS: selecting the __the second section's first h2__*
       ```
       section:h2:nth-of-type(2) h2:nth-of-type(1) {
-        transform: skew();  30deg/* → skewing 30deg 'kinda like a left italic look'  */ 
+        transform: skew(30deg);  /* → skewing 30deg 'kinda like a left italic look'  */ 
       }
       ```
       <br>
