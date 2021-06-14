@@ -564,8 +564,8 @@ these are a few CSS properties which are nice to know, but not crucial for the b
       ```
       <br>
 
-      the *"regular"* `translate()` takes two values, an **X** and a **Y**
-            ###### *CSS: selecting the __the first section'third h2__*
+      the *"regular"* `translate()` takes two values, an **X** and a **Y**   
+      ###### *CSS: selecting the __the first section'third h2__*
       ```
       section:h2:nth-of-type(3) {
         transform: translateX(-200px, 100px );  /* → moved to the left 200px, 100px down  */ 
