@@ -233,7 +233,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 
   4. [delay](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay) → specifies the duration to **wait before starting** a property's transition effect **when its value changes**.  
 
-- duration:
+- **duration:**
   - eg.:
     ###### *HTML*
     ```
