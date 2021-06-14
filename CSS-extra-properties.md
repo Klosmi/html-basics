@@ -232,7 +232,9 @@ these are a few CSS properties which are nice to know, but not crucial for the b
   3. [timing function](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function) → sets how **intermediate values are calculated** for CSS properties being affected by a transition effect.
 
   4. [delay](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay) → specifies the duration to **wait before starting** a property's transition effect **when its value changes**.  
-
+    
+    <br>
+    
 - **duration:**
   - eg.:
     ###### *HTML*
@@ -338,7 +340,9 @@ these are a few CSS properties which are nice to know, but not crucial for the b
     }
     ```
     specify `1s` `delay` `for background-color`, and `2s` for `border-radius`. We can see the background-color finishes before the border radius finishes.
-
+    
+    <br>
+    
 - **timing-function**: on the link are all the [syntax of timing-functions](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function#syntax) !
   - `linear;` → *never speeds up or slow down*
   - `eas-in;` → *start slow, speeds up* ・ ease-out; ・ ease-in-out;
