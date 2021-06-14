@@ -546,7 +546,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 
       - different [variants of translate](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function#translation_moving:)
         - [`translate()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate()) : translates an element on the 2D plane.
-        - ]`translate3d()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d()) : translates an element in 3D space.
+        - [`translate3d()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d()) : translates an element in 3D space.
         - [`translateX()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateX) & [`translateY()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateY()) & [`translateZ()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateZ()): 
         `translateX()` translates an element horizontally.
         `translateY()` translates an element vertically.
