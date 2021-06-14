@@ -253,6 +253,13 @@ In the Chrome Devtool this is the *🟠orange color* (when inspecting an element
 
 <br>
 
+- 💡 With a block level element *(like an H1)*, if I set the `left` & `right` `margin` to be `auto`, that element is going to be **centered in its container**.
+ *(it will will be automatically distributed to the left and the right, no matter what the space is in the container).* 
+    - eg.:
+      ```
+      margin: 10px auto;      /* → 10px top & bottom + auto left & right. => center */
+      ```
+
 - border-box **do NOT include margin** ❗️
  
 - **the top and bottom margins have no effect on** non-replaced inline elements, such as **`<span>`** or **`<code>`**.
