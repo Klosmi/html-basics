@@ -218,7 +218,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 -  **`transition` is a shorthand property** for :   
   &nbsp; &nbsp;[`transition-property`](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property) (none, all, etc.),    
   &nbsp; &nbsp;[`transition-duration`](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration) (3s),    
-  &nbsp;[`transition-timing-function`](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function) (eas-in, eas-out, etc.),    
+  &nbsp; &nbsp;[`transition-timing-function`](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function) (eas-in, eas-out, etc.),    
   &nbsp; &nbsp;[`transition-delay`](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay) (1s, 250ms).
 
 
@@ -263,7 +263,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
     ```
     <div class="circle"></div>
     ```
-    ###### *CSS: only the backgroun-color changes with a hover transition **duration***
+    ###### *CSS: only the background-color changes with a hover transition __duration__*
     ```
     .circle {
       width: 300px;
@@ -283,7 +283,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 
 - **all properties**: 
   - eg.:  
-    ###### *CSS: all properties change with a hover transition **duration***
+    ###### *CSS: all properties change with a hover transition __duration__*
     ```
     .circle {
       width: 300px;
@@ -303,7 +303,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 
 - **delay** : 
   - eg.: 
-    ###### *CSS: specify 1s delay
+    ###### *CSS: specify 1s delay*
     ```
     .circle {
       width: 300px;
@@ -323,7 +323,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 
 - **specify different transitions at once:**
   - eg.: 
-    ###### *CSS: specify 1s delay `for background-color`, and 2s for `border-radius`
+    ###### *CSS: specify 1s delay `for background-color`, and 2s for `border-radius`*
     ```
     .circle {
       width: 300px;
@@ -357,7 +357,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
         ```
 
    - eg.: 
-      ###### *CSS: we have four `<div>` squares, each of them has a **separate**, different `timing-function` transition.
+      ###### *CSS: we have four `<div>` squares, each of them has a **separate**, different `timing-function` transition.*
       ```
       section div {
           height: 100px;
