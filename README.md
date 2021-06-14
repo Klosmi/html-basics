@@ -13,7 +13,7 @@
 11. [CSS Box Model: display property](https://github.com/Klosmi/html-basics/blob/master/CSS-BoxModel-Display.md)
 12. [CSS some useful properties - extra](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md)
 13. [CSS-BoxModel-Units - `em` & `rem`](https://github.com/Klosmi/html-basics/blob/master/CSS-BoxModel-Units.md)
-14. [CSS - a simple trick: how to comepletely center an element in the page]()
+14. [CSS - a simple trick: how to comepletely center an element in the page](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md)
 
 
 ##### *These are my personal notes*
