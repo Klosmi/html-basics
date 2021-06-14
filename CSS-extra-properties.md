@@ -204,11 +204,10 @@ these are a few CSS properties which are nice to know, but not crucial for the b
     In other words, the container is the scope of the sticky item, and the item can’t get out of its sticky container. So **it only sticks within its container**(here the  `<section class="sticky">`).   
 
     The above example (the sticky portperty) only works if we use classes!   
-    
+
     (This [video](https://www.youtube.com/watch?v=9xygOHSuzQ8) explaines it quite well.)
 
 💡 Note, that normally the 'second' id's should actually be **classes**. **You should only have one unique id per page.** If it needs to replicate, then a class is the correct choice!
-
 
 <br>
 <br>
@@ -216,10 +215,185 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 ## [Transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) 
   Transitions enable you to define the transition between two states of an element. 
 
-   `transition` is a shorthand property for `transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`.
+-  **`transition` is a shorthand property** for :   
+  &nbsp; &nbsp;[`transition-property`](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property) (none, all, etc.),    
+  &nbsp; &nbsp;[`transition-duration`](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration) (3s),    
+ s &nbsp;[`transition-timing-function`](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function) (eas-in, eas-out, etc.),    
+  &nbsp; &nbsp;[`transition-delay`](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay) (1s, 250ms).
 
-     
 
+<br>
+
+- **Syntax of `transition` property:**   
+  1. [property name](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property) → specify a specific property name, so **which `transition` effect** to use.  
+
+  2. [duration](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration) → sets the **length of time a transition animation** should take to complete. So how long it takes.
+
+  3. [timing function](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function) → sets how **intermediate values are calculated** for CSS properties being affected by a transition effect.
+
+  4. [delay](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay) → specifies the duration to **wait before starting** a property's transition effect **when its value changes**.  
+
+- duration:
+  - eg.:
+    ###### *HTML*
+    ```
+    <div class="circle"></div>
+    ```
+    ###### *CSS: a hover transition **duration***
+    ```
+    .circle {
+      width: 300px;
+      height: 300px;
+      background-color: green;
+      transition: 3s;
+    }
+
+    .circle:hover {
+        background-color: blue;
+        border-radius: 50%;
+    }
+    ```
+    When you hover, the background color and shape changes in 3s as they would all be animated.
+
+    <br>
+
+- **singling out property names**:
+  -  eg.:  singling the `background-color` transition
+    ###### *HTML*
+    ```
+    <div class="circle"></div>
+    ```
+    ###### *CSS: only the backgroun-color changes with a hover transition **duration***
+    ```
+    .circle {
+      width: 300px;
+      height: 300px;
+      background-color: green;
+      transition: background-color 3s;  /* → single-out background-color */
+    }
+
+    .circle:hover {
+        background-color: blue;
+        border-radius: 50%;
+    }
+    ```
+    By singling-out the `background-color`, it will changes with a 3s animation **ONLY** the `background-color`, the rest doesn't use the 3s animation.
+
+    <br>
+
+- **all properties**: 
+  - eg.:  
+    ###### *CSS: all properties change with a hover transition **duration***
+    ```
+    .circle {
+      width: 300px;
+      height: 300px;
+      background-color: green;
+      transition: all 3s;  /* → all properties */
+    }
+
+    .circle:hover {
+        background-color: blue;
+        border-radius: 50%;
+    }
+    ```
+    All the properties changes with 3s animation.
+    
+    <br>
+
+- **delay** : 
+  - eg.: 
+    ###### *CSS: specify 1s delay
+    ```
+    .circle {
+      width: 300px;
+      height: 300px;
+      background-color: green;
+      transition: all 3s 1s;  /* → 1s delay */
+    }
+
+    .circle:hover {
+        background-color: blue;
+        border-radius: 50%;
+    }
+    ```
+    All the properties change with 3s duration and 1s delay animation. So when we hover over, it's going to take `1s` **before that transition even begins**. It goes both direction.
+    
+    <br>
+
+- **specify different transitions at once:**
+  - eg.: 
+    ###### *CSS: specify 1s delay `for background-color`, and 2s for `border-radius`
+    ```
+    .circle {
+      width: 300px;
+      height: 300px;
+      background-color: green;
+      transition: background-color 1s, border-radius 2s;  /* → 1s background-color, 2s border-radius delay */
+    }
+
+    .circle:hover {
+        background-color: blue;
+        border-radius: 50%;
+    }
+    ```
+    specify 1s delay `for background-color`, and 2s for `border-radius`. We can see the background-color finishes before the border radius finishes.
+
+- **timing-function**: the whole [syntax of timing-functions](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function#syntax) !
+  - linear; → *never speeds up or slow down*
+  - eas-in; → *start slow, speeds up* ・ ease-out; ・ ease-in-out;
+  - steps (6, end); → *6 steps*
+  - cubic-bezier(.29, 1.01 1, -0.68); → *goes forward and backwards*
+
+  - how it works:   
+    there are four things what we can specify:  
+      - property that we want to animate,     
+      - duration that can be in seconds, milliseconds (500ms),
+      - timing-function, like ease-in.
+      - delay (the default is no delay)
+      eg.: 
+        ```
+        transition: background color 1s ease-in, border-radius 500ms;
+        ```
+
+   - eg.: 
+      ###### *CSS: we have four `<div>` squares, each of them has a **separate**, different `timing-function` transition.
+      ```
+      section div {
+          height: 100px;
+          width: 100px;
+          background-color: blue;
+          margin: 30px 0;
+          transition: margin-left 2s;
+        } 
+
+      section:hover div {     /*  → on hover all the "<div> squares" activated */
+          margin-left:500px;  /* → on hover the "<div> squares" go till 500px*/
+        }
+
+      div:nth-of-type(1){
+          transition-timing-function: ease-in;
+        }     /* → starts up a bit slow */
+
+      div:nth-of-type(2){
+          transition-timing-function: ease-out;
+        }     /* → starts up quickly then slows down */
+
+      div:nth-of-type(3){
+          transition-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
+        }     /* → starts very slow */
+
+      div:nth-of-type(4){
+          transition-timing-function:  cubic-bezier(0.85, 0, 0.15, 1);
+        } 
+      ```
+      All the four `<div>` squares get a `transition: margin-left 2s;`, **but** each one has a **separate** `timing-function` transition, and they get to the same spot at the end at the **exact same time**.
+
+    💡 for different [timing-function or easings](https://easings.net/)❗️
+
+
+    💡 Advice: it is better to **single out those properties which you want to make the transition**❗️ *(So, don't just do `transition all` because when you will makesome changes to your code later, makes your work harder.)*
+    
 ---
 
    [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
