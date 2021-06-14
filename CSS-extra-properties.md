@@ -402,7 +402,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
     <br>
     <br>
 
-## [Transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform).   
+## [Transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform) 
   The transform CSS property lets you **rotate, scale, skew, or translate an element**.
 
   [`<transform-function>`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function)  :    
