@@ -74,6 +74,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
     Thet text in the `#opacity` `<div>` and the `<button>` will be "transparent" too not just the background color. **The entire element within that `<div>` will be impacted by the `opacity`.**
 
 <br>
+[back top the beginning of the page 👆](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
 <br>
 
 ---
