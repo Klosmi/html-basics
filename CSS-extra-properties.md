@@ -4,8 +4,10 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 [Alpha Channel + Opacity](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#alpha-channel--opacity)   
 [Position](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#position)   
 [Transition](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#transition)   
-[Transform](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#transform)   
+[Transform](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#transform)  
+[Background]()
 
+---
 ## [Alpha Channel](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity) + [Opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
   
   <br>
@@ -74,6 +76,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 <br>
 <br>
 
+---
 ## [Position](https://developer.mozilla.org/en-US/docs/Web/CSS/position) 
   The position CSS property sets how an element is positioned in a document. The `top`, `right`, `bottom`, and `left` properties determine the final location of positioned elements.
 
@@ -217,6 +220,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 <br>
 <br>
 
+---
 ## [Transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) 
   Transitions enable you to define the transition between two states of an element. 
 
@@ -401,7 +405,8 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 
     <br>
     <br>
-
+    
+---
 ## [Transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform) 
   The transform CSS property lets you **rotate, scale, skew, or translate an element**.
 
@@ -646,6 +651,215 @@ these are a few CSS properties which are nice to know, but not crucial for the b
       💡 Important: about transform *(as well)* that everything you do is going to apply to not only the parent element, but also its **contents**.
 
       Use and reference to the **MDN** docs.
+      
+      <br>
+      <br>
+      
+---      
+## [Background](https://developer.mozilla.org/en-US/docs/Web/CSS/background) 
+The background (shorthand CSS) property sets all **background style properties at once**, such as **color**, **image**, **origin** and **size**, or **repeat method**.
+
+[More about the `background` property below 👇]()
+
+- [`background` values on this link](https://developer.mozilla.org/en-US/docs/Web/CSS/background#values)   
+Some of the most common values:
+  - [`background-image`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image) :   
+   This property sets **one or more** background images **on an element**.
+   - eg.:
+      ###### HTML: `<section>` and an `<h1>`
+      ```
+      <section>
+            <h1>i am heading</h1>
+        </section>
+      ```
+      ###### CSS: give a `background-image` to `<section>`
+      ```
+      section {
+          width: 80%;
+          background-image: url("https://images.unsplash.com/photo-1564442038901-4f9a19d3d456?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1227&q=80");
+          margin: 0 auto;         /* → center the element */
+      }
+      ```
+      Using `background-image: url("https://...")`
+
+    <br>
+
+- [`background-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size) :   
+  this property sets the size of the element's background image.    
+  The image can be left to its natural size, stretched, or constrained to fit the available space.
+  <br>
+
+  [`background-size` property's values](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size#values):
+   - **contain**
+    Scales the image as large as possible **without cropping or stretching**.  
+    - eg.:
+      ###### CSS: give a `background-image` → `contain`
+      ```
+      section {
+          width: 80%;
+          background-image: url("https://images.unsplash.com/....);
+          background-size: contain;     /* → contain */
+          margin: 0 auto;         /* → center the element */
+      }
+      ```
+      If the image doesn't fill the entore element, it **repeats** it. 
+  
+     <br>
+
+   - **cover**
+    Scales the image as large as possible to fill the container **without stretching** the image **but it will crop it**.
+    -  eg.:
+        ###### CSS: give a `background-image` → `cover`
+        ```
+        section {
+            width: 80%;
+            background-image: url("https://images.unsplash.com/....);
+            background-size: cover;     /* → cover */
+            margin: 0 auto;         /* → center the element */
+        }
+        ```
+        Cover tries to fill the container **without stretching**, so here it shrinks down the image, **depending on the element size**, to fill the element. It cuts off the parts which don't fit.
+      
+
+    - `cover` is the preferred option.
+
+        <br>
+
+   - **auto**
+    Scales the background image in the corresponding direction such that its intrinsic proportions are maintained.
+
+    <br>
+
+- [`background-repeat`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat) :   
+   this property sets how background images are repeated. A background image can be repeated along the horizontal and vertical axes, or not repeated at all.   
+
+   💡  **We can use it with the `background-size: contain;`**
+
+    <br>
+
+  - [`background-repeat` values on this link](https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat#values)
+      | Single value | Two-value equivalent |
+      |--------------|----------------------|
+      | repeat-x     | repeat no-repeat     |
+      | repeat-y     | no-repeat repeat     |
+      | repeat       | repeat repeat        |
+      | space        | space space          |
+      | round        | round round          |
+      | no-repeat    | no-repeat no-repeat  |
+    
+    <br>
+
+    Short explanation ([for full explanation visit the link](https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat#values)): 
+
+    **repeat**: The image is repeated as much as needed to cover the whole background image painting area. The last image will be clipped if it doesn't fit.    
+
+    **space**: The image is repeated as much as possible without clipping. The first and last images are pinned to either side of the element, and whitespace is distributed evenly between the images.   
+
+    **round**: As the allowed space increases in size, the repeated images will stretch (leaving no gaps) until there is room (space left >= half of the image width) for another one to be added.   
+          
+    **no-repeat**: The image is not repeated (and hence the background image painting area will not necessarily be entirely covered.                                                                 
+    <br>
+ - [`background-position`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position) :   
+  This property we can decide where that background can actually start.     
+  So it sets the initial position for each background image. 
+  
+
+    - [**`background-position`** values on this link](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position#values) :
+      <br>
+      Keyword values:   
+      `background-position: top;`  
+      `background-position: bottom;`  
+      `background-position: left;`  
+      `background-position: right;`  
+      `background-position: center;`  
+      `background-position: 25% 75%;`
+      
+      Multiple images:   
+      `background-position: 0 0, center;`
+
+      Global values:   
+      `background-position: inherit;`   
+      `background-position: initial;`   
+      `background-position: unset;`  
+
+   -  eg.:
+        ###### CSS: give a `background-image` → `position`
+        ```
+        section {
+            width: 80%;
+            background-image: url("https://images.unsplash.com/....);
+            background-size: cover;           /* → cover */
+            background-position: bottom;      /* → position: bottom */
+            margin: 0 auto;                   /* → center the element */
+        }
+        ```
+         **It starts from the bottom part of the image.** *(So the bottom of the background image is going upwards, → we can see it.)*
+
+  <br>
+
+ ###### **The `background` shorthand property:**
+  We can set the properties at once or combine them in one line.
+  <br>
+
+  💡 The order of the properties *generally* doesn't matter. **Except**: if you are using `background-size` (like: cover, etc.)❗️:   
+   > The <bg-size> value may only be included immediately after <position>, separated with the **'/'** character, like this: "center/80%".    
+   *(Take attention to the **/** slash character)*
+
+   - eg.:
+      ###### CSS: give a `background` shorthand property and a `background-size`property
+      ```
+      section {
+          width: 80%;
+          background: url("https://images.unsplash.com/....) center/cover;        /* → set the image + center +/+ cover  */
+          margin: 0 auto;       /* → center the element */
+      }
+      ```
+      We used the `background` shorthand property, and we can mix the order, however using the `background-size` property, it will only work if we use the **/** character *(eg.:`center/cover`)*.   
+      We can also put this `background-size` property before the `url`, it just only have to follow the `center/cover` order.
+  
+  <br>
+
+  - Using a `<background-color>`:   
+    **`background: green;`**
+
+  - Using a `<bg-image>` and `<repeat-style>`:   
+    **`background: url("test.jpg") repeat-y;`**
+
+  - Using a `<box>` and `<background-color>`:   
+    **`background: border-box red;`**
+
+  - A single image, `centered` and `scaled`:   
+    **`background: no-repeat center/80% url("../img/image.png");`**
+  
+  <br>
+
+-  eg.:
+    ###### CSS: give a `background` shorthand property
+    ```
+    section {
+        width: 80%;
+        background: url("https://images.unsplash.com/....) no-repeat; /* → set the image + no-repeat  */
+        margin: 0 auto;                   /* → center the element */
+    }
+    ```
+      We used the `background` shorthand property, and we can mix the order, if we put the `url` after the `no-repeat` it still works. *(Spacial case when using `background-size~ properties → see above.)*
+
+      <br>
+ - **Using miltiple backgrounds** :  
+    eg.:
+    ###### CSS: give a `background` shorthand property multiple background
+    ```
+    section {
+        width: 80%;
+        background: center / 40% no-repeat url("../../media/examples/firefox-logo.svg"),
+        #eee 40% url("../../media/examples/lizard.png");        /* → center + size 40% + no-repeat + url +,+  background-color + size 40% + set another image url */
+        margin: 0 auto;                   /* → center the element */
+    }
+    ```
+      We used the `background` shorthand property.   
+      We defined the position and `background-size` to `40%`.  
+      We defined a background-color (`#eee`), size `40%`.
+      We added added background-imge(s) with `url("image") , url("another_image")`.
 ---
 
    [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
