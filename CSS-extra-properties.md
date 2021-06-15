@@ -659,7 +659,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 ## [Background](https://developer.mozilla.org/en-US/docs/Web/CSS/background) 
 The background (shorthand CSS) property sets all **background style properties at once**, such as **color**, **image**, **origin** and **size**, or **repeat method**.
 
-[More about the `background` property below 👇]()
+[More about the `background` property below 👇](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#the-background-shorthand-property)
 
 - [`background` values on this link](https://developer.mozilla.org/en-US/docs/Web/CSS/background#values)   
 Some of the most common values:
@@ -806,7 +806,7 @@ Some of the most common values:
    *(Take attention to the **/** slash character)*
 
    - eg.:
-      ###### CSS: give a `background` shorthand property and a `background-size`property
+      #### CSS: give a `background` shorthand property and a `background-size`property
       ```
       section {
           width: 80%;
