@@ -12,8 +12,8 @@
 10. [CSS Box Model: content (box) ・ border ・ padding ・ margin](https://github.com/Klosmi/html-basics/blob/master/CSS-BoxModel.md)
 11. [CSS Box Model: display property](https://github.com/Klosmi/html-basics/blob/master/CSS-BoxModel-Display.md)
 12. [CSS Some useful properties - extra](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md)
-13. [CSS-BoxModel-Units - `em` & `rem`](https://github.com/Klosmi/html-basics/blob/master/CSS-BoxModel-Units.md)
-14. [CSS-Simple trick: how to center an element in the page](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md)
+13. [CSS BoxModel-Units - `em` & `rem`](https://github.com/Klosmi/html-basics/blob/master/CSS-BoxModel-Units.md)
+14. [CSS Simple trick: how to center an element in the page](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md)
 
 
 ##### *These are my personal notes*
