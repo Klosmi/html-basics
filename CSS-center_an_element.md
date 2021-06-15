@@ -3,7 +3,7 @@
 ###### In HTML we have a `<button>`
   ```
   <body>
-    <button>Hover Me</button>
+    <button>Hello</button>
   </body>
   ```
 ###### In CSS the centering
