@@ -798,7 +798,7 @@ Some of the most common values:
   <br>
 
  ###### **The `background` shorthand property:**
-  We can set the properties at once or combine them in one line.
+  We can set the properties at once and/or combine them in one line.
   <br>
 
   💡 The order of the properties *generally* doesn't matter. **Except**: if you are using `background-size` (like: cover, etc.)❗️:   
