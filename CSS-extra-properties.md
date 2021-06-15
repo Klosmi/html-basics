@@ -75,7 +75,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 
 <br>
 
-[👆back to the beginning of the page](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
+[👆back to the beginning of Useful CSS properties](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
 
 ---
 ## [Position](https://developer.mozilla.org/en-US/docs/Web/CSS/position) 
@@ -219,7 +219,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 💡 Note, that normally the 'second' id's should actually be **classes**. **You should only have one unique id per page.** If it needs to replicate, then a class is the correct choice!
 
 <br>
-[👆back to the beginning of the page](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
+[👆back to the beginning of Useful CSS properties](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
 
 ---
 ## [Transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) 
@@ -405,7 +405,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
     💡 Advice: it is better to **single out those properties which you want to make the transition**❗️ *(So, don't just do `transition all` because when you will makesome changes to your code later, makes your work harder.)*
 
     <br>
-[👆back to the beginning of the page](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
+[👆back to the beginning of Useful CSS properties](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
 
 ---
 ## [Transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform) 
@@ -650,11 +650,9 @@ these are a few CSS properties which are nice to know, but not crucial for the b
       <br>
 
       💡 Important: about transform *(as well)* that everything you do is going to apply to not only the parent element, but also its **contents**.
-
-      Use and reference to the **MDN** docs.
       
       <br>
-[👆back to the beginning of the page](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
+[👆back to the beginning of Useful CSS properties](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
 
 ---      
 ## [Background](https://developer.mozilla.org/en-US/docs/Web/CSS/background) 
@@ -862,8 +860,13 @@ Some of the most common values:
       We defined the position and `background-size` to `40%`.  
       We defined a background-color (`#eee`), size `40%`.
       We added added background-imge(s) with `url("image") , url("another_image")`.
+  
+  <br>
+  
+Use and reference to the **MDN** docs.
+  
 ---
-   [👆back to the beginning of the page](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
+   [👆back to the Useful CSS properties](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
     
  **OR**
   
