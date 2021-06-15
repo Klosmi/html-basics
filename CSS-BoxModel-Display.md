@@ -5,7 +5,7 @@ it sets whether an element is treated as a **block element** or an **inline elem
 > 
 > However a [__block level element__](https://github.com/Klosmi/html-basics/blob/master/inlene-vs-block.md) is pushing everyone else onto a separate line, it is something that it wants to exist on its own line, its own "block".
 
-- **Block** - [changing element levels](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements#changing_element_levels): *(`display: inline;`)*:   
+1. **Block** - [changing element levels](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements#changing_element_levels): *(`display: inline;`)*:   
     Block elements break the flow of a document.   
     Width, Height, Margin, & Padding  are respected.
     - all heading elements, like `h1` are inline
@@ -25,7 +25,7 @@ it sets whether an element is treated as a **block element** or an **inline elem
     - block level elements do <u>respect</u>: **width-height, padding, margin** properties 
     <br>
 
-- **Inline** - [changing element levels](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements#changing_element_levels): *(`display: block;`)*:   
+2. **Inline** - [changing element levels](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements#changing_element_levels): *(`display: block;`)*:   
     Width & Height are ignored.   
     Margin & padding push elements away horizontally but not vertically.  
     - `<span>`
@@ -44,7 +44,7 @@ it sets whether an element is treated as a **block element** or an **inline elem
 
 <br>
 
-- **Inline-Block** - *(`display: inline-block;`)*:   
+3. **Inline-Block** - *(`display: inline-block;`)*:   
     It is going to __behave like an inline element__, but __with height, margin and padding are going to be respected__, when we use. **`display: inline-block;`**.
      - eg.:   
      I  create 3 `<div>`s, and I want them to be horizontally next to each other, I can give a **`display: inline-block;`**.   
