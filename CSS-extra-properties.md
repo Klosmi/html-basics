@@ -799,7 +799,7 @@ Some of the most common values:
 
  ###### **The `background` shorthand property:**
   We can set the properties at once and/or combine them in one line.   
-  *([back to top 👆]*(https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#background)
+  *[back to top 👆](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#background)*
   <br>
 
   💡 The order of the properties *generally* doesn't matter. **Except**: if you are using `background-size` (like: cover, etc.)❗️:   
