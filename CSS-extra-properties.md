@@ -219,6 +219,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 💡 Note, that normally the 'second' id's should actually be **classes**. **You should only have one unique id per page.** If it needs to replicate, then a class is the correct choice!
 
 <br>
+
 [👆back to the beginning of Useful CSS properties](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
 
 ---
