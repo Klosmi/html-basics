@@ -187,7 +187,7 @@ For example, :hover can be used to change a button's color when the user's point
 &nbsp;
 
 - [**::first-letter**](https://developer.mozilla.org/en-US/docs/Web/CSS/::first-letter) : we can select the first letter of some selection.   
-*~ applies styles to the first letter of the first line of a block-level element, but only when not preceded by other content (such as images or inline tables).*
+~ applies styles to the first letter of the first line of a block-level element, but only when not preceded by other content (such as images or inline tables).
   - you can select the first letter of every paragraph, every span, etc.
 
    - eg.: select the first letter of **every** `h2`  and change it to red.     
