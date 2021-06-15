@@ -77,8 +77,6 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 
 [👆back to the beginning of the page](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
 
-<br>
-
 ---
 ## [Position](https://developer.mozilla.org/en-US/docs/Web/CSS/position) 
   The position CSS property sets how an element is positioned in a document. The `top`, `right`, `bottom`, and `left` properties determine the final location of positioned elements.
@@ -221,7 +219,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 💡 Note, that normally the 'second' id's should actually be **classes**. **You should only have one unique id per page.** If it needs to replicate, then a class is the correct choice!
 
 <br>
-<br>
+[👆back to the beginning of the page](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
 
 ---
 ## [Transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) 
@@ -407,8 +405,8 @@ these are a few CSS properties which are nice to know, but not crucial for the b
     💡 Advice: it is better to **single out those properties which you want to make the transition**❗️ *(So, don't just do `transition all` because when you will makesome changes to your code later, makes your work harder.)*
 
     <br>
-    <br>
-    
+[👆back to the beginning of the page](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
+
 ---
 ## [Transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform) 
   The transform CSS property lets you **rotate, scale, skew, or translate an element**.
@@ -656,8 +654,8 @@ these are a few CSS properties which are nice to know, but not crucial for the b
       Use and reference to the **MDN** docs.
       
       <br>
-      <br>
-      
+[👆back to the beginning of the page](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
+
 ---      
 ## [Background](https://developer.mozilla.org/en-US/docs/Web/CSS/background) 
 The background (shorthand CSS) property sets all **background style properties at once**, such as **color**, **image**, **origin** and **size**, or **repeat method**.
@@ -865,5 +863,8 @@ Some of the most common values:
       We defined a background-color (`#eee`), size `40%`.
       We added added background-imge(s) with `url("image") , url("another_image")`.
 ---
-
+   [👆back to the beginning of the page](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
+    
+ **OR**
+  
    [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
