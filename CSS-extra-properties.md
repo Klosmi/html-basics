@@ -6,6 +6,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 [Transition](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#transition)   
 [Transform](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#transform)  
 [Background](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#background)
+[Some extra(s)](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#some-extras)
 
 ---
 ## [Alpha Channel](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity) + [Opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
@@ -866,7 +867,7 @@ Some of the most common values:
   
 ---
 
-## Some extras:
+## Some extra(s):
 - [`calc`](https://developer.mozilla.org/en-US/docs/Web/CSS/calc()) :   
    The calc() CSS function lets you **perform calculations when specifying CSS property values**. It can be used anywhere a `<length>`, `<frequency>`, `<angle>`, `<time>`, `<percentage>`, `<number>`, or `<integer>` is allowed. 
 
