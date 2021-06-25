@@ -18,5 +18,5 @@
 
 ##### *These are my personal notes*
 ##### *Note that, some HTML elements, like `<button>`, `<input type="radio">`, etc. do not show in github's markdown previewer, however in vscode's markdown previewer you can see them and test them.* 
-##### *I don't guarantee that it's perfect.*
+##### *I don't guarantee that the explanations, code examples and the spelling(s) are perfect.*
 ##### *Several parts are gathered from different sites and courses, no intention to harm any copyrights. Web is open and (or at least should be) free after all.* ;)
