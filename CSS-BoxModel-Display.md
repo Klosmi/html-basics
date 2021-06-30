@@ -41,7 +41,7 @@ it sets whether an element is treated as a **block element** or an **inline elem
             }
             ```  
      - inline elements don't <u>respect</u>: **width-height, padding, margin** properties  
-
+     
 <br>
 
 3. **Inline-Block** - *(`display: inline-block;`)*:   
