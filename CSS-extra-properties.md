@@ -863,12 +863,33 @@ Some of the most common values:
       We added added background-imge(s) with `url("image") , url("another_image")`.
   
   <br>
-  
+
+ ---
+
+## Some extras:
+- [`calc`](https://developer.mozilla.org/en-US/docs/Web/CSS/calc()) :   
+   The calc() CSS function lets you **perform calculations when specifying CSS property values**. It can be used anywhere a `<length>`, `<frequency>`, `<angle>`, `<time>`, `<percentage>`, `<number>`, or `<integer>` is allowed. 
+
+   - eg.: we want to have `10%` margin on each left-and-right side of the - let say - 3 `img` elements *(3 x 2 = 6)*. 
+
+      ###### CSS
+      ```
+      img {
+        margin: calc(10%/6);
+      }
+      ```
+  <br>  
+  <br>
 Use and reference to the **MDN** docs.
-  
+s 
+    
 ---
    [👆back to the Useful CSS properties](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
     
  **OR**
   
    [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
+
+
+
+
