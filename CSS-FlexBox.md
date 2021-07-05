@@ -95,15 +95,50 @@ All other *flexbox* properties rely on the `display: flex` property.
 
       - eg.: We have some `div`s, with flexbox, lets say we arrange these `div`s vertically from top to bottom with even space between the `div` items and the container.
         ```
+          #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+          } 
+
+          #container div{
+            width: 50px;
+            height: 50px;
+          }
+        ```
+        <br>
+
+- **[flex-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)** :   
+  this property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.
+
+  So it determines whether the elements are going to wrap along the main axis onto a new line if it's horizontal or a new column if it's a vertical main axis.
+
+  - **`flex-wrap: nowrap;`** : 
+    doesn't wrap (the default)
+
+  - **`flex-wrap: wrap;`** : 
+    The flex items break into multiple lines.    
+    The cross-start is either equivalent to start or before depending flex-direction value and the cross-end is the opposite of the specified cross-start.
+    
+  - **`flex-wrap: wrap-reverse;`** :
+    Behaves the same as wrap but cross-start and cross-end are permuted, rearranged (if `wrap` goes top-to-bottom, `wrap-reverse` goes bottom-to-top).
+
+    - eg.:
+      We have let say 6 `div`s, with flexbox *(1, 2, 3, 4, 5, 6)*. The `div`s are top-to-bottom, but because the `container`'s height is only 500px, the 6 `div` height all squished down to fit in the  `container`.
+      But, using `felx-wrap: wrap;` the `div`s go to top-to-bottom in a new column, as many columns as necessary and they are not squished.
+      ![](flex-wrap.png)
+
+        ```
         #container {
+          hegiht: 500px;
           display: flex;
           flex-direction: column;
           justify-content: space-evenly;
+          flex-wrap: wrap;
         } 
 
         #container div{
-          width: 50px;
-          height: 50px;
+          width: 300px;
+          height: 300px;
         }
-      ```
-  
+        ``` 
