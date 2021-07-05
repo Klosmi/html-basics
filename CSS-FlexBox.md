@@ -20,15 +20,15 @@
 
 <br>
 
-**Flexbox properties:**
-- **`display: flex;`** :    
+**Flexbox properties:**   
+1. **`display: flex;`** :    
 it defines a flex container.   
 The container can be inline or block depending on the given value. It enables a flex context for all its direct children.  
 All other *flexbox* properties rely on the `display: flex` property.
 
 <br>
 
-- [flex-direction](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction) :   
+2. [flex-direction](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction) :   
   *(the main axis is defined by this property)*   
   this CSS property sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).    
   - 4 directions: **row ・ row-reverse ・ column ・ column-reverse**
@@ -56,7 +56,7 @@ All other *flexbox* properties rely on the `display: flex` property.
   
   <br>
   
- - [justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content) :  
+ 3. [justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content) :  
     this poperty determines how the actual elements (the content) is distributed across the main axis.
 
     (So, it defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.) 
