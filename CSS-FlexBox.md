@@ -126,7 +126,6 @@ All other *flexbox* properties rely on the `display: flex` property.
     - eg.:
       We have let say 6 `div`s, with flexbox *(1, 2, 3, 4, 5, 6)*. The `div`s are top-to-bottom, but because the `container`'s height is only 500px, the 6 `div`s' heights are all squished down to fit in the `container`.
       But, using `felx-wrap: wrap;` the `div`s go to top-to-bottom in a new column, as many columns are necessary and they are not squished.
-      ![](flex-wrap.png)
 
         ```
         #container {
@@ -142,3 +141,4 @@ All other *flexbox* properties rely on the `display: flex` property.
           height: 300px;
         }
         ``` 
+      ![](flex-wrap.png)
