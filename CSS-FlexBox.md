@@ -10,9 +10,12 @@
 
 [Axes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox#the_two_axes_of_flexbox) :     
  there are 2 axes:  the **main axis** and the **cross axis**.   
+ 
     - **main axis:**  defined by the **flex-direction property** 👉 (see below).     
-      By default it goes from left to right.  
-    - **cross axis:** runs perpendicular to the main axis.    
+      By default it goes from left to right. 
+      
+    - **cross axis:** runs perpendicular to the main axis. 
+    
     - Everything we do with flexbox refers back to the *main and cross axes*.
 
 <br>
