@@ -35,11 +35,11 @@ All other *flexbox* properties rely on the `display: flex` property.
 
   - the default is : `flex-direction: row;` **left-to-right** horizontally!
 
-  - flex-direction: row-reverse;` **right-to-left** horizontally!
+  - `flex-direction: row-reverse;` **right-to-left** horizontally!
 
-  - flex-direction: column;` **top-to-bottom** vertically!
+  - `flex-direction: column;` **top-to-bottom** vertically!
 
-  - flex-direction: column-reverse;` **bottom-to-top** vertically!
+  - `flex-direction: column-reverse;` **bottom-to-top** vertically!
 
     - eg.: We have some `div`s, with flexbox we arrange these `div`s horizontally from top to bottom.
       ```
