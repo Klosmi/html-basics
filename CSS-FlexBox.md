@@ -57,7 +57,7 @@ All other *flexbox* properties rely on the `display: flex` property.
   <br>
   
  3. [justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content) :  
-    this poperty determines how the actual elements (the content) is distributed across the main axis.
+    this poperty determines how the actual elements (the content) is **distributed across the main axis**.
 
     (So, it defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.) 
 
