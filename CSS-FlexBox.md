@@ -6,6 +6,7 @@
 - Flexbox allows us to distribute space dynamically across elements of an unknown size, hence the term *flex*.
 
 <br>
+
 **Basic termonilogy:** 
 
 - [Axes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox#the_two_axes_of_flexbox) :  
