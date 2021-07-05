@@ -29,6 +29,7 @@ All other *flexbox* properties rely on the `display: flex` property.
 <br>
 
 - [flex-direction](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction) :   
+  *(the main axis is defined by this property)*   
   this CSS property sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).    
   - 4 directions: **row ・ row-reverse ・ column ・ column-reverse**
 
