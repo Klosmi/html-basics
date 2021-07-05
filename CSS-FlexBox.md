@@ -33,7 +33,7 @@ All other *flexbox* properties rely on the `display: flex` property.
   this CSS property sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).    
   - 4 directions: **row ・ row-reverse ・ column ・ column-reverse**
 
-  - the default is : `flex-direction: row;` **left-to-right** horizontally!
+  -  `flex-direction: row;` **left-to-right** horizontally! (this is by default)
 
   - `flex-direction: row-reverse;` **right-to-left** horizontally!
 
