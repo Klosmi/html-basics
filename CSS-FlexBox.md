@@ -121,7 +121,8 @@ All other *flexbox* properties rely on the `display: flex` property.
     The cross-start is either equivalent to start or before depending flex-direction value and the cross-end is the opposite of the specified cross-start.
     
   - **`flex-wrap: wrap-reverse;`** :
-    Behaves the same as wrap but cross-start and cross-end are permuted, rearranged (if `wrap` goes top-to-bottom, `wrap-reverse` goes bottom-to-top).
+    Behaves the same as wrap but cross-start and cross-end are permuted, rearranged (if `wrap` goes top-to-bottom, `wrap-reverse` goes bottom-to-top).    
+    **So this is how we can change the direction of the cross-axis❗️**
 
     - eg.:
       We have let say 6 `div`s, with flexbox *(1, 2, 3, 4, 5, 6)*. The `div`s are top-to-bottom, but because the `container`'s height is only 500px, the 6 `div`s' heights are all squished down to fit in the `container`.
@@ -141,4 +142,118 @@ All other *flexbox* properties rely on the `display: flex` property.
           height: 300px;
         }
         ``` 
-      ![](flex-wrap.png)
+        ![](flex-wrap.png)
+
+<br>
+
+5. **[align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)** :   
+it distributes the items along the cross axis.   
+So it controls the alignment of items on the **Cross Axis**.
+
+- [values](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items#values) :   
+   - `align-items: flex-start;`    
+      Align items along the beginning of the cross axis.   
+      *(That is the default)*
+  
+      If main axis (in a row) goes from left to right and the default cross is top-to-bottom. The items are **aligned to the top vertically** *(in the case of main axis is set to row)*.
+
+      <br>
+
+   - `align-items: flex-end;`    
+      Align items to the bottom of my container.
+  
+      If main axis (in a row) goes from left to right and the default cross is top-to-bottom. The items are **aligned to the bottom vertically** *(in the case of main axis is set to row)*.
+
+      - eg.:
+        We have let say 6 `div`s, with flexbox *(1, 2, 3, 4, 5, 6)*. The main axis is in a row and goes from left to right (here set to center).
+        Using `falign-items: flex-end;` the 6 `div`s align to the bottom vertically.
+
+          ```
+          #container {
+            hegiht: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+          } 
+
+          #container div{
+            width: 300px;
+            height: 300px;
+          }
+          ``` 
+   - `align-items: center;`    
+      Align items to the center of my container.
+  
+      If main axis (in a row) goes from left to right and the default cross is top-to-bottom. The items are **aligned to the center vertically** *(in the case of main axis is set to row)*.
+
+      - eg.:
+          To set items center horizontally and vertically (even if the items' height is different).
+
+          ```
+            #container {
+              hegiht: 500px;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+            } 
+
+            #container div{
+              width: 300px;
+              height: 300px;
+            }
+          ``` 
+    <br>
+
+   - `align-items: baseline;`    
+      Align items to the the baseline of the letters.   
+      Think of a line through the bottom of each letter, so that is where they're aligned on.
+  
+      All flex items are aligned such that their flex container baselines align. 
+
+      - eg.:
+          To set items to the baseline of the container.
+
+          ```
+            #container {
+              hegiht: 500px;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: baseline;
+            } 
+
+            #container div{
+              width: 300px;
+              height: 300px;
+            }
+          ``` 
+          ![](align-itmes.png) *from [css tricks](https://css-tricks.com/almanac/properties/a/align-items/)*
+           
+  - a complicated example to understand axis:
+
+    - eg.:   
+      The main axis: top-to-bottom (*column)*,   
+      The cross axis: left-to-right,    
+      The `wrap` is on.    
+      The align-items: set to center *(on the cross-axis)*. 
+
+      ```
+        #container {
+          hegiht: 500px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+        } 
+
+        #container div{
+          width: 300px;
+          height: 300px;
+        }
+      ``` 
+      The result looks like that:
+         ![](main-cross-align-itmes.png)
+      
