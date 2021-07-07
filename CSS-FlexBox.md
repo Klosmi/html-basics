@@ -254,6 +254,5 @@ So it controls the alignment of items on the **Cross Axis**.
           height: 300px;
         }
       ``` 
-      The result looks like that:
          ![](main-cross-align-itmes.png)
       
