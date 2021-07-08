@@ -498,27 +498,27 @@ defines the initial size of an element before additional space is distributed *(
   `flex-bases` used with **rows** layout:
    without `flex-bases`
 
-   <br>
 
    ![](flexbases-row01.png)
     
+  <br>
+
     with `flex-bases`
-   <br>
    
    ![](flexbases-row02.png)
 
    <br>
+      <br>
 
    `flex-bases` used with **columns** layout:
    
    without `flex-bases`
-   <br>
    
    ![](flexbases-column01.png)
-   
+  
+  <br>
+
    with `flex-bases`
-   
-   <br>
 
    ![](flexbases-column02.png)
 
@@ -552,16 +552,16 @@ defines the initial size of an element before additional space is distributed *(
    `flex-grow` used with **rows** layout:
     without `flex-grow`
    
-   <br>
-   
    ![](flexbases-row01.png)
    
+   <br>
+
    with `flex-grow`
    
-   <br>
    
    ![](flexgrow-row02.png)
 
+   <br>
 
   - eg.:   
     the first `div` gets `flex-grow: 1`, the last `div` gets `flex-grow: 2`. This is proportional, meaning the last `div` grow twice as big as the first `div`.
@@ -627,7 +627,7 @@ So it governs the rate that elements shrink **when there is not enough space in 
         flex-shrink: 2;
     }
     ```
-    <br>
+  <br>
     
     💡 Note: if you give `flex-shrink: 0;` it will not shrink at all, it keeps the given width *(this case 400px as because of the `flex-base`)*.
 
@@ -635,12 +635,12 @@ So it governs the rate that elements shrink **when there is not enough space in 
   <br>
 
    without `flex-shrink`
-   <br>
+
    
    ![](flexshrink-row-00.png)
 
+  <br>
+
    with `flex-shrink`: the 1st item shrinked twice of the amount.
-   
-   <br>
    
    ![](flexshrink-row-02.png)
