@@ -237,7 +237,7 @@ So it controls the alignment of items on the **Cross Axis**.
               height: 300px;
             }
           ``` 
-          ![](align-itmes.png) *from [css tricks](https://css-tricks.com/almanac/properties/a/align-items/)*
+          ![](align-itmes_.png) *from [css tricks](https://css-tricks.com/almanac/properties/a/align-items/)*
            
   - a complicated example to understand axis:
 
