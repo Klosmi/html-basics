@@ -495,23 +495,32 @@ defines the initial size of an element before additional space is distributed *(
 
   <br>
 
-    `flex-bases` used with **rows** layout:
-    - without `flex-bases`
-    <br>
-    ![](flexbases-row01.png)
-    - with `flex-bases`
-    <br>
-    ![](flexbases-row02.png)
+  `flex-bases` used with **rows** layout:
+   without `flex-bases`
 
-    <br>
+   <br>
 
-    `flex-bases` used with **columns** layout:
-    - without `flex-bases`
-    <br>
-    ![](flexbases-column01.png)
-    - with `flex-bases`
-    <br>
-    ![](flexbases-column02.png)
+   ![](flexbases-row01.png)
+    
+    with `flex-bases`
+   <br>
+   
+   ![](flexbases-row02.png)
+
+   <br>
+
+   `flex-bases` used with **columns** layout:
+   
+   without `flex-bases`
+   <br>
+   
+   ![](flexbases-column01.png)
+   
+   with `flex-bases`
+   
+   <br>
+
+   ![](flexbases-column02.png)
 
 <br>
 
@@ -541,11 +550,16 @@ defines the initial size of an element before additional space is distributed *(
     ```
     
    `flex-grow` used with **rows** layout:
-    - without `flex-grow`
-   <br> 
-   ![](flexbases-row01.png)
-   - with `flex-grow`
+    without `flex-grow`
+   
    <br>
+   
+   ![](flexbases-row01.png)
+   
+   with `flex-grow`
+   
+   <br>
+   
    ![](flexgrow-row02.png)
 
 
@@ -620,10 +634,13 @@ So it governs the rate that elements shrink **when there is not enough space in 
 
   <br>
 
-   - without `flex-shrink`
+   without `flex-shrink`
    <br>
+   
    ![](flexshrink-row-00.png)
 
-   - with `flex-shrink`: the 1st item shrinked twice of the amount.
+   with `flex-shrink`: the 1st item shrinked twice of the amount.
+   
    <br>
+   
    ![](flexshrink-row-02.png)
