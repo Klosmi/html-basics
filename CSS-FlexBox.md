@@ -20,13 +20,13 @@
 <br>
 
 **Flexbox properties:**  
-1. **[display: flex]()**
-2. **[flex-direction]()**
-3. **[justify-content]()**
-4. **[flex-wrap]()**
-5. **[align-items]()**
-6. **[align-content]()**
-7. **[align-self]()**
+1. **[display: flex])(https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#1-display-flex-)**
+2. **[flex-direction](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#2-flex-direction-)**
+3. **[justify-content](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#3-justify-content-)**
+4. **[flex-wrap](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#4-flex-wrap-)**
+5. **[align-items](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#5-align-items-)**
+6. **[align-content](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#6-align-content-)**
+7. **[align-self](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#7-align-self-)**
 
 <br>
 
