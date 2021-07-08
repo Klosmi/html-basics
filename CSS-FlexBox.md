@@ -243,7 +243,7 @@ So it controls the alignment of items on the **Cross Axis**.
 
     - eg.:   
       The main axis: top-to-bottom (*column)*,   
-      The cross axis: left-to-right,    
+      The cross axis: left-to-right (*because of the column*),    
       The `wrap` is on.    
       The align-items: set to center *(on the cross-axis)*. 
 
