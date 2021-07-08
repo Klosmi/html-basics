@@ -254,7 +254,201 @@ So it controls the alignment of items on the **Cross Axis**.
           height: 300px;
         }
       ``` 
-       see the result 👇
-       <br>
-      ![](main-cross-align-itmes.png)
+      The result looks like that:
+         ![](main-cross-align-itmes.png)
       
+      <br>
+
+6. **[align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)** :   
+  sets the distribution of space between and around content items along a flexbox's **cross-axis**, but only when we have multiple rows or columns.   
+
+    So if we have columns, `align-content` controls the space between the columns. If we have rows, the  `align-content` controls the space between the rows.
+
+- [values](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content#values)
+
+  - `align-conten: center;` :  
+  the items are packed flush to each other in the center of the alignment container along the cross axis. 
+    -  eg.:
+      The items meet in the center.    
+      It only works if we have `flex-wrap: wrap;`, otherwise we have only one column, so that is why it does nothing.
+      ```
+    #container {
+        background-color: lightgrey;
+        width: 90%;
+        height: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    #container div{
+        width: 170px;
+        height: 170px;
+        text-align: center;
+    }
+    ```
+    *Controlling the space between th columns.*
+    <br>
+
+    ![](align-content-center.png)
+
+    <br>
+
+  - `align-conten: flex-start;` :  
+  the items are packed flush to each other against the edge of the alignment container depending on the flex container's cross-start side. 
+
+    -  eg.: using columns
+      ```
+    #container {
+                display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    #container div{
+        width: 170px;
+        height: 170px;
+        text-align: center;
+    }
+    ```
+    <br>
+
+    ![](align-content-start.png)
+
+    <br>
+
+  - `align-conten: space-between;` :    
+  the items are evenly distributed within the alignment container along the cross axis. 
+
+    -  eg.: using rows
+      ```
+    #container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
+    #container div{
+        width: 400px;
+        height: 150px;
+        text-align: center;
+    }
+    ```
+    <br>
+
+    ![](align-content-space-between.png)
+
+    <br>
+
+ 7. **[align-self](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)** :    
+ it is a property we add to a single (or more) element, so we add to **individual items in the flex container**.
+
+    We don't apply to the flex container itself, but to **individual elements**. Thus we can change the alignment along the cross axis for a single element using this property.   
+
+     So, it overrides a flex item's align-items value. In Flexbox, it aligns the item on the cross axis.
+
+
+  - [values](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self#values) :
+    
+    - `align-self: center`:   
+        the flex item's margin box is centered within the line on the cross-axis. 
+
+      - eg.:
+      
+        In a row, a `line-item: flex-start`, so everything is aligned to the top, except the `align-self: center` on 1 item  (no.4).
+        ```   
+        #container {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: flex-start;
+          flex-wrap: wrap;
+        }
+
+          #container div{
+              width: 150px;
+              height: 150px;
+              text-align: center;
+        }
+
+          div:nth-of-type(4) {
+              align-self: center;
+        }
+        ```
+        *This is how we can position one thing at a time within the flex container.*
+        <br>
+        
+        ![](align-self-center.png)
+        
+        <br>
+
+    - `align-self: flex-start`:   
+        the cross-start margin edge of the flex item is flushed with the cross-start edge of the line.
+
+
+      - eg.:
+      
+        In a column, a `line-item: flex-end`, so everything is aligned to the right, except the `align-self: flex-start` on 1 item  (no.7).
+        ```   
+        #container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-end;
+          flex-wrap: wrap;
+        }
+
+          #container div{
+              width: 150px;
+              height: 150px;
+              text-align: center;
+        }
+
+          div:nth-of-type(7) {
+              align-self: flex-start;
+        }
+        ```
+        
+        ![](align-self-start.png)
+        
+        <br>
+
+    - `align-self: flex-end`:   
+        the cross-end margin edge of the flex item is flushed with the cross-end edge of the line.
+
+      - eg.:
+      
+        In a row, a `line-item: flex-start`, so everything is aligned to the top, except the `align-self: flex-end` on 1 item  (no.2).
+        ```   
+        #container {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: flex-start;
+          flex-wrap: wrap;
+        }
+
+          #container div{
+              width: 150px;
+              height: 150px;
+              text-align: center;
+        }
+
+          div:nth-of-type(2) {
+              align-self: flex-end;
+        }
+        ```
+        *This is how we can position one thing at a time within the flex container.*
+        <br>
+        
+        ![](align-self-end.png)
