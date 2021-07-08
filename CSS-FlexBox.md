@@ -459,3 +459,167 @@ So it controls the alignment of items on the **Cross Axis**.
         <br>
         
         ![](align-self-end.png)
+
+<br>
+
+#### 8. **Flex sizing properties:** **[flex-basis](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis)**  ・  **[flex-grow](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow)** ・ **[flex-shrink](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink)** 
+
+<br>
+
+- **[flex-basis](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis)** :    
+defines the initial size of an element before additional space is distributed *(before it's added into the flex container)*.
+
+  So **`flex-basis` is just the initial size that an element should be added into our box as.** (It can be width or it can be height, depending on the axis direction)
+
+  - eg.: 
+  We set the `div` items to `width: 150px;` and `height: 150px;`, than we add `flex-basis:  400px;`, which overrides the `width: 150px;`.
+    ```
+      #container {
+          margin: 0 auto;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap;
+      }
+
+      #container div{
+          width: 150px;
+          height: 150px;
+          text-align: center;
+          flex-basis:  400px;
+      }
+    ```
+    Because **`flex-basis` is just the initial size that an element should be added into our box as.** (It can be width or it can be height, depending on the axis direction)
+
+  <br>
+
+    `flex-bases` used with **rows** layout:
+    - without `flex-bases`
+    <br>
+    ![](flexbases-row01.png)
+    - with `flex-bases`
+    <br>
+    ![](flexbases-row02.png)
+
+    <br>
+
+    `flex-bases` used with **columns** layout:
+    - without `flex-bases`
+    <br>
+    ![](flexbases-column01.png)
+    - with `flex-bases`
+    <br>
+    ![](flexbases-column02.png)
+
+<br>
+
+- **[flex-grow](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow)** :   
+  it **controls the amount of available space an element should take up**, if there is avalible space *(if we have extra space)*. Accepts a unit-less number value.
+
+    - eg.: I give a `flex-grow: 1` to the first `div` item. Now It takes up all of the additional space, all of the available space.
+    ```
+    #container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #container div{
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        flex-basis:  400px;
+    }
+
+    div:nth-of-type(1) {
+        flex-grow: 1;
+    }
+    ```
+    `flex-grow` used with **rows** layout:
+    - without `flex-grow`
+    <br>
+    ![](flexbases-row01.png)
+    - with `flex-grow`
+    <br>
+    ![](flexgrow-row02.png)
+
+
+  - eg.:   
+    the first `div` gets `flex-grow: 1`, the last `div` gets `flex-grow: 2`. This is proportional, meaning the last `div` grow twice as big as the first `div`.
+    ```
+    #container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #container div{
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        flex-basis:  400px;
+    }
+
+    div:nth-of-type(1) {
+        flex-grow: 1;
+    }
+
+    div:nth-of-type(7) {
+        flex-grow: 2;
+    }
+    ```
+    *The item `7` is twice as big as the item `1`.*
+<br>
+    ![](flexgrow-row031.png)
+
+<br>
+
+  💡 Very useful, so check out(❗️) **[`max-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width)** and **[`min-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/min-width)**:   
+    To change the behavior when using `flex-wrap` and `flex-grow`:
+    if I don't want items to go past a certain width or certain height, we cen set min-width or a max-with.
+
+
+- **[flex-shrink](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink)** :   
+If items are larger than the container, they shrink according to flex-shrink.   
+So it governs the rate that elements shrink **when there is not enough space in the container**.
+
+  - eg.:
+    We giv a `flex-base: 600px`, so each item will be 600px width, to fill the container. We give a `flex-shrink: 2` first `div` item, so it shrinks twice as *fast* as the other elements.   
+    *(`flex-wrap` is deleted in purpose for this example)*
+    ```
+    #container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #container div{
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        flex-basis:  400px;
+    }
+
+    div:nth-of-type(1) {
+        flex-shrink: 2;
+    }
+    ```
+    <br>
+    
+    💡 Note: if you give `flex-shrink: 0;` it will not shrink at all, it keeps the given width *(this case 400px as because of the `flex-base`)*.
+
+
+  <br>
+
+    - without `flex-shrink`
+    <br>
+    ![](flexshrink-row-00.png)
+    
+    - with `flex-shrink`: the 1st item shrinked twice of the amount.
+    <br>
+    ![](flexshrink-row-02.png)
