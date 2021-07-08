@@ -20,7 +20,7 @@
 <br>
 
 **Flexbox properties:**  
-1. **[display: flex])(https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#1-display-flex-)**
+1. **[display: flex](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#1-display-flex-)**
 2. **[flex-direction](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#2-flex-direction-)**
 3. **[justify-content](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#3-justify-content-)**
 4. **[flex-wrap](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#4-flex-wrap-)**
