@@ -124,18 +124,17 @@ All other *flexbox* properties rely on the `display: flex` property.
 
   - **`flex-wrap: nowrap;`** : 
     doesn't wrap (the default)
+    
+  - **`flex-wrap: wrap-reverse;`** :
+    Behaves the same as wrap but cross-start and cross-end are permuted, rearranged (if `wrap` goes top-to-bottom, `wrap-reverse` goes bottom-to-top).    
+    **So this is how we can change the direction of the cross-axis❗️**    
 
   - **`flex-wrap: wrap;`** : 
     The flex items break into multiple lines.    
     The cross-start is either equivalent to start or before depending flex-direction value and the cross-end is the opposite of the specified cross-start.
-    
-  - **`flex-wrap: wrap-reverse;`** :
-    Behaves the same as wrap but cross-start and cross-end are permuted, rearranged (if `wrap` goes top-to-bottom, `wrap-reverse` goes bottom-to-top).    
-    **So this is how we can change the direction of the cross-axis❗️**
-
     - eg.:
       We have let say 6 `div`s, with flexbox *(1, 2, 3, 4, 5, 6)*. The `div`s are top-to-bottom, but because the `container`'s height is only 500px, the 6 `div`s' heights are all squished down to fit in the `container`.
-      But, using `felx-wrap: wrap;` the `div`s go to top-to-bottom in a new column, as many columns are necessary and they are not squished.
+      But, using `flex-wrap: wrap;` the `div`s go to top-to-bottom in a new column, as many columns are necessary and they are not squished.
 
         ```
         #container {
