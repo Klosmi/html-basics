@@ -27,6 +27,8 @@
 5. **[align-items](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#5-align-items-)**
 6. **[align-content](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#6-align-content-)**
 7. **[align-self](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#7-align-self-)**
+8. **[flex sizing properties: flex-basis ・ flex-grow ・ flex-shrink]()**
+
 
 <br>
 
@@ -537,13 +539,14 @@ defines the initial size of an element before additional space is distributed *(
         flex-grow: 1;
     }
     ```
-    `flex-grow` used with **rows** layout:
+    
+   `flex-grow` used with **rows** layout:
     - without `flex-grow`
-    <br>
-    ![](flexbases-row01.png)
-    - with `flex-grow`
-    <br>
-    ![](flexgrow-row02.png)
+   <br> 
+   ![](flexbases-row01.png)
+   - with `flex-grow`
+   <br>
+   ![](flexgrow-row02.png)
 
 
   - eg.:   
@@ -574,7 +577,8 @@ defines the initial size of an element before additional space is distributed *(
     ```
     *The item `7` is twice as big as the item `1`.*
 <br>
-    ![](flexgrow-row031.png)
+
+   ![](flexgrow-row031.png)
 
 <br>
 
@@ -616,10 +620,10 @@ So it governs the rate that elements shrink **when there is not enough space in 
 
   <br>
 
-    - without `flex-shrink`
-    <br>
-    ![](flexshrink-row-00.png)
-    
-    - with `flex-shrink`: the 1st item shrinked twice of the amount.
-    <br>
-    ![](flexshrink-row-02.png)
+   - without `flex-shrink`
+   <br>
+   ![](flexshrink-row-00.png)
+
+   - with `flex-shrink`: the 1st item shrinked twice of the amount.
+   <br>
+   ![](flexshrink-row-02.png)
