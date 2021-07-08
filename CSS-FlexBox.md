@@ -7,7 +7,6 @@
 
 <br>
 
-
 [Axes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox#the_two_axes_of_flexbox) :     
  there are 2 axes:  the **main axis** and the **cross axis**.   
  
@@ -20,15 +19,25 @@
 
 <br>
 
-**Flexbox properties:**   
-1. **`display: flex;`** :    
+**Flexbox properties:**  
+1. **[display: flex]()**
+2. **[flex-direction]()**
+3. **[justify-content]()**
+4. **[flex-wrap]()**
+5. **[align-items]()**
+6. **[align-content]()**
+7. **[align-self]()**
+
+<br>
+
+#### 1. **`display: flex;`** :    
 it defines a flex container.   
 The container can be inline or block depending on the given value. It enables a flex context for all its direct children.  
 All other *flexbox* properties rely on the `display: flex` property.
 
 <br>
 
-2. **[flex-direction](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)** :   
+#### 2. **[flex-direction](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)** :   
   *(the main axis is defined by this property)*   
   this CSS property sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).    
   - 4 directions: **row ・ row-reverse ・ column ・ column-reverse**
@@ -56,7 +65,7 @@ All other *flexbox* properties rely on the `display: flex` property.
   
   <br>
   
- 3. **[justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)** :  
+ #### 3. **[justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)** :  
     this poperty determines how the actual elements (the content) is **distributed across the main axis**.
 
     (So, it defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.) 
@@ -108,7 +117,7 @@ All other *flexbox* properties rely on the `display: flex` property.
         ```
         <br>
 
-4. **[flex-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)** :   
+#### 4. **[flex-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)** :   
   this property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.
 
    So it determines whether the elements are going to wrap along the main axis onto a new line if it's horizontal or a new column if it's a vertical main axis.
@@ -146,7 +155,7 @@ All other *flexbox* properties rely on the `display: flex` property.
 
 <br>
 
-5. **[align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)** :   
+#### 5. **[align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)** :   
 it distributes the items along the cross axis.   
 So it controls the alignment of items on the **Cross Axis**.
 
@@ -258,7 +267,7 @@ So it controls the alignment of items on the **Cross Axis**.
       
       <br>
 
-6. **[align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)** :   
+####. 6. **[align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)** :   
   sets the distribution of space between and around content items along a flexbox's **cross-axis**, but only when we have multiple rows or columns.   
 
     So if we have columns, `align-content` controls the space between the columns. If we have rows, the  `align-content` controls the space between the rows.
@@ -349,7 +358,7 @@ So it controls the alignment of items on the **Cross Axis**.
 
     <br>
 
- 7. **[align-self](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)** :    
+ #### 7. **[align-self](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)** :    
  it is a property we add to a single (or more) element, so we add to **individual items in the flex container**.
 
     We don't apply to the flex container itself, but to **individual elements**. Thus we can change the alignment along the cross axis for a single element using this property.   
