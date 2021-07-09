@@ -498,27 +498,27 @@ defines the initial size of an element before additional space is distributed *(
   `flex-bases` used with **rows** layout:
    without `flex-bases`
 
-   <br>
 
    ![](flexbases-row01.png)
     
+  <br>
+
     with `flex-bases`
-   <br>
    
    ![](flexbases-row02.png)
 
    <br>
+      <br>
 
    `flex-bases` used with **columns** layout:
    
    without `flex-bases`
-   <br>
    
    ![](flexbases-column01.png)
-   
+  
+  <br>
+
    with `flex-bases`
-   
-   <br>
 
    ![](flexbases-column02.png)
 
@@ -552,16 +552,16 @@ defines the initial size of an element before additional space is distributed *(
    `flex-grow` used with **rows** layout:
     without `flex-grow`
    
-   <br>
-   
    ![](flexbases-row01.png)
    
+   <br>
+
    with `flex-grow`
    
-   <br>
    
    ![](flexgrow-row02.png)
 
+   <br>
 
   - eg.:   
     the first `div` gets `flex-grow: 1`, the last `div` gets `flex-grow: 2`. This is proportional, meaning the last `div` grow twice as big as the first `div`.
@@ -627,7 +627,7 @@ So it governs the rate that elements shrink **when there is not enough space in 
         flex-shrink: 2;
     }
     ```
-    <br>
+  <br>
     
     💡 Note: if you give `flex-shrink: 0;` it will not shrink at all, it keeps the given width *(this case 400px as because of the `flex-base`)*.
 
@@ -635,12 +635,120 @@ So it governs the rate that elements shrink **when there is not enough space in 
   <br>
 
    without `flex-shrink`
-   <br>
+
    
    ![](flexshrink-row-00.png)
 
+  <br>
+
    with `flex-shrink`: the 1st item shrinked twice of the amount.
    
-   <br>
-   
    ![](flexshrink-row-02.png)
+
+<br>
+
+
+- **The short-hand property: [flex](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)** :   
+  it sets how a flex item will grow or shrink to fit the space available in its flex container.
+
+  You can pass 1 to 3 different values:
+
+  1 value: **unitless number is goint to be flex-grow**     
+    flex-basis is then equal to 0.    
+    `flex: 2;`
+
+  1 value: **width/height goin to be flex-basis**
+  `flex: 10em;`   
+  `flex: 30%;`   
+  `flex: min-content;` 
+
+  2 values: **if one of the value has px, em, % etc. that value going to be flex-basis**.   
+  So here its flex-grow and flex-basis:   
+  `flex: 1 30px;`
+
+  2 values: **if unitless it is going to be: flex-grow ・ flex-shrink**   
+  `flex: 2 2;`
+
+  3 values: **flex-grow ・ flex-shrink ・ flex-basis**   
+  `flex: 2 2 10%;`
+
+  - eg.:    
+    **1 unitelss value: it is always treated as flex-grow**    
+    <br>
+    The HTML code:
+    ```
+      <main>
+          <section class="sidebar"></section>
+          <section class="maincontent"></section>
+          <section class="sidebar"></section>
+      </main>
+      ```
+    <br>
+    
+      The CSS
+      ```
+      main {
+        width: 80%;
+        margin: 0 auto;
+        border: 5px solid darkgray;
+        height: 500px;
+        display: flex;
+      }
+      main .sidebar {
+          background-color: palevioletred;
+          flex:1;
+      }
+      main .maincontent {
+          background-color: mediumslateblue;
+          flex: 1;  
+      }
+    ```
+    ![](shorthandprop_1unit-01.png)
+
+    <br>
+
+    **2 values: 1 unitless value and 1 value is px. Flex-grow and the pixel one is going to be flex-bases** 
+     ```
+      main {
+        width: 80%;
+        margin: 0 auto;
+        border: 5px solid darkgray;
+        height: 500px;
+        display: flex;
+      }
+      main .sidebar {
+          background-color: palevioletred;
+          flex:1 300px;
+      }
+      main .maincontent {
+          background-color: mediumslateblue;
+          flex: 1 600px;  
+      }
+      ```
+      ![](shorthandprop_2units-01.png)
+
+      <br>
+
+    **3 values: 1 unitless value (flex-grow) other unitless value (flex-shrink) and the last is px (flex-bases).**  
+    The order is: 1. flex-grow, 2. flex-shrink and 3. flex-bases  
+        
+      ```
+        main {
+          width: 80%;
+          margin: 0 auto;
+          border: 5px solid darkgray;
+          height: 500px;
+          display: flex;
+        }
+        main .sidebar {
+            background-color: palevioletred;
+            flex:1 2 300px;
+        }
+        main .maincontent {
+            background-color: mediumslateblue;
+            flex: 2 1 800px;  
+        }
+    ```
+    ![](shorthandprop_3units-01.png)
+
+  <br>
