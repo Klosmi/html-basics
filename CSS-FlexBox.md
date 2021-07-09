@@ -648,7 +648,7 @@ So it governs the rate that elements shrink **when there is not enough space in 
 <br>
 
 
-- **The short-hand property: [flex](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)** :   
+#### 9. **The short-hand property: [flex](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)** :   
   it sets how a flex item will grow or shrink to fit the space available in its flex container.
 
   You can pass 1 to 3 different values:
