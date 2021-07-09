@@ -28,6 +28,7 @@
 6. **[align-content](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#6-align-content-)**
 7. **[align-self](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#7-align-self-)**
 8. **[flex sizing properties: flex-basis ・ flex-grow ・ flex-shrink](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#8-flex-sizing-properties-flex-basis----flex-grow--flex-shrink)**
+9. **[flex - The shorthand property](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#9-the-short-hand-property-flex-)**
 
 
 <br>
