@@ -754,4 +754,5 @@ So it governs the rate that elements shrink **when there is not enough space in 
 
   <br>
 
-[back](https://github.com/Klosmi/html-basics#html-and-css--basics)
+---
+   [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
