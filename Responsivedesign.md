@@ -71,9 +71,9 @@ media queries allow us to modify our styles depending on  praticular parameters 
     ```
     *The `h1`'s color will be blue **up to** 400 pixels.*
 
-<br>
+  <br>
 
-  - 💡 the order matters: using multiple __max__ @media queries, start with the highest number.   
+  - the order matters: using multiple __max__ @media queries, start with the highest number.   
       eg.: **`@media (max-width: 400px)`** *(above zero to below max size)*
 
     ```
@@ -90,7 +90,7 @@ media queries allow us to modify our styles depending on  praticular parameters 
     ```
     *The `h1`'s color will be blue **up to** 1200 pixels and green up to 400px. If it starts withd `max-width: 400px` and ends with `max-width: 1200px` than it would be always blue, the 400px width won't work.*
 
-<br>
+  <br>
 
   - Other very commonly used: start without @media, and then use the `min-width` for each break point.   
         eg.: **`@media (min-width: 500px)
@@ -119,7 +119,7 @@ media queries allow us to modify our styles depending on  praticular parameters 
       }
       ```
 
-    <br>
+  <br>
 
   - oriantation: when landscape or portrait: @media (orientation: landscape)     
     eg.:
