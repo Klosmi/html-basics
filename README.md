@@ -13,7 +13,7 @@
 11. [CSS Box Model: display property](https://github.com/Klosmi/html-basics/blob/master/CSS-BoxModel-Display.md)
 12. [CSS BoxModel-Units - `em` & `rem`](https://github.com/Klosmi/html-basics/blob/master/CSS-BoxModel-Units.md)
 13. [CSS Some useful properties - extra](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md)
-14. [CSS Simple tricks and usefule stuffs](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md)
+14. [CSS Simple tricks and useful stuffs](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md)
 15. [CSS Flexbox](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md)
 16. [CSS Responsive design - @media queries](https://github.com/Klosmi/html-basics/blob/master/Responsivedesign.md)
 
