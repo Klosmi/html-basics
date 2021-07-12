@@ -15,6 +15,7 @@
 13. [CSS Some useful properties - extra](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md)
 14. [CSS Simple trick: how to center an element in the page](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md)
 15. [CSS Flexbox](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md)
+16. [CSS Responsive design - @media queries](https://github.com/Klosmi/html-basics/blob/master/Responsivedesign.md)
 
 
 ##### *These are my personal notes*
