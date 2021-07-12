@@ -17,6 +17,9 @@ media queries allow us to modify our styles depending on  praticular parameters 
 
 <br>
 
+💡 [breakpoints](https://devfacts.com/media-queries-breakpoints-2021/):   
+   breakpoints are points where the website content responds according to the device width, allowing you to show the best possible layout to the user.
+
 - **[width](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/orientation)**   
   The width CSS media feature can be used to test **the width of the viewport** (or the page box, for paged media).   
 
