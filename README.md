@@ -1,4 +1,4 @@
-# [HTML](https://html.spec.whatwg.org/#a-quick-introduction-to-html) and CSS -basics
+# [HTML](https://html.spec.whatwg.org/#a-quick-introduction-to-html) and [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) -basics
 
 1. [HTML Inline elements vs block elements](https://github.com/Klosmi/html-basics/blob/master/inlene-vs-block.md)
 2. [HTML Semantics](https://github.com/Klosmi/html-basics/blob/master/HTML-semantic%20markup.md)
