@@ -43,8 +43,8 @@ body {
  1. *note: a good move to give the `<ul>` and `<li>` a  `display: inline;`*.  
  2. *note: `<nav>` use flexbox's `justify-content: space-between;` → the 2 `<a>`s move both sides of the page and the 3 `<li>`s in the center.*
  3. *note: to give more space to the `<li>` elements, I can give a `flex-grow: 1` (shorthand `flex: 1`) and define its width, eg. `max-width: 50%` so it doesn't grow all the away  and take up all the space. Then give a `justify-content: space-evenly;`.*
- 4. *note: below 768px screen size, the `nav` item has a `flex-direction: column`, so the items will be vertical.
- 5. *note: 💡 we used **nested flexbox**. `<nav>` parent element is a flex-container, inside the `<ul>` is the nested flex-container.
+ 4. *note: below 768px screen size, the `nav` item has a `flex-direction: column`, so the items will be vertical.*
+ 5. *note: 💡 we used **nested flexbox**. `<nav>` parent element is a flex-container, inside the `<ul>` is the nested flex-container.*
 
 
   ```
