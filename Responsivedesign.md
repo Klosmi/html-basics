@@ -132,3 +132,6 @@ media queries allow us to modify our styles depending on  praticular parameters 
       }
     }
     ```
+  
+---
+   [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
