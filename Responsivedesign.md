@@ -121,7 +121,7 @@ media queries allow us to modify our styles depending on  praticular parameters 
 
   <br>
 
- - [oriantation](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/orientation#css)
+ - [oriantation](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/orientation#css)     
    when landscape or portrait: @media (orientation: landscape)     
     eg.:
 
