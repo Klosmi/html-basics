@@ -103,7 +103,7 @@ Everything in the browser treated as a box, and each box has different propertie
         }
         ```
 
-  - [box-sizing: border-box](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing#syntax) : **the width and height properties include the content, padding, and border**, but do not include the margin. 
+  - **[box-sizing: border-box](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing#syntax)** : **the width and height properties include the content, padding, and border**, but do not include the margin. 
 
       - eg.:
         ######  *you can set the width of the entire element, including the border.*
