@@ -88,7 +88,14 @@ ul {
     }
   } 
   ```
+  
 <br>
+<br>
+
+# Links collection 🔗
+
+[reset CSS](https://meyerweb.com/eric/tools/css/reset/)
+
 
 ---
 
