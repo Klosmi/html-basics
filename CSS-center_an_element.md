@@ -92,6 +92,7 @@ ul {
 <br>
 
 # What is [mobile frist](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/Mobile_first)? 📱
+It meanins to create the mobile layout as the default first and then the larger screen sizes usually they change to be eow based instead of column based.
 
 <br>
 
