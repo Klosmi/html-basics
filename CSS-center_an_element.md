@@ -94,7 +94,7 @@ ul {
 
 # Links collection 🔗
 
-[reset CSS](https://meyerweb.com/eric/tools/css/reset/)
+[reset CSS](https://meyerweb.com/eric/tools/css/reset/) 👉 it is to normalize how browser styles work across different browsers.
 
 
 ---
