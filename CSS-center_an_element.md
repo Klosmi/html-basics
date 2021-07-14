@@ -90,6 +90,9 @@ ul {
   ```
   
 <br>
+
+# What is [mobile frist](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/Mobile_first)? 📱
+
 <br>
 
 # Links collection 🔗
