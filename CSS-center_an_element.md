@@ -12,7 +12,7 @@
 -  example for **'min-width'**   
 ![](https://ishadeed.com/assets/min-max/use-case-1.png).  
 - example for **`max-width`**.  
-![]()
+![](max-width.png)
 
 <br>
 
