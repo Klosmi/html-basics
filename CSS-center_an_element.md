@@ -91,6 +91,31 @@ ul {
   
 <br>
 
+# Basic button 🤓
+###### In HTML we have a `<a href="#">`
+  ```
+<a href="#/" class="download-button">Download</a>
+  ```
+###### In CSS we give the style. Note: *__`display: inline-block`__*
+  ```
+.download-button {
+	border: 1px solid blue;
+	border-radius: 10px;
+	color: #348efe;
+	display: inline-block;  /* 💡💡💡 */
+	padding: 15px 35px;
+	text-decoration: none;
+	margin: 25px 0;
+	transition: background-color 200ms ease-in-out;
+}
+
+.download-button:hover, .download-button:focus {
+ background-color: #lightblue;
+}
+  ```
+
+<br>
+
 # What is [mobile frist](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/Mobile_first)? 📱
 It means to create the mobile layout as the default first and then the larger screen sizes, which usually change to be row based instead of column based.
 
