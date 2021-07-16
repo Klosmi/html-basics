@@ -149,7 +149,8 @@ When setting the value of max-height, its benefit lies in preventing the used va
 
 # Links collection 🔗
 
-[reset CSS](https://meyerweb.com/eric/tools/css/reset/) 👉 it is to normalize how browser styles work across different browsers.
+**[reset CSS](https://meyerweb.com/eric/tools/css/reset/) 👉 it is to normalize how browser styles work across different browsers.**
+**[pricing table html css code](https://codepen.io/travisw/pen/EvbKwd)**
 
 
 ---
