@@ -123,8 +123,7 @@ It means to create the mobile layout as the default first and then the larger sc
 
 # What is [max-width](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width) and [min-width](https://developer.mozilla.org/en-US/docs/Web/CSS/min-width) / [max-height](https://developer.mozilla.org/en-US/docs/Web/CSS/max-height) and [min-height](https://developer.mozilla.org/en-US/docs/Web/CSS/min-height)? 📐
 
-When you set the height property on an element, the element will occupy the mentioned space irrespective of the content. In this case, if the content is more than the mentioned height then it overflows. With min-height property we can set a minimum height for the element to occupy if the content in the element is less than that and the height of the element will increase when the content increases.
-
+**When you set the height property on an element, the element will occupy the mentioned space irrespective of the content.** In this case, if the content is more than the mentioned height, than it overflows. With min-height property we can set a minimum height for the element to occupy the space if the content in the element is less than that and the height of the element will increase when the content increases.
 
 **[max-width](https://ishadeed.com/article/min-max-css/#max-width)** sets the maximum width of an element. The element can not be larger than the value specified by `max-width`.    
 **[max-height](https://ishadeed.com/article/min-max-css/#max-height)** sets the maximum height of an element. The element can not be larger than the value specified by `max-height`.
