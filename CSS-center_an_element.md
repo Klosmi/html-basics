@@ -101,7 +101,7 @@ ul {
 .download-button {
 	border: 1px solid blue;
 	border-radius: 10px;
-	color: #348efe;
+	color: #yellow;
 	display: inline-block;  /* 💡💡💡 */
 	padding: 15px 35px;
 	text-decoration: none;
