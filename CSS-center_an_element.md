@@ -127,14 +127,14 @@ It means to create the mobile layout as the default first and then the larger sc
 
 	When setting the value of max-height, its benefit lies in preventing the used value for height property from becoming more than the specified value for max-height. Note that the default value for max-height is none.
 
-**[max-width](https://ishadeed.com/article/min-max-css/#max-width)** sets the maximum width of an element. The element can not be larger than the value specified by `max-width`.    
-**[max-height](https://ishadeed.com/article/min-max-css/#max-height)** sets the maximum height of an element. The element can not be larger than the value specified by `max-height`.
+- **[max-width](https://ishadeed.com/article/min-max-css/#max-width)** sets the maximum width of an element. The element can not be larger than the value specified by `max-width`.    
+	**[max-height](https://ishadeed.com/article/min-max-css/#max-height)** sets the maximum height of an element. The element can not be larger than the value specified by `max-height`.
  
  
-**[min-width](https://ishadeed.com/article/min-max-css/#min-width)**
- sets the minimum width of an element. The element can not be smaller than the value specified by `min-width`.    
-**[min-height](https://ishadeed.com/article/min-max-css/#min-height)**
- sets the minimum height of an element. The element can not be smaller than the value specified by `min-height`.   
+	**[min-width](https://ishadeed.com/article/min-max-css/#min-width)**
+	 sets the minimum width of an element. The element can not be smaller than the value specified by `min-width`.    
+	**[min-height](https://ishadeed.com/article/min-max-css/#min-height)**
+	 sets the minimum height of an element. The element can not be smaller than the value specified by `min-height`.   
 
  
  **[Use Cases For Min And Max Properties](https://ishadeed.com/article/min-max-css/#use-cases-for-min-and-max-properties)**.  
