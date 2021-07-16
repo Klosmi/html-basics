@@ -150,8 +150,8 @@ It means to create the mobile layout as the default first and then the larger sc
 # Links collection 🔗
 
 **[reset CSS](https://meyerweb.com/eric/tools/css/reset/) 👉 it is to normalize how browser styles work across different browsers.**.  
-**[pricing table html css code](https://codepen.io/travisw/pen/EvbKwd)** 👉 a nice example of responsivity
-**[min-max hegith-width css](https://ishadeed.com/article/min-max-css/)**
+**[pricing table html css code](https://codepen.io/travisw/pen/EvbKwd)** 👉 a nice example of responsivity.  
+**[min-max hegith-width css](https://ishadeed.com/article/min-max-css/)** 👉 detailed article about the min and max css properties
 
 
 ---
