@@ -122,6 +122,10 @@ It means to create the mobile layout as the default first and then the larger sc
 <br>
 
 # What is [max-width](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width) and [min-width](https://developer.mozilla.org/en-US/docs/Web/CSS/min-width) / [max-height](https://developer.mozilla.org/en-US/docs/Web/CSS/max-height) and [min-height](https://developer.mozilla.org/en-US/docs/Web/CSS/min-height)? 📐
+
+When you set the height property on an element, the element will occupy the mentioned space irrespective of the content. In this case, if the content is more than the mentioned height then it overflows. With min-height property we can set a minimum height for the element to occupy if the content in the element is less than that and the height of the element will increase when the content increases.
+
+
 **[max-width](https://ishadeed.com/article/min-max-css/#max-width)** sets the maximum width of an element. The element can not be larger than the value specified by `max-width`.    
 **[max-height](https://ishadeed.com/article/min-max-css/#max-height)** sets the maximum height of an element. The element can not be larger than the value specified by `max-height`.
  
@@ -130,8 +134,7 @@ It means to create the mobile layout as the default first and then the larger sc
  sets the minimum width of an element. The element can not be smaller than the value specified by `min-width`.    
 **[min-height](https://ishadeed.com/article/min-max-css/#min-height)**
  sets the minimum height of an element. The element can not be smaller than the value specified by `min-height`.   
- 
-When you set the height property on an element, the element will occupy the mentioned space irrespective of the content. In this case, if the content is more than the mentioned height then it overflows. With min-height property we can set a minimum height for the element to occupy if the content in the element is less than that and the height of the element will increase when the content increases.
+
  
  **[Use Cases For Min And Max Properties](https://ishadeed.com/article/min-max-css/#use-cases-for-min-and-max-properties)**.  
 -  example for **'min-width'** with tags-list   
