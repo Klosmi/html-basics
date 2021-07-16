@@ -8,7 +8,11 @@
 **[min-height](https://ishadeed.com/article/min-max-css/#min-height)**
  sets the minimum height of an element. The element can not be smaller than the value specified by `min-height`.   
  
- **[Use Cases For Min And Max Properties](https://ishadeed.com/article/min-max-css/#use-cases-for-min-and-max-properties)**
+ **[Use Cases For Min And Max Properties](https://ishadeed.com/article/min-max-css/#use-cases-for-min-and-max-properties)**.  
+-  example for **'min-width'**   
+![](https://ishadeed.com/assets/min-max/use-case-1.png).  
+- example for **`max-width`**.  
+![]()
 
 <br>
 
