@@ -9,9 +9,11 @@
  sets the minimum height of an element. The element can not be smaller than the value specified by `min-height`.   
  
  **[Use Cases For Min And Max Properties](https://ishadeed.com/article/min-max-css/#use-cases-for-min-and-max-properties)**.  
--  example for **'min-width'**   
+-  example for **'min-width'**    
+	- eg. `min-width: 100px;` the tag, even if its empty should not be smaller than 100px.
 ![](https://ishadeed.com/assets/min-max/use-case-1.png).  
-- example for **`max-width`**.  
+- example for **`max-width`**   
+	- eg. `max-width: 250px;` if the text is longer than the tag, it will be truncated.
 ![](max-width.png)
 
 <br>
