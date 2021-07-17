@@ -153,7 +153,6 @@ It means to create the mobile layout as the default first and then the larger sc
 **[pricing table html css code](https://codepen.io/travisw/pen/EvbKwd)** 👉 a nice example of responsivity.  
 **[min-max hegith-width css](https://ishadeed.com/article/min-max-css/)** 👉 detailed article about the min and max css properties
 
-
 ---
 
    [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
