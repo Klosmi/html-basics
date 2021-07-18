@@ -65,6 +65,6 @@ it sets whether an element is treated as a **block element** or an **inline elem
 
     <br>
 
-- [Further reading](https://css-tricks.com/when-do-you-use-inline-block/)
+- **[Further reading 💡](https://css-tricks.com/when-do-you-use-inline-block/)**
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
