@@ -1,6 +1,6 @@
 **[How to center an element on a page](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#how-to-center-an-element-on-a-page-)   
 [Basic navbar](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#basic-navbar-)   
-[Basic button]()   
+[Basic button](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#basic-button-)   
 [What is mobile frist?]()    
 [What is *max-width min-width max-length min-length*]()    
 [Links collection]()**   
