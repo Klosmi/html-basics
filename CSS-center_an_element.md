@@ -1,3 +1,10 @@
+**[How to center an element on a page]()
+[Basic navbar]()
+[Basic button]()
+[What is mobile frist?]()
+[What is *max-width min-width max-length min-length*]()
+[Links collection]()**
+
 # How to center an element on a page 🤓
 
 ###### In HTML we have a `<button>`
