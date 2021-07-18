@@ -1,8 +1,8 @@
 **[How to center an element on a page](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#how-to-center-an-element-on-a-page-)   
 [Basic navbar](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#basic-navbar-)   
 [Basic button](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#basic-button-)   
-[What does mobile frist mean?](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#what-is-mobile-frist-)    
-[What is *max-width min-width max-length min-length*]()    
+[What does mobile frist mean?](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#what-does-mobile-frist-mean-)    
+[What is *max-width min-width max-length min-length*](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#what-is-max-width-and-min-width--max-height-and-min-height-)    
 [Links collection]()**   
 
 <br>
@@ -125,7 +125,7 @@ ul {
 
 <br>
 
-# What is [mobile frist](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/Mobile_first)? 📱
+# What does [mobile frist] mean(https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/Mobile_first)? 📱
 It means to create the mobile layout as the default first and then the larger screen sizes, which usually change to be row based instead of column based.
 
 <br>
