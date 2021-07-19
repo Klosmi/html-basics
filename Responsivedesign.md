@@ -140,7 +140,7 @@ media queries allow us to modify our styles depending on  praticular parameters 
     
 <br>
 
-**[Further readin ❗️](https://css-tricks.com/a-complete-guide-to-css-media-queries/)**
+**[Further reading❗️](https://css-tricks.com/a-complete-guide-to-css-media-queries/)**
   
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
