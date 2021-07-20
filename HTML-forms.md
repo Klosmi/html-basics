@@ -122,7 +122,7 @@ But if you want a button which does not submit the form - but it is inside the f
   A check box allowing single values to be selected/deselected.	
     - you can specify if the checkbox is `checked` or  not.
 
-- [**radiobutton**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio) : `<input type="radio">` 👉![](radiobutton-01.png)   
+- [**radiobutton**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio) : `<input type="radio">` 👉![](radiobuttons-01.png)   
   The `radiobutton` allowing only one single value to be selected out of multiple choices with the same `name` value.  
   In  a group of `radiobuttons` you can only select one (so they are connected).
     - They are associated by the **same `name`**, so they are pointing to the same thing.
@@ -153,7 +153,7 @@ But if you want a button which does not submit the form - but it is inside the f
 So here's a little selection, which might be useful: </u>
 
 - [**range**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range) : `<input type="range">` 👉 
-<input type="range">
+![](range-01.png)
   - we can control the "min" and "max" values (eg. `min="0" max="100"`)
 
 - [**number**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number) : <input type="number" min="10" max="1000"  placeholder="num"> 👉   `<input type="number">` elements of type number are used to let the user enter a number.
