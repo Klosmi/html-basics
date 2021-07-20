@@ -102,7 +102,7 @@ But if you want a button which does not submit the form - but it is inside the f
     When specified in the HTML, this is the initial value, and from than on it can be altered or retrieved at any time using JavaScript to access it.
 
     - **[name](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-name)** : The name of the button, submitted as a pair with the button’s `value` as part of the form data.  
-    `name` is a way of referring to the `value` when the data is sent to the server, so it is just a way of referring to the `value`. The server looks for that 
+    `name` is a way of referring to the `value` when the data is sent to the server, so it is just a way of referring to the `value` when the data is sent to the server. The server looks for that 
     `name`. *(If the name is `name="user"`), than the server looks for the name "user"*.   
       - `name` is just a *"name"* (ususally very short, like `name="q"`)  
       -  The `<form>` will be labeled under the `name` attribute when it is sent to the server.
