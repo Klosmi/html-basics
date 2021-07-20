@@ -85,7 +85,7 @@ Also, `<button>` not necesseraly has to be inside of a form (eg. a "sign up" but
   - a `<button>` **inside in a form** has a default behaviour: to submit.
 
   - <u>**`<button>` attributes**</u>:
-    - [**type**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type) :`<button type="button">`*Button*`</button>` 👉 <button type="button">Button</button>  
+    - [**type**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type) :`<button type="button">`*Button*`</button>` 👉 <button type="button">Button</button>   ![](button.png)    
    **The `type` over write** the default `submit` attribute when the `<button>` is in a form!!! 
     - *default `<button type="submit">Submit</button>`*  
     (Well, you don't even have to write the `type="submit"` if you want to keep it default.)
