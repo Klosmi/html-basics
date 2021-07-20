@@ -94,7 +94,10 @@ But if you want a button which does not submit the form - but it is inside the f
     (Well, you don't even have to write the `type="submit"` if you want to keep it default.)
 
     - an other way to make a sumbit button:
-        **`<input type="submit">`** **BUT** you can only change the text if you use another `<input>` attribute `value`.
+        **`<input type="submit">`** **BUT** you can only change the text if you use another `<input>` attribute **`value`**. Eg.:    
+                ```
+                 <input type="submit" value="Click me!">
+                ```
     - [**value**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefvalue) : The input control's value.  
     When specified in the HTML, this is the initial value, and from than on it can be altered or retrieved at any time using JavaScript to access it.
 
