@@ -1,7 +1,7 @@
 # [FORMS](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
 - a `<form>` element represents a document section containing interactive controls for submitting information.   
 
-- the `<form>` element itself is a shell or container that doesn't have any visual impact. It is the thing that grouped together all of the inputs which are put inside.
+- the `<form>` element itself is a container that doesn't have any visual impact. It is the thing that grouped together all of the inputs which are put inside.
 
 - we fill `<form>` with inputs, checkboxes, buttons, etc. and we group them together with the `<form>`.
 
