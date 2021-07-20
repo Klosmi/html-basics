@@ -117,11 +117,11 @@ But if you want a button which does not submit the form - but it is inside the f
            *`username = Joe`, so that is the name that will be used to send the data to the server, it is a __pair: name + value__.* 
            ![](nameattribute.png)
                                                                       
-- [**checkbox**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox) : `<input type="checkbox">` 👉 <input type="checkbox"> <input type="checkbox"> <input type="checkbox">   
+- [**checkbox**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox) : `<input type="checkbox">` 👉 ![](checkbox.png)   
   A check box allowing single values to be selected/deselected.	
     - you can specify if the checkbox is `checked` or  not.
 
-- [**radiobutton**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio) : `<input type="radio">` 👉 <input type="radio" name="radio"> <input type="radio" name="radio">   
+- [**radiobutton**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio) : `<input type="radio">` 👉![](radiobutton.png)   
   The `radiobutton` allowing only one single value to be selected out of multiple choices with the same `name` value.  
   In  a group of `radiobuttons` you can only select one (so they are connected).
     - They are associated by the **same `name`**, so they are pointing to the same thing.
