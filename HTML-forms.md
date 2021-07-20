@@ -138,7 +138,7 @@ But if you want a button which does not submit the form - but it is inside the f
         <option value="hamster">Cute little hamster</option>
     </select>  
     ```
-    ![](select.png)                           
+    ![](select-01.png)                           
 
   The [`<select>`] element represents a control that provides a menu of options.  
   It is essentially a dropdown menu   
