@@ -19,8 +19,9 @@
     
       - eg.: a search form's code looks something like this
         ```
-          <form action=/search/" method="get">
-            <input id="search-bar" type="text" placeholder="Search" name="q" value="cats">
+          <form action="https://www.reddit.com/search" method="get">
+            <input type="text" placeholder="Search" name="q">
+            <button>Search in Reddit</button>
           </form>                                  
         ```
 
