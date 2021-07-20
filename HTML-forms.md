@@ -18,9 +18,9 @@
     - [`method`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#attr-method) attribute : specifies which HTTP method should be used. (GET and POST)   
     
       - eg.: a search form looks something like this
-      ```
-        <form action=/search/" method="get">
-      ```
+        ```
+          <form action=/search/" method="get">
+        ```
 
 &nbsp;
 ## The (form) `input elements`:
