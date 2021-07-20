@@ -105,8 +105,18 @@ But if you want a button which does not submit the form - but it is inside the f
     `name` is a way of referring to the `value` when the data is sent to the server, so it is just a way of referring to the `value` when the data is sent to the server. The server looks for that 
     `name`. *(If the name is `name="user"`), than the server looks for the name "user"*.   
       - `name` is just a *"name"* (ususally very short, like `name="q"`)  
-      -  The `<form>` will be labeled under the `name` attribute when it is sent to the server.
-
+      -  The `<form>` will be labeled under the `name` attribute when it is sent to the server.   
+        - eg.: I write my username: Joe, the result will be: file:///hello?username=Joe
+          ``` 
+           <form action=/hello">                                                           
+            <label for="username">Enter a username: </label>
+            <input id="username" type="text" placeholder="username" name="username">
+            <button type="submit">Submit</button>
+           </form> 
+          ```
+           *`username = Joe`, so that is the name that will be used to send the data to the server, it is a __pair: name + value__.* 
+           ![](nameattribute.png)
+                                                                      
 - [**checkbox**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox) : `<input type="checkbox">` 👉 <input type="checkbox"> <input type="checkbox"> <input type="checkbox">   
   A check box allowing single values to be selected/deselected.	
     - you can specify if the checkbox is `checked` or  not.
