@@ -44,7 +44,7 @@
  &nbsp;
 
 - [`<label>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label) : represents a caption for an item in a user interface. 
-  - really important in terms of **accessibility**!!! A  screen reader will read out the label, **associate** what `label` goes with what `input` *(eg. checkbox)*. The screen reader also reads out when the user is focused on the form input.
+  - really important in terms of **accessibility**!!! The label element **associates** a direct connection between some `input` or some `form control` and a `text`. The screen reader also reads out when the user is focused on the form input.
 
   - To associate the `<label>` with an `<input>` element, you need to give the `<input>` an `id` attribute. The `<label>` needs a `for` attribute whose value is the same as the input's `id`.
 
