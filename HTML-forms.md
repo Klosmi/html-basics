@@ -138,6 +138,7 @@ But if you want a button which does not submit the form - but it is inside the f
         <option value="hamster">Cute little hamster</option>
     </select>  
     ```
+    ![](select.png)                           
 
   The [`<select>`] element represents a control that provides a menu of options.  
   It is essentially a dropdown menu   
@@ -148,7 +149,8 @@ But if you want a button which does not submit the form - but it is inside the f
    
     - it can be preselected with the attribute `selected`.
     
----
+<br>
+                                                                                                                                                      
 <u>[many other `<input>` elements can be found here.](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
 So here's a little selection, which might be useful: </u>
 
