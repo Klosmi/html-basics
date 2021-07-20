@@ -20,6 +20,8 @@
       - eg.: a search form looks something like this
         ```
           <form action=/search/" method="get">
+            <input id="search-bar" type="text" placeholder="Search" name="q">
+          </form>                                  
         ```
 
 &nbsp;
