@@ -115,7 +115,7 @@ But if you want a button which does not submit the form - but it is inside the f
             <button type="submit">Submit</button>
            </form> 
           ```
-           *`username = Joe`, so that is the name that will be used to send the data to the server, it is a __pair: name + value__.* 
+           *`username = Joe`, so that is the name that will be used to send the data to the server, it is a __pair: name ➕ value__.* 
            ![](nameattribute.png)
                                                                       
 - [**checkbox**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox) : `<input type="checkbox">` 👉 ![](checkbox-01.png)   
