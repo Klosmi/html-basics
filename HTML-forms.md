@@ -136,7 +136,9 @@ But if you want a button which does not submit the form - but it is inside the f
     - They are associated by the **same `name`**, so they are pointing to the same thing.
 
     - `value` attribute selects what to send through when the form was submitted. So which `radiobutton` was selected and sent when clicking on the submit button.   
-       eg.:
+       eg.:the value is not going to be displayed to a user, it is what is sent through when the form is submitted (which radiobutton was selected).
+
+Instead, it's just what is sent through when the form is submitted.
        ```
         <form action="/anything">                                                                                                           
           <label for="xs">Extra small</label>
