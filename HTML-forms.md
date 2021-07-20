@@ -7,10 +7,9 @@
 
 - the `<from>` element represents a document section containing  interactive controls for submitting information.
 
-- the `<form>` element dictates where the `<form>` data should be sent when the form is submitted.
-
-- when you submit a `<from>` an HTTP request will be sent.  
-We control where the request goes to with the *`action`* attribute, and we control which type of HTTP method should be used with the *`method`* attribute. 
+- the `<form>` element dictates where the `<form>` data should be sent when the form is submitted:   
+  when you submit a `<from>` an HTTP request will be sent.  
+  We control where the request goes to with the *`action`* attribute, and we control which type of HTTP method should be used with the *`method`* attribute. 
 
  - <u>**`<form>` attributes**</u>:
 
