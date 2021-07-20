@@ -3,7 +3,7 @@
 
 - the `<form>` element itself is a shell or container that doesn't have any visual impact.
 
-- we fill `<form>` with inputs, checkboxes, buttons, etc. and we groupd them together with the `<form>`.
+- we fill `<form>` with inputs, checkboxes, buttons, etc. and we group them together with the `<form>`.
 
 - the `<from>` element represents a document section containing  interactive controls for submitting information.
 
