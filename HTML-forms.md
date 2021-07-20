@@ -36,7 +36,7 @@
       - eg.: a text input type looks like this:
         ```                                                                                     
          <form action="/whatever">
-           <input type="text">                      
+           <input type="text" placeholder="Type something here!">                      
          </form>
         ```   
         ![](input.png)                     
