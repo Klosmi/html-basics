@@ -3,6 +3,8 @@
 
 - the `<form>` element itself is a container that doesn't have any visual impact. It is the thing that group together all of the content which are put inside.
 
+- the `<form>` element dictates where the `<form>` data should be sent when the form is submitted.
+
 - we fill `<form>` with inputs, checkboxes, buttons, etc. and we group them together with the `<form>`.
 
 - the `<from>` element represents a document section containing  interactive controls for submitting information.
