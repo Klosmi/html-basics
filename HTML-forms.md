@@ -21,7 +21,7 @@ We control where the request goes to with the *`action`* attribute, and we contr
 - [`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) :
   - is used to create a variety of different form controls.
   - there are 20+ possible types of inputs (like date pickers, color picker, password input, text input, checkboxes, etc.)
-  - `<input>` attributes:
+  - [`<input>` attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes):
     - the [<u>***type***</u>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-type) attribute 🚀 is the most important attribute, it is where the magic happens:
     changing type dramatically alters the input's behaviour and appearance.  
     - [placeholder](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefplaceholder) attribute specifies the placeholder text for an `<input>`. It is the text you that shows up before you type anything (while it is empty).
