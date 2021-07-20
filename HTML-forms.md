@@ -38,7 +38,7 @@ We control where the request goes to with the *`action`* attribute, and we contr
      - <u>**`<label>` attributes**</u>:
         - [**`for`**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label#attr-for) : basically it answers the question of what the `<label>` is for?  
         - The first element in the document with an `id` matching the value of the `for` attribute, that is the labeled control for this label element.  
-        - __If you nest the `<input>` inside of the label, you don't need to use the *for* attribute (and the `id`)❗️__ However it is a less common standard (styling is less easy).
+        - __If you nest the `<input>` inside of the label, you don't need to use the `for` attribute (and the `id`)❗️__ However it is a less common standard (styling is less easy).
 
         - **`id`** : <u>**is in the `<input>`!!!**</u> the value (what name we give to the *id*) should be the same of the **for** attribute's value. So we set the *id*'s value to the *for*'s value.💡  
  
