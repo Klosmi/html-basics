@@ -20,7 +20,7 @@
       - eg.: a search form looks something like this
         ```
           <form action=/search/" method="get">
-            <input id="search-bar" type="text" placeholder="Search" name="q">
+            <input id="search-bar" type="text" placeholder="Search" name="q" value="cats">
           </form>                                  
         ```
 
@@ -33,6 +33,13 @@
     - the [<u>***type***</u>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-type) attribute 🚀 is the most important attribute, it is where the magic happens:
     changing type dramatically alters the input's behaviour and appearance.  
     - [placeholder](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefplaceholder) attribute specifies the placeholder text for an `<input>`. It is the text you that shows up before you type anything (while it is empty).
+      - eg.: a text input type looks like this:
+        ```                                                                                     
+         <form action="/whatever">
+           <input type="text">                      
+         </form>
+        ```   
+        ![](input.png)                     
  
  &nbsp;
 
