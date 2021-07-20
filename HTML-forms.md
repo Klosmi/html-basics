@@ -79,7 +79,7 @@
 - **[`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)**  
 A `<button>` represents a clickable button, used to submit forms or anywhere in a document for accessible, standard button functionality.   
 Also, `<button>` not necesseraly has to be inside of a form (eg. a "sign up" button, links).     
-However, if it is inside the `<form>`, as `<button>Submit</button>`, it automaitcally submits the form.
+*(However, if it is inside the `<form>`, as `<button>Submit</button>`, it automaitcally submits the form.)*
 
   - `<button>` has a closing tag `</button>`.
   - the text inside of the `<button></button>` is used to label the button.
