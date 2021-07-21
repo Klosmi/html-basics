@@ -87,7 +87,7 @@ ul {
     }
     nav, nav ul {
         flex-direction: column;     /* items go vertical */
-        align-items: center;  	    /* cross-axis because the column */
+        align-items: center;  	   /* cross-axis because the column */
     }
   } 
 
