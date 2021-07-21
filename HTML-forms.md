@@ -27,7 +27,7 @@
 
 &nbsp;
 ## The (form) `input elements`:
-- [`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) :
+- **[`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)** :
   - is used to create a variety of different form controls.
   - there are 20+ possible types of inputs (like date pickers, color picker, password input, text input, checkboxes, etc.)
   - [`<input>` attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes):
@@ -44,7 +44,7 @@
  
  &nbsp;
 
-- [`<label>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label) : represents a caption for an item in a user interface. 
+- **[`<label>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)** : represents a caption for an item in a user interface. 
   - really important in terms of **accessibility**!!! The label element **associates** a direct connection between some `input` or some `form control` and a `text`. The screen reader also reads out when the user is focused on the form input.
 
   - To associate the `<label>` with an `<input>` element, you need to give the `<input>` an `id` attribute. The `<label>` needs a `for` attribute whose value is the same as the input's `id`.
@@ -187,8 +187,17 @@ So here's a little selection, which might be useful: </u>
    👉 ![](range-01.png)
                                                                                           
 
-- [**number**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number) : <input type="number" min="10" max="1000"  placeholder="num"> 👉   `<input type="number">` elements of type number are used to let the user enter a number.
-
+- [**number**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number) : <input type="number" min="10" max="1000"  placeholder="num">  elements of type number are used to let the user enter a number.   
+  eg.:
+   ```
+     <form action="/anything"> 
+      <label>Enter a number:
+        <input type="number" placeholder="enter a number" name="num" min="1" max="10" step="2">
+      </label>
+     </form>                                                                                      
+   ```                                                                                          
+👉 ![](number.png)
+                                                                                              
 - [**textarea**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea) : <textarea id="story" name="story" rows="1" cols="40"> This is a textarea...
 </textarea> 👉 `<textarea>`  
   - It is a multiline text input. 
