@@ -191,9 +191,8 @@ So here's a little selection, which might be useful: </u>
   eg.:
    ```
      <form action="/anything"> 
-      <label>Enter a number:
-        <input type="number" placeholder="enter a number" name="num" min="1" max="10" step="2">
-      </label>
+      <label for="tentacles">Enter a number:</label>
+      <input type="number" id="tentacles" name="tentacles" min="10" max="100">
      </form>                                                                                      
    ```                                                                                          
 👉 ![](number.png)
