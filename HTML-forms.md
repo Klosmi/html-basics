@@ -200,7 +200,7 @@ So here's a little selection, which might be useful: </u>
 - [**textarea**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea) : `<textarea id="story" name="story" rows="1" cols="40"> This is a textarea...
 </textarea>` 
   - It is a multiline text input. (You can type a paragraph)
-  - **❗️It is NOT an input element❗️**    
+  - **❗️It is NOT an input element❗️** *(there is not `<input>`)*   
   eg.:
     ```
     <label for="request">Write any text</label>
