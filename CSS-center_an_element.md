@@ -77,7 +77,7 @@ ul,li {
 ul {
     flex: 1;
     max-width: 50%;
-    display: flex;      // this is here because it is a nseted flex box!
+    display: flex;        	   /* this is here because it is a nseted flex box! */
     justify-content: space-evenly;
 }
 
@@ -86,8 +86,8 @@ ul {
       font-size: 4em;
     }
     nav, nav ul {
-        flex-direction: column;     // items go vertical
-        align-items: center;  //cross-axis because the column
+        flex-direction: column;     /* items go vertical */
+        align-items: center;  	    /* cross-axis because the column */
     }
   } 
 
