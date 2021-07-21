@@ -128,7 +128,7 @@ But if you want a button which does not submit the form - but it is inside the f
           <label for="agree">I agree</label>
         </form>
         ```  
-         👉 ![](checkbox-01.png)                    
+        ![](checkbox-01.png)                    
 
 - [**radiobutton**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio) : `<input type="radio">`   
   The `radiobutton` allowing only one single value to be selected out of multiple choices with the same `name` value.  
@@ -148,7 +148,7 @@ But if you want a button which does not submit the form - but it is inside the f
           <input type="radio" name="size" id="m" value="med">
         </form> 
        ```                                                                                                      
-        👉 ![](radiobuttons-01.png)
+       ![](radiobuttons-01.png)
                                                             
 - [`<select>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) : 
     ```
@@ -184,7 +184,7 @@ So here's a little selection, which might be useful: </u>
      <input id="fuel" type="range" min="0" max="100" step="2" value="25" name="fuel_level"
     </form>  
     ```                                                                                      
-   👉 ![](range-01.png)
+    ![](range-01.png)
                                                                                           
 
 - [**number**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number) : <input type="number" min="10" max="1000"  placeholder="num">  elements of type number are used to let the user enter a number.   
@@ -195,13 +195,18 @@ So here's a little selection, which might be useful: </u>
       <input type="number" id="tentacles" name="tentacles" placeholder="enter a number" min="10" max="100">
      </form>                                                                                      
    ```                                                                                          
-👉 ![](number.png)
+![](number.png)
                                                                                               
 - [**textarea**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea) : <textarea id="story" name="story" rows="1" cols="40"> This is a textarea...
 </textarea> 👉 `<textarea>`  
-  - It is a multiline text input. 
-  - **❗️It is NOT an input element❗️**   
-  
+  - It is a multiline text input. (You can type a paragraph)
+  - **❗️It is NOT an input element❗️**    
+  eg.:
+    ```
+    <label for="request">Write any text</label>
+    <textarea id="request" cols="30" rows="10" name="requests" placeholder="Write something here."></textarea>                                                                                                         
+    ```
+  ![](textarea.png)                                                                                              
   &nbsp;
 
   ---
