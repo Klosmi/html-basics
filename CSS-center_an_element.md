@@ -97,7 +97,7 @@ ul {
     }
   } 
   ```
-  *With some extra styling (colors) for the better repsresentation...*   
+  *With some extra styling (colors) for the better representation...*   
   
   ![](basic-navbar-big.png) 👉
    ![](basic-navbar-small.png)
