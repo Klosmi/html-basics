@@ -97,8 +97,10 @@ ul {
     }
   } 
   ```
-  ![](basic-navbar-big.png)
-  ![](basic-navbar-small.png)
+  *With some extra styling (colors) for the better repsresentation...*   
+  
+  ![](basic-navbar-big.png) 👉
+   ![](basic-navbar-small.png)
 
 <br>
 
