@@ -654,11 +654,11 @@ So it governs the rate that elements shrink **when there is not enough space in 
 
   You can pass 1 to 3 different values:
 
-  1 value: **unitless number is goint to be flex-grow**     
+  1 value: **unitless number is goin to be flex-grow**     
     flex-basis is then equal to 0.    
     `flex: 2;`
 
-  1 value: **width/height goin to be flex-basis**
+  1 value: **width/height going to be flex-basis**
   `flex: 10em;`   
   `flex: 30%;`   
   `flex: min-content;` 
