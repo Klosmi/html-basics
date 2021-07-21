@@ -97,7 +97,9 @@ ul {
     }
   } 
   ```
-  
+  ![](basic-navbar-big.png)
+  ![](basic-navbar-small.png)
+
 <br>
 
 # Basic button 🤓
