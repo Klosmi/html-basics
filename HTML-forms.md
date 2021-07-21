@@ -226,7 +226,7 @@ So here's a little selection, which might be useful: </u>
     - for numeric values length specification use `min` and `max`
 
   - [pattern](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/pattern) 👉 HTML attribute  
-  The pattern attribute specifies a regular expression __([regex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet)__ the form control's value should match.    
+  The pattern attribute specifies a regular expression __([regex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet))__ the form control's value should match.    
     eg.:`^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,63}$`
     - we can use already built in pattern matching:      
       - [`<inpute type="email" required>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email) it asks a valid email *(It is only checking if there is an `@` sign or not, so it's not 100% efficient).*
