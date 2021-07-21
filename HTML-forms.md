@@ -180,7 +180,7 @@ So here's a little selection, which might be useful: </u>
    eg.: *the starting value is value="25". Range is between 0 and 100. It goes up by 2.*                                                                 
     ```
     <form action="/anything"> 
-     <label for="cheese">Amount</label>
+     <label for="fuel">Liter of fuel</label>
      <input id="fuel" type="range" min="0" max="100" step="2" value="25" name="fuel_level"
     </form>  
     ```                                                                                      
