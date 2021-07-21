@@ -192,7 +192,7 @@ So here's a little selection, which might be useful: </u>
    ```
      <form action="/anything"> 
       <label for="tentacles">Enter a number:</label>
-      <input type="number" id="tentacles" name="tentacles" min="10" max="100">
+      <input type="number" id="tentacles" name="tentacles" placeholder="enter a number" min="10" max="100">
      </form>                                                                                      
    ```                                                                                          
 👉 ![](number.png)
