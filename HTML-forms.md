@@ -197,8 +197,8 @@ So here's a little selection, which might be useful: </u>
    ```                                                                                          
 ![](number.png)
                                                                                               
-- [**textarea**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea) : <textarea id="story" name="story" rows="1" cols="40"> This is a textarea...
-</textarea> 👉 `<textarea>`  
+- [**textarea**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea) : `<textarea id="story" name="story" rows="1" cols="40"> This is a textarea...
+</textarea>` 
   - It is a multiline text input. (You can type a paragraph)
   - **❗️It is NOT an input element❗️**    
   eg.:
@@ -206,8 +206,8 @@ So here's a little selection, which might be useful: </u>
     <label for="request">Write any text</label>
     <textarea id="request" cols="30" rows="10" name="requests" placeholder="Write something here."></textarea>                                                                                                         
     ```
-  ![](textarea.png)                                                                                              
-  &nbsp;
+    ![](textarea.png)                                                                                              
+ &nbsp;
 
   ---
   # [FORM Validations](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation#what_is_form_validation)
