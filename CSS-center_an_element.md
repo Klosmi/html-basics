@@ -126,6 +126,7 @@ ul {
  background-color: #lightblue;
 }
   ```
+It looks like this:  
 ![](basicbutton.png)
 
 <br>
