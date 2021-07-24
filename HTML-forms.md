@@ -195,7 +195,7 @@ So here's a little selection, which might be useful: </u>
       <input type="number" id="tentacles" name="tentacles" placeholder="enter a number" min="10" max="100">
      </form>                                                                                      
    ```                                                                                          
-![](number.png)
+  ![](number.png)
                                                                                               
 - [**textarea**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea) : `<textarea id="story" name="story" rows="1" cols="40"> This is a textarea...
 </textarea>` 
