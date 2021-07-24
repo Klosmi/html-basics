@@ -150,7 +150,7 @@ But if you want a button which does not submit the form - but it is inside the f
        ```                                                                                                      
        ![](radiobuttons-01.png)
                                                             
-- [`<select>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) : 
+- **[`<select>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)** : 
     ```
       <select name="pets" id="pet-select">
         <option value="">--Please choose an option--</option>
