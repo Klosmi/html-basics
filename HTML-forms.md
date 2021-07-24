@@ -161,7 +161,7 @@ But if you want a button which does not submit the form - but it is inside the f
     ```
     ![](select-01.png)                           
 
-  The [`<select>`] element represents a control that provides a menu of options.  
+  The `<select>` element represents a control that provides a menu of options.  
   It is essentially a dropdown menu   
 
     - Two elements working together: `<select>` and the `<option>` elements. The `<select>` is the parent it groups together a bunch of `options`.  
