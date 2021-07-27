@@ -49,10 +49,6 @@ these are a few CSS properties which are nice to know, but not crucial for the b
           ```
 
       <br>
-      
-[👆back to top](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
-  
-  <br>
 
   **[Opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity#values)** :   
   The opacity CSS property **sets the opacity of an element**. Opacity is **the degree to which content behind an element is hidden**, and is the **opposite of transparency**.
@@ -149,10 +145,6 @@ these are a few CSS properties which are nice to know, but not crucial for the b
           Now `#second` does not take up any space. And it is now positioned relative to its parent(`#absolute`), which also is positioned (*to realtive btw*).
   
   <br>
-  
-  [👆back to top](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
-
-<br>
 
   - `fixed` : the element is removed from the normal document flow, and no space is created for the element in the page layout.
   **It is positioned relative to the initial containing block.**
@@ -190,10 +182,6 @@ these are a few CSS properties which are nice to know, but not crucial for the b
           ```
           When something is positioned `fixed` it is gonna **stay** there. It is positioned **relative to its containing block**, always.
   <br>
-  
-  [👆back to top](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
-
-<br>
 
 - `sticky` : it sticks. 
   The element is positioned according to the normal flow of the document, and **then offset relative to its nearest scrolling ancestor and containing block** (nearest block-level ancestor). The offset does not affect the position of any other elements. 
@@ -306,10 +294,6 @@ these are a few CSS properties which are nice to know, but not crucial for the b
     By singling-out the `background-color`, it will changes with a 3s animation **ONLY** the `background-color`, the rest doesn't use the 3s animation.
 
     <br>
-    
- [👆back to top](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
-
-<br>
 
 - **all properties**: 
   - eg.:  
@@ -494,10 +478,6 @@ these are a few CSS properties which are nice to know, but not crucial for the b
             transform: rotateZ(3.142rad);
             ```
   <br>
-  
- [👆back to top](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
-
-<br>
 
   - [**transform-origin**](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin):    
       the `transform-origin` CSS property sets the origin for an element's transformations.
@@ -519,10 +499,6 @@ these are a few CSS properties which are nice to know, but not crucial for the b
         transforming the element from the `bottom right` by `rotate: 45deg`
 
    <br>
-  
-  [👆back to top](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
-
-<br>
 
   - [**scale**](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale())  :    
      The `scale()` function defines a **transformation that resizes an element on the 2D plane**. Because the amount of scaling is defined by a vector, it can resize the horizontal and vertical dimensions at different scales.
@@ -576,11 +552,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
           ```
           Double the height of the element. You can do it with `scaleY()` or with `scale(1, 2)`.
 
-          <br>
-  
-  [👆back to top](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
-
-<br>
+  <br>
 
   - [**translate or translation (= moving)**](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate()) :     
     the `translate()` function can take one element and move it around so we can move it to the right, move it up, move it down or do both at the same time.
@@ -831,10 +803,7 @@ Some of the most common values:
          **It starts from the bottom part of the image.** *(So the bottom of the background image is going upwards, → we can see it.)*
 
   <br>
-  
-  [👆back to top](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
 
-<br>
 
  ###### **The `background` shorthand property:**
   We can set the properties at once and/or combine them in one line.   
