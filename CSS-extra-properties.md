@@ -80,6 +80,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 <br>
 
 ---
+
 ## [Position](https://developer.mozilla.org/en-US/docs/Web/CSS/position) 
   The position CSS property sets how an element is positioned in a document. The `top`, `right`, `bottom`, and `left` properties determine the final location of positioned elements.
 
@@ -225,7 +226,9 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 [👆back to top](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
 
 <br>
+
 ---
+
 ## [Transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) 
   Transitions enable you to define the transition between two states of an element. 
 
@@ -413,7 +416,9 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 [👆back to top](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
 
 <br>
+
 ---
+
 ## [Transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform) 
   The transform CSS property lets you **rotate, scale, skew, or translate an element**.
 
@@ -661,8 +666,10 @@ these are a few CSS properties which are nice to know, but not crucial for the b
       
 [👆back to top](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
 
-<br>
----      
+  <br>
+  
+--- 
+
 ## [Background](https://developer.mozilla.org/en-US/docs/Web/CSS/background) 
 The background (shorthand CSS) property sets all **background style properties at once**, such as **color**, **image**, **origin** and **size**, or **repeat method**.
 
@@ -717,7 +724,7 @@ Some of the most common values:
     Scales the image as large as possible to fill the container **without stretching** the image **but it will crop it**.
     -  eg.:
         ###### CSS: give a `background-image` → `cover`
-        ```
+        ```f
         section {
             width: 80%;
             background-image: url("https://images.unsplash.com/....);
@@ -875,6 +882,7 @@ Some of the most common values:
   [👆back to top](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
 
  <br>
+  
  ---
 
 ## Some extras:
@@ -895,6 +903,7 @@ Use and reference to the **MDN** docs.
 s 
     
 ---
+  
   [👆back to top](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
     
  **OR**
