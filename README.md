@@ -17,6 +17,12 @@
 15. [CSS Flexbox](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md)
 16. [CSS Responsive design - @media queries](https://github.com/Klosmi/html-basics/blob/master/Responsivedesign.md)
 
+<br>
+
+# [JavaScript basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps)
+1. [JS: Primitive Types]()
+
+<br>
 
 ##### *These are my personal notes*
 ##### *Note that, some HTML elements, like `<button>`, `<input type="radio">`, etc. do not show in github's markdown previewer, however in vscode's markdown previewer you can see them and test them.* 
