@@ -20,7 +20,7 @@
 <br>
 
 # [JavaScript basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps)
-1. [JS: Primitive Types]()
+1. [JS: Primitive Types](https://github.com/Klosmi/html-basics/blob/master/JS-primitiveTypes.md)
 
 <br>
 
