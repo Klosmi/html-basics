@@ -4,7 +4,7 @@
 
 <br>
 
-- [**number**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+- [**number**](https://github.com/Klosmi/html-basics/blob/master/JS-primitiveTypes.md#number)
 - **string**
 - **boolean**
 - **null**
