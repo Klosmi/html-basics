@@ -203,6 +203,7 @@ For example, :hover can be used to change a button's color when the user's point
          <div>Div 3</div>
          <div>Div 4</div>
          ```
+        The result:    
         ![](before-after-CSS.png)
 ---
 ## [Pseudo-**Elements**](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements) : 
