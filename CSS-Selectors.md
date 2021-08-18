@@ -175,7 +175,35 @@ For example, :hover can be used to change a button's color when the user's point
    - :not()
    - :nth-of-child()  
    ...etc.
+   - *many times I see `*:after, *:before`*, so what's that? :   
+      - [explanation](https://stackoverflow.com/questions/32805670/what-does-before-and-after-do-in-css):   
+        The CSS
+          ```
+           div {
+           border: solid 1px black;
+           padding: 5px;
+           }
 
+           div:before {
+           content: "Added BEFORE anything within the div!";
+           color:red;
+           }
+
+           div:after {
+           content: "Added AFTER anything within the div!";
+           color:green;
+           }
+         ```
+      
+        The HTML
+      
+         ```
+         <div>Div 1</div>
+         <div>Div 2</div>
+         <div>Div 3</div>
+         <div>Div 4</div>
+         ```
+            ![](before-after-CSS)
 ---
 ## [Pseudo-**Elements**](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements) : 
 *(they are not pseudo-classes, they are a distinct concept)*  
