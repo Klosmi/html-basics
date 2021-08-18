@@ -64,3 +64,39 @@
 
      typeof NaN //"number"
      ```
+  
+  <br>
+
+  - [__assignment operators__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment_operators)
+
+    - [__`+=`__ (addition assignment)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition_assignment) 
+    eg.:
+      ```
+      x += y    // x = x + y
+      ```
+      __++__  →  increments by `1` 
+        eg.:
+        ```
+        let x = 1
+        x++   // x = x + 1
+        ```
+
+    - [__`-=`__ (subtraction assignment)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction_assignment)    
+    eg.:
+      ```
+      x -= y    // x = x - y
+      ```
+      __--__  →  decremnts by `1` 
+        eg.:
+        ```
+        let x = 1
+        x--   // x = x - 1
+        ```
+
+    - [__`*=`__ (multiplication assignment)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication_assignment)
+
+    - [__`/=`__ (division assignment)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division_assignment)
+
+    - [__`%=`__ (remainder assignment)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder_assignment)
+
+    - [__`**=`__ (exponentiation assignment)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation_assignment)
