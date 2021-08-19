@@ -100,3 +100,7 @@
     - [__`%=`__ (remainder assignment)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder_assignment)
 
     - [__`**=`__ (exponentiation assignment)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation_assignment)
+
+
+---
+   [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
