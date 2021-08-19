@@ -28,6 +28,10 @@
 
       let totalChickens = numChickens + numRoosters   //5;
       ```
+      another example
+      ```
+      let x = 1;
 
-
+      console.log(x);   // expected output: 1
+      ```
      
