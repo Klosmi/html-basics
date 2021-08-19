@@ -103,4 +103,4 @@
 
 
 ---
-   [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
