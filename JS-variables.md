@@ -24,8 +24,7 @@ Now, it seems like you might be asking about defining a variable without let/con
 
   <br>
 
-  -  **let** year = 2021
-      eg.:
+  -   eg.:   
       ```
       let numChickens = 4;
       let numRoosters = 1;
