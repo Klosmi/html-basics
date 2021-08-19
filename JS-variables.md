@@ -26,7 +26,7 @@
       let numChickens = 4;
       let numRoosters = 1;
 
-      let totalChickens = numChickens + numRoosters   //5;
+      let totalChickens = numChickens + numRoosters;   //5;
       ```
       another example
       ```
