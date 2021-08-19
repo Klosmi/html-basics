@@ -8,7 +8,7 @@
 
 <br>
 
- To define a variable, we should use `let`, `const`, or `var` (though var isn't recommended these days anymore).      
+ To define a variable, we should use `let`, `const`, or `var` (though `var` isn't recommended these days anymore).      
  **We only use those keywords when first declaring the variable (the first time we tell javaScript it exists).**  After we declared the variable and then if we want to change it the value of a that variable, we just reference the variable name **without** `let` or `const` or `var`.    
 <br>
 💡defining a variable without `let`/`const`/`var` is an option in JavaScript, but you should never do it!!!  
