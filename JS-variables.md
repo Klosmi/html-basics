@@ -58,6 +58,8 @@ Now, it seems like you might be asking about defining a variable without let/con
 
     <br>
 
+---
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
 
         
     
