@@ -5,8 +5,8 @@
 <br>
 
 - [**number**](https://github.com/Klosmi/html-basics/blob/master/JS-primitiveTypes.md#number)
+- [**boolean**](https://github.com/Klosmi/html-basics/blob/master/JS-primitiveTypes.md#boolean)
 - **string**
-- **boolean**
 - **null**
 - **undefined**
 - symbol
@@ -100,6 +100,20 @@
     - [__`%=`__ (remainder assignment)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder_assignment)
 
     - [__`**=`__ (exponentiation assignment)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation_assignment)
+
+<br>
+
+## **[Boolean](https://developer.mozilla.org/en-US/docs/Glossary/Boolean)** :   
+There are two options for a __boolean value__, `true` or `false`.
+
+- booleans are to store yes or no values (true or false value)
+
+- eg.:
+  ```
+  let isLoggedIn = true;
+  let gameOver = false;
+  const skyIsBlue = true;
+  ```
 
 
 ---

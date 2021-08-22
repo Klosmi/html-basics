@@ -58,8 +58,28 @@ Now, it seems like you might be asking about defining a variable without let/con
 
     <br>
 
----
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+- **Variables can CHANGE TYPES**
+    - in the "regular" JS variables can chage types, but in TypeScript (a fancier JS) it cannot change types (it has to remain).   
+    - eg.:
+    *we can change a numeric variable to a boolean.*   
+      ```
+      let numPeople = 42;    // Number
+      numPeople = false;    //Changed to boolean
+      numPeople = 99;      //Back to number    
+      ```
 
-        
-    
+<br>
+
+- **[Variable naming conventions](https://developer.mozilla.org/en-US/docs/Glossary/Identifier)**: 
+  - __rules__:
+    - can't start with numbers
+    - can't contain space
+    - camelCase : `let daysOfTheYear = 365;`s
+
+  - __bestpracrice__:
+    - start with a lowercase letter (although uppercase works, but don't do that)
+    - it can start with an `_` (underscore) : `let _age_ = 10;`, but no usually used.
+    - the name should represent what it contians (meaningful names).
+    - generally avoid 1 letter variables.
+    - for booleans is a good practice to start the nameing with `is`.    
+    Like `let isGameOver = false;`
