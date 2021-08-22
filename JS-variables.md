@@ -76,7 +76,7 @@ Now, it seems like you might be asking about defining a variable without let/con
     - can't contain space
     - camelCase : `let daysOfTheYear = 365;`s
 
-  - __bestpracrice__:
+  - __bestpractice__:
     - start with a lowercase letter (although uppercase works, but don't do that)
     - it can start with an `_` (underscore) : `let _age_ = 10;`, but no usually used.
     - the name should represent what it contians (meaningful names).
