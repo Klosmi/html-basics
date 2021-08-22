@@ -5,7 +5,7 @@
 <br>
 
 - [**number**](https://github.com/Klosmi/html-basics/blob/master/JS-primitiveTypes.md#number)
-- [**boolean**](https://github.com/Klosmi/html-basics/blob/master/JS-primitiveTypes.md#boolean)
+- [**boolean**](https://github.com/Klosmi/html-basics/blob/master/JS-primitiveTypes.md#boolean-)
 - **string**
 - **null**
 - **undefined**
