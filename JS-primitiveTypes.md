@@ -159,7 +159,7 @@ There are two options for a __boolean value__, `true` or `false`.
       ```
   
  - __concatenation__ :    
-   concatenating together strings to get a new string.   
+   concatenating together strings to get a new string.Smashes two strings together (without space).   
     eg.:
     ```
     "hello" + "hello";   //"hellohello"    
