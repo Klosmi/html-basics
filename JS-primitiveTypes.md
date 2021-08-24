@@ -103,7 +103,7 @@
 
 <br>
 
-## **[Boolean](https://developer.mozilla.org/en-US/docs/Glossary/Boolean)** :   
+## **[Boolean](https://developer.mozilla.org/en-US/docs/Glossary/Boolean)**      
 There are two options for a __boolean value__, `true` or `false`.
 
 - booleans are to store yes or no values (true or false value)
