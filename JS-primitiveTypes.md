@@ -185,11 +185,10 @@ There are two options for a __boolean value__, `true` or `false`.
 - **[type coercion](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion)**:   
   you can add `number` to a string: because JavaScript tries and coerce different types to a common type.
   It makes the number string, because the other way around would not work (makes the string into number?).
-
-a common type. 
-  eg.:
-  ```
-  let result = 1 + "hello";  //"1hello"
-  ```
+  a common type. 
+    eg.:
+    ```
+    let result = 1 + "hello";  //"1hello"
+    ```
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
