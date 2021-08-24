@@ -6,7 +6,7 @@
 
 - [**number**](https://github.com/Klosmi/html-basics/blob/master/JS-primitiveTypes.md#number)
 - [**boolean**](https://github.com/Klosmi/html-basics/blob/master/JS-primitiveTypes.md#boolean-)
-- **string**
+- [**string**](https://github.com/Klosmi/html-basics/blob/master/JS-primitiveTypes.md#string-)
 - **null**
 - **undefined**
 - symbol
@@ -103,7 +103,7 @@
 
 <br>
 
-## **[Boolean](https://developer.mozilla.org/en-US/docs/Glossary/Boolean)**      
+## **[Boolean](https://developer.mozilla.org/en-US/docs/Glossary/Boolean)** :   
 There are two options for a __boolean value__, `true` or `false`.
 
 - booleans are to store yes or no values (true or false value)
@@ -115,6 +115,81 @@ There are two options for a __boolean value__, `true` or `false`.
   const skyIsBlue = true;
   ```
 
+<br>
 
+## [String](https://developer.mozilla.org/en-US/docs/Glossary/string) :   
+  A string is textural information, *a string of characters.*
+
+  - represent text
+  - `"must be wrapped in quotes"`.        
+  `"double"` or `'single'` quotes, both work, but be consistent with them. Except a quote in a string, like:    
+  `'The dog said "Hello master!"'`
+
+    - eg.:
+      ```
+      let name = "Jane Doe";    // it's a string
+      let numberString = "42";  // it's a string
+      let emptyString = ""      // it's a string (an empty string)
+      ```
+
+- **[index](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods#retrieving_a_specific_string_character)** :
+
+  - strings are indexed. So each character has a corresponding index __(a positional number)__.   
+  In other words:   
+  **every character in a string has a corresponding number associated with it**. It is a positional number, **starting from `0`**.
+
+  - `[]` square brackets with number `[0]`, this is the 1st index of the character.   
+
+    eg.: the second character of the word *'dog'*
+      ```
+      let animal = "dog"
+      animal[1]           // "o"
+
+      animal[42]         // undifenied
+      ```
+
+- **[length](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods#finding_the_length_of_a_string)** property :    
+  the `length` property of a string object contains the length of the string.   
+  **It gives the number of characters.**
+    - chain on `.length`   
+    eg.:
+      ```
+      let animal = "dog";
+      animal.length;    // 3 characters
+      ```
+  
+ - __concatenation__ :    
+   concatenating together strings to get a new string.   
+    eg.:
+    ```
+    "hello" + "hello";   //"hellohello"    
+    ```
+    eg.:
+    ```
+    let greeting = "Hello";
+    let user =  "Gamer";
+
+    welcome + user;  //HelloGamer
+
+    //or add a space between
+
+    let helloUser = greeting + " " + user;  //Hello Gamer
+    ```
+- **you can't change a string❗️**
+    eg.: the `let name = 'John';` with capital __J__. If I make the __J__ lowercase __j__, it will be a new string. They take a different place in the memory.
+    ```
+    let name = 'John'; // place in the memory A
+    name = 'john';     // place in the memory B
+    ```
+
+- **[type coercion](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion)**:   
+  you can add `number` to a string: because JavaScript tries and coerce different types to a common type.
+  It makes the number string, because the other way around would not work (makes the string into number?).
+
+a common type. 
+  eg.:
+  ```
+  let result = 1 + "hello";  //"1hello"
+  ```
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
