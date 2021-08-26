@@ -363,9 +363,9 @@ So it controls the alignment of items on the **Cross Axis**.
  #### 7. **[align-self](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)** :    
  it is a property we add to a single (or more) element, so we add to **individual items in the flex container**.
 
-    We don't apply to the flex container itself, but to **individual elements**. Thus we can change the alignment along the cross axis for a single element using this property.   
+ We don't apply to the flex container itself, but to **individual elements**. Thus we can change the alignment along the cross axis for a single element using this property.   
 
-     So, it overrides a flex item's align-items value. In Flexbox, it aligns the item on the cross axis.
+ So, it overrides a flex item's align-items value. In Flexbox, it aligns the item on the cross axis.
 
 
   - [values](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self#values) :
