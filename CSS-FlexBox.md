@@ -314,7 +314,7 @@ So it controls the alignment of items on the **Cross Axis**.
     -  eg.: using columns
       ```
     #container {
-                display: flex;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
