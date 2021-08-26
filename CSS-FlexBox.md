@@ -272,7 +272,7 @@ So it controls the alignment of items on the **Cross Axis**.
 #### 6. **[align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)** :   
   sets the distribution of space between and around content items along a flexbox's **cross-axis**, but only when we have multiple rows or columns.   
 
-  So if we have columns, `align-content` controls the space between the columns. If we have rows, the  `align-content` controls the space between the rows.
+  __So if we have columns, `align-content` controls the space between the columns. If we have rows, the  `align-content` controls the space between the rows.__
 
 - [values](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content#values)
 
