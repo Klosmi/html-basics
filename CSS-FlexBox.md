@@ -141,7 +141,7 @@ All other *flexbox* properties rely on the `display: flex` property.
 
         ```
         #container {
-          hegiht: 500px;
+          height: 500px;
           display: flex;
           flex-direction: column;
           justify-content: space-evenly;
