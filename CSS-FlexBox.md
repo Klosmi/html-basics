@@ -276,7 +276,7 @@ So it controls the alignment of items on the **Cross Axis**.
 
 - [values](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content#values)
 
-  - `align-conten: center;` :  
+  - `align-content: center;` :  
   the items are packed flush to each other in the center of the alignment container along the cross axis. 
     -  eg.:
       The items meet in the center.    
@@ -308,7 +308,7 @@ So it controls the alignment of items on the **Cross Axis**.
 
     <br>
 
-  - `align-conten: flex-start;` :  
+  - `align-content: flex-start;` :  
   the items are packed flush to each other against the edge of the alignment container depending on the flex container's cross-start side. 
 
     -  eg.: using columns
@@ -334,7 +334,7 @@ So it controls the alignment of items on the **Cross Axis**.
 
     <br>
 
-  - `align-conten: space-between;` :    
+  - `align-content: space-between;` :    
   the items are evenly distributed within the alignment container along the cross axis. 
 
     -  eg.: using rows
