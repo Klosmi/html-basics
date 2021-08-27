@@ -134,7 +134,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
           But: 
           ###### *The CSS, `<section>` `id="#absolute"` (the parent element), `<div> `id="#second"`(the child element)*
           ```
-          #absolut {  
+          #absolute {  
             position: relative;
           }
 
@@ -144,7 +144,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
           }
           ```
           Now `#second` does not take up any space. And it is now positioned relative to its parent(`#absolute`), which also is positioned (*to realtive btw*).
-  
+          ![](absolute01.jpg)
   <br>
 
   - `fixed` : the element is removed from the normal document flow, and no space is created for the element in the page layout.
