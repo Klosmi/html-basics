@@ -185,7 +185,8 @@ these are a few CSS properties which are nice to know, but not crucial for the b
             left: 400px;
           }
           ```
-          When something is positioned `fixed` it is gonna **stay** there. It is positioned **relative to its containing block**, always.
+          When something is positioned `fixed` it is gonna **stay** there. It is positioned **relative to its containing block**, always.   
+          ![](fixed.jpg)
   <br>
 
 - `sticky` : it sticks. 
