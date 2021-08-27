@@ -143,7 +143,8 @@ these are a few CSS properties which are nice to know, but not crucial for the b
             left: 70px;
           }
           ```
-          Now `#second` does not take up any space. And it is now positioned relative to its parent(`#absolute`), which also is positioned (*to realtive btw*).
+          Now `#second` does not take up any space. And it is now positioned relative to its parent(`#absolute`), which also is positioned (*to realtive btw*).   
+          
           ![](absolute.jpg)
   <br>
 
