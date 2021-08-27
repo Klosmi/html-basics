@@ -108,6 +108,9 @@ these are a few CSS properties which are nice to know, but not crucial for the b
             left: 70px;     /* → offset, it pushes to the right.
           }
           ```
+          
+          ![](relative01.jpg)   
+          
 
   - `absolute` : the element is **removed from the normal document flow**, and **no space is created for the element**. And **it is positioned relative to its closest positioned ancestor if any**; otherwise, it is placed relative to the initial containing block (basically to the `body`).
   
