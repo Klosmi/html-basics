@@ -186,7 +186,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
           }
           ```
           When something is positioned `fixed` it is gonna **stay** there. It is positioned **relative to its containing block**, always.   
-          ![](fixed.jpg)
+          ![](fixed01.jpg)
   <br>
 
 - `sticky` : it sticks. 
