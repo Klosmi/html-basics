@@ -29,7 +29,7 @@
     let amount = 3;
     let price = 10;
 
-    "I ordered " + amount + " " + product + "s" + for + price*amount + "€"."   // I ordered 3 pizzas for 30€.
+    "I ordered " + amount + " " + product + "s" + for + price*amount + "€"."   // "I ordered 3 pizzas for 30€."
     ```
     *temaplate literals*
     ```
@@ -37,5 +37,5 @@
     let amount = 3;
     let price = 10;
 
-    `I ordered ${amount} ${pizza}s for ${price*amount}€. // I ordered 3 pizzas for 30€.`
+    `I ordered ${amount} ${pizza}s for ${price*amount}€.` // "I ordered 3 pizzas for 30€."
     ```
