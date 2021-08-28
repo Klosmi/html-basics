@@ -90,3 +90,8 @@
 
     - __the only value that a method has is the one that is returned after it finishes performing the action__ 
     - __method is just an action we can call upon later__
+
+<br>
+
+   ---
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
