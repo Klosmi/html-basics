@@ -31,7 +31,7 @@
 
     "I ordered " + amount + " " + product + "s" + for + price*amount + "€"."   // I ordered 3 pizzas for 30€.
     ```
-    *wtemaplate literals*
+    *temaplate literals*
     ```
     let product = "pizza";
     let amount = 3;
