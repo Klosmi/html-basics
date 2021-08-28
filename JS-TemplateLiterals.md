@@ -39,3 +39,8 @@
 
     `I ordered ${amount} ${pizza}s for ${price*amount}€.` // "I ordered 3 pizzas for 30€."
     ```
+
+<br>
+
+   ---
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
