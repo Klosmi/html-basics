@@ -182,7 +182,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
           #second {  
             position: fixed;
             top: 0;      /*→ it moves up to the containing block */
-            left: 400px;
+            left: 80px;
           }
           ```
           When something is positioned `fixed` it is gonna **stay** there. It is positioned **relative to its containing block**, always.   
