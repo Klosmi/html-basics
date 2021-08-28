@@ -23,7 +23,7 @@
 1. [JS: Primitive Types](https://github.com/Klosmi/html-basics/blob/master/JS-primitiveTypes.md)
 2. [JS: Variables](https://github.com/Klosmi/html-basics/blob/master/JS-variables.md)
 3. [JS: Methods](https://github.com/Klosmi/html-basics/blob/master/JS-methods.md)
-4. [JS: Template Literals (string literals)](https://github.com/Klosmi/html-basics/blob/master/JS-TemplateLiterals.md)
+4. [JS: Template Literals (template strings)](https://github.com/Klosmi/html-basics/blob/master/JS-TemplateLiterals.md)
 
 <br>
 
