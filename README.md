@@ -22,6 +22,7 @@
 # [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps) -basics
 1. [JS: Primitive Types](https://github.com/Klosmi/html-basics/blob/master/JS-primitiveTypes.md)
 2. [JS: Variables](https://github.com/Klosmi/html-basics/blob/master/JS-variables.md)
+3. [JS: Methods](https://github.com/Klosmi/html-basics/blob/master/JS-methods.md)
 
 <br>
 
