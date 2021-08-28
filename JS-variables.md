@@ -84,7 +84,7 @@ Now, it seems like you might be asking about defining a variable without let/con
     - for booleans is a good practice to start the nameing with `is`.    
     Like `let isGameOver = false;`
     
-    <b>
+    <br>
   
     ---
 [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
