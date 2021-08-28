@@ -22,7 +22,7 @@
       ```
         `I counted ${3 + 4} sheep.`;   // "I counted 7 sheep."
       ```                                         
-  - eg.: another example:   
+  - another example:   
     *concatenation*
     ```
     let product = "pizza";
