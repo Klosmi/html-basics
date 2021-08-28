@@ -8,7 +8,7 @@
 - [**boolean**](https://github.com/Klosmi/html-basics/blob/master/JS-primitiveTypes.md#boolean-)
 - [**string**](https://github.com/Klosmi/html-basics/blob/master/JS-primitiveTypes.md#string-)
 - [**null**](https://github.com/Klosmi/html-basics/blob/master/JS-primitiveTypes.md#null-)
-- **undefined**
+- [**undefined**](https://github.com/Klosmi/html-basics/blob/master/JS-primitiveTypes.md#undefined)
 - symbol
 - BigInt
 
