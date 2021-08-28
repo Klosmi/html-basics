@@ -190,5 +190,34 @@ There are two options for a __boolean value__, `true` or `false`.
     ```
     let result = 1 + "hello";  //"1hello"
     ```
+<br>
+
+## **[Null](https://developer.mozilla.org/en-US/docs/Glossary/Null)** :
+- Intentional absence, lack of any value.   
+- Must be assigned
+- eg.:
+  *For a logged in user, we initially set it to 0*
+  ```
+  let loggedInUser =  null;   // explicitly indicitas there's nothing there
+  ```
+
+<br>
+
+## **[Undefined](https://developer.mozilla.org/en-US/docs/Glossary/undefined)**
+- Variables that do not have an assigned value.
+- eg.:   
+  *I don't give a value to a variable*
+  ``` 
+    let variable;   // undifenied = it is not defined
+  ```
+
+<br>
+
+__The difference between null and undifined__:   
+  - **null** is what you set explicitly.    
+  - **undefined** is what you run into (accidentally) because that something is *not defined*
+
+<br>
+
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
