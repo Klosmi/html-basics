@@ -27,7 +27,7 @@
         Math.random() // 0.17593062488380706
         Math.random() // 0.07464813343445598
         ```
-      - to get a random number what is an __integer__?
+      - how to get a random number to get __integers__?
         -   a multy step process
         - eg.:    
         **a random number between 1 - 10**
