@@ -137,7 +137,8 @@ This function can be used in the CSS Grid properties __grid-template-columns__ a
   ![]](grid-template-rows_ repeat.jpg)  
     ```
     grid-template-columns: repeat(3, 1fr);
-  ![](grid-template-columns_repeat)  ```
+    ```
+  ![](grid-template-columns_repeat)  
 
 - __vocabulary__:
   - __grid lines__:
