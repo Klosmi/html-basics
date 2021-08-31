@@ -134,11 +134,13 @@ This function can be used in the CSS Grid properties __grid-template-columns__ a
     ```
     grid-template-rows: repeat(3, 100px);
     ```
- ![](grid-template-rows_repeat.jpg)  
+ ![](grid-template-rows-repeat.jpg)
+ 
     ```
     grid-template-columns: repeat(3, 1fr);
     ```
-![](grid-template-columns_repeat.jpg)  
+    
+ ![](grid-template-columns_repeat.jpg)  
 
 - __vocabulary__:
   - __grid lines__:
