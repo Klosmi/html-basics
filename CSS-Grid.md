@@ -36,25 +36,25 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
     - a row track is created for each value specified for grid-template-rows. Track size values can be any non-negative, length value (px, %, em, etc.)  
 
    - eg.:
-    *`<div>` 1 and 2 have fixed heights of 50px and 100px. Because only 2 row tracks (`<div>`)s were defined: 80px 150px, heights of `<div>` 3 & 4 & 5 are defined by the contents of each.*   
-    HTML
-    ```
-    <div id="parent">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
-    </div>
-    ```
-    CSS
-    ```
-    #parent {
-    display: grid;
-    grid-template-rows: 80px 150px;
-    }
-    ```
-    ![](starting-grid-01.jpg)
+      *`<div>` 1 and 2 have fixed heights of 50px and 100px. Because only 2 row tracks (`<div>`)s were defined: 80px 150px, heights of `<div>` 3 & 4 & 5 are defined by the contents of each.*   
+      HTML
+      ```
+      <div id="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+      </div>
+      ```
+      CSS
+      ```
+      #parent {
+      display: grid;
+      grid-template-rows: 80px 150px;
+      }
+      ```
+      ![](starting-grid-01.jpg)
 
 
   - __[grid-template-columns](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns)__ :   
