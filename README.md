@@ -15,7 +15,8 @@
 13. [CSS Some useful properties - extra](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md)
 14. [CSS Simple tricks and useful stuffs 🤓](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md)
 15. [CSS Flexbox](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md)
-16. [CSS Responsive design - @media queries](https://github.com/Klosmi/html-basics/blob/master/Responsivedesign.md)
+16. [CSS Grid](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md)
+17. [CSS Responsive design - @media queries](https://github.com/Klosmi/html-basics/blob/master/Responsivedesign.md)
 
 <br>
 
