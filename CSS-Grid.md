@@ -160,7 +160,7 @@ This function can be used in the CSS Grid properties __grid-template-columns__ a
       ```
       ![](grid-column-rows.jpg)
 
-  - [Positioning Items by Grid Line Numbers](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid) :    
+- [Positioning Items by Grid Line Numbers](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid) :    
   Grid lines are essentially lines that represent the start of, the end of, or between column and row tracks.    
   (*Each line, starting from the start of the track and in the direction of the grid, is numbered incrementally starting from 1.*)
 
