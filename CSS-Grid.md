@@ -140,6 +140,30 @@ This function can be used in the CSS Grid properties __grid-template-columns__ a
     ``` 
       ![](grid-template-columns_repeat.jpg)  
 
+<br>
+
+- [Grid Gaps (gutters)](https://developer.mozilla.org/en-US/docs/Web/CSS/gap) :   
+  create gaps (gutters) between rows and columns. It is a shorthand for row-gap and column-gap.   
+  (Grid gaps are only created in between columns and rows, and not along the edge of the grid containe.)
+    - eg.:   
+      create gaps between rows
+      ```
+      grid-row-gap: 70px;
+      ```
+      ![](grid-gap-rows.jpg)
+
+      <br>
+
+      create gaps between columns
+      ```
+      grid-column-gap: 100px;
+      ```
+      ![](grid-column-rows.jpg)
+
+  - [Positioning Items by Grid Line Numbers](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid) :    
+  Grid lines are essentially lines that represent the start of, the end of, or between column and row tracks.    
+  (*Each line, starting from the start of the track and in the direction of the grid, is numbered incrementally starting from 1.*)
+
 - __vocabulary__:
   - __grid lines__:
     - __row grid line__ : horizontal row line
