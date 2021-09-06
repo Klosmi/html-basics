@@ -46,7 +46,7 @@ Lines are numbered according to the writing mode of the document - left to right
     - [grid-row-start](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start)
     - [grid-row-end](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end)
 
-    - eg.: 
+    - eg.:    
       HTML:
       ```
       <div id="parent">
