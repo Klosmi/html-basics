@@ -116,13 +116,6 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
 
 <br>
 
-- __[Grid track](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_tracks)__ :    
-grid track is the space between any two lines on the grid. (Grid-template-columns and grid-template-rows properties define grid tracks.)   
-  ![](gridtrack.gif)
-
-
- <br>
-
 - [Repeating Grid Tracks](https://developer.mozilla.org/en-US/docs/Web/CSS/repeat()) :   
 define __repeating grid tracks__ using the `repeat()` notation. This is useful for grids with items with equal sizes or many items.   
 This function can be used in the CSS Grid properties __grid-template-columns__ and __grid-template-rows__.
@@ -154,11 +147,17 @@ This function can be used in the CSS Grid properties __grid-template-columns__ a
 
 <br>
 
+- __[Grid track](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_tracks)__ :    
+grid track is the space between any two lines on the grid. (Grid-template-columns and grid-template-rows properties define grid tracks.)   
+  ![](gridtrack.gif)
+
+
+ <br>
 
 - __[Grid lines](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_lines)__ :   
 **when we define a grid we define the grid tracks, not the lines**.   
 Grid gives us __numbered lines to use when positioning items❗️__   
-**☟**
+👇
 - __[Positioning Items by *grid line numbers*](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid)__ *(= Line-based placement)* :    
 Lines are numbered according to the writing mode of the document - left to right or right to left.   
     
@@ -216,7 +215,6 @@ Lines are numbered according to the writing mode of the document - left to right
         💡 If an item spans only one row or column, grid-row/column-end is not necessary.
 
       <br>
-      <br>
 
     - __[Line-positioning shorthands](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#line-positioning_shorthands)__ :
     **`grid-row` is shorthand** for `grid-row-start` and `grid-row-end`.
@@ -244,12 +242,64 @@ Lines are numbered according to the writing mode of the document - left to right
         grid-row: 3 / 5;
       }
       ```
-      ![](Positioning-items.gif)
+      ![](Positioning-items.gif)   
 
 <br>
 
+  - __[the `span` keyword](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid#using_the_span_keyword)__ : 
+  to specify the start and end lines by number, you can **specify a start line and then the number of tracks** you would like the area to span.   
+     like `grid-row: 1 / span 3;` and/or  `grid-column: 2 / span 4`;
+
+
+
+  - eg.:   
+    HTML:
+    ```
+    <div id="parent">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    ```
+    CSS:
+    ```
+    #parent {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 100px;
+    }
+
+    div:nth-child(1) {
+      grid-column: 1 / span 3;
+      grid-row: 1 / span 2 ;
+    }
+    div:nth-child(2) {
+      grid-row: 3;
+      grid-column: 2;
+    }
+
+    div:nth-child(3) {
+      grid-row: 3;
+      grid-column: 3;
+    }
+
+    div:nth-child(4) {
+      grid-row: 4;
+      grid-column: 2;
+    }
+
+    div:nth-child(5) {
+      grid-row: 3 / span 2;
+      grid-column: 1;
+    }
+    ```
+    ![](Positioning-items.gif)   
+
+
 - [Grid cells](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_cells) :   
-  -  is the smallest unit on a grid.     
+  -  is the smallest unit on a grid. 
     ![](gridcell.gif)
 
 - [Grid areas](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_areas) :   
