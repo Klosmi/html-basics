@@ -261,7 +261,7 @@
           ```
         ![](Positioning-items.gif)   
 
-
+  <br>
 
   - __[grid-area property](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid#the_grid-area_property)__ :
     (Remember: items can span one or more cells both by row or by column, and this creates a grid area.)
