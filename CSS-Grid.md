@@ -156,21 +156,17 @@
 
   - __[Grid lines](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_lines)__ :   
   **when we define a grid we define the grid tracks, not the lines**.   
-  Grid gives us __numbered lines to use when [positioning](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#positionings) items❗️__    
-  
-     Lines are numbered according to the writing mode of the document - left to right or right to left.
-
-    (Each line, starting from the start of the track and in the direction of the grid, is numbered incrementally starting from 1 (so 1, 2, 3, etc.).
+  Grid gives us __numbered lines to use when positioning items❗️__   
   
 <br>
 
-  - __[Grid cells](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_cells)__ :   
+  - [Grid cells](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_cells) :   
     -  is the smallest unit on a grid.    
       ![](gridcell.gif)
 
 <br>
 
-  - __[Grid areas](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_areas)__ :   
+  - [Grid areas](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_areas) :   
     -  items can span one or more cells both by row or by column, and this creates a grid area. 
     - it isn’t possible to create an L-shaped area for example (because grid areas must be rectangular)
       ![](gridarea.gif)
@@ -180,8 +176,10 @@
 #### Positionings
 
   - __[Positioning Items by *grid line numbers*](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid)__ *(= Line-based placement)* :    
- (Remember: lines are numbered according to the writing mode of the document - left to right or right to left.)      
-     
+  Lines are numbered according to the writing mode of the document - left to right or right to left.   
+      
+    (*Each line, starting from the start of the track and in the direction of the grid, is numbered incrementally starting from 1 (so 1, 2, 3, etc.).*
+
     We can use *line-based placement* to **control where element items sit on the grid**. 
         
     ![](1_diagram_numbered_grid_lines.gif)    
@@ -264,11 +262,65 @@
         ![](Positioning-items.gif)   
 
 
-    - __[the span keyword](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid#using_the_span_keyword)__ :     
+
+  - __[grid-area property](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid#the_grid-area_property)__ :
+    (Remember: items can span one or more cells both by row or by column, and this creates a grid area.)
+
+    __With grid-area property we can define each area.__ 
+    It is a shorthand, and the order are:
+    1. grid-row-start
+
+    2. grid-column-start
+
+    3. grid-row-end
+
+    4. grid-column-end
+
+      like: `grid-area: 1 / 1 / 4 / 2;`
+
+    - eg.:   
+      HTML
+      ```
+      <div id="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </div>
+      ```
+      CSS
+      ```
+        #parent {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-auto-rows: 100px;
+        }
+        #parent div:nth-child(1) {
+        background-color: steelblue;
+        grid-area: 1 / 1 / 4 / 2;
+        }
+        #parent div:nth-child(2) {
+          grid-area: 1 / 3 / 3 / 4;
+        }
+
+        #parent div:nth-child(3) {
+          grid-area: 1 / 2 / 2 / 3;
+        }
+
+        #parent div:nth-child(4) {
+          background-color: darkolivegreen;
+          grid-area: 3 / 2 / 4 / 4;;
+        }
+      ```
+      ![](grid-areaproperty.gif)
+
+
+
+
+    - __[the span keyword](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid#using_the_span_keyword)__ : 
         to specify the start and end lines by number, you can **specify a start line and then the number of tracks** you would like the area to span.   
-          like `grid-row: 1 / span 3;` and/or  `grid-column: 2 / span 4`;  
-          
-      - use the span keyword in the value of grid-row-start/grid-row-end and grid-column-start/grid-column-end
+          like `grid-row: 1 / span 3;` and/or  `grid-column: 2 / span 4`;   
+          - use the span keyword in the value of grid-row-start/grid-row-end and grid-column-start/grid-column-end
 
 
 
@@ -292,7 +344,6 @@
         }
 
         div:nth-child(1) {
-          background-color: steelblue;
           grid-column: 1 / span 3;
           grid-row: 1 / span 2 ;
         }
@@ -312,13 +363,11 @@
         }
 
         div:nth-child(5) {
-          background-color: darkolivegreen;
           grid-row: 3 / span 2;
           grid-column: 1;
         }
         ```
         ![](Positioning-items.gif)   
-
 
 
   - [Grid Gaps (gutters)](https://developer.mozilla.org/en-US/docs/Web/CSS/gap) :   
