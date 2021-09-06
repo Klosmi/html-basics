@@ -56,8 +56,7 @@ When we place an item, __we target the line__ – rather than the track by using
   ```
   CSS:    
   the first item 🔵 `#parent div:first-child` is placed against column line 1, and *spans* to column line 4, and it **starts** at row line 1 and **ends** at row line 3 (so spanning two row tracks).   
-  
-    the second item 🟢 `#parent div:last-child` **starts** on grid column line 1, and *spans* 1 track (that is by default) → *no need to define it*. Also, it *spans* 2 row-tracks *from row line 3* to *row line 5*.    
+  the second item 🟢 `#parent div:last-child` **starts** on grid column line 1, and *spans* 1 track (that is by default) → *no need to define it*. Also, it *spans* 2 row-tracks *from row line 3* to *row line 5*.    
 
   ```
   #parent {
