@@ -166,7 +166,7 @@
 
 <br>
 
-  - [Grid areas](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_areas) :   
+  - __[Grid areas](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_areas)__ :   
     -  items can span one or more cells both by row or by column, and this creates a grid area. 
     - it isn’t possible to create an L-shaped area for example (because grid areas must be rectangular)
       ![](gridarea.gif)
