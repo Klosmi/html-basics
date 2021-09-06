@@ -415,7 +415,7 @@ You can name your lines __when__ you define your columns and/or rows  (with the 
 
     div:first-child {
       background-color: steelblue;
-      grid-column: header-start / header-end;
+      grid-column: header-start / header-end;   /* from header-start to header-end */
       grid-row: header-start / content-start
     }
 
