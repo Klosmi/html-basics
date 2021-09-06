@@ -264,7 +264,7 @@
         ![](Positioning-items.gif)   
 
 
-    - __[the span keyword](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid#using_the_span_keyword)__ : 
+    - __[the span keyword](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid#using_the_span_keyword)__ :     
         to specify the start and end lines by number, you can **specify a start line and then the number of tracks** you would like the area to span.   
           like `grid-row: 1 / span 3;` and/or  `grid-column: 2 / span 4`;   
           - use the span keyword in the value of grid-row-start/grid-row-end and grid-column-start/grid-column-end
