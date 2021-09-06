@@ -24,6 +24,8 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
   **[Positionings](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#positionings)**
 
   **[Namings](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#naming)**
+  
+  **[Useful Links](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#links)**
 
   <br>
     
