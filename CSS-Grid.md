@@ -19,6 +19,8 @@
 
 **[The model - implicit / explicit](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#the-model)**
 
+**[Grid Tracks, Lines, Cells, Areas](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#grid-track-lines-cells-areas)**
+
 **[Positionings](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#positionings)**
 
 **[Namings](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#naming)**
