@@ -1,15 +1,15 @@
-    # [Grid](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids) :
-    CSS Grid Layout is a 2-dimensional layout system. It lets you lay content out in __rows__ and __columns__.
+# [Grid](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids) :
+CSS Grid Layout is a 2-dimensional layout system. It lets you lay content out in __rows__ and __columns__.
 
-    So a grid is a collection of horizontal(**row**) and vertical(**column**) lines creating a pattern against which we can line up our design elements.
+So a grid is a collection of horizontal(**row**) and vertical(**column**) lines creating a pattern against which we can line up our design elements.
 
-    - similar to Flex, but while Flex-box is 1 dimensional, Grid is 2 dimensional.
+- similar to Flex, but while Flex-box is 1 dimensional, Grid is 2 dimensional.
 
-    In other words: grid items (*contents*) are distributed along the *main axis* and *cross axis*.([source](https://www.freecodecamp.org/news/css-grid-tutorial-with-cheatsheet/)).
+In other words: grid items (*contents*) are distributed along the *main axis* and *cross axis*.([source](https://www.freecodecamp.org/news/css-grid-tutorial-with-cheatsheet/)).
 
-    > 💡 A simple question to ask yourself when deciding between grid or flexbox is:   
-    > -  do I only need to control the layout by row **or** column 👉 **use a flexbox** 
-    > -  do I need to control the layout by row **and** column 👉 **use a grid**
+> 💡 A simple question to ask yourself when deciding between grid or flexbox is:   
+> -  do I only need to control the layout by row **or** column 👉 **use a flexbox** 
+> -  do I need to control the layout by row **and** column 👉 **use a grid**
 
   <br> 
 
@@ -27,14 +27,14 @@
 
   <br>
     
-    #### __Defining Grid, explaining Rows and Columns__
+#### __Defining Grid, explaining Rows and Columns__
 
-  - __[defining a grid](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids#defining_a_grid)__:   
-        __`display: grid;`__   
-        Call it on the parent element (just like in Flex-box).
-        All direct children of grid containers become grid items.   
-        By declaring `display: grid;`, it gives a one column grid, so your items will continue to display one below the other as they do in normal flow.    
-        **We create a grid container by declaring display: grid or display: inline-grid on an element**. As soon as we do this, **all direct children** of that element **become grid items**.
+- __[defining a grid](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids#defining_a_grid)__:   
+    __`display: grid;`__   
+    Call it on the parent element (just like in Flex-box).
+    All direct children of grid containers become grid items.   
+    By declaring `display: grid;`, it gives a one column grid, so your items will continue to display one below the other as they do in normal flow.    
+    **We create a grid container by declaring display: grid or display: inline-grid on an element**. As soon as we do this, **all direct children** of that element **become grid items**.
 
   <br>
 
