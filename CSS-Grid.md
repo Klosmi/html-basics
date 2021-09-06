@@ -317,7 +317,7 @@
       ![](grid-areaproperty.gif)
 
 
-<br>
+    <br>
 
     - __[the span keyword](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid#using_the_span_keyword)__ : 
         to specify the start and end lines by number, you can **specify a start line and then the number of tracks** you would like the area to span.   
