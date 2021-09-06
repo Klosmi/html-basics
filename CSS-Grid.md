@@ -58,8 +58,8 @@ Lines are numbered according to the writing mode of the document - left to right
       </div>
       ```
       CSS:    
-      the first item 🔵 `#parent div:first-child` is placed against column line 1, and *spans* to column line 4, and it **starts** at row line 1 and **ends** at row line 3 (so spanning two row tracks).   
-      the second item 🟢 `#parent div:last-child` **starts** on grid column line 1, and *spans* 1 track (that is by default) → *no need to define it*. Also, it *spans* 2 row-tracks *from row line 3* to *row line 5*.    
+      the `<div>1</div>` item 🔵 `#parent div:first-child` is placed against column line 1, and *spans* to column line 4, and it **starts** at row line 1 and **ends** at row line 3 (so spanning two row tracks).   
+      the ` <div>5</div>` item 🟢 `#parent div:last-child` **starts** on grid column line 1, and *spans* 1 track (that is by default) → *no need to define it*. Also, it *spans* 2 row-tracks *from row line 3* to *row line 5*.    
 
       ```
       #parent {
