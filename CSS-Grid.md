@@ -369,7 +369,8 @@
         ```
         ![](Positioning-items.gif)   
 
-#### [__Naming lines](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines#naming_lines_when_defining_a_grid)__ :   
+#### ___Naming___
+- __[Naming lines](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines#naming_lines_when_defining_a_grid)__ :   
 You can name your lines __when__ you define your columns and/or rows  (with the `grid-template-rows` and `grid-template-columns` properties).
   - names can be anything you like
   - you don't need to name all of the lines on your grid
