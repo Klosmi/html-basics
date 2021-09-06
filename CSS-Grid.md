@@ -44,11 +44,20 @@ When we place an item, __we target the line__ – rather than the track by using
   - [grid-row-start](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start)
   - [grid-row-end](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end)
 
-  - eg.:   
+  - eg.: 
+  HTML:
+  ```
+  <div id="parent">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+  ```
   CSS:    
-  the first item (🔵) is placed against column line 1, and *spans* to column line 4, and it **starts** at row line 1 and **ends** at row line 3 (so spanning two row tracks).   
+  the first item 🔵 `#parent div:first-child` is placed against column line 1, and *spans* to column line 4, and it **starts** at row line 1 and **ends** at row line 3 (so spanning two row tracks).   
   
-    the second item (🟢) **starts** on grid column line 1, and *spans* 1 track (that is by default) → *no need to define it*. Also, it *spans* 2 row-tracks *from row line 3* to *row line 5*.    
+    the second item 🟢 `#parent div:last-child` **starts** on grid column line 1, and *spans* 1 track (that is by default) → *no need to define it*. Also, it *spans* 2 row-tracks *from row line 3* to *row line 5*.    
 
   ```
   #parent {
