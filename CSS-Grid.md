@@ -15,7 +15,7 @@
 
 **[Defining Grid, explaining Rows and Columns](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#defining-grid-explaining-rows-and-columns)**
 
-**[Sizing and Numbering](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#track-sizing-and-numbering)**
+**[Sizing and Numbering](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#sizing-and-numbering)**
 
 **[The model - implicit / explicit](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#the-model)**
 
