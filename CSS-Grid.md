@@ -116,6 +116,13 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
 
 <br>
 
+- __[Grid track](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_tracks)__ :    
+grid track is the space between any two lines on the grid. (Grid-template-columns and grid-template-rows properties define grid tracks.)   
+  ![](gridtrack.gif)
+
+
+ <br>
+
 - [Repeating Grid Tracks](https://developer.mozilla.org/en-US/docs/Web/CSS/repeat()) :   
 define __repeating grid tracks__ using the `repeat()` notation. This is useful for grids with items with equal sizes or many items.   
 This function can be used in the CSS Grid properties __grid-template-columns__ and __grid-template-rows__.
@@ -147,12 +154,6 @@ This function can be used in the CSS Grid properties __grid-template-columns__ a
 
 <br>
 
-- __[Grid track](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_tracks)__ :    
-grid track is the space between any two lines on the grid. (Grid-template-columns and grid-template-rows properties define grid tracks.)   
-  ![](gridtrack.gif)
-
-
- <br>
 
 - __[Grid lines](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_lines)__ :   
 **when we define a grid we define the grid tracks, not the lines**.   
