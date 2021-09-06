@@ -82,7 +82,12 @@ Lines are numbered according to the writing mode of the document - left to right
       ![](Positioning-items.gif)   
       With [Firefox Grid inspector](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts) we can see the line numbers:   
 
-      ![](Grid-Inspector.gif)
+      ![](Grid-Inspector.gif)   
+      
+      <br>
+        💡 If an item spans only one row or column, grid-row/column-end is not necessary.
+        
+      
 
 
 
