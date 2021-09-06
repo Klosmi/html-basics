@@ -160,7 +160,7 @@
   
 <br>
 
-  - [Grid cells](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_cells) :   
+  - __[Grid cells](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_cells)__ :   
     -  is the smallest unit on a grid.    
       ![](gridcell.gif)
 
