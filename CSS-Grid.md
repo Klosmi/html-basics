@@ -12,10 +12,10 @@
   > -  do I need to control the layout by row **and** column 👉 **use a grid**
 
   <br> 
+  
+  #### __Defining Grid, explaining Rows and Columns__
 
-  - __grid-container__ (the parent) properties:
-
-    - __[defining a grid](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids#defining_a_grid)__:   
+   - __[defining a grid](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids#defining_a_grid)__:   
       __`display: grid;`__   
       Call it on the parent element (just like in Flex-box).
       All direct children of grid containers become grid items.   
@@ -24,7 +24,7 @@
 
     <br>
 
-    - __[grid-template-rows](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows)__ :   
+   - __[grid-template-rows](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows)__ :   
     defines the line names and track sizing functions of the grid rows.
 
       - a row track is created for each value specified for grid-template-rows. Track size values can be any non-negative, length value (px, %, em, etc.)  
@@ -51,7 +51,7 @@
         ![](starting-grid-01.jpg)
 
 
-    - __[grid-template-columns](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns)__ :   
+   - __[grid-template-columns](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns)__ :   
     defines the line names and track sizing functions of the grid columns.   
     So when you call this, you declare (explicitly) how many columns you want. (And implicitly it gives you rows)
 
@@ -85,8 +85,7 @@
       ```
     ![](grid-template-columns-FR.jpg)
 
-
-  - __grid items__ (children element) properties:
+#### __Track Sizing and Numbering__
 
   - __[the minmax() function](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids#the_minmax_function)__ :    
     it lets us set a minimum and maximum size for a track.
@@ -134,7 +133,7 @@
       ``` 
         ![](grid-template-columns_repeat.jpg)  
 
-  - __the model__:
+ #### __the model__:
     - __[explicit grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#the_implicit_and_explicit_grid)__:    
       a grid layout you explicitly call.   
       So the explicit grid is the one that you create using grid-template-columns or grid-template-rows.
@@ -146,6 +145,8 @@
       By default, tracks created in the implicit grid are __auto__
 
 <br>
+
+#### __Grid Track, Lines, Cells, Areas__
 
   - __[Grid track](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_tracks)__ :    
     - grid track is the space between any two lines on the grid. (Grid-template-columns and grid-template-rows properties define grid tracks.)   
@@ -175,7 +176,7 @@
 
 #### Positionings
 
-  - __[Positioning Items by *grid line numbers*](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid)__ *(= Line-based placement)* :    
+######  __[Positioning Items by *grid line numbers*](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid)__ *(= Line-based placement)* :    
   Lines are numbered according to the writing mode of the document - left to right or right to left.   
       
     (*Each line, starting from the start of the track and in the direction of the grid, is numbered incrementally starting from 1 (so 1, 2, 3, etc.).*
@@ -263,7 +264,7 @@
 
   <br>
 
-  - __[grid-area property](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid#the_grid-area_property)__ :   
+  ###### __[grid-area property](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid#the_grid-area_property)__ :   
     (Remember: items can span one or more cells both by row or by column, and this creates a grid area.)
 
     __With grid-area property we can define each area.__ 
@@ -315,14 +316,10 @@
       ![](grid-areaproperty.gif)
 
 
-
-
     - __[the span keyword](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid#using_the_span_keyword)__ : 
         to specify the start and end lines by number, you can **specify a start line and then the number of tracks** you would like the area to span.   
           like `grid-row: 1 / span 3;` and/or  `grid-column: 2 / span 4`;   
           - use the span keyword in the value of grid-row-start/grid-row-end and grid-column-start/grid-column-end
-
-
 
       - eg.:   
         HTML:
