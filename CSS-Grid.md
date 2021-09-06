@@ -45,42 +45,42 @@ When we place an item, __we target the line__ – rather than the track by using
   - [grid-row-end](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end)
 
   - eg.: 
-  HTML:
-  ```
-  <div id="parent">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-  </div>
-  ```
-  CSS:    
-  the first item 🔵 `#parent div:first-child` is placed against column line 1, and *spans* to column line 4, and it **starts** at row line 1 and **ends** at row line 3 (so spanning two row tracks).   
-  the second item 🟢 `#parent div:last-child` **starts** on grid column line 1, and *spans* 1 track (that is by default) → *no need to define it*. Also, it *spans* 2 row-tracks *from row line 3* to *row line 5*.    
+    HTML:
+    ```
+    <div id="parent">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    ```
+    CSS:    
+    the first item 🔵 `#parent div:first-child` is placed against column line 1, and *spans* to column line 4, and it **starts** at row line 1 and **ends** at row line 3 (so spanning two row tracks).   
+    the second item 🟢 `#parent div:last-child` **starts** on grid column line 1, and *spans* 1 track (that is by default) → *no need to define it*. Also, it *spans* 2 row-tracks *from row line 3* to *row line 5*.    
 
-  ```
-  #parent {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 100px;
+    ```
+    #parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
 
-  #parent div:first-child {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-  }
-  #parent div:last-child {
-    grid-column-start: 1;
-    grid-row-start: 3;
-    grid-row-end: 5;
-  }
-  ```
-  ![](Positioning-items.gif)   
-  With [Firefox Grid inspector](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts) we can see the line numbers:   
-  
-  ![](Grid-Inspector.gif)
+    #parent div:first-child {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+    #parent div:last-child {
+      grid-column-start: 1;
+      grid-row-start: 3;
+      grid-row-end: 5;
+    }
+    ```
+    ![](Positioning-items.gif)   
+    With [Firefox Grid inspector](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts) we can see the line numbers:   
+
+    ![](Grid-Inspector.gif)
 
 
 
