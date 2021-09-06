@@ -113,7 +113,7 @@
         grid-template-columns: 1fr 1fr;
       }
       ```
-    ![](minmax-rows01.jpg)
+      ![](minmax-rows01.jpg)
   
     * first column track `<div>`1 & `<div>`4 has a minimum size of auto, but its maximum size of 20% will prevent it from getting no wider than 20% of the grid container width.*   
     CSS
@@ -123,7 +123,7 @@
         grid-template-columns: minmax(auto, 20%) 1fr 1fr;
       }
       ```
-    ![](minmax-columns01.jpg)
+      ![](minmax-columns01.jpg)
 
   <br>
 
