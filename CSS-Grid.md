@@ -38,7 +38,7 @@ Lines are numbered according to the writing mode of the document - left to right
        
 ![](1_diagram_numbered_grid_lines.gif)    
 (source: [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_lines))   
-When we place an item, __we target the line__ – rather than the track by using these properties:
+When we place an item, __we target the line__ – rather than the [track](https://developer.mozilla.org/en-US/docs/Glossary/Grid_Tracks) by using these properties:
   - [grid-column-start](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start)
   - [grid-column-end](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end)
   - [grid-row-start](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start)
