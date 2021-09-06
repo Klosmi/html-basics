@@ -68,7 +68,7 @@ When we place an item, __we target the line__ – rather than the track by using
     grid-row-end: 5;
   }
   ```
-  ![](Positioning items.gif)
+  ![](Positioning-items.gif)
 
 
 
