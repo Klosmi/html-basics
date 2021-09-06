@@ -153,13 +153,13 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
     - __[explicit grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#the_implicit_and_explicit_grid)__:    
         a grid layout you explicitly call.   
         So the explicit grid is the one that you create using grid-template-columns or grid-template-rows.
-          - ❗️ __with [`grid-auto-rows`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows) we cen define the implicit rows size__
 
     - __[implicit grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#the_implicit_and_explicit_grid)__:    
         a grid layout that is automatically created (rows and columns) for extra elements that don't fit into the explicit grid.     
         So, if you place something outside of the defined grid *(or due to the amount of content, more grid tracks are needed)* then the grid creates rows and columns in the implicit grid. These tracks will be auto-sized by default, resulting in their size being based on the content that is inside them.
 
-      By default, tracks created in the implicit grid are __auto__
+      By default, tracks created in the implicit grid are __auto__.   
+      - ❗️ __with [`grid-auto-rows`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows) we cen define the implicit rows size__
 
   <br>
 
