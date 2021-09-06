@@ -156,7 +156,11 @@
 
   - __[Grid lines](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_lines)__ :   
   **when we define a grid we define the grid tracks, not the lines**.   
-  Grid gives us __numbered lines to use when [positioning](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#positionings) items❗️__   
+  Grid gives us __numbered lines to use when [positioning](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#positionings) items❗️__    
+  
+     Lines are numbered according to the writing mode of the document - left to right or right to left.
+
+    (Each line, starting from the start of the track and in the direction of the grid, is numbered incrementally starting from 1 (so 1, 2, 3, etc.).
   
 <br>
 
