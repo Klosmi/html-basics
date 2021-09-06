@@ -127,7 +127,7 @@
 
   <br>
 
-  - [Repeating Grid Tracks](https://developer.mozilla.org/en-US/docs/Web/CSS/repeat()) :   
+  - __[Repeating Grid Tracks](https://developer.mozilla.org/en-US/docs/Web/CSS/repeat())__ :   
   define __repeating grid tracks__ using the `repeat()` notation. This is useful for grids with items with equal sizes or many items.   
   This function can be used in the CSS Grid properties __grid-template-columns__ and __grid-template-rows__.
 
