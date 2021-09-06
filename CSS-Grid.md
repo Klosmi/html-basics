@@ -77,7 +77,8 @@ When we place an item, __we target the line__ – rather than the track by using
   }
   ```
   ![](Positioning-items.gif)   
-  With [Firefox Grid inspector](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts) we can see the line numbers:
+  With [Firefox Grid inspector](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts) we can see the line numbers:   
+  
   ![](Grid-Inspector.gif)
 
 
