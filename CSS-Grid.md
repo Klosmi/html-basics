@@ -14,7 +14,7 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
     Call it on the parent element (just like in Flex-box).
     All direct children of grid containers become grid items.   
     By declaring `display: grid;`, it gives a one column grid, so your items will continue to display one below the other as they do in normal flow.    
-    **We create a grid container by declaring display: grid or display: inline-grid on an element**. As soon as we do this, **all direct children** of that element **become grid items**.
+    **We create a grid container by declaring `display: grid` or  `display: inline-grid` on an element**. As soon as we do this, **all direct children** of that element **become grid items**.
 
   <br>
 
