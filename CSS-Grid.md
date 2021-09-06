@@ -228,10 +228,10 @@
 
         ![](Grid-Inspector.gif)   
         
-        <br>
+<br>
           💡 If an item spans only one row or column, grid-row/column-end is not necessary.
 
-        <br>
+<br>
 
       - __[Line-positioning shorthands](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#line-positioning_shorthands)__ :
       **`grid-row` is shorthand** for `grid-row-start` and `grid-row-end`.
@@ -261,7 +261,7 @@
           ```
         ![](Positioning-items.gif)   
 
-
+<br>
 
   - __[grid-area property](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid#the_grid-area_property)__ :    
     (Remember: items can span one or more cells both by row or by column, and this creates a grid area.)
@@ -295,19 +295,21 @@
           grid-template-columns: repeat(3, 1fr);
           grid-auto-rows: 100px;
         }
-        #parent div:nth-child(1) {
+        
+        div:nth-child(1) {
         background-color: steelblue;
         grid-area: 1 / 1 / 4 / 2;
         }
-        #parent div:nth-child(2) {
+        
+        div:nth-child(2) {
           grid-area: 1 / 3 / 3 / 4;
         }
 
-        #parent div:nth-child(3) {
+        div:nth-child(3) {
           grid-area: 1 / 2 / 2 / 3;
         }
 
-        #parent div:nth-child(4) {
+        div:nth-child(4) {
           background-color: darkolivegreen;
           grid-area: 3 / 2 / 4 / 4;;
         }
@@ -315,7 +317,7 @@
       ![](grid-areaproperty.gif)
 
 
-
+<br>
 
     - __[the span keyword](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid#using_the_span_keyword)__ : 
         to specify the start and end lines by number, you can **specify a start line and then the number of tracks** you would like the area to span.   
