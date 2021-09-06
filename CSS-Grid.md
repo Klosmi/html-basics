@@ -7,6 +7,12 @@ So a grid is a collection of horizontal(**row**) and vertical(**column**) lines 
 
 In other words: grid items (*contents*) are distributed along the *main axis* and *cross axis*.([source](https://www.freecodecamp.org/news/css-grid-tutorial-with-cheatsheet/)).
 
+> 💡 A simple question to ask yourself when deciding between grid or flexbox is:   
+> -  do I only need to control the layout by row **or** column 👉 **use a flexbox** 
+> -  do I need to control the layout by row **and** column 👉 **use a grid**
+
+<br> 
+
 - __grid-container__ (the parent) properties:
 
   - __[defining a grid](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids#defining_a_grid)__:   
@@ -239,6 +245,15 @@ Lines are numbered according to the writing mode of the document - left to right
       ![](Positioning-items.gif)
 
 <br>
+
+- [Grid cells](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_cells) :   
+  -  is the smallest unit on a grid. 
+    ![](gridcell.gif)
+
+- [Grid areas](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_areas) :   
+  -  items can span one or more cells both by row or by column, and this creates a grid area. 
+  - it isn’t possible to create an L-shaped area for example (because grid areas must be rectangular)
+    ![](gridarea.gif)
 
 - [Grid Gaps (gutters)](https://developer.mozilla.org/en-US/docs/Web/CSS/gap) :   
   create gaps (gutters) between rows and columns. It is a shorthand for row-gap and column-gap.   
