@@ -14,7 +14,7 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
     Call it on the parent element (just like in Flex-box).
     All direct children of grid containers become grid items.   
     By declaring `display: grid;`, it gives a one column grid, so your items will continue to display one below the other as they do in normal flow.    
-    **We create a grid container by declaring `display: grid` or  `display: inline-grid` on an element**. As soon as we do this, **all direct children** of that element **become grid items**.
+    **We create a grid container by declaring display: grid or display: inline-grid on an element**. As soon as we do this, **all direct children** of that element **become grid items**.
 
   <br>
 
@@ -207,6 +207,36 @@ Lines are numbered according to the writing mode of the document - left to right
       
       <br>
         💡 If an item spans only one row or column, grid-row/column-end is not necessary.
+
+      <br>
+
+    - __[Line-positioning shorthands](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#line-positioning_shorthands)__ :
+    **`grid-row` is shorthand** for `grid-row-start` and `grid-row-end`.
+    **`grid-column` is shorthand** for `grid-column-start` and `grid-column-end`.
+
+      shorthand for row: `grid-row: 1 / 3;`
+      shorthand for column: `grid-column: 1 / 4;`
+
+    eg.:   
+    CSS
+    ```
+    #parent div:first-child {
+    background-color: steelblue;
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+    }
+
+    #parent div:last-child {
+      background-color: darkolivegreen;
+      grid-column: 1 ;
+      grid-row: 3 / 5;
+    }
+    ```
+    ![](Positioning-items.gif)
+
+If one value is provided, it specifies grid-row/column-start.
+
+If two values are specified, the first value corresponds to grid-row/column-start and the second grid-row/column-end, and 
 
 <br>
 
