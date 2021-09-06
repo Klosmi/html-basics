@@ -171,7 +171,8 @@
 
   - __[Grid lines](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_lines)__ :   
   **when we define a grid we define the grid tracks, not the lines**.   
-  Grid gives us __numbered lines to use when positioning items❗️__   
+  Grid gives us __numbered lines to use when positioning items❗️__  
+    ![](gridlines.gif)
   
 <br>
 
