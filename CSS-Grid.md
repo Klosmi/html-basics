@@ -7,97 +7,14 @@ So a grid is a collection of horizontal(**row**) and vertical(**column**) lines 
 
 In other words: grid items (*contents*) are distributed along the *main axis* and *cross axis*.([source](https://www.freecodecamp.org/news/css-grid-tutorial-with-cheatsheet/)).
 
-- __the model__:
-  - __[explicit grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#the_implicit_and_explicit_grid)__:    
-    a grid layout you explicitly call.   
-    So the explicit grid is the one that you create using grid-template-columns or grid-template-rows.
-
-  - __[implicit grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#the_implicit_and_explicit_grid)__:    
-    a grid layout that is automatically created (rows and columns) for extra elements that don't fit into the explicit grid.     
-    So, if you place something outside of the defined grid *(or due to the amount of content, more grid tracks are needed)* then the grid creates rows and columns in the implicit grid. These tracks will be auto-sized by default, resulting in their size being based on the content that is inside them.
-
-    By default, tracks created in the implicit grid are __auto__
-
-<br>
-
-- __[Grid track](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_tracks)__ :    
-grid track is the space between any two lines on the grid. (Grid-template-columns and grid-template-rows properties define grid tracks.)   
-  ![](gridtrack.gif)
-
-
- <br>
-
-- __[Grid lines](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_lines)__ :   
-**when we define a grid we define the grid tracks, not the lines**.   
-Grid gives us __numbered lines to use when positioning items❗️__   
-**☟**
-- __[Positioning Items by *grid line numbers*](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid)__ *(= Line-based placement)* :    
-Lines are numbered according to the writing mode of the document - left to right or right to left.   
-    
-  (*Each line, starting from the start of the track and in the direction of the grid, is numbered incrementally starting from 1 (so 1, 2, 3, etc.).*
-
-  We can use *line-based placement* to **control where element items sit on the grid**. 
-       
-  ![](1_diagram_numbered_grid_lines.gif)    
-  (source: [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_lines))   
-  When we place an item, __we target the line__ – rather than the [track](https://developer.mozilla.org/en-US/docs/Glossary/Grid_Tracks) by using these properties:
-    - [grid-column-start](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start)
-    - [grid-column-end](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end)
-    - [grid-row-start](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start)
-    - [grid-row-end](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end)
-
-    - eg.:    
-      HTML:
-      ```
-      <div id="parent">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-      </div>
-      ```
-      CSS:    
-      the **`<div>1</div>`** item 🔵 `#parent div:first-child` is placed against column line 1, and *spans* to column line 4, and it **starts** at row line 1 and **ends** at row line 3 (so spanning two row tracks).   
-      the **`<div>5</div>`** item 🟢 `#parent div:last-child` **starts** on grid column line 1, and *spans* 1 track (that is by default) → *no need to define it, or define the end*. Also, it *spans* 2 row-tracks *from row line 3* to *row line 5*.    
-
-      ```
-      #parent {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-auto-rows: 100px;
-
-      #parent div:first-child {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 3;
-      }
-      #parent div:last-child {
-        grid-column-start: 1;
-        grid-row-start: 3;
-        grid-row-end: 5;
-      }
-      ```
-      ![](Positioning-items.gif)   
-      With [Firefox Grid inspector](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts) we can see the line numbers:   
-
-      ![](Grid-Inspector.gif)   
-      
-      <br>
-        💡 If an item spans only one row or column, grid-row/column-end is not necessary.
-        
-      
-
-
-
 - __grid-container__ (the parent) properties:
 
   - __[defining a grid](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids#defining_a_grid)__:   
     __`display: grid;`__   
     Call it on the parent element (just like in Flex-box).
     All direct children of grid containers become grid items.   
-    By declaring `display: grid;`, it gives a one column grid, so your items will continue to display one below the other as they do in normal flow. 
+    By declaring `display: grid;`, it gives a one column grid, so your items will continue to display one below the other as they do in normal flow.    
+    **We create a grid container by declaring display: grid or display: inline-grid on an element**. As soon as we do this, **all direct children** of that element **become grid items**.
 
   <br>
 
@@ -210,6 +127,86 @@ This function can be used in the CSS Grid properties __grid-template-columns__ a
       grid-template-columns: repeat(3, 1fr);
     ``` 
       ![](grid-template-columns_repeat.jpg)  
+
+- __the model__:
+  - __[explicit grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#the_implicit_and_explicit_grid)__:    
+    a grid layout you explicitly call.   
+    So the explicit grid is the one that you create using grid-template-columns or grid-template-rows.
+
+  - __[implicit grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#the_implicit_and_explicit_grid)__:    
+    a grid layout that is automatically created (rows and columns) for extra elements that don't fit into the explicit grid.     
+    So, if you place something outside of the defined grid *(or due to the amount of content, more grid tracks are needed)* then the grid creates rows and columns in the implicit grid. These tracks will be auto-sized by default, resulting in their size being based on the content that is inside them.
+
+    By default, tracks created in the implicit grid are __auto__
+
+<br>
+
+- __[Grid track](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_tracks)__ :    
+grid track is the space between any two lines on the grid. (Grid-template-columns and grid-template-rows properties define grid tracks.)   
+  ![](gridtrack.gif)
+
+
+ <br>
+
+- __[Grid lines](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_lines)__ :   
+**when we define a grid we define the grid tracks, not the lines**.   
+Grid gives us __numbered lines to use when positioning items❗️__   
+**☟**
+- __[Positioning Items by *grid line numbers*](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid)__ *(= Line-based placement)* :    
+Lines are numbered according to the writing mode of the document - left to right or right to left.   
+    
+  (*Each line, starting from the start of the track and in the direction of the grid, is numbered incrementally starting from 1 (so 1, 2, 3, etc.).*
+
+  We can use *line-based placement* to **control where element items sit on the grid**. 
+       
+  ![](1_diagram_numbered_grid_lines.gif)    
+  (source: [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_lines))   
+  When we place an item, __we target the line__ – rather than the [track](https://developer.mozilla.org/en-US/docs/Glossary/Grid_Tracks) by using these properties:
+    - [grid-column-start](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start)
+    - [grid-column-end](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end)
+    - [grid-row-start](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start)
+    - [grid-row-end](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end)
+
+    - eg.:    
+      HTML:
+      ```
+      <div id="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+      </div>
+      ```
+      CSS:    
+      the **`<div>1</div>`** item 🔵 `#parent div:first-child` is placed against column line 1, and *spans* to column line 4, and it **starts** at row line 1 and **ends** at row line 3 (so spanning two row tracks).   
+      the **`<div>5</div>`** item 🟢 `#parent div:last-child` **starts** on grid column line 1, and *spans* 1 track (that is by default) → *no need to define it, or define the end*. Also, it *spans* 2 row-tracks *from row line 3* to *row line 5*.    
+
+      ```
+      #parent {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 100px;
+
+      #parent div:first-child {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+      #parent div:last-child {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        grid-row-end: 5;
+      }
+      ```
+      ![](Positioning-items.gif)   
+      With [Firefox Grid inspector](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts) we can see the line numbers:   
+
+      ![](Grid-Inspector.gif)   
+      
+      <br>
+        💡 If an item spans only one row or column, grid-row/column-end is not necessary.
 
 <br>
 
