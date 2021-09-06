@@ -156,17 +156,17 @@
 
   - __[Grid lines](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_lines)__ :   
   **when we define a grid we define the grid tracks, not the lines**.   
-  Grid gives us __numbered lines to use when positioning items❗️__   
+  Grid gives us __numbered lines to use when [positioning](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#positionings) items❗️__   
   
 <br>
 
-  - [Grid cells](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_cells) :   
+  - __[Grid cells](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_cells)__ :   
     -  is the smallest unit on a grid.    
       ![](gridcell.gif)
 
 <br>
 
-  - [Grid areas](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_areas) :   
+  - __[Grid areas](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_areas)__ :   
     -  items can span one or more cells both by row or by column, and this creates a grid area. 
     - it isn’t possible to create an L-shaped area for example (because grid areas must be rectangular)
       ![](gridarea.gif)
