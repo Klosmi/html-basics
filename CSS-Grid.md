@@ -228,10 +228,10 @@
 
         ![](Grid-Inspector.gif)   
         
-    <br>
-         💡 If an item spans only one row or column, grid-row/column-end is not necessary.
+        <br>
+          💡 If an item spans only one row or column, grid-row/column-end is not necessary.
 
-    <br>
+        <br>
 
       - __[Line-positioning shorthands](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#line-positioning_shorthands)__ :
       **`grid-row` is shorthand** for `grid-row-start` and `grid-row-end`.
@@ -261,9 +261,9 @@
           ```
         ![](Positioning-items.gif)   
 
-<br>
 
-  - __[grid-area property](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid#the_grid-area_property)__ :    
+
+  - __[grid-area property](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid#the_grid-area_property)__ :
     (Remember: items can span one or more cells both by row or by column, and this creates a grid area.)
 
     __With grid-area property we can define each area.__ 
@@ -295,21 +295,19 @@
           grid-template-columns: repeat(3, 1fr);
           grid-auto-rows: 100px;
         }
-        
-        div:nth-child(1) {
+        #parent div:nth-child(1) {
         background-color: steelblue;
         grid-area: 1 / 1 / 4 / 2;
         }
-        
-        div:nth-child(2) {
+        #parent div:nth-child(2) {
           grid-area: 1 / 3 / 3 / 4;
         }
 
-        div:nth-child(3) {
+        #parent div:nth-child(3) {
           grid-area: 1 / 2 / 2 / 3;
         }
 
-        div:nth-child(4) {
+        #parent div:nth-child(4) {
           background-color: darkolivegreen;
           grid-area: 3 / 2 / 4 / 4;;
         }
@@ -317,7 +315,7 @@
       ![](grid-areaproperty.gif)
 
 
-    <br>
+
 
     - __[the span keyword](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid#using_the_span_keyword)__ : 
         to specify the start and end lines by number, you can **specify a start line and then the number of tracks** you would like the area to span.   
@@ -371,6 +369,61 @@
         ```
         ![](Positioning-items.gif)   
 
+#### [__Naming lines](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines#naming_lines_when_defining_a_grid)__ :   
+You can name your lines __when__ you define your columns and/or rows  (with the `grid-template-rows` and `grid-template-columns` properties).
+  - names can be anything you like
+  - you don't need to name all of the lines on your grid
+  - assigned line names must be wrapped in square brackets `[name-of-line]`
+  - naming lines is useful when creating a responsive design where you redefine the grid, you can ensure that the line is always named the same in your definitions (*rather than then needing to redefine the content position by changing the line number in your media queries*). 
+  - ❗️The lines are not the columns or rows, the columns or rows are in between the lines❗️
+
+  - eg.:   
+    HTML
+    ```
+    <div id="parent">
+      <div>1 - header</div>
+      <div>2 - content</div>
+      <div>3 - content</div>
+      <div>4 - content</div>
+      <div>5 - footer</div>
+    </div>
+    ```
+    CSS
+    ```
+    /* I define the names in the container (parent) */
+    #parent {
+      display: grid;
+      grid-template-columns: [header-start] 1fr [content-sart] 1fr [content-end] 1fr [header-end];
+      grid-template-rows: [header-start] 100px [header-end] 100px [content-start] 100px [content-end] 100px [footer];
+    }
+
+    /* I refer the names in the items (children) */
+
+    div:first-child {
+    background-color: steelblue;
+    grid-column: header-start / header-end;
+    grid-row: header-start / content-start
+    }
+
+    div:last-child {
+      background-color: darkolivegreen;
+      grid-column: header-start / header-end;
+      grid-row: content-end 
+    }
+    ```
+    ![](line-naming.gif)
+
+- __[Grid Template Area naming](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas)__ :
+  establishing the cells in the grid and assigning them names.
+
+
+- __[Naming Grid Area](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas#naming_a_grid_area)__ :
+
+<br>
+
+- __[Naming Grid Lines]()__
+
+<br>
 
   - [Grid Gaps (gutters)](https://developer.mozilla.org/en-US/docs/Web/CSS/gap) :   
     create gaps (gutters) between rows and columns. It is a shorthand for row-gap and column-gap.   
@@ -390,7 +443,7 @@
         ```
         ![](grid-column-rows.jpg)
 
-
+<br>
   - __vocabulary__:
     - __grid lines__:
       - __row grid line__ : horizontal row line
