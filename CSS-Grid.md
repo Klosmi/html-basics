@@ -291,6 +291,7 @@
         }
 
         div:nth-child(1) {
+          background-color: steelblue;
           grid-column: 1 / span 3;
           grid-row: 1 / span 2 ;
         }
@@ -310,6 +311,7 @@
         }
 
         div:nth-child(5) {
+          background-color: darkolivegreen;
           grid-row: 3 / span 2;
           grid-column: 1;
         }
