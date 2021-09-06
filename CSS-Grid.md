@@ -228,10 +228,10 @@
 
         ![](Grid-Inspector.gif)   
         
-<br>
-          💡 If an item spans only one row or column, grid-row/column-end is not necessary.
+    <br>
+         💡 If an item spans only one row or column, grid-row/column-end is not necessary.
 
-<br>
+    <br>
 
       - __[Line-positioning shorthands](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#line-positioning_shorthands)__ :
       **`grid-row` is shorthand** for `grid-row-start` and `grid-row-end`.
