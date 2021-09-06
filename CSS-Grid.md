@@ -145,19 +145,36 @@
 
       By default, tracks created in the implicit grid are __auto__
 
-  <br>
+<br>
 
   - __[Grid track](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_tracks)__ :    
   grid track is the space between any two lines on the grid. (Grid-template-columns and grid-template-rows properties define grid tracks.)   
     ![](gridtrack.gif)
 
 
-  <br>
+<br>
 
   - __[Grid lines](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_lines)__ :   
   **when we define a grid we define the grid tracks, not the lines**.   
   Grid gives us __numbered lines to use when positioning items❗️__   
-  👇
+  
+<br>
+
+  - [Grid cells](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_cells) :   
+    -  is the smallest unit on a grid.    
+      ![](gridcell.gif)
+
+<br>
+
+  - [Grid areas](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_areas) :   
+    -  items can span one or more cells both by row or by column, and this creates a grid area. 
+    - it isn’t possible to create an L-shaped area for example (because grid areas must be rectangular)
+      ![](gridarea.gif)
+
+  <br>
+
+#### Positionings
+
   - __[Positioning Items by *grid line numbers*](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid)__ *(= Line-based placement)* :    
   Lines are numbered according to the writing mode of the document - left to right or right to left.   
       
@@ -298,14 +315,6 @@
         ![](Positioning-items.gif)   
 
 
-  - [Grid cells](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_cells) :   
-    -  is the smallest unit on a grid.    
-      ![](gridcell.gif)
-
-  - [Grid areas](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_areas) :   
-    -  items can span one or more cells both by row or by column, and this creates a grid area. 
-    - it isn’t possible to create an L-shaped area for example (because grid areas must be rectangular)
-      ![](gridarea.gif)
 
   - [Grid Gaps (gutters)](https://developer.mozilla.org/en-US/docs/Web/CSS/gap) :   
     create gaps (gutters) between rows and columns. It is a shorthand for row-gap and column-gap.   
