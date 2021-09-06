@@ -12,6 +12,18 @@
   > -  do I need to control the layout by row **and** column 👉 **use a grid**
 
 <br> 
+
+**[Defining Grid, explaining Rows and Columns](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#defining-grid-explaining-rows-and-columns)**
+
+**[Sizing and Numbering](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#track-sizing-and-numbering)**
+
+**[The model - implicit / explicit](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#the-model)**
+
+**[Positionings](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#positionings)**
+
+**[Namings](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#naming)**
+
+<br>
   
   #### __Defining Grid, explaining Rows and Columns__
 
@@ -85,7 +97,7 @@
       ```
     ![](grid-template-columns-FR.jpg)
 
-#### __Track Sizing and Numbering__
+#### __Sizing and Numbering__
 
   - __[the minmax() function](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids#the_minmax_function)__ :    
     it lets us set a minimum and maximum size for a track.
@@ -133,7 +145,7 @@
       ``` 
         ![](grid-template-columns_repeat.jpg)  
 
- #### __The model__:
+ #### __The model__
    - __[explicit grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#the_implicit_and_explicit_grid)__:    
       a grid layout you explicitly call.   
       So the explicit grid is the one that you create using grid-template-columns or grid-template-rows.
@@ -367,7 +379,7 @@
         ```
         ![](Positioning-items.gif)   
 
-#### ___Naming___
+#### __Naming__
 - __[Naming lines](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines#naming_lines_when_defining_a_grid)__ :   
 You can name your lines __when__ you define your columns and/or rows  (with the `grid-template-rows` and `grid-template-columns` properties).
   - names can be anything you like
