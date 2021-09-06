@@ -514,15 +514,7 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
           ![](grid-column-rows.jpg)
 
   <br>
-    - __vocabulary__:
-      - __grid lines__:
-        - __row grid line__ : horizontal row line
-        - __column grid line__ : vertical column line
-      - __grid tracks__:
-        - the area between two lines (can be between rows and can be between columns)
-      - __grid cells__ (or grid items):
-        - individual cells in the grid (has 4 sides made by 2 rows and 2 columns)
-
-    <br>
+  
+  Useful [video](https://www.youtube.com/playlist?list=PLu8EoSxDXHP5CIFvt9-ze3IngcdAc2xKG)
 
 
