@@ -217,26 +217,26 @@ Lines are numbered according to the writing mode of the document - left to right
       shorthand for row: `grid-row: 1 / 3;`
       shorthand for column: `grid-column: 1 / 4;`
 
-    eg.:   
-    CSS
-    ```
-    #parent div:first-child {
-    background-color: steelblue;
-    grid-column: 1 / 4;
-    grid-row: 1 / 3;
-    }
+      If **one value** is provided, it specifies **grid-row/column-start**.
 
-    #parent div:last-child {
-      background-color: darkolivegreen;
-      grid-column: 1 ;
-      grid-row: 3 / 5;
-    }
-    ```
-    ![](Positioning-items.gif)
+      If **two values** are specified, the first value corresponds to **grid-row/column-start** and the second **grid-row/column-end**, and must be separated by a forward slash ` / `.
 
-If one value is provided, it specifies grid-row/column-start.
+    - eg.:   
+      CSS
+      ```
+      #parent div:first-child {
+      background-color: steelblue;
+      grid-column: 1 / 4;
+      grid-row: 1 / 3;
+      }
 
-If two values are specified, the first value corresponds to grid-row/column-start and the second grid-row/column-end, and 
+      #parent div:last-child {
+        background-color: darkolivegreen;
+        grid-column: 1 ;
+        grid-row: 3 / 5;
+      }
+      ```
+      ![](Positioning-items.gif)
 
 <br>
 
