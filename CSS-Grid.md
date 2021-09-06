@@ -36,51 +36,51 @@ Lines are numbered according to the writing mode of the document - left to right
 
   We can use *line-based placement* to **control where element items sit on the grid**. 
        
-![](1_diagram_numbered_grid_lines.gif)    
-(source: [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_lines))   
-When we place an item, __we target the line__ – rather than the [track](https://developer.mozilla.org/en-US/docs/Glossary/Grid_Tracks) by using these properties:
-  - [grid-column-start](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start)
-  - [grid-column-end](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end)
-  - [grid-row-start](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start)
-  - [grid-row-end](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end)
+  ![](1_diagram_numbered_grid_lines.gif)    
+  (source: [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#grid_lines))   
+  When we place an item, __we target the line__ – rather than the [track](https://developer.mozilla.org/en-US/docs/Glossary/Grid_Tracks) by using these properties:
+    - [grid-column-start](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start)
+    - [grid-column-end](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end)
+    - [grid-row-start](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start)
+    - [grid-row-end](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end)
 
-  - eg.: 
-    HTML:
-    ```
-    <div id="parent">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
-    </div>
-    ```
-    CSS:    
-    the first item 🔵 `#parent div:first-child` is placed against column line 1, and *spans* to column line 4, and it **starts** at row line 1 and **ends** at row line 3 (so spanning two row tracks).   
-    the second item 🟢 `#parent div:last-child` **starts** on grid column line 1, and *spans* 1 track (that is by default) → *no need to define it*. Also, it *spans* 2 row-tracks *from row line 3* to *row line 5*.    
+    - eg.: 
+      HTML:
+      ```
+      <div id="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+      </div>
+      ```
+      CSS:    
+      the first item 🔵 `#parent div:first-child` is placed against column line 1, and *spans* to column line 4, and it **starts** at row line 1 and **ends** at row line 3 (so spanning two row tracks).   
+      the second item 🟢 `#parent div:last-child` **starts** on grid column line 1, and *spans* 1 track (that is by default) → *no need to define it*. Also, it *spans* 2 row-tracks *from row line 3* to *row line 5*.    
 
-    ```
-    #parent {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 100px;
+      ```
+      #parent {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 100px;
 
-    #parent div:first-child {
-      grid-column-start: 1;
-      grid-column-end: 4;
-      grid-row-start: 1;
-      grid-row-end: 3;
-    }
-    #parent div:last-child {
-      grid-column-start: 1;
-      grid-row-start: 3;
-      grid-row-end: 5;
-    }
-    ```
-    ![](Positioning-items.gif)   
-    With [Firefox Grid inspector](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts) we can see the line numbers:   
+      #parent div:first-child {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+      #parent div:last-child {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        grid-row-end: 5;
+      }
+      ```
+      ![](Positioning-items.gif)   
+      With [Firefox Grid inspector](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts) we can see the line numbers:   
 
-    ![](Grid-Inspector.gif)
+      ![](Grid-Inspector.gif)
 
 
 
