@@ -401,9 +401,9 @@ You can name your lines __when__ you define your columns and/or rows  (with the 
     /* I refer the names in the items (children) */
 
     div:first-child {
-    background-color: steelblue;
-    grid-column: header-start / header-end;
-    grid-row: header-start / content-start
+      background-color: steelblue;
+      grid-column: header-start / header-end;
+      grid-row: header-start / content-start
     }
 
     div:last-child {
