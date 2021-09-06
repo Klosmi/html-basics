@@ -278,7 +278,7 @@
 
     4. grid-column-end
 
-      like: `grid-area: 1 / 1 / 4 / 2;`
+    like: `grid-area: 1 / 1 / 4 / 2;`
 
     - eg.:   
       HTML
