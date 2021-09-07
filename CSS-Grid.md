@@ -267,7 +267,7 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
       - eg.:   
             CSS  
             
-            ```
+           ```
               #parent div:first-child {
               background-color: steelblue;
               grid-column: 1 / 4;
@@ -279,7 +279,7 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
                 grid-column: 1 ;
                 grid-row: 3 / 5;
               }
-            ```
+          ```
           ![](Positioning-items.gif)   
 
     <br>
