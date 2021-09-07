@@ -927,17 +927,30 @@ Use and reference to the **MDN** docs.
   
 <br>
   
-- **[Bootstrap breakpoints](https://getbootstrap.com/docs/5.0/layout/breakpoints/#available-breakpoints)**   
+- **[Bootstrap breakpoints](https://getbootstrap.com/docs/5.0/layout/breakpoints/#available-breakpoints)**  
+  - **max-width**
+        
+      @media (max-width: 575.98px) { ... }    *X-Small devices (portrait phones, less than 576px)*
 
-@media (max-width: 575.98px) { ... }    *X-Small devices (portrait phones, less than 576px)*
+      @media (max-width: 767.98px) { ... }    *Small devices (landscape phones, less than 768px)*
 
-@media (max-width: 767.98px) { ... }    *Small devices (landscape phones, less than 768px)*
+      @media (max-width: 991.98px) { ... }    *Medium devices (tablets, less than 992px)*
 
-@media (max-width: 991.98px) { ... }    *Medium devices (tablets, less than 992px)*
+      @media (max-width: 1199.98px) { ... }   *Large devices (desktops, less than 1200px)*
 
-@media (max-width: 1199.98px) { ... }   *Large devices (desktops, less than 1200px)*
+      @media (max-width: 1399.98px) { ... }   *X-Large devices (large desktops, less than 1400px)*
+  
+  - **min-width**
+  
+      @media (min-width: 576px) { ... }    *X-Small devices (portrait phones, less than 576px)*
 
-@media (max-width: 1399.98px) { ... }   *X-Large devices (large desktops, less than 1400px)*
+      @media (min-width: 768px) { ... }    *Small devices (landscape phones, less than 768px)*
+
+      @media (min-width: 992px) { ... }    *Medium devices (tablets, less than 992px)*
+
+      @media (min-width: 11200px) { ... }   *Large devices (desktops, less than 1200px)*
+
+      @media (min-width: 13400px) { ... }   *X-Large devices (large desktops, less than 1400px)*
 
     
 ---
