@@ -231,13 +231,13 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
             grid-template-columns: repeat(3, 1fr);
             grid-auto-rows: 100px;
 
-            #parent div:first-child {
+            div:first-child {
               grid-column-start: 1;
               grid-column-end: 4;
               grid-row-start: 1;
               grid-row-end: 3;
             }
-            #parent div:last-child {
+            div:last-child {
               grid-column-start: 1;
               grid-row-start: 3;
               grid-row-end: 5;
@@ -268,13 +268,13 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
             CSS  
             
            ```
-              #parent div:first-child {
+              div:first-child {
               background-color: steelblue;
               grid-column: 1 / 4;
               grid-row: 1 / 3;
               }
 
-              #parent div:last-child {
+              div:last-child {
                 background-color: darkolivegreen;
                 grid-column: 1 ;
                 grid-row: 3 / 5;
