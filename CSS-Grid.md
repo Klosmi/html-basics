@@ -287,6 +287,8 @@ In other words, if a grid item is positioned into a __column that is not explici
               }
           ```
           ![](Positioning-items.gif)   
+          
+      - 💡 **if we don't know how many tracks we have, but we want our element to span across till the last, we can give `-1`. Like `grid-column: 1/ -1;`**  
 
     <br>
 
