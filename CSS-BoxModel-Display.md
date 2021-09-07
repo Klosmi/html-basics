@@ -64,7 +64,9 @@ it sets whether an element is treated as a **block element** or an **inline elem
     - the element itself is not going to be deleted (it's there in the document)❗️ But they take up no space, and we don't see them.
 
     <br>
-
+    
+- **[/Block and Inline Layout in Normal Flow](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Block_and_Inline_Layout_in_Normal_Flow#elements_participating_in_a_block_formatting_context)**
 - **[Further reading 💡](https://css-tricks.com/when-do-you-use-inline-block/)**
+
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
