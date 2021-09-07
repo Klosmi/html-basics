@@ -25,6 +25,8 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
 
   **[Namings](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#naming)**
   
+  **[Grid Gap](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#grid-gaps-gutters-)**
+  
   **[Useful Links](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#links)**
 
   <br>
@@ -503,12 +505,12 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
   <br>
 
 #### [Grid Gaps (gutters)](https://developer.mozilla.org/en-US/docs/Web/CSS/gap) :      
-      create gaps (gutters) between rows and columns. It is a shorthand for row-gap and column-gap.   
-      (Grid gaps are only created in between columns and rows, and not along the edge of the grid containe.)
-      - eg.:   
+     create gaps (gutters) between rows and columns. It is a shorthand for row-gap and column-gap.   
+     (Grid gaps are only created in between columns and rows, and not along the edge of the grid containe.)
+      -eg.:   
           create gaps between rows
           ```
-          grid-row-gap: 70px;
+            grid-row-gap: 70px;
           ```
           ![](grid-gap-rows.jpg)
 
@@ -516,13 +518,14 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
 
           create gaps between columns
           ```
-          grid-column-gap: 100px;
+            grid-column-gap: 100px;
           ```
           ![](grid-column-rows.jpg)
-
-  <br>
+          
+<br>
   
- #### __Links__
+  
+#### __Links__
 -  Useful [video from Wes Bos](https://www.youtube.com/playlist?list=PLu8EoSxDXHP5CIFvt9-ze3IngcdAc2xKG)
 -  [The CSS Grid Guide](https://css-tricks.com/snippets/css/complete-guide-grid/#top-of-site)
 -  [CSS grid guide specific example, using images and text for a site](https://css-tricks.com/video-screencasts/208-a-css-grid-layout-with-pictures-down-one-side-matched-up-with-paragraphs-on-the-other/)
