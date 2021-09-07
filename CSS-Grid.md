@@ -3,7 +3,7 @@ CSS Grid Layout is a 2-dimensional layout system. It lets you lay content out in
 
 So a grid is a collection of horizontal(**row**) and vertical(**column**) lines creating a pattern against which we can line up our design elements.
 
-- similar to Flex, but while Flex-box is 1 dimensional, Grid is 2 dimensional.
+- similar to [Flex-box](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md), but while Flex-box is 1 dimensional, Grid is 2 dimensional.
 
 In other words: grid items (*contents*) are distributed along the *main axis* and *cross axis*.([source](https://www.freecodecamp.org/news/css-grid-tutorial-with-cheatsheet/)).
 
