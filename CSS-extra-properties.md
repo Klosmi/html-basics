@@ -5,7 +5,8 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 [Position](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#position)   
 [Transition](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#transition)   
 [Transform](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#transform)  
-[Background](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#background)
+[Background](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#background)   
+[Some Extras](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#some-extras)   
 [Breakpoints - mobile 1st](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#breakpoints---mobile-1sr)**
 
 
