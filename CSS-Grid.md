@@ -448,7 +448,7 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
 
     - each set of names defines a row, and each name defines a column
 
-    - the colon **`.`** creates and empty space
+    - the colon **`.`** creates an empty space
 
     - using the property `grid-area: "A";` I can assign each of the grid areas with a name.
 
