@@ -119,7 +119,7 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
         ```
         ![](minmax-rows.gif)
     
-      * first column track `<div>`1 & `<div>`4 has a minimum size of auto, but its maximum size of 20% will prevent it from getting no wider than 20% of the grid container width.*   
+      * first column track `<div>`1 & `<div>`4 has a minimum size of auto, but its maximum size of 20% will prevent it from getting no wider than 20% of the grid container width.   
       CSS
         ```
         #parent {
