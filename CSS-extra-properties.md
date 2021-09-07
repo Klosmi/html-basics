@@ -948,9 +948,9 @@ Use and reference to the **MDN** docs.
 
       @media (min-width: 992px) { ... }   →   *Medium devices (tablets, less than 992px)*
 
-      @media (min-width: 11200px) { ... }  →  *Large devices (desktops, less than 1200px)*
+      @media (min-width: 1200px) { ... }  →  *Large devices (desktops, less than 1200px)*
 
-      @media (min-width: 13400px) { ... }  →   *X-Large devices (large desktops, less than 1400px)*
+      @media (min-width: 1400px) { ... }  →   *X-Large devices (large desktops, less than 1400px)*
 
     
 ---
