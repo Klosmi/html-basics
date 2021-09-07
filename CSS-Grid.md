@@ -117,7 +117,7 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
           grid-template-columns: 1fr 1fr;
         }
         ```
-        ![](minmax-rows01.jpg)
+        ![](minmax-rows.gif)
     
       * first column track `<div>`1 & `<div>`4 has a minimum size of auto, but its maximum size of 20% will prevent it from getting no wider than 20% of the grid container width.*   
       CSS
