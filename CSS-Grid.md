@@ -342,7 +342,7 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
           to specify the start and end lines by number, you can **specify a start line and then the number of tracks** you would like the area to span.   
             like `grid-row: 1 / span 3;` and/or  `grid-column: 2 / span 4`;   
             
-        - use the span keyword in the value of grid-row-start/grid-row-end and grid-column-start/grid-column-end
+        - use the span keyword in the value of `grid-row-start`/`grid-row-end` and `grid-column-start`/`grid-column-end`
 
         - eg.:   
           HTML:
