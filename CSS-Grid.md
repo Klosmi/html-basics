@@ -316,10 +316,12 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
             grid-template-columns: repeat(3, 1fr);
             grid-auto-rows: 100px;
           }
+          
           #parent div:nth-child(1) {
           background-color: steelblue;
           grid-area: 1 / 1 / 4 / 2;
           }
+          
           #parent div:nth-child(2) {
             grid-area: 1 / 3 / 3 / 4;
           }
