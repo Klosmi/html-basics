@@ -5,7 +5,9 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 [Position](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#position)   
 [Transition](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#transition)   
 [Transform](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#transform)  
-[Background](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#background)**
+[Background](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#background)
+[Breakpoints - mobile 1st]()**
+
 
 ---
 ## [Alpha Channel](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity) + [Opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
@@ -905,7 +907,29 @@ Some of the most common values:
   <br>  
   <br>
 Use and reference to the **MDN** docs.
-s 
+
+## Breakpoints - mobile 1sr:
+
+- **[Mobile-first CSS Media Queries Breakpoints](https://gist.github.com/janily/8453473#file-breakpoints)**
+@media (min-width:320px)    *smartphones, portrait iPhone, portrait 480x320 phones (Android)*
+@media (min-width:480px)    *smartphones, Android phones, landscape iPhone* 
+@media (min-width:600px)    *portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android)* 
+@media (min-width:801px)    *tablet, landscape iPad, lo-res laptops ands desktops*
+@media (min-width:1025px)   *big landscape tablets, laptops, and desktops* 
+@media (min-width:1281px)   *hi-res laptops and desktops* 
+  
+- **[Bootstrap breakpoints](https://getbootstrap.com/docs/5.0/layout/breakpoints/#available-breakpoints)**
+
+@media (max-width: 575.98px) { ... }    *X-Small devices (portrait phones, less than 576px)*
+
+@media (max-width: 767.98px) { ... }    *Small devices (landscape phones, less than 768px)*
+
+@media (max-width: 991.98px) { ... }    *Medium devices (tablets, less than 992px)*
+
+@media (max-width: 1199.98px) { ... }   *Large devices (desktops, less than 1200px)*
+
+@media (max-width: 1399.98px) { ... }   *X-Large devices (large desktops, less than 1400px)*
+
     
 ---
   
