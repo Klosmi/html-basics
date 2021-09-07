@@ -162,7 +162,8 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
 
       By default, tracks created in the implicit grid are __auto__.   
       - ❗️ __with [`grid-auto-rows`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows) we cen define the implicit rows size__
-      - ❗️ __with [`grid-auto-columns`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns) we cen define the implicit columns size__, so it will create a  horizntal scroll, when a bunch of columns add next to each other. In other words, if a grid item is positioned into a __column that is not explicitly sized by `grid-template-columns`__, __implicit grid tracks are created__ to hold it. 
+      - ❗️ __with [`grid-auto-columns`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns) we cen define the implicit columns size__, so it will create a  horizontal scroll, when a bunch of columns add next to each other.    
+In other words, if a grid item is positioned into a __column that is not explicitly sized by `grid-template-columns`__, __implicit grid tracks are created__ to hold it. 
 
   <br>
 
