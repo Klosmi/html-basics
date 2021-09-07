@@ -265,7 +265,8 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
       - If **two values** are specified, the first value corresponds to **grid-row/column-start** and the second **grid-row/column-end**, and must be separated by a forward slash ` / `.
 
       - eg.:   
-            CSS
+            CSS  
+            
             ```
               #parent div:first-child {
               background-color: steelblue;
