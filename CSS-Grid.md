@@ -74,7 +74,7 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
     - units:
       - px, pt, em, rem, %, fr (fraction unit), auto
 
-      - a __fr__ (fraction unit) divides the free space in the grid into equally distribute the space.   
+      - a __fr__ (fraction unit) divides the free space in the grid into equally distributed space.   
         Margins and paddings are automatically built in.  
         __fr__ units are flexible
 
