@@ -1,4 +1,4 @@
-# [Grid](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids) :
+# [CSS Grid](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids)
 CSS Grid Layout is a 2-dimensional layout system. It lets you lay content out in __rows__ and __columns__.
 
 So a grid is a collection of horizontal(**row**) and vertical(**column**) lines creating a pattern against which we can line up our design elements.
