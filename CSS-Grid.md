@@ -395,7 +395,7 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
     - names can be anything you like
     - you don't need to name all of the lines on your grid
     - assigned line names must be wrapped in square brackets `[name-of-line]`
-    - naming lines is useful when creating a responsive design where you redefine the grid, you can ensure that the line is always named the same in your definitions (*rather than then needing to redefine the content position by changing the line number in your media queries*). 
+    - naming lines is useful when creating a responsive design where you redefine the grid, you can ensure that the line is always named the same in your definitions (*rather than needing to redefine the content position by changing the line number in your media queries*). 
     - ❗️The lines are not the columns or rows, the columns or rows are in between the lines❗️
 
     - eg.:   
