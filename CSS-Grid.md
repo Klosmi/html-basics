@@ -143,7 +143,7 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
         ```
           grid-template-rows: repeat(3, 100px);
         ```
-          ![](grid-template-rows-repeat.jpg)
+          ![](grid-template-rows-repeat01.gif)
         ```
           grid-template-columns: repeat(3, 1fr);
         ``` 
