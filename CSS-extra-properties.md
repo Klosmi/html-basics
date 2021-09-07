@@ -909,17 +909,25 @@ Some of the most common values:
   <br>
 Use and reference to the **MDN** docs.
 
-## Breakpoints - mobile 1sr:
+## Breakpoints - mobile 1sr:   
 
-- **[Mobile-first CSS Media Queries Breakpoints](https://gist.github.com/janily/8453473#file-breakpoints)**
-@media (min-width:320px)    *smartphones, portrait iPhone, portrait 480x320 phones (Android)*
-@media (min-width:480px)    *smartphones, Android phones, landscape iPhone* 
-@media (min-width:600px)    *portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android)* 
-@media (min-width:801px)    *tablet, landscape iPad, lo-res laptops ands desktops*
-@media (min-width:1025px)   *big landscape tablets, laptops, and desktops* 
-@media (min-width:1281px)   *hi-res laptops and desktops* 
+- **[Mobile-first CSS Media Queries Breakpoints](https://gist.github.com/janily/8453473#file-breakpoints)**   
   
-- **[Bootstrap breakpoints](https://getbootstrap.com/docs/5.0/layout/breakpoints/#available-breakpoints)**
+@media (min-width:320px)    *smartphones, portrait iPhone, portrait 480x320 phones (Android)*   
+  
+@media (min-width:480px)    *smartphones, Android phones, landscape iPhone*   
+  
+@media (min-width:600px)    *portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android)*   
+  
+@media (min-width:801px)    *tablet, landscape iPad, lo-res laptops ands desktops*   
+  
+@media (min-width:1025px)   *big landscape tablets, laptops, and desktops*   
+  
+@media (min-width:1281px)   *hi-res laptops and desktops*   
+  
+<br>
+  
+- **[Bootstrap breakpoints](https://getbootstrap.com/docs/5.0/layout/breakpoints/#available-breakpoints)**   
 
 @media (max-width: 575.98px) { ... }    *X-Small devices (portrait phones, less than 576px)*
 
