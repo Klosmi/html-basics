@@ -504,25 +504,28 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
 
   <br>
 
-#### [Grid Gaps (gutters)](https://developer.mozilla.org/en-US/docs/Web/CSS/gap) :      
-     create gaps (gutters) between rows and columns. It is a shorthand for row-gap and column-gap.   
-     (Grid gaps are only created in between columns and rows, and not along the edge of the grid containe.)
-      -eg.:   
-          create gaps between rows
-          ```
-            grid-row-gap: 70px;
-          ```
-          ![](grid-gap-rows.jpg)
+#### [Grid Gaps (gutters)](https://developer.mozilla.org/en-US/docs/Web/CSS/gap) :
 
-          <br>
+create gaps (gutters) between rows and columns. It is a shorthand for row-gap and column-gap.   
+(Grid gaps are only created in between columns and rows, and not along the edge of the grid containe.)
+     
+     -eg.:   
+      
+        create gaps between rows
+        ```
+          grid-row-gap: 70px;
+        ```
+        ![](grid-gap-rows.jpg)
 
-          create gaps between columns
-          ```
-            grid-column-gap: 100px;
-          ```
-          ![](grid-column-rows.jpg)
+        <br>
+
+        create gaps between columns
+        ```
+          grid-column-gap: 100px;
+        ```
+        ![](grid-column-rows.jpg)
           
-<br>
+  <br>
   
   
 #### __Links__
