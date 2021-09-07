@@ -524,3 +524,8 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
 -  [Another guide teo Grid](https://learncssgrid.com/#grid-container)
 
 
+  <br>
+
+---
+   [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
+
