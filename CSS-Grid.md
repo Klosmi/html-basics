@@ -108,7 +108,7 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
         `minmax(minimum-value, maximum-value)`
 
       eg.:
-      * first row track: `<div>` 1 is set to have a minimum height of 100px, but its maximum size of auto will allow the row track to grow the content taller than 100px.*   
+      * first row track: `<div>` 1 is set to have a minimum height of 100px, but its maximum size of auto will allow the row track to grow the content taller than 100px.   
       CSS
         ```
         #parent {
