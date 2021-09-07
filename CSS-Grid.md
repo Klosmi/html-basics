@@ -68,6 +68,8 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
           ```
           ![](starting-grid-01.jpg)
 
+      - 💡 a default hieght of an element is just however high the contents are, but the default of the elemnt is as wide as the actual [viewport](https://developer.mozilla.org/en-US/docs/Glossary/Viewport) the we have.    
+      (Similar to [`display: block;`](https://github.com/Klosmi/html-basics/blob/master/CSS-BoxModel-Display.md))
 
   - __[grid-template-columns](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns)__ :   
       defines the line names and track sizing functions of the grid columns.   
