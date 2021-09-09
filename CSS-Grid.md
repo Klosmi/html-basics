@@ -274,10 +274,16 @@ In other words, if a grid item is positioned into a __column that is not explici
             CSS  
             
            ```
+              #parent {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-auto-rows: 100px;
+              }
+              
               div:first-child {
-              background-color: steelblue;
-              grid-column: 1 / 4;
-              grid-row: 1 / 3;
+                background-color: steelblue;
+                grid-column: 1 / 4;
+                grid-row: 1 / 3;
               }
 
               div:last-child {
