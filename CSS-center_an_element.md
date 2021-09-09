@@ -143,7 +143,7 @@ In this case, if the content is more than the mentioned height, than it [overflo
 
 	With `min-height` property we can __set a minimum height for the element to occupy the space if the content in the element is less__ than the that (so if the content is less than the space). The __height__ of the element will __increase when the content increases__.
 
-	When setting the value of `max-height`, its benefit lies in preventing the used value for height property from becoming more than the specified value for max-height. Note that the default value for max-height is none.
+	When setting the value of `max-height`, its benefit lies in preventing the used value for height property from becoming more than the specified value for max-height. (So, it can not be bigger than what we set for max-height.) Note that the default value for max-height is none.
 
 - **[max-width](https://ishadeed.com/article/min-max-css/#max-width)** sets the maximum width of an element. The element can not be larger than the value specified by `max-width`.    
 	**[max-height](https://ishadeed.com/article/min-max-css/#max-height)** sets the maximum height of an element. The element can not be larger than the value specified by `max-height`.
