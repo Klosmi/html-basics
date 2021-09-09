@@ -181,7 +181,7 @@ So it controls the alignment of items on the **Cross Axis**.
 
           ```
           #container {
-            hegiht: 500px;
+            height: 500px;
             display: flex;
             flex-direction: row;
             justify-content: center;
