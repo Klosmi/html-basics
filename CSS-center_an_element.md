@@ -132,7 +132,9 @@ It looks like this:
 <br>
 
 # What does [mobile frist](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/Mobile_first) mean? 📱
-It means to create the mobile layout as the default first and then the larger screen sizes, which usually change to be row based instead of column based.
+It means to create the mobile layout as the default first and then the larger screen sizes, which usually change to be row based instead of column based.   
+
+[Here are some basic break-points](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#breakpoints---mobile-1sr).
 
 <br>
 
