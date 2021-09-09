@@ -141,7 +141,7 @@ It means to create the mobile layout as the default first and then the larger sc
 - **When you set the height property on an element, the element will occupy the mentioned space irrespective of the content.**    
 In this case, if the content is more than the mentioned height, than it [overflows](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow).    
 
-	With `min-height` property we can __set a minimum height for the element to occupy the space if the content in the element is less__ than the that (so less than the space). The __height__ of the element will ))increase when the content increases__.
+	With `min-height` property we can __set a minimum height for the element to occupy the space if the content in the element is less__ than the that (so the content is less than the space). The __height__ of the element will ))increase when the content increases__.
 
 	When setting the value of `max-height`, its benefit lies in preventing the used value for height property from becoming more than the specified value for max-height. Note that the default value for max-height is none.
 
