@@ -226,6 +226,8 @@ these are a few CSS properties which are nice to know, but not crucial for the b
     The above example (the sticky portperty) only works if we use classes!   
 
     (This [video](https://www.youtube.com/watch?v=9xygOHSuzQ8) explaines it quite well.)
+    
+    When and why [**position: relative or absolute**?]https://css-tricks.com/absolute-positioning-inside-relative-positioning/) 👍
 
 💡 Note, that normally the 'second' id's should actually be **classes**. **You should only have one unique id per page.** If it needs to replicate, then a class is the correct choice!
 
