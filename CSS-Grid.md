@@ -542,7 +542,7 @@ In other words, if a grid item is positioned into a __column that is not explici
   
   
 #### __Links__
--  Useful [video from Wes Bos](https://www.youtube.com/playlist?list=PLu8EoSxDXHP5CIFvt9-ze3IngcdAc2xKG)
+-  [Useful video from Wes Bos](https://www.youtube.com/playlist?list=PLu8EoSxDXHP5CIFvt9-ze3IngcdAc2xKG)
 -  [The CSS Grid Guide](https://css-tricks.com/snippets/css/complete-guide-grid/#top-of-site)
 -  [CSS grid guide specific example, using images and text for a site](https://css-tricks.com/video-screencasts/208-a-css-grid-layout-with-pictures-down-one-side-matched-up-with-paragraphs-on-the-other/)
 -  [Another guide teo Grid](https://learncssgrid.com/#grid-container)
