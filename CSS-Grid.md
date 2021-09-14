@@ -546,6 +546,7 @@ In other words, if a grid item is positioned into a __column that is not explici
 -  [The CSS Grid Guide](https://css-tricks.com/snippets/css/complete-guide-grid/#top-of-site)
 -  [CSS grid guide specific example, using images and text for a site](https://css-tricks.com/video-screencasts/208-a-css-grid-layout-with-pictures-down-one-side-matched-up-with-paragraphs-on-the-other/)
 -  [Another guide to the Grid](https://learncssgrid.com/#grid-container)
+-  [Display: inline-grid](https://css-tricks.com/when-do-you-use-inline-block/#dont-forget-inline-flex-and-inline-grid)
 -  [Responsive Layouts with Grid (and without)](https://medium.com/samsung-internet-dev/common-responsive-layouts-with-css-grid-and-some-without-245a862f48df)
 
 
