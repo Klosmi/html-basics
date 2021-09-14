@@ -65,8 +65,13 @@ it sets whether an element is treated as a **block element** or an **inline elem
 
     <br>
     
+--- 
+
+## Links    
+    
 - **[Block and Inline Layout in Normal Flow 🚀](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Block_and_Inline_Layout_in_Normal_Flow#elements_participating_in_a_block_formatting_context)**
 - **[Further reading 💡](https://css-tricks.com/when-do-you-use-inline-block/)**
+- **[Inline Formatting](https://www.w3.org/TR/CSS21/visuren.html#inline-formatting)**
 
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
