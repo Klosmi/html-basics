@@ -6,7 +6,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 [Transition](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#transition)   
 [Transform](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#transform)  
 [Background](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#background)   
-[Some Extras](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#some-extras)   
+[Some Extras](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#some-extras)**   
 
 ---
 ## [Alpha Channel](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity) + [Opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
