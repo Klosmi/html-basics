@@ -28,13 +28,36 @@
   - a `<section>` supposed to be a section of content, a standalone *section* of your website.
   - it's one option dividing up your markup
   - if you would give a border or other CSS, maybe use a `<div>` rather than `<section>`.
+  - 
 - [`<article>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article) :
   - `<article>` element represents a self-contained composition in a document.
   - you can have multiple articles and sub-articles on a page
   - `<article>` **supposed to be any self-contained composition**
   - **anything that should be independently distributable or reusable** *(so if you take out a part from a page and put it into another website, and it still makes sence, than it should be wrapedd into an article)* 
   - just an other element to group content together:
-    - there should be a heading *(`<h1>` `<h2>`)* that explaines what the `<article>` is about. (eg. a film review, which can have inside a bunch of sections and sub-articles)
+  - there should be a heading *(`<h1>` `<h2>`)* that explaines what the `<article>` is about. (eg. a film review, which can have inside a bunch of sections and sub-articles)
+  -   - eg.:
+    ```
+    <main>
+      <h1>Welcome to my website</h1>
+        
+        <section>
+          <h2>Products</h2>
+          
+          <article>
+            <h3>First product</h3>
+            <p>Some random text or description</p>
+          </article>
+          
+          <article>
+            <h3>Second product</h3>
+            <p>Some random text or description</p>
+          </article>
+          
+        </section>
+        
+    </main>
+    ```
 
 - [`<aside>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside) :
   - it is something that is indirectly related to the document, not essential. *(like: sidebars, call-out boxes)*
