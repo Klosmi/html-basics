@@ -28,22 +28,14 @@
   - a `<section>` supposed to be a section of content, a standalone *section* of your website.
   - it's one option dividing up your markup
   - if you would give a border or other CSS, maybe use a `<div>` rather than `<section>`.
-  - 
-- [`<article>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article) :
-  - `<article>` element represents a self-contained composition in a document.
-  - you can have multiple articles and sub-articles on a page
-  - `<article>` **supposed to be any self-contained composition**
-  - **anything that should be independently distributable or reusable** *(so if you take out a part from a page and put it into another website, and it still makes sence, than it should be wrapedd into an article)* 
-  - just an other element to group content together:
-  - there should be a heading *(`<h1>` `<h2>`)* that explaines what the `<article>` is about. (eg. a film review, which can have inside a bunch of sections and sub-articles)
-  -   - eg.:
+  - eg.:   
+    A `section` can wrap around several `article`s, where each `article` has a meaning alone.
     ```
     <main>
     
       <h1>Welcome to my website</h1>
         
         <section>
-        
           <h2>Products</h2>
           
           <article>
@@ -55,9 +47,44 @@
             <h3>Second product</h3>
             <p>Some random text or description</p>
           </article>
-          
         </section>
         
+    </main>
+    ```
+    
+- [`<article>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article) :
+  - `<article>` element represents a self-contained composition in a document.
+  - you can have multiple articles and sub-articles on a page
+  - `<article>` **supposed to be any self-contained composition**
+  - **anything that should be independently distributable or reusable** *(so if you take out a part from a page and put it into another website, and it still makes sence, than it should be wrapedd into an article)* 
+  - just an other element to group content together:
+  - there should be a heading *(`<h1>` `<h2>`)* that explaines what the `<article>` is about. (eg. a film review, which can have inside a bunch of sections and sub-articles)
+  - eg.:   
+    *Here `section`s are inside an article. The article is about a soup recipe, and each section can describe deifferent parts of the recipe.* 
+    ```
+    <main>     
+        <article>
+          <h1>Onion soup</h1>
+          
+          <section>
+            <h2>Ingredients</h2>
+            <ul>
+              <li>2 piences of onions</li>
+              <li>pinch of salt</li>
+              <li>1/2 l of stew</li>
+            </ul
+          </section>
+          
+          <section>
+            <h2>Preparation</h2>
+            <ul>
+              <li>Cut the onions into slices</li>
+              <li>Put them into the stew</li>
+              <li>Salt it</li>
+            </ul
+          </section>
+          
+        </article>
     </main>
     ```
 
