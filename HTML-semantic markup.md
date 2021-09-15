@@ -121,10 +121,13 @@
   - if the content is **time- or date-related**, the [`<time>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time) element must be used.
 
 ### There is a lot of flexibility, not super rigid. The point is the general intent of the semantics of each of these elements. 
+
 <br>
-## Links
+
+## Links   
 - [Explanation with some examples](https://www.semrush.com/blog/semantic-html5-guide/#header7)
 - [Some best practice advice from 2019, but still valid](https://www.elegantthemes.com/blog/wordpress/semantic-html-best-practices-for-2019)
+
 ---
 
 [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
