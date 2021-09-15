@@ -60,7 +60,7 @@
   - just an other element to group content together:
   - there should be a heading *(`<h1>` `<h2>`)* that explaines what the `<article>` is about. (eg. a film review, which can have inside a bunch of sections and sub-articles)
   - eg.:   
-    *Here `section`s are inside an article (they don't have a meaning alone where `article` still understandable alone). The article is about a soup recipe, and each section can describe deifferent parts of the recipe.* 
+    *Here `section`s are inside an `article` (they don't have a meaning alone where `article` still understandable alone). The `article` is about a soup recipe, and each `section` can describe deifferent parts of the recipe.* 
     ```
     <main>     
         <article>
