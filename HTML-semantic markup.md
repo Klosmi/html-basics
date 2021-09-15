@@ -124,6 +124,7 @@
 <br>
 ## Links
 - [Explanation with some examples](https://www.semrush.com/blog/semantic-html5-guide/#header7)
+- [Some best practice advice from 2019, but still valid](https://www.elegantthemes.com/blog/wordpress/semantic-html-best-practices-for-2019)
 ---
 
 [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
