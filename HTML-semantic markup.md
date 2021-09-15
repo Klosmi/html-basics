@@ -29,7 +29,7 @@
   - it's one option dividing up your markup
   - if you would give a border or other CSS, maybe use a `<div>` rather than `<section>`.
   - eg.:   
-    A `section` can wrap around several `article`s, where each `article` has a meaning alone.
+    *A `section` can wrap around several `article`s, where each `article` has a meaning alone.*
     ```
     <main>
     
