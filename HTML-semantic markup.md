@@ -39,9 +39,11 @@
   -   - eg.:
     ```
     <main>
+    
       <h1>Welcome to my website</h1>
         
         <section>
+        
           <h2>Products</h2>
           
           <article>
