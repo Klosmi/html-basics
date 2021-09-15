@@ -22,6 +22,7 @@
 
 - [`<section>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section) :  
   -  very generic
+  -  it is to group things together (it can be inside of an article, it can be outside of an article)
   -  it represents a *generic* **standalone** section of a document, which **doesn't have a more specific semantic element to represent it**.  
   `<section>` is still far better than a `<div>`, where a `<div>` is just a generic container *(you can  use a `<div>` for anything)*. 
   - a `<section>` supposed to be a section of content, a standalone *section* of your website.
