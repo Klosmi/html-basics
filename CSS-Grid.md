@@ -152,6 +152,10 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
           grid-template-columns: repeat(3, 1fr);
         ``` 
           ![](grid-template-columns_repeat.jpg)  
+     
+     - __[Repeat combined with keywords](https://css-tricks.com/snippets/css/complete-guide-grid/#the-repeat-function-and-keywords)__ :   
+       - `auto-fill` : __fit as many possible columns as possible on a row__, even if they are empty.   
+       - `auto-fit` : __fit whatever columns there are into the space__. Prefer expanding columns to fill space rather than empty columns.
 
   #### __The model__
     - __[explicit grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#the_implicit_and_explicit_grid)__:    
