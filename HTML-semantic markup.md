@@ -31,7 +31,7 @@
   - `<article>` element represents a self-contained composition in a document.
   - you can have multiple articles and sub-articles on a page
   - `<article>` **supposed to be any self-contained composition**
-  - **anything that should be independently distributable or reusable** (so if you take out an a part from a page and put it into another website, and it still makes sence, than it should be wrapedd into an article) 
+  - **anything that should be independently distributable or reusable** *(so if you take out a part from a page and put it into another website, and it still makes sence, than it should be wrapedd into an article)* 
   - just an other element to group content together:
     - there should be a heading *(`<h1>` `<h2>`)* that explaines what the `<article>` is about. (eg. a film review, which can have inside a bunch of sections and sub-articles)
 
