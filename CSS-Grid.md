@@ -174,7 +174,7 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
       - ❗️ __with [`grid-auto-columns`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns) we cen define the implicit columns size__, so it will create a  horizontal scroll, when a bunch of columns add next to each other.    
 In other words, if a grid item is positioned into a __column that is not explicitly sized by `grid-template-columns`__, __implicit grid tracks are created__ to hold it.    
 
-[implicitly named grid lines](https://learncssgrid.com/#implicitly-named-grid-lines) and [implicitly named grid areas](https://learncssgrid.com/#implicitly-named-grid-areas)
+      [implicitly named grid lines](https://learncssgrid.com/#implicitly-named-grid-lines) and [implicitly named grid areas](https://learncssgrid.com/#implicitly-named-grid-areas)
 
 
 
