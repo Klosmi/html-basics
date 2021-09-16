@@ -155,7 +155,9 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
      
      - __[Repeat combined with keywords](https://css-tricks.com/snippets/css/complete-guide-grid/#the-repeat-function-and-keywords)__ :   
        - `auto-fill` : __fit as many possible columns as possible on a row__, even if they are empty.   
-       - `auto-fit` : __fit whatever columns there are into the space__. Prefer expanding columns to fill space rather than empty columns.
+       - `auto-fit` : __fit whatever columns there are into the space__. Prefer expanding columns to fill space rather than empty columns.   
+       *[`auto-fill` vs `auto-fit`](https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/)*
+       
 
   #### __The model__
     - __[explicit grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#the_implicit_and_explicit_grid)__:    
