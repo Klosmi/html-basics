@@ -157,7 +157,7 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
        - `auto-fill` : __fit as many possible columns as possible on a row__, even if they are empty.   
        - `auto-fit` : __fit whatever columns there are into the space__. Prefer expanding columns to fill space rather than empty columns. 
          
-       *[`auto-fill` vs `auto-fit`](https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/)*
+        📕 **[`auto-fill` vs `auto-fit`](https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/)**
        
 
   #### __The model__
