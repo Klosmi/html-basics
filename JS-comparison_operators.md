@@ -32,5 +32,5 @@
     'a' >= 'b'  // false
   
     
-    ---
+ ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
