@@ -30,4 +30,7 @@
     1 <= 10     // true
     -1 =< -1    // true 
     'a' >= 'b'  // false
-    ```
+  
+    
+    ---
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
