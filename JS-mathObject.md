@@ -45,10 +45,7 @@
         Math.floor(Math.random() * 10) + 1;
         ```
 
-
-
-
-        <br>  
+  <br>  
 
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
