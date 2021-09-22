@@ -17,6 +17,7 @@
 15. [CSS Flexbox](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md)
 16. [CSS Grid](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md)
 17. [CSS Responsive design - @media queries](https://github.com/Klosmi/html-basics/blob/master/Responsivedesign.md)
+18. [SASS](https://github.com/Klosmi/html-basics/blob/master/sass.md)
 
 <br>
 
