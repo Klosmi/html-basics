@@ -19,7 +19,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 
 ### [How to compile Sass to CSS?](https://sass-lang.com/guide)
 
-  - **one-to-one mode**:
+  - **[one-to-one mode](https://sass-lang.com/documentation/cli/dart-sass#one-to-one-mode)**:
     - typing the following command in the terminal:
       ```
       sass main.scss main.css
@@ -30,7 +30,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 
 <br>    
 
- - **many-to-many mode**:   
+ - **[many-to-many mode](https://sass-lang.com/documentation/cli/dart-sass#many-to-many-mode)**:   
     - if you have a components directory  `/scss/components/` with a `button.scss`, `input.scss`, and `modal.scss`.    
     We want them to go to the `/assets/` directory:
       ```
