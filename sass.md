@@ -109,7 +109,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
         width: 80%;
         margin: 0 auto;
 
-        & .main_text {
+        & p {
           font-weight: map-get($font-weight, "bold");
         }
 
@@ -117,8 +117,30 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
       ```
 
 <br>
+ 
+  - __[nesting with classes adding suffixes:](https://sass-lang.com/documentation/style-rules/parent-selector#adding-suffixes)__
+    **`&`** let us not to repeat the parent's name
+      ```
+      .main {
+        width: 80%;
+        margin: 0 auto;
 
-  - __nesting with classes demands using interpolation:__    
+        &_text {
+          font-weight: map-get($font-weight, "bold");
+        }
+
+      }
+      ```
+      - in plain css:
+        ```
+        .main_text {
+          font-weight: 700;
+        }
+        ```
+
+<br>
+
+  - __[nesting with classes, using interpolation:]__    
       using: **`#{ }_`** = it includes everything before (before the `.main_text` class)
       ```
       .main {
@@ -145,7 +167,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 
 <br>
 
-  - __nesting classes without interpolation:__
+  - __nesting classes without [interpolation:](https://sass-lang.com/documentation/interpolation)__
       ```
         .main {
         width: 80%;
