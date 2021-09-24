@@ -102,7 +102,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
  
  <br>
  
-  - __[nesting using the `&` parent selector:](https://sass-lang.com/documentation/style-rules/parent-selector)__
+  - __[nesting using the `&` parent selector:](https://sass-lang.com/documentation/style-rules/parent-selector)__   
     **`&`** let us not to repeat the parent's name
       ```
       .main {
@@ -118,7 +118,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 
 <br>
  
-  - __[nesting with classes adding suffixes:](https://sass-lang.com/documentation/style-rules/parent-selector#adding-suffixes)__
+  - __[nesting with classes adding suffixes:](https://sass-lang.com/documentation/style-rules/parent-selector#adding-suffixes)__   
     **`&`** let us not to repeat the parent's name
       ```
       .main {
@@ -140,7 +140,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 
 <br>
 
-  - __[nesting with classes, using interpolation:]__    
+  - __nesting with classes, [using interpolation:](https://sass-lang.com/documentation/interpolation)__          
       using: **`#{ }_`** = it includes everything before (before the `.main_text` class)
       ```
       .main {
@@ -167,7 +167,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 
 <br>
 
-  - __nesting classes without [interpolation:](https://sass-lang.com/documentation/interpolation)__
+  - __nesting classes without interpolation:__
       ```
         .main {
         width: 80%;
