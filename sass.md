@@ -49,7 +49,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
  ### **Let's dive into the code(s)**   
   I show you the __SCSS__ way, basic key concepts
 
-  -  __variables:__
+  -  __[variables:](https://sass-lang.com/documentation/variables)__
       ``` 
       $primary-color:#503d4d;
       $accent-color:#ff652f;
