@@ -95,9 +95,15 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
     ```
     - in plain css:
       ```
-      .main p {
+      .main{
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .main_text {
         font-weight: 700;
       }
+      /* .main_text it's alone, not .main .main_text */
       ```
  
  <br>
@@ -163,32 +169,6 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
         .main .main_text {
           font-weight: 700;
         }
-        ```
-
-<br>
-
-  - __nesting classes without interpolation:__
-      ```
-        .main {
-        width: 80%;
-        margin: 0 auto;
-
-        &_text {
-          font-weight: map-get($font-weight, "bold");
-        }
-      }
-      ```
-      - in plain css:
-        ```
-        .main{
-          width: 80%;
-          margin: 0 auto;
-        }
-
-        .main_text {
-          font-weight: 700;
-        }
-        /* .main_text it's alone, not .main .main_text */
         ```
 
 <br>
