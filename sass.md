@@ -102,7 +102,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
  
  <br>
  
-  - __nesting using the `&` shortcut and class names:__
+  - __[nesting using the `&` parent selector:](https://sass-lang.com/documentation/style-rules/parent-selector)__
     **`&`** let us not to repeat the parent's name
       ```
       .main {
