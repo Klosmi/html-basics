@@ -81,7 +81,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 
   <br>
     
-  - __nesting:__
+  - __[nesting:](https://sass-lang.com/documentation/style-rules/declarations#nesting)__
     ```
     .main {
       width: 80%;
