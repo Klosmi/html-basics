@@ -46,7 +46,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
       ````
       <br>
 
-- **let's get into the code**   
+ ### **Let's dive into the code(s)**   
   I show you the __SCSS__ way, basic key concepts
 
   -  __variables:__
