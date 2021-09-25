@@ -63,7 +63,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
     $font-weight: ("regular": 400, "medium": 500, "bold": 700);
     ```
 
-  <br>
+<br>
 
   - __the key-value `map-get`:__
     ```
