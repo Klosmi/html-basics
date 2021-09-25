@@ -6,7 +6,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 - Sass must first be converted, or __compiled__, to CSS before the browser can directly understand it
 - compiling means: to converting code to lower level code so that it can be executed. 
 
-- by __compiling SASS or SCSS to CSS__, it can be __interpreted by your browser__ and the results will appear on a webpage.
+- by __compiling [SASS or SCSS](https://responsivedesign.is/articles/difference-between-sass-and-scss/) to CSS__, it can be __interpreted by your browser__ and the results will appear on a webpage.
 
 <br>
 
