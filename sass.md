@@ -59,14 +59,14 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 
 <br>
 
-  #### __variables with [key-value pairs:](https://sass-lang.com/documentation/values/maps)__**<sup>*[see key-value under maps](#aboutMaps)*</sup>**
+  #### __variables with [key-value pairs:](https://sass-lang.com/documentation/values/maps)__**<sup>*[see key-value under maps](https://github.com/Klosmi/html-basics/blob/master/sass.md#maps)*</sup>**
  - eg.:
     ```
     $font-weight: ("regular": 400, "medium": 500, "bold": 700);
     ```
 <br>
 
- #### __the key-value `map-get`: **<sup>*[more about maps](#aboutMaps)*</sup>**__   
+ #### __the key-value `map-get`: **<sup>*[more about maps](https://github.com/Klosmi/html-basics/blob/master/sass.md#maps)*</sup>**__   
  - eg.:
     ```
     p {
