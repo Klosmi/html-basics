@@ -183,7 +183,7 @@ using: **`#{ }_`** = it includes everything before (before the `.main_text` clas
 ##### __[Maps:](https://sass-lang.com/documentation/values/maps#using-maps)__   
 
 
-**<sup>*[back to variables](https://github.com/Klosmi/html-basics/blob/master/sass.md#maps)*</sup>**
+**<sup>*[back to variables](https://github.com/Klosmi/html-basics/blob/master/sass.md#variables)*</sup>**
 
 
 
