@@ -50,7 +50,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
   I show you the __SCSS__ way, basic key concepts
 
 
-  #####  __[variables:](https://sass-lang.com/documentation/variables)__
+  ####  __[variables:](https://sass-lang.com/documentation/variables)__
       ``` 
       $primary-color:#503d4d;
       $accent-color:#ff652f;
@@ -59,15 +59,14 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 
 <br>
 
-  ##### __variables with [key-value pairs:](https://sass-lang.com/documentation/values/maps)__
-  **<sup>*[see key-value under maps](#aboutMaps)*</sup>**
+  #### __variables with [key-value pairs:](https://sass-lang.com/documentation/values/maps)__**<sup>*[see key-value under maps](#aboutMaps)*</sup>**
  - eg.:
     ```
     $font-weight: ("regular": 400, "medium": 500, "bold": 700);
     ```
 <br>
 
- ##### __the key-value `map-get`: **<sup>*[more about maps](#aboutMaps)*</sup>**__   
+ #### __the key-value `map-get`: **<sup>*[more about maps](#aboutMaps)*</sup>**__   
  - eg.:
     ```
     p {
@@ -84,7 +83,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 
   <br>
     
-##### __[nesting:](https://sass-lang.com/documentation/style-rules/declarations#nesting)__
+#### __[nesting:](https://sass-lang.com/documentation/style-rules/declarations#nesting)__
  - eg.:
     ```
     .main {
@@ -112,7 +111,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
  
  <br>
  
-##### __[nesting using the `&` parent selector:](https://sass-lang.com/documentation/style-rules/parent-selector)__   
+#### __[nesting using the `&` parent selector:](https://sass-lang.com/documentation/style-rules/parent-selector)__   
 **`&`** let us not to repeat the parent's name
   - eg.:   
       ```
@@ -129,7 +128,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 
 <br>
  
-##### __[nesting with classes adding suffixes:](https://sass-lang.com/documentation/style-rules/parent-selector#adding-suffixes)__   
+#### __[nesting with classes adding suffixes:](https://sass-lang.com/documentation/style-rules/parent-selector#adding-suffixes)__   
 **`&`** let us not to repeat the parent's name
  - eg.:
       ```
@@ -152,7 +151,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 
 <br>
 
-##### __nesting with classes, [using interpolation:](https://sass-lang.com/documentation/interpolation)__          
+#### __nesting with classes, [using interpolation:](https://sass-lang.com/documentation/interpolation)__          
 using: **`#{ }_`** = it includes everything before (before the `.main_text` class)
 
 - eg.:
@@ -182,7 +181,7 @@ using: **`#{ }_`** = it includes everything before (before the `.main_text` clas
 
 <br>
 
-##### __partials:__   
+#### __partials:__   
 - baiscally snippets, parts of SCSS what we can keep in a separate file and include in to our main SCSS
 
 -  file name start with **`_`** underscore, eg.: **`_reset.scss`**
@@ -206,7 +205,7 @@ using: **`#{ }_`** = it includes everything before (before the `.main_text` clas
  
  <br> 
 
-##### __functions:__   
+#### __functions:__   
 - to compute and return **values**  
 
 - we can put the `font-weight: map-get($font-weights, "bold");` into a function, so we can call it later.
@@ -235,7 +234,7 @@ using: **`#{ }_`** = it includes everything before (before the `.main_text` clas
     ```
 <br>
 
-##### __mixins:__
+#### __mixins:__
 - you can put into mixins all the content you don't want to repetedly type.
 
 - the define **styles**
@@ -263,7 +262,7 @@ using: **`#{ }_`** = it includes everything before (before the `.main_text` clas
 
 <br>
 
-##### __mixins with $arguments:__
+#### __mixins with $arguments:__
 - like function mixins can also have arguemnts
 
 - using the `$` sign
@@ -287,7 +286,7 @@ using: **`#{ }_`** = it includes everything before (before the `.main_text` clas
     }
     ```
 
-##### __mixin__ is good for **@media** and using the **@content block**:
+#### __mixin__ is good for **@media** and using the **@content block**:
 - To taking arguments, a mixin can take an __entire block of styles, known as a content block__. A mixin can declare that it takes a content block __by including the @content__ at-rule in its body. The content block is passed in using curly braces like any other block in Sass, and it’s injected in place of the @content rule.
 
 - eg.:
@@ -316,7 +315,7 @@ using: **`#{ }_`** = it includes everything before (before the `.main_text` clas
 
 <br>
 
-##### __[extend:](https://sass-lang.com/documentation/at-rules/extend)__
+#### __[extend:](https://sass-lang.com/documentation/at-rules/extend)__
 - we can extend elements, so the element that we extended it to ihnerits the all tstyle from the selected element.
 - `@exted`
 
@@ -342,7 +341,7 @@ using: **`#{ }_`** = it includes everything before (before the `.main_text` clas
 
 <br>
 
-##### __[operations:](https://sass-lang.com/documentation/operators#order-of-operations)__
+#### __[operations:](https://sass-lang.com/documentation/operators#order-of-operations)__
 - addition, substraction, multiplication, division, etc.
 
 - ❗️SASS you can not mix type: `80% - 40px` will not work.   
