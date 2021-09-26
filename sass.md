@@ -298,28 +298,28 @@ using: **`#{ }_`** = it includes everything before (before the `.main_text` clas
 - To taking arguments, a mixin can take an __entire block of styles, known as a content block__. A mixin can declare that it takes a content block __by including the @content__ at-rule in its body. The content block is passed in using curly braces like any other block in Sass, and it’s injected in place of the @content rule.
 
 - eg.:
-      ```
-      $mobile: 800px;
+    ```
+     $mobile: 800px;
 
-      @mixin mobile {
-        @media (max-width: $mobile) {
-          @content;
-        }
-      }
-      ```
+     @mixin mobile {
+       @media (max-width: $mobile) {
+         @content;
+       }
+     }
+    ```
     and include it
-     ```
-      .main {
-        width: 80%;
-        margin: 0 auto;
-        .
-        .
-        .
-        @include mobile{
-          flex-direction: column;
-        }
+    ```
+    .main {
+      width: 80%;
+      margin: 0 auto;
+      .
+      .
+      .
+      @include mobile{
+        flex-direction: column;
       }
-     ```
+    }
+    ```
 
 <br>
 
