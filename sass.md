@@ -49,7 +49,8 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
  ### **[Let's dive into the code(s)](https://sass-lang.com/documentation)**   
   I show you the __SCSS__ way, basic key concepts
 
-  -  __[variables:](https://sass-lang.com/documentation/variables)__
+
+  #####  __[variables:](https://sass-lang.com/documentation/variables)__
       ``` 
       $primary-color:#503d4d;
       $accent-color:#ff652f;
@@ -58,14 +59,16 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 
 <br>
 
-  - __variables with [key-value pairs:](https://sass-lang.com/documentation/values/maps)__
+  ##### __variables with [key-value pairs:](https://sass-lang.com/documentation/values/maps)__
+  **<sup>*[see key-value under maps](#aboutMaps)*</sup>**
+ - eg.:
     ```
     $font-weight: ("regular": 400, "medium": 500, "bold": 700);
     ```
-  
 <br>
 
-  - __the key-value `map-get`:__
+ ##### __the key-value `map-get`: **<sup>*[more about maps](#aboutMaps)*</sup>**__   
+ - eg.:
     ```
     p {
       font-weight: map-get($font-weight, "bold");
@@ -81,7 +84,8 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 
   <br>
     
-  - __[nesting:](https://sass-lang.com/documentation/style-rules/declarations#nesting)__
+##### __[nesting:](https://sass-lang.com/documentation/style-rules/declarations#nesting)__
+ - eg.:
     ```
     .main {
       width: 80%;
@@ -108,8 +112,9 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
  
  <br>
  
-  - __[nesting using the `&` parent selector:](https://sass-lang.com/documentation/style-rules/parent-selector)__   
-    **`&`** let us not to repeat the parent's name
+##### __[nesting using the `&` parent selector:](https://sass-lang.com/documentation/style-rules/parent-selector)__   
+**`&`** let us not to repeat the parent's name
+  - eg.:   
       ```
       .main {
         width: 80%;
@@ -124,8 +129,9 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 
 <br>
  
-  - __[nesting with classes adding suffixes:](https://sass-lang.com/documentation/style-rules/parent-selector#adding-suffixes)__   
-    **`&`** let us not to repeat the parent's name
+##### __[nesting with classes adding suffixes:](https://sass-lang.com/documentation/style-rules/parent-selector#adding-suffixes)__   
+**`&`** let us not to repeat the parent's name
+ - eg.:
       ```
       .main {
         width: 80%;
@@ -146,8 +152,10 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 
 <br>
 
-  - __nesting with classes, [using interpolation:](https://sass-lang.com/documentation/interpolation)__          
-      using: **`#{ }_`** = it includes everything before (before the `.main_text` class)
+##### __nesting with classes, [using interpolation:](https://sass-lang.com/documentation/interpolation)__          
+using: **`#{ }_`** = it includes everything before (before the `.main_text` class)
+
+- eg.:
       ```
       .main {
         width: 80%;
@@ -171,15 +179,18 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
         }
         ```
 
+
 <br>
 
-  - __partials:__   
-      - baiscally snippets, parts of SCSS what we can keep in a separate file and include in to our main SCSS
-      -  file name start with **`_`** underscore, eg.: **`_reset.scss`**
-      - to include it into our main SCSS, we use   
+##### __partials:__   
+- baiscally snippets, parts of SCSS what we can keep in a separate file and include in to our main SCSS
+
+-  file name start with **`_`** underscore, eg.: **`_reset.scss`**
+
+- to include it into our main SCSS, we use   
        **`@import './reset';`**    
        💡 note that the no need to include now the `.scss` part
-
+ - eg.:
         ```
         import './reset';
 
@@ -195,13 +206,15 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
  
  <br> 
 
-  - __functions:__   
-    - to compute and return **values**  
-    - we can put the `font-weight: map-get($font-weights, "bold");` into a function, so we can call it later.
-    - we can use arguments: **`$argument`** 
+##### __functions:__   
+- to compute and return **values**  
 
-    - declare with **`@function`** + **function_name** + **`($argument)`**
+- we can put the `font-weight: map-get($font-weights, "bold");` into a function, so we can call it later.
 
+- we can use arguments: **`$argument`** 
+
+- declare with **`@function`** + **function_name** + **`($argument)`**
+- eg.:
     ```
     @function weight_func($weight-name) {
       @return map-get($font-weight, $weight-name);
@@ -222,11 +235,16 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
     ```
 <br>
 
-  - __mixins:__
-    - you can put into mixins all the content you don't want to repetedly type.
-    - the define **styles**
-    - **`@mixin`** + space + **`name`**
-    - to include **`@include`** + **`name`**
+##### __mixins:__
+- you can put into mixins all the content you don't want to repetedly type.
+
+- the define **styles**
+
+- **`@mixin`** + space + **`name`**
+
+- to include **`@include`** + **`name`**
+
+- eg.:
       ```
       @mixin flexCenter {
         display: flex;
@@ -245,11 +263,14 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 
 <br>
 
-  - __mixins with $arguments:__
-    - like function mixins can also have arguemnts
-    - using the `$` sign
-    - `@mixin flexCenter($direction)` and later we call it `@include flexCenter(column);`
+##### __mixins with $arguments:__
+- like function mixins can also have arguemnts
 
+- using the `$` sign
+
+- `@mixin flexCenter($direction)` and later we call it `@include flexCenter(column);`
+
+- eg.:
     ```
     @mixin flexCenter($direction) {
       display: flex;
@@ -266,11 +287,10 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
     }
     ```
 
-  - __mixin__ is good for **@media** and using the **@content block**:
-    - To taking arguments, a mixin can take an __entire block of styles, known as a content block__. A mixin can declare that it takes a content block __by including the @content__ at-rule in its body. The content block is passed in using curly braces like any other block in Sass, and it’s injected in place of the @content rule.
+##### __mixin__ is good for **@media** and using the **@content block**:
+- To taking arguments, a mixin can take an __entire block of styles, known as a content block__. A mixin can declare that it takes a content block __by including the @content__ at-rule in its body. The content block is passed in using curly braces like any other block in Sass, and it’s injected in place of the @content rule.
 
-
-
+- eg.:
       ```
       $mobile: 800px;
 
@@ -296,10 +316,11 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 
 <br>
 
-  - __[extend:](https://sass-lang.com/documentation/at-rules/extend)__
-    - we can extend elements, so the element that we extended it to ihnerits the all tstyle from the selected element.
-    - `@exted`
+##### __[extend:](https://sass-lang.com/documentation/at-rules/extend)__
+- we can extend elements, so the element that we extended it to ihnerits the all tstyle from the selected element.
+- `@exted`
 
+ - eg.:   
     We have to identical parapgraph classes: `.text1` and `.text2`    
     We want to change only the `:hover` color on `.text2`
     ```
@@ -321,12 +342,15 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 
 <br>
 
-  - __[operations:](https://sass-lang.com/documentation/operators#order-of-operations)__
-    - addition, substraction, multiplication, division, etc.
-    - ❗️SASS you can not mix type: `80% - 40px` will not work.   
-    The operation has to be the same type❗️
-    - plain css it is the **[`calc()`](https://developer.mozilla.org/en-US/docs/Web/CSS/calc())**
-    - in SASS no need to `calc(800px - 400px)`, it just simple:
+##### __[operations:](https://sass-lang.com/documentation/operators#order-of-operations)__
+- addition, substraction, multiplication, division, etc.
+
+- ❗️SASS you can not mix type: `80% - 40px` will not work.   
+The operation has to be the same type❗️
+
+- plain css it is the **[`calc()`](https://developer.mozilla.org/en-US/docs/Web/CSS/calc())**
+- eg.:   
+  in SASS no need to `calc(800px - 400px)`, it just simple:
     ```
     .main {
       width: 800px - 400px;   // intsead of calc(800px- 400px);
