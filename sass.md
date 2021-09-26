@@ -308,18 +308,18 @@ using: **`#{ }_`** = it includes everything before (before the `.main_text` clas
       }
       ```
     and include it
-    ```
-    .main {
-      width: 80%;
-      margin: 0 auto;
-      .
-      .
-      .
-      @include mobile{
-        flex-direction: column;
+     ```
+      .main {
+        width: 80%;
+        margin: 0 auto;
+        .
+        .
+        .
+        @include mobile{
+          flex-direction: column;
+        }
       }
-    }
-    ```
+     ```
 
 <br>
 
