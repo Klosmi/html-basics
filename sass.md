@@ -58,11 +58,10 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 
 <br>
 
-  - __variables with [key-value pairs:]^[1](https://sass-lang.com/documentation/values/maps)__
+  - __variables with [key-value pairs:](https://sass-lang.com/documentation/values/maps)__
     ```
     $font-weight: ("regular": 400, "medium": 500, "bold": 700);
     ```
-  [^1]More about maps
   
 <br>
 
