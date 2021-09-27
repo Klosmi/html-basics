@@ -177,7 +177,7 @@ using: **`#{ }_`** = it includes everything before (before the `.main_text` clas
        .main .main_text {
          font-weight: 700;
        }
-      ```
+       ```
 
 <br>
 
