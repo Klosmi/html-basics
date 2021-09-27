@@ -190,7 +190,7 @@ using: **`#{ }_`** = it includes everything before (before the `.main_text` clas
        **`@import './reset';`**    
        💡 note that the no need to include now the `.scss` part
  - eg.:
-        ```
+       ```
         import './reset';
 
         .main {
