@@ -187,7 +187,7 @@ using: **`#{ }_`** = it includes everything before (before the `.main_text` clas
 -  file name start with **`_`** underscore, eg.: **`_reset.scss`**
 
 - to include it into our main SCSS, we use   
-       **`@import './reset';`**    
+       **`@use './reset' as *;`**    
        💡 note that the no need to include now the `.scss` part
  - eg.:
        ```
