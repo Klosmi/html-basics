@@ -50,12 +50,13 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
   I show you the __SCSS__ way, basic key concepts
 
 
-  ####  __[variables:](https://sass-lang.com/documentation/variables)__
-      ``` 
-      $primary-color:#503d4d;
-      $accent-color:#ff652f;
-      $text-color:#fff;
-      ```
+  ####  __[variables:](https://sass-lang.com/documentation/variables)__   
+  - eg:
+    ``` 
+    $primary-color:#503d4d;
+    $accent-color:#ff652f;
+    $text-color:#fff;
+    ```
 
 <br>
 
