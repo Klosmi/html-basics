@@ -181,164 +181,6 @@ using: **`#{ }_`** = it includes everything before (before the `.main_text` clas
 
 <br>
 
-##### __[Maps:](https://sass-lang.com/documentation/values/maps#using-maps)__   
-Maps hold **pairs of keys and values**, and make it easy to look up a value by its corresponding key.      
-- eg.:
-  ```
-  $variable: (<expression>: <expression>, <key>: <value>)
-  ```
-The expression before the `:` is the key, and the expression after is the value associated with that key. The keys must be unique, but the values may be duplicated.
-
-In the [SASS documentation](https://sass-lang.com/documentation/values/maps#using-maps) it shows to use maps with the **`.`** **(where I have to use the [`@use`](https://sass-lang.com/documentation/at-rules/use))**, rather than with **`-`** which I found in [other sources](https://github.com/sass/sass/blob/main/accepted/module-system.md#built-in-modules-1) and it works witout the `@use`.      
-[It is a useful discussion](https://stackoverflow.com/questions/64210390/sass-map-get-doesnt-work-map-get-does-what-gives) to see the difference between the above mentioned 2 ways
-
-**Some main `map` functions (with `.`):**   
-for better compatibility reasons to get access to map.get you must explicitly import the map module using the __@use keyword.__
-- __map.get($map, $key)__:   
-  - this functionsto gets the value associated with a key. 
-  - This function returns the **value** in the map **associated with the given key**.    
-  *It returns null if the map doesn’t contain the key.*
-    - eg.:   
-      [@use 'sass:map'](https://sass-lang.com/documentation/modules/map)
-      ```
-      //first get the @use
-      @use 'sass:map';
-
-
-      $font-weights: ("regular": 400, "medium": 500, "bold": 700);
-
-      @debug map.get($font-weights, "medium"); // 500
-      @debug map.get($font-weights, "extra-bold"); // null
-      ```
-
-<br>
-
-**Some main `map` functions (with `-`):**
--  __map-keys()__ :    
-    - this function produces a list of all the keys available in a map.
-    - it requires one argument to be passed in.
-      - eg.:
-        ```
-        // defining a variable:
-        $map1 : ( 'keyName' : 'value', 'keyName2' : 800px );
-
-        // using the map-keys function
-        .main {
-          content: map-keys($map1);
-        }
-        ```
-        in plain css:
-        ```
-        .main {
-          content: 'keyName1','keyName2'
-        };
-        ```
-
--  __map-values()__ :    
-    - this function prints out a list of values within a map.
-    - it requires one argument to be passed in.     
-    *(If the argument contains nested map, it creates en error)*
-       - eg.:
-        ```
-        .main {
-          content: map-values($map1);
-        }
-        ```
-        in plain css:
-        ```
-        .main {
-          content: 'value', 800px;
-        }
-        ```
-
--  __map-has-key()__ :    
-    - this function determins if a map has a key stored within it.
-    - it requires two argument to be passed in:    
-    first: the map (variable eg: `$map1`), second: the key we're looking for   
-    this return a boolean: true (if the key is found) or false (key is not found).
-      - eg.:
-        ```
-        .main {
-          content: map-has-keys($map1, 'keyName');
-        }
-        ```
-        in plain css:
-        ```
-        .main {
-          content: true;
-        }
-        ```
--  __map-get()__ : 
-    - this function obtains the value of a key.
-    - it requires two argument to be passed in:    
-    the first: the map  (variable eg: `$map1`), the second: the key we want to target.
-      - eg.:
-        ```
-        .main {
-          content: map-get($map1, 'keyName');
-        }
-        ```    
-        in plain css:    
-        *as a result, we can see the key's value being produced*
-        ```
-        .main {
-          content: 'value';
-        }    
-        ```
--  __map-merge()__ : 
-    - this function merge some maps together.
-    - it requires two argument to be passed in:    
-    the map (the variables eg: `$map1, $var2`) we want to merge together.
-      - eg.:
-        ```
-        // defining 2 variables:
-        $map1 : ( 'keyName' : 'value', 'keyName2' : 800px );
-
-        $var2 : ( 'key1' : 'value1', 'key2' : 'value2', 'key3' : 'value3');
-
-        // using the map-merge function
-        // using the inspect function, otherwise it produces error in the css❗️
-        .main {
-          content:inspect(map-merge($map1, $var2));
-        }
-        ```
-        in plain css:
-        ```
-        // the result is a string
-        .main {
-          content: ('keyName1' : 'value', 'keyName2' : 800px, 'key1' : 'value1', 'key2' : 'value2', 'key3' : 'value3');
-        };
-        ```    
--  __map-remove()__ :  
-  - this function removes a single or multiple keys from the map, then output the map itself.
-  - it requires several arguemnts:
-    first: the map (variable eg: `map1`), second: key we want to remove (eg: `value`).
-      - eg.:
-        ```
-    
-        $map1 : ( 'keyName' : 'value', 'keyName2' : 800px );
-
-        // using the map-remove function
-        // using the inspect function, otherwise it produces error in the css❗️
-        .main {
-          content:inspect(map-remove($map1, 'value'));
-        }
-        ``` 
-        in plain css:
-        
-        ```
-        // the result is a string, because we used the 'inspect'
-        .main {
-          content: ('keyName2: 800px);
-        }
-        ```   
-
-**<sup>*[back to variables](https://github.com/Klosmi/html-basics/blob/master/sass.md#variables)*</sup>**
-
-
-
-<br>
-
 #### __partials:__   
 - baiscally snippets, parts of SCSS what we can keep in a separate file and include in to our main SCSS
 
@@ -518,7 +360,166 @@ The operation has to be the same type❗️
     }
     ```
 
+
 <br>
+
+##### __[Maps:](https://sass-lang.com/documentation/values/maps#using-maps)__   
+Maps hold **pairs of keys and values**, and make it easy to look up a value by its corresponding key.      
+- eg.:
+  ```
+  $variable: (<expression>: <expression>, <key>: <value>)
+  ```
+The expression before the `:` is the key, and the expression after is the value associated with that key. The keys must be unique, but the values may be duplicated.
+
+In the [SASS documentation](https://sass-lang.com/documentation/values/maps#using-maps) it shows to use maps with the **`.`** **(where I have to use the [`@use`](https://sass-lang.com/documentation/at-rules/use))**, rather than with **`-`** which I found in [other sources](https://github.com/sass/sass/blob/main/accepted/module-system.md#built-in-modules-1) and it works witout the `@use`.      
+[It is a useful discussion](https://stackoverflow.com/questions/64210390/sass-map-get-doesnt-work-map-get-does-what-gives) to see the difference between the above mentioned 2 ways
+
+**Some main `map` functions (with `.`):**   
+for better compatibility reasons to get access to map.get you must explicitly import the map module using the __@use keyword.__
+- __map.get($map, $key)__:   
+  - this functionsto gets the value associated with a key. 
+  - This function returns the **value** in the map **associated with the given key**.    
+  *It returns null if the map doesn’t contain the key.*
+    - eg.:   
+      [@use 'sass:map'](https://sass-lang.com/documentation/modules/map)
+      ```
+      //first get the @use
+      @use 'sass:map';
+
+
+      $font-weights: ("regular": 400, "medium": 500, "bold": 700);
+
+      @debug map.get($font-weights, "medium"); // 500
+      @debug map.get($font-weights, "extra-bold"); // null
+      ```
+
+<br>
+
+**Some main `map` functions (with `-`):**
+-  __map-keys()__ :    
+    - this function produces a list of all the keys available in a map.
+    - it requires one argument to be passed in.
+      - eg.:
+        ```
+        // defining a variable:
+        $map1 : ( 'keyName' : 'value', 'keyName2' : 800px );
+
+        // using the map-keys function
+        .main {
+          content: map-keys($map1);
+        }
+        ```
+        in plain css:
+        ```
+        .main {
+          content: 'keyName1','keyName2'
+        };
+        ```
+
+-  __map-values()__ :    
+    - this function prints out a list of values within a map.
+    - it requires one argument to be passed in.     
+    *(If the argument contains nested map, it creates en error)*
+       - eg.:
+        ```
+        .main {
+          content: map-values($map1);
+        }
+        ```
+        in plain css:
+        ```
+        .main {
+          content: 'value', 800px;
+        }
+        ```
+
+-  __map-has-key()__ :    
+    - this function determins if a map has a key stored within it.
+    - it requires two argument to be passed in:    
+    first: the map (variable eg: `$map1`), second: the key we're looking for   
+    this return a boolean: true (if the key is found) or false (key is not found).
+      - eg.:
+        ```
+        .main {
+          content: map-has-keys($map1, 'keyName');
+        }
+        ```
+        in plain css:
+        ```
+        .main {
+          content: true;
+        }
+        ```
+-  __map-get()__ : 
+    - this function obtains the value of a key.
+    - it requires two argument to be passed in:    
+    the first: the map  (variable eg: `$map1`), the second: the key we want to target.
+      - eg.:
+        ```
+        .main {
+          content: map-get($map1, 'keyName');
+        }
+        ```    
+        in plain css:    
+        *as a result, we can see the key's value being produced*
+        ```
+        .main {
+          content: 'value';
+        }    
+        ```
+-  __map-merge()__ : 
+    - this function merge some maps together.
+    - it requires two argument to be passed in:    
+    the map (the variables eg: `$map1, $var2`) we want to merge together.
+      - eg.:
+        ```
+        // defining 2 variables:
+        $map1 : ( 'keyName' : 'value', 'keyName2' : 800px );
+
+        $var2 : ( 'key1' : 'value1', 'key2' : 'value2', 'key3' : 'value3');
+
+        // using the map-merge function
+        // using the inspect function, otherwise it produces error in the css❗️
+        .main {
+          content:inspect(map-merge($map1, $var2));
+        }
+        ```
+        in plain css:
+        ```
+        // the result is a string
+        .main {
+          content: ('keyName1' : 'value', 'keyName2' : 800px, 'key1' : 'value1', 'key2' : 'value2', 'key3' : 'value3');
+        };
+        ```    
+-  __map-remove()__ :  
+  - this function removes a single or multiple keys from the map, then output the map itself.
+  - it requires several arguemnts:
+    first: the map (variable eg: `map1`), second: key we want to remove (eg: `value`).
+      - eg.:
+        ```
+    
+        $map1 : ( 'keyName' : 'value', 'keyName2' : 800px );
+
+        // using the map-remove function
+        // using the inspect function, otherwise it produces error in the css❗️
+        .main {
+          content:inspect(map-remove($map1, 'value'));
+        }
+        ``` 
+        in plain css:
+        
+        ```
+        // the result is a string, because we used the 'inspect'
+        .main {
+          content: ('keyName2: 800px);
+        }
+        ```   
+
+**<sup>*[back to variables](https://github.com/Klosmi/html-basics/blob/master/sass.md#variables)*</sup>**
+
+
+
+
 <br>
 
 #### **[@use](https://sass-lang.com/documentation/at-rules/use)**:   
