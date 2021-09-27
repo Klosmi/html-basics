@@ -156,28 +156,28 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 using: **`#{ }_`** = it includes everything before (before the `.main_text` class)
 
 - eg.:
+     ```
+     .main {
+       width: 80%;
+       margin: 0 auto;
+
+       #{&}_text {
+         font-weight: map-get($font-weight, "bold");
+       }
+
+     }
+     ```
+     - in plain css:
+       ```
+       .main {
+         width: 80%;
+         margin: 0 auto;
+       }
+
+       .main .main_text {
+         font-weight: 700;
+       }
       ```
-      .main {
-        width: 80%;
-        margin: 0 auto;
-
-        #{&}_text {
-          font-weight: map-get($font-weight, "bold");
-        }
-
-      }
-      ```
-      - in plain css:
-        ```
-        .main {
-          width: 80%;
-          margin: 0 auto;
-        }
-
-        .main .main_text {
-          font-weight: 700;
-        }
-        ```
 
 <br>
 
