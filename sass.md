@@ -46,6 +46,13 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
       ````
       <br>
 
+      💡 note that you can also `--watch` individual files or directories with the `--watch` flag.    
+      The watch flag tells Sass to watch your source files for changes, and re-compile CSS each time you save your Sass.    
+      So, when you use it and you save, it 'automatically' compile your Sass or SCSS to CSS.
+
+
+  <br>    
+
  ### **[Let's dive into the code(s)](https://sass-lang.com/documentation)**   
   I show you the __SCSS__ way, basic key concepts
 
