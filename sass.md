@@ -76,6 +76,15 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 
  #### __the key-value `map-get`: **<sup>*[more about maps](https://github.com/Klosmi/html-basics/blob/master/sass.md#maps)*</sup>**__   
  - eg.:
+    with @use → map.get  
+    ```
+    @use 'sass:map';
+
+    p {
+      font-weight: map.get($font-weight, "bold");
+    }
+    ```
+    without @use → map-get
     ```
     p {
       font-weight: map-get($font-weight, "bold");
@@ -92,7 +101,9 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
   <br>
     
 #### __[nesting:](https://sass-lang.com/documentation/style-rules/declarations#nesting)__
+  try not nesting many level deep
  - eg.:
+    without @use → map-get
     ```
     .main {
       width: 80%;
@@ -119,7 +130,8 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
  
  <br>
  
-#### __[nesting using the `&` parent selector:](https://sass-lang.com/documentation/style-rules/parent-selector)__   
+#### __[nesting using the `&` parent selector:](https://sass-lang.com/documentation/style-rules/parent-selector)__ 
+when ever you nest an **&** it is taking the parent selector again.   
 **`&`** let us not to repeat the parent's name
   - eg.:   
       ```
@@ -144,7 +156,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
         width: 80%;
         margin: 0 auto;
 
-        &_text {
+        &-text {
           font-weight: map-get($font-weight, "bold");
         }
 
@@ -152,14 +164,49 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
       ```
       - in plain css:
         ```
-        .main_text {
+        .main-text {
           font-weight: 700;
         }
         ```
 
 <br>
 
-#### __nesting with classes, [using interpolation:](https://sass-lang.com/documentation/interpolation)__          
+#### __nesting @media with &___
+very useful, saves a lot of time.
+  - eg.:
+    ```
+    .card {
+      padding: 1em;
+
+      &-title {
+        font-size: 1.5rem;
+      } 
+
+      @media (min-width: 45em) {
+        padding: 2em;
+      }
+    }
+    ```
+    - in plain css: 
+      ```
+      .card {
+        padding: 1em;
+      }
+
+      .card-title {
+        font-size: 1.5rem;
+      }
+      
+      @media (min-width: 45em) {
+        .card {
+          padding: 2em;
+        }
+      }
+      ```
+
+<br>
+
+#### __[nesting: interpolation:](https://sass-lang.com/documentation/interpolation)__          
 using: **`#{ }_`** = it includes everything before (before the `.main_text` class)
 
 - eg.:
@@ -185,6 +232,182 @@ using: **`#{ }_`** = it includes everything before (before the `.main_text` clas
          font-weight: 700;
        }
        ```
+<br>
+
+#### __[mixins:](https://sass-lang.com/documentation/at-rules/mixin)__
+- you can put into mixins all the content you don't want to repetedly type.  
+
+- so, mixins allow you to define styles that can be re-used throughout your stylesheet.
+
+- mixins define by: **`@mixin <name> { ... }`**    
+  or **`@mixin name(<arguments...>) { ... }`**
+
+- mixins are __included into the current context__ using the __@include__ at-rule:    
+**`@include <name>`**   
+ or **`@include <name>(<arguments...>)`**,with the name of the mixin being included.
+
+- to include **`@include`** + **`name`**
+
+- eg.:
+    ```
+      @mixin flexCenter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    ```
+
+    and use this mixin
+
+    ```
+      .main {
+        @include flexCenter;
+        width: 80%;
+        margin: 0 auto;
+      }
+    ```
+      - in plain css:
+        ```
+        .main {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 80%;
+          margin: 0 auto;
+        }
+        ```
+
+<br>
+
+#### __[mixins: $arguments + @include:](https://sass-lang.com/documentation/at-rules/mixin#arguments)__
+- like function mixins can also have arguemnts
+- arguments allows their behavior to be customized each time they’re called.
+
+- list of **`($variable)`** names surrounded by parentheses
+
+- then, the mixin must be included with the same number of arguments
+
+- eg: `@mixin flexCenter($direction)` and later we call it `@include flexCenter(column);`
+
+
+- eg.:
+    ```
+    @mixin flexCenter($direction) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      flex-direction: $direction;
+    }
+    
+    .main {
+      @include flexCenter(column);
+      width: 80%;
+      margin: 0 auto;
+    }
+    ```
+    - in plain css:
+      ```
+      .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+      }
+      ```
+
+<br>
+
+#### __[mixins: @media + @content](https://sass-lang.com/documentation/at-rules/mixin#content-blocks)__:   
+
+  - in addition to taking arguments, a mixin can take an __entire block of styles, known as a content block__.   
+
+  - A mixin can declare that it takes a content block __by including__ the __@content__ in its body.    
+  The content block is passed in using `{ }` like any other block in Sass, and it’s injected in place of the `@content`.
+
+  - so, __whatever style we put after the `@include`, that goes to the `@content` section__.
+
+  - eg.:   
+     - the `maxi-width: $mobile`, we can give a size to the `$mobile` later or define it before.
+     - see the __`@content`__: we can define it when we `@include` it.
+    ```
+     $mobile: 800px;
+
+     @mixin mobile {
+       @media (max-width: $mobile) {
+         @content;
+       }
+     }
+    ```
+    and include it
+    ```
+    .main {
+      width: 80%;
+      margin: 0 auto;
+      @include mobile{
+        flex-direction: column;
+      }
+    }
+    ```
+    - in plain css:
+      ```
+      .main {
+          width: 80%;
+          margin: 0 auto;
+        }
+
+        @media (max-width: 800px) {
+          .main {
+            flex-direction: column;
+          }
+        }
+      ```
+<br>
+
+#### __[operations:](https://sass-lang.com/documentation/operators#order-of-operations)__
+- addition, substraction, multiplication, division, etc.
+
+- ❗️SASS you can not mix type: `80% - 40px` will not work.   
+The operation has to be the same type❗️
+
+- plain css it is the **[`calc()`](https://developer.mozilla.org/en-US/docs/Web/CSS/calc())**
+- eg.:   
+  in SASS no need to `calc(800px - 400px)`, it just simple:
+    ```
+    .main {
+      width: 800px - 400px;   // intsead of calc(800px- 400px);
+      margin: 0 auto;
+      .
+      .
+      .
+    }
+    ```
+
+<br>
+
+#### __[extend:](https://sass-lang.com/documentation/at-rules/extend)__
+- we can extend elements, so the element that we extended it to ihnerits all the styles from the selected element.
+- `@extend`
+
+ - eg.:   
+    We have twoo identical paragraph classes: `.text1` and `.text2`    
+    We want to change only the `:hover` color on `.text2`
+    ```
+    .main {
+      width: 80%;
+      margin: 0 auto;
+      
+      & .text2 {
+        @extend .text1;
+
+        &:hover {
+          color: red;
+        }
+      }
+    }
+    ```
 
 <br>
 
@@ -238,133 +461,6 @@ using: **`#{ }_`** = it includes everything before (before the `.main_text` clas
             font-weight: weight_func("bold");
         }
       }
-    ```
-<br>
-
-#### __mixins:__
-- you can put into mixins all the content you don't want to repetedly type.
-
-- the define **styles**
-
-- **`@mixin`** + space + **`name`**
-
-- to include **`@include`** + **`name`**
-
-- eg.:
-      ```
-      @mixin flexCenter {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      ```
-      and use this mixin
-      ```
-      .main {
-        @include flexCenter;
-        width: 80%;
-        margin: 0 auto;
-      }
-      ```
-
-<br>
-
-#### __mixins with $arguments:__
-- like function mixins can also have arguemnts
-
-- using the `$` sign
-
-- `@mixin flexCenter($direction)` and later we call it `@include flexCenter(column);`
-
-- eg.:
-    ```
-    @mixin flexCenter($direction) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
-      flex-direction: $direction;
-    }
-    
-    .main {
-      @include flexCenter(column);
-      width: 80%;
-      margin: 0 auto;
-    }
-    ```
-
-#### __mixin__ is good for **@media** and using the **@content block**:
-- To taking arguments, a mixin can take an __entire block of styles, known as a content block__. A mixin can declare that it takes a content block __by including the @content__ at-rule in its body. The content block is passed in using curly braces like any other block in Sass, and it’s injected in place of the @content rule.
-
-- eg.:
-    ```
-     $mobile: 800px;
-
-     @mixin mobile {
-       @media (max-width: $mobile) {
-         @content;
-       }
-     }
-    ```
-    and include it
-    ```
-    .main {
-      width: 80%;
-      margin: 0 auto;
-      .
-      .
-      .
-      @include mobile{
-        flex-direction: column;
-      }
-    }
-    ```
-
-<br>
-
-#### __[extend:](https://sass-lang.com/documentation/at-rules/extend)__
-- we can extend elements, so the element that we extended it to ihnerits the all tstyle from the selected element.
-- `@exted`
-
- - eg.:   
-    We have to identical parapgraph classes: `.text1` and `.text2`    
-    We want to change only the `:hover` color on `.text2`
-    ```
-    .main {
-      width: 80%;
-      margin: 0 auto;
-      .
-      .
-      .
-      & .text2 {
-        @extend .text1;
-
-        &:hover {
-          color: red;
-        }
-      }
-    }
-    ```
-
-<br>
-
-#### __[operations:](https://sass-lang.com/documentation/operators#order-of-operations)__
-- addition, substraction, multiplication, division, etc.
-
-- ❗️SASS you can not mix type: `80% - 40px` will not work.   
-The operation has to be the same type❗️
-
-- plain css it is the **[`calc()`](https://developer.mozilla.org/en-US/docs/Web/CSS/calc())**
-- eg.:   
-  in SASS no need to `calc(800px - 400px)`, it just simple:
-    ```
-    .main {
-      width: 800px - 400px;   // intsead of calc(800px- 400px);
-      margin: 0 auto;
-      .
-      .
-      .
-    }
     ```
 
 
