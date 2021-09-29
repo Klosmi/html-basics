@@ -251,7 +251,8 @@ Pseudo-Elements applies styles to the first letter of the first line of a block-
         background-color: yellow;
       }
       ```
- - some other pseudo elements (check on [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#index)):
+ - some other pseudo elements (check on [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#index)):   
+   (a [good video](https://www.youtube.com/watch?v=zGiirUiWslI) about this - 10min long)
    - ::after
    - ::before
    ...etc.
