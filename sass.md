@@ -101,7 +101,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
   <br>
     
 #### __[nesting:](https://sass-lang.com/documentation/style-rules/declarations#nesting)__
-  try not nesting many level deep
+  try not nesting too many levels, because in a larger project it can be hard to read it. (It is preferred to create unique classes for read and searchability.)
  - eg.:
     without @use → map-get
     ```
@@ -233,6 +233,35 @@ using: **`#{ }_`** = it includes everything before (before the `.main_text` clas
        }
        ```
 <br>
+
+#### [__partials:__](https://sass-lang.com/guide#topic-4)   
+- baiscally snippets, parts of SCSS what we can keep in a separate file and include in to our main SCSS.   
+So partials are *little snippets of CSS* that you can include in other Sass files.    
+It's a way to modularize your CSS and help keep things easier to maintain.   
+(eg.: `_partial.scss`)
+
+- any file start with underscore `_` will not be compiled to CSS!
+
+-  file name start with **`_`** underscore, eg.: **`_reset.scss`**
+
+- to include it into our main SCSS, we use   
+       **`@use './reset' as *;`**    
+       💡 note that the no need to include now the `.scss` part
+ - eg.:
+       ```
+        import './reset';
+
+        .main {
+          width: 80%;
+          margin: 0 auto;
+
+          &_text {
+            font-weight: map-get($font-weight, "bold");
+          }
+        }
+        ```
+ 
+ <br> 
 
 #### __[mixins:](https://sass-lang.com/documentation/at-rules/mixin)__
 - you can put into mixins all the content you don't want to repetedly type.  
@@ -366,7 +395,60 @@ using: **`#{ }_`** = it includes everything before (before the `.main_text` clas
       ```
 <br>
 
-#### __[operations:](https://sass-lang.com/documentation/operators#order-of-operations)__
+#### __[extend:](https://sass-lang.com/guide#topic-7)__
+- it is similar to mixins.
+- it lets you share a set of CSS properties from one selector to another.   
+So the element that we extended to, ihnerits all the styles from the selected element.
+
+- it helps to keep your Sass very DRY
+
+- basically, if you want to copy one class to another class without repeating the same code (DRY), use the `@extend` keyword.
+
+- `@extend`
+
+ - eg.:   
+    adding the class name (`.container`) after the `@extend`, what it does that it applies the exact same style to the `ul` as we use in the `.contaner`.
+    ```
+    .container {
+      width: 85vw;
+      margin: 0 auto;
+      dispaly: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      ul {
+        width: 200px;
+        @extend .container;
+
+        li {
+          text-decoration: underline;
+        }
+      }
+    }
+    ```
+      - in plain css:   
+        *note the line: `.container, .container ul`
+        . The SCSS @extand compiled to CSS the styles of the `.container` and 'extended' to the `ul`.*
+        ```
+        .container, .container ul {
+          width: 85vw;
+          margin: 0 auto;
+          dispaly: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .container ul {
+          width: 200px;
+        }
+        .container ul li {
+          text-decoration: underline;
+        }
+        ``` 
+
+
+<br>
+
+#### __[operations:](https://sass-lang.com/guide#topic-8)__
 - addition, substraction, multiplication, division, etc.
 
 - ❗️SASS you can not mix type: `80% - 40px` will not work.   
@@ -374,100 +456,41 @@ The operation has to be the same type❗️
 
 - plain css it is the **[`calc()`](https://developer.mozilla.org/en-US/docs/Web/CSS/calc())**
 - eg.:   
-  in SASS no need to `calc(800px - 400px)`, it just simple:
+  in SASS no need touse the  CSS `calc(80% - 20%)`, it just simple:
     ```
-    .main {
-      width: 800px - 400px;   // intsead of calc(800px- 400px);
+    .container {
+      width: 100% - 20%;
       margin: 0 auto;
-      .
-      .
-      .
-    }
-    ```
 
-<br>
-
-#### __[extend:](https://sass-lang.com/documentation/at-rules/extend)__
-- we can extend elements, so the element that we extended it to ihnerits all the styles from the selected element.
-- `@extend`
-
- - eg.:   
-    We have twoo identical paragraph classes: `.text1` and `.text2`    
-    We want to change only the `:hover` color on `.text2`
-    ```
-    .main {
-      width: 80%;
-      margin: 0 auto;
-      
-      & .text2 {
-        @extend .text1;
-
-        &:hover {
-          color: red;
+      ul {
+        width: 200px;
+        li {
+          text-decoration: underline;
         }
       }
     }
     ```
-
-<br>
-
-#### __partials:__   
-- baiscally snippets, parts of SCSS what we can keep in a separate file and include in to our main SCSS
-
--  file name start with **`_`** underscore, eg.: **`_reset.scss`**
-
-- to include it into our main SCSS, we use   
-       **`@use './reset' as *;`**    
-       💡 note that the no need to include now the `.scss` part
- - eg.:
-       ```
-        import './reset';
-
-        .main {
-          width: 80%;
-          margin: 0 auto;
-
-          &_text {
-            font-weight: map-get($font-weight, "bold");
-          }
-        }
-        ```
- 
- <br> 
-
-#### __functions:__   
-- to compute and return **values**  
-
-- we can put the `font-weight: map-get($font-weights, "bold");` into a function, so we can call it later.
-
-- we can use arguments: **`$argument`** 
-
-- declare with **`@function`** + **function_name** + **`($argument)`**
-- eg.:
-    ```
-    @function weight_func($weight-name) {
-      @return map-get($font-weight, $weight-name);
-    }
-
-    // ($font-weight, $weight-name) is a key-value paire
-    ``` 
-    so this can be used like:
-    ```
-    .main {
-          width: 80%;
-          margin: 0 auto;
-
-          &_text {
-            font-weight: weight_func("bold");
-        }
+    - in plain css:
+      ```
+      .container {
+        width: 80%;
+        margin: 0 auto;
       }
-    ```
-
+      .container ul {
+        width: 200px;
+      }
+      .container ul li {
+        text-decoration: underline;
+      }
+      ```
 
 <br>
 
 ##### __[Maps:](https://sass-lang.com/documentation/values/maps#using-maps)__   
-Maps hold **pairs of keys and values**, and make it easy to look up a value by its corresponding key.      
+Maps hold **pairs of keys and values**, and make it easy to look up a value by its corresponding key.   
+
+- use brackets `( )`
+
 - eg.:
   ```
   $variable: (<expression>: <expression>, <key>: <value>)
@@ -480,7 +503,7 @@ In the [SASS documentation](https://sass-lang.com/documentation/values/maps#usin
 **Some main `map` functions (with `.`):**   
 for better compatibility reasons to get access to map.get you must explicitly import the map module using the __@use keyword.__
 - __map.get($map, $key)__:   
-  - this functionsto gets the value associated with a key. 
+  - this functions gets the value associated with a key. 
   - This function returns the **value** in the map **associated with the given key**.    
   *It returns null if the map doesn’t contain the key.*
     - eg.:   
@@ -490,11 +513,20 @@ for better compatibility reasons to get access to map.get you must explicitly im
       @use 'sass:map';
 
 
-      $font-weights: ("regular": 400, "medium": 500, "bold": 700);
+      // create a key-value pair variable
+      $font-thickness: ("regular": 400, "medium": 500, "bold": 700);
 
-      @debug map.get($font-weights, "medium"); // 500
-      @debug map.get($font-weights, "extra-bold"); // null
+      // use it on your class (here is `.text`)   
+      .text {
+        font-weight: map.get($font-thickness , bold)
+      }
       ```
+      -  in plain css:
+          ```
+          .text {
+            font-weight: 700;
+          }
+          ```
 
 <br>
 
@@ -620,8 +652,62 @@ for better compatibility reasons to get access to map.get you must explicitly im
 
 **<sup>*[back to variables](https://github.com/Klosmi/html-basics/blob/master/sass.md#variables)*</sup>**
 
+<br>
 
+#### [__functions:__](https://sass-lang.com/documentation/at-rules/function)  
+- to compute and return **values**  
 
+- functions allow you to define complex operations on SassScript values that **you can re-use throughout your stylesheet**. 
+
+- we can use arguments: **`$argument`** 
+
+- declare with **`@function`** + **function_name** + **`($argument)`**.   
+So `@function name($variable) { @return... }`
+
+- the [@return](https://sass-lang.com/documentation/at-rules/function#return) indicates the value to use as the result of calling a function. 
+
+- eg.:   
+    function name is `thickness`   
+    the argument is `$variable`   
+    the action is `@return` which returns the `$font-thickness` with the argument
+    we call the function with the its name `thickness`, and specify the argument (`$variable`) with the value eg:(`bold`).
+    ```
+    // create the variable key-value pairs
+    $font-thickness: ('regular' : 400, 'medium' : 500, 'bold' : 700);
+
+    // deifne the function
+    @function thickness($variable) {
+      @return map.get($font-thickness, $variable);
+    }
+
+    //call the function
+    .container {
+      width: 85vw;
+      font-weight: thickness(bold);
+      margin: 0 auto;
+
+      ul {
+        width: 200px;
+        li {
+          text-decoration: underline;
+        }
+      }
+    }
+    ```
+    - in plain css:
+      ```
+      .container {
+        width: 85vw;
+        font-weight: 700;
+        margin: 0 auto;
+      }
+      .container ul {
+        width: 200px;
+      }
+      .container ul li {
+        text-decoration: underline;
+      }
+      ```
 
 <br>
 
