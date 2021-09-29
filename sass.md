@@ -763,10 +763,10 @@ So `@function name($variable) { @return... }`
    *If you want to **load members from many files at once**, you can use the @forward rule to forward them all from one shared file.*
 
    The best way to use it:   
-   When you have several components with a long path, and you don't want write them all in your style.scss, it can be very long.   
-   👉 create and **index.scss** file. 
-   👉 list all your components here, using the **@forward**
-   👉 go back to your style.scss and now you can just include only the component's folder name using `@use` + `as *;`. It will automatically know where the component is, becasue it is in an index.scss file.
+   When you have several components with a long path, and you don't want write them all in your style.scss, it can be very long.      
+   👉 create and **index.scss** file.    
+   👉 list all your components here, using the **@forward**   
+   👉 go back to your style.scss and now you can just include only the component's folder name using `@use` + `as *;`. It will automatically know where the component is, becasue it is in an index.scss file.   
    - eg.:   
       I have 2 components, both are in the abstract folder. I am in my style.scss
       ```
@@ -780,7 +780,7 @@ So `@function name($variable) { @return... }`
       ```  
 
       **using the forward, index.scss method**:     
-      I am in the abstract folder, and I "import" the components woth @forward
+      I am in the abstract folder, and I "import" the components with @forward
       ```
       @forward '../abstract/colors';
       @forward '../abstract/fonts';
