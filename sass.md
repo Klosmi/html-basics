@@ -10,7 +10,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 
 <br>
 
-[Installation](https://github.com/Klosmi/html-basics/blob/master/sass.md#how-to-install-sass)   
+**[Installation](https://github.com/Klosmi/html-basics/blob/master/sass.md#how-to-install-sass)   
 [Compiling](https://github.com/Klosmi/html-basics/blob/master/sass.md#how-to-compile-sass-to-css)   
 [Basic Sass documentation](https://github.com/Klosmi/html-basics/blob/master/sass.md#lets-dive-into-the-codes)   
 [Variables](https://github.com/Klosmi/html-basics/blob/master/sass.md#variables)   
@@ -23,7 +23,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 [Functions](https://github.com/Klosmi/html-basics/blob/master/sass.md#functions)   
 [@use](https://github.com/Klosmi/html-basics/blob/master/sass.md#use)   
 [@forward](https://github.com/Klosmi/html-basics/blob/master/sass.md#forward)   
-[Useful links](https://github.com/Klosmi/html-basics/blob/master/sass.md#useful-links)   
+[Useful links](https://github.com/Klosmi/html-basics/blob/master/sass.md#useful-links)**  
 
 <br>
 
