@@ -252,7 +252,7 @@ Pseudo-Elements applies styles to the first letter of the first line of a block-
       }
       ```
  - some other pseudo elements (check on [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#index)):   
-   (a [good video](https://www.youtube.com/watch?v=zGiirUiWslI) about this - 10min long)
+   (a [good video](https://www.youtube.com/watch?v=zGiirUiWslI) about this)
    - ::after
    - ::before
    ...etc.
