@@ -1,5 +1,6 @@
 **[How to center an element on a page (with flex)?](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#how-to-center-an-element-on-a-page-)   
-[Basic navbar](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#basic-navbar-)   
+[Basic navbar](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#basic-navbar-)
+[Advanced navbar]()
 [Basic button](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#basic-button-)   
 [What does mobile frist mean?](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#what-does-mobile-frist-mean-)    
 [What is *max-width min-width max-length min-length*](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#what-is-max-width-and-min-width--max-height-and-min-height-)       
@@ -102,6 +103,12 @@ ul {
   
   ![](basic-navbar-big01.png) 👉
    ![](basic-navbar-small01.png)
+
+<br>
+
+# [Advanced navbar](https://codepen.io/kevinpowell/pen/jxppmr).  
+  the code is in codepen   
+  the walk through [video is here](https://www.youtube.com/watch?v=8QKOaTYvYUA).
 
 <br>
 
