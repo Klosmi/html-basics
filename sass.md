@@ -296,31 +296,21 @@ It's a way to modularize your CSS and help keep things easier to maintain.
 
 - eg.:
     ```
-      @mixin flexCenter {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    ```
-
-    and use this mixin
-
-    ```
       .main {
         @include flexCenter;
         width: 80%;
         margin: 0 auto;
       }
     ```
-      - in plain css:
+    - in plain css:
         ```
-         .main {
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           width: 80%;
-           margin: 0 auto;
-         }
+        .main {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 80%;
+          margin: 0 auto;
+        }
         ```
 
 <br>
@@ -352,17 +342,20 @@ It's a way to modularize your CSS and help keep things easier to maintain.
       margin: 0 auto;
     }
     ```
-    - in plain css:
-      ```
-      .main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 80%;
-        margin: 0 auto;
-      }
-      ```
+    
+  - in plain css:
+
+       ```
+         .main {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+           width: 80%;
+           margin: 0 auto;
+         }
+       ```
+
 
 <br>
 
