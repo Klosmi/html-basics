@@ -313,7 +313,7 @@ It's a way to modularize your CSS and help keep things easier to maintain.
       }
     ```
       - in plain css:
-         ```
+        ```
          .main {
            display: flex;
            justify-content: center;
@@ -321,7 +321,7 @@ It's a way to modularize your CSS and help keep things easier to maintain.
            width: 80%;
            margin: 0 auto;
          }
-         ```
+        ```
 
 <br>
 
