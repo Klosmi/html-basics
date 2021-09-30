@@ -93,7 +93,7 @@
         background-color: yellow;
       }
       ```
-- [General sibling combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator) : `~` separates two selectors and matches all iterations of the second element, that are following the first element (though not necessarily immediately), and are children of the same parent element.
+- [General sibling combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator) : `~` separates two selectors and matches all iterations of the second element, that are following the first element (though **not necessarily immediately**), and are children of the same parent element.
 
    - eg.:
       HTML
