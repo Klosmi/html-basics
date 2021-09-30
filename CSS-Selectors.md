@@ -80,7 +80,7 @@
           }
       ```   
 
-- [Adjacent combinator (selectors)](https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator) : `+ `separates two selectors and matches the second element only if it immediately follows the first element, and both are children of the same parent element.
+- [Adjacent sibling combinator (selectors)](https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator) : `+` separates two selectors and matches the second element only if it immediately follows the first element, and both are children of the same parent element.
   
    - not parent or children, they are adjacent, **one after the other**.
       ```
@@ -93,6 +93,29 @@
         background-color: yellow;
       }
       ```
+- [General sibling combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator) : `~` separates two selectors and matches all iterations of the second element, that are following the first element (though not necessarily immediately), and are children of the same parent element.
+
+   - eg.:
+      HTML
+        ```
+         <span>This is not red.</span>
+         <p>Here is a paragraph.</p>
+         <code>Here is some code.</code>
+         <span>And here is a red span!</span>
+         <span>And this is a red span!</span>
+         <code>More code...</code>
+         <div> How are you? </div>
+        ```
+      CSS
+        ```
+         p ~ span {
+           color: red;
+         }
+        ```      
+      [result](https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator#result):    
+      ![](general-sibling.gif). 
+      
+     
 - [Direct child combinator (selector)](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator) : `>` is placed between two CSS selectors. It selects  the children which are nested somewhere in an other element. Children which are the <u>**direct descendants**</u>. In other words, "one level down".
   - it only selects **direct** descendence of the parent element. It **doesn't select general descendents**.
   
