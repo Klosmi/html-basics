@@ -113,7 +113,9 @@
          }
         ```      
       [result](https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator#result):    
-      ![](general-sibling.gif). 
+      ![](general-sibling.gif)   
+      
+      💡 With the general sibling combinator, one or potentially multiple elements will be styled. With the adjacent sibling combinator, only one element will be styled.
       
      
 - [Direct child combinator (selector)](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator) : `>` is placed between two CSS selectors. It selects  the children which are nested somewhere in an other element. Children which are the <u>**direct descendants**</u>. In other words, "one level down".
