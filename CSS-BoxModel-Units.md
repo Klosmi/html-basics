@@ -80,7 +80,7 @@ __Relative length units__ specify a length __relative to another length__.
       ```
 
   **With other properties**, `1em` is equal to the computed font-size of the element itself.   
-    Other properties like: `padding` and `margin`, and it's quite common to use `em` with these properties. 👉 **`1em` is equal to the element itself** *(and  not with the parent element❗️)*
+    Other properties like: `padding` and `margin`, it's quite common to use `em` with these properties. 👉 **`1em` is equal to the element itself** *(and  not with the parent element❗️)*.  
 
     - eg.:  
       ###### *HTML example: in an `<article>` see `<h2>` and `<button>`*
@@ -107,7 +107,17 @@ __Relative length units__ specify a length __relative to another length__.
         border-radius: 0.5em;  /* = 0 10px */
       }
       ```
-      Useful: when I want to proportionally scale the button to its content, em is handy: `padding` and `border-radius` all depends on the font-size. So if the `button`'s text is bigger the `border-radius` & `padding` will be proprtional, maintain it's general shape.
+      
+      Technically, if the padding has 1em, that 1em is equal to the font-size. 
+      ```
+      .col--em h1 {
+        font-size: 2.5em;      /* 2.5 * 16px = 40px */
+        margin-bottom: 1em;    /* 1em = 40px */
+      ```
+      [source](https://codepen.io/kevinpowell/pen/RKdjXe)   
+      
+      
+      💡Useful: when I want to proportionally scale the button to its content, em is handy: `padding` and `border-radius` all depends on the font-size. So if the `button`'s text is bigger the `border-radius` & `padding` will be proprtional, maintain it's general shape.
       
       <br>
 
