@@ -1,4 +1,4 @@
-[BEM - naming your CSS](http://getbem.com/naming/)
+__[BEM - naming your CSS](http://getbem.com/naming/)__
 
 - The BEM approach ensures that using proper naming will prepare you for the changes in design of the website.   
 
@@ -87,4 +87,6 @@
     ```
     [source](https://codepen.io/designcourse/pen/KKwjKNE)
     
-    --
+  
+---
+   [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
