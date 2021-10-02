@@ -4,8 +4,8 @@
 
 -  BEM is an abbreviation of the key elements of the methodology — Block, Element and Modifier:   
 
-  - `.blockname`
+    - `.blockname`
 
-  - `.blockname__element`
+    - `.blockname__element`
 
-  - `.blockname__element--modifier`
+    - `.blockname__element--modifier`
