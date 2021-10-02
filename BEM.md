@@ -34,7 +34,8 @@ __[BEM - naming your CSS](http://getbem.com/naming/)__
        </div>
     </div>
     ```
-    The SCSS [in short]
+    The SCSS [in short]   
+    💡 note that using the SASS **`&`**
     ```
     .card {
         padding: 0 5em;
