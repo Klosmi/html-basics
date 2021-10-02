@@ -79,8 +79,8 @@ __Relative length units__ specify a length __relative to another length__.
       }
       ```
 
-  **With other properties**, `1em` is equal to the computed font-size of the element itself.   
-    Other properties like: `padding` and `margin`, it's quite common to use `em` with these properties. 👉 **`1em` is equal to the element itself** *(and  not with the parent element❗️)*.    
+  **With other properties, `1em` is equal to the computed font-size of the element itself**❗️   
+    Other properties like: `padding` and `margin`, it's quite common to use `em` with these properties. 👉 **`1em` is equal to the element itself** *(and  not with the parent element)*.    
       Technically speaking, **if the padding has 1em, that 1em is equal to the font-size**.   
     - eg.:   
       ```
