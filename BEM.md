@@ -16,7 +16,7 @@ __[BEM - naming your CSS](http://getbem.com/naming/)__
     - Element → `class="card__title"`
     - Element → `class="card__description"`
     - Element → `class="card__button"`
-    - Modifier → `class="card__button card__button--active"` 
+    - Modifier → `class="card__button  card__button--active"` 
   
   - eg.:
     the card in HTML
