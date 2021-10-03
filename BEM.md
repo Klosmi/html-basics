@@ -1,4 +1,4 @@
-__[BEM - naming your CSS](http://getbem.com/naming/)__
+__[BEM - naming methodology](http://getbem.com/naming/)__
 
 - The BEM approach ensures that using proper naming will prepare you for the changes in design of the website.   
 
