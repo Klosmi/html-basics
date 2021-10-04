@@ -89,5 +89,8 @@ __[BEM - naming methodology](http://getbem.com/naming/)__
     [source](https://codepen.io/designcourse/pen/KKwjKNE)
     
   #[OOCSS - Object Oriented CSS](https://github.com/stubbornella/oocss/wiki)
+  
+  ## Useful Links
+  __[METHODOLOGY DOCUMENTATION](https://en.bem.info/methodology/)
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
