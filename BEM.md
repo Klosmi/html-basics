@@ -88,8 +88,9 @@ __[BEM - naming methodology](http://getbem.com/naming/)__
     ```
     [source](https://codepen.io/designcourse/pen/KKwjKNE)
     
-  # [OOCSS - Object Oriented CSS](https://github.com/stubbornella/oocss/wiki)
-    -   [OOCSS code standards](https://github.com/stubbornella/oocss-code-standards#oocss-code-standards)
+  # [OOCSS - Object Oriented CSS](https://github.com/stubbornella/oocss/wiki)   
+  
+    - [OOCSS code standards](https://github.com/stubbornella/oocss-code-standards#oocss-code-standards)
   
   ## Useful Links
   - __[Methodology Documentation](https://en.bem.info/methodology/)__
