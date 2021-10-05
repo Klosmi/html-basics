@@ -66,3 +66,5 @@
       1 === '1';          // false
       0 == false;         // false
       ```
+---
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
