@@ -32,6 +32,6 @@
 
 <br>
 
-##### *These are my personal notes*
-##### *I can not guarantee that it's perfect, feel free to let me know if there is something what sould be fiexd.*
-##### *Several parts are gathered from different sites and courses, no intention to harm any copyrights. Web is open and (or at least should be) free after all.* ;)
+*These are my personal notes*
+*I can not guarantee that it's perfect, feel free to let me know if there is something what sould be fiexd.*
+*Several parts are gathered from different sites and courses, no intention to harm any copyrights. Web is open and (or at least should be) free after all.* ;)
