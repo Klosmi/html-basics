@@ -65,4 +65,10 @@
       ```
       1 === '1';          // false
       0 == false;         // false
+<<<<<<< HEAD
       ```
+=======
+      ```
+---
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+>>>>>>> 5efbdd11a60d0261c0729435e4b2e88e535da1b9

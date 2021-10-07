@@ -265,8 +265,8 @@ It's a way to modularize your CSS and help keep things easier to maintain.
        **`@use './reset' as *;`**    
        💡 note that the no need to include now the `.scss` part
  - eg.:
-       ```
-        import './reset';
+      ```
+        @use './reset' as *;
 
         .main {
           width: 80%;
@@ -276,7 +276,7 @@ It's a way to modularize your CSS and help keep things easier to maintain.
             font-weight: map-get($font-weight, "bold");
           }
         }
-        ```
+      ```
  
  <br> 
 
