@@ -266,7 +266,7 @@ It's a way to modularize your CSS and help keep things easier to maintain.
        💡 note that the no need to include now the `.scss` part
  - eg.:
       ```
-        import './reset';
+        @use './reset' as *;
 
         .main {
           width: 80%;
