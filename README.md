@@ -19,6 +19,7 @@
 17. [CSS Responsive design - @media queries](https://github.com/Klosmi/html-basics/blob/master/Responsivedesign.md)
 18. [SASS](https://github.com/Klosmi/html-basics/blob/master/sass.md)
 19. [BEM - naming your CSS](https://github.com/Klosmi/html-basics/blob/master/BEM.md)
+20. [Folder Structure](https://newbedev.com/what-is-the-meaning-of-the-dist-directory-in-open-source-projects)
 
 <br>
 
