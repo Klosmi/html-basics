@@ -5,22 +5,21 @@
 3. [HTML Unrelated elements & HTML enitites](https://github.com/Klosmi/html-basics/blob/master/HTML-unrelated-elements-entities.md)
 4. [HTML Tables](https://github.com/Klosmi/html-basics/blob/master/HTML-tables_01.md)
 5. [HTML Forms](https://github.com/Klosmi/html-basics/blob/master/HTML-forms.md)
-6. [CSS Basics](https://github.com/Klosmi/html-basics/blob/master/CSS-basics.md)
-7. [CSS Selectors](https://github.com/Klosmi/html-basics/blob/master/CSS-Selectors.md)
-8. [CSS Cascade and **specificity**](https://github.com/Klosmi/html-basics/blob/master/CSS-Selectors-Cascade-Specificity.md)
-9. [CSS Inheritance and the Google Chrome Devtool](https://github.com/Klosmi/html-basics/blob/master/CSS-Selectors-Inheritance-Devtool.md)
-10. [CSS Box Model: content (box) ・ border ・ padding ・ margin](https://github.com/Klosmi/html-basics/blob/master/CSS-BoxModel.md)
-11. [CSS Box Model: display property](https://github.com/Klosmi/html-basics/blob/master/CSS-BoxModel-Display.md)
-12. [CSS Box Model-Units - `em` & `rem`](https://github.com/Klosmi/html-basics/blob/master/CSS-BoxModel-Units.md)
-13. [CSS Some useful properties - extra](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md)
-14. [CSS Simple tricks and useful stuffs 🤓](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md)
-15. [CSS Flexbox](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md)
-16. [CSS Grid](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md)
-17. [CSS Responsive design - @media queries](https://github.com/Klosmi/html-basics/blob/master/Responsivedesign.md)
-18. [SASS](https://github.com/Klosmi/html-basics/blob/master/sass.md)
-19. [BEM - naming your CSS](https://github.com/Klosmi/html-basics/blob/master/BEM.md)
-21. <a href="https://newbedev.com/what-is-the-meaning-of-the-dist-directory-in-open-source-projects" target="_blank">Folder Structure </a><sup>external link</sup>
-
+6. <a href="https://newbedev.com/what-is-the-meaning-of-the-dist-directory-in-open-source-projects" target="_blank">Folder Structure </a><sup>external link</sup>
+7. [CSS Basics](https://github.com/Klosmi/html-basics/blob/master/CSS-basics.md)
+8. [CSS Selectors](https://github.com/Klosmi/html-basics/blob/master/CSS-Selectors.md)
+9. [CSS Cascade and **specificity**](https://github.com/Klosmi/html-basics/blob/master/CSS-Selectors-Cascade-Specificity.md)
+10. [CSS Inheritance and the Google Chrome Devtool](https://github.com/Klosmi/html-basics/blob/master/CSS-Selectors-Inheritance-Devtool.md)
+11. [CSS Box Model: content (box) ・ border ・ padding ・ margin](https://github.com/Klosmi/html-basics/blob/master/CSS-BoxModel.md)
+12. [CSS Box Model: display property](https://github.com/Klosmi/html-basics/blob/master/CSS-BoxModel-Display.md)
+13. [CSS Box Model-Units - `em` & `rem`](https://github.com/Klosmi/html-basics/blob/master/CSS-BoxModel-Units.md)
+14. [CSS Some useful properties - extra](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md)
+15. [CSS Simple tricks and useful stuffs 🤓](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md)
+16. [CSS Flexbox](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md)
+17. [CSS Grid](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md)
+18. [CSS Responsive design - @media queries](https://github.com/Klosmi/html-basics/blob/master/Responsivedesign.md)
+19. [SASS](https://github.com/Klosmi/html-basics/blob/master/sass.md)
+20. [BEM - naming your CSS](https://github.com/Klosmi/html-basics/blob/master/BEM.md)
 
 
 <br>
