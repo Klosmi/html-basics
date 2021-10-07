@@ -652,3 +652,39 @@ Now, it seems like you might be asking about defining a variable without let/con
 
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+   
+<br>
+
+<br>
+
+<br>
+
+# **[JS: Conditional statement - if • else if • else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)**
+- the code is either true or false
+
+- the condition between the `{ }` runs, executes only of the condition (`if (something === something)`) is true
+
+- eg.:
+  ```
+  let rating = 3;
+
+  if (rating === 3) {
+    console.log("You are my hero!")'
+  }
+  ```
+
+- if the code is false, it does not run, but what is before and after will still run.
+  - eg.:
+    the app.js file
+    ```
+    console.log("Before the conditional")   // runs
+      
+      if (1 + 1 === 3) {
+        console.log("In the condition");    // doesn't run
+      }
+
+      console.log("After the conditional")  // runs
+    ```
+
+---
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
