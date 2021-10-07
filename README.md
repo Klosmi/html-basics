@@ -26,11 +26,12 @@
 
 # [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps) -basics
 1. [JS: Primitive Types](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-primitive-types)
-2. [JS: Variables](https://github.com/Klosmi/html-basics/blob/master/JS-variables.md)
-3. [JS: Methods](https://github.com/Klosmi/html-basics/blob/master/JS-methods.md)
-4. [JS: Template Literals (template strings)](https://github.com/Klosmi/html-basics/blob/master/JS-TemplateLiterals.md)
-5. [JS: Math Object](https://github.com/Klosmi/html-basics/blob/master/JS-mathObject.md)
-6. [JS: Comparison Operators](https://github.com/Klosmi/html-basics/blob/master/JS-comparison_operators.md)
+2. [JS: Variables](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-variables)
+3. [JS: Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-methods-string-methods)
+4. [JS: Template Literals (template strings)](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-template-literals-template-strings)
+5. [JS: Math Object](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-math-object)
+6. [JS: Comparison Operators](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-comparison-operators)
+7. [JS: the console. | alert() | prompt methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-console-method)
 
 <br>
 
