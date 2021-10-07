@@ -20,6 +20,9 @@
 18. [SASS](https://github.com/Klosmi/html-basics/blob/master/sass.md)
 19. [BEM - naming your CSS](https://github.com/Klosmi/html-basics/blob/master/BEM.md)
 20. <a href="https://newbedev.com/what-is-the-meaning-of-the-dist-directory-in-open-source-projects" target="_blank"[Folder Structure <sup>external link</sup></a>
+21. <a href="http://example.com" target="_blank">http://example.com</a>
+
+
 
 <br>
 
