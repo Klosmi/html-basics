@@ -31,7 +31,7 @@
 4. [JS: Template Literals (template strings)](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-template-literals-template-strings)
 5. [JS: Math Object](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-math-object)
 6. [JS: Comparison Operators](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-comparison-operators)
-7. [JS: the console. | alert() | prompt methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-console-method)
+7. [JS: console | alert() | prompt methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-console-method)
 8. [JS: Conditional statement - if • else if • else](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-conditional-statement---if--else-if--else)
 
 <br>
