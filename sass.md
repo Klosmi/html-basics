@@ -20,7 +20,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 [Extend](https://github.com/Klosmi/html-basics/blob/master/sass.md#extend)   
 [Operations](https://github.com/Klosmi/html-basics/blob/master/sass.md#operations)   
 [Maps](https://github.com/Klosmi/html-basics/blob/master/sass.md#maps) 
-[Interpolation]()
+[Interpolation](https://github.com/Klosmi/html-basics/blob/master/sass.md#interpolation)   
 [Functions](https://github.com/Klosmi/html-basics/blob/master/sass.md#functions)   
 [@use](https://github.com/Klosmi/html-basics/blob/master/sass.md#use)   
 [@forward](https://github.com/Klosmi/html-basics/blob/master/sass.md#forward)   
@@ -665,7 +665,7 @@ for better compatibility reasons to get access to map.get you must explicitly im
 
 <br>
 
-#### [__Interpolation__](https://sass-lang.com/documentation/interpolation)
+#### [__interpolation__](https://sass-lang.com/documentation/interpolation)
 
 <br>
 
