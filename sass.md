@@ -666,7 +666,27 @@ for better compatibility reasons to get access to map.get you must explicitly im
 <br>
 
 #### [__interpolation__](https://sass-lang.com/documentation/interpolation)
-
+Interpolation can be used almost anywhere in a Sass stylesheet to embed the result of a SassScript expression into a chunk of CSS.
+- `#{variable}` : the variable inside the `{ }` is converted to the value of that variable. So it can be used as a **selector** or as a **property name**.
+-  eg.:
+   ```
+   .aside .side-ad {
+    box-sizing: border-box;
+    border-width: 2px;
+   }
+   ```
+   creating this with interpolation:
+   ```
+   // variables
+   $b: "border";
+   $s: "side";
+   
+   .a#{$s} .#{$s}-ad {
+    box-sizing: #{$b}-box;
+    #{$b}-width: 2px;
+   }
+   ```
+   
 <br>
 
 #### [__functions:__](https://sass-lang.com/documentation/at-rules/function)  
