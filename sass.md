@@ -19,7 +19,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
 [Mixins](https://github.com/Klosmi/html-basics/blob/master/sass.md#mixins)   
 [Extend](https://github.com/Klosmi/html-basics/blob/master/sass.md#extend)   
 [Operations](https://github.com/Klosmi/html-basics/blob/master/sass.md#operations)   
-[Maps](https://github.com/Klosmi/html-basics/blob/master/sass.md#maps) 
+[Maps](https://github.com/Klosmi/html-basics/blob/master/sass.md#maps)    
 [Interpolation](https://github.com/Klosmi/html-basics/blob/master/sass.md#interpolation)   
 [Functions](https://github.com/Klosmi/html-basics/blob/master/sass.md#functions)   
 [@use](https://github.com/Klosmi/html-basics/blob/master/sass.md#use)   
