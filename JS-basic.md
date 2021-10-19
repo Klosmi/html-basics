@@ -664,6 +664,8 @@ Now, it seems like you might be asking about defining a variable without let/con
 
 - the condition between the `{ }` runs, executes only of the condition (`if (something === something)`) is true
 
+#### `if` statement
+
 - eg.:
   ```
   let rating = 3;
@@ -685,6 +687,12 @@ Now, it seems like you might be asking about defining a variable without let/con
 
       console.log("After the conditional")  // runs
     ```
+
+<br>
+
+#### `if` + `else if` statement
+
+basically it is: if the `if` part is false, than *otherwise*.
 
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
