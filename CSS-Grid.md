@@ -435,7 +435,7 @@ In other words, if a grid item is positioned into a __column that is not explici
         <div>5 - footer</div>
       </div>
       ```
-      CSS
+      CSS 
       ```
       /* I define the names in the container (parent) */
       #parent {
