@@ -5,6 +5,11 @@
 - *How an element fits in with the flow of content.*
 - *we can change the behaviour with CSS*
 ---
+## [element anatomy](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#anatomy_of_an_html_element)
+![](elementHTML.gif)   
+![](element.gif)  
+
+
 ##  **Block levelel element:**
 **Something wants to exist on its own line, its own *"block"*.**
 - we can inspect it
