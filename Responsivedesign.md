@@ -186,8 +186,8 @@ media queries allow us to modify our styles depending on  praticular parameters 
 <br>      
 
 **[Further reading❗️](https://css-tricks.com/a-complete-guide-to-css-media-queries/)**   
-**[from W3C](https://www.w3.org/TR/CSS2/media.html/)**   
-**[about the 'only' keyword](https://stackoverflow.com/questions/8549529/what-is-the-difference-between-screen-and-only-screen-in-media-queries/14168210#14168210)**
+**[From W3C](https://www.w3.org/TR/CSS2/media.html/)**   
+**[About the 'only' keyword](https://stackoverflow.com/questions/8549529/what-is-the-difference-between-screen-and-only-screen-in-media-queries/14168210#14168210)**
   
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
