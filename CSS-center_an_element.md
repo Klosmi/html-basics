@@ -279,9 +279,6 @@ In this case, if the content is more than the mentioned height, than it [overflo
 	result   
 	 ![](fit-content.png)
 	 
-<br>
-
-- useful link for [new sizing properties]()
 
 <br>
 
