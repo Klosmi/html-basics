@@ -3,7 +3,7 @@
 [Advanced navbar](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#advanced-navbar)      
 [Basic button](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#basic-button-)   
 [What does mobile frist mean?](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#what-does-mobile-frist-mean-)    
-[What is *max-width min-width max-length min-length*](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#what-is-max-width-and-min-width--max-height-and-min-height-)   
+[What is *max-width min-width max-length min-length / fit-content*](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#what-is-max-width-and-min-width--max-height-and-min-height-)   
 [Min-content / max-content](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#min-content--max-content)   
 [BEM Methodology (naming)](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#bem-methodology)     
 [Links collection](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#links-collection-)**   
@@ -176,8 +176,24 @@ In this case, if the content is more than the mentioned height, than it [overflo
 
 <br>
 
-# **[min-content](https://developer.mozilla.org/en-US/docs/Web/CSS/min-content) / [max-content](https://developer.mozilla.org/en-US/docs/Web/CSS/max-content)**
+# **[min-content](https://developer.mozilla.org/en-US/docs/Web/CSS/min-content) / [max-content](https://developer.mozilla.org/en-US/docs/Web/CSS/max-content) / [fit-content](https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content)**
+- `min-content` : represents the intrinsic minimum width of the content.     
+	- In case of text content, the content will take all soft-wrapping opportunities, becoming as small as the longest word.     
 
+	- You can use it for background sizes for cards when you don't know how muach content will the card contain.   
+	
+	- In [horizontal orientation](https://devstory.net/12557/les-mots-cles-min-content-max-content-fit-content-stretch-en-css#a54855642), the min-content keyword represents the __minimum value of the width__ without reversing the content of the element horizontally. 
+
+- `max-content` : represents the intrinsic maximum width or height of the content.    
+	- The content will not wrap at all even if it causes overflows in case of text content.
+
+- `fit-content` : the box will use the available space, but never more than max-content. 
+	- It is like stretching, behvaes as fit-content(stretch).
+	- When used as laid out box size for `width`, `height`, `min-width`, `min-height`, `max-width` and `max-height` the __maximum and minimum sizes__ apply to the content size.   
+	[<img src="https://s1.o7planning.com/fr/12557/images/55028199.png">](https://s1.o7planning.com/fr/12557/images/55028199.png)
+
+
+- useful link for [new sizing properties](https://drafts.csswg.org/css-sizing-4/#sizing-values)
 <br>
 
 # [BEM Methodology](http://getbem.com/naming/)
