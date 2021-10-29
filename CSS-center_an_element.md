@@ -4,7 +4,7 @@
 [Basic button](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#basic-button-)   
 [What does mobile frist mean?](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#what-does-mobile-frist-mean-)    
 [What is *max-width min-width max-length min-length / fit-content*](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#what-is-max-width-and-min-width--max-height-and-min-height-)   
-[Min-content / max-content](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#min-content--max-content)   
+[Min-content / max-content / fit-content](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#min-content--max-content--fit-content)      
 [BEM Methodology (naming)](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#bem-methodology)     
 [Links collection](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#links-collection-)**   
 
