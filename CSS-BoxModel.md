@@ -103,7 +103,13 @@ Everything in the browser treated as a box, and each box has different propertie
         }
         ```
 
-  - **[box-sizing: border-box](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing#syntax)** : **the width and height properties include the content, padding, and border**, but do not include the margin. 
+
+  - **[box-sizing: content-box](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)** : sets how the total width and height of an element is calculated.   
+      In the box-sizing property, `content-box` is the default value. It specifies that the defined width and height apply to the **width and height of the content only**, and that padding, border and margins are outside these dimensions.   
+      
+      
+  - **[box-sizing: border-box](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing#syntax)** : **the width and height properties include the content, padding, and border**, but do not include the margin.    
+ So, the specified width and height are those of the element as a whole, therefore the dimensions of the padding or the borders decrease the dimensions of the content.   
 
       - eg.:
         ######  *you can set the width of the entire element, including the border.*
@@ -115,6 +121,7 @@ Everything in the browser treated as a box, and each box has different propertie
           box-sizing: border-box:
         }
         ```
+    
   - **[border](https://developer.mozilla.org/en-US/docs/Web/CSS/border) + [shorthand](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)** :  
     *Shorthand properties:* are CSS properties that let you set the values of multiple other CSS properties simultaneously. (In case of the border properties usually in one single line.)
 
