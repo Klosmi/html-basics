@@ -179,6 +179,7 @@ In this case, if the content is more than the mentioned height, than it [overflo
 # **[min-content](https://developer.mozilla.org/en-US/docs/Web/CSS/min-content) / [max-content](https://developer.mozilla.org/en-US/docs/Web/CSS/max-content) / [fit-content](https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content)**
 
 - **[`min-content`](https://devstory.net/12557/les-mots-cles-min-content-max-content-fit-content-stretch-en-css#a54855642)** : represents the intrinsic minimum width of the content.     
+	- In other words: the [min-content](https://css-tricks.com/almanac/properties/w/width/#min-content) value is the smallest measure that would fit around its content if all soft wrap opportunities within the box were taken.
 	- In case of text content, the content will take all soft-wrapping opportunities, becoming as small as the longest word.     
 
 	- You can use it for background sizes for cards when you don't know how muach content will the card contain.   
@@ -194,6 +195,7 @@ In this case, if the content is more than the mentioned height, than it [overflo
 
 - **[`max-content`](https://devstory.net/12557/les-mots-cles-min-content-max-content-fit-content-stretch-en-css#a54855640)** : represents the intrinsic maximum width or height of the content.    
 	- The content will not wrap at all even if it causes overflows in case of text content.   
+	- In other words: the [max-content](https://css-tricks.com/almanac/properties/w/width/#max-content) property refers to the narrowest measure a box could take while fitting around its content – if no soft wrap opportunities within the element were taken.
 	- Suppose you make the parent element infinite in width (or very large) and the current element the minimum height. Then the __max-content value is the minimum width__.
 	- eg.:    
 	  ```
@@ -249,6 +251,34 @@ In this case, if the content is more than the mentioned height, than it [overflo
 	[<img src="https://s1.o7planning.com/fr/12557/images/55060805.gif">]()
 	  	 
 
+	- an example from [css-tricks]():   
+	The HTML
+	```
+	<ul>
+  	  <li>Home</li>
+  	  <li>News</li>
+  	  <li>About</li>
+  	  <li>Contact</li>
+	</ul>
+	```   
+	The CSS
+	```
+	ul {
+  	  background: deepskyblue;
+  	  padding: 1em;
+  	  width: fit-content;
+  	  margin: 1em auto;
+	}
+
+	li {
+  	  display: inline-block;
+  	  background: red;
+  	  padding: .5em;
+	}
+	```
+	result   
+	 ![](fit-content.png)
+	 
 <br>
 
 - useful link for [new sizing properties]()
