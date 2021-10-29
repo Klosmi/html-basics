@@ -182,16 +182,30 @@ In this case, if the content is more than the mentioned height, than it [overflo
 
 	- You can use it for background sizes for cards when you don't know how muach content will the card contain.   
 	
-	- In [horizontal orientation](https://devstory.net/12557/les-mots-cles-min-content-max-content-fit-content-stretch-en-css#a54855642), the min-content keyword represents the __minimum value of the width__ without reversing the content of the element horizontally. 
+	- In [horizontal orientation](https://devstory.net/12557/les-mots-cles-min-content-max-content-fit-content-stretch-en-css#a54855642), the min-content keyword represents the __minimum value of the width__ without reversing the content of the element horizontally.   
+	[<img src="https://s1.o7planning.com/fr/12557/images/55028199.png">]()   
+	
+	- In vertical orientation, the min-content keyword represents the minimum value of the height without reversing the content of the element vertically.   
+	[<img src="https://s1.o7planning.com/fr/12557/images/55028280.png">]() 
+
+<br>
 
 - `max-content` : represents the intrinsic maximum width or height of the content.    
-	- The content will not wrap at all even if it causes overflows in case of text content.
+	- The content will not wrap at all even if it causes overflows in case of text content.   
+	- Suppose you make the parent element infinite in width (or very large) and the current element the minimum height. Then the __[max-content value](https://devstory.net/12557/les-mots-cles-min-content-max-content-fit-content-stretch-en-css#a54855640) is the minimum width__.
+	- eg.:    
+	  ```
+	  width: max-content;
+	  min-width: max-content;
+	  max-width: max-content;
+	  ```
+	  
+	[<img src="https://s1.o7planning.com/fr/12557/images/54870779.gif">]()  
 
 - `fit-content` : the box will use the available space, but never more than max-content. 
 	- It is like stretching, behvaes as fit-content(stretch).
 	- When used as laid out box size for `width`, `height`, `min-width`, `min-height`, `max-width` and `max-height` the __maximum and minimum sizes__ apply to the content size.   
-	[<img src="https://s1.o7planning.com/fr/12557/images/55028199.png">](https://s1.o7planning.com/fr/12557/images/55028199.png)
-
+	
 
 - useful link for [new sizing properties]()
 <br>
