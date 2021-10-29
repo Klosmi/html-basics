@@ -216,7 +216,20 @@ In this case, if the content is more than the mentioned height, than it [overflo
 
 - `fit-content` : the box will use the available space, but never more than max-content. 
 	- It is like stretching, behvaes as fit-content(stretch).
-	- When used as laid out box size for `width`, `height`, `min-width`, `min-height`, `max-width` and `max-height` the __maximum and minimum sizes__ apply to the content size.   
+	- When used as laid out box size for `width`, `height`, `min-width`, `min-height`, `max-width` and `max-height` the __maximum and minimum sizes__ apply to the content size.    
+	- If the writing mode is (writing mode) horizontally. An element with a CSS width {width: fit-content} means:
+		1. If the parent element can provide the current element with a width value greater than max-content, then `fit-content = max-content`.   
+		2. If the parent element cannot provide the current element with a width value greater than min-content, then `fit-content = min-content`.   
+		3. If the parent element can only provide the current element with a width value in the range (min-content, max-content) , then the current element will have a width "fitted" to the parent element.
+	- eg.:   
+ 	  ```
+	  .element  {
+  	     width: fit-content;
+	  }
+	  ```
+	  
+	  [<img src="https://s1.o7planning.com/fr/12557/images/55053249.gif">]()  
+ 
 	
 
 - useful link for [new sizing properties]()
