@@ -248,12 +248,13 @@ In this case, if the content is more than the mentioned height, than it [overflo
 	
 	[<img src="https://s1.o7planning.com/fr/12557/images/55060805.gif">]()
 	  	 
- 
-<br>
 
 <br>
 
 - useful link for [new sizing properties]()
+
+<br>
+
 <br>
 
 # [BEM Methodology](http://getbem.com/naming/)
