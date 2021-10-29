@@ -176,7 +176,7 @@ In this case, if the content is more than the mentioned height, than it [overflo
 
 <br>
 
-#**[min-content](https://developer.mozilla.org/en-US/docs/Web/CSS/min-content) / [max-content](https://developer.mozilla.org/en-US/docs/Web/CSS/max-content)**
+# **[min-content](https://developer.mozilla.org/en-US/docs/Web/CSS/min-content) / [max-content](https://developer.mozilla.org/en-US/docs/Web/CSS/max-content)**
 
 <br>
 
