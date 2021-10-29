@@ -20,6 +20,7 @@
 18. [CSS Responsive design - @media queries](https://github.com/Klosmi/html-basics/blob/master/Responsivedesign.md)
 19. [SASS](https://github.com/Klosmi/html-basics/blob/master/sass.md)
 20. [BEM - naming your CSS](https://github.com/Klosmi/html-basics/blob/master/BEM.md)
+21. [About CSS Modules](https://github.com/css-modules/css-modules)
 
 
 <br>
