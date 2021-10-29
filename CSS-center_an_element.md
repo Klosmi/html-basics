@@ -193,7 +193,7 @@ In this case, if the content is more than the mentioned height, than it [overflo
 	[<img src="https://s1.o7planning.com/fr/12557/images/55028199.png">](https://s1.o7planning.com/fr/12557/images/55028199.png)
 
 
-- useful link for [new sizing properties](https://drafts.csswg.org/css-sizing-4/#sizing-values)
+- useful link for [new sizing properties]()
 <br>
 
 # [BEM Methodology](http://getbem.com/naming/)
