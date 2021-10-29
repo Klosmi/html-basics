@@ -234,8 +234,24 @@ In this case, if the content is more than the mentioned height, than it [overflo
 	  ```
 	  
 	  [<img src="https://s1.o7planning.com/fr/12557/images/55053249.gif">]()  
- 
+	  
 	
+	- for vertically is the same as horizontally.
+	eg.:
+	Vertical writing mode.
+	```
+	.element {
+    	   writing-mode: vertical-rl | vertical-lr;
+    	   width: fit-content;
+	}
+	```
+	
+	- [<img src="https://s1.o7planning.com/fr/12557/images/55060805.gif">]()
+	  	 
+ 
+<br>
+
+<br>
 
 - useful link for [new sizing properties]()
 <br>
