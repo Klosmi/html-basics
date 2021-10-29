@@ -201,6 +201,18 @@ In this case, if the content is more than the mentioned height, than it [overflo
 	  ```
 	  
 	[<img src="https://s1.o7planning.com/fr/12557/images/54870779.gif">]()  
+	
+	- Suppose you make the parent element infinite in height (or very large) and the current element minimum in width. The max-content value is then the minimum height. 
+	- eg.:   
+	```
+	height: max-content;
+	min-height: max-content;
+	max-height: max-content;
+	```   
+	
+       [<img src="https://s1.o7planning.com/fr/12557/images/55010821.gif">]()  
+       
+<br>
 
 - `fit-content` : the box will use the available space, but never more than max-content. 
 	- It is like stretching, behvaes as fit-content(stretch).
