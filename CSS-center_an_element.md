@@ -252,30 +252,30 @@ In this case, if the content is more than the mentioned height, than it [overflo
 	  	 
 
 	- an example from [css-tricks]():   
-	The HTML
-	```
-	<ul>
-  	  <li>Home</li>
-  	  <li>News</li>
-  	  <li>About</li>
-  	  <li>Contact</li>
-	</ul>
-	```   
-	The CSS
-	```
-	ul {
-  	  background: deepskyblue;
-  	  padding: 1em;
-  	  width: fit-content;
-  	  margin: 1em auto;
-	}
+		The HTML
+		```
+		<ul>
+		  <li>Home</li>
+		  <li>News</li>
+		  <li>About</li>
+		  <li>Contact</li>
+		</ul>
+		```   
+		The CSS
+		```
+		ul {
+		  background: deepskyblue;
+		  padding: 1em;
+		  width: fit-content;
+		  margin: 1em auto;
+		}
 
-	li {
-  	  display: inline-block;
-  	  background: red;
-  	  padding: .5em;
-	}
-	```
+		li {
+		  display: inline-block;
+		  background: red;
+		  padding: .5em;
+		}
+		```
 	result   
 	 ![](fit-content.png)
 	 
