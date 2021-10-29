@@ -220,7 +220,8 @@ In this case, if the content is more than the mentioned height, than it [overflo
 	- If the writing mode is (writing mode) horizontally. An element with a CSS width {width: fit-content} means:
 		1. If the parent element can provide the current element with a width value greater than max-content, then `fit-content = max-content`.   
 		2. If the parent element cannot provide the current element with a width value greater than min-content, then `fit-content = min-content`.   
-		3. If the parent element can only provide the current element with a width value in the range (min-content, max-content) , then the current element will have a width "fitted" to the parent element.
+		3. If the parent element can only provide the current element with a width value in the range (min-content, max-content) , then the current element will have a width "fitted" to the parent element.   
+		[source](https://devstory.net/12557/les-mots-cles-min-content-max-content-fit-content-stretch-en-css#a54855707)
 	- eg.:   
  	  ```
 	  .element  {
