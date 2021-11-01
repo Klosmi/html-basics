@@ -95,6 +95,7 @@ __[BEM - naming methodology](http://getbem.com/naming/)__
 <br>
   
   ## Useful Links
+  - __[Live examples](https://scalablecss.com/bem-css-examples/)__   
   - __[Methodology Documentation](https://en.bem.info/methodology/)__
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
