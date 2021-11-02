@@ -694,5 +694,60 @@ Now, it seems like you might be asking about defining a variable without let/con
 
 basically it is: if the `if` part is false, than *otherwise*.
 
+- you can chain them together, so you can have as many `else if` as you need.
+
+- eg.:
+  ```
+  let rating = 2;
+
+  if (rating === 3) {
+    console.log("Hi!");
+  }
+  else if (rating === 2) {
+    console.log("Bye!");
+  }
+  ```
+
+- eg.:   
+  if one of the condition is true, it runs and the rest will be skipped. 
+  ```
+  const age = 8;
+
+  if (age > 5) {
+    console.log("Free");   // this line runs because it's true , it doesn't go to the else if line
+  } else if (age > 13 ){
+    console.log("5$");
+  } else if (age < 65 ){
+    console.log("5$");
+  }
+  ```
+
+#### `else` statement
+
+basically it is the `everything else`.   
+
+It's the last piece of the entire conditional,  we don't specify any condition (we don't have parentheses).   
+It's going to run as **the last thing** if nothing else matched first (always the last statement).
+
+
+ eg.:
+ ```
+  const days = prompt("enter a day!");
+
+  if (days === 'Monday') { 
+    console.log("1st day of the week");
+  } else if (days === 'Tuesday') {
+  console.log("2md day of the week"); 
+  } else if (days === 'Wednesday') {
+  console.log("3rd day of the week"); 
+  } else if (days === 'Thursday') {
+  console.log("4th day of the week");
+  } else if (days === 'Friday') {
+  console.log("5th day of the week");
+  } else  {
+  console.log("who cares, it's weekend");
+  }
+```
+
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
