@@ -1,3 +1,7 @@
+👈 go back
+
+---
+
 # **[JS: Primitive Types](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)**
 
 - basic building blocks, basic types of information that we can store.
