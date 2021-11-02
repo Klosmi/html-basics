@@ -753,5 +753,25 @@ It's going to run as **the last thing** if nothing else matched first (always th
   }
 ```
 
+#### Nesting conditionals
+
+- eg.:
+  ```
+  const password = prompt("please enter a new password");
+
+  //password must be 5 characters
+  if (password.length >= 5) {
+      // password not inlcude space
+      // this is the nested part
+      if (password.indexOf(" ") === -1) {
+        console.log("super");
+      } else {
+        console.log("please don't use spaces")
+      }
+  } else {
+    console.log("password too short");
+  }
+  ```
+
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
