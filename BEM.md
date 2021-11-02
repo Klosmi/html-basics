@@ -96,7 +96,7 @@ __[BEM - naming methodology](http://getbem.com/naming/)__
   
   ## Useful Links
   - __[Live examples 1](https://scalablecss.com/bem-css-examples/)__ 
-  - __[Live examples 2](https://scalablecss.com/bem-blocks-within-blocks/#nesting-blocks-within-blocks)__  
+  - __[Live examples 2](https://scalablecss.com/bem-blocks-within-blocks/#nesting-blocks-within-blocks)__  : this is a pretty good explanation. 💡
   - __[Methodology Documentation](https://en.bem.info/methodology/)__
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
