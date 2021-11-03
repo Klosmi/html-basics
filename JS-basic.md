@@ -223,14 +223,9 @@ __The difference between null and undifined__:
 
 <br>
 
----
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
 
-<br>
-
-<br>
-
-<br>
+---
 
 # **[JS: Variables](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations)**
   - varables are like __labels for values__:
@@ -320,14 +315,9 @@ Now, it seems like you might be asking about defining a variable without let/con
     
     <br>
   
-    ---
-[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
 
-<br>
-
-<br>
-
-<br>
+---
 
 # **[JS: Methods](https://developer.mozilla.org/en-US/docs/Glossary/Method)** ([string](https://github.com/Klosmi/html-basics/blob/master/JS-primitiveTypes.md#string-) methods):
   - __methods__ are built-in __ACTIONS__ we can perform with individual __strings__.   
@@ -424,14 +414,10 @@ Now, it seems like you might be asking about defining a variable without let/con
 
 <br>
 
-   ---
-[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
 
-<br>
+---
 
-<br>
-
-<br>
 
 # [__JS: Template literals__ (Template strings)](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)
   Template literals are strings that allow embedded expressions, which will be evaluated and then turned into a resulting string.    
@@ -477,14 +463,10 @@ Now, it seems like you might be asking about defining a variable without let/con
 
 <br>
 
-   ---
-[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
 
-<br>
+---
 
-<br>
-
-<br>
 
 # **[JS: Math Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)**
 
@@ -535,14 +517,10 @@ Now, it seems like you might be asking about defining a variable without let/con
 
   <br>  
   
----
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
 
-<br>
+---
 
-<br>
-
-<br>
 
 # **[JS: Comparison Operators](http://www-lia.deis.unibo.it/materiale/JS/developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators.html)**
 **comparing two values: the left and the right.**
@@ -611,15 +589,15 @@ Now, it seems like you might be asking about defining a variable without let/con
       ```
       1 === '1';          // false
       0 == false;         // false
+      
       ```
----
+      
+<br>
+
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
 
-<br>
+---
 
-<br>
-
-<br>
 
 # [The `console.` method](https://developer.mozilla.org/en-US/docs/Web/API/console)
 
@@ -631,7 +609,11 @@ Now, it seems like you might be asking about defining a variable without let/con
     ```
      __prints__ out "Hello!" to the console. 
 
-<br>     
+<br> 
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+
+---
 
 # [The `alert()` method](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics#functions)  
   - print out, but in a pop-up window (not in the console)
@@ -653,15 +635,12 @@ Now, it seems like you might be asking about defining a variable without let/con
     ```
     prompt("please enter a number");
     ```
+<br>
 
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
    
-<br>
 
-<br>
-
-<br>
 
 # **[JS: Conditional statement - if • else if • else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)**
 - the code is either true or false
@@ -693,6 +672,10 @@ Now, it seems like you might be asking about defining a variable without let/con
     ```
 
 <br>
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+
+---
 
 #### `if` + `else if` statement
 
@@ -727,6 +710,10 @@ basically it is: if the `if` part is false, than *otherwise*.
   ```
 
 <br>
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+
+---
 
 #### `else` statement
 
@@ -776,6 +763,10 @@ It's going to run as **the last thing** if nothing else matched first (always th
   ```
   
 <br>  
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+
+---
   
 # [`switch` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch) 
 
@@ -858,6 +849,10 @@ A truthy value is a value that is considered true when encountered in a Boolean 
  
 <br> 
 
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+
+---
+
 # [Logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#binary_logical_operators) 
 
 #### **[AND `&&`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND)**
@@ -929,6 +924,7 @@ __The order:__
     console.log("there's no age like that");
   }
   ```
+
 #### **[NOT `!`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT)**
 
 - `!`expression returns true if expression is false
