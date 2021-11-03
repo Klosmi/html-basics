@@ -810,6 +810,108 @@ A truthy value is a value that is considered true when encountered in a Boolean 
     console.log("Falsy");
   }
   ```
+ 
+<br> 
+
+# [Logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#binary_logical_operators) 
+
+#### **[AND `&&`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND)**
+
+- __join__ an expression on the left and an expression on the right
+- `&&`
+- true is when the *left* && *right* is true (so the whole thing is true).
+
+  - true  &&  true  = true
+  - true  &&  false = false
+  - false &&  true  = false
+  - false &&  false = false   
+
+<br>
+
+- eg.:   
+  && true
+  ```
+  1 < 4  && 1 === 1;    // true
+  ```
+
+- eg.:
+  *A password checker. The password has to be greater than 10 characters, long or equal to and does not contain any space.*
+  ```
+  const password = prompt("Enter pw");
+
+  if (password.length >= 10 && password.indexOf(' ') === -1)  {
+    console.log("Valid password");
+  } else {
+    console.log("Wrong password");
+  }
+  ```
+#### **[OR `||`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR)**
+
+- true if either the left or the right is true or both are true. So when 1 side is true, its all true.
+- `||`  (pipe character)
+  - true  &&  true  = true
+  - true  &&  false = true
+  - false &&  true  = true
+  - false &&  false = false   
+
+<br>
+
+- eg.:   
+  || true
+  ```
+  1 === 1 || 2 > 7  // true
+  ```
+
+<br>
+
+__The order:__   
+-  `&&` __runs first__ always, so `&&` is before than the `||`❗️
+
+<br>
+
+`&&` and `||` together
+- eg.:
+  ```
+  const age = prompt("Enter your age");
+
+  if (age >= 0 && age < 5 || age >= 65) {
+    console.log("free");
+  } else if (age >= 5 && age < 10) {
+    console.log("$10");
+  } else if (age >= 10 && age < 65) {
+    console.log("$20");
+  } else {
+    console.log("there's no age like that");
+  }
+  ```
+#### **[NOT `!`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT)**
+
+- `!`expression returns true if expression is false
+
+- `!` (bang)
+
+- it negates the value, so if something is false, than it turns to true.
+
+- eg.:
+  False
+  ```
+  !('a' === 'a');  // false
+
+  !null   // true, because null is inherently false
+  ```
+
+- eg.:
+  *When you don't give a name it's false*
+  ```
+  const name = prompt("Enter your name");
+
+  if (!name) {
+    console.log('ooops');        
+    name = prompt("Write it again");
+  } else {
+    console.log('Hi');
+  }
+  ```
   
 
 ---
