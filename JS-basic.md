@@ -781,37 +781,37 @@ it is another control flow statement, it can replace several statements.
 `default`: if nothing else matched.
 
 - eg.:
-  ```
-  const day = prompt("Enter a number");
+    ```
+    const day = prompt("Enter a number");
 
-  switch(day) {
-    case 1:
-      console.log('Monday');
-      break;
-    case 2: 
-      console.log("Tuesday");
-      break;
-    case 3: 
-      console.log("Wednesday");
-      break;
-    case 4: 
-      console.log("Thursday");
-      break;
-    case 5: 
-      console.log("Friday");
-      break;
-    case 6:
-    case 7:   
-      console.log("Weekend");
-      break;
-    default:
-      console.log("Something like weekend!!!!");
-  }
-  ```
+    switch(day) {
+      case 1:
+        console.log('Monday');
+        break;
+      case 2: 
+        console.log("Tuesday");
+        break;
+      case 3: 
+        console.log("Wednesday");
+        break;
+      case 4: 
+        console.log("Thursday");
+        break;
+      case 5: 
+        console.log("Friday");
+        break;
+      case 6:
+      case 7:   
+        console.log("Weekend");
+        break;
+      default:
+        console.log("Something like weekend!!!!");
+    }
+    ```
   
  <br>
  
-    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
 
 ---
   
