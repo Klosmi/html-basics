@@ -762,9 +762,10 @@ It's going to run as **the last thing** if nothing else matched first (always th
   }
   ```
   
+  
 <br>  
 
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
 
 ---
   
