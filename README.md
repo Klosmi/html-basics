@@ -35,6 +35,7 @@
 7. [JS: console | alert() | prompt methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-console-method)
 8. [JS: Conditional statement - if • else if • else](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-conditional-statement---if--else-if--else)   
 9. [JS: Truthy and Falsy values](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#truthy-and-falsy-values)   
+10. [JS: Logical operators]()
 
 <br>
 
