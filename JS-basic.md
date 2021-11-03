@@ -806,7 +806,13 @@ it is another control flow statement, it can replace several statements.
     default:
       console.log("Something like weekend!!!!");
   }
-  ```  
+  ```
+  
+ <br>
+ 
+    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+
+---
   
   
 # **[Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)** and **[Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)** values
