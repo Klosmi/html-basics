@@ -726,6 +726,8 @@ basically it is: if the `if` part is false, than *otherwise*.
   }
   ```
 
+<br>
+
 #### `else` statement
 
 basically it is the `everything else`.   
@@ -772,6 +774,49 @@ It's going to run as **the last thing** if nothing else matched first (always th
     console.log("password too short");
   }
   ```
+  
+<br>  
+  
+# [`switch` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch) 
+
+it is another control flow statement, it can replace several statements.
+
+- not used often, but still.
+
+- keyword: __`swittch`__ and __`case`__ and __`break`__ and __`default`__*(it works like the `else`)*
+
+- `switch` works like  whenever there is a match, the `switch` starts executing the code until it hits a `break`.   
+`default`: if nothing else matched.
+
+- eg.:
+  ```
+  const day = prompt("Enter a number");
+
+  switch(day) {
+    case 1:
+      console.log('Monday');
+      break;
+    case 2: 
+      console.log("Tuesday");
+      break;
+    case 3: 
+      console.log("Wednesday");
+      break;
+    case 4: 
+      console.log("Thursday");
+      break;
+    case 5: 
+      console.log("Friday");
+      break;
+    case 6:
+    case 7:   
+      console.log("Weekend");
+      break;
+    default:
+      console.log("Something like weekend!!!!");
+  }
+  ```  
+  
   
 # **[Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)** and **[Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)** values
 
