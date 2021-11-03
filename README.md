@@ -34,7 +34,7 @@
 6. [JS: Comparison Operators](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-comparison-operators)
 7. [JS: console | alert() | prompt methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-console-method)
 8. [JS: Conditional statement - if • else if • else](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-conditional-statement---if--else-if--else)  
-9. [JS: Switch statement]() 
+9. [JS: Switch statement](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#switch-statement) 
 10. [JS: Truthy and Falsy values](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#truthy-and-falsy-values)   
 11. [JS: Logical operators](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#logical-operators)   
 
