@@ -1065,15 +1065,15 @@ __The order:__
 - __[`shift()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)__
   - removes from the beginning (yes, not the unshift removes, but the shift!)
 
-  - eg.:
-    ```
-    let letters = ["a", "b", "c"];
+    - eg.:
+      ```
+      let letters = ["a", "b", "c"];
 
-    letters.shift();
+      letters.shift();
 
-    // returns:
-    // "a"
-    ```
+      // returns:
+      // "a"
+      ```
   - we can save it to a variable
     - eg.:
       ```
