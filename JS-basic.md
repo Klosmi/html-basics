@@ -961,6 +961,131 @@ __The order:__
   }
   ```
   
+<br>
+
+---
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+
+
+# [Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) :
+ it's a data structure. (A data structure is a collection of data.)
+ - Arrays allow us to group data together  
+ - A __collection of values__, and an __ordered collection of values__
+
+ - `let variable = [first, second, third];` *(ordered values from left to right)*
+
+ - arrays are indexed  *(starts from 0)*, so every element has an associated number.
+    - eg.:
+      ```
+      let days = ["Monday", "Tuesday", "Wednesday"];
+
+      days[1];    // Tuesday
+      ```
+
+ #### **array indexes**
+
+- we can chain the indexes:
+  - eg.:   
+    To get the letter `y` of Monday
+    ```
+    let days = ["Monday", "Tuesday", "Wednesday"];
+
+    days[0][5]      //  y
+    ```
+
+- update an array
+  - eg.:
+    ```
+      let days = ["Monday", "Tuesday", "Wednesday"];
+
+      days.length;    // 3
+
+      days[3] = "Thursday";
+
+      // The outcome:
+      // let days = ["Monday", "Tuesday", "Wednesday", "Thursday"];
+    ```
+
+#### __[array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#common_operations)__
+
+- __[`push()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)__    
+  add an element to the end of the array
+  - `something.push("item")`  *in the parenthesis we add what we push*
+  - eg.:
+    ```
+    let letters = ["a", "b", "c"];
+
+    letters.push("d");
+
+    // the result:
+    //letters = ["a", "b", "c", "d"];
+    ```
+  - the new length of the array (so the array has changed)
+
+  - we can push multiple things on an array
+    ```
+    let letters = ["a", "b", "c", "d"];
+
+    letters.push("e", "f");
+
+    // the result:
+    //letters = ["a", "b", "c", "d", "e", "f"];
+    ```
+
+<br>
+
+- __[`pop()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)__    
+  remove an element from the end of the array
+  - `something.pop()` *it does not require any argument, the parenthesis stays empty*
+  - it gives element to us and it removes it from the array 
+  - eg.:
+    ```
+    let letters = ["a", "b", "c"];
+
+    letters.pop();
+    "c"     // it gives the "c" and removes it from the array
+
+    // the result:
+    //letters = ["a", "b"];
+    ```
+  
+  - I can capture the removed element into a variable
+    - eg.:   
+        *remove from the `letters = ["a", "b", "c"];` array the last element and give it to a `newVariable`.*
+        ```
+        let newVariable = letters.pop();
+
+        // the result is that the new variable has the "c"
+        // newVariable = "c"
+        ```
+  - stack (add in the end and remove from the end)
+
+<br>
+
+- __[`shift()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)__
+  - removes from the beginning (yes, not the unshift removes, but the shift!)
+
+  - eg.:
+    ```
+    let letters = ["a", "b", "c"];
+
+    letters.shift();
+
+    // returns:
+    // "a"
+    ```
+  - we can save it to a variable
+    - eg.:
+      ```
+      let letters = ["a", "b", "c"];
+
+      let newVariable = letters.shift();
+
+      // returns:
+      // newVariable = "a"
+      ```
+
+<br>
 
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
