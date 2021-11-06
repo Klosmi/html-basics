@@ -37,6 +37,7 @@
 9. [JS: Switch statement](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#switch-statement) 
 10. [JS: Truthy and Falsy values](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#truthy-and-falsy-values)   
 11. [JS: Logical operators](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#logical-operators)   
+12. [JS: Arrays]()
 
 <br>
 
