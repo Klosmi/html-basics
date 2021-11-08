@@ -618,10 +618,10 @@ Now, it seems like you might be asking about defining a variable without let/con
 # [The `alert()` method](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics#functions)  
   - print out, but in a pop-up window (not in the console)
   - shows a message
-  - eg.:
-    ```
-    alert("Hey!");
-    ```
+    - eg.:
+      ```
+      alert("Hey!");
+      ```
 <br>
 
 # [The `prompt`](https://javascript.info/alert-prompt-confirm#prompt)
