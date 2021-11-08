@@ -618,10 +618,10 @@ Now, it seems like you might be asking about defining a variable without let/con
 # [The `alert()` method](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics#functions)  
   - print out, but in a pop-up window (not in the console)
   - shows a message
-    - eg.:
-      ```
-      alert("Hey!");
-      ```
+  - eg.:
+    ```
+    alert("Hey!");
+    ```
 <br>
 
 # [The `prompt`](https://javascript.info/alert-prompt-confirm#prompt)
@@ -1038,17 +1038,17 @@ __The order:__
   remove an element from the end of the array
   - `something.pop()` *it does not require any argument, the parenthesis stays empty*
   - it gives element to us and it removes it from the array 
-  - eg.:
-    ```
-    let letters = ["a", "b", "c"];
+    - eg.:
+      ```
+      let letters = ["a", "b", "c"];
 
-    letters.pop();
-    "c"     // it gives the "c" and removes it from the array
+      letters.pop();
+      "c"     // it gives the "c" and removes it from the array
 
-    // the result:
-    //letters = ["a", "b"];
-    ```
-  
+      // the result:
+      //letters = ["a", "b"];
+      ```
+
   - I can capture the removed element into a variable
     - eg.:   
         *remove from the `letters = ["a", "b", "c"];` array the last element and give it to a `newVariable`.*
