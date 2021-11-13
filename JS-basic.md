@@ -1087,5 +1087,103 @@ __The order:__
 
 <br>
 
+- __[`unshift()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)__   
+  with this method we can **add** a new element to the beginning of an array.
+
+  - eg.:   
+    *in the `()` we write the element that we want to add to the beginning of the array.* 
+    ```
+    let letters = ["a", "b", "c"];
+
+    letters.unshift("Z");   // element what we add!
+
+    // returns:
+    // ["Z", "a", "b", "c"]
+    ```
+
+<br>
+
+- __[`concat()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)__    
+ it is used to **merge arrays**. 
+ It concatenates arrays and gives a **new** array.
+
+ - We call `concat()` on one of the arrays and then we pass in a second array to concatenate with that initial array. That creates a new third array.
+  - eg.:
+    ```
+    let arrayA = ['a', 'b', 'c'];
+    let arrayB = ['d', 'e', 'f'];
+    let arrayAB = arrayA.concat(arrayB);
+
+    // returns:
+    // arrayAB = ["a", "b", "c", "d", "e", "f"]
+    ```
+
+<br>
+
+- __[`includes()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)__ 
+  returns **true or false**. It tel us if an array includes a certain value.
+
+  - eg.:   
+    *does `arrayA` includes `'b'` ?*
+    ```
+    let arrayA = ['a', 'b', 'c'];
+    arrayA.includes('b');
+
+    // returns:
+    // true
+    ```
+
+<br>
+
+- __[`indexOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)__ 
+   returns the **first index** at which a given element can be found in the array. 
+
+   - it shows us the **first time** that element occurs
+
+   -  when element is not found, it gives `-1`
+
+
+     - eg.:   
+    *what is the index of `'b'` in the `arrayA` ?*
+    ```
+    let arrayA = ['a', 'b', 'c', 'b'];
+    arrayA.indexOf('b');
+
+    // it only gives the first match❗️
+    // returns:
+    // 1
+    ```
+
+    - eg.:
+    *what is the index of `'Y'` in the `arrayA` ?*   
+    *When element is not found, it gives `-1`*
+    ```
+    let arrayA = ['a', 'b', 'c'];
+    arrayA.indexOf('Y');
+
+    // returns:
+    // -1
+    ```
+    
+<br>
+
+- __[`reverse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)__ 
+   it **reverses an array**, it does it in *place*.    
+   It means it is a **destructive method**: it changes the original array❗️
+
+   - use it with empty parentheses
+
+    - eg.:   
+      ```
+      let arrayA = ['a', 'b', 'c'];
+      arrayA.reverse();
+
+      // it overwrites the original array:
+      // console.log(`arrayA`);
+      // arrayA = ['c', 'b', 'a'];
+      ```
+  
+<br>
+
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
