@@ -1185,5 +1185,121 @@ __The order:__
   
 <br>
 
+- __[`slice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)__ 
+  it gives a **copy** of a portion of an array, a **slice of an array**.
+
+  - the original array will not be modified. 
+
+  - the array object is selected from *start* to *end*, where start and end represent the index of items in that array.
+
+  - start and end are optional. If I don't specify them (leaving the parenthesis empty) it gives a copy of the whole array.
+    - eg.:
+      ```
+      let letters = ['a','b','c','d','e','f'];
+      letters.slice()
+
+      // returns the copy of the whole array
+      // ['a','b','c','d','e','f']
+      ```
+
+  - start is inlcuded, the end is not included, it just goes *upto* the index.
+
+    - eg.:
+      ```
+      let letters = ['a','b','c','d','e','f'];
+      letters.slice(2, 4)      // goes from the index of 2 upto 4 (not inlcuding the end indeox of 4❗️)
+  
+
+      // returns:
+      // ['c', 'd']
+      ```
+ 
+
+  - eg.:
+      *only specified the start index*   
+      Array with 6 elements, and I want the first 3.
+      ```
+      let letters = ['a','b','c','d','e','f'];
+      letters.slice(3)      // goes from the index of 3
+
+      // returns:
+      // ['d', 'e', 'f']
+      ```
+
+  - giving a negative index, it starts from the end of the array
+    - eg.:
+      ```
+      let letters = ['a','b','c','d','e','f'];
+      letters.slice(-3)      // start from the end of the array
+
+      // result: it gives the last 3 elements
+      // ['d','e','f']
+      ```
+  
+<br>
+
+- __[`splice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)__    
+  it changes the contents of an array by **removing or replacing** existing elements and/or adding new elements in place.    
+  (Destructive method, doesn't make a copy.)
+
+  - splice is sort of *joining* something to something else.
+
+  - we have to specify:   
+    - where to start   
+    -  how many things to delete   
+    - optionally, what to insert
+
+  - eg.:   
+    *delete the 'blue'*
+    ```
+    let colors = ['red', 'green', 'blue', 'yellow', 'purple', 'pink'];
+
+    colors.splice(2, 1);
+    
+    // result: 
+    // output: ['red', 'green', 'yellow', 'purple', 'pink']
+
+    ```
+
+  - eg.:   
+    *insert 'magenta' between 'purple' and 'pink'*
+    ```
+    let colors = ['red', 'green', 'yellow', 'purple', 'pink'];
+
+    colors.splice(4,0,'magenta')    
+    
+    //0 means delete nothing. I want to insert 'magenta' after the 4rd index
+
+    //result:
+    // ['red', 'green', 'yellow', 'purple', 'magenta', 'pink']
+    ```
+
+💡 Usually it is not efficient to update the middle of an array, rather try to update the end of an array if it is possible.
+
+<br>
+
+
+- __[`sort()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)__    
+   it **sorts the elements** of an array in place and returns the sorted array.
+
+   - destructive method
+
+   - the default sort order is ascending❗️   
+    But, it is built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values. 
+
+
+
+   - eg.:
+      * we expect that it will sort ascending, but becuase it uses teh 1st digit, the result is different*
+      ```
+      let numbers = [1, 42, 7000, -5, 6, 0];
+      numbers.sort();
+
+      // result: 
+      // [-5, 0, 1, 42, 6, 7000]
+      ```
+
+<br>
+
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
