@@ -1215,7 +1215,7 @@ __The order:__
       ```
  
 
-  - eg.:
+  - eg.:   
       *only specified the start index*   
       Array with 6 elements, and I want the first 3.
       ```
