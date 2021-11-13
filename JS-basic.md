@@ -1107,16 +1107,16 @@ __The order:__
  it is used to **merge arrays**. 
  It concatenates arrays and gives a **new** array.
 
- - We call `concat()` on one of the arrays and then we pass in a second array to concatenate with that initial array. That creates a new third array.
-  - eg.:
-    ```
-    let arrayA = ['a', 'b', 'c'];
-    let arrayB = ['d', 'e', 'f'];
-    let arrayAB = arrayA.concat(arrayB);
+  - We call `concat()` on one of the arrays and then we pass in a second array to concatenate with that initial array. That creates a new third array.
+    - eg.:
+      ```
+      let arrayA = ['a', 'b', 'c'];
+      let arrayB = ['d', 'e', 'f'];
+      let arrayAB = arrayA.concat(arrayB);
 
-    // returns:
-    // arrayAB = ["a", "b", "c", "d", "e", "f"]
-    ```
+      // returns:
+      // arrayAB = ["a", "b", "c", "d", "e", "f"]
+      ```
 
 <br>
 
