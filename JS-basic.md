@@ -1310,7 +1310,7 @@ __The order:__
       ```
       ['a', 'b'] === ['a', 'b'];    // FALSE❗️
       ```
-  - `['a', 'b']` has a different reference number compared `['a', 'b']` 
+  - `['a', 'b']` has a different reference number compared to `['a', 'b']` 
 
   - if we link the arrays, they share the same reference
     - eg.:   
