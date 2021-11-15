@@ -1364,10 +1364,12 @@ __The order:__
       nestedArray[1]    // gives the second line [10, 30, 50]
       nestedArray[1][1] // gives the second element of the second arrays → number 30
       ```
-      
-<br>      
 
 <br>
+
+---
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)      
+
 
 # [JS: Object Literals](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics) :
  Object's are collections of properties.    
