@@ -1367,5 +1367,31 @@ __The order:__
       
 <br>      
 
+<br>
+
+# [JS: Object Literals](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics) :
+ Object's are collections of properties.    
+ Objects are data stractures, where the data is stored in __key value__ pairs, in other words __properties__.
+
+ - __property__ : 2 peices of information: a `key` and a `value`. 
+
+ - it's about *labeling* the information
+
+ - we can use custome `keys` to access data (not indexes)
+
+ - the order doesn't matter
+
+ - eg.:   
+    *a key value pairs. Here we can see 3 properties. There is no order.
+    ```
+    const days = {
+      sunnyDays : 120,
+      coldDays : 180,
+      rainyDays : 65
+    }
+    ```
+
+<br>
+
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
