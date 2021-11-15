@@ -1301,5 +1301,71 @@ __The order:__
 
 <br>
 
+ __[Compare Arrays](https://www.geeksforgeeks.org/how-to-compare-two-arrays-in-javascript/)__ 
+
+  - reference in the memory is like an address
+
+  - in arrays, when we use `==` or `===` it only compares the  **references** in memory and not the content. That's why:   
+      - eg.:  
+      ```
+      ['a', 'b'] === ['a', 'b'];    // FALSE❗️
+      ```
+  - `['a', 'b']` has a different reference number compared `['a', 'b']` 
+
+  - if we link the arrays, they share the same reference
+    - eg.:   
+      *`otherNumbers` array point to the `numbers` array's, so __they are linked__*
+      ```
+      let numbers = [1, 2, 3];
+
+      let otherNumbers = numbers;
+
+      // now compare them
+
+      numbers === otherNumbers    // true
+
+      // if I make a change on one the other will change too❗️
+      otherNumbers.pop();   // [1, 2]
+
+      numbers               // [1, 2]
+      ```
+
+  - the values can change as long as the reference remains the same. So we can use __`const variableName`__.
+    - eg.:
+      *if I change the content of `const number`, it doesn't affect the reference, it remains the same.*
+      ```
+      const number = [1, 2];  
+      number.push(3)          // [1, 2, 3] → same reference as before, [1, 2]. const number reference remains.
+      ```
+
+  - reassignemnt causes error
+    - eg.:
+      ```
+      const number = 1;
+      number = 2;       // error: Uncaught TypeError: Assignment to constant variable.
+      ```
+
+<br>
+
+ __[Multidimensional Arrays](https://www.javascripttutorial.net/javascript-multidimensional-array/) (nested arrays)__ 
+
+  - arrays can store other arrays, that's the nested array
+    - eg.:
+      ```
+      const nestedArray = [
+        ['a', 'b'],
+        [10, 30, 50],
+        ['green', 'yellow']
+      ]
+      ```
+      How to acces the number `30` ?   
+      We have to go through 2 levels:
+      ```
+      nestedArray[1]    // gives the second line [10, 30, 50]
+      nestedArray[1][1] // gives the second element of the second arrays → number 30
+      ```
+      
+<br>      
+
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
