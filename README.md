@@ -21,6 +21,7 @@
 19. [SASS](https://github.com/Klosmi/html-basics/blob/master/sass.md)
 20. [BEM - naming your CSS](https://github.com/Klosmi/html-basics/blob/master/BEM.md)
 21.  <a href="https://github.com/css-modules/css-modules" target="_blank">About CSS Modules </a><sup>external link</sup>
+22. [Inspiration sites for web design]()
 
 
 <br>
