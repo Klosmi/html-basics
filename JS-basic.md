@@ -1426,7 +1426,7 @@ __The order:__
   
 - 💡 all the keys are converted into strings (except symbols) 
   - eg.:   
-    *so number as a key, boolean as a key, etc. are all strings, not numbers booleans, etc.*
+    *so number as a key, boolean as a key, etc. are all strings, not numbers, booleans, etc.*
     ```
     const days = { 
       1 : "Monday", 
