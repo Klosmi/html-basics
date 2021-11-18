@@ -1475,7 +1475,7 @@ __The order:__
 
 <br>
 
-## [nesting arrays and objects]   
+## [nesting arrays and objects](https://hackernoon.com/accessing-nested-objects-in-javascript-f02f1bd6387f)   
   - have an array with objects
   - have objects with objects
   - combination of arrays and objects
