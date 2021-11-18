@@ -1375,23 +1375,148 @@ __The order:__
  Object's are collections of properties.    
  Objects are data stractures, where the data is stored in __key value__ pairs, in other words __properties__.
 
- - __property__ : 2 peices of information: a `key` and a `value`. 
+ - __property__ : 2 peices of information: a `key` and a `value`.    
+ Value is the right side of the __`:`__ (colon).
+    - eg.:
+      ```
+      const objectLiteral = { key : 'value', key2 : 'value2' }
+      ```
 
  - it's about *labeling* the information
 
  - we can use custome `keys` to access data (not indexes)
 
+ - using __`{}`__ when declaring
+
  - the order doesn't matter
 
+ -  we can have different types of objectd
+
  - eg.:   
-    *a key value pairs. Here we can see 3 properties. There is no order.
+    *a key value pairs.*
     ```
     const days = {
       sunnyDays : 120,
-      coldDays : 180,
-      rainyDays : 65
+      coldDays : [180, 30, 'Z'],
+      rainyDays : false,
+      niceDays : 'weekends'
     }
     ```
+
+<br>
+
+## [dot notation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics#dot_notation) 
+
+-  using `[]` square brackets and quotation marks `["value"]` after the varibale which store the property.   
+
+    - eg.:
+        ```
+        const name = {firstName : "John",  lastName : "Doe"}
+
+        name["lastName"]      //  "Doe"
+        ```
+
+- other way is using __dot.notation__ syntax, using a __`.`__
+    - eg.:
+        ```
+        const name = {firstName : "John",  lastName : "Doe"}
+
+        name.lastName      //  "Doe"
+        ```
+  
+- 💡 all the keys are converted into strings (except symbols) 
+  - eg.:   
+    *so number as a key, boolean as a key, etc. are all strings, not numbersm booleans, etc.*
+    ```
+    const days = { 
+      1 : "Monday", 
+      null : "Friday", 
+      true : "Sunday",
+      favourite : "Saturday" }
+
+    days[null]        // "Friday"
+    days["null"]      // "Friday"
+    days[1]           // "Monday"
+    days["1"]         // "Monday"
+    days[favourite]   // ReferenceError, it expects a variable
+    days["favourite"] // "Saturday" 
+    ```
+
+  -  if we are using something dynamic like a __variable as a key__ in an object, we use the __square brackets__.   
+  Variable as a key using dot notiation doesn't work.
+
+<br>
+
+## [modifying objects](https://dev.to/sanchithasr/how-to-add-modify-and-delete-javascript-object-literal-properties-49cd) 
+
+  __adding__ or __updating__ new information. 
+
+  - eg.:   
+      to change a key's value
+      ```
+      const dogs = { smalldog : "small", bigdog: "big" }
+
+      dogs.smalldog = "verysmall";  
+      dogs['bigdog'] = "quitebig";  
+      
+      // result: 
+      // { smalldog : "verysmall", bigdog: "quitebig" }
+      ```
+      to add an extra element:
+      ```
+      const dogs = { smalldog : "verysmall", bigdog: "quitebig" }
+
+      dogs['tinydog'] = "tiny";
+      dogs.megadog = "huge";
+
+      // result: 
+      // { smalldog : "verysmall", bigdog: "quitebig", tinydog : "tiny", megadog : "huge"}
+      ```
+
+<br>
+
+## [nesting arrays and objects]   
+  - have an array with objects
+  - have objects with objects
+  - combination of arrays and objects
+
+  - eg.:   
+    *An __array__ (or list) __of objects__*
+    ```
+    const blog = [
+    {user: "John", text: "Helooo", likes: 3},
+    {user: "Doe", text: "Yasss", likes: 5}
+    ]
+    ```
+  - eg.:   
+    *An __object which stores an array and an object__*
+    ```
+    const museums = {
+      name : 'National Gallery',
+      type : 'fine art'
+      attractions : 
+        ['images', 'sculptures', 'ceramics'], //  ← array
+      ticketPrice: 
+        { children : 2, adult : 6 }           //  ← object
+    }
+    ```
+  
+  - accessing the elements:
+    - array containing objects:
+       ```
+      const blog = [
+        {user: "John", text: "Helooo", likes: 3},
+        {user: "Doe", text: "Yasss", likes: 5}
+        ]
+
+        // accessing:
+        blog[0].text    // gives → 'Hellooo!'
+        blog[0]['text']    // gives → 'Hellooo!'
+      ```
+
+  *remember:    
+    - object are key value pairs { key : 'value'}   
+    - arrays are list of things ['a', 'b', 'c']*
 
 <br>
 
