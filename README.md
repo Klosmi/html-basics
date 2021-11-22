@@ -40,7 +40,7 @@
 11. [JS: Logical operators](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#logical-operators)   
 12. [JS: Arrays](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#arrays-)  
 13. [JS: Object Literals](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-object-literals-) 
-14. [JS: Loops]()
+14. [JS: Loops](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-loops-)
 
 <br>
 
