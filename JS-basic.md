@@ -1522,3 +1522,53 @@ __The order:__
 
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+   
+# [JS: Loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration) :
+the aim of looping is to repeat some functionality.
+- loops allow us to repeat code
+- there are several types of loops:
+  - for
+  - while
+  - for ... of
+  - for ... in
+
+## [for loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+
+__for loop__ expression is this:
+  ```
+  for (  
+    [intiailExpression];
+    [condition];
+    [incrementExpression];
+  )
+  ```
+
+  - so eg.:   
+    *Print all the numbers from `1` to `10`*
+    ```
+    for (let i = 1; i <= 10; i++) {
+      console.log(i);
+    }
+    ```
+    the code syntax:
+
+    start at 1      →   `let i = 1;`   
+    stop at 10      →   `i <= 10;`   
+    add 1 each time →   `i++` 
+
+<br>
+     
+  1. __initial expression__ :    
+    making a new variable __`let i`__. It only exists for the purpose of the loop (counter variable).
+
+  2. __condition__ :   
+    middle part is a boolean expression __`i < 10`__. As long as it is `true`, (while it is true) the loop is running.
+
+  3. __increment expression__ :   
+    the value of `i` is updated __`i++`__   
+
+
+<br>
+
+---
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
