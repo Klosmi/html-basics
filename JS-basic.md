@@ -1527,7 +1527,7 @@ __The order:__
 the aim of looping is to repeat some functionality.
 - loops allow us to repeat code
 - there are several types of loops:
-  - for
+  - [for]()
   - while
   - for ... of
   - for ... in
@@ -1561,14 +1561,59 @@ __for loop__ expression is this:
   1. __initial expression__ :    
     making a new variable __`let i`__. It only exists for the purpose of the loop (counter variable).
 
-  2. __condition__ :   
-    middle part is a boolean expression __`i < 10`__. As long as it is `true`, (while it is true) the loop is running.
+  2. __condition or conditional expression__ :   
+    middle part is a boolean expression __`i < 10`__. As long as it is `true`, (while it is true) the loop is running. So how long the loop should run.
 
   3. __increment expression__ :   
-    the value of `i` is updated __`i++`__   
+    the value of `i` is updated __`i++`__
+    (you can also do like divide, multiply or subtract)
 
+
+
+  - eg.:   
+    *when we want __even numbers__ printed out (i += 2)*
+    ```
+    for(let i = 0; i <= 20; i += 2) {
+      console.log(i)
+    }
+    ```
+    *to skip the 0 at the __starting point: (let i = 2)__*
+     ```
+    for(let i = 2; i <= 20; i += 2) {
+      console.log(i)
+    }
+    ```
+    *to have __odd number__, give 1 at the starting point: (let i = 1)*
+     ```
+    for(let i = 1; i <= 20; i += 2) {
+      console.log(i)
+    }
+    ```
+    *__count down__ to 0*
+     ```
+    for(let i = 100; i >= 0; i -= 10) {
+      console.log(i)
+    }
+    ```
+    *__multiply__*
+     ```
+    for(let i = 10; i <= 1000; i *= 10) {
+      console.log(i)
+    }
+
+    // prints out: 10, 100, 1000 
+    ```
+
+    *__infinite loop__ (take care it nover stops, your mrowser run out of memory)*
+       ```
+    for(let i = 10; i >= 0; i++) {
+      console.log(i)
+    }
+    ```
 
 <br>
+
+- when writing a loop always make sure that how your loop will end, to avoid infinte loops.
 
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
