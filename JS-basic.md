@@ -1527,7 +1527,7 @@ __The order:__
 the aim of looping is to repeat some functionality.
 - loops allow us to repeat code
 - there are several types of loops:
-  - [for]()
+  - [for](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#for-loop)
   - while
   - for ... of
   - for ... in
