@@ -1530,7 +1530,7 @@ the aim of looping is to repeat some functionality.
   - [for](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#for-loop)
     - [looping arrays](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#looping-arrays)
     - [nested loops](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#nested-loops)
-  - [while]()
+  - [while](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#while-loop)
   - for ... of
   - for ... in
 
@@ -1750,7 +1750,11 @@ If outer loop has 3, the inner loop runs 3 times its own full cycle.
     
 <br>
 
-## [While loop]()
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+
+<br>
+
+## [while loop]()
 
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
