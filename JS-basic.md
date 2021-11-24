@@ -1757,35 +1757,35 @@ If outer loop has 3, the inner loop runs 3 times its own full cycle.
 <br>
 
 ## [while loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)   
-    one syntax: __`while`__ and then insode of the parentheses, a __(single condition)__.
-    - while loops contue running as long as the test condition is true.
-    - the addition, subtract, multiply, etc. operation are in the loop's body!
-    - while loops are preferred __when we don't know how many times we are going to iterate__    
-    *(eg.: in games. The game contiues until somebody wins, because we don't know how many time we have to iterate.)*
+  one syntax: __`while`__ and then insode of the parentheses, a __(single condition)__.
+  - while loops contue running as long as the test condition is true.
+  - the addition, subtract, multiply, etc. operation are in the loop's body!
+  - while loops are preferred __when we don't know how many times we are going to iterate__    
+  *(eg.: in games. The game contiues until somebody wins, because we don't know how many time we have to iterate.)*
 
-    - eg.:
-        ```
-        let num = 0;
-
-        while (num <= 5) {
-          console.log(num);
-          num++;
-        }
-
-        // 0 1 2 3 4 5
-        ```
-  
-    - eg.:   
-      *a more useful example for while loops. A password: as long as the user doesn't find the password, the program keeps asking you.*
+  - eg.:
       ```
-      const pw = "PassworD";
+      let num = 0;
 
-      let guess = prompt("Hello user! Guess your password");
-
-      while(guess !== pw) {
-        guess = print("The password is incorrect, try again")
+      while (num <= 5) {
+        console.log(num);
+        num++;
       }
-      console.log("Your password is correct")      // it only runs, when the user entered "PassworD" correctly.
+
+      // 0 1 2 3 4 5
+      ```
+
+  - eg.:   
+    *a more useful example for while loops. A password: as long as the user doesn't find the password, the program keeps asking you.*
+    ```
+    const pw = "PassworD";
+
+    let guess = prompt("Hello user! Guess your password");
+
+    while(guess !== pw) {
+      guess = print("The password is incorrect, try again")
+    }
+    console.log("Your password is correct")      // it only runs, when the user entered "PassworD" correctly.
       ```
 
 ---
