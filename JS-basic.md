@@ -1615,5 +1615,137 @@ __for loop__ expression is this:
 
 - when writing a loop always make sure that how your loop will end, to avoid infinte loops.
 
+<br>
+
+## [looping arrays](https://www.codecademy.com/courses/introduction-to-javascript/lessons/loops/exercises/for-loops-with-arrays)
+It is basically iterating over an array.
+We use a for loop to create a number, which can be used to refer an element's index in the array.
+
+  - eg.:   
+    *looping over an array, using 'i' as an __index__ to acces the element from the array*   
+    
+    *Here we are iterating __from the beginning to the end of the array.__*
+    ```
+    const foods = ['hamburger', 'hotdog', 'soup'];
+
+    for (let i = 0; i < foods.length; i++) {
+      console.log(i, foods[i]);
+    }  
+
+    // result: 
+    // number(i)  ,  (foods[i])
+    //  0            'hamburger' 
+    //  1            'hotdog' 
+    //  2            'soup'
+    ```
+    *Here we are iterating __from the end to the beginning of the array.__*   
+
+    *Se we turn it around, and start with the 
+    highest index number and __- 1__, because we start from 0 index*
+    ```
+    const foods = ['hamburger', 'hotdog', 'soup'];
+
+    for (let i = foods.length - 1; i >= 0; i--) {
+      console.log(i, foods[i]);
+    }
+
+    // result: 
+    // number(i)  ,  (foods[i])
+    //  2            'soup' 
+    //  1            'hotdog' 
+    //  0            'hamburger'
+    ```
+
+## [nested loops](https://www.codecademy.com/courses/introduction-to-javascript/lessons/loops/exercises/for-loops-iii)   
+we are talking about nested loop, when __a loop is inside of another loop__
+
+- every iteration of the outer loop, the inner loop is going to have its own full cycle, as many times as the outer loop runs.   
+If outer loop has 3, the inner loop runs 3 times its own full cycle.
+
+cycle.
+
+- eg.:
+  ```
+  let greeting = 'Hi';
+
+  for (let i = 0; i <= 2; i++) {
+    console.log("Outer loop:", i);
+
+    for (let j = 0; j < greeting.length;  j++) {
+      console.log(' Inner loop:' , greeting[j] )
+    }
+  }
+
+  // Outer loop: 0 
+  //   Inner loop: H 
+  //   Inner loop: i 
+  // Outer loop: 1 
+  //   Inner loop: H 
+  //   Inner loop: i 
+  // Outer loop: 2 
+  //   Inner loop: H 
+  //   Inner loop: i
+  ```
+
+  - eg.:   
+    *with string template literal :* __\`${i}`__
+    ```
+    for(let i = 1; i <= 2; i++) {
+      console.log(`i is: ${i}`);
+      for (let j = 1; j < 4; j++) {
+        console.log(`    j is: ${j}`)
+      }
+    }
+
+    // i is: 1 
+    //   j is: 1 
+    //   j is: 2 
+    //   j is: 3 
+    // i is: 2 
+    //   j is: 1 
+    //   j is: 2 
+    //   j is: 3
+    ```
+
+- Nested loops are very useful when we are dealing with nested arrays.
+  - eg.:  
+  *I want to print out each name.*   
+  *The first loop just prints out the 3 arrays*   
+
+    ```
+    const names = [
+      ['John', 'Alexandra', 'Erika'],
+      ['Joe', 'Eve', 'Kevin', 'Wilma'],
+    ]
+
+    for (let i = 0; i < names.length; i++) {
+      console.log(names[i]);
+    }
+    // [ "John", "Alexandra", "Erika" ]
+    // [ "Joe", "Eve", "Kevin", "Wilma" ]
+    ```
+    *The second, nested loop can access the nested arrays*   
+    *I have to save the first loop's results into a variable, like `const row`. It contains the arrays.*   
+    *We use the `const row` variable for the nested loop, so we can iterate over the `row`, and get the names from each array.*
+    ```
+    for (let i = 0; i < names.length; i++) {
+      const row = names[i]; 
+                      // variable created
+      console.log(`ARRAY #${i + 1}`)        // it shows the number of the ARRAY. We add +1, so it doesn't start from ARRAY #0.
+
+      for (let j =0; j < row.length; j++) {
+        console.log(row[j]);                // prints out the names
+      }
+    }
+    // ARRAY #1 - [i]
+    //    John      - [j]
+    //    Alexandra - [j] 
+    //    Erika     - [j] 
+    // ARRAY #2 - [i]
+    //    Joe       - [j]
+    //    Eve       - [j]
+    //    Kevin     - [j]
+    //    Wilma     - [j] 
+    ```
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
