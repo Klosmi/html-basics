@@ -1528,12 +1528,14 @@ the aim of looping is to repeat some functionality.
 - loops allow us to repeat code
 - there are several types of loops:
   - [for](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#for-loop)
-  - while
+    - [looping arrays]()
+    - [nested loops]()
+  - [while]()
   - for ... of
   - for ... in
 
 ## [for loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
-
+   
 __for loop__ expression is this:
   ```
   for (  
@@ -1617,7 +1619,7 @@ __for loop__ expression is this:
 
 <br>
 
-## [looping arrays](https://www.codecademy.com/courses/introduction-to-javascript/lessons/loops/exercises/for-loops-with-arrays)
+### [looping arrays](https://www.codecademy.com/courses/introduction-to-javascript/lessons/loops/exercises/for-loops-with-arrays)
 It is basically iterating over an array.
 We use a for loop to create a number, which can be used to refer an element's index in the array.
 
@@ -1656,7 +1658,7 @@ We use a for loop to create a number, which can be used to refer an element's in
     //  0            'hamburger'
     ```
 
-## [nested loops](https://www.codecademy.com/courses/introduction-to-javascript/lessons/loops/exercises/for-loops-iii)   
+### [nested loops](https://www.codecademy.com/courses/introduction-to-javascript/lessons/loops/exercises/for-loops-iii)   
 we are talking about nested loop, when __a loop is inside of another loop__
 
 - every iteration of the outer loop, the inner loop is going to have its own full cycle, as many times as the outer loop runs.   
