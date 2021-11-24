@@ -1544,6 +1544,8 @@ __for loop__ expression is this:
     [incrementExpression];
   )
   ```
+  
+  - for loops are preferred for a set number of iteration 
 
   - so eg.:   
     *Print all the numbers from `1` to `10`*
