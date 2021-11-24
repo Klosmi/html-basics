@@ -1528,8 +1528,8 @@ the aim of looping is to repeat some functionality.
 - loops allow us to repeat code
 - there are several types of loops:
   - [for](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#for-loop)
-    - [looping arrays]()
-    - [nested loops]()
+    - [looping arrays](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#looping-arrays)
+    - [nested loops](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#nested-loops)
   - [while]()
   - for ... of
   - for ... in
@@ -1664,8 +1664,6 @@ we are talking about nested loop, when __a loop is inside of another loop__
 - every iteration of the outer loop, the inner loop is going to have its own full cycle, as many times as the outer loop runs.   
 If outer loop has 3, the inner loop runs 3 times its own full cycle.
 
-cycle.
-
 - eg.:
   ```
   let greeting = 'Hi';
@@ -1749,5 +1747,10 @@ cycle.
     //    Kevin     - [j]
     //    Wilma     - [j] 
     ```
+    
+<br>
+
+## [While loop]()
+
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
