@@ -1786,7 +1786,37 @@ If outer loop has 3, the inner loop runs 3 times its own full cycle.
       guess = print("The password is incorrect, try again")
     }
     console.log("Your password is correct")      // it only runs, when the user entered "PassworD" correctly.
-      ```
+    ```
+    
+    <br>
+
+  - what is the [__`break`__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break) statement?    
+    - the `break` terminates the current loop, stops the execution of the current loop immediately.   Then code just resumes __running after the loop__.
+
+    - eg.:   
+        *The program would go and print out numbers until reaches 100, but the break stop at 50.*
+        ```
+       if (let i = 0; i < 100; i++) {
+          console.log(i);
+          if (i === 50) break;
+        }
+        ```
+
+    - eg.:   
+        *The program is always true, until there is a break (so infinite loop until breaks).*   
+        *So, here, it repeats the user's input, until the user writes quit, which makes running the `break` and the program stops.*
+        ```
+        let input = prompt("Write here:" );
+
+        while (true) {
+          input = prompt(input);
+          if(input === "quit") {
+            break;
+          }
+        } 
+
+        console.log("You quit the program.")
+        ```     
 
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
