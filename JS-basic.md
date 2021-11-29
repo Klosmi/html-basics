@@ -1532,7 +1532,7 @@ the aim of looping is to repeat some functionality.
     - [nested loops](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#nested-loops)
   - __[while](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#while-loop)__
   - __[for... of](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#for--of)__
-  - __[for... in]()__
+  - __[for... in](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#for--in)__
   - __[Object methods]()__: [Object.keys()]() • [Object.values()]() • [Object.entries()]()
 
 ## [for loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
