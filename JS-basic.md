@@ -1623,6 +1623,9 @@ __for loop__ expression is this:
 
 <br>
 
+[👆go up to Loops](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-loops-)
+
+
 ### [looping arrays](https://www.codecademy.com/courses/introduction-to-javascript/lessons/loops/exercises/for-loops-with-arrays)
 It is basically iterating over an array.
 We use a for loop to create a number, which can be used to refer an element's index in the array.
@@ -1661,6 +1664,10 @@ We use a for loop to create a number, which can be used to refer an element's in
     //  1            'hotdog' 
     //  0            'hamburger'
     ```
+
+<br>
+
+[👆go up to Loops](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-loops-)
 
 ### [nested loops](https://www.codecademy.com/courses/introduction-to-javascript/lessons/loops/exercises/for-loops-iii)   
 we are talking about nested loop, when __a loop is inside of another loop__
@@ -1754,7 +1761,7 @@ If outer loop has 3, the inner loop runs 3 times its own full cycle.
     
 <br>
 
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Loops](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-loops-)
 
 <br>
 
@@ -1828,7 +1835,9 @@ If outer loop has 3, the inner loop runs 3 times its own full cycle.
         if (i === 100) break;
       }
       ```
-<br>
+<br> 
+
+[👆go up to Loops](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-loops-)
 
 ## [for...  of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
 iterates over arrays and other iterable objects. 
@@ -1883,6 +1892,9 @@ iterates over arrays and other iterable objects.
 
 - with `for...of`__ you __can't__ iterate over a __{ key-value } pair__, it gives an error.
 
+<br>
+
+[👆go up to Loops](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-loops-)
 
 ## [for...  in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
 iterates __over__ an object, so all enumerable properties of an object that are keyed by strings.
@@ -1916,6 +1928,8 @@ iterates __over__ an object, so all enumerable properties of an object that are 
     ```
   
 <br>
+
+[👆go up to Loops](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-loops-)
 
 ## __special Obejct methods__:
   ### __[`Object.keys()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)__
@@ -1968,6 +1982,10 @@ So this method gives the values of a key-value pairs.
     // Array [ "a", "somestring" ]
     // Array [ "b", 42 ]
     ```
+
+<br>
+
+[👆go up to Loops](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-loops-)
 
 ### __using `Object.something()`methods with `for...of`__
 
