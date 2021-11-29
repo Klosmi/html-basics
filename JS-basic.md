@@ -1527,12 +1527,13 @@ __The order:__
 the aim of looping is to repeat some functionality.
 - loops allow us to repeat code
 - there are several types of loops:
-  - [for](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#for-loop)
+  - __[for](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#for-loop)__
     - [looping arrays](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#looping-arrays)
     - [nested loops](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#nested-loops)
-  - [while](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#while-loop)
-  - for ... of
-  - for ... in
+  - __[while](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#while-loop)__
+  - __[for ... of]()__
+  - __[for ... in]()__
+  - __[Object methods[()__: [Object.keys()]() • [Object.values()]() • [Object.entries()]()
 
 ## [for loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
    
@@ -1788,7 +1789,8 @@ If outer loop has 3, the inner loop runs 3 times its own full cycle.
     console.log("Your password is correct")      // it only runs, when the user entered "PassworD" correctly.
     ```
     
-    <br>
+
+  <br>
 
   - what is the [__`break`__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break) statement?    
     - the `break` terminates the current loop, stops the execution of the current loop immediately.   Then code just resumes __running after the loop__.
@@ -1802,7 +1804,7 @@ If outer loop has 3, the inner loop runs 3 times its own full cycle.
         }
         ```
 
-     - eg.:   
+    - eg.:   
         *The program is always true, until there is a break (so infinite loop until breaks).*   
         *So, here, it repeats the user's input, until the user writes quit, which makes running the `break` and the program stops.*
         ```
@@ -1818,14 +1820,175 @@ If outer loop has 3, the inner loop runs 3 times its own full cycle.
         console.log("You quit the program.")
         ```     
     - eg.:   
-      *with for loop, it should print out numbers until 100, but because of the `break === 50` it stop printing out numbers at 50*
+      *with for loop*
       ```
-      for ( let i = 0; i <= 100; i++ ) {
+      for ( let i = 0; i < 1000; i++ ) {
         console.log(i);
-        if (i === 50) break;
+        if (i === 100) break;
       }
       ```
-      
+<br>
 
+## [for...  of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
+iterates over arrays and other iterable objects. 
+
+- it is a shorter, newer and easier way to iterate than with for loop.
+
+- eg.:   
+  *for... of*
+  ```
+  const array1 = ['a', 'b', 'c'];
+
+  for (const element of array1) {
+      console.log(element);
+  }
+
+    //  "a"
+    //  "b"
+    //  "c"
+  ```
+
+  *with for loop takes more typing*
+  ```
+  for (let i = 0; i < array1.length; i++) {
+    console.log(array1[i]);
+  }
+
+  //  "a"
+  //  "b"
+  //  "c"
+  ```
+  *nested arrays*
+  ```
+  const nestedArray = [
+    ['a', 'b', 'c'],
+    ['A', 'B', 'C']
+  ];
+
+  for (let row of nestedArray) {
+    for (let letter of row) {
+      console.log(letter);
+    }
+  }
+  //  "a"
+  //  "b"
+  //  "c"
+  //  "A"
+  //  "B"
+  //  "C"
+  ```
+
+- when you do need an __index__ it is better to use a for loop❗️ O
+
+- with `for...of`__ you __can't__ iterate over a __{ key-value } pair__, it gives an error.
+
+
+## [for...  in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
+iterates __over__ an object, so all enumerable properties of an object that are keyed by strings.
+
+- it only gives us the key
+
+- eg.:
+    ```
+    const object = { a: 1, b: 2, c: 3 };
+
+    for (const property in object) {
+      console.log(property);
+    }
+    // it only gives us the key
+    // "a"
+    // "b"
+    // "c"
+    ```
+    *to get the value*
+    ```
+    const object = { a: 1, b: 2, c: 3 };
+
+    for (const property in object) {
+      console.log(`${property}  : ${object[property]}`);
+    }
+
+    // key : value
+    // "a : 1"
+    // "b : 2"
+    // "c : 3"
+    ```
+  
+<br>
+
+## __special Obejct methods__:
+  ### __[`Object.keys()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)__
+  __method__ returns an array of a given object's own enumerable property __names__, iterated in the same order that a normal loop would.   
+  So it give the key of key-value pairs.
+
+  - eg.:
+    ```
+    const object = {
+      a: 'somestring',
+      b: 42,
+      c: false
+    };
+
+    console.log(Object.keys(object));
+
+    // ["a", "b", "c"]
+    ```
+
+  ### __[`Object.values()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values)__
+__method__ returns an array of a given object's own enumerable property __values__, in the same order as that provided by a for...in loop.   
+So this method gives the values of a key-value pairs.
+
+- eg.:
+  ```
+  const object = {
+  a: 'somestring',
+  b: 42,
+  c: false
+  };
+
+  console.log(Object.values(object));
+
+  // ["somestring", "42", "false"]
+  ```
+
+  ### __[`Object.entries()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)__
+  method returns an array of a given object's own enumerable string-keyed property __[key, value]__ pairs.   
+  So it gives back the nested array's key-value pairs.
+
+ - eg.:
+    ```
+    const object = {
+    a: 'somestring',
+    b: 42
+    };
+
+    console.log(Object.entries(object));
+
+    // Array [ "a", "somestring" ]
+    // Array [ "b", 42 ]
+    ```
+
+### __using `Object.something()`methods with `for...of`__
+
+- eg.:
+  *to get the avaregae of the values*
+  ```
+  const dollars = {
+    a : 20,
+    b : 42,
+    c : 50,
+    d : 100 
+  }
+
+  let total = 0;
+  for (average of Object.values(dollars)){
+    total += average;
+  }
+  console.log(total / Object.values(dollars).length)
+
+  // result 53
+  // note, that {value-pairs} objects don't have length, not like [arrays].
+
+  ```
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
