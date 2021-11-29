@@ -1802,7 +1802,7 @@ If outer loop has 3, the inner loop runs 3 times its own full cycle.
         }
         ```
 
-    - eg.:   
+     - eg.:   
         *The program is always true, until there is a break (so infinite loop until breaks).*   
         *So, here, it repeats the user's input, until the user writes quit, which makes running the `break` and the program stops.*
         ```
@@ -1817,6 +1817,15 @@ If outer loop has 3, the inner loop runs 3 times its own full cycle.
 
         console.log("You quit the program.")
         ```     
+    - eg.:   
+      *with for loop*
+      ```
+      for ( let i = 0; i < 1000; i++ ) {
+        console.log(i);
+        if (i === 100) break;
+      }
+      ```
+      
 
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
