@@ -1818,11 +1818,11 @@ If outer loop has 3, the inner loop runs 3 times its own full cycle.
         console.log("You quit the program.")
         ```     
     - eg.:   
-      *with for loop*
+      *with for loop, it should print out numbers until 100, but because of the `break === 50` it stop printing out numbers at 50*
       ```
-      for ( let i = 0; i < 1000; i++ ) {
+      for ( let i = 0; i < 100; i++ ) {
         console.log(i);
-        if (i === 100) break;
+        if (i === 50) break;
       }
       ```
       
