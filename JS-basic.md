@@ -1988,7 +1988,7 @@ So this method gives the values of a key-value pairs.
 
 #### __using `Object.something()`methods with `for...of`__
 
-- eg.:
+- eg.:    
   *to get the average of the values*
   ```
   const dollars = {
