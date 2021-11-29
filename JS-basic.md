@@ -1533,8 +1533,8 @@ the aim of looping is to repeat some functionality.
   - __[while](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#while-loop)__
   - __[for... of](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#for--of)__
   - __[for... in](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#for--in)__
-  - __[Object methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#special-obejct-methods)__: 
-      [Object.keys()]() • [Object.values()]() • [Object.entries()]()
+  - __[Object methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#special-obejct-methods)__:    
+      [Object.keys()](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#objectkeys) • [Object.values()](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#objectvaues) • [Object.entries()](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#objectentries)
 
 ## [for loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
    
