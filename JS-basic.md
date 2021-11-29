@@ -1986,7 +1986,7 @@ So this method gives the values of a key-value pairs.
 <br>
 
 
-### __using `Object.something()`methods with `for...of`__
+#### __using `Object.something()`methods with `for...of`__
 
 - eg.:
   *to get the average of the values*
