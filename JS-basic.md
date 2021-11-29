@@ -1985,7 +1985,6 @@ So this method gives the values of a key-value pairs.
 
 <br>
 
-[👆go up to Loops](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-loops-)
 
 ### __using `Object.something()`methods with `for...of`__
 
@@ -2009,5 +2008,8 @@ So this method gives the values of a key-value pairs.
   // note, that {value-pairs} objects don't have length, not like [arrays].
 
   ```
+  
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Loops](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-loops-)
+  
 ---
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) 
