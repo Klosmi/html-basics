@@ -2024,6 +2024,10 @@ __Functions are reusable pieces of code__, chunks of code, they __have a name__ 
 
 - 2 steps: (1.) 🛠 __define__ and then (2.) ⏯ __call__ 
 
+- __[defining a function]()__
+- __[arguments]()__
+- __[return]()__
+
 <br>
 
 ## [Defining a function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#defining_functions) 
