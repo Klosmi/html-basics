@@ -2024,9 +2024,9 @@ __Functions are reusable pieces of code__, chunks of code, they __have a name__ 
 
 - 2 steps: (1.) 🛠 __define__ and then (2.) ⏯ __call__ 
 
-- __[defining a function](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#defining-a-function)__
-- __[arguments](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#arguments)__
-- __[return](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#return-)__
+- __[defining a function](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#defining-a-function)__   
+  __[arguments](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#arguments)__   
+  __[return](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#return-)__
 
 <br>
 
