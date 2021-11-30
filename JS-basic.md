@@ -2011,5 +2011,234 @@ So this method gives the values of a key-value pairs.
   
 [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Loops](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-loops-)
   
+<br>
+
+# [JS: Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions) :   
+
+__Functions are reusable pieces of code__, chunks of code, they __have a name__ to them and __we can use them execute them at a later point__.   
+*(Not all functions have names)*
+
+- reusable chunks of code, so we can use a function any time once we defined a function.
+
+- modular:  we can pass in some sort of input that will impact the output.
+
+- 2 steps: (1.) 🛠 __define__ and then (2.) ⏯ __call__ 
+
+<br>
+
+## [Defining a function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#defining_functions) 
+
+**Define:**
+```
+function functionName() {  
+  
+  // the code does something  
+
+}
+```
+
+**Execute:**
+```
+functionName(); 
+```
+
+<br>
+
+- eg.:   
+  *definung a function and then executing it*
+  ```
+  function greetingsLoudly() {
+    console.log("Hello!");
+    console.log("Bonjour!");
+    console.log("Bye!");
+  }
+
+  greetingsLoudly();
+
+  // "Hello!"
+  // "Bonjour!"
+  // "Bye!"
+  ```
+
+- *[hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting) allows functions to be safely used in code before they are declared.   
+  (Execute the function before you define it.)*
+
+- __every method is a function__
+
+<br>
+
+## [Arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)
+basically they are __INPUT to a function__.   
+
+```
+function functionName("PARAMETER") { 
+    do something 
+}
+
+functionName("ARGUMENT");
+```
+
+Terminology:
+
+- [Argument](https://developer.mozilla.org/en-US/docs/Glossary/Argument) is the value of the function. So, when you call the function, the value is called argument. 
+
+- [Parameter](https://developer.mozilla.org/en-US/docs/Glossary/Parameter) is when we call the function and we pass a value in.   
+So the parameter is just a placeholder (a variable) that we define to use inside of the function definition.
+
+```
+function example(parameter) {
+  console.log(parameter);
+}
+
+example("argument");
+```
+
+- eg.:
+  ```
+  function greet(name)  {
+    console.log(`Hello ${name}`);
+  }
+
+  greet("John Doe");
+
+  // "Hello John Doe"
+  ```
+
+- if an expected argument is not provided, it has a value "undefined"
+
+  - eg.:
+    *no argument passed in but expected*
+    ```
+    function greet(name)  {
+      console.log(`Hello ${name}`);
+    }
+
+    greet();
+
+    // "Hello undefined"
+    ```
+
+<br>
+
+- __Multiple arguments__ :    
+we can define functions that expect more than one argument.  
+  
+  - in this case we have to tell the function, how many arguemnts we'll use.
+  
+  - separate the paramteres & arguements by a __comma__.
+
+  - __order counts__:    
+  *(from left to right)* the first parameter gets the first argument, the second parameter gets the second argument, etc.
+
+  - they can be different types: one parameter is a string, the other is a boolean, etc.
+
+  - eg.:   
+    *multiple arguments*
+    ```
+    function greetings(firstName, lastName)  {
+      console.log(`Hello ${firstName} ${lastName}!`);
+    }
+
+    greetings("John", "Doe");
+
+    // "Hello John Doe!"
+    ```
+
+  - eg.:   
+    *multiple arguments with different types: string and number*
+    ```
+    function repeat(string, number)  {
+      let empty = "";
+      for(let i = 0; i < number; i++) {
+          empty += string                  //string + "" + string + "" + string ...etc.
+      };
+      console.log(empty);
+    }
+
+    repeat("Hello!", 3);
+
+    // Hello!Hello!Hello!
+    ```
+
+  - We can ignore arguments, buy not passing them in, because JavaScript doesn't care. __Until that argument is used in the code__. In this case the code that could cause an error.
+
+    - eg.:   
+      *ignored an argument that is in the parameter, but that argument is used → error*
+      ```
+      function repeat(string, number)  {
+        console.log(string, number);    // 2 arguments will needed
+    }
+
+    repeat("Hello!");                   //  we give 1 argument, instead of two!
+
+    // Uncaught ReferenceError: number is not defined!
+    ```
+  - eg.:   
+    *ignored an argument that is in the parameter, no error*
+    ```
+    function repeat(string, number)  {
+        console.log(string);          //  1 argument will do it
+    }
+
+    repeat("Hello!");
+
+    // "Hello!"                       // 1 paramater
+    // undefined                      //  the 2nd is undefined, but it's not an error message
+    ```
+<br>
+
+## [Return](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return) :
+  - We can store the output (values) of a function.
+
+
+- eg.:   
+  *with __RETURN__ we can __store__ variables!*
+  ```
+  function add(num1, num2) {
+    return mum1 + num2;
+  }
+
+  const total = add(2, 4);
+
+  // call total
+  // result: total gives 6!
+
+  ```
+- eg.:   
+  *__But__ we __can not store__ in a variable num1 and num2 without the __reutrn__*
+  ```
+  function add(num1, num2) {
+    console.log(mum1 + num2);
+  }
+
+  add(2, 4);
+
+  let total =  add(2, 4);
+  // call total  
+  // result:  total is undefined!!!
+ 
+  ```
+
+- The __return__ statement __stops the execution of a function__❗️❗️❗️   
+So the line which comes after the return will be never executed.
+  - eg.:   
+    *return stops the execution of a finction*
+    ```
+    function add(num1, num2) {
+      return num1 + num2;
+      console.log("Hello numbers!");      // this line will be never executed (unreachable code)
+    }
+
+    add(2, 4);
+
+    // only result is: 6
+    ```
+
+- We can only return a __single value__ (only one thing)!   
+*It can be an array `[1, 2, 3, 4]`, because it's a single value.*
+
+- *Built-in-functions return values, eg. `Math.random()` returns a vlue.*    
+*So you can store it in a variable. (`let x = Math.random()`)*
+
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) 
