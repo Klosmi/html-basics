@@ -2550,7 +2550,7 @@ are returning a function as a value from within a function.
   //returns a function:  
   // f () (num) { return num >= min && num <= max; }
 
-  //If I save between(min, max) into a variable:
+  //but if I save between(min, max) into a variable:
 
   const test = between(1, 10);        
 
