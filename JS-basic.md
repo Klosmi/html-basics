@@ -2575,7 +2575,7 @@ are returning a function as a value from within a function.
 
   // it translates to this:
   • test = return function(num) {
-  •     return num >= min && num <= max;
+  •     return num >= 1 && num <= 10;
   •   }
     
   // to call this inner function (now saved to the 'const test' variable, we need to pass 1 single argument, since this function accepts 1 single parameter:
