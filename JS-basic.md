@@ -2027,7 +2027,9 @@ __Functions are reusable pieces of code__, chunks of code, they __have a name__ 
 - __[defining a function](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#defining-a-function)__   
   __[arguments](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#arguments)__   
   __[return](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#return)__   
-  __[scope](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#scope-)__
+  __[scope](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#scope-)__   
+  __[function expressions]()__   
+  __[higher order functions]()__
 
 <br>
 
@@ -2389,6 +2391,53 @@ So basically it is the __visibility of the variable__.
 
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-functions-)
+
+<br>
+
+## [Function Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function) : 
+An other way of defining a function is that __storing a function in a variable__.
+
+- a function expression is this:
+  ```
+  const variable = function (x, y) {
+      return x + y;
+  }
+
+  variable(1, 2);      // 3
+  ```
+
+- eg.:   
+  *storing a function in a variable, it has no name. The variable has a name `const square`❗️*
+  ```
+  const square = function(num) {
+    return num + num;
+  }
+
+  square(10);         // 20
+  ```
+
+
+- a function statement
+  eg.:   
+  *a funcation statement, which has a name `add`❗️*
+  ```
+  function add(x, y) {
+    return x + y;
+  }
+
+  add(2+4);           // 6
+  ```
+
+- using a function expression is the same as using any other function (executing or naming is the same).
+
+- functions are values (in JavaSCript), meaning you can store them, you can pass them, etc.
+
+---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-functions-)
+
+<br>
+
 
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
