@@ -2302,7 +2302,7 @@ So basically it is the __visibility of the variable__.
   - usually in our functions we have our own internal variables.
 
 
- ### __[function scope](https://medium.com/nerd-for-tech/function-scope-block-scope-in-js-d29c8e7cd216)__:   
+ ### __[function scope](https://medium.com/nerd-for-tech/function-scope-block-scope-in-js-d29c8e7cd216)__   
   When a variable is declared inside a function, it is only accessible within that function and cannot be used outside that function.
 
   - eg.:   
