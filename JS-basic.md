@@ -2229,7 +2229,7 @@ we can define functions that expect more than one argument.
 - The __return__ statement __stops the execution of a function__❗️❗️❗️   
 So the line which comes after the return will be never executed.
   - eg.:   
-    *return stops the execution of a finction*
+    *return stops the execution of a function*
     ```
     function add(num1, num2) {
       return num1 + num2;
@@ -2530,7 +2530,7 @@ are returning a function as a value from within a function.
 
 - eg.:   
   *An other example, where our function generates a function (based on an input)*   
-  *This finction can show if the number I give, is between min and max (eg. 1 and 10).*
+  *This function can show if the number I give, is between min and max (eg. 1 and 10).*
 
   *Short explanation:*    
   *we're using the between() function, that accepts 2 parameters (min, max), but it returns another function, that accepts 1 single parameter (num).*   
@@ -2548,7 +2548,7 @@ are returning a function as a value from within a function.
   //returns a function:  
   // f () (num) { return num >= min && num <= max; }
 
-  //If I save between() function into a variable:
+  //If I save between(min, max) into a variable:
 
   const test = between(1, 10);        
 
