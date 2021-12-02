@@ -2245,4 +2245,150 @@ So the line which comes after the return will be never executed.
 *So you can store it in a variable. (`let x = Math.random()`)*
 
 ---
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) 
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-loops-)
+
+
+<br>
+
+# [JS: Scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope) : 
+
+A __scope__ is a location where a variable is defined, and it specifies where we have access to that variable.   
+So basically it is the __visibility of the variable__.
+
+ - __where we define a variable__ in JavaScript __impacts where we have access to it__.
+
+ - eg.:
+   *to see where the the variable `totalMails` deifned*   
+   *defined with in the function*
+   ```
+   function receivedMails() {
+      let totalMails = 10;
+      console.log(totalMails);
+   }
+
+   receivedMails();
+
+   // result: 10
+   ```
+   *defined outside of the function - ReferenceError  - because the __variable__ exists in the function, it is __scoped to that function__. So we don't have acces to it. It is like a little bubble.*
+   ```
+   function receivedMails() {
+      let totalMails = 10;
+   }
+      console.log(totalMails);
+
+   receivedMails();
+
+   // result: ReferenceError: totalMails is not defined!
+   ```
+   /*using a global variable: outside of the function, and we update inside of the function, that makes a new variable. First we get zero and then six.*    
+   ```
+   let totalMails = 0;
+
+   function receivedMails() {
+    totalMails = 10;
+   }
+    
+   console.log(totalMails);
+   receivedMails();
+   console.log(totalMails);
+
+   // result: 0 
+   // result: 10
+   ```
+  -  not very common practice to update a __global variable__  within a function.
+
+  - usually in our functions we have our own internal variables.
+
+
+ ## __[function scope](https://medium.com/nerd-for-tech/function-scope-block-scope-in-js-d29c8e7cd216)__:   
+  When a variable is declared inside a function, it is only accessible within that function and cannot be used outside that function.
+
+  - eg.:   
+    *function scope - the __variable__ (greeting) __is scoped to the__ (sayHello) __function__*
+
+      ```
+      function sayHello(){
+        let greeting =  "Hello!";
+
+        greeting                  // "Hello!"
+      }
+
+      greeting;                   // NOT DEFINED! - outside of the function
+
+      ```
+  
+  - if there is a variable defined with the same name in the function, then we will reference that variable first.
+    - eg.:
+      ```
+      let food = "pizza";
+
+      function dinner() {
+        let food = "quiche";
+        console.log(food)
+      }
+
+      console.log(food)         // "pizza" - outside of the function
+      dinner();                 // "quiche" - inside of the function, redefines the "let food" variable. 
+      ```
+
+<br>
+
+ ## __[block scope](https://medium.com/nerd-for-tech/function-scope-block-scope-in-js-d29c8e7cd216)__   
+  A variable when declared inside of a conditional or inside a loop, they are accessible within that condition or loop.   
+  
+  -  The variables declared inside the curly braces are called as within block scope.
+
+  -  block refers to almost any time we see curly braces except for a function. 
+
+  - block includes conditionals and loops.
+
+  - eg.:   
+    *variable declared outside and another inside of a if conditional*
+    ```
+    let diameter = 10;
+
+    if (diameter > 2) {
+      const square = 5;
+      let str  = "Hello!";
+    }
+
+    console.log(diameter);        // 10
+    console.log(str);             // Reference Error: str is NOT DEFINED!
+    ```
+
+  - the before, when `var` was used. The `var` variables are scoped to functions, but they are not scoped too blocks.
+
+  - using `let` or `const` the variables are block scoped *(one of the main reasons that `let` and `const` were introduced)*.
+
+<br>
+
+## __[lexical scoping](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures#lexical_scoping)__
+  An inner function __nested__ inside of a parent function, and the inner function has access to the variables defined in the scope of that outer function.
+
+  - eg.:   
+    *lexical scoping: nested function*
+    ```
+    function outer() {
+      let hero = "Spiderman";
+
+      function inner() {
+        let callHero = `Hello ${hero}!`
+        console.log(callHero);
+      }
+      inner();                   // executing the innerfunction inside of the outer function
+    }
+
+
+    outer();                     // executing the outer functiom
+
+
+    // result: "Hello Spiderman!"
+    ```
+
+---
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-loops-)
+
+---
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+
