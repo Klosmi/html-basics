@@ -2525,7 +2525,8 @@ are returning a function as a value from within a function.
   // "Hello!"
   ```
 
-- a __[factory function](https://www.codecademy.com/courses/introduction-to-javascript/lessons/advanced-objects/exercises/factory-functions)__: is a function that make a function for me.
+- a __[factory function](https://www.codecademy.com/courses/introduction-to-javascript/lessons/advanced-objects/exercises/factory-functions)__: is a function that makes a function for me.  
+ A __factory function is a function that returns an object and can be reused to make multiple object instances__. Factory functions can also have parameters allowing us to customize the object that gets returned.
 
 - eg.:   
   *An other example, where our function generates a function (based on an input)*   
