@@ -2488,6 +2488,102 @@ are functions that operate on, work with other functions.
 
 <br>
 
+## [Returning Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return#returning_a_function) : 
+are returning a function as a value from within a function.
+
+- eg.:   
+  *this function creates random messages.*   
+  *During the execution, I capture the inner function (wich is a return function) into a variable.*
+  ```
+  function sayHi(){
+    const rand = Math.random();
+      if (rand > 0.5) {
+          return function () {
+              console.log("Hello!");
+          }
+      } else {
+          return function () {
+              console.log("Good day!");
+          }
+      }
+  }
+
+  sayHi();            // just calling the function, I don't call the inner function
+
+  // result is a function, just the return value: 
+  // f () { console.log("Good day!"); } or { console.log("Hello!"); }
+  ```
+  *if I want to use the return value, I have to capture the return value into a variable*
+  ```
+  const greetings = sayHi();    // now the greeting variable holds a function...
+
+  greetings();                   //... and I can execute that function
+  greetings();
+  greetings();
+
+  // "Good day!"
+  // "Hello!"
+  // "Hello!"
+  ```
+
+- a __[factory function](https://www.codecademy.com/courses/introduction-to-javascript/lessons/advanced-objects/exercises/factory-functions)__: is a function that make a function for me.
+
+- eg.:   
+  *An other example, where our function generates a function (based on an input)*   
+  *This finction can show if the number I give, is between min and max (eg. 1 and 10).*
+
+  *Short explanation:*    
+  *we're using the between() function, that accepts 2 parameters (min, max), but it returns another function, that accepts 1 single parameter (num).*   
+  *When we call between(), it is returned the following:*    
+  *`return function (num) { return num >= min && num <= max; }`* *This function accepts a single parameter(num)*
+  ```
+  function between(min, max) {
+    return function(num) {
+      return num >= min && num <= max;
+    }
+  }
+
+  between(1, 10);
+
+  //returns a function:  
+  // f () (num) { return num >= min && num <= max; }
+
+  //If I save between() function into a variable:
+
+  const test = between(1, 10);        
+
+  test(5); 
+  // true
+
+  test(30);
+  // false
+  ```
+
+  *Detailed, step-by-step explanation:*
+  ```
+  • function between(min, max) {
+  •   return function(num) {
+  •     return num >= min && num <= max;
+  •   }
+  • }
+
+  // we save the between(min, max) into a variable:
+  • const test = between(1, 10);
+  
+
+  // it translates to this:
+  • test = return function(num) {
+  •     return num >= min && num <= max;
+  •   }
+    
+  // to call this inner function (now saved to the 'const test' variable, we need to pass 1 single argument, since this function accepts 1 single parameter:
+  • test(5)
+
+  // Another way to have the same calculation is to call both functions at the same time, using multiple parentheses pairs, each pair to one function:
+  • test = between(1, 10)(5);
+  ```
+
+
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
 
