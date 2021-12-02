@@ -2027,7 +2027,7 @@ __Functions are reusable pieces of code__, chunks of code, they __have a name__ 
 - __[defining a function](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#defining-a-function)__   
   __[arguments](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#arguments)__   
   __[return](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#return)__   
-  __[scope](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-scope-)__
+  __[scope](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#scope-)__
 
 <br>
 
@@ -2251,7 +2251,7 @@ So the line which comes after the return will be never executed.
 
 <br>
 
-## [JS: Scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope) : 
+## [Scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope) : 
 
 A __scope__ is a location where a variable is defined, and it specifies where we have access to that variable.   
 So basically it is the __visibility of the variable__.
@@ -2302,7 +2302,7 @@ So basically it is the __visibility of the variable__.
   - usually in our functions we have our own internal variables.
 
 
- ### __[function scope](https://medium.com/nerd-for-tech/function-scope-block-scope-in-js-d29c8e7cd216)__   
+ ### __[Function Scope](https://medium.com/nerd-for-tech/function-scope-block-scope-in-js-d29c8e7cd216)__   
   When a variable is declared inside a function, it is only accessible within that function and cannot be used outside that function.
 
   - eg.:   
@@ -2335,7 +2335,7 @@ So basically it is the __visibility of the variable__.
 
 <br>
 
- ### __[block scope](https://medium.com/nerd-for-tech/function-scope-block-scope-in-js-d29c8e7cd216)__   
+ ### __[Block Scope](https://medium.com/nerd-for-tech/function-scope-block-scope-in-js-d29c8e7cd216)__   
   A variable when declared inside of a conditional or inside a loop, they are accessible within that condition or loop.   
   
   -  The variables declared inside the curly braces are called as within block scope.
@@ -2364,7 +2364,7 @@ So basically it is the __visibility of the variable__.
 
 <br>
 
-### __[lexical scoping](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures#lexical_scoping)__
+### __[Lexical Scoping](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures#lexical_scoping)__
   An inner function __nested__ inside of a parent function, and the inner function has access to the variables defined in the scope of that outer function.
 
   - eg.:   
