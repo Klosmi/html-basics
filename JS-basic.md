@@ -2493,7 +2493,6 @@ are returning a function as a value from within a function.
 
 - eg.:   
   *this function creates random messages.*   
-  *During the execution, I capture the inner function (wich is a return function) into a variable.*
   ```
   function sayHi(){
     const rand = Math.random();
