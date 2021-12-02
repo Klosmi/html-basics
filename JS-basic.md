@@ -2246,7 +2246,7 @@ So the line which comes after the return will be never executed.
 *So you can store it in a variable. (`let x = Math.random()`)*
 
 ---
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-loops-)
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-functions-)
 
 
 <br>
@@ -2388,7 +2388,7 @@ So basically it is the __visibility of the variable__.
     ```
 
 ---
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-loops-)
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-functions-)
 
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
