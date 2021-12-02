@@ -2438,6 +2438,55 @@ An other way of defining a function is that __storing a function in a variable__
 
 <br>
 
+## [Higher Order Functions](https://medium.com/javascript-scene/higher-order-functions-composing-software-5365cf2cbe99) : 
+are functions that operate on, work with other functions.
+
+- they can accept other __functions as arguments__, and do something with them.
+- they can __return a function__.
+
+<br> 
+
+- 💡 remember: a functions is just a value.
+
+<br>
+
+- eg.:   
+  *__functions as arguments__. So, a function is passed in (here I named `func`).*  
+  *(you can call `func` anything else).*
+  ```
+  function waving(func) {
+    func();
+    func();
+    func();
+  }
+
+  function greeting() {
+    console.log("Hello!");
+  }
+
+  waving(greeting);         // pass a function as an argument!
+
+  // "Hello!"
+  // "Hello!"
+  // "Hello!"
+  ```
+  
+  *If I try to pass a number or a string, it gives an __error__, because it tries to execute it.*
+  ```
+  function waving(func) {
+    func();
+    func();
+    func();
+  }
+
+  waving(10);           // TypeError: func is not a function!
+  ```
+
+---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-functions-)
+
+<br>
 
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
