@@ -2230,6 +2230,26 @@ we can define functions that expect more than one argument.
   // but only calling "total" we get undefined!!!
   ```
 
+- To write functions that have an __output__ (that's not just console.log()), but something that we can save, we need to use the __return__ key word❗️❗️❗️ 
+  - eg.:
+    *If we save the Math.random() function into a varibale (rand), it captures the output of that function.*
+    ```
+    let rand = Math.random();
+    
+    rand = 0.9936277568240952;
+    ```
+    *If we write a function and we want to capture its output, that's when we have to use __return__*
+    ```
+    function something(x, y) {
+      return x + y;
+    }
+    
+    let variable = something(2,4);
+    
+    let;
+    // 6 - because variable now holds that value, thank to the return key wor din the function.
+    ```
+
 - The __return__ statement __stops the execution of a function__ ❗️❗️❗️   
 So the line which comes after the return will be never executed.
   - eg.:   
@@ -2240,9 +2260,9 @@ So the line which comes after the return will be never executed.
       console.log("Hello numbers!");      // this line will be never executed (unreachable code)
     }
 
-    add(2, 4);
+    add(10, 20);
 
-    // only result is: 6
+    // only result is: 30
     ```
 
 - We can only return a __single value__ (only one thing)!   
