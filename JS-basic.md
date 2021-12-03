@@ -2182,18 +2182,18 @@ we can define functions that expect more than one argument.
 
       // Uncaught ReferenceError: number is not defined!
       ```
-  - eg.:   
-    *ignored an argument that is in the parameter, no error*
-    ```
-    function repeat(string, number)  {
-        console.log(string);          //  1 argument will do it
-    }
+    - eg.:   
+      *ignored an argument that is in the parameter, no error*
+      ```
+      function repeat(string, number)  {
+          console.log(string);          //  1 argument will do it
+      }
 
-    repeat("Hello!");
+      repeat("Hello!");
 
-    // "Hello!"                       // 1 paramater
-    // undefined                      //  the 2nd is undefined, but it's not an error message
-    ```
+      // "Hello!"                       // 1 paramater
+      // undefined                      //  the 2nd is undefined, but it's not an error message
+      ```
 <br>
 
 ## [Return](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return)
