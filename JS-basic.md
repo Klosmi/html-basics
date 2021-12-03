@@ -2176,12 +2176,12 @@ we can define functions that expect more than one argument.
       ```
       function repeat(string, number)  {
         console.log(string, number);    // 2 arguments will needed
-    }
+      }
 
-    repeat("Hello!");                   //  we give 1 argument, instead of two!
+      repeat("Hello!");                 //  we give 1 argument, instead of two!
 
-    // Uncaught ReferenceError: number is not defined!
-    ```
+      // Uncaught ReferenceError: number is not defined!
+      ```
   - eg.:   
     *ignored an argument that is in the parameter, no error*
     ```
