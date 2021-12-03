@@ -2217,7 +2217,7 @@ we can define functions that expect more than one argument.
   *__But__ we __can not store__ in a variable num1 and num2 without the __reutrn__*
   ```
   function add(num1, num2) {
-    console.log(mum1 + num2);
+    console.log(num1 + num2);
   }
 
   add(2, 4);
