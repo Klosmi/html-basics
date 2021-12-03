@@ -2539,6 +2539,8 @@ they are returning a function as a value from within a function.
   *if I want to use the return value, I have to capture the function which contains the return value into a variable*
   *The outer function returns one of the 2 inner functions, but the inner function is never called to be executed.*   
   *So to make the return function executed, we have to reach them. We can call the inner function in the way that applying the parenthesis after `greetings` (so it become __`greetings()`__ )*
+  *If we want to call the returned functions directly we can do `sayHi()()`*
+
   ```
   const greetings = sayHi();    // now the greeting variable holds a function...
 
