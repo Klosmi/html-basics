@@ -2600,7 +2600,7 @@ they are returning a function as a value from within a function.
   •     return num >= 1 && num <= 10;
   •   }
     
-  // to call this inner function (now saved to the 'const test' variable, we need to pass 1 single argument, since this function accepts 1 single parameter:
+  // to call this inner function (now saved to the 'const test' variable, we need to pass 1 single argument, in the paranthesis right after the variable's name:
   • test(5)
 
   // Another way to have the same calculation is to call both functions at the same time, using multiple parentheses pairs, each pair to one function:
