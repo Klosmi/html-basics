@@ -2513,7 +2513,7 @@ are functions that operate on, work with other functions.
 <br>
 
 ## [Returning Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return#returning_a_function) : 
-are returning a function as a value from within a function.
+they are returning a function as a value from within a function.
 
 - eg.:   
   *this function creates random messages.*   
