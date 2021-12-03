@@ -2470,7 +2470,7 @@ are functions that operate on, work with other functions.
 
 <br> 
 
-- 💡 remember: a functions is just a value.
+- 💡 remember: a function is just a value.
 
 <br>
 
