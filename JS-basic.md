@@ -2247,7 +2247,7 @@ we can define functions that expect more than one argument.
     let variable = something(2,4);
     
     let;
-    // 6 - because variable now holds that value, thank to the return key wor din the function.
+    // 6 - because variable now holds that value, thanks to the return key word in the function.
     ```
 
 - The __return__ statement __stops the execution of a function__ ❗️❗️❗️   
