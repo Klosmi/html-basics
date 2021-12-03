@@ -2230,7 +2230,7 @@ we can define functions that expect more than one argument.
   // but only calling "total" we get undefined!!!
   ```
 
-- The __return__ statement __stops the execution of a function__❗️❗️❗️   
+- The __return__ statement __stops the execution of a function__ ❗️❗️❗️   
 So the line which comes after the return will be never executed.
   - eg.:   
     *return stops the execution of a function*
