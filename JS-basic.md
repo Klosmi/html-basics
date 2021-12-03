@@ -2054,7 +2054,7 @@ functionName();
 <br>
 
 - eg.:   
-  *definung a function and then executing it*
+  *defining a function and then executing it*
   ```
   function greetingsLoudly() {
     console.log("Hello!");
