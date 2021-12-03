@@ -2204,7 +2204,7 @@ we can define functions that expect more than one argument.
   *with __RETURN__ we can __store__ variables!*
   ```
   function add(num1, num2) {
-    return mum1 + num2;
+    return num1 + num2;
   }
 
   const total = add(2, 4);
