@@ -9,10 +9,10 @@
 <br>
 
 - [**number**](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#number)
-- [**boolean**](https://github.com/Klosmi/html-basics/blob/master/JS-primitiveTypes.md#boolean-)
-- [**string**](https://github.com/Klosmi/html-basics/blob/master/JS-primitiveTypes.md#string-)
-- [**null**](https://github.com/Klosmi/html-basics/blob/master/JS-primitiveTypes.md#null-)
-- [**undefined**](https://github.com/Klosmi/html-basics/blob/master/JS-primitiveTypes.md#undefined)
+- [**boolean**](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#boolean-)
+- [**string**](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#string-)
+- [**null**](https://github.com/Klosmi/html-basics/blob/master/JS-basic.mdd#null-)
+- [**undefined**](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#undefined)
 - symbol
 - BigInt
 
