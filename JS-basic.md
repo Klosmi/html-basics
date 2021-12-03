@@ -2221,11 +2221,13 @@ we can define functions that expect more than one argument.
   }
 
   add(2, 4);
+  // 6
 
   let total =  add(2, 4);
-  // call total  
-  // result:  total is undefined!!!
- 
+  // 6  
+  
+  total;
+  // but only calling "total" we get undefined!!!
   ```
 
 - The __return__ statement __stops the execution of a function__❗️❗️❗️   
