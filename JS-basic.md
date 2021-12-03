@@ -241,12 +241,12 @@ __The difference between null and undifined__:
  **We only use those keywords when first declaring the variable (the first time we tell javaScript it exists).**     
  *For example:      
       <br>
-      `let numberOfEggs = 12;`. 
-  Then if we ever want to change the value of a variable, we simply reference the variable name WITHOUT let/const/var like:    
+      `let numberOfEggs = 12;`    
+  Then if we want to change the value of a variable, we reference the variable name WITHOUT let/const/var like:    
   <br>  
-   `numberOfEggs = 10;`
-  Now, it seems like you might be asking about defining a variable without let/const/var at all.  This is an option in JavaScript, but you should never do it.  JS will treat your variable as a global variable, which is something you want to avoid.  It's just a bad idea and you won't see anyone do this in the real world.*
-
+   `numberOfEggs = 10;`   
+  It is possible defining a variable without let/const/var in JavaScript, but you should never do it. JS will treat your variable as a global variable*.  
+  
 - **basic syntax**:   
   -  #### [**let**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)  :    
     let statement declares a block-scoped local variable, optionally initializing it to a value.
