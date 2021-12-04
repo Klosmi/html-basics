@@ -2536,15 +2536,11 @@ they are returning a function as a value from within a function.
   // result is a function, just the return value: 
   // f () { console.log("Good day!"); } or { console.log("Hello!"); }
   ```
-  *if I want to use the return value, I have to capture the function which contains the return value into a variable*
-  *The outer function returns one of the 2 inner functions, but the inner function is never called to be executed.*   
-  *So to make the return function executed, we have to reach them. We can call the inner function in the way that applying the parenthesis after `greetings` (so it become __`greetings()`__ )*
-  *If we want to call the returned functions directly we can do `sayHi()()`*
-
+  *If I want __to use the return value, I have to capture the function which contains the return value into a variable__.*   
   ```
   const greetings = sayHi();    // now the greeting variable holds a function...
 
-  greetings();                   //... and I can execute that function
+  greetings();                   //... and I can execute that function.
   greetings();
   greetings();
 
@@ -2552,31 +2548,48 @@ they are returning a function as a value from within a function.
   // "Hello!"
   // "Hello!"
   ```
+  *Let see what happened in the code above:*
+  1. *The outer function returns one of the 2 inner functions, but the inner function is never called to be executed.*   
+  2. *So __to make the return function executed, we have to reach them__: by __calling the inner function__ in the way that __applying the parenthesis `()` after the variable__ `greetings` (so it becomes `greetings()` )*
+  3. *There are 2 ways:*    
+      *I.*     
+      *save the result of the higher-order function to a variable, and then call that variable:  
+      `sayHi()()`*  
+      *II.*    
+      *`mystery = myMysteryFunc()`*      
+        *`mystery()`*
 
-- a __[factory function](https://www.codecademy.com/courses/introduction-to-javascript/lessons/advanced-objects/exercises/factory-functions)__: is a function that makes a function for me.  
- A __factory function is a function that returns an object and can be reused to make multiple object instances__. Factory functions can also have parameters allowing us to customize the object that gets returned.
+- So, we can say: a __higher-order function returns another function__, but if that returned function isn't called yet, we still have to do it manually, by __adding the parentheses `()`__ (it's how we immediately call a function)❗️
+
+<br>
+
+- A __[factory function](https://www.codecademy.com/courses/introduction-to-javascript/lessons/advanced-objects/exercises/factory-functions)__: is a function that __returns an object and can be reused to make multiple object instances__.   
+Factory functions can also have parameters allowing us to customize the object that gets returned.
 
 - eg.:   
-  *An other example, where our function generates a function (based on an input)*   
-  *This function can show if the number I give, is between min and max (eg. 1 and 10).*
+  *An other example, where our __function generates a function__ (based on an input)*   
+  *This function can show if the number I give is between `min` and `max` (eg. `5` is between `1` and `10`).*   
 
   *Short explanation:*    
-  *we're using the between() function, that accepts 2 parameters (min, max), but it returns another function, that accepts 1 single parameter (num).*   
-  *When we call between(), it is returned the following:*    
-  *`return function (num) { return num >= min && num <= max; }`* *This function accepts a single parameter(num)*
+  1. *we're using the `between()` function, that accepts 2 parameters `(min, max)`, but it returns another function, that accepts `1` single parameter `(num)`.*   
+  2. *When we call `between()`, it is returned the following:*    
+  *`return function (num) {`    
+    `return num > min && num < max;`     
+    `}`*    
+  *This function accepts a single parameter`(num)`*
   ```
   function between(min, max) {
     return function(num) {
-      return num >= min && num <= max;
+      return num > min && num < max;
     }
   }
 
   between(1, 10);
 
-  //returns a function:  
+  // returns a function:  
   // f () (num) { return num >= min && num <= max; }
 
-  //but if I save between(min, max) into a variable:
+  // but if I save between(min, max) into a variable:
 
   const test = between(1, 10);        
 
@@ -2591,23 +2604,24 @@ they are returning a function as a value from within a function.
   ```
   • function between(min, max) {
   •   return function(num) {
-  •     return num >= min && num <= max;
+  •     return num > min && num < max;
   •   }
   • }
 
-  // we save the between(min, max) into a variable:
+    // we save the between(min, max) into a variable:
   • const test = between(1, 10);
   
 
-  // it translates to this:
+    // it translates to this:
   • test = return function(num) {
-  •     return num >= 1 && num <= 10;
+  •     return num > 1 && num < 10;
   •   }
     
-  // to call this inner function (now saved to the 'const test' variable, we need to pass 1 single argument, in the paranthesis right after the variable's name:
+    // to call this inner function (now saved to the 'const test' variable,   
+    // we need to pass 1 single argument, in the paranthesis right after the variable's name:
   • test(5)
 
-  // Another way to have the same calculation is to call both functions at the same time, using multiple parentheses pairs, each pair to one function:
+    // Another way to have the same calculation is: // to call both functions at the same time, using multiple parentheses pairs, each pair to one function:
   • test = between(1, 10)(5);
   ```
 
