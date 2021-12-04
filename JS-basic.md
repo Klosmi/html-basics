@@ -2556,8 +2556,8 @@ they are returning a function as a value from within a function.
       *save the result of the higher-order function to a variable, and then call that variable:  
       `sayHi()()`*  
       *II.*    
-      *`mystery = myMysteryFunc()`*      
-        *`mystery()`*
+      *`greetings = sayHi()`*      
+        *`greetings()`*
 
 - So, we can say: a __higher-order function returns another function__, but if that returned function isn't called yet, we still have to do it manually, by __adding the parentheses `()`__ (it's how we immediately call a function)❗️
 
