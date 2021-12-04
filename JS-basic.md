@@ -2629,6 +2629,7 @@ Factory functions can also have parameters allowing us to customize the object t
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-functions-)
 
 <br>
+
 ## [Defining Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#defining_methods) : 
 We can add functions as properties on objects. __We call them methods!__   
 
