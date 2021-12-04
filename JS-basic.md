@@ -2649,7 +2649,7 @@ We can add functions as properties on objects. __We call them methods!__
   - Every method is a function, but not every function is a method.
 
 - We can add a function as a property value (key : value pairs).   
-    - eg.:
+    - eg.:   
       *We made an objects: math*  
       *We access 3 functions, each of them is a __method__.*    
       *(also they are objects, math object literals)*  
