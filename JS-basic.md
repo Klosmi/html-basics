@@ -2624,6 +2624,99 @@ Factory functions can also have parameters allowing us to customize the object t
     // Another way to have the same calculation is: // to call both functions at the same time, using multiple parentheses pairs, each pair to one function:
   • test = between(1, 10)(5);
   ```
+ ---
+ 
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-functions-)
+
+<br>
+## [Defining Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#defining_methods) : 
+We can add functions as properties on objects. __We call them methods!__   
+
+ __A method is a function that has been placed as a [property](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-object-literals-) on an object__ ❗️: we put a dot __`.`__ infront of its name (like we did with built in methods).
+
+- built in methods, like string methods, array methods, etc.
+  - eg.:
+    ```
+    "ahoj!".toUpperCase();
+
+    // AHOJ!
+    ```
+
+- What is the __difference between a method and a function__?
+  - A method is simply a **function that has been placed as a property on an object**.
+
+  - Every method is a function, but not every function is a method.
+
+- We can add a function as a property value (key : value pairs).   
+    - eg.:
+      *We made an objects: math*  
+      *We access 3 functions, each of them is a __method__.*    
+      *(also they are objects, math object literals)*  
+      *So __method: is a function that's been added as a property on some object__.*  
+      *We need to call them*
+      ```
+      const math = {
+
+        multiply : function(x, y) {
+              return x * y;
+        },
+        
+        divide : function(x, y) {
+              return x / y;
+        },
+
+        square : function(x) {
+              return x * x;
+        }
+      }
+
+      // calling the method on the 'math' object:
+
+      math.square(2);
+
+      // gives 4
+      ```
+
+- We can use a function as the value in a property, in an object. 
+   - eg.:  
+    *Create a `counting` object* 
+      ```
+      const counting = {
+        square : function(num) {
+          return num * num;
+        },
+        cube : function(num) {
+          return num ** 3;
+        }
+      }
+
+      counting.cube(2);
+
+      // 8
+      ```
+ - __Shorthand__ way of adding methods: leaving out the `function` keyword and the colon `:`.
+    - eg.:
+      ```
+      const counting = {
+        square(num) {         // → square : function(num)
+          return num * num;
+        },
+        cube(num) {           // → cube : function(num)
+          return num ** 3;
+        }
+      }
+
+      counting.cube(2);
+
+      // 8
+      ```
+
+<br>
+
+💡 Reminder: __an [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#objects_overview) is a standalone entity, with properties and type.__    
+Like a cup: a cup is an object, with properties:       
+a cup has a color,    
+a cup has design, weight, a material it is made of, etc. 
 
 
 ---
