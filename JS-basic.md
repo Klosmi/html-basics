@@ -2751,7 +2751,7 @@ a cup has design, weight, a material it is made of, etc.
     person.last = "Smith" 
     person.fullname();    // "John Smith"
     ```
-    *if I try to acces last name without this, it gives an error*
+    *if I try to acces last name without the `this`, it gives an error*
     ```
     const person = {
       first : "John",            
