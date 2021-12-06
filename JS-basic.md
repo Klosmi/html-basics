@@ -2823,6 +2823,10 @@ The `this` refers to what is on its left side.
   
   💡 We use the function without using the parenthesis when we ant to make a copy of it.    
   `dog2 = dog.woof;`
+  
+  💡 What does invoke mean?   
+   JavaScript Function Invocation is used to __executes the function code__ and it is common to use the term “call a function” instead of “invoke a function”. __The code inside a function is executed when the function is invoked__.   
+   ([caling vs invoking](https://stackoverflow.com/questions/50884893/calling-vs-invoking-a-function): it is more a semantic difference)
 
 <br>
 
