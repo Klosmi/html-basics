@@ -2795,7 +2795,7 @@ The `this` refers to what is on its left side.
     16.   const dog2 = dog.woof;      // I capture dog.woof method in another variable. 
     17.                               // Note: we just give the function definition when used without parenthesis❗️
     18.   
-    19.   dog2();               // it is a function
+    19.   dog2();                     // it is a function. Parenthesis gets the dog objects's method.
     20.   // [blank] says woof woof!
     21.   // this is: Window {window: Window, self: Window, document: document, name: '', location: Location, …}
     ```
