@@ -2777,27 +2777,27 @@ The `this` refers to what is on its left side.
     *make a `dog2` variable which refers to the `dog.woof()` method*   
     *the `this` will change, and will refer to the top level element in JS, the `window`*
     ```
-    const dog = {
-        name : 'Bulldog',
-        color : 'grey',
-        woof() {
-            console.log(`${this.name} says woof woof!`);
-            console.log("this is:", this);
-        }
-    }
-
-    dog.woof();
-    //(1. line result ↓:)
-    // Bulldog says woof woof!
-    //(2. line result: ↓) 
-    // this is: {name: 'Bulldog', color: 'grey', woof: ƒ}       
-
-    dog2 = dog.woof;      // I capture dog.woof method in another variable. 
-                          // Note we just give te function definition when used without parenthesis❗️
-
-    dog2();               // it is a function
-    // [blank] says woof woof!
-    // this is: Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+    1.    const dog = {
+    2.        name : 'Bulldog',
+    3.        color : 'grey',
+    4.        woof() {
+    5.           console.log(`${this.name} says woof woof!`);
+    6.           console.log("this is:", this);
+    7.        }
+    8.    }
+    9.  
+    10.   dog.woof();
+    11.   //(at line 5. result ↓:)
+    12.   // Bulldog says woof woof!
+    13.   //(at line 6. result: ↓) 
+    14.   // this is: {name: 'Bulldog', color: 'grey', woof: ƒ}       
+    15. 
+    16.   dog2 = dog.woof;      // I capture dog.woof method in another variable. 
+    17.                        // Note we just give te function definition when used without parenthesis❗️
+    18.   
+    19.   dog2();               // it is a function
+    20.   // [blank] says woof woof!
+    21.   // this is: Window {window: Window, self: Window, document: document, name: '', location: Location, …}
     ```
   - when we call the dog2() the `this` is not pointing to the dog object, therefore it doesn't know what this means. That's why it is `[[blank] says woof woof!`.  
 
