@@ -2792,8 +2792,8 @@ The `this` refers to what is on its left side.
     13.   //(at line 6. result: ↓) 
     14.   // this is: {name: 'Bulldog', color: 'grey', woof: ƒ}       
     15. 
-    16.   dog2 = dog.woof;      // I capture dog.woof method in another variable. 
-    17.                        // Note we just give te function definition when used without parenthesis❗️
+    16.   const dog2 = dog.woof;      // I capture dog.woof method in another variable. 
+    17.                               // Note we just give te function definition when used without parenthesis❗️
     18.   
     19.   dog2();               // it is a function
     20.   // [blank] says woof woof!
