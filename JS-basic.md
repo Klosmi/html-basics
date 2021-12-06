@@ -2031,8 +2031,8 @@ __Functions are reusable pieces of code__, chunks of code, they __have a name__ 
   __[function expressions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#function-expressions-)__   
   __[higher order functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#higher-order-functions-)__   
   __[returning functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#returning-functions-)__   
-  __[defining methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#defining-methods-)__
-  __[`this`keyword](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#this-)__
+  __[defining methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#defining-methods-)__   
+  __[the `this`keyword](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#this-)__   
 
 <br>
 
