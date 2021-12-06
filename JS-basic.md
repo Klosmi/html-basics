@@ -2801,7 +2801,7 @@ The `this` refers to what is on its left side.
     ```
   - when we call the dog2() the `this` is not pointing to the dog object, therefore it doesn't know what this means. That's why it is `[[blank] says woof woof!`.  
 
-  - when I call, invoke dog.woof() it's a method, `woof()`refers to the object to the left (`dog`). When I run dog2(), which is the same function as dog.woof, only it is __invoked differently__ therefore the `this`not referring to the `dog`, instead to the `window`top level opbject.
+  - when I call (invoke) `dog.woof()` it is a method. `woof()`refers to the object to the left (`dog`). __When I run `dog2()`, which is the same function as `dog.woof`, only it is invoked differently__ therefore the `this` is not referring to the `dog`, but instead to the `window` top level opbject.
 
 - `this` the [`Window`](https://developer.mozilla.org/en-US/docs/Web/API/Window) is a special object, it is the top level object, the main object in JS. All the functions lives inside of it.
 
