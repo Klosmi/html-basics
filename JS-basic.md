@@ -2719,6 +2719,111 @@ Like a cup: a cup is an object, with properties:
 a cup has a color,    
 a cup has design, weight, a material it is made of, etc. 
 
+---
+
+<br>
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-functions-)
+
+
+
+## __[this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)__ :  
+ `this` keyword is used when we want to access other properties on the same object.
+
+ - most common situation to use `this`: we typically use inside of an object in a method.
+
+ - eg.:   
+    *creating an object `person`, it has a method `fullname()`*   
+    *`this` refers to the `person` object.*   
+    ```
+    const person = {
+      first : "John",             // property
+      last  : "Doe",              // property
+      fullname()  {               // method
+        return `${this.first} ${this.last}`
+      }
+    }
+
+    person.fullname();    // "John Doe"
+    person.last;          // "Doe"
+
+    person.last = "Smith" 
+    person.fullname();    // "John Smith"
+    ```
+    *if I try to acces last name without this, it gives an error*
+    ```
+    const person = {
+      first : "John",            
+      last  : "Doe",              
+      fullname()  {               
+        return last;
+      }
+    }
+
+    person.fullname;
+    // ReferenceError: last is not defined
+    ```
+
+- when we are in a method and we write `this` dot `.` property, it __refers to the object__ that the method is defined on.   
+The `this` refers to what is on its left side.
+
+<br>
+
+- So the value of `this` __can change__ ❗️
+- the value of `this` depends on the invocation context  of the function it is used in, so it depends on __how we call the function__.
+
+  - eg.:   
+    *make a `dog2` vaiable which refers to the `dog.woof()` method*   
+    *the `this` will change, and will refer to the top level element in JS, the `window`*
+    ```
+    const dog = {
+        name : 'Bulldog',
+        color : 'grey',
+        woof() {
+            console.log(`${this.name} says woof woof!`);
+            console.log("this is:", this);
+        }
+    }
+
+    dog.woof();
+    //(1. line result ↓:)
+    // Bulldog says woof woof!
+    //(2. line result: ↓) 
+    // this is: {name: 'Bulldog', color: 'grey', woof: ƒ}       
+
+    dog2 = dog.woof;      // I capture dog.woof method in another variable. 
+                          // Note we just give te function definition when used without parenthesis❗️
+
+    dog2();               // it is a function
+    // [blank] says woof woof!
+    // this is: Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+    ```
+  - when we call the dog2() the `this` is not pointing to the dog object, therefore it doesn't know what this means. That's why it is `[[blank] says woof woof!`.  
+
+  - when I call, invoke dog.woof() it's a method, `woof()`refers to the object to the left (`dog`). When I run dog2(), which is the same function as dog.woof, only it is __invoked differently__ therefore the `this`not referring to the `dog`, instead to the `window`top level opbject.
+
+- `this` the [`Window`](https://developer.mozilla.org/en-US/docs/Web/API/Window) is a special object, it is the top level object, the main object in JS. All the functions lives inside of it.
+
+- just type `window;` into the browser's console, and you'll what the the window object contains.
+
+- when I create a method, it is added to the window object.
+    - eg.:   
+      *by creating `hello` method, it is added to the `window` object automatically. I can call it `window.hello`.*
+      ```
+      function hello() {
+        console.log("Hello hello!");
+      }
+
+      window.hello;
+      // ƒ hello() {
+        console.log("Hello hello!");
+        }
+      ```
+  
+  💡 We use the function without using the parenthesis when we ant to make a copy of it.    
+  `dog2 = dog.woof;`
+
+<br>
 
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
