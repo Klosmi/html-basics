@@ -2774,7 +2774,7 @@ The `this` refers to what is on its left side.
 - the value of `this` depends on the invocation context  of the function it is used in, so it depends on __how we call the function__.
 
   - eg.:   
-    *make a `dog2` vaiable which refers to the `dog.woof()` method*   
+    *make a `dog2` variable which refers to the `dog.woof()` method*   
     *the `this` will change, and will refer to the top level element in JS, the `window`*
     ```
     const dog = {
