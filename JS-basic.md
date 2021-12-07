@@ -2799,7 +2799,7 @@ The `this` refers to what is on its left side.
     20.   // [blank] says woof woof!
     21.   // this is: Window {window: Window, self: Window, document: document, name: '', location: Location, …}
     ```
-  - when we call the `dog2()` the `this` is not pointing to the `dog` object, therefore it doesn't know what `this` means. That's why it is `[[blank] says woof woof!`. 
+  - when we call the `dog2()` the `this` is not pointing to the `dog` object, therefore it doesn't know what `this` means. That's why it is `[[blank] says woof woof!`.     
 If we assign `dog.woof()`with parenthesis to the `const dog2`global variable, the function is immediately executed, but we donùt want that, since we want to control when to call it. Therefore we reassign the `dog.woof` without paranthesise to `const dog2` global variable, because we want to control when to call it, by using dog2() later.
 
   - when I call (invoke) `dog.woof()` it is a method. `woof()`refers to the object to the left (`dog`). __When I run `dog2()`, which is the same function as `dog.woof`, only it is invoked differently__ therefore the `this` is not referring to the `dog`, but instead to the `window` top level object.    
