@@ -42,7 +42,7 @@
 13. [JS: Object Literals](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-object-literals-) 
 14. [JS: Loops](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-loops-)
 15. [JS: Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-functions-)
-16. [JS: Callback Functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-functions-)
+16. [JS: Callback Functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-functions--array-methods-)
 
 <br>
 
