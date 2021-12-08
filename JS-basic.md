@@ -2840,8 +2840,9 @@ So, if we call the the `woof` method on the `dog` object then the `this` keyword
 __Array methods accept a function as its arguments.__   
  So a __[callback](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)__ is a function passed as an argument to another function, this technique allows __a function to call another function__.
 
-- __[forEach]()__   
-  __[MAP]()__  
+- __[forEach](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#foreach)__   
+  __[Map](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#map)__   
+  __[Arrow Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#arrow-functions)__
 
 
 ## __[forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)__   
