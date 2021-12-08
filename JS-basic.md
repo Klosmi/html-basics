@@ -2836,6 +2836,112 @@ So, if we call the the `woof` method on the `dog` object then the `this` keyword
 
 <br>
 
+# __[Callback functions](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function) & [Array Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#instance_methods)__ :  
+__Array methods accept a function as its arguments.
+__
+
+- __[forEach]()__   
+  __[MAP]()__  
+
+
+## __[forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)__   
+accepts a callback function.    
+__It to runs a function__, (so run some code) __once per item in some array__.   
+So we pass in a function, and that function will be called once per item, where each item is going to be passed into the function automatically.
+
+- eg.: 
+
+  *We want to print out all the numbers.*   
+  
+  *A __common way__ to do `forEach` is to __define the function as an anonymus function expression, in the forEach__*  
+  *We also need a parameter, here `num`*
+
+  *The way it works: I call for each on every element, so `forEach` executes the print once per element: it passes `1` to print, then `2` to print then `3`, etc.*
+    ```
+    const numbers = [1, 2, 3, 4 ];
+
+    numbers.forEach(function(num) { 
+      console.log(num); 
+    });
+
+    // 1 // 2 // 3 // 4
+    ```
+
+  *This is the __uncommon way__, where we define a function above the forEach*.
+    ```
+    const numbers = [1, 2, 3, 4];
+
+    function print(element) {
+      console.log(element)
+    } 
+
+    numbers.forEach(print);  
+
+    // 1 // 2 // 3 // 4
+    ```
+
+- but __[`for...of`]()__ ❗️❗️❗️ is as efficient (and easier, shorter way) for doing something once per element.
+  - eg.:   
+    *using the `for...of`*
+    ```
+    const numbers = [1, 2, 3, 4];
+
+    for(let num of numbers) {
+      console.log(num);
+    }
+
+    // 1 // 2 // 3 // 4
+    ```
+
+- eg.:   
+  *printing out even numbers*
+  ```
+  const numbers = [1, 2, 3, 4, 5, 6];
+
+  numbers.forEach(function(num) {
+    if (num % 2 === 0) {
+        console.log(num);
+  });
+
+  // 2
+  // 4
+  // 6
+  ```
+
+- eg.:   
+  *pizzeria ratings, 1 to 10 stars*
+  ```
+  const pizzeria = [
+    {
+        name: "Joe's Pizza",
+        stars: 1
+    },
+    {
+        name: "Marios's Pizza",
+        stars: 5
+    },
+    {
+        name: "Cecilia's Pizza",
+        stars: 9
+    }
+  ];
+
+  pizzeria.forEach(function(pizza) {
+      console.log(`${pizza.name} ${pizza.stars} / 10`);
+  });
+
+  // Joe's Pizza 1 / 10
+  // Marios's Pizza 5 / 10
+  // Cecilia's Pizza 9 / 10
+  ```
+
+  💡 nowadays we use __`for...of`__  drather than `forEach`.
+
+---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Callback functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-functions-)
+
+<br>
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
 
