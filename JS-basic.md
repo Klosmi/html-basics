@@ -2940,7 +2940,7 @@ So we pass in a function, and that function will be called once per item, where 
 
 ---
 
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Callback functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-functions-)
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Callback functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-functions--array-methods-)
 
 <br>
 
@@ -3016,7 +3016,7 @@ But `Map` is __then generates a new array using__ the result, using __the return
 
 ---
 
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Callback functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-functions-)
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Callback functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-functions--array-methods-)
 
 <br>
 
