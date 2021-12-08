@@ -2837,14 +2837,15 @@ So, if we call the the `woof` method on the `dog` object then the `this` keyword
 <br>
 
 # __[Callback functions](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function) & [Array Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#instance_methods)__ :  
-__Array methods accept a function as its arguments.__
+__Array methods accept a function as its arguments.__. 
+So a __[callback](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)__ is a function passed as an argument to another function, this technique allows __a function to call another function__.
 
 - __[forEach]()__   
   __[MAP]()__  
 
 
 ## __[forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)__   
-accepts a callback function.    
+__accepts a callback function__.
 __It to runs a function__, (so run some code) __once per item in some array__.   
 So we pass in a function, and that function will be called once per item, where each item is going to be passed into the function automatically.
 
@@ -2941,6 +2942,7 @@ So we pass in a function, and that function will be called once per item, where 
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Callback functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-functions-)
 
 <br>
+
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
 
