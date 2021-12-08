@@ -2837,8 +2837,7 @@ So, if we call the the `woof` method on the `dog` object then the `this` keyword
 <br>
 
 # __[Callback functions](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function) & [Array Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#instance_methods)__ :  
-__Array methods accept a function as its arguments.
-__
+__Array methods accept a function as its arguments.__
 
 - __[forEach]()__   
   __[MAP]()__  
