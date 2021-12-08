@@ -2828,8 +2828,10 @@ So, if we call the the `woof` method on the `dog` object then the `this` keyword
   
   💡 What does invoke mean?   
    JavaScript Function Invocation is used to __executes the function code__ and it is common to use the term “call a function” instead of “invoke a function”. __The code inside a function is executed when the function is invoked__.   
-   ([caling vs invoking](https://stackoverflow.com/questions/50884893/calling-vs-invoking-a-function): it is more a semantic, subtle difference).    
+   ([calling vs invoking](https://stackoverflow.com/questions/50884893/calling-vs-invoking-a-function): it is more a semantic, subtle difference).    
 *When you call a function, you are directly telling it to run. When you invoke a function, you are letting something to run it.*
+
+- further reading about __[`this`](https://www.javascripttutorial.net/javascript-this/)__ and __[`this`](https://alligator.io/js/this-keyword/)__
 
 <br>
 
