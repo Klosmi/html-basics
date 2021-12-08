@@ -2834,6 +2834,10 @@ So, if we call the the `woof` method on the `dog` object then the `this` keyword
 
 - further reading about __[`this`](https://www.javascripttutorial.net/javascript-this/)__ and __[`this`](https://alligator.io/js/this-keyword/)__
 
+
+---
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+   
 <br>
 
 # __[Callback functions](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function) & [Array Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#instance_methods)__ :  
