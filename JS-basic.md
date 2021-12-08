@@ -2943,6 +2943,84 @@ So we pass in a function, and that function will be called once per item, where 
 
 <br>
 
+## __[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)__   
+creates a new array with the results of calling a callback on every element in the array.
+
+- it is also __callback function__ and it also __runs that function once per element in the array__, like the `forEach`.
+But `Map` is __then generates a new array using__ the result, using __the return value of that callback__.    
+
+- ❗️ it __doesn't change__ the array; it __creates a new__ one❗️
+
+- `something.map(callback)`
+
+*(to map an array from one state to another)*
+
+- eg.:   
+  *So return value, which is coming back from callback function `Map`, is taking and adding into a new array. The new array returns and then I can save it under a new variable.*
+  *Here, I double every intiger*
+  ```
+  const numbers = [1, 2, 3, 4,];
+
+  const doubles = numbers.map(function(num) {     // it calles the function on every number
+    return num * 2;               // each number is * 2, then return to a new array
+                                  // const doubles is the new variable (see beginning of the code)
+  });
+  doubles;
+  // [2, 4, 6, 8]
+
+  ```
+  *a not common way to do it*
+  ```
+  const numbers = [1, 2, 3, 4,];
+
+  function doubles(num) { 
+    return num * 2; 
+  };
+
+  numbers.map(doubles);
+
+  // [2, 4, 6, 8]
+  ```
+
+- eg.:   
+  *with an object of key-value pairs*
+  *create an array jsut for the pizzeria names*
+  ```
+  const pizzeria = [
+    {
+        name: "Joe's Pizza",
+        stars: 1
+    },
+    {
+        name: "Marios's Pizza",
+        stars: 5
+    },
+    {
+        name: "Cecilia's Pizza",
+        stars: 9
+    }
+  ];
+
+  const restos = pizzeria.map(function(pizza){
+      return pizza.name;
+  });
+
+  restos;
+  // ["Joe's Pizza", "Marios's Pizza", "Cecilia's Pizza"]
+  ```
+
+- `map` is usually used when we need a portion of a data, or we want to transform every element into a new array.
+
+<br>
+
+---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Callback functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-functions-)
+
+<br>
+
+## __[Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)__
+
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
 
