@@ -234,7 +234,6 @@ __The difference between null and undifined__:
       - use that value to do things
       - change it laters
 
-
 <br>
 
  To define a variable, we should use let, const, or var (though var isn't recommended these days anymore).      
@@ -2830,6 +2829,8 @@ So, if we call the the `woof` method on the `dog` object then the `this` keyword
    JavaScript Function Invocation is used to __executes the function code__ and it is common to use the term “call a function” instead of “invoke a function”. __The code inside a function is executed when the function is invoked__.   
    ([calling vs invoking](https://stackoverflow.com/questions/50884893/calling-vs-invoking-a-function): it is more a semantic, subtle difference).    
 *When you call a function, you are directly telling it to run. When you invoke a function, you are letting something to run it.*
+
+- to sum up: the __value of this differs depending on how a function is invoked (the call site), so we can’t know the value of this just by looking at the function itself, but we need to know the context in which the function is invoked__.
 
 - further reading about __[`this`](https://www.javascripttutorial.net/javascript-this/)__ and __[`this`](https://alligator.io/js/this-keyword/)__
 
