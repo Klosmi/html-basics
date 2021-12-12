@@ -2970,7 +2970,7 @@ But `Map` is __then generates a new array using__ the result, using __the return
 
   const doubles = numbers.map(function(num) {  // it calles the function on every number
     return num * 2;                            // each number is * 2, then return to a new array
-                                               // const doubles is the new variable (see beginning of the code)
+                                               // const doubles is the new variable
   });
   doubles;
   // [2, 4, 6, 8]
