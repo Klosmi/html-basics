@@ -3061,7 +3061,7 @@ It allows us to write functions without the keyword function.
     }
     ```
 
-- arrow function __without arguments__, we have to use the ampty parenthesis: 
+- arrow function __without arguments__, we have to use the empty parenthesis: 
   - eg.:   
   *dice rolling*
     ```
@@ -3070,7 +3070,7 @@ It allows us to write functions without the keyword function.
     }
     ```
 
-- we can make arrow fintion even more compact by using the __implicit return__ ❗️So we __leave out the `return` keyword__.   
+- we can make arrow fucntion even more compact by using the __implicit return__ ❗️So we __leave out the `return` keyword__.   
 *It only works with arrow function (doesn't work with a typical function expression).*   
 To return without return __replace the curlybraces `{ }`with parenthesis `( )`__ !
 
@@ -3084,7 +3084,7 @@ To return without return __replace the curlybraces `{ }`with parenthesis `( )`__
     // 25
     ```
 
-- it can et even short, a one liner, by leaving out completely the parenthesis.  Good for short codes. 
+- it can be even shorter, a one liner, by leaving out completely the parenthesis.  Good for short codes. 
 *If the return is long, maybe don't use it on one line, to make it readable.*
   - eg.:   
     ```
@@ -3120,7 +3120,7 @@ To return without return __replace the curlybraces `{ }`with parenthesis `( )`__
       return `${pizza.name} - ${pizza.stars}`
   });
 
-  // we canleave out the parameters parenthsis, and the return (see the ())
+  // we can leave out the parameters parenthsis, and the return (see the ())
 
     const restos = pizzeria.map(pizza => (
      `${pizza.name} - ${pizza.stars}`
@@ -3146,11 +3146,9 @@ To return without return __replace the curlybraces `{ }`with parenthesis `( )`__
   2. a number of milliseconds to delay the execution of the function
 
   eg.:   
-  *setTimeout: after 3 seconds, it executes the function. We have to pass in a callback:*   
-  *Otherwise, if we just passed in `console.log`, that is going to execute it immediately.*   
-  *So th goal is to make the browser wait 3 seconds.*
-
-right away.*
+  *setTimeout: after 3 seconds, it executes the function. We have to pass in a callback:*      
+  *Otherwise, if we just passed in `console.log`, that is going to execute it immediately.*      
+  *So the goal is to make the browser wait 3 seconds.*
   ```
   setTimeout(() => {
     console.log("Hello!")       // 1st argument
@@ -3159,7 +3157,7 @@ right away.*
   // wait 3 seconds, then:
   // "Hello!"
   ``` 
-  *Another example: first it run "Hello there!", than immediately the "Bye!", and then the 'setTimeout' "are you still there?". Instead of "Hello!", "Are you still there?", "Bye!"*
+  *Another example: first it runs "Hello there!", than immediately the "Bye!", and then the `setTimeout` "are you still there?". Instead of "Hello!", "Are you still there?", "Bye!"*
   ```
   console.log("Hello!");
 
