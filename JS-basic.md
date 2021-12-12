@@ -3032,7 +3032,7 @@ It allows us to write functions without the keyword function.
 
 - syntactically compact alternative to a regular function expression, so the point is to make things shorter.
 
-- arrow function are all anonymys. Youu can not name it. But we can store it in a variable.
+- arrow function are all anonymys. You can not name it. But we can store it in a variable.
 
 -  __`const square = ( x ) => {`   
   `return x * x`   
