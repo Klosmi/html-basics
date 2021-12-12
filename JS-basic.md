@@ -2942,7 +2942,7 @@ So we pass in a function, and that function will be called once per item, where 
   // Cecilia's Pizza 9 / 10
   ```
 
-  💡 nowadays we use __`for...of`__  drather than `forEach`.
+  💡 nowadays we use __`for...of`__  rather than `forEach`.
 
 ---
 
@@ -2953,7 +2953,7 @@ So we pass in a function, and that function will be called once per item, where 
 ## __[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)__   
 creates a new array with the results of calling a callback on every element in the array.
 
-- it is also __callback function__ and it also __runs that function once per element in the array__, like the `forEach`.
+- it is also a __callback function__ and it also __runs that function once per element in the array__, like the `forEach`.
 But `Map` is __then generates a new array using__ the result, using __the return value of that callback__.    
 
 - ❗️ it __doesn't change__ the array; it __creates a new__ one❗️
@@ -2968,9 +2968,9 @@ But `Map` is __then generates a new array using__ the result, using __the return
   ```
   const numbers = [1, 2, 3, 4,];
 
-  const doubles = numbers.map(function(num) {     // it calles the function on every number
-    return num * 2;               // each number is * 2, then return to a new array
-                                  // const doubles is the new variable (see beginning of the code)
+  const doubles = numbers.map(function(num) {  // it calles the function on every number
+    return num * 2;                            // each number is * 2, then return to a new array
+                                               // const doubles is the new variable (see beginning of the code)
   });
   doubles;
   // [2, 4, 6, 8]
@@ -2991,7 +2991,7 @@ But `Map` is __then generates a new array using__ the result, using __the return
 
 - eg.:   
   *with an object of key-value pairs*
-  *create an array jsut for the pizzeria names*
+  *create an array just for the pizzeria names*
   ```
   const pizzeria = [
     {
