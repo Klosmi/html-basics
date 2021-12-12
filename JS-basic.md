@@ -3026,6 +3026,203 @@ But `Map` is __then generates a new array using__ the result, using __the return
 
 ## __[Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)__
 
+It allows us to write functions without the keyword function.
+
+- syntactically compact alternative to a regular function expression, so the point is to make things shorter.
+
+- arrow function are all anonymys. Youu can not name it. But we can store it in a variable.
+
+-  __`const square = ( x ) => {`   
+  `return x * x`   
+`}`__
+
+    __`const sum = ( x, y ) => {`   
+    `return x + y`   
+  `}`__   
+  it has parenthesis with the parameters
+
+- we can't declare a function on its own like `function(x,y){ return x + y }`, we have to give a function statement (a name): `function name (x,y) { return x + y}`
+
+- for a __single__ argument we don't need the parenthesis (for multiple arguments, we need!).
+  - eg.:   
+    ```
+    const variable = x => { 
+      return x + x
+    } 
+    ```
+
+- we can't declare an arrow function on its own , like `(x,y) => { }`. So __we have to save it in a variable__;
+  - eg.:
+    ```
+    const variable = (x,y) => { 
+      return x + y
+    }
+    ```
+
+- arrow function __without arguments__, we have to use the ampty parenthesis: 
+  - eg.:   
+  *dice rolling*
+    ```
+    const dice = () => { 
+      return Math.floor(Math.random() * 6) + 1; 
+    }
+    ```
+
+- we can make arrow fintion even more compact by using the __implicit return__ ❗️So we __leave out the `return` keyword__.   
+*It only works with arrow function (doesn't work with a typical function expression).*   
+To return without return __replace the curlybraces `{ }`with parenthesis `( )`__ !
+
+  - eg.:   
+    ```
+    const variable = (x) => (
+      x * x
+    )
+
+    variable(5);
+    // 25
+    ```
+
+- it can et even short, a one liner, by leaving out completely the parenthesis.  Good for short codes. 
+*If the return is long, maybe don't use it on one line, to make it readable.*
+  - eg.:   
+    ```
+    const variable = (x, y) => x + y
+    
+    variable(2, 4);
+    // 6
+    ```
+
+- ❗️ __implicit returns only work, when there is only 1 statement in the budy of the function!!!__
+
+<br>
+
+- eg.:    
+  *arrow function exercise, using map*
+  ```
+  const pizzeria = [
+    {
+        name: "Joe's Pizza",
+        stars: 1
+    },
+    {
+        name: "Marios's Pizza",
+        stars: 5
+    },
+    {
+        name: "Cecilia's Pizza",
+        stars: 9
+    }
+  ];
+
+  const restos = pizzeria.map((pizza) => {
+      return `${pizza.name} - ${pizza.stars}`
+  });
+
+  // we canleave out the parameters parenthsis, and the return (see the ())
+
+    const restos = pizzeria.map(pizza => (
+     `${pizza.name} - ${pizza.stars}`
+  ));
+
+  // make it to a 1 line
+    const restos = pizzeria.map(pizza => `${pizza.name} - ${pizza.stars}`);
+
+  restos;
+  //  ["Joe's Pizza - 1", "Marios's Pizza - 5", "Cecilia's Pizza - 9"]
+  ```
+  ---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Callback functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-functions--array-methods-)
+
+<br>
+
+  ## __[setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)__ 
+  it sets a timer which executes a function or specified piece of code once the timer expires.
+
+   it expects to __pass 2 arguments__: 
+  1. a callback 
+  2. a number of milliseconds to delay the execution of the function
+
+  eg.:   
+  *setTimeout: after 3 seconds, it executes the function. We have to pass in a callback:*   
+  *Otherwise, if we just passed in `console.log`, that is going to execute it immediately.*   
+  *So th goal is to make the browser wait 3 seconds.*
+
+right away.*
+  ```
+  setTimeout(() => {
+    console.log("Hello!")       // 1st argument
+  }, 3000);                     // 2nd argument
+
+  // wait 3 seconds, then:
+  // "Hello!"
+  ``` 
+  *Another example: first it run "Hello there!", than immediately the "Bye!", and then the 'setTimeout' "are you still there?". Instead of "Hello!", "Are you still there?", "Bye!"*
+  ```
+  console.log("Hello!");
+
+    setTimeout(() => {
+    console.log("Are you still there?")    
+  }, 3000);
+
+  console.log("Bye!");
+  ```
+
+---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Callback functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-functions--array-methods-)
+
+<br>
+
+## __[setInterval](https://developer.mozilla.org/en-US/docs/Web/API/setInterval)__    
+it calls a callback function every X time. So, we can repeat something with the `setInterval`.
+
+- eg.:
+  *`setInterval` a `Math.random`. Every 2 seconds prints out a random number. So it continues to call that function ever 2 seconds.*
+  ```
+  setInterval(() => {
+    console.log(Math.random())
+  }, 2000);                     // 2000 milliseconds
+  ```
+
+  How to stop it? Use the `clearInterval()`
+
+---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Callback functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-functions--array-methods-)
+
+<br>
+
+  ## __[`clearInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/clearInterval)__
+  it cancels a timed, repeating action which was previously established by a call to `setInterval()`.
+
+  - We have to __save the value of the `setInterval` into a variable__. Doing this, it returns the ID of corresponding interval we set up.   
+  So, if we have several different `setInterval`s we can specify which one we want to stop.
+
+  - eg.:   
+  *Save the s'setInterval' into a variable (id)*
+  ```
+  const variable = setInterval(() => {
+    console.log(Math.random())
+  }, 2000);
+
+  variable;             // calling the variable, which has the setInterval, which starts to print every 2 seconds
+  // 0.8287249162601189
+  //0.13595591599851664
+  // 0.5061340888408574
+
+  clearInterval(variable); 
+  
+// variable stops
+  ```
+  
+---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Callback functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-functions--array-methods-)
+
+<br>  
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+
+
 
