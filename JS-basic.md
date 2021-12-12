@@ -3213,7 +3213,7 @@ it calls a callback function every X time. So, we can repeat something with the 
 
   clearInterval(variable); 
   
-// variable stops
+  // variable stops
   ```
   
 ---
