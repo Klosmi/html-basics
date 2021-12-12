@@ -2846,7 +2846,9 @@ __Array methods accept a function as its arguments.__
 
 - __[forEach](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#foreach)__   
   __[Map](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#map)__   
-  __[Arrow Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#arrow-functions)__
+  __[Arrow Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#arrow-functions)__   
+  __[setTimeout](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#settimeout)__   
+  __[setInterval](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#setinterval)__ & __[clearInterval](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#clearinterval)__
 
 
 ## __[forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)__   
@@ -3193,7 +3195,7 @@ it calls a callback function every X time. So, we can repeat something with the 
 
 <br>
 
-  ## __[`clearInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/clearInterval)__
+  ## __[`clearInterval`](https://developer.mozilla.org/en-US/docs/Web/API/clearInterval)__
   it cancels a timed, repeating action which was previously established by a call to `setInterval()`.
 
   - We have to __save the value of the `setInterval` into a variable__. Doing this, it returns the ID of corresponding interval we set up.   
