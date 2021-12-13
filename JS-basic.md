@@ -3043,7 +3043,8 @@ It allows us to write functions without the keyword function.
 
    ``` 
  
-   *__arrow function__: function word removed, arrow `=>` placed between `(a)` the argument and `{` the opening body bracket*
+   *__arrow function__*      
+   *function word removed, arrow `=>` placed between `(a)` the argument and `{` the opening body bracket*
    ```
    (a) => {
       return a + 100;
