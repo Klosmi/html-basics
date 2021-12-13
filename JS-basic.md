@@ -3032,18 +3032,56 @@ It allows us to write functions without the keyword function.
 
 - syntactically compact alternative to a regular function expression, so the point is to make things shorter.
 
+- a traditional functions vs. an arrow function:
+    *"traditional function"*
+   ```
+   function (a){
+      return a + 100;
+    };
+   
+   a(50);
+   // 150
+   ``` 
+ 
+   *arrow function: function word removed, arrow `=>` placed between the argument `(a)` and opening body bracket `{`*
+   ```
+   (a) => {
+      return a + 100;
+   }
+   
+   a(50);
+   // 150
+   ```
+
 - arrow function are all anonymys. You can not name it. But we can store it in a variable.
 
--  __`const square = ( x ) => {`   
-  `return x * x`   
-`}`__
+-  eg.:    
+   *we store the arrow function which has 1 parameter in the "const square" variable*
+    ```
+    const square = ( x ) => {   
+      return x * x   
+    };
+    ```
+   *we store the arrow function, wichi has 2 parameters in the "const sum" variable*
+    ```   
+    const sum = ( x, y ) => `   
+        return x + y  
+    }  
+    ```
+- arrow function has parenthesis with the parameters
 
-    __`const sum = ( x, y ) => {`   
-    `return x + y`   
-  `}`__   
-  it has parenthesis with the parameters
-
-- we can't declare a function on its own like `function(x,y){ return x + y }`, we have to give a function statement (a name): `function name (x,y) { return x + y}`
+- we can't declare a function on its own like: 
+    ```
+    function(x,y){ 
+      return x + y 
+   }
+   ``` 
+  __we have to give a function statement__ (a name) like: 
+  ```
+  function name (x,y) { 
+    return x + y
+  };
+  ```
 
 - for a __single__ argument we don't need the parenthesis (for multiple arguments, we need!).
   - eg.:   
