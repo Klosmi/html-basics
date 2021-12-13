@@ -2963,15 +2963,15 @@ But `Map` is __then generates a new array using__ the result, using __the return
 *(to map an array from one state to another)*
 
 - eg.:   
-  *So return value, which is coming back from callback function `Map`, is taking and adding into a new array. The new array returns and then I can save it under a new variable.*
+  *The return value, which is coming back from callback function `Map`, is taking and adding into a new array. The new array returns and then I can save it under a new variable (const doubles).*
   *Here, I double every intiger*
   ```
   const numbers = [1, 2, 3, 4,];
 
-  const doubles = numbers.map(function(num) {  // it calles the function on every number
-    return num * 2;                            // each number is * 2, then return to a new array
-                                               // const doubles is the new variable
+  const doubles = numbers.map(function(num) {  // it calls the function on every number (goes to parameter every "num")
+    return num * 2;                            // each number is * 2, then return to a new array which is stored in the new variable "doubles"
   });
+
   doubles;
   // [2, 4, 6, 8]
 
