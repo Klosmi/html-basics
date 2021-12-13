@@ -3032,28 +3032,23 @@ It allows us to write functions without the keyword function.
 
 - syntactically compact alternative to a regular function expression, so the point is to make things shorter.
 
-- a *traditional function* vs. an *arrow function*:   
+- a *traditional function* vs. an *arrow function* (normally this function requires a name):   
     __*"traditional function"*__
    ```
-   function name(a){
+   function (a){
       return a + 100;
     };
-   
-   name(50);
-   // 150
+
    ``` 
  
    __*arrow function__: function word removed, arrow `=>` placed between the argument `(a)` and opening body bracket `{`*
    ```
-   const name = (a) => {
+   (a) => {
       return a + 100;
    }
-   
-   name(50);
-   // 150
    ```
 
-- arrow function are all anonymys. You can not name it. But we can store it in a variable.
+- arrow function are all anonymys. __You can not name it, but we can store it in a variable__.
 
 -  eg.:    
    *we store the arrow function which has 1 parameter in the "const square" variable*
