@@ -2848,7 +2848,8 @@ __Array methods accept a function as its arguments.__
   __[Map](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#map)__   
   __[Arrow Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#arrow-functions)__   
   __[setTimeout](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#settimeout)__   
-  __[setInterval](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#setinterval)__ & __[clearInterval](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#clearinterval)__
+  __[setInterval](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#setinterval)__ & __[clearInterval](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#clearinterval)__         
+  __[Filter](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#filter)__
 
 
 ## __[forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)__   
