@@ -3032,8 +3032,8 @@ It allows us to write functions without the keyword function.
 
 - syntactically compact alternative to a regular function expression, so the point is to make things shorter.
 
-- a *traditional function* vs. an *arrow function*:
-    *"traditional function"*
+- a *traditional function* vs. an *arrow function*:   
+    __*"traditional function"*__
    ```
    function (a){
       return a + 100;
@@ -3043,7 +3043,7 @@ It allows us to write functions without the keyword function.
    // 150
    ``` 
  
-   *arrow function: function word removed, arrow `=>` placed between the argument `(a)` and opening body bracket `{`*
+   __*arrow function__: function word removed, arrow `=>` placed between the argument `(a)` and opening body bracket `{`*
    ```
    (a) => {
       return a + 100;
