@@ -3035,21 +3035,21 @@ It allows us to write functions without the keyword function.
 - a *traditional function* vs. an *arrow function*:   
     __*"traditional function"*__
    ```
-   function (a){
+   function name(a){
       return a + 100;
     };
    
-   a(50);
+   name(50);
    // 150
    ``` 
  
    __*arrow function__: function word removed, arrow `=>` placed between the argument `(a)` and opening body bracket `{`*
    ```
-   (a) => {
+   const name = (a) => {
       return a + 100;
    }
    
-   a(50);
+   name(50);
    // 150
    ```
 
