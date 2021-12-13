@@ -3033,8 +3033,9 @@ It allows us to write functions without the keyword function.
 
 - syntactically compact alternative to a regular function expression, so the point is to make things shorter.
 
-- a *traditional function* vs. an *arrow function* (normally this function requires a name):   
-    __*"traditional function"*__
+- a *traditional function* vs. an *arrow function*:   
+    __*traditional function*__   
+    *(normally this function requires a name)*   
    ```
    function (a){
       return a + 100;
