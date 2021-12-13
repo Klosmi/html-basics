@@ -3053,19 +3053,19 @@ It allows us to write functions without the keyword function.
 
 - arrow functions are all anonymys. __You can not name them, but we can store them in a variable__.
 
--  eg.:    
-   *we store the arrow function which has 1 parameter in the "const square" variable*
-    ```
-    const square = ( x ) => {   
-      return x * x   
-    };
-    ```
-   *we store the arrow function, wichi has 2 parameters in the "const sum" variable*
-    ```   
-    const sum = ( x, y ) => `   
-        return x + y  
-    }  
-    ```
+  -  eg.:    
+     *we store the arrow function which has 1 parameter in the "const square" variable*
+      ```
+      const square = ( x ) => {   
+        return x * x   
+      };
+      ```
+     *we store the arrow function, wichi has 2 parameters in the "const sum" variable*
+      ```   
+      const sum = ( x, y ) => `   
+          return x + y  
+      }  
+      ```
 - arrow function has parenthesis with the parameters
 
 - we can't declare a function on its own like: 
