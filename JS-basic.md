@@ -2443,7 +2443,7 @@ An other way of defining a function is that __storing a function in a variable__
 
 - a function statement
   eg.:   
-  *a funcation statement, which has a name `add`❗️*
+  *a function statement, which has a name `add`❗️*
   ```
   function add(x, y) {
     return x + y;
