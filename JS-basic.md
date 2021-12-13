@@ -3051,7 +3051,7 @@ It allows us to write functions without the keyword function.
    }
    ```
 
-- arrow function are all anonymys. __You can not name it, but we can store it in a variable__.
+- arrow functions are all anonymys. __You can not name them, but we can store them in a variable__.
 
 -  eg.:    
    *we store the arrow function which has 1 parameter in the "const square" variable*
