@@ -3060,9 +3060,9 @@ It allows us to write functions without the keyword function.
         return x * x   
       };
       ```
-     *we store the arrow function, wichi has 2 parameters in the "const sum" variable*
+     *we store the arrow function, wich has 2 parameters in the "const sum" variable*
       ```   
-      const sum = ( x, y ) => `   
+      const sum = ( x, y ) =>   
           return x + y  
       }  
       ```
