@@ -3032,7 +3032,7 @@ It allows us to write functions without the keyword function.
 
 - syntactically compact alternative to a regular function expression, so the point is to make things shorter.
 
-- a traditional functions vs. an arrow function:
+- a *traditional function* vs. an *arrow function*:
     *"traditional function"*
    ```
    function (a){
