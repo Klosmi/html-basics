@@ -3257,7 +3257,7 @@ it calls a callback function every X time. So, we can repeat something with the 
 <br>  
 
 ## __[`filter`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)__   
-  creates a new array with all the elements that pass the test implemented by the provided function.    d  
+  creates a new array with all the elements that pass the test implemented by the provided function.   
   So when we want to __filter out or make a subset in a new array__.
 
   - eg.:   
