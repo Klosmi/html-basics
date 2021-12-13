@@ -3254,7 +3254,97 @@ it calls a callback function every X time. So, we can repeat something with the 
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Callback functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-functions--array-methods-)
 
 <br>  
+
+## __[`filter`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)__   
+  creates a new array with all the elements that pass the test implemented by the provided function.    d  
+  So when we want to __filter out or make a subset in a new array__.
+
+  - eg.:   
+  *We want to pull out just the the odd numbers into their own array.*   
+  *So, we pass in a callback and this callback needs to return true or false, (boolean function).*
+  *If that callback returns true for any element, that element will be added to the filtered array*
+  *Otherwise, it's ignored*
+```
+const nums = [6, 5, 4, 3, 2, 1];
+const odds = nums.filter(n => {
+  return n % 2 === 1;         // the callback return tru or false
+                              // if true, 'n' is added to the filtered array
+});
+
+odds;
+// [5, 3, 1]
+```
+
+*Another example: filter out to a new array the pizzerias which score is equal or bigger than 5*
+  ```
+  const pizzeria = [
+    {
+        name: "Joe's Pizza",
+        stars: 1
+    },
+    {
+        name: "Marios's Pizza",
+        stars: 5
+    },
+    {
+        name: "Cecilia's Pizza",
+        stars: 9
+    }
+  ];
+
+  const goodRestos = pizzeria.filter( p => {
+      return p.stars >= 5
+  });
+
+  goodRestos;
+  // 0: {name: "Marios's Pizza", stars: 5}      // array of objects
+  // 1: {name: "Cecilia's Pizza", stars: 9}     // array of object
+  ```
+    
+*the same code with a 1 liner*
+  ```
+  const goodRestos = pizzeria.filter( p => p.stars >= 5);
+  ```
+*if we want to have the titles of the pizzerias, not the whole array of objects, we can combine methods, `filer` and `map`.*
+```
+  const pizzeria = [
+    {
+        name: "Joe's Pizza",
+        stars: 1
+    },
+    {
+        name: "Marios's Pizza",
+        stars: 5
+    },
+    {
+        name: "Cecilia's Pizza",
+        stars: 9
+    }
+  ];
+
+const goodRestos = pizzeria.filter( p => p.stars >= 5);
+// 0: {name: "Marios's Pizza", stars: 5}
+// 1: {name: "Cecilia's Pizza", stars: 9}
+
+const restoNames = goodRestos.map( n => n.name);
+// ["Marios's Pizza", "Cecilia's Pizza"]
+```
+*we can do the codes above in one singe lines: chain them together*
+```
+const goodRestos = pizzeria.filter( p => p.stars >= 5).map(n => n.name);
+
+goodResots;
+//["Marios's Pizza", "Cecilia's Pizza"]
+```
+
 ---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Callback functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-functions--array-methods-)
+
+<br> 
+
+---
+
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
 
 
