@@ -2849,7 +2849,9 @@ __Array methods accept a function as its arguments.__
   __[Arrow Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#arrow-functions)__   
   __[setTimeout](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#settimeout)__   
   __[setInterval](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#setinterval)__ & __[clearInterval](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#clearinterval)__         
-  __[Filter](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#filter)__
+  __[Filter](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#filter)__   
+  __[Some]()__ & __[Every]()__   
+  __[Reduce]()__
 
 
 ## __[forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)__   
@@ -3346,6 +3348,95 @@ goodResots;
 
 <br> 
 
+## __[every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)__
+The `every()` method __tests whether ALL elements in the array pass the the provided function__ (the test). It __returns a Boolean value__.
+
+So, if every element passed into that function returns true, then the entire every function call returns true.
+
+- eg.:
+  *check if EVERY goals reach 50. If all the goals are equal or greater than 50, returns TRUE*
+  ```
+  const goals = [80, 100, 50, 40, 77];
+
+  goals.every(points => points >= 50)         // each element from points array is passed into the callback ***every(callback)***, callback should return true/false.
+  // result is FALSE, because one of the goals is less than 50.
+  ```
+- eg.:   
+  *a function (evens) which accepts a single array of numbers, returns true if the numbers are even and false of odd.*
+  ```
+  function evens(num){
+      (num.every( (x) => (x % 2 === 0) ) ) 
+      {
+        return true;
+      } 
+    }
+
+    evens([2, 4, 6, 8]);
+    // true
+
+    evens([3, 6, 8]);
+    // false
+
+
+    //******* shorter version! ******//
+      
+    function allEvens(num){
+      return (num.every( x => x % 2 === 0))
+    }
+
+    evens([2, 4, 6, 8]);
+    // true
+    evens([3, 6, 8]);
+    // false
+  ```
+
+---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Callback functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-functions--array-methods-)
+
+<br> 
+
+## __[some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)__  
+Similiar to every, but __returns TRUE if SOME of the array elements pass the test function__.
+
+- eg.:   
+  **check if SOME of the goals reach 50. If some of the goals are equal or greater than 50, returns TRUE**
+  ```
+  const goals = [80, 100, 50, 40, 77];
+
+  goals.some(points => points >= 50)         // at least 1 element has to be >= 50.
+  // result is TRUE, because 4 out of 5 of the goals is greater than 50.
+  ```
+
+- eg.:   
+  *let see if any of the houses is built after 1920*  
+  ```
+  const buildings = [
+    {
+      name : "House1",
+      year: 1990
+    },
+    {
+      name : "House2",
+      year: 1909
+    },
+    {
+      name : "House3",
+      year: 1870
+    }
+  ];
+
+  buildings.some(house => house.year > 1920)
+
+  // true - because 1 of the elements passes the test
+  ```
+---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Callback functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-functions--array-methods-)
+
+<br> 
+
+## __[reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)__
 ---
 
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
