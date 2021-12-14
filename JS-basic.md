@@ -3089,7 +3089,7 @@ It allows us to write functions without the keyword function.
     } 
     ```
 
-- we can't declare an arrow function on its own , like `(x,y) => { }`. So __we have to save it in a variable__;
+- we can't declare an arrow function on its own , like `(x,y) => { }`. So __we have to save it in a variable__. (💡 If we don't save it to a variable, once we create an array (or any other content), it's [discarded](https://javascript.info/garbage-collection).
   - eg.:
     ```
     const variable = (x,y) => { 
