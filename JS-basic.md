@@ -3469,11 +3469,11 @@ Similiar to every, but __returns TRUE if SOME of the array elements pass the tes
     // 26.479999999999997
     ```
 
-- reduce() can be use to find maximum or minimum values.
+- `reduce()` can be use to find maximum or minimum values.
 
 - eg.:    
   *find the min. price of the array*   
-  *what we accumulating is the minimum value through the array*
+  *what we are accumulating is the minimum value through the array*
   ```
   const prices = [1.99, 4.50, 19.99];
 
