@@ -3438,7 +3438,7 @@ Similiar to every, but __returns TRUE if SOME of the array elements pass the tes
 <br> 
 
 ## __[reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)__   
-  exectues a reducer function on each element of the array, resulting in a single value.   
+  executes a reducer function on each element of the array, resulting in a single value.   
   So its main goal is to take some array and reduce it down to a single value.
 
   - eg.:   
