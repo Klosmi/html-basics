@@ -3437,7 +3437,107 @@ Similiar to every, but __returns TRUE if SOME of the array elements pass the tes
 
 <br> 
 
-## __[reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)__
+## __[reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)__   
+  exectues a reducer function on each element of the array, resulting in a single value.   
+  So its main goal is to take some array and reduce it down to a single value.
+
+  - eg.:   
+   *The __accumulator__ it __holds the sum__.*   
+  *The __currentValue__ represents each element from the array*
+    ```
+    [1, 3, 5, 7].reduce((accumulator, currentValue) => {
+      return accumulator + currentValue;
+    });
+
+    // first callback: 1 + 3 = 4
+    // second callack: 4 + 5 = 9
+    // third callback: 9 + 7 = 16
+    ```
+ 
+ - eg.:   
+   *figure out the total (not using for.. of, but would be easier)*    
+   *here accumulator is named as total*
+
+    ```
+    const prices = [1.99, 4.50, 19.99];
+
+    const totalPrice = prices.reduce((total, num) => {
+      return total + num
+    })
+
+    totalPrice;
+    // 26.479999999999997
+    ```
+
+- reduce() can be use to find maximum or minimum values.
+
+- eg.:    
+  *find the min. price of the array*   
+  *what we accumulating is the minimum value through the array*
+  ```
+  const prices = [1.99, 4.50, 19.99];
+
+  const minPrice = prices.reduce((min, currentNum) => {
+    if (currentNum < min) {
+      return currentNum;
+    }
+    return min;
+  });
+
+  minPrice;
+  // 1.99
+  ```
+
+- eg.:    
+  *find the newest house*
+  ```
+  const houses = [
+      {
+        name : "House1",
+        year: 1990
+      },
+      {
+        name : "House2",
+        year: 2013
+      },
+      {
+        name : "House3",
+        year: 1870
+      }
+  ];
+
+  const newestHouse = houses.reduce((newHouse, currentHouse) => {
+    if (currentHouse.year > newHouse.year) {
+          return currentHouse;
+    }
+      return newHouse;            
+  });
+
+  newestHouse;
+  //{name: 'House2', year: 2013}
+  ```
+
+- we can specify a starting point for the `accumulator` parameter, by adding a __2nd argument__ to the `current value`.
+  - eg.:
+    *adding a 2nd argument `100` to `current` as a starting point*
+    ```
+    const evens = [2, 4, 6, 8];
+
+    evens.reduce((accumulater, current) => 
+    accumulater + current, 100);
+    
+    // 120        - because [2, 4, 6, 8] = 20 + 100
+    ```
+
+💡 [further reading about `reduce`](https://www.freecodecamp.org/news/reduce-f47a7da511a9/)   
+💡 [another reading about `reduce`](https://www.digitalocean.com/community/tutorials/js-finally-understand-reduce)
+
+---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Callback functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-functions--array-methods-)
+
+<br> 
+
 ---
 
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
