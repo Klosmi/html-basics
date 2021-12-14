@@ -3329,8 +3329,8 @@ odds;
   ];
 
 const goodRestos = pizzeria.filter( p => p.stars >= 5);
-// 0: {name: "Marios's Pizza", stars: 5}
-// 1: {name: "Cecilia's Pizza", stars: 9}
+// 0: [{name: "Marios's Pizza", stars: 5},
+// 1: {name: "Cecilia's Pizza", stars: 9}]
 
 const restoNames = goodRestos.map( n => n.name);
 // ["Marios's Pizza", "Cecilia's Pizza"]
