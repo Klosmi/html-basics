@@ -3304,8 +3304,7 @@ odds;
   });
 
   goodRestos;
-  // 0: {name: "Marios's Pizza", stars: 5}      // array of objects
-  // 1: {name: "Cecilia's Pizza", stars: 9}     // array of object
+  // [{name: "Marios's Pizza", stars: 5}, {name: "Cecilia's Pizza", stars: 9}]     // array of objects    
   ```
     
 *the same code with a 1 liner*
