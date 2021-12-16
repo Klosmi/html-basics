@@ -2862,7 +2862,7 @@ __Array methods accept a function as its arguments.__
 )__ & __[Some](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#some
 )__   
   __[Reduce](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#reduce)__   
-  __[`this` in arrow functions]()__   
+  __[`this` in arrow functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#this-in-arrow-functions)__   
 
 
 ## __[forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)__   
@@ -3549,7 +3549,7 @@ Similiar to every, but __returns TRUE if SOME of the array elements pass the tes
 
 <br> 
 
-## __[`this`](https://www.freecodecamp.org/news/learn-es6-the-dope-way-part-ii-arrow-functions-and-the-this-keyword-381ac7a32881/)__ with __arrow functions__
+## __[`this`](https://www.freecodecamp.org/news/learn-es6-the-dope-way-part-ii-arrow-functions-and-the-this-keyword-381ac7a32881/)__ in __arrow functions__
 
 `this` of an arrow function vs an arrow function or a traditional function.
 
