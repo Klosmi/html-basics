@@ -3035,6 +3035,8 @@ But `Map` is __then generates a new array using__ the result, using __the return
 
 It allows us to write functions without the keyword function.
 
+- it is called in short [*the fat arrow*](https://www.freecodecamp.org/news/learn-es6-the-dope-way-part-ii-arrow-functions-and-the-this-keyword-381ac7a32881/) (and in Ruby may know it better as the *hash rocket* ) 
+
 - syntactically compact alternative to a regular function expression, so the point is to make things shorter.
 
 - a *traditional function* vs. an *arrow function*:   
