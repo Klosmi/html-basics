@@ -2734,7 +2734,9 @@ a cup has design, weight, a material it is made of, etc.
 
  - most common situation to use `this`: we typically use inside of an object in a method.
  - the value of [`this`](https://alligator.io/js/this-keyword/#four-rules) differs depending on how a function is invoked (how it is called), so we can’t know the value of `this` just by looking at the function itself, but we need to know the context in which the function is invoked.
- - So, the `this` references the object that is executing the current function.   
+ - So, the `this` references the object that is executing the current function.  
+ - If a function is part of an obejct, it is called a method → If the function is a method in an object, `this` references that object itself.   
+   Otherwise, if that function is a regular function, so it's not part of an obejct, `this` references the global object, the `window`. 
 
  - eg.:   
     *creating an object `person`, it has a method `fullname()`*   
