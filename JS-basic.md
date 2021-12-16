@@ -3551,14 +3551,14 @@ Similiar to every, but __returns TRUE if SOME of the array elements pass the tes
 
 ## __[`this`](https://www.freecodecamp.org/news/learn-es6-the-dope-way-part-ii-arrow-functions-and-the-this-keyword-381ac7a32881/)__ in __[arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#arrow_functions)__
 
-`this` of an arrow function vs an arrow function or a traditional function.
+`this` of an arrow function vs `this` of a traditional function.
 
 - __`this` in a normal method refers to the object in which it is contained__.
 
 - __`this` in an arrow function refers (be scoped to) only the function in which it is created__.
 
 - So, if we use `this` inside the arrow function, it will refer to the global environment which is the `window`. 
-If we put the arrow function inside of a normal function expression, the `this` will refer to the function expression's scope.
+If we put the arrow function inside of a normal function expression, the `this` will refer to the function's scope.
 
 - When `this` is inside of an object’s method — the function’s owner is the object: thus the `this` keyword is bound to the object.    
 Yet, when it is inside of a function, either stand alone or within another method, it will always refer to the `window/global object`.   
