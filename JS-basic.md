@@ -2838,6 +2838,8 @@ So, if we call the the `woof` method on the `dog` object then the `this` keyword
 
 - to sum up: the __value of this differs depending on how a function is invoked (the call site), so we can’t know the value of this just by looking at the function itself, but we need to know the context in which the function is invoked__.
 
+- [MDN's explanation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#this_in_function_contexts), very helpful. 
+
 - further reading about __[`this`](https://www.javascripttutorial.net/javascript-this/)__ and __[`this`](https://alligator.io/js/this-keyword/)__
 
 
