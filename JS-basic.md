@@ -2634,6 +2634,8 @@ Factory functions can also have parameters allowing us to customize the object t
 We can add functions as properties on objects. __We call them methods!__   
 
  __A method is a function that has been placed as a [property](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-object-literals-) on an object__ ❗️: we put a dot __`.`__ infront of its name (like we did with built in methods).
+ 
+- *object’s method (a function that belongs to an object)* 
 
 - built in methods, like string methods, array methods, etc.
   - eg.:
