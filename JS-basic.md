@@ -3549,7 +3549,7 @@ Similiar to every, but __returns TRUE if SOME of the array elements pass the tes
 
 <br> 
 
-## __[`this`](https://www.freecodecamp.org/news/learn-es6-the-dope-way-part-ii-arrow-functions-and-the-this-keyword-381ac7a32881/)__ in __arrow functions__
+## __[`this`](https://www.freecodecamp.org/news/learn-es6-the-dope-way-part-ii-arrow-functions-and-the-this-keyword-381ac7a32881/)__ in __[arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#arrow_functions)__
 
 `this` of an arrow function vs an arrow function or a traditional function.
 
