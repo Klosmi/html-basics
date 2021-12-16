@@ -2407,7 +2407,7 @@ So basically it is the __visibility of the variable__.
     }
 
 
-    outer();                     // executing the outer functiom
+    outer();                     // executing the outer function
 
 
     // result: "Hello Spiderman!"
