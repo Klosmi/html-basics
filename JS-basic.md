@@ -2861,7 +2861,8 @@ __Array methods accept a function as its arguments.__
   __[Every](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#every
 )__ & __[Some](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#some
 )__   
-  __[Reduce](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#reduce)__
+  __[Reduce](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#reduce)__   
+  __[`this` in arrow functions]()__   
 
 
 ## __[forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)__   
@@ -3548,9 +3549,158 @@ Similiar to every, but __returns TRUE if SOME of the array elements pass the tes
 
 <br> 
 
+## __[`this`](https://www.freecodecamp.org/news/learn-es6-the-dope-way-part-ii-arrow-functions-and-the-this-keyword-381ac7a32881/)__ with __arrow functions__
+
+`this` of an arrow function vs an arrow function or a traditional function.
+
+- __`this` in a normal method refers to the object in which it is contained__.
+
+- __`this` in an arrow function refers (be scoped to) only the function in which it is created__.
+
+- So, if we use `this` inside the arrow function, it will refer to the global environment which is the `window`. 
+If we put the arrow function inside of a normal function expression, the `this` will refer to the function expression's scope.
+
+- When `this` is inside of an object’s method — the function’s owner is the object: thus the `this` keyword is bound to the object.    
+Yet, when it is inside of a function, either stand alone or within another method, it will always refer to the `window/global object`.   
+*(it's the JS quirk)*
+
+
+
+- eg.:   
+  *a traditional function with `this` - returning the first and last name*
+  ```
+  const person = {
+    first : "John",
+    last : "Doe",
+    full : function () {
+     return `${this.first} ${this.last}` 
+    }
+  }
+
+  person.first;
+  // 'John'
+  npersoname.full();
+  // 'John Doe'
+  ```
+  __*`this` with arrow function*__
+  ```
+  const name = {
+    first : "John",
+    last : "Doe",
+    fullName : () => {
+     return `${this.first} ${this.last}` 
+    }
+  }
+
+   name.fullName();
+  // 'undefined undefined'
+  ```
+
+- In arrow functions, JavaScript sets the `this` lexically.  
+  It means that the __arrow function does not create its own execution context__ but __inherits the `this` from the outer function where the arrow function is defined__ ❗️.    
+  Since an arrow function does not create its own execution context, defining a method using an arrow function will cause an error.    
+
+   - So `this` does not [bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind#examples) to the object’s method or the object itself.
+  - in this example, it means `this` refers to the *window object*.
+
+- to __define a method we shouldn't use  an arrow function__ (give undefined)!
+
+<br>
+
+- 💡 __when `this` make sense in an arrow function__
+  - eg.:   
+  *we add a `setTimeout` method in to our name object, under the fullName method*
+  ```
+  const person = {
+    first : "John",
+    last : "Doe",
+    fullName : () => {
+     return `${this.first} ${this.last}` 
+    },
+    timeName : function() {
+      setTimeout( () => {
+          console.log(this);
+          console.log(this.fullName())
+      }, 3000)                  // we waint 3 sec, before condsle.log(this.fullName())
+    }
+  }
+
+  person.timeName();        // wait 3 seconds
+  // {first: 'John', last: 'Doe', fullName: ƒ, timeName: ƒ}
+  // undefined undefined
+  ```
+
+ - the `setTimeout()` is a window object, and that's why it's important to use arrow functions in that case. 
+ - Because if it were a normal function, than `this` inside that normal function *would point to the window object*, since __normal functions use the execution context__ (in this case, the context is the window), so `this.fullName` returns undefined. 
+ - With an *arrow function*, the __`this` would correctly point to the scope of the outer function__ instead of using the window context of the `setTimeout()` function, and `this.fullName` wouldn't be undefined.
+
+ - in other words: the `this` keyword __inherits__ the execution context from the outer function, where the arrow function is defined. It means, that it gets the same scope as its parent scope. Therefore, when we use `this` + __arrow function__ its context will be indeed the outer function.
+
+ - when we use `this` inside of an arrow function, we're going one level back in terms of scope.
+
+  <br>
+
+  *the same example: but we use a regular function, and we have an error*
+  ```
+  const person = {
+    first : "John",
+    last : "Doe",
+    fullName : () => {
+     return `${this.first} ${this.last}` 
+    },
+    timeName : function() {
+      setTimeout(function() {
+          console.log(this);
+          console.log(this.fullName())
+      }, 3000)                  // we waint 3 sec, before condsle.log(this.fullName())
+    }
+  }
+
+  person.timeName();        // wait 3 seconds
+  // Window {window: Window, self: Window, document: document, name: '', …}
+  // TypeError: this.fullName is not a function
+  ```
+
+  - gives an error, because of the execution context: here `setTimeout()` is a method on the `window` object (`window.setTimeout`), and `this` refers to that `window` object.
+
+- to conclude:    
+  *A method:*    
+  is a function directly inside of an object.
+
+  *A function:*    
+  is either standalone or inside of a method.
+
+  *Non-Arrow Functions:*   
+  When `this` is used inside of an object’s method the `this` keyword is bound to the object. Yet when it is inside of a function, either stand alone or within another method, it will always refer to the `window` / global object.
+
+  *Arrow Functions*   
+  The `this` keyword inherits the execution context from the outer function where the arrow function is defined, i.e. it gets the same scope as it's parent's scope.
+
+💡 recap for the scoping:
+  - eg.:   
+  *to understand the scoping with `this`*
+    ```
+    const thing1 = {
+      thing2 : {
+          thing3 : () => {
+              console.log(this)
+            }
+        }
+    }
+  
+    thing1.thing2.thing3();
+    // Window ...
+    ```
+    `thing2` is a property of the `thing` object, and the scope of that property is still the `thing` object. When we use the arrow function, it will refer to the parent scope of the `thing` object, which is indeed the `Window` object.
+
+---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Callback functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-functions--array-methods-)
+
+<br> 
+
 ---
 
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
-
 
 
