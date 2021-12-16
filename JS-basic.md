@@ -2733,6 +2733,8 @@ a cup has design, weight, a material it is made of, etc.
  `this` keyword is used when we want to access other properties on the same object.
 
  - most common situation to use `this`: we typically use inside of an object in a method.
+ - the value of [`this`](https://alligator.io/js/this-keyword/#four-rules) differs depending on how a function is invoked (how it is called), so we can’t know the value of `this` just by looking at the function itself, but we need to know the context in which the function is invoked.
+ - So, the `this` references the object that is currently calling the function.   
 
  - eg.:   
     *creating an object `person`, it has a method `fullname()`*   
@@ -2772,7 +2774,7 @@ The `this` refers to what is on its left side.
 <br>
 
 - So the value of `this` __can change__ ❗️
-- the value of `this` depends on the invocation context  of the function it is used in, so it depends on __how we call the function__.
+- the value of `this` depends on the invocation context of the function it is used in, so it depends on __how we call the function__.
 
   - eg.:   
     *make a `dog2` variable which refers to the `dog.woof()` method*   
