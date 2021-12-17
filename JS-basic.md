@@ -3693,6 +3693,8 @@ Yet, when it is inside of a function, either stand alone or within another metho
     ```
     `thing2` is a property of the `thing` object, and the scope of that property is still the `thing` object. When we use the arrow function, it will refer to the parent scope of the `thing` object, which is indeed the `Window` object.
 
+- [about the execution context](https://dev.to/thee_divide/fast-guide-to-execution-context-execution-stack-in-javascript-3eij) :   
+  The execution context is just a container that is currently running code and is taking into account the environment (context) in which it is running.
 ---
 
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Callback functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-functions--array-methods-)
