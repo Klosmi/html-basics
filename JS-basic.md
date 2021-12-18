@@ -3605,14 +3605,12 @@ Yet, when it is inside of a function, either stand alone or within another metho
   const person = {
     first : "John",
     last : "Doe",
-    full : function () {
+    fullName : function () {
      return `${this.first} ${this.last}` 
     }
   }
 
-  person.first;
-  // 'John'
-  npersoname.full();
+  person.fullName();
   // 'John Doe'
   ```
   __*`this` with arrow function*__
@@ -3625,7 +3623,7 @@ Yet, when it is inside of a function, either stand alone or within another metho
     }
   }
 
-   name.fullName();
+  name.fullName();
   // 'undefined undefined'
   ```
 
