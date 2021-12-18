@@ -3572,9 +3572,9 @@ Similiar to every, but __returns TRUE if SOME of the array elements pass the tes
   // Hey Joe hello!
   ```
   *__arrow function:__*   
-  *the value of `this` has not changed (not set), when we call it `person.hello()`*      
-  *`this` is set to the `window` object, so it seems that `hello` method is defined on its own, not inside of the `person` object*    
-  *That is why, it doesn't matter how we call the function*
+  *the value of `this` has not changed (not set), when we call it `person.hello()`*.        
+  *`this` is set to the `window` object, so it seems that `hello` method is defined on its own, not inside of the `person` object.*.      
+  *That is why, it doesn't matter how we call the function.*.  
   *So, we are not getting a new value for `this` (because its value is that global value, the `window` object).*
   ```
   const person = {
