@@ -3593,12 +3593,6 @@ Similiar to every, but __returns TRUE if SOME of the array elements pass the tes
 - So, if we use `this` inside the arrow function, it will refer to the global environment which is the `window`. 
 If we put the arrow function inside of a normal function, the `this` will refer to the function's scope.
 
-- When `this` is inside of an object’s method — the function’s owner is the object: thus the `this` keyword is bound to the object.    
-Yet, when it is inside of a function, either stand alone or within another method, it will always refer to the `window/global object`.   
-*(it's the JS quirk)*
-
-
-
 - eg.:   
   *a traditional function with `this` - returning the first and last name*
   ```
