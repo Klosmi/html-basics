@@ -3634,7 +3634,7 @@ If we put the arrow function inside of a normal function, the `this` will refer 
 
 - 💡 __when `this` make sense in an arrow function__
   - eg.:   
-  *we add a `setTimeout` method in to our name object, under the fullName method*
+  *we add a `setTimeout` method in to our person object, under the fullName method*
   ```
   const person = {
     first : "John",
