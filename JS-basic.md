@@ -3731,7 +3731,7 @@ When JavaScript code is interpreted, each function creates an __execution contex
 <br> 
 
 # __[Other JS Features](https://www.digitalocean.com/community/tutorials/understanding-destructuring-rest-parameters-and-spread-syntax-in-javascript)__   
-- [default parameters]()
+- [default parameters](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#default-parameters-)   
 - [spread syntax]()
 
 ## __[Default parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)__ :  
