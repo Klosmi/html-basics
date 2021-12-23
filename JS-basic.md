@@ -3686,7 +3686,7 @@ If we put the arrow function inside of a normal function, the `this` will refer 
   // TypeError: this.fullName is not a function
   ```
 
-  - gives an error, because of the execution context: here `setTimeout()` is a method on the `window` object (`window.setTimeout`), and `this` refers to that `window` object.
+  - gives an error, because of the [execution context](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#about-the-execution-context-): here `setTimeout()` is a method on the `window` object (`window.setTimeout`), and `this` refers to that `window` object.
 
 - to conclude:    
   *A method:*    
