@@ -3729,7 +3729,8 @@ When JavaScript code is interpreted, each function creates an __execution contex
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Callback functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-functions--array-methods-)
 
 <br> 
-# __[Other JS Features](https://www.digitalocean.com/community/tutorials/understanding-destructuring-rest-parameters-and-spread-syntax-in-javascript)
+
+# __[Other JS Features](https://www.digitalocean.com/community/tutorials/understanding-destructuring-rest-parameters-and-spread-syntax-in-javascript)__   
 - [default parameters]()
 - [spread syntax]()
 
