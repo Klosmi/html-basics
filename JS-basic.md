@@ -3823,7 +3823,173 @@ Basically when we don't use a paramter, we can give it a default value.
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS Other Features](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#other-js-features)
 
 <br> 
+
+## __[Spread Syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)__ :   
+Spread syntax looks liek this: __`...`__ .   
+It allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.  
+
+- The keyword is expanding, so spread (*taking something and spreading it out*).  
+
+- its 3 dots: __`...`__
+
+
+#### __[Spread in Function Calls](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_function_calls)__ 
+
+Spreading an iterable (array, string, etc.) into a Function Call (a list of arguments)
+
+- eg.:   
+  *`Math.max` and `Math.min` static functions expect multiple arguments. They return  `NaN` if any parameter isn't a number and can't be converted into a number.*
+  ```
+  Math.min(3, 5, 9, 1);         // these numbers are separate arguments
+  // 1
+
+  Math.max(3, 5, 9, 1);         // these numbers are separate arguments
+  // 9
+
+  const nums = [3, 5, 9, 1];
+
+  Math.min(nums)
+
+  // NaN          // because we passed a single array full of numbers, not multiple sperate arguemnts
+  ```
+  *so we are going to use the __spread syntax__, and by that, we're separating the `nums` into separate arguments, so the functions can use it.*
+  ```
+  const nums = [3, 5, 9, 1];
+
+  Math.max(...nums);           // num array spreaded out into separate arguemnts: 3, 5, 9, 1
+  // 9
+  ```
+  *the __`...`__ syntax doesn't change `nums`*   
+ 
+- eg.:   
+  *using `console.log`, and printing out `nums`. Then using the separate syntax, see the differnce: __each element from `nums` array passed in as a separate argument__ to the `console.log`.*
+  ```
+  const nums = [3, 5, 9, 1];
+
+  console.log(nums);
+  // [3, 5, 9, 1]                 // the array itself is printed
+
+  console.log(...nums);
+  // 3 5 9 1                      // numbers are separated by spaces
+  ```
+
+- we can use the __spread__ for any other iterable (which we can use the `for..of`)
+  - eg.:   
+    *spread on a string: it spreads each character into individual arguments*
+    ```
+    console.log("HELLO");
+    // HELLO
+
+    console.log(..."HELLO");        // it equals to this: console.log("H", "E", "L", "L", "O") ← separate arguments
+    // H E L L O
+    ```
+
 ---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS Other Features](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#other-js-features)
+
+<br>
+
+ #### __[Spread in Array Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_array_literals)__     
+ How can we spread an iterable into arrays.
+ Basically spreading an array into an other array.
+
+ - eg.:   
+  *We have 2 arrays, and we want to contain all the arrays into a variable. Using spread, we create a copy of the arrays.*
+  ```
+  const cities = ["London", "Paris", "Budapest"];
+  const countries = ["India", "China"];
+
+  const places = [...cities]
+  // ['London', 'Paris', 'Budapest']      // → a copy of const cities
+
+
+  // to prove places a copy of cities
+
+  places.push("Amsterdam");
+  places;
+  // ['London', 'Paris', 'Budapest', 'Amsterdam']
+
+  cities;
+  // ["London", "Paris", "Budapest"]      // → cities unchanged
+  ```
+
+  *combine arrays*
+  ```
+  const cities = ["London", "Paris", "Budapest"];
+  const countries = ["India", "China"];
+
+  places = [...cities, ...countries];  
+  // ['London', 'Paris', 'Budapest', 'India', 'China']
+  ```
+
+---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS Other Features](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#other-js-features)
+
+<br>
+
+
+  #### __[Spread in object literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_object_literals)__
+  Copies properties from one object into another object literal.   
+
+  - like in arrays, we can spread properties from an object into a new object.
+
+  - A lot of the time it is useful to spread into objects, so creating copies of an object. For instance when we are working with with libraries and tools (like React).
+
+  - eg.:   
+   *We have 2 objects: cat and dog. We can make a copy of the cat for example*
+    ```
+    const cat = { color : 'black', name : 'Milo'};
+    const dog = { isBig : true, name: 'Charlie'};
+
+    {...cat};
+    // {color: 'black', name: 'Milo'}
+    ```
+    *we can add something to that copy*
+    ```
+    {...cat, type : 'Biman'};
+    // {color: 'black', name: 'Milo', type: 'Biman'}
+    ```
+    *we can combine cat and dog into a new variable (pets).    
+    It copies over properties from both, but there is a conflict: both have a `name` property.    
+    __The order matters__: `dog` is the last one, so it overrites the `cat` property (see the `name`, it's from the `dog` property).*
+    ```
+    const pets = {...cat, ...dog};
+
+    pets;
+    // {color: 'black', name: 'Charlie', isBig: true}
+    ```
+
+  - eg.:   
+    *Try to spread an array into an object. The __indices__ are used as the key.*
+    ```
+    {...[2, 6, 7, 4]};
+    // {0: 2, 1: 6, 2: 7, 3: 4}     // 0 index : 2, 1 index : 6, etc...
+
+    {...'Bonjour'};
+    // {0: 'B', 1: 'o', 2: 'n', 3: 'j', 4: 'o', 5: 'u', 6: 'r'}
+    ```
+ - also useful to copy objects, when we have a form (a data), and we want to add something extra data to it.
+    - eg.:   
+      *We have a form, called `user`, and we cope and add our extra data to it, called `newUser`*
+      ```
+      const user = { email : "somethong@email.com", password : "123456789" };
+
+      const newUser = {...user, id : "94576", isAdmin: false};                      // the copy of the user + our extra data
+
+      newUser;
+      // {email: 'somethong@email.com', password: '123456789', id: '94576', isAdmin: false}
+      ```
+
+---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS Other Features](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#other-js-features)
+
+<br>
+
+---
+
 
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
 
