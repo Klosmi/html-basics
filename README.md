@@ -3,7 +3,7 @@
 1. [HTML Inline elements vs block elements](https://github.com/Klosmi/html-basics/blob/master/inlene-vs-block.md)
 2. [HTML Semantics](https://github.com/Klosmi/html-basics/blob/master/HTML-semantic%20markup.md)
 3. [HTML Unrelated elements & HTML enitites](https://github.com/Klosmi/html-basics/blob/master/HTML-unrelated-elements-entities.md)
-4. [HTML Tables](https://github.com/Klosmi/html-basics/blob/master/HTML-tables_01.md)
+4. [HTML Tables](https://github.com/Klosmi/html-basics/blob/master/HTML-tables_01.md) 
 5. [HTML Forms](https://github.com/Klosmi/html-basics/blob/master/HTML-forms.md)
 6. <a href="https://newbedev.com/what-is-the-meaning-of-the-dist-directory-in-open-source-projects" target="_blank">Folder Structure </a><sup>external link</sup>
 7. [CSS Basics](https://github.com/Klosmi/html-basics/blob/master/CSS-basics.md)
@@ -43,7 +43,7 @@
 14. [JS: Loops](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-loops-)
 15. [JS: Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-functions-)
 16. [JS: Callback Functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-functions--array-methods-)   
-17. [JS: Other features]()
+17. [JS: Other features](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#other-js-features)   
 
 <br>
 
