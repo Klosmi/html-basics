@@ -3890,7 +3890,7 @@ Spreading an iterable (array, string, etc.) into a Function Call (a list of argu
 
 ---
 
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS Other Features](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#other-js-features)
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Spread Syntax](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#spread-syntax-)
 
 <br>
 
@@ -3929,7 +3929,7 @@ Spreading an iterable (array, string, etc.) into a Function Call (a list of argu
 
 ---
 
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS Other Features](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#other-js-features)
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Spread Syntax](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#spread-syntax-)
 
 <br>
 
