@@ -3657,10 +3657,11 @@ If we put the arrow function inside of a normal function, the `this` will refer 
 
  - the `setTimeout()` is a window object, and that's why it's important to use arrow functions in that case. 
  - Because if it were a normal function, than `this` inside that normal function *would point to the window object*, since __normal functions use the execution context__ (in this case, the context is the window), so `this.fullName` returns undefined. 
- - With an *arrow function*, the __`this` would correctly point to the scope of the outer function__ instead of using the window context of the `setTimeout()` function, and `this.fullName` wouldn't be undefined.
+ - With an *arrow function*, the __`this` would correctly point to the scope of the outer function__ (timeName) instead of using the window context of the `setTimeout()` function, and `this.fullName` wouldn't be undefined.
 
- - in other words: the `this` keyword __inherits__ the execution context from the outer function, where the arrow function is defined. It means, that it gets the same scope as its parent scope. Therefore, when we use `this` + __arrow function__ its context will be indeed the outer function.
-
+ - in other words: the outer function (`timeName`) is the block/scope where we're defining the `setTimeout` method, and an arrow function nested in that `timeName` function will inherit its context.   
+When we use the `this` inside `timeName`, we're referring to the `person` object (the object to the left when the method is called, as in `person.timeName`), so we would apply the same thing to the `this` inside the `setTimeout` as well.   
+When JavaScript code is interpreted, each function creates an __execution context__, to scope any variables and arguments inside the block created by that function. So with that, the arrow function is part of the execution context created for `timeName`. 
  - when we use `this` inside of an arrow function, we're going one level back in terms of scope.
 
   <br>
