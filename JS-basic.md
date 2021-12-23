@@ -3832,7 +3832,7 @@ It allows an iterable such as an array expression or string to be expanded in pl
 
 - its 3 dots: __`...`__
 
-- spread in: 
+- spread in:     
    [function call](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#spread-in-function-calls)      
    [array literlas](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#spread-in-array-literals)   
    [object literals](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#spread-in-object-literals)
