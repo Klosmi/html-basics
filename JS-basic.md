@@ -3729,7 +3729,99 @@ When JavaScript code is interpreted, each function creates an __execution contex
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Callback functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-functions--array-methods-)
 
 <br> 
+# __[Other JS Features](https://www.digitalocean.com/community/tutorials/understanding-destructuring-rest-parameters-and-spread-syntax-in-javascript)
+- [default parameters]()
+- [spread syntax]()
 
+## __[Default parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)__ :  
+`Default function` parameters allow named parameters to be initialized with default values if no value or undefined is passed.    
+Basically when we don't use a paramter, we can give it a default value.
+
+- eg.:   
+  *a roll die method with `Math.random` times, a number of sides*
+  ```
+  function rollDie(sides) {
+    return Math.floor(Math.random() * sides) + 1
+  }
+
+  rollDie(6);     // expecting a number from 1 to 6
+  // 2 // 5 
+
+  rollDie();
+  // NaN          // we didn`t pass any value, so it's NaN, nothung multiply number is NaN
+  ```
+
+- The way to avoid `NaN` when we don't pass value to the function, is we give a __`default param`__ 
+- we add an __`=`__ sign to the paramters in the function. 
+-eg.:     
+  *We set __`b = 1`__, so the default value of `b` is `1`*
+  ```
+  function multiply(a, b = 1) {
+    return a * b;
+  }
+
+  multiply(7);     // 7  →  7 * 1
+  multiply(7, 3);  // 21 →  7 * 3
+  ```
+  If we leav out the `b`, the `b` is set to `1`, so its defaul value is `1`.
+
+- eg.:   
+  *so the first example with `default param`*
+    ```
+  function rollDie(sides = 6) {
+    return Math.floor(Math.random() * sides) + 1
+  }
+
+  rollDie(6);     // expecting a number from 1 to 6
+  // 2 // 5 
+
+  rollDie();      // sides = 6 
+  // 2 // 4
+  ```
+
+- __the order is very important__ ❗️
+
+  - eg.:  
+    *we pass two parameters*
+    ```
+    function greeting( greet, name ) {
+      console.log(`${greet} ${name}`);
+    }
+
+    greeting("Hi there!", "John");
+    // Hi there! John
+
+    greeting("John");           // I pass only 1 argument
+    // John undefined           // it doesn't know the order, John is the 2nd normally
+    ```
+    *The default parameters should come second or third or, etc. They need to come after any parameters that are not default.*
+    ```
+    function greeting( name, greet = "Hello!" ) {
+      console.log(`${greet} ${name}`);
+    }
+
+    greeting("John");
+    // Hello! John
+    ```
+    *we can use multiple default paramters*
+    ```
+    function greeting(greet = "Hello!", name, question = "How are you?"  ) {
+      console.log(`${greet} ${name} ${question}`);
+    }
+
+    greeting("John");
+    // Hello! John How are you?
+
+    greeting("Bonjour", "John", "comment tu vas?");
+    // Bonjour John comment tu vas?
+    ```
+
+
+---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to Callback functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-functions--array-methods-)
+
+<br> 
 ---
 
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
