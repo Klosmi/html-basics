@@ -3716,7 +3716,7 @@ If we put the arrow function inside of a normal function, the `this` will refer 
     thing1.thing2.thing3();
     // Window ...
     ```
-    `thing2` is a property of the `thing` object, and the scope of that property is still the `thing` object. When we use the arrow function, it will refer to the parent scope of the `thing` object, which is indeed the `Window` object.
+    `thing2` is a property of the `thing1` object, and the scope of that property is still the `thing1` object. When we use the arrow function, it will refer to the parent scope of the `thing1` object, which is indeed the `Window` object.
 
 
 ##### [about the execution context](https://dev.to/thee_divide/fast-guide-to-execution-context-execution-stack-in-javascript-3eij) :   
