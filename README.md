@@ -34,7 +34,7 @@
 5. [JS: Math Object](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-math-object)
 6. [JS: Comparison Operators](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-comparison-operators)
 7. [JS: console | alert() | prompt methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-console-method)
-8. [JS: Conditional statement - if • else if • else](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-conditional-statement---if--else-if--else)  
+8. [JS: Conditional statement - if • else if • else](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-conditional-statement---if--else-if--else) 
 9. [JS: Switch statement](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#switch-statement) 
 10. [JS: Truthy and Falsy values](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#truthy-and-falsy-values)   
 11. [JS: Logical operators](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#logical-operators)   
@@ -42,7 +42,8 @@
 13. [JS: Object Literals](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-object-literals-) 
 14. [JS: Loops](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-loops-)
 15. [JS: Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-functions-)
-16. [JS: Callback Functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-functions--array-methods-)
+16. [JS: Callback Functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-functions--array-methods-)   
+17. [JS: Other features]()
 
 <br>
 
