@@ -3654,10 +3654,10 @@ If we put the arrow function inside of a normal function, the `this` will refer 
   // {first: 'John', last: 'Doe', fullName: ƒ, timeName: ƒ}
   // undefined undefined
   ```
-
  - the `setTimeout()` is a window object, and that's why it's important to use arrow functions in that case. 
  - Because if it were a normal function, than `this` inside that normal function *would point to the window object*, since __normal functions use the execution context__ (in this case, the context is the window), so `this.fullName` returns undefined. 
- - With an *arrow function*, the __`this` would correctly point to the scope of the outer function__ (timeName) instead of using the window context of the `setTimeout()` function, and `this.fullName` wouldn't be undefined.
+ - With an *arrow function*, the __`this` would correctly point to the scope of the outer function__ (timeName) instead of using the window context of the `setTimeout()` function, and `this.fullName` wouldn't be undefined.    
+See explanation [here](https://www.youtube.com/watch?v=thXp0_py9X4) at 17:25 (this example is based on that).
 
  - in other words: the outer function (`timeName`) is the block/scope where we're defining the `setTimeout` method, and an arrow function nested in that `timeName` function will inherit its context.   
 When we use the `this` inside `timeName`, we're referring to the `person` object (the object to the left when the method is called, as in `person.timeName`), so we would apply the same thing to the `this` inside the `setTimeout` as well.   
