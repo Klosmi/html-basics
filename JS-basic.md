@@ -4262,6 +4262,40 @@ extract values from __objects__.
   fullName(user);
   // 'John Doe'
   ```
+  
+<br>
+
+- eg.:   
+  *filter the movies based upon their score*
+  ```
+  const movies = [
+    {
+        title: 'Amadeus',
+        score: 99,
+        year: 1984
+    },
+    {
+        title: 'Sharknado',
+        score: 35,
+        year: 2013
+    },
+    {
+        title: '13 Going On 30',
+        score: 70,
+        year: 2004
+    }
+  ]
+
+  // destructuring on the way in
+
+  movies.filter(({score}) => score > 90);
+  //{title: 'Amadeus', score: 99, year: 1984}
+
+
+  // without destructuring
+
+  movies.filter((film) => film.score > 90);
+  //{title: 'Amadeus', score: 99, year: 1984}  
 
 ---
 
