@@ -3992,9 +3992,279 @@ Spreading an iterable (array, string, etc.) into a Function Call (a list of argu
 
 <br>
 
+#### __[Rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)__
+The rest parameter syntax allows a function to accept an indefinite number of arguments as an array...
+
+So __it collects all remaining arguments into an acutal array.__
+
+
+- __`...`__
+- collects the __rest__ of the paramters, arguemnts
+
+- eg.:  
+    *Using `rest` + only one parameter (`num`).   
+    `Rest` will collect the rest of the parameters*
+    ```
+    function sum(...num){
+      console.log(num);
+    }
+
+    sum(10,42,77);            // give an REAL ARRAY
+    // [10, 42, 77]
+
+    ```
+    *without `rest`, only takes the first number*
+    ```
+    function sum(num){
+      console.log(num);
+    }
+
+    sum(10,42,77);
+    // 10
+    ```
+    *With rest, the `reduce` function will work, because `rest` creates an array`
+    ```
+      function sum(...num) {
+      return num.reduce((total, num) => total + num)
+    }
+
+    sum(1, 2, 3);
+    // 6
+    ```
+
+<br>
+
+_bonus: about the `arguments` object__
+
+  - it automatically holds all of the arguments passed into a function.  
+  - it's an array __like__ object:   
+    - it has a length property
+    - doesn't have array methods (like push or pop, reduce, etc.)
+  - it's available inside every function
+  - __contains all the arguemnts passed to the function__
+  - __not available inside of arrow functions__!
+
+    - eg.:   
+      *We have a function, with no arguments. Inside the function we print out the `arguments` object. When we give arguments to the function, the `arguemtns` object will contain those values, in an order, like an array. So it looks like an array but it's not an array → we can't use array methods.*   
+      ```
+      function sum() {
+        console.log(arguments);
+      }
+
+      sum();                    // arguemnts is empty
+      // Arguments [callee: ƒ, Symbol(Symbol.iterator): ƒ]
+      // length: 0
+
+
+      sum(10,42,77);            // arguments contains all the values we gave
+      // Arguments(3) [10, 42, 77, callee: ƒ, Symbol(Symbol.iterator): ƒ]
+      // 0: 10
+      // 1: 42
+      // 2: 77
+      ```
+      *We want to have the sum of the numbers we give to `arguments`. But we can't use the `reduce` method, because `arguments` is not an array.*
+      ```
+      function sum() {
+        return arguments.reduce((total, num) => total + num)
+      }
+
+      sum(10,42,77); 
+      // Uncaught TypeError: arguments.reduce is not a function
+    
+      ```
+      - when using `arguments`, we can't chose that name. Using rest, we can use any name for a parameter.
+
+
 ---
 
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS Other Features](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#other-js-features)
 
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+<br>
+
+#### __[Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)__    
+
+<br>
+
+##### __*[from ARRAYS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#array_destructuring)*__   
+The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.   
+
+So, it's a way of unpacking, singling out values from arrays.  
+Unpacking mean put values into ditinct variables.
+
+A short syntax to unpack:    
+__values from arrays__ and __properties from objects__ into distinct variables.
+
+- __`[]`__ using brackets
+
+- it's basically copying a value into a variable (not extracting from the array or object)
+
+- based upon position
+
+- eg.:
+  *arrays of number. We can single out into 2 varbales (firstnum and secondnum) for example the first and the second number.*
+  ```
+  const  numbers = [10,20,30,40,50,60];
+
+  const [firstnum, secondnum] = numbers;
+
+  firstnum;
+  // 10
+
+  secondnum;
+  // 20
+
+  numbers;
+  // [10, 20, 30, 40, 50, 60]
+  ```
+  *to single out the rest of the numbers into a variable*
+  ```
+  const  numbers = [10,20,30,40,50,60];
+
+  const [firstnum, secondnum, ...restOfTheNumbers] = numbers;
+
+  firstnum;
+  // 10
+
+  secondnum;
+  // 20
+
+  restOfTheNumbers;
+  // [30, 40, 50, 60]
+  ``` 
+
+---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS Other Features](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#other-js-features)
+
+<br>
+
+##### __*[from OBJECTS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#object_destructuring)*__ 
+extract values from __objects__.
+
+- it is more commonly used (than extracting from arrays).
+
+- __`{}`__ using curlybraces
+
+- the name matters (how we access the value insode of the object)
+
+- it doesn't change the object
+
+- eg.:
+  *We want to accass data more frequently, so here is a shorter syntax using a destrucring assignment*
+  ```
+  const user = {
+    firstName : 'John',
+    lastName : 'Doe',
+    email : 'johndoe@email.com',
+    address : '1600 Amphitheatre Parkway'
+    state : 'California'
+  };
+
+  const { email, lastName, address} = user;
+
+  email;                    // created an email varibale
+  // 'johndoe@email.com'
+
+  lastName;                 // created a lastName varibale
+  // 'Doe'
+
+  address;
+  // '1600 Amphitheatre Parkway'
+  ```
+
+  - if we want to change the name of the variable where we singled out the object's value
+  
+   - eg.:   
+    *rename the address to sameAddress*
+    ```
+    const user = {
+      firstName : 'John',
+      lastName : 'Doe',
+      email : 'johndoe@email.com',
+      address : '1600 Amphitheatre Parkway',
+      state : 'California'
+    };
+
+    const {address : sameAddress } = user;
+
+    newAddress;
+    '1600 Amphitheatre Parkway'
+    ```
+
+  - adding default values
+    - eg.:   
+      *we have a user2, but user2 does not have an email and address*
+      ```
+      const user2 = {
+        firstName : 'Jane',
+        lastName : 'Doe',
+        state : 'California'
+      };
+
+      const { firstName : janey, email, address } = user2;
+
+      janey;
+      // 'Jane'
+
+      email;
+      // undefined
+
+      adress;
+      // undefined
+
+      const { email = 'jane@email.com', address = '10 Pl. de la Joliette, 13002 Marseille'} = user2;
+
+      email;
+      // 'jane@email.com'
+
+      address;
+      // '10 Pl. de la Joliette, 13002 Marseille'
+      ```
+
+---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS Other Features](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#other-js-features)
+
+<br>
+
+##### __*[Function Parameter Destructuring](https://dmitripavlutin.com/javascript-object-destructuring/#92-function-parameter-destructuring)*__
+ we can destructure on the way into the function!
+
+ - eg.:   
+  *We want to destructure the first and last name. We can do it on the fly.*     
+  *Because we are expecting an object and from that object we want to destructure firstName and lastName, then return the fullName*
+  ```
+  const user = {
+      firstName : 'John',
+      lastName : 'Doe',
+      state : 'California'
+  };
+
+  function fullName ({firstName, lastName}) {
+      return `${firstName} ${lastName}`
+  }
+
+  fullName(user);
+  // 'John Doe'
+
+
+  // it's the same BUT WAY LONGER
+  function fullName(user) {
+    const {firstName, lastName} = user;
+    return `${firstName} ${lastName}`
+  }
+
+  fullName(user);
+  // 'John Doe'
+  ```
+
+---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS Other Features](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#other-js-features)
+
+<br>
+
+
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
 
 
