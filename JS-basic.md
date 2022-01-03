@@ -3733,6 +3733,8 @@ When JavaScript code is interpreted, each function creates an __execution contex
 # __[Other JS Features](https://www.digitalocean.com/community/tutorials/understanding-destructuring-rest-parameters-and-spread-syntax-in-javascript)__   
 - [default parameters](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#default-parameters-)      
   [spread syntax](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#spread-syntax-)   
+  [rest parameters](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#rest-parameters)   
+  [destructuring assignment]()
 
 ## __[Default parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)__ :  
 `Default function` parameters allow named parameters to be initialized with default values if no value or undefined is passed.    
