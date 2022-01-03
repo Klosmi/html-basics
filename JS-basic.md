@@ -4074,7 +4074,7 @@ _bonus: about the `arguments` object__
       // Uncaught TypeError: arguments.reduce is not a function
     
       ```
-      - when using `arguments`, we can't chose that name. Using rest, we can use any name for a parameter.
+     - when using `arguments`, we can't chose that name. Using rest, we can use any name for a parameter.
 
 
 ---
@@ -4084,9 +4084,9 @@ _bonus: about the `arguments` object__
 <br>
 
 #### __[Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)__       
-[from Arrays]()  
-[from Objects]()  
-[Function Parameter]()
+[from Arrays](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#from-arrays)      
+[from Objects](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#from-objects)      
+[Function Parameter](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#function-parameter-destructuring)
 
 <br>
 
@@ -4197,7 +4197,7 @@ extract values from __objects__.
     ```
 
   - adding default values
-    - eg.:   
+   - eg.:   
       *we have a user2, but user2 does not have an email and address*
       ```
       const user2 = {
