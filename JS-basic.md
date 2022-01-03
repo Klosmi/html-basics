@@ -4284,18 +4284,18 @@ extract values from __objects__.
         score: 70,
         year: 2004
     }
-  ]
+  ];
 
   // destructuring on the way in
 
   movies.filter(({score}) => score > 90);
-  //{title: 'Amadeus', score: 99, year: 1984}
+  // {title: 'Amadeus', score: 99, year: 1984}
 
 
   // without destructuring
 
   movies.filter((film) => film.score > 90);
-  //{title: 'Amadeus', score: 99, year: 1984}  
+  // {title: 'Amadeus', score: 99, year: 1984}  
 
 ---
 
