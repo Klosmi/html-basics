@@ -57,7 +57,7 @@ Sass lets you write clean, sustainable CSS code and solve the repetition and mai
       
       <br>
 
-      this compiles everything: directory with sass to a directory ti css
+      this compiles everything: directory with sass to a directory to css
 
       ```
       sass --watch sass:css
