@@ -169,7 +169,8 @@ But if you want a button which does not submit the form - but it is inside the f
     - `<option value="hamster">Cute little hamster</option>` the value attribute will be sent through when it is submitted *(here the `value="hamster"`)*.   
    
     - it can be preselected with the attribute `selected`.
-    
+                                                                                                                                                      
+    - you can [change the default appearance](https://tutorialdeep.com/knowhow/style-select-dropdown-css/) with CSS
 <br>
                                                                                                                                                       
 <u>[many other `<input>` elements can be found here.](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
