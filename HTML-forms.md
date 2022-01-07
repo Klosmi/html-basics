@@ -170,7 +170,7 @@ But if you want a button which does not submit the form - but it is inside the f
    
     - it can be preselected with the attribute `selected`.
                                                                                                                                                       
-    - you can [change the default appearance](https://www.youtube.com/watch?v=m9dNLMbCjkk) with CSS like in this video
+    - you can [change the default appearance](https://www.youtube.com/watch?v=bB14uo0Tu5A) with CSS like in this video
 <br>
                                                                                                                                                       
 <u>[many other `<input>` elements can be found here.](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
