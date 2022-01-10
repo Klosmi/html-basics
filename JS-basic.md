@@ -4303,7 +4303,7 @@ extract values from __objects__.
 
 <br>
 
-# __[DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)__ :  
+# __[The DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)__  
 *Document Object Model*  
 A bunch of __JavaScript objects that represents the webpage__.
 
