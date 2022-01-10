@@ -4316,8 +4316,8 @@ And many objects that we can interact with via JS.
 - [How does it work?](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#how-does-it-work)   
   [What is the `document`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-document)   
   [`getElementById()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#getelementbyid)   
-  [`getElementsByTagName()`]()   
-  [`getElementsByClassName()`]()    
+  [`getElementsByTagName()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#getelementsbytagname)   
+  [`getElementsByClassName()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#getelementsbyclassname)    
   
 
 ## [How does it work?](https://www.w3.org/TR/DOM-Level-2-Core/introduction.html)
