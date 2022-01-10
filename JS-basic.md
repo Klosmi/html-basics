@@ -4431,5 +4431,12 @@ Simply: __when we call this method, we pass in a *string* and this string has to
 
 <br>
 
-  [getElementsByTagName](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName)   
-  [getElementsByClassName](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName)
+##  [getElementsByTagName](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName) 
+
+---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-dom)
+
+<br>
+  
+##  [getElementsByClassName](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName)
