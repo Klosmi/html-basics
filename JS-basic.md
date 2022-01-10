@@ -4313,9 +4313,9 @@ So the DOM is a JS representation of a webpage.
 It is the 'window' to the contents of a webpage.   
 And many objects that we can interact with via JS.
 
-- [How does it work?](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-dom)   
-  [What is the `document`]()
-  [`getElementById`]()
+- [How does it work?](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#how-does-it-work)   
+  [What is the `document`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-document)   
+  [`getElementById`]()   
 
 ## [How does it work?](https://www.w3.org/TR/DOM-Level-2-Core/introduction.html)
 
@@ -4362,6 +4362,12 @@ it is en element on the top of the element tree structure:
 (It contains objects that represent the content of a Web page.)
 
 
-[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#other-js-features)
+
+<br>
+
+## [getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
 
 
