@@ -4303,6 +4303,60 @@ extract values from __objects__.
 
 <br>
 
+# __[DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)__ :  
+*Document Object Model*  
+A bunch of __JavaScript objects that represents the webpage__.
+
+It's our window, our access portal into the contents of a Web page from JavaScript.  
+
+So the DOM is a JS representation of a webpage.   
+It is the 'window' to the contents of a webpage.   
+And many objects that we can interact with via JS.
+
+## [How does it work?](https://www.w3.org/TR/DOM-Level-2-Core/introduction.html)
+
+When a browser loads the Web page, the HTML and CSS loads, and then creating a bunch of JS objects based on the __style__ elements (which were loaded with the HTML + CSS).
+
+- every single element (also the `body`) gets its own JS object!
+
+- [tree structure](https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/How_to_create_a_DOM_tree)   
+the HTML elements are connected, there is a relationship, parent-children   
+  eg.: `<body>` holds the `<h1>`, the `<ul>` holds the `<li>`
+
+## [The document](https://developer.mozilla.org/en-US/docs/Web/API/Document)    
+__The *document object* is the entry point into the DOM.    
+It contains *representations of all the content on a page*, and lots of *methods and properties*.__   
+
+it is en element on the top of the element tree structure:   
+*it is the top of a folder for everything*      
+*it's the root of the tree*
+ - typeing `document` on the console gives us:  
+   - eg.:   
+      *the representation of the HTML*   
+      ```
+      <!DOCTYPE html>
+      <html dir="ltr" ... lang="en" class="md">
+      <head>...</head>
+      </body>...</body>
+      </html>>
+      ```
+- typing __`console.dir(document)`__ we can __shows the JavaScript object__ with a bunch of properties.   
+  - eg.:   
+    ```
+    #document
+      location: URL...
+      activeElement: body
+      adoptedStyleSheets: []
+      alinkColor: ""
+      all: [html, head, meta, meta, title, body, h1, img#banner, p, b, b, a, ...                          // it contains every element the page - tags. Each of them is a JS object❗️
+      .
+      .
+      .
+    ```
+
+- so the *document object* is where everything is contained and starts. Inside we have methods and properties, we can change them to manipulate the document.   
+(It contains objects that represent the content of a Web page.)
+
 
 [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
 
