@@ -4313,6 +4313,10 @@ So the DOM is a JS representation of a webpage.
 It is the 'window' to the contents of a webpage.   
 And many objects that we can interact with via JS.
 
+- [How does it work?](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-dom)   
+  [What is the `document`]()
+  [`getElementById`]()
+
 ## [How does it work?](https://www.w3.org/TR/DOM-Level-2-Core/introduction.html)
 
 When a browser loads the Web page, the HTML and CSS loads, and then creating a bunch of JS objects based on the __style__ elements (which were loaded with the HTML + CSS).
