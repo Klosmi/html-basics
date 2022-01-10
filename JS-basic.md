@@ -4315,7 +4315,10 @@ And many objects that we can interact with via JS.
 
 - [How does it work?](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#how-does-it-work)   
   [What is the `document`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-document)   
-  [`getElementById`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#getelementbyid)   
+  [`getElementById()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#getelementbyid)   
+  [`getElementsByTagName()`]()   
+  [`getElementsByClassName()`]()    
+  
 
 ## [How does it work?](https://www.w3.org/TR/DOM-Level-2-Core/introduction.html)
 
@@ -4368,6 +4371,65 @@ it is en element on the top of the element tree structure:
 
 <br>
 
-## [getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
+## [getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById).  
+The Document method getElementById returns an Element object representing the element whose id property matches the specified string.   
+
+Simply: __when we call this method, we pass in a *string* and this string has to correspond to an `ID` on an element.__   
+
+ - a method to select (an) element(s)
+
+ - it is a method that exists on the document
+ - if there is an element found with that ID, it will be returned 
+ - if the ID can't be found it retirn `undefined`.
+ - when we select something __JS fetchs us the object that represents some elements on the page__ based on the matching ID.
+ - __it gives us the object representation of that element, which we can then manipulate__
+ - we are not'asking' the HTML, __we are asking the DOM__ object (__the element object that JavaScript created__).
 
 
+ - eg.:   
+    *here's the html*
+    ```
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dogs</title>
+    </head>
+    <body>
+        <h1 id="mainheading">Woof woof woof</h1>
+        <img src="https://images.unsplash.com/dogs" id="dogg" alt="cute dog">
+    </body>
+    </html>
+    ```
+    *to select an image*   
+    ```
+    document.getElementById('dogg')
+
+    //returns:
+    // <img id="banner" src="https://images.unsplash.com/dogs
+    ```
+    *we can save it to a variable*
+    ```
+    const image = document.getElementById('dogg'); 
+
+    console.dir('image');      // call the variable
+
+    // returns the object which contains a lots of properties
+    // img#banner
+    //  alt: ""
+    //  currentSrc: "https://images.unsplash.com/dogs"
+    // height: 879
+    // tagName: "IMG"
+    //  ...
+    ```
+
+---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-dom)
+
+<br>
+
+  [getElementsByTagName](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName)   
+  [getElementsByClassName](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName)
