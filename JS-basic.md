@@ -4315,7 +4315,7 @@ And many objects that we can interact with via JS.
 
 - [How does it work?](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#how-does-it-work)   
   [What is the `document`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-document)   
-  [`getElementById`]()   
+  [`getElementById`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#getelementbyid)   
 
 ## [How does it work?](https://www.w3.org/TR/DOM-Level-2-Core/introduction.html)
 
@@ -4352,7 +4352,7 @@ it is en element on the top of the element tree structure:
       activeElement: body
       adoptedStyleSheets: []
       alinkColor: ""
-      all: [html, head, meta, meta, title, body, h1, img#banner, p, b, b, a, ...                          // it contains every element the page - tags. Each of them is a JS object❗️
+      all: [html, head, meta, meta, title, body, h1, img#banner, p, b, b, a, ...    // it contains every element the page - tags. Each of them is a JS object❗️
       .
       .
       .
@@ -4364,7 +4364,7 @@ it is en element on the top of the element tree structure:
 
 ---
 
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#other-js-features)
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-dom)
 
 <br>
 
