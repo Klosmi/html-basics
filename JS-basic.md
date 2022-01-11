@@ -4623,7 +4623,9 @@ an all-im-one method to select a single element.
       </body>
       </html>
       ```
-      JS
+    
+    JS
+    
       ```
       const images = document.querySelector('.myimage');
 
@@ -4632,23 +4634,26 @@ an all-im-one method to select a single element.
       // returns: 
       // <img class="myimage" src="https://images.com/photo01.jpg" alt="">    👈  shows me the first one
       ```
-      *get the second image by chaining a CSS style*
-      ```
-      const images = document.querySelector(.myimage:nth-of-type(2));
+     
+    *get the second image by chaining a CSS style*
+     
+    ```
+    const images = document.querySelector(.myimage:nth-of-type(2));
 
-      images;
+    images;
 
-      // returns: 
-      // <img class="myimage" src="https://images.com/photo02.jpg" alt="">    👈  shows me the second
-      ```
-    __*select an `a` tag with the CSS (title="hello") attribute (in CSS we use `[]` to select an attribute)*__
+    // returns: 
+    // <img class="myimage" src="https://images.com/photo02.jpg" alt="">    👈  shows me the second
+    ```
+      
+   __*select an `a` tag with the CSS (title="hello") attribute (in CSS we use `[]` to select an attribute)*__
 
-      ```
-      document.querySelector('a[title="hello"]');
+    ```
+    document.querySelector('a[title="hello"]');
 
-      // returns:
-      // <a href="#" title="hello">Hello, click me!</a>
-      ```
+    // returns:
+    // <a href="#" title="hello">Hello, click me!</a>
+    ```
 
 ---
 
