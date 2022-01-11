@@ -4606,34 +4606,35 @@ an all-im-one method to select a single element.
 
 - eg.:      
     *select an image with the querySelector - using the class*
-    The HTML   
-      ```
-      <html>
-      <head>
-        <title>getElementBy example</title>
-      </head>
-      <body>
-        <img class="myimage" src="https://images.com/photo01.jpg" alt="">
-        <img class="myimage" src="https://images.com/photo02.jpg" alt="">
-        <img class="myimage" src="https://images.com/photo03.jpg" alt="">
-        <p>Some outer text</p>
-        <p>Some outer text</p>   
-        <a href="#" title="hello">Hello, click me!</a>
-        <a href="#" title="bye">Good bye!</a>
-      </body>
-      </html>
-      ```
+    The HTML 
+    
+    ```
+    <html>
+    <head>
+      <title>getElementBy example</title>
+    </head>
+    <body>
+      <img class="myimage" src="https://images.com/photo01.jpg" alt="">
+      <img class="myimage" src="https://images.com/photo02.jpg" alt="">
+      <img class="myimage" src="https://images.com/photo03.jpg" alt="">
+      <p>Some outer text</p>
+      <p>Some outer text</p>   
+      <a href="#" title="hello">Hello, click me!</a>
+      <a href="#" title="bye">Good bye!</a>
+    </body>
+    </html>
+    ```
     
     JS
     
-      ```
-      const images = document.querySelector('.myimage');
+    ```
+    const images = document.querySelector('.myimage');
 
-      images;
+    images;
 
-      // returns: 
-      // <img class="myimage" src="https://images.com/photo01.jpg" alt="">    👈  shows me the first one
-      ```
+    // returns: 
+    // <img class="myimage" src="https://images.com/photo01.jpg" alt="">    👈  shows me the first one
+    ```
      
     *get the second image by chaining a CSS style*
      
