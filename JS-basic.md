@@ -4544,7 +4544,7 @@ Simply: __when we call this method, we pass in a *string* and this string has to
 - when *class name* is not found, we have an empty collection (and not Null)
 
 - eg.:   
-*select an image by its class name*
+*select an image by its class name*   
 The HTML   
   ```
   <html>
