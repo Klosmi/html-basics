@@ -4318,6 +4318,7 @@ And many objects that we can interact with via JS.
   [`getElementById()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#getelementbyid)   
   [`getElementsByTagName()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#getelementsbytagname)   
   [`getElementsByClassName()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#getelementsbyclassname)    
+  [`querySelector()`]() and [`querySelectorAll()`]()
   
 
 ## [How does it work?](https://www.w3.org/TR/DOM-Level-2-Core/introduction.html)
@@ -4580,6 +4581,150 @@ The HTML
 
 
  ---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-dom)
+
+<br>
+
+## [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) 
+an all-im-one method to select a single element.
+
+- `document.querySelector('h1');`       ← tagname
+
+- `document.querySelector('#id');`        ← id name
+
+- `document.querySelector('.classname');` ← class name
+
+- it works with any css style
+
+- we have to use the __`.`__ or __`#`__ before the name `('#name')`
+
+- `querySelector` just gives us the first match❗️ 
+
+- we can chaine on other CSS style selectors   
+  `document.querySelector('.image:nth-of-type(2)');`
+
+- eg.:      
+    *select an image with the querySelector - using the class*
+    The HTML   
+      ```
+      <html>
+      <head>
+        <title>getElementBy example</title>
+      </head>
+      <body>
+        <img class="myimage" src="https://images.com/photo01.jpg" alt="">
+        <img class="myimage" src="https://images.com/photo02.jpg" alt="">
+        <img class="myimage" src="https://images.com/photo03.jpg" alt="">
+        <p>Some outer text</p>
+        <p>Some outer text</p>   
+        <a href="#" title="hello">Hello, click me!</a>
+        <a href="#" title="bye">Good bye!</a>
+      </body>
+      </html>
+      ```
+      JS
+      ```
+      const images = document.querySelector('.myimage');
+
+      images;
+
+      // returns: 
+      // <img class="myimage" src="https://images.com/photo01.jpg" alt="">    👈  shows me the first one
+      ```
+      *get the second image by chaining a CSS style*
+      ```
+      const images = document.querySelector(.myimage:nth-of-type(2));
+
+      images;
+
+      // returns: 
+      // <img class="myimage" src="https://images.com/photo02.jpg" alt="">    👈  shows me the second
+      ```
+    __*select an `a` tag with the CSS (title="hello") attribute (in CSS we use `[]` to select an attribute)*__
+
+      ```
+      document.querySelector('a[title="hello"]');
+
+      // returns:
+      // <a href="#" title="hello">Hello, click me!</a>
+      ```
+
+## [querySelectorAll](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll   
+same idea as `querySelector` but returns a __collection__ of mathaing __elements__,  instead of just the first match.
+
+- `document.querySelectorAll('h1');`       ← tagname
+
+- `document.querySelectorAll('.classname');` ← class name
+
+- we can use all th CSS selectors and the way we select is the same as in CSS
+
+- eg.:   
+  *we sleect ALL the `<p>`*   
+  The HTML   
+  ```
+  <html>
+  <head>
+    <title>getElementBy example</title>
+  </head>
+    <body>
+        <img class="myimage" src="https://images.com/photo01.jpg" alt="">
+        <img class="myimage" src="https://images.com/photo02.jpg" alt="">
+        <img class="myimage" src="https://images.com/photo03.jpg" alt="">
+        <p>Some outer text</p>
+        <p>Some outer text</p>  
+        <h1><a href="wikipedia.com" title="text01">This is an h1</a></h1> 
+        <h2><a href="wikipedia.com" title="text02">This is an h2</a></h2> 
+        <p><a href="wikipedia.com" title="hello">Hello, click me!</a></p>
+        <p><a href="wikipedia.com" title="bye">Good bye!</a></p>
+      </body>
+    </html>
+    ````
+  JS
+
+      ```
+      document.querySelectorAll('p');
+
+      // returns: 
+      // NodeList(2) [p, p]
+      //  0: p
+      //  1: p
+      //  length: 2
+
+      // with just simple querySelector
+
+
+      document.querySelector('p');
+
+      // returns: 
+      // <p>Some outer text</p>   👈  shows me the first one
+      ```
+
+    *__select all the `<a>` nested inside of a `<p>`__. The way we select is the same as we do it in CSS*
+      ```
+      document.querySelectorAll('p a');
+      
+      // returns:
+      // NodeList(2) [a, a]
+      //  0: a
+      //  1: a
+      ```
+      *iterate over and print out every `href` source*
+      ```
+      const links = document.querySelectorAll('p a');
+
+
+      for (link of links) {
+          console.log(link.href)
+      }
+
+      // returns:
+      // https://wikipedia.com/
+      // https://wikipedia.com/
+      ```
+
+
+---
 
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-dom)
 
