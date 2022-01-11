@@ -4537,51 +4537,51 @@ Simply: __when we call this method, we pass in a *string* and this string has to
 
  we are selecting elements by a class.
 
-    - a method to select elements
+- a method to select elements
 
-    - `document.getElementsByClassName('classname')`
+- `document.getElementsByClassName('classname')`
 
-    - when *class name* is not found, we have an empty collection (and not Null)
+- when *class name* is not found, we have an empty collection (and not Null)
 
-    - eg.:   
-    *select an image by its class name*
-    The HTML   
-      ```
-      <html>
-      <head>
-        <title>getElementBy example</title>
-      </head>
-      <body>
-        <img class="myimage" src="https://images.com/photo01.jpg" alt="">
-        <img class="myimage" src="https://images.com/photo02.jpg" alt="">
-        <img class="myimage" src="https://images.com/photo03.jpg" alt="">
-        <p>Some outer text</p>
-        <p>Some outer text</p>      
-      </body>
-      </html>
-      ```
-      JS
-      ```
-      const images = document.getElementsByClassName('myimage');
+- eg.:   
+*select an image by its class name*
+The HTML   
+  ```
+  <html>
+  <head>
+    <title>getElementBy example</title>
+  </head>
+  <body>
+    <img class="myimage" src="https://images.com/photo01.jpg" alt="">
+    <img class="myimage" src="https://images.com/photo02.jpg" alt="">
+    <img class="myimage" src="https://images.com/photo03.jpg" alt="">
+    <p>Some outer text</p>
+    <p>Some outer text</p>      
+  </body>
+  </html>
+  ```
+  JS
+  ```
+  const images = document.getElementsByClassName('myimage');
 
-      images;
+  images;
 
-      // returns: 
-      // HTMLCollection(3) [img.myimage, img.myimage, img.myimage]  👈 this is not an array!
-      //  0: img.myimage
-      //  1: img.myimage
-      //  2: img.myimage
-      ```
-      *we can change all the images' source*
-      ```
-      for (let img of images) {
-        img.src = "https://upload.photos.org/images_example.jpg"
-        console.log(img.src)
-      }
+  // returns: 
+  // HTMLCollection(3) [img.myimage, img.myimage, img.myimage]  👈 this is not an array!
+  //  0: img.myimage
+  //  1: img.myimage
+  //  2: img.myimage
+  ```
+  *we can change all the images' source*
+  ```
+  for (let img of images) {
+    img.src = "https://upload.photos.org/images_example.jpg"
+    console.log(img.src)
+  }
 
-      // all the 3 image became the same: https://upload.photos.org/images_example.jpg image
-      ```
-  
+  // all the 3 image became the same: https://upload.photos.org/images_example.jpg image
+  ```
+
 
  ---
 
