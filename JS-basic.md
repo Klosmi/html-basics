@@ -4318,7 +4318,7 @@ And many objects that we can interact with via JS.
   [`getElementById()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#getelementbyid)   
   [`getElementsByTagName()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#getelementsbytagname)   
   [`getElementsByClassName()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#getelementsbyclassname)    
-  [`querySelector()`]() and [`querySelectorAll()`]()
+  [`querySelector()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#queryselector) and [`querySelectorAll()`]()
   
 
 ## [How does it work?](https://www.w3.org/TR/DOM-Level-2-Core/introduction.html)
@@ -4650,7 +4650,7 @@ an all-im-one method to select a single element.
       // <a href="#" title="hello">Hello, click me!</a>
       ```
 
-## [querySelectorAll](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll   
+## [querySelectorAll](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) 
 same idea as `querySelector` but returns a __collection__ of mathaing __elements__,  instead of just the first match.
 
 - `document.querySelectorAll('h1');`       ← tagname
@@ -4680,6 +4680,7 @@ same idea as `querySelector` but returns a __collection__ of mathaing __elements
       </body>
     </html>
     ````
+  
   JS
 
       ```
