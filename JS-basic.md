@@ -4378,9 +4378,12 @@ Simply: __when we call this method, we pass in a *string* and this string has to
 
  - a method to select (an) element(s)
 
+ - `document.getElementById('idname')`
+
  - it is a method that exists on the document
+ - it only occurs once per page!
  - if there is an element found with that ID, it will be returned 
- - if the ID can't be found it retirn `undefined`.
+ - if the ID can't be found it return `null` (it only gives us 1 thing, there's no collection of elements)
  - when we select something __JS fetchs us the object that represents some elements on the page__ based on the matching ID.
  - __it gives us the object representation of that element, which we can then manipulate__
  - we are not'asking' the HTML, __we are asking the DOM__ object (__the element object that JavaScript created__).
@@ -4438,5 +4441,151 @@ Simply: __when we call this method, we pass in a *string* and this string has to
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-dom)
 
 <br>
-  
+
+     The getElementsByTagName method of Document interface returns an HTMLCollection of elements with the given tag name.
+     
+     Simply: call get elementsByTagName, pass in a tag name, and it returns to an __HTML collection__.
+    
+    - a method to select elements
+    
+    - `document.getElementsByTagName('tagname')`
+    
+    - when *tag name* is not found, we have an empty collection (and not Null)
+
+
+  - an __[HTML collection](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection)__:   
+    it represents a generic collection (array-like object similar to arguments) of __elements__ (in document order) and __offers methods and properties for selecting from the list__.
+      - it is not an array (but array like)
+      - has length
+      - iterable `(for..of)`
+
+  - an __[Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)__: in JavaScript is that *object that we're getting back that has all the properties that represent a single HTML element.*  
+  Element is the most general base class from which all element objects (i.e. objects that represent elements) in a Document inherit.
+
+<br>
+
+  - eg.:   
+      *to get the image, we pas the `img` tag*   
+      The HTML   
+      ```
+      <html>
+      <head>
+        <title>getElementBy example</title>
+      </head>
+      <body>
+        <img class="myimage" src="https://images.com/photo01.jpg" alt="">
+        <img class="myimage" src="https://images.com/photo02.jpg" alt="">
+        <img class="myimage" src="https://images.com/photo03.jpg" alt="">
+        <p>Some outer text</p>
+        <p>Some outer text</p>      
+      </body>
+      </html>
+      ```
+      JS
+      ```
+      const images = document.getElementsByTagName('img');
+
+      images;
+
+      // returns: 
+      // HTMLCollection(3) [img.myimage, img.myimage, img.myimage]
+      //  0: img.myimage
+      //  1: img.myimage
+      //  2: img.myimage
+      ```
+      *select the 2nd image*
+      ```
+      console.dir(images[1]);
+
+      // returns an object:
+      // img.myimage
+      //   accessKey: ""
+      //   align: ""
+      //   ariaAtomic: null
+      //   ariaAutoComplete: null
+      //   src: "https://images.com/photo02.jpg"
+      //   ...
+      ```
+      *we can iterate it*
+      ```
+      for (let img of images) {
+        console.log(img.src)
+      }
+
+      // returns: 
+      //   https://images.com/photo01.jpg
+      //   https://images.com/photo02.jpg
+      //   https://images.com/photo03.jpg      
+      ```
+      *we can change all the images' source*
+      ```
+      for (let img of images) {
+        img.src = "https://upload.photos.org/images_example.jpg"
+        console.log(img.src)
+      }
+
+      // all the 3 image became the same: https://upload.photos.org/images_example.jpg image
+      ```
+
+ ---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-dom)
+
+<br>
+
 ##  [getElementsByClassName](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName)
+
+ we are selecting elements by a class.
+
+    - a method to select elements
+
+    - `document.getElementsByClassName('classname')`
+
+    - when *class name* is not found, we have an empty collection (and not Null)
+
+    - eg.:   
+    *select an image by its class name*
+    The HTML   
+      ```
+      <html>
+      <head>
+        <title>getElementBy example</title>
+      </head>
+      <body>
+        <img class="myimage" src="https://images.com/photo01.jpg" alt="">
+        <img class="myimage" src="https://images.com/photo02.jpg" alt="">
+        <img class="myimage" src="https://images.com/photo03.jpg" alt="">
+        <p>Some outer text</p>
+        <p>Some outer text</p>      
+      </body>
+      </html>
+      ```
+      JS
+      ```
+      const images = document.getElementsByClassName('myimage');
+
+      images;
+
+      // returns: 
+      // HTMLCollection(3) [img.myimage, img.myimage, img.myimage]  👈 this is not an array!
+      //  0: img.myimage
+      //  1: img.myimage
+      //  2: img.myimage
+      ```
+      *we can change all the images' source*
+      ```
+      for (let img of images) {
+        img.src = "https://upload.photos.org/images_example.jpg"
+        console.log(img.src)
+      }
+
+      // all the 3 image became the same: https://upload.photos.org/images_example.jpg image
+      ```
+  
+
+ ---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-dom)
+
+<br>
+
