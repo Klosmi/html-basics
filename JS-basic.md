@@ -4372,7 +4372,7 @@ it is en element on the top of the element tree structure:
 <br>
 
 ## [getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById).  
-The Document method getElementById returns an Element object representing the element whose id property matches the specified string.   
+The Document method `getElementById` returns an Element object representing the element whose id property matches the specified string.   
 
 Simply: __when we call this method, we pass in a *string* and this string has to correspond to an `ID` on an element.__   
 
@@ -4436,21 +4436,16 @@ Simply: __when we call this method, we pass in a *string* and this string has to
 
 ##  [getElementsByTagName](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName) 
 
----
 
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-dom)
+   The `getElementsByTagName` method of Document interface returns an HTMLCollection of elements with the given tag name.
 
-<br>
-
-   The getElementsByTagName method of Document interface returns an HTMLCollection of elements with the given tag name.
-
-   Simply: call get elementsByTagName, pass in a tag name, and it returns to an __HTML collection__.
+   Simply: call `getElementsByTagName`, pass in a tag name, and it returns to an __HTML collection__.
 
   - a method to select elements
 
   - `document.getElementsByTagName('tagname')`
 
-  - when *tag name* is not found, we have an empty collection (and not Null)
+  - when *tag name* is not found, we have an empty collection (and not `null`)
 
 
   - an __[HTML collection](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection)__:   
@@ -4541,7 +4536,7 @@ Simply: __when we call this method, we pass in a *string* and this string has to
 
 - `document.getElementsByClassName('classname')`
 
-- when *class name* is not found, we have an empty collection (and not Null)
+- when *class name* is not found, we have an empty collection (and not `null`)
 
 - eg.:   
 *select an image by its class name*   
