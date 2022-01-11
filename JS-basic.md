@@ -4442,15 +4442,15 @@ Simply: __when we call this method, we pass in a *string* and this string has to
 
 <br>
 
-     The getElementsByTagName method of Document interface returns an HTMLCollection of elements with the given tag name.
-     
-     Simply: call get elementsByTagName, pass in a tag name, and it returns to an __HTML collection__.
-    
-    - a method to select elements
-    
-    - `document.getElementsByTagName('tagname')`
-    
-    - when *tag name* is not found, we have an empty collection (and not Null)
+   The getElementsByTagName method of Document interface returns an HTMLCollection of elements with the given tag name.
+
+   Simply: call get elementsByTagName, pass in a tag name, and it returns to an __HTML collection__.
+
+  - a method to select elements
+
+  - `document.getElementsByTagName('tagname')`
+
+  - when *tag name* is not found, we have an empty collection (and not Null)
 
 
   - an __[HTML collection](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection)__:   
