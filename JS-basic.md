@@ -4690,46 +4690,49 @@ same idea as `querySelector` but returns a __collection__ of mathaing __elements
   
   JS
 
-      ```
-      document.querySelectorAll('p');
+    ```
+    document.querySelectorAll('p');
 
-      // returns: 
-      // NodeList(2) [p, p]
-      //  0: p
-      //  1: p
-      //  length: 2
+    // returns: 
+    // NodeList(2) [p, p]
+    //  0: p
+    //  1: p
+    //  length: 2
 
-      // with just simple querySelector
+    // with just simple querySelector
 
 
-      document.querySelector('p');
+    document.querySelector('p');
 
-      // returns: 
-      // <p>Some outer text</p>   👈  shows me the first one
-      ```
+    // returns: 
+    // <p>Some outer text</p>   👈  shows me the first one
+    ```
 
-    *__select all the `<a>` nested inside of a `<p>`__. The way we select is the same as we do it in CSS*
-      ```
-      document.querySelectorAll('p a');
+  *__select all the `<a>` nested inside of a `<p>`__. The way we select is the same as we do it in CSS*
+  
+    ```
+    document.querySelectorAll('p a');
+
+    // returns:
+    // NodeList(2) [a, a]
+    //  0: a
+    //  1: a
+    ```
       
-      // returns:
-      // NodeList(2) [a, a]
-      //  0: a
-      //  1: a
-      ```
-      *iterate over and print out every `href` source*
-      ```
-      const links = document.querySelectorAll('p a');
+  *iterate over and print out every `href` source*
+      
+    ```
+    const links = document.querySelectorAll('p a');
 
 
-      for (link of links) {
-          console.log(link.href)
-      }
+    for (link of links) {
+        console.log(link.href)
+    }
 
-      // returns:
-      // https://wikipedia.com/
-      // https://wikipedia.com/
-      ```
+    // returns:
+    // https://wikipedia.com/
+    // https://wikipedia.com/
+    ```
 
 
 ---
