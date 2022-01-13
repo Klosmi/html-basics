@@ -4748,7 +4748,10 @@ same idea as `querySelector` but returns a __collection__ of mathaing __elements
 
 # [DOM manipulation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents#active_learning_basic_dom_manipulation)   
 
-DOM manipulation refers to using JavaScript in the middle of HTML to access to move, rename, showe and hide things, update styles. So to impact the HTML.
+DOM manipulation refers to using JavaScript in the middle of HTML to access to move, rename, showe and hide things, update styles. So to impact the HTML.   
+
+We use DOM manipulation when we want to modify parts of the page when the user interacts with it. Otherwise, if we feel like the initial page style should be modified, then changing the original code is the better approach. So, in general, we use CSS as much as possible, because it iss lighter and faster and it is the indicated technology to style a webpage. However, when we want to modify a page after the initial code was rendered to make it dynamic, that is only possible with DOM manipulation.
+
 
 - [innerText](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#innertext)   
   [textContent](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#textcontent)   
