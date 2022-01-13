@@ -44,7 +44,8 @@
 15. [JS: Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-functions-)
 16. [JS: Callback Functions & Array Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-functions--array-methods-)   
 17. [JS: Other features](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#other-js-features)   
-18. [JS: DOM](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-dom)
+18. [JS: DOM](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-dom)   
+19. [JS: DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)   
 
 <br>
 
