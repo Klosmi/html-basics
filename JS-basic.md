@@ -4861,7 +4861,12 @@ The Element __property__ innerHTML gets or sets the HTML markup contained within
   
 __The innerHTML property returns the text, including all spacing and inner element tags.__
 
-  
+
+  ---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+
+<br>  
   
 ### `innerText` vs `innerHTML` vs `textContent` :   
  
