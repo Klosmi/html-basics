@@ -343,7 +343,8 @@ __The difference between null and undifined__:
     - [thing.toUpperCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
     - [thing.toLowerCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
     - [thing.trim()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim):   
-    eg.: trim a space beginning of a string
+    eg.:   
+    trim a space beginning of a string
       ``` 
       const input = "    Hi, my name is...";
       input.trim()    // "Hi, my name is ..."
@@ -352,7 +353,8 @@ __The difference between null and undifined__:
     __first occurrence__ of the specified value
     - [thing.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice) :    
     it extracts a portion of a string and returns it as a new string, __without modifying the original string__   
-    eg.: pass in a begin index and an optional end index
+    eg.:   
+    pass in a begin index and an optional end index
     ```
       const joke = "I love this joke!";
       joke.slice(2, 11);   // "love this"
