@@ -4864,6 +4864,7 @@ __The innerHTML property returns the text, including all spacing and inner eleme
   
   
 ### `innerText` vs `innerHTML` vs `textContent` :   
+ 
   - eg.: 
     *an example to compare these 3 properties*
     HTML:
