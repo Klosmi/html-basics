@@ -323,7 +323,8 @@ __The difference between null and undifined__:
 
   - __every string has a set of methods__
   - every string can do the same thing as another string:    
-  eg.: the *"hello" string* can do the same as the *"goodbye" string*    
+  eg.:   
+  the *"hello" string* can do the same as the *"goodbye" string*    
   - methods help to: search within a string
   - methods help to: replace part of a string
   - methods help to: chane the casing of a string
@@ -344,7 +345,7 @@ __The difference between null and undifined__:
     - [thing.toLowerCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
     - [thing.trim()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim):   
     eg.:   
-    trim a space beginning of a string
+    *trim a space beginning of a string*
       ``` 
       const input = "    Hi, my name is...";
       input.trim()    // "Hi, my name is ..."
@@ -354,7 +355,7 @@ __The difference between null and undifined__:
     - [thing.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice) :    
     it extracts a portion of a string and returns it as a new string, __without modifying the original string__   
     eg.:   
-    pass in a begin index and an optional end index
+    *pass in a begin index and an optional end index*
     ```
       const joke = "I love this joke!";
       joke.slice(2, 11);   // "love this"
@@ -390,7 +391,8 @@ __The difference between null and undifined__:
   - __thing.method(arg)__
 
   - we pass arguments inside of the parentheses `(value)`   
-  eg.: pass the argument into the `indexOf()` method
+  eg.:   
+  *pass the argument into the `indexOf()` method*
     ```
     const animal = "tigerwolf";
     animal.indexOf("tiger");  // 0 → tiger start at index 0
