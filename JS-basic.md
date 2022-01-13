@@ -4791,7 +4791,7 @@ Simply, the text that we see as a user showing up between the opening and closin
 
 ---
 
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation]()
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
 
 <br>
 
@@ -4839,6 +4839,12 @@ So `textContent` is give us everything, whereas `innerText is actually sensitive
   // Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod.   // 👈 consectetur word is missing
   ```
 
+---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+
+<br>  
+  
 
 ## [innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)   
 The Element __property__ innerHTML gets or sets the HTML markup contained within the element.
