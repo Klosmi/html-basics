@@ -7,6 +7,7 @@
 - basic building blocks, basic types of information that we can store.
 
 <br>
+
 - [**number**](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#number)
 - [**boolean**](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#boolean-)
 - [**string**](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#string-)
