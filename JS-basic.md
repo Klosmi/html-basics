@@ -4766,7 +4766,8 @@ We use DOM manipulation when we want to modify parts of the page when the user i
 <br>
 
 ## [innerText](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText)   
-The `innerText` __property__ of the HTMLElement interface represents the *rendered* text content of a node and its descendants.
+The `innerText` __property__ of the HTMLElement interface represents the *rendered* text content of a node and its descendants.   
+__The innerText property returns just the text, without spacing and inner element tags.__
 
 Simply, the text that we see as a user showing up between the opening and closing tags.
 
@@ -4805,7 +4806,8 @@ Simply, the text that we see as a user showing up between the opening and closin
 
 
 ## [textContent](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent#differences_from_innertext)
-The `textContent` property is very similat to the `innerText` property. But it's not the same.
+The `textContent` property is very similat to the `innerText` property. But it's not the same.   
+__The textContent property returns the text with spacing, but without inner element tags.__
 
 The `textContent` property __returns__ every element, every piece of content inside the selected HTML element (shows everything which is in the markup).   
 But `innerText` property doesn't show everything what is in the markup (eg. if we had something by setting something to `display: none`, `innerText` doesn't show it).
@@ -4855,9 +4857,39 @@ So `textContent` is give us everything, whereas `innerText is actually sensitive
   
 
 ## [innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)   
-The Element __property__ innerHTML gets or sets the HTML markup contained within the element.
+The Element __property__ innerHTML gets or sets the HTML markup contained within the element.   
+  
+__The innerHTML property returns the text, including all spacing and inner element tags.__
 
+  
+  
+### `innerText` vs `innerHTML` vs `textContent` :   
+  - eg.: 
+    *an example to compare these 3 properties*
+    HTML:
+    ```
+    <p id="demo">   This element has extra spacing     and contains <span>a span element</span>.</p>
+    ```
+    JS
+    ```
+    function getInnerText() {
+      alert(document.getElementById("demo").innerText)
+    }
 
+    function getHTML() {
+      alert(document.getElementById("demo").innerHTML)
+    }
+
+    function getTextContent() {
+      alert(document.getElementById("demo").textContent)
+    }
+  
+    // output:
+    // innerText returns: "This element has extra spacing and contains a span element."
+    // innerHTML returns: "   This element has extra spacing     and contains <span>a span element</span>."
+    // textContent returns: "   This element has extra spacing    and contains a span element."
+    ```
+  
   ---
 
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
