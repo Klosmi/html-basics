@@ -7,7 +7,6 @@
 - basic building blocks, basic types of information that we can store.
 
 <br>
-
 - [**number**](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#number)
 - [**boolean**](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#boolean-)
 - [**string**](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#string-)
@@ -4851,5 +4850,9 @@ So `textContent` is give us everything, whereas `innerText is actually sensitive
 The Element __property__ innerHTML gets or sets the HTML markup contained within the element.
 
 
+  ---
 
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
 
+<br>
+  
