@@ -4747,3 +4747,102 @@ same idea as `querySelector` but returns a __collection__ of mathaing __elements
 
 <br>
 
+# [DOM manipulation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents#active_learning_basic_dom_manipulation)   
+
+DOM manipulation refers to using JavaScript in the middle of HTML to access to move, rename, showe and hide things, update styles. So to impact the HTML.
+
+- [innerText]()   
+  [textContent]()
+
+
+<br>
+
+## [innerText](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText)   
+The `innerText` __property__ of the HTMLElement interface represents the *rendered* text content of a node and its descendants.
+
+Simply, the text that we see as a user showing up between the opening and closing tags.
+
+- we can modify the inner text of an HTML
+
+- syntax: `document. + selector + ('element') + .innerText`
+
+- eg.:   
+  *retrieve the `<p>` text*   
+  HTML 
+  ```
+  <h3>Inner Text</h3>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+  ```
+  JS
+  ```
+  document.querySelector('p').innerText;
+
+  // "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."      
+  ```
+  *__This paragraph element is just a JavaScript object, so we can change that into text value.__*   
+  *So let's change the value of thr `<p>` to another text*
+  ```
+  document.querySelector('p').innerText = "This is another text"
+
+  // output:
+  //'This is another text'
+  ```
+
+---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation]()
+
+<br>
+
+
+## [textContent](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent#differences_from_innertext)
+The `textContent` property is very similat to the `innerText` property. But it's not the same.
+
+The `textContent` property __returns__ every element, every piece of content inside the selected HTML element (shows everything which is in the markup).   
+But `innerText` property doesn't show everything what is in the markup (eg. if we had something by setting something to `display: none`, `innerText` doesn't show it).
+
+So `textContent` is give us everything, whereas `innerText is actually sensitive to what is showing at the moment.
+
+
+`textContent` returns every element in the `node`. In contrast, `innerText` is aware of styling and won't return the text of "hidden" elements.   
+
+- syntax: `document.querySelector('p').textContent`
+
+- eg.:   
+  *let's take the  `<b>` tag which is inside of the `<p>` tag. Let's set it to `display:none`. So the word (consectetur) is hidden now*   
+  *But with `textContent` we can still see it*   
+  HTML
+  ```
+  <styles>
+    b { 
+      display: none;
+    }
+  </stlyes>
+
+  ...
+
+  <h3>Text Content</h3>
+
+  <p>Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit, sed do eiusmod.</p>
+  ``` 
+  JS
+  ```
+  document.querySelector('p').textContent;
+
+  // 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.'   // 👈 consectetur word is there
+  ```
+  *but, `innerText` doesn't show the hidden <b> element's content (consectetur)*
+  ```
+  document.querySelector('p').innerText;
+
+  // Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod.   // 👈 consectetur word is missing
+  ```
+
+
+## [innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)   
+The Element __property__ innerHTML gets or sets the HTML markup contained within the element.
+
+
+
+
