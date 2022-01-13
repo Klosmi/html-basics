@@ -4751,8 +4751,9 @@ same idea as `querySelector` but returns a __collection__ of mathaing __elements
 
 DOM manipulation refers to using JavaScript in the middle of HTML to access to move, rename, showe and hide things, update styles. So to impact the HTML.
 
-- [innerText]()   
-  [textContent]()
+- [innerText](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#innertext)   
+  [textContent](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#textcontent)   
+  [innerHTML](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#innerhtml)   
 
 
 <br>
