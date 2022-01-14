@@ -5002,13 +5002,13 @@ The `textContent` property __returns the text with spacing, but without inner el
   JS
   ```
   // innerText
-  document.getElementById("demo").innerText;
+  document.getElementById("example").innerText;
   
   // innerHTML
-  document.getElementById("demo").innerHTML;
+  document.getElementById("example").innerHTML;
   
-  //textContent
-  document.getElementById("demo").textContent;
+  // textContent
+  document.getElementById("example").textContent;
   
   // output:
 
