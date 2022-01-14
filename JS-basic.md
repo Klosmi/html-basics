@@ -4882,9 +4882,11 @@ __The innerHTML property returns the text, including all spacing and inner eleme
 
 <br>  
   
+  
 ### `innerText` vs `innerHTML` vs `textContent` :   
  
-  - eg.: 
+  
+ - eg.: 
     *an example to compare these 3 properties*
     HTML:
     ```
