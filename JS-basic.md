@@ -4816,7 +4816,7 @@ Simply, the text that we see as a user showing up between the opening and closin
 
         - indexing: `document.querySelectorAll('p')[0].innerText;`
 
-        -  iteration:
+        - iteration:
            ```
             const paragraphs = document.querySelector('p');
 
