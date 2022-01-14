@@ -4382,7 +4382,7 @@ The Document method `getElementById` returns an Element object representing the 
 
 Simply: __when we call this method, we pass in a *string* and this string has to correspond to an `ID` on an element.__   
 
- - a method to select (an) element(s)
+ - a method to select one single element (because every ID is one and unique)
 
  - `document.getElementById('idname')`
 
