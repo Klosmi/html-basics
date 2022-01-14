@@ -4761,7 +4761,7 @@ We use DOM manipulation when we want to modify parts of the page when the user i
 - [innerText](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#innertext)   
   [textContent](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#textcontent)   
   [innerHTML](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#innerhtml)    
-  [difference between innerText vs innerHTML vs textContent](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-difference-between-innertext-vs-innerhtml-vs-textcontent)
+  [difference between `innerText` vs `innerHTML` vs `textContent`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-difference-between-innertext-vs-innerhtml-vs-textcontent)
 
 
 <br>
