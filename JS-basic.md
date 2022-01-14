@@ -4592,7 +4592,7 @@ The HTML
 <br>
 
 ## [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) 
-an all-im-one method to select a single element.
+an *all-in-one* method to select a single element.
 
 - `document.querySelector('h1');`       ← tagname
 
