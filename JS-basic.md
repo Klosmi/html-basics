@@ -4984,3 +4984,34 @@ The Element __property__ innerHTML gets or sets the HTML markup contained within
 
 <br>
   
+## the difference between `innerText` vs `innerHTML` vs `textContent`   
+
+The `innerText` property __returns just the text, without spacing and inner element tags__.
+
+The `innerHTML` property __returns the text, including all spacing and inner element tags__.
+
+The `textContent` property __returns the text with spacing, but without inner element tags__.
+
+- eg.:   
+  HTML
+  ```
+  <p id="example">   This element has extra spacing     and contains <span>a span element</span>.</p>
+  ```
+  
+  JS
+  ```
+  // innerText
+  document.getElementById("demo").innerText;
+  
+  // innerHTML
+  document.getElementById("demo").innerHTML;
+  
+  //textContent
+  document.getElementById("demo").textContent;
+  
+  // output:
+
+  // innerText returns: "This element has extra spacing and contains a span element."
+  // innerHTML returns: "   This element has extra spacing     and contains <span>a span element</span>."
+  //textContent returns: "   This element has extra spacing    and contains a span element."
+  ```
