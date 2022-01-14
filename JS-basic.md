@@ -4709,9 +4709,9 @@ same idea as `querySelector` but returns a __collection__ of mathcing __elements
     //  0: p
     //  1: p
     //  length: 2
-
+    
+    // ***********
     // with just simple querySelector
-
 
     document.querySelector('p');
 
