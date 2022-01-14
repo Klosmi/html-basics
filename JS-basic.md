@@ -4856,7 +4856,7 @@ So `textContent` is give us everything, whereas `innerText is actually sensitive
 
   // 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.'   // 👈 consectetur word is there
   ```
-  *but, `innerText` doesn't show the hidden <b> element's content (consectetur)*
+  *but, `innerText` doesn't show the hidden `<b>` element's content (consectetur)*
   ```
   document.querySelector('p').innerText;
 
