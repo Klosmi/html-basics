@@ -4389,7 +4389,7 @@ Simply: __when we call this method, we pass in a *string* and this string has to
  - it is a method that exists on the document
  - it only occurs once per page!
  - if there is an element found with that ID, it will be returned 
- - if the ID can't be found it return `null` (it only gives us 1 thing, there's no collection of elements)
+ - if the ID can't be found it returns `null` (it only gives us 1 thing, there's no collection of elements)
  - when we select something __JS fetchs us the object that represents some elements on the page__ based on the matching ID.
  - __it gives us the object representation of that element, which we can then manipulate__
  - we are not *asking* the HTML, __we are asking the DOM__ object (__the element object that JavaScript created__).
