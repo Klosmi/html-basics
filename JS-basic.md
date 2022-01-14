@@ -4377,7 +4377,7 @@ it is en element on the top of the element tree structure:
 
 <br>
 
-## [getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById).  
+## [getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)  
 The Document method `getElementById` returns an Element object representing the element whose id property matches the specified string.   
 
 Simply: __when we call this method, we pass in a *string* and this string has to correspond to an `ID` on an element.__   
