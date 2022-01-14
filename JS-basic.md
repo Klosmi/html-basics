@@ -4760,7 +4760,8 @@ We use DOM manipulation when we want to modify parts of the page when the user i
 
 - [innerText](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#innertext)   
   [textContent](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#textcontent)   
-  [innerHTML](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#innerhtml)   
+  [innerHTML](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#innerhtml)    
+  [difference between innerText vs innerHTML vs textContent](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-difference-between-innertext-vs-innerhtml-vs-textcontent)
 
 
 <br>
@@ -5013,5 +5014,5 @@ The `textContent` property __returns the text with spacing, but without inner el
 
   // innerText returns: "This element has extra spacing and contains a span element."
   // innerHTML returns: "   This element has extra spacing     and contains <span>a span element</span>."
-  //textContent returns: "   This element has extra spacing    and contains a span element."
+  // textContent returns: "   This element has extra spacing    and contains a span element."
   ```
