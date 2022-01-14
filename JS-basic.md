@@ -4886,8 +4886,8 @@ __The innerHTML property returns the text, including all spacing and inner eleme
 ### `innerText` vs `innerHTML` vs `textContent` :   
  
   
- - eg.: 
-    *an example to compare these 3 properties*
+ - eg.:    
+    *an example to compare these 3 properties*.  
     HTML:
     ```
     <p id="demo">   This element has extra spacing     and contains <span>a span element</span>.</p>
