@@ -4669,7 +4669,7 @@ an *all-in-one* method to select a single element.
 
 
 ## [querySelectorAll](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) 
-same idea as `querySelector` but returns a __collection__ of mathaing __elements__,  instead of just the first match.
+same idea as `querySelector` but returns a __collection__ of mathcing __elements__,  instead of just the first match.
 
 - `document.querySelectorAll('h1');`       ← tagname
 
