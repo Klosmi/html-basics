@@ -4782,20 +4782,34 @@ Simply, the text that we see as a user showing up between the opening and closin
   <h3>Inner Text</h3>
 
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
   ```
   JS
   ```
   document.querySelector('p').innerText;
-
+  
+  // output:
   // "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."      
   ```
   *__This paragraph element is just a JavaScript object, so we can change that into text value.__*   
-  *So let's change the value of thr `<p>` to another text*
+  *So let's change the value of all the `<p>` to another text by iterating over*
   ```
-  document.querySelector('p').innerText = "This is another text"
+  const paragraphs = document.querySelector('p');
 
-  // output:
-  //'This is another text'
+  for (let par of paragraphs) {
+      par.innerText = "Text has been overwritten!";
+  }
+
+  // output - all the <p> tags of the document (see the HTML below):
+  //'Text has been overwritten!'
+  ```
+  *now see the HTML*
+
+  ```
+  <h3>Inner Text</h3>
+
+  <p>Text has been overwritten!</p>
+  <p>Text has been overwritten!</p>
   ```
 
 ---
