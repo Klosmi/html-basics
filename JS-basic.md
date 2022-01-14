@@ -4467,7 +4467,7 @@ Simply: __when we call this method, we pass in a *string* and this string has to
 <br>
 
   - eg.:   
-      *to get the image, we pas the `img` tag*   
+      *to get the image, we pass the `img` tag*   
       The HTML   
       ```
       <html>
