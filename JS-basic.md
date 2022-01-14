@@ -4461,7 +4461,7 @@ Simply: __when we call this method, we pass in a *string* and this string has to
 
   - an __[Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)__:    
   in JavaScript is that *object that we're getting back that has all the properties that represent a single HTML element.*  
-  Element is the most general base class from which all element objects (i.e. objects that represent elements) in a Document inherit.
+  Element is the most __general base class__ from which all element objects *(i.e. objects that represent elements)* in a __Document__ inherit. It only has methods and properties common to all kinds of elements. More specific classes inherit from Element.
 
 <br>
 
