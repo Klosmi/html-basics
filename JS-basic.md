@@ -4346,11 +4346,12 @@ it is en element on the top of the element tree structure:
    - eg.:   
       *the representation of the HTML*   
       ```
-      <!DOCTYPE html>
-      <html dir="ltr" ... lang="en" class="md">
-      <head>...</head>
-      </body>...</body>
-      </html>>
+      #document
+        <!DOCTYPE html>
+        <html dir="ltr" ... lang="en" class="md">
+        <head>...</head>
+        </body>...</body>
+        </html>
       ```
 - typing __`console.dir(document)`__ we can __shows the JavaScript object__ with a bunch of properties.   
   - eg.:   
