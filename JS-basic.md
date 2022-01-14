@@ -4836,16 +4836,15 @@ Simply, the text that we see as a user showing up between the opening and closin
 
 
 ## [textContent](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent#differences_from_innertext)
-The `textContent` property is very similat to the `innerText` property. But it's not the same.   
-__The textContent property returns the text with spacing, but without inner element tags.__
+The `textContent` property is very similar to the `innerText` property. But it's not the same.
 
-The `textContent` property __returns__ every element, every piece of content inside the selected HTML element (shows everything which is in the markup).   
+__The `textContent` property __returns__ every element, every piece of content inside the selected HTML element (shows everything which is in the markup).__   
 But `innerText` property doesn't show everything what is in the markup (eg. if we had something by setting something to `display: none`, `innerText` doesn't show it).
 
-So `textContent` is give us everything, whereas `innerText is actually sensitive to what is showing at the moment.
+- So `textContent` is give us everything, whereas `innerText is actually sensitive to what is showing at the moment.
 
 
-`textContent` returns every element in the `node`. In contrast, `innerText` is aware of styling and won't return the text of "hidden" elements.   
+- `textContent` returns every element in the `node`. In contrast, `innerText` is aware of styling and won't return the text of "hidden" elements.   
 
 - syntax: `document.querySelector('p').textContent`
 
@@ -4878,7 +4877,7 @@ So `textContent` is give us everything, whereas `innerText is actually sensitive
 
   // Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod.   // 👈 consectetur word is missing
   ```
-
+  
 ---
 
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
@@ -4889,44 +4888,95 @@ So `textContent` is give us everything, whereas `innerText is actually sensitive
 ## [innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)   
 The Element __property__ innerHTML gets or sets the HTML markup contained within the element.   
   
-__The innerHTML property returns the text, including all spacing and inner element tags.__
+ `innerHTML` gives us the entirety of the markup contained within some element.
 
+ - so __`innerHTML` retrieves the full content, including the tag names, of basically everything inside of an element between the opening and closing tag.__
 
-  ---
+ - __`innerHTML` is the only one we can use to add elements inside of some other element__ compared to `innerText` and `textContent`.
 
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+- eg.:   
+  *When we do innerHTML, we get all of the tags included*   
+  HTML
+  ```
+  <h1>My Inner HTML</h1>
 
-<br>  
-  
-  
-### `innerText` vs `innerHTML` vs `textContent` :   
- 
-  
- - eg.:    
-    *an example to compare these 3 properties*.  
-    HTML:
-    ```
-    <p id="demo">   This element has extra spacing     and contains <span>a span element</span>.</p>
-    ```
-    JS
-    ```
-    function getInnerText() {
-      alert(document.getElementById("demo").innerText)
-    }
+  <p>LLorem ipsum dolor sit amet, consectetur adipiscing
+  elit, labore et dolore magna aliqua.
+  <br>Ut enim ad minim</b> veniam.
+  <span>Excepteur sint occaecat</span> cupidatat non
+  proident, sunt in culpa.
+  </p>
+  ```
+  JS
+  ```
+  document.querySelector('p').innerHTML;
 
-    function getHTML() {
-      alert(document.getElementById("demo").innerHTML)
-    }
+  // output: we get all the HTML tags as well❗️
 
-    function getTextContent() {
-      alert(document.getElementById("demo").textContent)
-    }
-  
-    // output:
-    // innerText returns: "This element has extra spacing and contains a span element."
-    // innerHTML returns: "   This element has extra spacing     and contains <span>a span element</span>."
-    // textContent returns: "   This element has extra spacing    and contains a span element."
-    ```
+  // <p>LLorem ipsum dolor sit amet, consectetur adipiscing
+  // elit, labore et dolore magna aliqua.
+  // <br>Ut enim ad minim</b> veniam.
+  // <span>Excepteur sint occaecat</span> cupidatat non
+  // proident, sunt in culpa.
+  // </p>
+  ```
+
+<br>
+
+- eg.:   
+  *innerHTML can give us (just) text*   
+  HTML   
+  ```
+  <h1>My Inner HTML</h1>
+
+  <p>Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit, sed do eiusmod.</p>
+  ```
+  JS
+  ```
+  document.querySelector('h1').innerHTML;
+  // output:
+  // 'My Inner HTML'
+  ```
+
+<br>
+
+ - 💡 why is it useful to see all the HTML tags?   
+ Because __`innerHTML` is more useful when we are updating the content and we want to change the HTML.__   
+    - eg.:  
+      *we want to put the `<h1>` title into italic `<i>`.*   
+      HTML
+      ```
+      <h1>My Inner HTML</h1>
+      ```
+      JS
+      ```
+      document.querySelector('h1').innerHTML = '<i>My Inner HTML</i>`
+
+      // output: the title is in italic
+      // see the HTML:
+      // <h1>
+      //   <i>My Inner HTML</i>
+      // </h1>
+      ```
+
+- we can add elements to the element, using __`+=`__ 
+    - eg.:  
+      *adding a superscript to the title*   
+      HTML
+      ```
+      <h1>
+        <i>My Inner HTML</i>
+      </h1>
+      ```
+      JS
+      ```
+      document.querySelector('h1').innerHTML += '<sup>Superscript</sup>`
+
+      // output: in HTML
+      // <h1>
+      //   <i>My Inner HTML</i><sup>Superscript</sup>
+      // </h1>
+      ```
   
   ---
 
