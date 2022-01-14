@@ -4353,7 +4353,7 @@ it is en element on the top of the element tree structure:
         </body>...</body>
         </html>
       ```
-- typing __`console.dir(document)`__ we can __shows the JavaScript object__ with a bunch of properties.   
+- typing __`console.dir(document)`__ can __show the JavaScript object__ with a bunch of properties.   
   - eg.:   
     ```
     #document
