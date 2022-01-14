@@ -4814,16 +4814,16 @@ Simply, the text that we see as a user showing up between the opening and closin
 
 - 💡 `document.querySelectorAll('p')` is __similar to an array__, so to get all the (`<p>`) elements, we can use either *indexing* or using *iteration*:
 
-        - indexing: `document.querySelectorAll('p')[0].innerText;`
+      - indexing: `document.querySelectorAll('p')[0].innerText;`
 
-        - iteration:
-           ```
-            const paragraphs = document.querySelector('p');
+      - iteration:
+         ```
+          const paragraphs = document.querySelector('p');
 
-            for (let par of paragraphs) {
-              par.innerText = "Text has been overwritten!";
-            }
-           ````
+          for (let par of paragraphs) {
+            par.innerText = "Text has been overwritten!";
+          }
+         ````
 ---
 
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
