@@ -4307,9 +4307,9 @@ extract values from __objects__.
 
 <br>
 
-# __[The DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)__  
+# __[The DOM](https://javascript.info/browser-environment#dom-document-object-model)__  
 *Document Object Model*  
-A bunch of __JavaScript objects that represents the webpage__.
+A bunch of __JavaScript objects that represents the webpage__. So the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) represents all page content as objects that can be modified. The __document object__ is the main “entry point” to the page. We can change or create anything on the page using it.
 
 It's our window, our access portal into the contents of a Web page from JavaScript.  
 
@@ -4331,9 +4331,45 @@ When a browser loads the Web page, the HTML and CSS loads, and then creating a b
 
 - every single element (also the `body`) gets its own JS object!
 
-- [tree structure](https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/How_to_create_a_DOM_tree)   
-the HTML elements are connected, there is a relationship, parent-children   
-  eg.: `<body>` holds the `<h1>`, the `<ul>` holds the `<li>`
+- __[The DOM tree](https://javascript.info/dom-nodes)__:    
+__[tree structure](https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/How_to_create_a_DOM_tree)__   
+the HTML elements are connected, there is a relationship, parent-children.   
+So the *DOM tree* is the backbone of an HTML document is tags.   
+According to DOM, every HTML tag is an object. Nested tags are *children* of the enclosing one. __The text inside a tag is an object as well. All these objects are accessible using JavaScript, and we can use them to modify the page.__ 
+For instance: a *`document.body` is the object representing the `<body>` tag.*
+ - eg.:   
+  *the DOM tree*
+  ```
+  <!DOCTYPE HTML>
+  <html>
+  <head>
+    <title>About elk</title>
+  </head>
+  <body>
+    The truth about elk.
+  </body>
+  </html>
+  ```
+*the structre:*
+  ```
+  HTML
+    ▾
+    HEAD
+      ▾
+      TITLE:
+        #text About elk
+    ▾
+    BODY
+    ▾
+      #text ↵␣␣The truth about elk.↵
+  ``` 
+  *Tags are element nodes (or just elements) and form the tree structure: __`<html>` is at the root, then `<head>` and `<body>` are its children__, etc.* 
+
+---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-dom)
+
+<br>
 
 ## [The document](https://developer.mozilla.org/en-US/docs/Web/API/Document)    
 __The *document object* is the entry point into the DOM.    
