@@ -4334,7 +4334,7 @@ When a browser loads the Web page, the HTML and CSS loads, and then creating a b
 - __[The DOM tree](https://javascript.info/dom-nodes)__:    
 __[tree structure](https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/How_to_create_a_DOM_tree)__   
 the HTML elements are connected, there is a relationship, parent-children.   
-So the *DOM tree* is the backbone of an HTML document is tags.   
+The backbone of an HTML document is tags.   
 According to DOM, every HTML tag is an object. Nested tags are *children* of the enclosing one. __The text inside a tag is an object as well. All these objects are accessible using JavaScript, and we can use them to modify the page.__ 
 For instance: a *`document.body` is the object representing the `<body>` tag.*
  - eg.:   
