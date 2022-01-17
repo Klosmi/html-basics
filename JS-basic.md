@@ -5102,7 +5102,7 @@ In contrast to the attributes, which are defined in HTML, properties belong to t
 Once the browser parses the HTML code (this eg.: `<input type="text" value="Name:">`), an [HTMLInputElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement) object will be created, and this object will contain dozens of properties.   
 For a given DOM node object, *properties are the properties of that object*, and *attributes* are the *elements of the attributes property* of that object.
 
-  - a JS object is a collection of unordered properties.
+<br>
 
 - __[attribute vs property](https://stackoverflow.com/questions/258469/what-is-the-difference-between-attribute-and-property)__:  
  the HTML representation of a DOM element has attributes, but when represented as a JavaScript object those attributes appear as object properties.   
