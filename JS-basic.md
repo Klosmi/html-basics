@@ -4340,7 +4340,6 @@ For instance: a *`document.body` is the object representing the `<body>` tag.*
  - eg.:   
   *the DOM tree*
   ```
-  <!DOCTYPE HTML>
   <html>
   <head>
     <title>About elk</title>
@@ -4360,7 +4359,7 @@ For instance: a *`document.body` is the object representing the `<body>` tag.*
         #text About elk
     ▾
     BODY
-    ▾
+      ▾
       #text ↵␣␣The truth about elk.↵
   ``` 
   *Tags are element nodes (or just elements) and form the tree structure: __`<html>` is at the root, then `<head>` and `<body>` are its children__, etc.* 
