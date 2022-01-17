@@ -5098,7 +5098,7 @@ elements have lots of different attributes.
 
 - __[Properties](https://developer.mozilla.org/en-US/docs/Glossary/property/JavaScript)__:   
 __are the values associated with a JavaScript object__.  
-In contrast to the attributes, which are defined in HTML, properties belong to the DOM. Since DOM is an object in JavaScript, we can get and set properties.
+In contrast to the attributes, which are defined in HTML, properties belong to the DOM. Since DOM is an object in JavaScript, we can get and set properties.   
 Once the browser parses the HTML code (this eg.: `<input type="text" value="Name:">`), an [HTMLInputElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement) object will be created, and this object will contain dozens of properties.   
 For a given DOM node object, *properties are the properties of that object*, and *attributes* are the *elements of the attributes property* of that object.
 
