@@ -4370,9 +4370,13 @@ For instance: a *`document.body` is the object representing the `<body>` tag.*
   
   *Tags are element nodes (or just elements) and form the tree structure: __`<html>` is at the root, then `<head>` and `<body>` are its children__, etc.*   
  
+ <br>
+ 
 💡 [Node](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (in the DOM):    
 __all parts of the *DOM tree* is a "node"__, but also the text content from those elements and attributes can be "nodes" as well. These individual parts of the document are known as "nodes". So a "node" can be simply an HTML element. The __DOM is a tree structure that represents the HTML of the website, and every HTML element is a "node"__.    
 💡 The *topmost node* is the root node (Document Node) of the DOM tree, which has one child, the `<html>`. 
+
+<br>
 
 ---
 
