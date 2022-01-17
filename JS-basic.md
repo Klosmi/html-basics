@@ -4812,7 +4812,7 @@ We use DOM manipulation when we want to modify parts of the page when the user i
   [textContent](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#textcontent)   
   [innerHTML](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#innerhtml)    
   [difference between `innerText` vs `innerHTML` vs `textContent`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-difference-between-innertext-vs-innerhtml-vs-textcontent)   
-  [Attributes & properties](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties)   
+  [attributes & properties](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties)   
 
 
 <br>
@@ -5076,8 +5076,8 @@ The `textContent` property __returns the text with spacing, but without inner el
   
 ## [Attributes & properties](https://javascript.info/dom-attributes-and-properties#html-attributes)  
 
-  - [accessing attributes]()   
-  - [changing styles]()   
+  - [accessing attributes](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#accessing-attributes)   
+    [changing styles](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#changing-styles)   
 
 - __[Attribute](https://www.geeksforgeeks.org/what-is-the-difference-between-properties-and-attributes-in-html/)__:   
 __attributes are defined by HTML and are used to customize a tag.__   
