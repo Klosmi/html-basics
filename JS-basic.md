@@ -4402,7 +4402,7 @@ it is en element on the top of the element tree structure:
       activeElement: body
       adoptedStyleSheets: []
       alinkColor: ""
-      all: [html, head, meta, meta, title, body, h1, img#banner, p, b, b, a, ...    // it contains every element the page - tags. Each of them is a JS object❗️
+      all: [html, head, meta, meta, title, body, h1, img#banner, p, b, b, a, ...    // it contains every element of the page - tags. Each of them is a JS object❗️
       .
       .
       .
