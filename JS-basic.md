@@ -4812,7 +4812,7 @@ We use DOM manipulation when we want to modify parts of the page when the user i
   [textContent](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#textcontent)   
   [innerHTML](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#innerhtml)    
   [difference between `innerText` vs `innerHTML` vs `textContent`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-difference-between-innertext-vs-innerhtml-vs-textcontent)   
-  [Attributes & properties]()   
+  [Attributes & properties](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties)   
 
 
 <br>
@@ -5077,7 +5077,7 @@ The `textContent` property __returns the text with spacing, but without inner el
 ## [Attributes & properties](https://javascript.info/dom-attributes-and-properties#html-attributes)  
 
 - __[Attribute](https://www.geeksforgeeks.org/what-is-the-difference-between-properties-and-attributes-in-html/)__:   
-Attribute are defined by HTML and are used to customize a tag.   
+__attributes are defined by HTML and are used to customize a tag.__   
 When the browser loads the page, it reads (“parses”) the HTML, and generates DOM objects from it.   
 For element nodes, most standard __HTML attributes__ automatically become *properties* of DOM objects.    
 An attribute extends an HTML element, changing its behavior or providing metadata. 
@@ -5120,7 +5120,7 @@ In contrast to the attributes, which are defined in HTML, properties belong to t
     ```
     <img id="myimage" src="https://images.com/">
     ```
-    JS
+    JS   
     *selecting for example by `id`. The 1st attribute is the `id`, 2nd is the `src`*
     ```
     document.querySelector('#myimage');
@@ -5201,9 +5201,9 @@ So wheb we use `getAttribute`, the method is getting the content directly from t
 
     input.type = 'color'
 
-    // it creates a color picker on the selected input element. See below 👇
+    // it creates a color picker on the selected input element.
     ```
-    like this:  <input type="color">   
+  
 
     *set the `<input type="">` back to text*
     ```
