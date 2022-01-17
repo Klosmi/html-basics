@@ -4349,7 +4349,7 @@ For instance: a *`document.body` is the object representing the `<body>` tag.*
   </body>
   </html>
   ```
-*the structre:*
+*[the structre](https://javascript.info/dom-nodes#an-example-of-the-dom):*
   ```
   HTML
     ▾
