@@ -5081,7 +5081,7 @@ The `textContent` property __returns the text with spacing, but without inner el
 
 - __[Attribute](https://www.geeksforgeeks.org/what-is-the-difference-between-properties-and-attributes-in-html/)__:   
 __attributes are defined by HTML and are used to customize a tag.__   
-When writing HTML source code, you can __define attributes on your HTML elements__. Then, once the browser reads (*parses*) your code, a __corresponding DOM node will be created. This node is an object, and therefore it has properties__.
+When writing HTML source code, we can __define attributes on your HTML elements__. Then, once the browser reads (*parses*) our code, a __corresponding DOM node will be created. This node is an object, and therefore it has properties__.
 An attribute extends an HTML element, changing its behavior or providing metadata. 
 For instance, this HTML element: `<input type="text" value="Name:">`. 
 It has 2 attributes (`type` and `value`). 
