@@ -5081,10 +5081,11 @@ The `textContent` property __returns the text with spacing, but without inner el
 
 - __[Attribute](https://www.geeksforgeeks.org/what-is-the-difference-between-properties-and-attributes-in-html/)__:   
 __attributes are defined by HTML and are used to customize a tag.__   
-When the browser loads the page, it reads (“parses”) the HTML, and generates DOM objects from it.   
-For element nodes, most standard __HTML attributes__ automatically become *properties* of DOM objects.    
+When writing HTML source code, you can __define attributes on your HTML elements__. Then, once the browser reads (*parses*) your code, a __corresponding DOM node will be created. This node is an object, and therefore it has properties__.
 An attribute extends an HTML element, changing its behavior or providing metadata. 
- 
+For instance, this HTML element: `<input type="text" value="Name:">`. 
+It has 2 attributes (`type` and `value`). 
+  
 The HTML tags may have attributes. When the browser reads the HTML to create DOM objects for tags, it recognizes *standard attributes* and creates *DOM properties* from them.
 
 - An HTML attribute always has the form name="value" .
@@ -5099,14 +5100,28 @@ elements have lots of different attributes.
 - __[Properties](https://developer.mozilla.org/en-US/docs/Glossary/property/JavaScript)__:   
 __are the values associated with a JavaScript object__.  
 In contrast to the attributes, which are defined in HTML, properties belong to the DOM. Since DOM is an object in JavaScript, we can get and set properties.
+Once the browser parses the HTML code (this eg.: `<input type="text" value="Name:">`), an [HTMLInputElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement) object will be created, and this object will contain dozens of properties.   
+For a given DOM node object, *properties are the properties of that object*, and *attributes* are the *elements of the attributes property* of that object.
 
   - a JS object is a collection of unordered properties.
 
 - __[attribute vs property](https://stackoverflow.com/questions/258469/what-is-the-difference-between-attribute-and-property)__:  
- the HTML representation of a DOM element has attributes,  but when represented as a JavaScript object those attributes appear as object properties.
+ the HTML representation of a DOM element has attributes, but when represented as a JavaScript object those attributes appear as object properties.   
+So, for instance we have a text-box: `<input id="the-input" type="text" value="Name:">`. If we want to know what is inside currently in this text-box, we have to read the __property__. If we want to know what the __initial value__ of that text-box was, we should read the __attribute__. 
+  - eg.:   
+    *property shws what is currently inside of the text-box. Attribue shows what was the initial value*   
+    HTML
+    ```
+    <input id="the-input" type="text" value="Name:">
+    ```
+    JS    
+    ```
+    theInput.value                 
+    // returns "John"   ← property
 
-   - eg.:  
-     changing the `element.href` __property__ will update the `href` __attribute__ on the __element__, and that will be reflected in a call to `element.getAttribute('href')`.
+    theInput.getAttribute('value') 
+    // returns "Name:"  ← attribute
+    ``` 
 
 <br>
 
