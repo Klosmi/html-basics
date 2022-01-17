@@ -4383,7 +4383,7 @@ It contains *representations of all the content on a page*, and lots of *methods
 it is en element on the top of the element tree structure:   
 *it is the top of a folder for everything*      
 *it's the root of the tree*
- - typeing `document` on the console gives us:  
+ - write `document` on the console and it gives us:  
    - eg.:   
       *the representation of the HTML*   
       ```
