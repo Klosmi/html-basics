@@ -4338,34 +4338,34 @@ It is a __[tree structure](https://developer.mozilla.org/en-US/docs/Web/API/Docu
   - According to DOM, every HTML tag is an object. Nested tags are *children* of the enclosing one. __The text inside a tag is an object as well. All these objects are accessible using JavaScript, and we can use them to modify the page.__ 
 For instance: a *`document.body` is the object representing the `<body>` tag.*
  - eg.:   
-  *the DOM tree*
-  ```
-  <html>
-  <head>
-    <title>About elk</title>
-  </head>
-  <body>
-    The truth about elk.
-  </body>
-  </html>
-  ```
-*[the structre](https://javascript.info/dom-nodes#an-example-of-the-dom):*
-  ```
-  HTML
-    ▾
-    HEAD
+    *the DOM tree*
+    ```
+    <html>
+    <head>
+      <title>About elk</title>
+    </head>
+    <body>
+      The truth about elk.
+    </body>
+    </html>
+    ```
+  *[the structre](https://javascript.info/dom-nodes#an-example-of-the-dom):*
+    ```
+    HTML
       ▾
-      TITLE:
-        #text About elk
-    ▾
-    BODY
+      HEAD
+        ▾
+        TITLE:
+          #text About elk
       ▾
-      #text ↵␣␣The truth about elk.↵
-  
-  // ↵   - sign of a newline
-  // ␣   - sign of a space 
-  ``` 
-  *Tags are element nodes (or just elements) and form the tree structure: __`<html>` is at the root, then `<head>` and `<body>` are its children__, etc.* 
+      BODY
+        ▾
+        #text ↵␣␣The truth about elk.↵
+
+    // ↵   - sign of a newline
+    // ␣   - sign of a space 
+    ``` 
+    *Tags are element nodes (or just elements) and form the tree structure: __`<html>` is at the root, then `<head>` and `<body>` are its children__, etc.* 
 
 ---
 
