@@ -5139,9 +5139,11 @@ In contrast to the attributes, which are defined in HTML, properties belong to t
     // 'myId'
     ```
 
+<br>
+
 - [`getAttribute`](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute)   
 this method returns the value of a specified attribute on the element.   
-So when we use `getAttribute`, the method is getting the content directly from the HTML itself.
+So when we use `getAttribute`, the __method is getting the content directly from the HTML itself__.
   - eg.:   
     *get the `href` with the `getAttribute` method*  
     HTML
