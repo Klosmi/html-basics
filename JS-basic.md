@@ -4361,6 +4361,9 @@ For instance: a *`document.body` is the object representing the `<body>` tag.*
     BODY
       ▾
       #text ↵␣␣The truth about elk.↵
+  
+  // ↵   - sign of a newline
+  // ␣   - sign of a space 
   ``` 
   *Tags are element nodes (or just elements) and form the tree structure: __`<html>` is at the root, then `<head>` and `<body>` are its children__, etc.* 
 
