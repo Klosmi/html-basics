@@ -5127,7 +5127,7 @@ In contrast to the attributes, which are defined in HTML, properties belong to t
 
     // <img id="myimage" src="https://images.com/">
     ```
-    *__we can change the `id` with  a property. And thanks to that we can impact the `id` attribute__.*
+    *__we can change the `id` with  a property. And thanks to that we can impact the `id` attribute__. (we cahnge `myimage` to `myId`)*
 
     ```
     document.querySelector('#myimage').id;
