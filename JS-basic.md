@@ -4811,7 +4811,8 @@ We use DOM manipulation when we want to modify parts of the page when the user i
 - [innerText](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#innertext)   
   [textContent](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#textcontent)   
   [innerHTML](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#innerhtml)    
-  [difference between `innerText` vs `innerHTML` vs `textContent`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-difference-between-innertext-vs-innerhtml-vs-textcontent)
+  [difference between `innerText` vs `innerHTML` vs `textContent`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-difference-between-innertext-vs-innerhtml-vs-textcontent)   
+  [Attributes & properties]()   
 
 
 <br>
@@ -5066,3 +5067,153 @@ The `textContent` property __returns the text with spacing, but without inner el
   // innerHTML returns: "   This element has extra spacing     and contains <span>a span element</span>."
   // textContent returns: "   This element has extra spacing    and contains a span element."
   ```
+  
+   ---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+
+<br> 
+  
+## [Attributes & properties](https://javascript.info/dom-attributes-and-properties#html-attributes)  
+
+- __[Attribute](https://www.geeksforgeeks.org/what-is-the-difference-between-properties-and-attributes-in-html/)__:   
+Attribute are defined by HTML and are used to customize a tag.   
+When the browser loads the page, it reads (“parses”) the HTML, and generates DOM objects from it.   
+For element nodes, most standard __HTML attributes__ automatically become *properties* of DOM objects.    
+An attribute extends an HTML element, changing its behavior or providing metadata. 
+ 
+The HTML tags may have attributes. When the browser reads the HTML to create DOM objects for tags, it recognizes *standard attributes* and creates *DOM properties* from them.
+
+- An HTML attribute always has the form name="value" .
+elements have lots of different attributes.  
+
+- We consider the `#ID` and `.class` as attributes, an anchor tag `<a>` an `href="#"` an `input` is also .
+
+- When a standard attribute changes, the corresponding property is auto-updated, and vice versa.
+
+<br>
+
+- __[Properties](https://developer.mozilla.org/en-US/docs/Glossary/property/JavaScript)__:   
+__are the values associated with a JavaScript object__.  
+In contrast to the attributes, which are defined in HTML, properties belong to the DOM. Since DOM is an object in JavaScript, we can get and set properties.
+
+  - a JS object is a collection of unordered properties.
+
+- __[attribute vs property](https://stackoverflow.com/questions/258469/what-is-the-difference-between-attribute-and-property)__:  
+ the HTML representation of a DOM element has attributes,  but when represented as a JavaScript object those attributes appear as object properties.
+
+   - eg.:  
+     changing the `element.href` __property__ will update the `href` __attribute__ on the __element__, and that will be reflected in a call to `element.getAttribute('href')`.
+
+<br>
+
+  ---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+
+<br>
+
+- __Accessing attributes__:
+  - eg.:   
+    *selecting an image from a page, it has 2 attributes here, an `id` and a `src`*   
+    HTML
+    ```
+    <img id="myimage" src="https://images.com/">
+    ```
+    JS
+    *selecting for example by `id`. The 1st attribute is the `id`, 2nd is the `src`*
+    ```
+    document.querySelector('#myimage');
+
+    // <img id="myimage" src="https://images.com/">
+    ```
+    *__we can change the `id` with  a property. And thanks to that we we impact the `id` attribute__.*
+
+    ```
+    document.querySelector('#myimage').id;
+
+    // 'myimage'
+
+    document.querySelector('#myimage').id = 'myId';
+
+    // 'myId'
+    ```
+
+- [`getAttribute`](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute)   
+this method returns the value of a specified attribute on the element.
+So wheb we use `getAttribute`, the method is getting the content directly from the HTML itself.
+  - eg.:   
+    *get the `href` with the `getAttribute` method*  
+    HTML
+    ```
+    <a href="/wiki/Asia">This is a link</a>
+    ``` 
+    JS
+    ```
+    const link = document.querySelector('a');
+    
+    link.href
+    // 'file://wiki/Asia'    ← value by going to the JS object
+
+    link.getAttribute('href');
+    // '/wiki/Asia'          ← value directly from the HTML
+    ```
+    There is a difference: `getAttribute` takes the value (/wiki/Asia) directly from the HTML. Whereas when we access a property directly on an element like `link.href` that is going to the JS object.  
+    So, we get different value
+
+  <br>
+
+- [setAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)   
+  Sets the value of an attribute on the specified element. If the attribute already exists, the value is updated; otherwise a new attribute is added with the specified name and value.
+
+  - we have to give 2 arguments: `Element.setAttribute(name, value);`
+
+  - eg.:   
+    *change the value of the `href` with `setAttribute`.*   
+    HTML
+    ```
+    <a href="/wiki/Asiea">Example</a>
+    ```
+    JS
+    ```
+    const link = document.querySelector('a');
+
+    // <a href="/wiki/Asiea">Example</a>
+
+
+    link.setAttribute('href', 'www.mdn.org');
+
+    // <a href="www.mdn.org">Example</a>
+    ```
+
+- changing element with attributes: 
+
+  - eg.:   
+    *change the `<input type="checkbox>` with the __type attribute__ to colorpicker*   
+    HTML
+    ```
+    <input type="checkbox" class="toctogglecheckbox">
+    ```
+    JS
+    ```
+    const input = document.querySelector('input[type = "text"]')       // css attribute selector
+    // <input type="text">
+
+    input.type = 'color'
+
+    // it creates a color picker on the selected input element. See below 👇
+    ```
+    like this:  <input type="color">   
+
+    *set the `<input type="">` back to text*
+    ```
+    input.setAttribute('type', 'text')
+
+    // <input type="text">
+    ```
+
+  ---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+
+<br>
