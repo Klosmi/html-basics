@@ -5076,6 +5076,9 @@ The `textContent` property __returns the text with spacing, but without inner el
   
 ## [Attributes & properties](https://javascript.info/dom-attributes-and-properties#html-attributes)  
 
+  - [accessing attributes]()   
+  - [changing styles]()   
+
 - __[Attribute](https://www.geeksforgeeks.org/what-is-the-difference-between-properties-and-attributes-in-html/)__:   
 __attributes are defined by HTML and are used to customize a tag.__   
 When the browser loads the page, it reads (“parses”) the HTML, and generates DOM objects from it.   
@@ -5113,7 +5116,7 @@ In contrast to the attributes, which are defined in HTML, properties belong to t
 
 <br>
 
-- __Accessing attributes__:
+#### __Accessing attributes__:
   - eg.:   
     *selecting an image from a page, it has 2 attributes here, an `id` and a `src`*   
     HTML
@@ -5213,6 +5216,15 @@ So when we use `getAttribute`, the __method is getting the content directly from
 
     // <input type="text">
     ```
+
+  ---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+
+<br>
+
+#### __Changing styles__:
+
 
   ---
 
