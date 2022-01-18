@@ -3872,7 +3872,7 @@ Spreading an iterable (array, string, etc.) into a Function Call (a list of argu
   *the __`...`__ syntax doesn't change `nums`*   
  
 - eg.:   
-  *using `console.log`, and printing out `nums`. Then using the separate syntax, see the differnce: __each element from `nums` array passed in as a separate argument__ to the `console.log`.*
+  *using `console.log`, and printing out `nums`. Then using the separate syntax, see the difference: __each element from `nums` array passed in as a separate argument__ to the `console.log`.*
   ```
   const nums = [3, 5, 9, 1];
 
