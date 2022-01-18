@@ -5102,7 +5102,7 @@ elements have lots of different attributes.
 <br>
 
 - __[Properties](https://developer.mozilla.org/en-US/docs/Glossary/property/JavaScript)__:   
-The DOM is built from the HTML code parsed by the browser. During this process, the __HTML attributes of the elements__ are __translated into the corresponding DOM properties__. __These properties are referred to by JavaScript as properties of an object__❗️     
+The DOM is built from the HTML code parsed by the browser. During this process, the __HTML attributes of the elements__ are __translated into the corresponding DOM properties__ and __these properties are referred to by JavaScript as properties of an object__❗️     
 
 Properties are the values associated with a JavaScript object.  
 
