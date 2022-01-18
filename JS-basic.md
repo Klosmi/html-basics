@@ -4814,7 +4814,6 @@ We use DOM manipulation when we want to modify parts of the page when the user i
   [innerHTML](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#innerhtml)    
   [difference between `innerText` vs `innerHTML` vs `textContent`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-difference-between-innertext-vs-innerhtml-vs-textcontent)   
   [attributes & properties](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties)   
-  [accessing & changing attributes](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#accessing-attributes).  
 
 
 <br>
@@ -5078,7 +5077,7 @@ The `textContent` property __returns the text with spacing, but without inner el
   
 ## [Attributes & properties](https://javascript.info/dom-attributes-and-properties#html-attributes)  
 
-  - [accessing attributes](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#accessing-attributes)   
+  - [accessing & setting attributes](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#accessing-attributes)   
     [changing styles](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#changing-styles)   
 
 __[Attribute](https://www.geeksforgeeks.org/what-is-the-difference-between-properties-and-attributes-in-html/)__:   
@@ -5242,7 +5241,7 @@ So when we use `getAttribute`, the __method is getting the content directly from
 
 <br>
 
-#### __Changing styles__:
+#### __[Changing styles](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style)__:
 
 
   ---
