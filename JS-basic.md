@@ -5111,7 +5111,8 @@ __[Attribute vs Property](https://stackoverflow.com/questions/258469/what-is-the
  the HTML representation of a DOM element has attributes, but when represented as a JavaScript object those attributes appear as object properties.   
 So, for instance we have a text-box: `<input id="the-input" type="text" value="Name:">`. If we want to know what is inside currently in this text-box, we have to read the __property__. If we want to know what the __initial value__ of that text-box was, we should read the __attribute__. 
   - eg.:   
-    *property shwos what is currently inside of the text-box (what the user typed in, here it's "John"). Attribue shows what was the initial value (value="Name:")*   
+    *A property shwos what is currently inside of the text-box (what the user typed in, here it's "John").*   
+    *The attribue shows what was the initial value (value="Name:")*   
     HTML
     ```
     <input id="the-input" type="text" value="Name:">
