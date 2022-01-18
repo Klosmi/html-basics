@@ -5297,7 +5297,7 @@ __The style object does not contain styles from our stylesheets__ ❗️ It's em
     // "red"      ← now it is set to 'red'
     ```
 
-- However, we can use these `style` properties to change their value with JS.
+We can use these __`style` properties to change the value with JS__.
   - eg.:   
     JS   
     *change the color of the `<h1>`, without using the inline styling*
