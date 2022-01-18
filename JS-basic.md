@@ -2138,7 +2138,7 @@ we can define functions that expect more than one argument.
   
   - in this case we have to tell the function, how many arguemnts we'll use.
   
-  - separate the paramteres & arguements by a __comma__.
+  - separate the parameters & arguements by a __comma__.
 
   - __order counts__:    
   *(from left to right)* the first parameter gets the first argument, the second parameter gets the second argument, etc.
@@ -3742,7 +3742,7 @@ When JavaScript code is interpreted, each function creates an __execution contex
 
 ## __[Default parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)__ :  
 `Default function` parameters allow named parameters to be initialized with default values if no value or undefined is passed.    
-Basically when we don't use a paramter, we can give it a default value.
+Basically when we don't use a parameter, we can give it a default value.
 
 - eg.:   
   *a roll die method with `Math.random` times, a number of sides*
@@ -3759,7 +3759,7 @@ Basically when we don't use a paramter, we can give it a default value.
   ```
 
 - The way to avoid `NaN` when we don't pass value to the function, is we give a __`default param`__ 
-- we add an __`=`__ sign to the paramters in the function. 
+- we add an __`=`__ sign to the parameters in the function. 
 -eg.:     
   *We set __`b = 1`__, so the default value of `b` is `1`*
   ```
@@ -3810,7 +3810,7 @@ Basically when we don't use a paramter, we can give it a default value.
     greeting("John");
     // Hello! John
     ```
-    *we can use multiple default paramters*
+    *we can use multiple default parameters*
     ```
     function greeting(greet = "Hello!", name, question = "How are you?"  ) {
       console.log(`${greet} ${name} ${question}`);
@@ -4005,7 +4005,7 @@ So __it collects all remaining arguments into an acutal array.__
 
 
 - __`...`__
-- collects the __rest__ of the paramters, arguemnts
+- collects the __rest__ of the parameters, arguemnts
 
 - eg.:  
     *Using `rest` + only one parameter (`num`).   
