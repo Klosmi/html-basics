@@ -4040,7 +4040,7 @@ So __it collects all remaining arguments into an acutal array.__
 
 <br>
 
-_bonus: about the `arguments` object__
+__bonus: about the `arguments` object__
 
   - it automatically holds all of the arguments passed into a function.  
   - it's an array __like__ object:   
