@@ -5081,7 +5081,7 @@ The `textContent` property __returns the text with spacing, but without inner el
     [changing styles](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#changing-styles)   
 
 __[Attribute](https://www.geeksforgeeks.org/what-is-the-difference-between-properties-and-attributes-in-html/)__:   
-When the browser requests a page, it receives the HTML source code. It then reads (*parses*) this code and builds the DOM from it. __During this process, the HTML attributes of the elements are translated into the corresponding DOM properties__.
+When the browser requests a page, it receives the HTML source code. It then reads (*parses*) this code and builds the DOM from it. __During this process, the HTML attributes of the elements are translated into the corresponding DOM properties__.   
 So the __[attributes](https://codoschool.ru/hu/uslugi/javascript-znachenie-atributa-manipulirovanie-atributami-elementov-v-jquery.html) are HTML entities and thay can be used to add specific data to elements of HTML code.__   
 - Attributes are defined by HTML and are used to customize a tag.   
 - When writing HTML source code, we can __define attributes on your HTML elements__. Then, once the browser reads (*parses*) our code, a __corresponding DOM node will be created. This node is an object, and therefore it has properties__.   
