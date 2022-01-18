@@ -5134,7 +5134,7 @@ So, for instance we have a text-box: `<input id="the-input" type="text" value="N
 
 <br>
 
-#### __Accessing attributes__:
+#### __[Accessing attributes](https://www.tutorialrepublic.com/javascript-tutorial/javascript-dom-get-set-attributes.php)__:
   - eg.:   
     *selecting an image from a page, it has 2 attributes here, an `id` and a `src`*   
     HTML
@@ -5209,10 +5209,10 @@ So when we use `getAttribute`, the __method is getting the content directly from
     // <a href="www.mdn.org">Example</a>
     ```
 
-- changing element with attributes: 
+- [changing element with attributes](https://www.javascripttutorial.net/javascript-dom/javascript-setattribute/): 
 
   - eg.:   
-    *change the `<input type="checkbox>` with the __type attribute__ to colorpicker*   
+    *[change the `<input type="checkbox>`](https://stackoverflow.com/questions/9093992/change-html-input-type-by-js/9094047) with the __type attribute__ to colorpicker*   
     HTML
     ```
     <input type="checkbox" class="toctogglecheckbox">
