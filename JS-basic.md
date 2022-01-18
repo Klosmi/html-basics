@@ -4309,11 +4309,11 @@ extract values from __objects__.
 
 # __[The DOM](https://javascript.info/browser-environment#dom-document-object-model)__  
 *Document Object Model*  
-A bunch of __JavaScript objects that represents the webpage__. So the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) represents all page content as objects that can be modified. The __document object__ is the main “entry point” to the page. We can change or create anything on the page using it.
+A bunch of __JavaScript objects that represents the webpage__. So the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) represents all page content as objects that can be modified. The __document object__ is the main “entry point” to the page. We can change or create anything on the page using it.   
 
 It's our window, our access portal into the contents of a Web page from JavaScript.  
 
-So the DOM is a JS representation of a webpage.   
+So the DOM is a JS representation of a webpage, an interface to access the actual (i.e. already rendered) elements of an HTML document.    
 It is the 'window' to the contents of a webpage.   
 And many objects that we can interact with via JS.
 
