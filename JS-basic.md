@@ -5186,7 +5186,7 @@ So when we use `getAttribute`, the __method is getting the content directly from
 
   <br>
 
-- [setAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)   
+- [`setAttribute`](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)   
   Sets the value of an attribute on the specified element. If the attribute already exists, the value is updated; otherwise a new attribute is added with the specified name and value.
 
   - we have to give 2 arguments: `Element.setAttribute(name, value);`
@@ -5241,8 +5241,105 @@ So when we use `getAttribute`, the __method is getting the content directly from
 
 <br>
 
-#### __[Changing styles](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style)__:
+#### __[Changing styles](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style)__:   
+the [`style`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style#getting_style_information) property.  
 
+- set the `style` properties throught the DOM
+
+- If we select an element and we add __`.style`__, we can see that this object contains a whole bunch of properties corresponding to all the individual CSS properties (like *`color`* or *`font-size`*, etc). 
+
+- __But__ in JS everything is camelcased: so eg.: `fontSize` (and not `font-size` as in CSS)❗️
+
+
+- eg.:   
+  *select the `<h1>` element, and with the `.style` we see it's has a bunch of properties*   
+  HTML
+  ```
+  <h1>I'm a title</h1>
+  ```
+  JS
+  ```
+  const h1 = document.querySelector('h1');
+
+  h1.style;
+
+  // output: properties that are corresponding to all the individual CSS properties.
+  // ‣CSSStyleDeclaration {accentColor: '', additiveSymbols: '', alignContent: '', alignItems: '', alignSelf: '', …}
+  ```
+
+<br>
+
+- the style object does not contain styles from our stylesheets❗️ It's empty. It contains any inline styles we have assigned.
+
+  - eg.:
+    *give a color to the `<h1>` with CSS*   
+    CSS
+    ```
+    h1 {
+      color: red;
+    }
+    ```
+    *select the `<h1>` and use stlye.color, and we see it's empty*
+    JS
+    ```
+    h1.style.color;
+    // ""
+    ```
+    *It contains only __inline__ styles*
+    *add inline stlyes (normally not recommended!)*
+    HTML
+    ```
+    <h1 style="color: red;">I'm a title</h1>
+    ```
+    JS
+    ```
+    h1.style.color;
+    // "red"      ← now it is set to 'red'
+    ```
+
+- However, we can use these `style` properties to change their value with JS.
+  - eg.:   
+    JS   
+    *change the color of the `<h1>`, without using the inline styling*
+    ```
+    h1.style.color = 'green';
+
+    // "green"
+    ```
+    *make the fontSize larger*
+    ```
+    h1.style.fontSize = '3em';
+    // "3em"
+    ```
+- Try to avoid writing styles in line❗️ so there is a better way to make changes to apply new styles to elements, which is to use a class.
+
+- We __can't__ get the information about the HTML elments' style with the `.style` property.   
+But to the current styles of any element we can use the `window.getComputedStyle(element)` object. It gives the *computed style* (so once the page is loaded and the browser computed all the styles).   
+It is not a selector!
+
+  - eg.:  
+    *using the `window.getComputedStyle` method to get style informations*   
+    HTML
+    ```
+    <h1>I'm a title</h1>
+    ```
+    JS
+    ```
+    const h1 = document.querySelector('h1');
+
+    window.getComputedStyle(h1);        // add the h1 element without paranthesis
+
+    // output: an CSS style declaration (not an object)
+    // CSSStyleDeclaration {0: 'accent-color', 1: 'align-content', 2: 'align-items', 3: 'align-self'...
+    ```
+    *we can access the color by specifing it*
+    ```
+    window.getComputedStyle(h1).color;
+    // 'rgb(0, 0, 0)'    ← black
+
+    window.getComputedStyle(h1).fontSize;
+    // '32px'             ← it's a string, so to change it, needs to be converted to numbers and than back to string
+    ```
 
   ---
 
