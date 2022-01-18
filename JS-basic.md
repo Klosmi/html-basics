@@ -5085,15 +5085,12 @@ The `textContent` property __returns the text with spacing, but without inner el
 
 - 💡 When the browser requests a page, it receives the HTML source code. It then reads (*parses*) this code and builds the DOM from it. __During this process, the HTML attributes of the elements are translated into the corresponding DOM properties__.
 
-Attributes are defined by HTML and are used to customize a tag.   
-When writing HTML source code, we can __define attributes on your HTML elements__. Then, once the browser reads (*parses*) our code, a __corresponding DOM node will be created. This node is an object, and therefore it has properties__.   
-__An attribute extends an HTML element, changing its behavior__ or providing metadata.    
+- Attributes are defined by HTML and are used to customize a tag.   
+- When writing HTML source code, we can __define attributes on your HTML elements__. Then, once the browser reads (*parses*) our code, a __corresponding DOM node will be created. This node is an object, and therefore it has properties__.   
+- __An attribute extends an HTML element, changing its behavior__ or providing metadata.    
 For instance, this HTML element: `<input type="text" value="Name:">` has 2 attributes (`type` and `value`). 
   
-The HTML tags may have attributes. When the browser reads the HTML to create DOM objects for tags, it recognizes *standard attributes* and creates *DOM properties* from them.
-
-- An HTML attribute always has the form name="value" .
-elements have lots of different attributes.  
+- The HTML tags may have attributes. When the browser reads the HTML to create DOM objects for tags, it recognizes *standard attributes* and creates *DOM properties* from them.
 
 - We consider the `#ID` and `.class` as attributes, an anchor tag `<a>` an `href="#"` an `input` is also .
 
@@ -5102,15 +5099,12 @@ elements have lots of different attributes.
 <br>
 
 - __[Properties](https://developer.mozilla.org/en-US/docs/Glossary/property/JavaScript)__:   
-The DOM is built from the HTML code parsed by the browser. During this process, the __HTML attributes of the elements__ are __translated into the corresponding DOM properties__ and __these properties are referred to by JavaScript as properties of an object__❗️     
-
-Properties are the values associated with a JavaScript object.  
-
-*(The object here is the DOM node (element).*
-
-So, in contrast to the __attributes, which are defined in HTML__, __properties belong to the DOM__.   
-Since DOM is an object in JavaScript, we can get and set properties.   
-Once the browser parses the HTML code (this eg.: `<input type="text" value="Name:">`), an [HTMLInputElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement) object will be created, and this object will contain dozens of properties.   
+The DOM is built from the HTML code parsed by the browser. During this process, the __HTML attributes of the elements__ are __translated into the corresponding DOM properties__ and __these properties are referred to by JavaScript as properties of an object__ ❗️.      
+- Properties are the values associated with a JavaScript object.  
+- *(The object here is the DOM node (element).*   
+- So, in contrast to the __attributes, which are defined in HTML__, __properties belong to the DOM__.   
+- Since DOM is an object in JavaScript, we can get and set properties.   
+- Once the browser parses the HTML code (this eg.: `<input type="text" value="Name:">`), an [HTMLInputElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement) object will be created, and this object will contain dozens of properties.   
 For a given DOM node object, *properties are the properties of that object*, and *attributes* are the *elements of the attributes property* of that object.
 
 <br>
