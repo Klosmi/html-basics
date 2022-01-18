@@ -5192,7 +5192,7 @@ So when we use `getAttribute`, the __method is getting the content directly from
   - we have to give 2 arguments: `Element.setAttribute(name, value);`
 
   - eg.:   
-    *change the value of the `href` with `setAttribute`.*   
+    *__change the value__ of the `href` with `setAttribute`.*   
     HTML
     ```
     <a href="/wiki/Asiea">Example</a>
