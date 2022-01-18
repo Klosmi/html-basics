@@ -2136,7 +2136,7 @@ example("argument");
 - __Multiple arguments__ :    
 we can define functions that expect more than one argument.  
   
-  - in this case we have to tell the function, how many arguemnts we'll use.
+  - in this case we have to tell the function, how many arguments we'll use.
   
   - separate the parameters & arguements by a __comma__.
 
@@ -3860,13 +3860,13 @@ Spreading an iterable (array, string, etc.) into a Function Call (a list of argu
 
   Math.min(nums)
 
-  // NaN          // because we passed a single array full of numbers, not multiple sperate arguemnts
+  // NaN          // because we passed a single array full of numbers, not multiple sperate arguments
   ```
   *so we are going to use the __spread syntax__, and by that, we're separating the `nums` into separate arguments, so the functions can use it.*
   ```
   const nums = [3, 5, 9, 1];
 
-  Math.max(...nums);           // num array spreaded out into separate arguemnts: 3, 5, 9, 1
+  Math.max(...nums);           // num array spreaded out into separate arguments: 3, 5, 9, 1
   // 9
   ```
   *the __`...`__ syntax doesn't change `nums`*   
@@ -4005,7 +4005,7 @@ So __it collects all remaining arguments into an acutal array.__
 
 
 - __`...`__
-- collects the __rest__ of the parameters, arguemnts
+- collects the __rest__ of the parameters, arguments
 
 - eg.:  
     *Using `rest` + only one parameter (`num`).   
@@ -4047,7 +4047,7 @@ _bonus: about the `arguments` object__
     - it has a length property
     - doesn't have array methods (like push or pop, reduce, etc.)
   - it's available inside every function
-  - __contains all the arguemnts passed to the function__
+  - __contains all the arguments passed to the function__
   - __not available inside of arrow functions__!
 
     - eg.:   
@@ -4057,7 +4057,7 @@ _bonus: about the `arguments` object__
         console.log(arguments);
       }
 
-      sum();                    // arguemnts is empty
+      sum();                    // 'arguments' is empty
       // Arguments [callee: ƒ, Symbol(Symbol.iterator): ƒ]
       // length: 0
 
