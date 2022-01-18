@@ -5080,7 +5080,7 @@ The `textContent` property __returns the text with spacing, but without inner el
   - [accessing attributes](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#accessing-attributes)   
     [changing styles](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#changing-styles)   
 
-- __[Attribute](https://www.geeksforgeeks.org/what-is-the-difference-between-properties-and-attributes-in-html/)__:  
+__[Attribute](https://www.geeksforgeeks.org/what-is-the-difference-between-properties-and-attributes-in-html/)__:  
  __[attributes](https://codoschool.ru/hu/uslugi/javascript-znachenie-atributa-manipulirovanie-atributami-elementov-v-jquery.html) are HTML entities that can be used to add specific data to elements of HTML code.__ 
 
 - 💡 When the browser requests a page, it receives the HTML source code. It then reads (*parses*) this code and builds the DOM from it. __During this process, the HTML attributes of the elements are translated into the corresponding DOM properties__.
@@ -5098,7 +5098,7 @@ For instance, this HTML element: `<input type="text" value="Name:">` has 2 attri
 
 <br>
 
-- __[Properties](https://developer.mozilla.org/en-US/docs/Glossary/property/JavaScript)__:   
+__[Properties](https://developer.mozilla.org/en-US/docs/Glossary/property/JavaScript)__:   
 The DOM is built from the HTML code parsed by the browser. During this process, the __HTML attributes of the elements__ are __translated into the corresponding DOM properties__ and __these properties are referred to by JavaScript as properties of an object__ ❗️.      
 - Properties are the values associated with a JavaScript object.  
 - *(The object here is the DOM node (element).*   
