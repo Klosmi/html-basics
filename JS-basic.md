@@ -5246,7 +5246,7 @@ the [`style`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style
 
 - set the `style` properties throught the DOM
 
-- If we select an element and we add __`.style`__, we can see that this object contains a whole bunch of properties corresponding to all the individual CSS properties (like *`color`* or *`font-size`*, etc). 
+- If we select an element and we add __`.style`__, we can see that this object contains a bunch of properties corresponding to all the individual CSS properties (like *`color`* or *`font-size`*, etc). 
 
 - __But__ in JS everything is camelcased: so eg.: `fontSize` (and not `font-size` as in CSS)❗️
 
@@ -5269,7 +5269,7 @@ the [`style`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style
 
 <br>
 
-- the style object does not contain styles from our stylesheets❗️ It's empty. It contains any inline styles we have assigned.
+__The style object does not contain styles from our stylesheets__ ❗️ It's empty. It contains any inline styles we have assigned.
 
   - eg.:
     *give a color to the `<h1>` with CSS*   
