@@ -5082,7 +5082,7 @@ The `textContent` property __returns the text with spacing, but without inner el
 
 __[Attribute](https://www.geeksforgeeks.org/what-is-the-difference-between-properties-and-attributes-in-html/)__:   
 When the browser requests a page, it receives the HTML source code. It then reads (*parses*) this code and builds the DOM from it. __During this process, the HTML attributes of the elements are translated into the corresponding DOM properties__.
-- __[attributes](https://codoschool.ru/hu/uslugi/javascript-znachenie-atributa-manipulirovanie-atributami-elementov-v-jquery.html) are HTML entities that can be used to add specific data to elements of HTML code.__   
+- __[Attributes](https://codoschool.ru/hu/uslugi/javascript-znachenie-atributa-manipulirovanie-atributami-elementov-v-jquery.html) are HTML entities that can be used to add specific data to elements of HTML code.__   
 - Attributes are defined by HTML and are used to customize a tag.   
 - When writing HTML source code, we can __define attributes on your HTML elements__. Then, once the browser reads (*parses*) our code, a __corresponding DOM node will be created. This node is an object, and therefore it has properties__.   
 - __An attribute extends an HTML element, changing its behavior__ or providing metadata.    
@@ -5107,7 +5107,7 @@ For a given DOM node object, *properties are the properties of that object*, and
 
 <br>
 
-- __[attribute vs property](https://stackoverflow.com/questions/258469/what-is-the-difference-between-attribute-and-property)__:  
+__[Attribute vs Property](https://stackoverflow.com/questions/258469/what-is-the-difference-between-attribute-and-property)__:  
  the HTML representation of a DOM element has attributes, but when represented as a JavaScript object those attributes appear as object properties.   
 So, for instance we have a text-box: `<input id="the-input" type="text" value="Name:">`. If we want to know what is inside currently in this text-box, we have to read the __property__. If we want to know what the __initial value__ of that text-box was, we should read the __attribute__. 
   - eg.:   
