@@ -5338,7 +5338,9 @@ It is not a selector!
     // 'rgb(0, 0, 0)'    ← black
 
     window.getComputedStyle(h1).fontSize;
-    // '32px'             ← it's a string, so to change it, needs to be converted to numbers and than back to string
+    // '32px'            
+    // it gives us a string ❗️ So to change it, we have to convert it to number, then change it (eg.: adding a number, etc). 
+    // and then convert it back to string.
     ```
 
   ---
