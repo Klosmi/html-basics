@@ -4028,7 +4028,7 @@ So __it collects all remaining arguments into an acutal array.__
     sum(10,42,77);
     // 10
     ```
-    *With rest, the `reduce` function will work, because `rest` creates an array`
+    *With rest, the `reduce` function will work, because `rest` creates an array*
     ```
       function sum(...num) {
       return num.reduce((total, num) => total + num)
