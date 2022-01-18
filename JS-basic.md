@@ -4386,7 +4386,7 @@ __all parts of the *DOM tree* is a "node"__, but also the text content from thos
 
 ## [The document](https://developer.mozilla.org/en-US/docs/Web/API/Document)    
 __The *document object* is the entry point into the DOM.    
-It contains *representations of all the content on a page*, and lots of *methods and properties*.__ 
+It contains *representations of all the content on a page*, and lots of *methods and properties*.__    
 If we want to reach an element, we can do it through the `document` (eg.: `document.getElementById()`, etc.).   
 
 It is an __element on the top of the element tree structure__:   
