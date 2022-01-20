@@ -5077,8 +5077,9 @@ The `textContent` property __returns the text with spacing, but without inner el
   
 ## [Attributes & properties](https://javascript.info/dom-attributes-and-properties#html-attributes)  
 
-  - [accessing & setting attributes](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#accessing-attributes)   
-    [changing styles](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#changing-styles)   
+  - [`getAttribute` & `setAttribute`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#accessing-attributes)   
+    [`style`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#changing-styles)   
+    [`classList`]()   
 
 __[Attribute](https://www.geeksforgeeks.org/what-is-the-difference-between-properties-and-attributes-in-html/)__:   
 When the browser requests a page, it receives the HTML source code. It then reads (*parses*) this code and builds the DOM from it. __During this process, the HTML attributes of the elements are translated into the corresponding DOM properties__.   
@@ -5241,7 +5242,7 @@ So when we use `getAttribute`, the __method is getting the content directly from
 
 <br>
 
-#### __[Changing styles](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style)__:   
+#### __[`style`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style)__:   
 the [`style`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style#getting_style_information) property.  
 
 - set the `style` properties throught the DOM
@@ -5350,7 +5351,7 @@ It is not a selector!
 <br>
 
 
-## [`classList`](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
+#### [`classList`](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
     it is an easy way to get the current classes on an element, but also to manipulate them, to toggle classes, to remove classes, to add classes.
       
     - `classList` is an object that we can interact with to control the CSS classes on an element and also to retrieve them and to manipulate them.
