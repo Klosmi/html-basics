@@ -5348,3 +5348,117 @@ It is not a selector!
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
 
 <br>
+
+
+## [`classList`](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
+    it is an easy way to get the current classes on an element, but also to manipulate them, to toggle classes, to remove classes, to add classes.
+      
+    - `classList` is an object that we can interact with to control the CSS classes on an element and also to retrieve them and to manipulate them.
+
+    - as opposed to `.getAttribute('class')` wich just just tells us exactly what the class string currently looks like, `classList` has nice methods, does more and easier.
+
+    - After __`classList`__ object we hit __`.`__ (dot) we can add methods (eg.: `h2.classList.add('border')`)
+
+    - eg.:   
+      *we have an `<h2>` element, it has no classes. We have 2 CSS classes (`.purple` and `.border`)*   
+      HTML   
+      ```
+      <h2>Contents</h2>
+      ```
+      CSS
+      ```
+      .purple {
+        color: #7b07ff;
+      }
+
+      .border {
+        border: 1px solid red;
+      }
+      ```
+      JS   
+      *we select the `<h2>` and we check whether it has a class or not*
+      ```
+      const h2 = docuemnt.querySelector('h2');
+
+      h2.getAttribute('class')        // check if 'h2' has a class
+      // null                         // it has no class
+      ```
+      *By __using `classList`__ we can add as many classes to our HTML element as we want*   
+      *So lets make `<h2>` purple AND add a border to it.*
+      ```
+      h2.classList.add('purple')
+      h2.classList.add('border')
+      ```
+      HTML   
+      *Let's see the HTML which looks like this*
+      ```
+      <h2 class="purple border">Contents</h2>
+      ```
+      JS   
+      *Also, we can remove classes*   
+      ```
+      h2.classList.remove('border')
+      // border removed
+      ```
+      *With __`classList.contains('border') we can test if border class exist on the element (true/false)__*
+      ```
+      h2.classList.contains('border')
+      // false
+      
+      h2.classList.contains('purple')
+      // true
+      ```
+      * We can __toggle classes__, with __`classList.toggle()`__ It is useful when we don't know if a certain class is activated or not (so if yes, it removes)*
+      ```
+      h2.classList.toggle('purple')
+      // false      ← it exist, so it removes the class
+
+      // call it again
+
+      h2.classList.toggle('purple')
+      // true      ← it doesn't exist, so it ADDS the class
+
+      h2.classList.toggle('purple')
+      // false      ← it exist, so it removes the class
+
+      h2.classList.toggle('purple')
+      // true      ← it doesn't exist, so it ADDS the class
+      ```
+      *it used eg. accordian buttons*
+      
+      <br>
+
+      *A heavy and problematic way to do without `classList` is the examples below:*
+      *add a class with `setAttribute` and set that class to `purple`*
+      ```
+      h2.setAttribute('class', 'purple')     // creates a class = "purple" in the HTML 
+                                             //and <h2>'s content becomes red  
+      ```
+      HTML
+      ```
+      <h2 class="purple">Contents</h2>
+      ```
+      *if we want to apply another class as well to have a `border` it is difficult*   
+      JS
+      ```
+      h2.setAttribute('class', 'purple')
+
+      h2.setAttribute('class', 'border')    // this overrites the class="purple" to class="border", we lose "purple". 
+      // output: "border"                   // but we want to keep it purple plus add border
+                                            
+      // we can use string template literals to have more classes 👇
+
+      let currentClasses = h2.getAttribute('class')
+      // output: "border"
+
+      h2.setAttribute('class', `${currentClasss} purple`)              //in CSS the classes are separated by space, that's why we use 'string template literal'.
+      // now we have class="purple border"
+      ```
+
+  ---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+
+<br>
+
+
