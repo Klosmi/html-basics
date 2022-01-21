@@ -339,7 +339,7 @@ __The difference between null and undifined__:
       ```
 <br>
 
-  - another, more __[general definition of methods](shorturl.at/hnIN6)__:   
+  - another, more __[general definition of methods](https://en.wikipedia.org/wiki/Method_(computer_programming))__:   
   __Data is represented as properties__ of the object, and __behaviors are represented as methods__. For example, a Window object could have __methods such as open and close__, while __its state__ (whether it is open or closed at any given point in time) would be __a property__.
 
 <br>
