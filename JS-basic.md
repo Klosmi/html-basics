@@ -339,6 +339,11 @@ __The difference between null and undifined__:
       ```
 <br>
 
+  - another [definition of methods in general](https://en.wikipedia.org/wiki/Method_(computer_programming)):   
+  __Data is represented as properties__ of the object, and __behaviors are represented as methods__. For example, a Window object could have __methods such as open and close__, while __its state__ (whether it is open or closed at any given point in time) would be __a property__.
+
+<br>
+
  - __[list of string methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#)__
 
     - [thing.toUpperCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
