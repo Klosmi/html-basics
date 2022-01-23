@@ -5090,7 +5090,7 @@ __[Attribute](https://www.geeksforgeeks.org/what-is-the-difference-between-prope
 When the browser requests a page, it receives the HTML source code. It then reads (*parses*) this code and builds the DOM from it. __During this process, the HTML attributes of the elements are translated into the corresponding DOM properties__.   
 So the __[attributes](https://codoschool.ru/hu/uslugi/javascript-znachenie-atributa-manipulirovanie-atributami-elementov-v-jquery.html) are HTML entities and thay can be used to add specific data to elements of HTML code.__   
 - Attributes are defined by HTML and are used to customize a tag.   
-- When writing HTML source code, we can __define attributes on your HTML elements__. Then, once the browser reads (*parses*) our code, a __corresponding DOM node will be created. This node is an object, and therefore it has properties__.   
+- When writing HTML source code, we can __define attributes on your HTML elements__. Then, once the browser parses our code, a __corresponding DOM node will be created. This node is an object, and therefore it has properties__.   
 - __An attribute extends an HTML element, changing its behavior__ or providing metadata.    
 For instance, this HTML element: `<input type="text" value="Name:">` has 2 attributes (`type` and `value`). 
   
