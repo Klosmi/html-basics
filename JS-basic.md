@@ -5430,7 +5430,7 @@ it is an easy way to get the current classes on an element, but also to manipula
   h2.classList.toggle('purple')
   // true      ← it doesn't exist, so it ADDS the class
   ```
-  *it used eg. accordian buttons*
+  *Many times it is used for 'accordian buttons'*
 
   <br>
 
