@@ -319,7 +319,7 @@ __The difference between null and undifined__:
 ---
 
 # **[JS: Methods](https://developer.mozilla.org/en-US/docs/Glossary/Method)** ([string](https://github.com/Klosmi/html-basics/blob/master/JS-primitiveTypes.md#string-) methods):
-  - __methods__ are built-in __ACTIONS__ we can perform with individual __strings__.   
+  - __methods__ are built-in __ACTIONS__ that we can perform with individual __strings__.   
 
   - __every string has a set of methods__
   - every string can do the same thing as another string:    
