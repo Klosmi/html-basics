@@ -5414,7 +5414,7 @@ it is an easy way to get the current classes on an element, but also to manipula
   h2.classList.contains('purple')
   // true
   ```
-  * We can __toggle classes__, with __`classList.toggle()`__ It is useful when we don't know if a certain class is activated or not (so if yes, it removes)*
+  *We can __toggle classes__, with __`classList.toggle()`__ It is useful when we don't know if a certain class is activated or not (so if yes, it removes)*
   ```
   h2.classList.toggle('purple')
   // false      ← it exist, so it removes the class
