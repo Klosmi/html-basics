@@ -5084,7 +5084,8 @@ The `textContent` property __returns the text with spacing, but without inner el
 
   - __[`getAttribute` & `setAttribute`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#accessing-attributes)__   
   - __[`style`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#style)__   
-  - __[`classList`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#classlist)__   
+  - __[`classList`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#classlist)__  
+  - __[`.parentElement;  .children;` & `next/previousSibling; next/previousElementSibling;`]()__   
 
 __[Attribute](https://www.geeksforgeeks.org/what-is-the-difference-between-properties-and-attributes-in-html/)__:   
 When the browser requests a page, it receives the HTML source code. It then reads (*parses*) this code and builds the DOM from it. __During this process, the HTML attributes of the elements are translated into the corresponding DOM properties__.   
@@ -5462,6 +5463,124 @@ it is an easy way to get the current classes on an element, but also to manipula
   ```
 
   ---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+
+<br>
+
+
+## [some other properties]()
+All these properties allow us to navigate or traverse or or move from one element to some to its parent or even grandparent.
+
+- __`element.parentElemment`__: access a parent element   
+  Every element has only __1 parent__ (can not have 2) (but we can have multiple children)
+
+- __`parentelement.children`__: it gives the parent elements children
+gives an HTML collection (looks liek an array but it's not an array! It is iterable!!!)    
+  We can have multiple children!
+
+- __`element.nextSibling`__ and __`element.previousSibling`__:    
+this allow us to navigate from one element to an adjacent sibling.   
+__They give us the corresponding DOM Node__! Not HTML elements. 
+  __`element.nextElementSibling`__ and __`element.previousElementSibling`__:   
+  gives us the actual element sibling!
+
+
+<br>
+
+  - `element.parentElemment`
+    - eg.:   
+      *access the parent element of the `<b>` bold text*   
+      HTML
+      ```
+      <p>
+        This is a <b>Bold text</b> in the regular <br>text</b>
+        and some <a>anchor</a> <a>tags</a>.
+      </p>
+      ```
+      JS
+      ```
+      const boldText = document.querySelector('b');
+
+      boldText.parentElemment;
+      // ▸ <p></p>
+      ```
+      *if we call the `boldText.parentElemment` again, and again, it goes higher, to the grandparent, and then great grandparent parent, etc.*
+      ```
+      boldText.parentElemment;
+      // ▸ <p></p>
+
+      boldText.parentElemment.parentElemment;
+      // ▸ <body></body>
+
+      boldText.parentElemment.parentElemment.parentElemment ;
+      //  <html lang="en">
+      //   <head></head>
+      //   <body></body>
+      //  </html>
+      ```
+      *Can be useful, when a user click on a button and it changes something on the parent element*
+
+<br>
+
+  - `parentelement.children`
+    - eg.:  
+      *lets see the `const boldText`'s children*   
+      JS
+      ```
+      const boldText = document.querySelector('b');
+      
+      const paragraph = boldText.parentElemment;
+
+      paragraph.children
+
+      // HTMLCollection(4) [b, b, a, a ]    // ← the order as these children are found in the DOM
+      ```
+      *lets select the 1st child*
+      ```
+      paragraph.children[0];
+      // <b>Bold text</b>       // it's an object, eventhough it shows us in this form
+      ```
+      *get the parent of that first child, just for the sake of the example*
+      ```
+      paragraph.children[0].parentElemet;
+      // <p></p>
+      ```
+<br>
+
+  - `element.nextSibling` and `element.previousSibling`   
+    - eg.:  
+      *We have 3 images, lets select the 1st `<img class="firstImg">`*   
+      HTML
+      ```
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <img class="firstImg" src="https://upload.wikimedia.org/firstImage.png" alt="">
+      <img class="secondtImg" src="https://upload.wikimedia.org/secondImage.png" alt="">
+      ``` 
+  
+      JS   
+      *the `first.nextSibling` gives is a DOM node*
+      ```
+      const first = document.querySelector('.firstImg')
+
+      first.parentElement;
+      // its parent is the: <body></body> 
+
+      first.nextSibling;
+      // #text      // ← it gives us a text Node, it is not an HTML element.
+      ```
+      *the `first.nextElementSibling` gives the actual element, an image in this case*
+      ```
+      first.nextElementSibling;
+      // <img class="firstImg" src="https://upload.wikimedia.org/firstImage.png" alt="">
+      ```
+      *`first.previousElementSibling` gives the `<p>` because that is before the `<img>` tag.*
+      ```
+      first.previousElementSibling;
+      // <p></p>
+      ```
+ 
+   ---
 
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
 
