@@ -5468,8 +5468,7 @@ it is an easy way to get the current classes on an element, but also to manipula
 
 <br>
 
-
-#### __[`.parentElemment](https://www.geeksforgeeks.org/html-dom-parentelement-property/)`__: access a parent element   
+#### __[`.parentElemment`](https://www.geeksforgeeks.org/html-dom-parentelement-property/)__: access a parent element   
   Every element has only __1 parent__ (can not have 2) (but we can have multiple children)
 
   - `element.parentElemment`
