@@ -5042,7 +5042,7 @@ The Element __property__ innerHTML gets or sets the HTML markup contained within
 
 <br>
   
-## the difference between `innerText` vs `innerHTML` vs `textContent`   
+## The difference between `innerText` vs `innerHTML` vs `textContent`   
 
 The `innerText` property __returns just the text, without spacing and inner element tags__.
 
