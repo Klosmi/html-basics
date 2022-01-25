@@ -5469,24 +5469,8 @@ it is an easy way to get the current classes on an element, but also to manipula
 <br>
 
 
-## [some other properties]()
-All these properties allow us to navigate or traverse or or move from one element to some to its parent or even grandparent.
-
-- __`element.parentElemment`__: access a parent element   
+#### __[`.parentElemment](https://www.geeksforgeeks.org/html-dom-parentelement-property/)`__: access a parent element   
   Every element has only __1 parent__ (can not have 2) (but we can have multiple children)
-
-- __`parentelement.children`__: it gives the parent elements children
-gives an HTML collection (looks liek an array but it's not an array! It is iterable!!!)    
-  We can have multiple children!
-
-- __`element.nextSibling`__ and __`element.previousSibling`__:    
-this allow us to navigate from one element to an adjacent sibling.   
-__They give us the corresponding DOM Node__! Not HTML elements. 
-  __`element.nextElementSibling`__ and __`element.previousElementSibling`__:   
-  gives us the actual element sibling!
-
-
-<br>
 
   - `element.parentElemment`
     - eg.:   
@@ -5521,7 +5505,10 @@ __They give us the corresponding DOM Node__! Not HTML elements.
       ```
       *Can be useful, when a user click on a button and it changes something on the parent element*
 
-<br>
+
+#### __[`.children`](https://developer.mozilla.org/en-US/docs/Web/API/Element/children)__: it gives the parent elements children
+gives an HTML collection (looks liek an array but it's not an array! It is iterable!!!)    
+  We can have multiple children!
 
   - `parentelement.children`
     - eg.:  
@@ -5546,10 +5533,18 @@ __They give us the corresponding DOM Node__! Not HTML elements.
       paragraph.children[0].parentElemet;
       // <p></p>
       ```
+
+  ---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+
 <br>
 
-  - `element.nextSibling` and `element.previousSibling`   
-    - eg.:  
+ #### __[`.nextSibling`](https://developer.mozilla.org/en-US/docs/Web/API/Node/nextSibling)__ and __[`.previousSibling`](https://developer.mozilla.org/en-US/docs/Web/API/Node/previousSibling)__:    
+this allow us to navigate from one element to an adjacent sibling.   
+__They give us the corresponding DOM Node__! Not HTML elements. 
+
+   - eg.:  
       *We have 3 images, lets select the 1st `<img class="firstImg">`*   
       HTML
       ```
@@ -5569,6 +5564,21 @@ __They give us the corresponding DOM Node__! Not HTML elements.
       first.nextSibling;
       // #text      // ← it gives us a text Node, it is not an HTML element.
       ```
+   
+  
+ ####  __[`.nextElementSibling`](https://developer.mozilla.org/en-US/docs/Web/API/Element/nextElementSibling)__ and __[`.previousElementSibling`](https://developer.mozilla.org/en-US/docs/Web/API/Element/previousElementSibling)__:   
+  gives us the actual element sibling!
+  
+  - eg.:  
+      *We have 3 images, lets select the 1st `<img class="firstImg">`*   
+      HTML
+      ```
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <img class="firstImg" src="https://upload.wikimedia.org/firstImage.png" alt="">
+      <img class="secondtImg" src="https://upload.wikimedia.org/secondImage.png" alt="">
+      ``` 
+  
+      JS   
       *the `first.nextElementSibling` gives the actual element, an image in this case*
       ```
       first.nextElementSibling;
@@ -5579,7 +5589,6 @@ __They give us the corresponding DOM Node__! Not HTML elements.
       first.previousElementSibling;
       // <p></p>
       ```
- 
    ---
 
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
