@@ -5080,7 +5080,7 @@ The `textContent` property __returns the text with spacing, but without inner el
 
 <br> 
   
-## [Attributes & properties](https://javascript.info/dom-attributes-and-properties#html-attributes)  
+# [Attributes & properties](https://javascript.info/dom-attributes-and-properties#html-attributes)  
 
   - [`getAttribute` & `setAttribute`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#accessing-attributes)   
     [`style`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#style)   
