@@ -5544,7 +5544,7 @@ gives an HTML collection (looks liek an array but it's not an array! It is itera
 <br>
 
  #### __[`.nextSibling`](https://developer.mozilla.org/en-US/docs/Web/API/Node/nextSibling)__ and __[`.previousSibling`](https://developer.mozilla.org/en-US/docs/Web/API/Node/previousSibling)__:    
-this allow us to navigate from one element to an adjacent sibling.   
+they allow us to navigate from one element to an adjacent sibling.   
 __They give us the corresponding DOM Node__! Not HTML elements. 
 
    - eg.:  
@@ -5570,6 +5570,7 @@ __They give us the corresponding DOM Node__! Not HTML elements.
    
   
  ####  __[`.nextElementSibling`](https://developer.mozilla.org/en-US/docs/Web/API/Element/nextElementSibling)__ and __[`.previousElementSibling`](https://developer.mozilla.org/en-US/docs/Web/API/Element/previousElementSibling)__:   
+  they allow us to navigate from one element to an adjacent sibling.   
   gives us the actual element sibling!
   
   - eg.:  
