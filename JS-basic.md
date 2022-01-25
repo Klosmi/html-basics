@@ -5085,7 +5085,11 @@ The `textContent` property __returns the text with spacing, but without inner el
   - __[`getAttribute` & `setAttribute`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#accessing-attributes)__   
   - __[`style`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#style)__   
   - __[`classList`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#classlist)__  
-  - __[`.parentElement;  .children;` & `next/previousSibling; next/previousElementSibling;`]()__   
+  - __[`.parentElement`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#parentelemment-access-a-parent-element)__   
+  - __[.children`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#children-it-gives-the-parent-elements-children)__   
+  - [`next/previousSibling`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#nextsibling-and-previoussibling)__
+  - __[`next/previousElementSibling`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#nextelementsibling-and-previouselementsibling)__   
+
 
 __[Attribute](https://www.geeksforgeeks.org/what-is-the-difference-between-properties-and-attributes-in-html/)__:   
 When the browser requests a page, it receives the HTML source code. It then reads (*parses*) this code and builds the DOM from it. __During this process, the HTML attributes of the elements are translated into the corresponding DOM properties__.   
