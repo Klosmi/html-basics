@@ -46,6 +46,7 @@
 17. [JS: Other features](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#other-js-features)   
 18. [JS: DOM](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-dom)   
 19. [JS: DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)   
+20. [JS: Attributes & Properties](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties)   
 
 <br>
 
