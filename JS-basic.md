@@ -5157,7 +5157,7 @@ So, for instance we have a text-box: `<input id="the-input" type="text" value="N
 
   ---
 
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `Attributes & properties`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties) OR [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
 
 <br>
 
@@ -5189,7 +5189,7 @@ So, for instance we have a text-box: `<input id="the-input" type="text" value="N
 
 <br>
 
-- [`getAttribute`](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute)   
+###### [`getAttribute`](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute)   
 this method returns the value of a specified attribute on the element.   
 So when we use `getAttribute`, the __method is getting the content directly from the HTML itself__.
   - eg.:   
@@ -5213,7 +5213,7 @@ So when we use `getAttribute`, the __method is getting the content directly from
 
   <br>
 
-- [`setAttribute`](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)   
+###### [`setAttribute`](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)   
   Sets the value of an attribute on the specified element. If the attribute already exists, the value is updated; otherwise a new attribute is added with the specified name and value.
 
   - we have to give 2 arguments: `Element.setAttribute(name, value);`
@@ -5236,7 +5236,7 @@ So when we use `getAttribute`, the __method is getting the content directly from
     // <a href="www.mdn.org">Example</a>
     ```
 
-- [changing element with attributes](https://www.javascripttutorial.net/javascript-dom/javascript-setattribute/): 
+###### [changing element with attributes](https://www.javascripttutorial.net/javascript-dom/javascript-setattribute/): 
 
   - eg.:   
     *[change the `<input type="checkbox>`](https://stackoverflow.com/questions/9093992/change-html-input-type-by-js/9094047) with the __type attribute__ to colorpicker*   
@@ -5264,7 +5264,7 @@ So when we use `getAttribute`, the __method is getting the content directly from
 
   ---
 
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `Attributes & properties`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties) OR [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
 
 <br>
 
@@ -5372,10 +5372,9 @@ It is not a selector!
 
   ---
 
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `Attributes & properties`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties) OR [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
 
 <br>
-
 
 #### [`classList`](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
 it is an easy way to get the current classes on an element, but also to manipulate them, to toggle classes, to remove classes, to add classes.
@@ -5484,7 +5483,7 @@ it is an easy way to get the current classes on an element, but also to manipula
 
   ---
 
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `Attributes & properties`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties) OR [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
 
 <br>
 
@@ -5524,6 +5523,7 @@ it is an easy way to get the current classes on an element, but also to manipula
       ```
       *Can be useful, when a user click on a button and it changes something on the parent element*
 
+<br>
 
 #### __[`.children`](https://developer.mozilla.org/en-US/docs/Web/API/Element/children)__: it gives the parent elements children
 gives an HTML collection (looks liek an array but it's not an array! It is iterable!!!)    
@@ -5555,7 +5555,7 @@ gives an HTML collection (looks liek an array but it's not an array! It is itera
 
   ---
 
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `Attributes & properties`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties) OR [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
 
 <br>
 
@@ -5653,9 +5653,9 @@ So, when we create an element after we fill it (update it) with content (it can 
     *We have an image, but it's still not on the page*  
    *1 way is to append it with __`appendChild()`__* [go to `appendChild` 👇]()
 
-   ---
+  ---
 
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `Attributes & properties`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties) OR [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
 
 <br>
 
@@ -5692,12 +5692,11 @@ This method appends a node as the __last child of a node__.
     // <img src="https://en.wikipedia.org/American_Eskimo_Dog.jpg">  
     ```
 
-   ---
+  ---
 
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `Attributes & properties`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties) OR [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
 
 <br>
-
 
 ####  __[`.append`](https://developer.mozilla.org/en-US/docs/Web/API/Element/append)__   
 this method is used to insert Node objects after the last child of the ParentNode.   
@@ -5736,9 +5735,9 @@ It allows us to __insert more than one thing at a time__ so we can have two diff
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hello there!Goodbye people!</p>
       ```
 
-   ---
+  ---
 
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `Attributes & properties`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties) OR [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
 
 <br>
 
@@ -5772,9 +5771,9 @@ This method allows us to insert something as __the first child__ of some element
     ```
     With `.prepend` the element became the first __child__ now, instead of the last.
 
-   ---
+  ---
 
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `Attributes & properties`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties) OR [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
 
 <br>
 
@@ -5821,7 +5820,7 @@ this method inserts a given element node at a given position relative to the ele
 
   ---
 
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `Attributes & properties`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties) OR [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
 
 <br>
 
@@ -5858,8 +5857,8 @@ this method inserts a given element node at a given position relative to the ele
 #### __[`.before`](https://developer.mozilla.org/en-US/docs/Web/API/Element/before)__   
   this method inserts an element before some other element. Basically works the same as `.after` method.
 
-   ---
+  ---
 
-   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `Attributes & properties`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties) OR [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
 
 <br>
