@@ -5098,6 +5098,13 @@ The `textContent` property __returns the text with spacing, but without inner el
   - __[`.children`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#children-it-gives-the-parent-elements-children)__   
   - __[`next/previousSibling`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#nextsibling-and-previoussibling)__
   - __[`next/previousElementSibling`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#nextelementsibling-and-previouselementsibling)__   
+  - __[`Document.createElement`]()__   
+  - __[`appendChild`]()__   
+  - __[`append`]()__   
+  - __[`prepend`]()__   
+  - __[`insertAdjacentElement`]()__   
+  - __[`after`]()__ and __[`before`]()_
+  
 
 
 __[Attribute](https://www.geeksforgeeks.org/what-is-the-difference-between-properties-and-attributes-in-html/)__:   
@@ -5608,4 +5615,251 @@ __They give us the corresponding DOM Node__! Not HTML elements.
 
 <br>
 
+#### __[`Document.createElement`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)__:
+this method can create a new DOM element.  
+It creates an empty element.
+So, when we create an element after we fill it (update it) with content (it can be a text or image, etc).
 
+- we pass in the type of element we want to create
+
+  - eg.:   
+    *We create an image*   
+    ```
+    document.createElement('img');
+    // <img>                // it only makes an empty <img> tag
+    ```
+    *We have an empty <img> tag, so we can give source to not show an image*
+    ```
+    const newImg = document.createElement('img');
+
+    newImg                  // it is an object
+
+    console.dir(newImg);    // it is missing it's source (src)
+    // img
+        accessKey: ""
+        align: ""
+        alt: ""
+        ariaAtomic: null
+        ariaAutoComplete: null
+        ariaBusy: null
+        ... etc.
+    ```
+    💡 *remember: the `console.dir()` is the way to see all the properties of a specified JavaScript object in console by which the developer can easily get the properties of the object.*   
+
+    *Give a source*
+    ```
+    newImg.src = 'https://en.wikipedia.org/dog.jpg'     // but it's still not on the page → 1 way is to appendChild
+    ```
+    *We have an image, but it's still not on the page*  
+   *1 way is to append it with __`appendChild()`__* [go to `appendChild` 👇]()
+
+   ---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+
+<br>
+
+####  __[`.appendChild`](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)__    
+This method appends a node as the __last child of a node__.
+
+  - eg.:    
+    *(continue from the previous example at `Document.createElement`)*   
+    *We have to select something (`<body>`) to append to my new image (we gave to `newImg`).*   
+    JS
+    ```
+    document.body.appendChild(newImg);
+
+    // it appends 'newImg' (the src) as the last child of the 'body'.
+    ```
+    *To adjust the size to the other images of the page, we can create the same class as the other images have (here its `class="firstImage"`* 
+
+    HTML
+    ```
+    <body>
+      <img class="firstImage" src="https://wikipedia.org/dogs.png">
+      <img class="firstImage" src="https://wikipedia.org/cats.png">
+
+    <!-- this is our appended image -->
+      <img src="https://en.wikipedia.org/American_Eskimo_Dog.jpg">              
+    </body>
+    ```
+    *using `classList.add`*     
+    JS   
+    ```
+    newImg.classList.add('fistImage');
+
+    // The HTML 👇 
+    // <img src="https://en.wikipedia.org/American_Eskimo_Dog.jpg">  
+    ```
+
+   ---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+
+<br>
+
+
+####  __[`.append`](https://developer.mozilla.org/en-US/docs/Web/API/Element/append)__   
+this method is used to insert Node objects after the last child of the ParentNode.   
+It allows us to __insert more than one thing at a time__ so we can have two different nodes to insert or multiple different elements we have created.
+
+  - eg.:   
+    *We call `.append` and pass a text "Hello there!" in the `<p>`, it just puts it to the end of the <p>* 
+    HTML  
+    ```
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    ```
+    JS
+    ```
+    // select <p>
+    const p = document.querySelector('p');
+
+    p.append('Hello there!');
+    ```
+    HTML  
+    ```
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hello there!</p>
+    ```
+  - add __more than 1 thing with `Element.append()`__
+    - eg.:   
+      *add 2 pieces of texts*  
+      JS
+      ```
+      // select <p>
+      const p = document.querySelector('p');
+
+      p.append('Hello there!', 'Goodbye people!');
+      // both element is appended → see the html
+      ```
+      HTML
+      ```
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hello there!Goodbye people!</p>
+      ```
+
+   ---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+
+<br>
+
+####  __[`.prepend`](https://developer.mozilla.org/en-US/docs/Web/API/Element/prepend)__   
+This method allows us to insert something as __the first child__ of some elements (like at the beginning).
+
+  - eg.:   
+    *we create a bold `<b>` element with `createElement`, and inside that we add some text `append`...*       
+    *... then, we want the 'Hello!!!' text in the __beginning__ of the `<p>` paragraph*  
+    HTML  
+    ```
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    ``` 
+    JS
+    ```
+    // select <p>
+    const p = document.querySelector('p');
+
+    // create <b>
+    const newBold = document.createElement('b');
+
+    // add text
+    newBold.append('Hello!!!')
+
+    // prepend the <b> to the beginning of the <p> ❗️
+    p.prepend(newBold)
+    ```
+    HTML
+    ```
+    <p><b>Hello!!!</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    ```
+    With `.prepend` the element became the first __child__ now, instead of the last.
+
+   ---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+
+<br>
+
+####  __[`.insertAdjacentElement`](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement)__   
+this method inserts a given element node at a given position relative to the element it is invoked upon.
+
+- we have to specify the [position](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement#parameters):   
+    __'beforebegin'__: Before the targetElement itself.   
+    __'afterbegin'__: Just __inside__ the targetElement, __before its first child__.   
+    __'beforeend'__: Just __inside__ the targetElement, __after its last child__.   
+    __'afterend'__: After the targetElement itself.
+
+- syntax: `targetElement.insertAdjacentElement(position, element);`
+
+- eg.:   
+  *I want to insert something between an `<h1>` and an `<img>` image. So after the `<h1>` befor the `<img>`.*   
+  HTML
+  ```
+  <h1>Title</h1>
+  <img class="firstImage" src="https://wikipedia.org/dog.png">
+  ```
+  JS
+  ```
+  const h2 = document.createElement('h2');
+  // <h2></h2>
+
+  //put sem text there
+  h2.append("Hello nice people!");
+  // <h2>Hello nice people!</h2>
+
+  // lets put that <h2> after the <h1>
+  // select <h1>
+  const h1 = document.querySelector('h1');
+
+  // lets place <h2> after the target element( <h1> )
+  h1.insertAdjacentElement('afterend', h2);
+  ```
+  HTML
+  ```
+  <h1>Title</h1>
+  <h2>Hello nice people!</h2>
+  <img class="firstImage" src="https://wikipedia.org/dog.png">
+  ```
+
+  ---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+
+<br>
+
+#### __[`.after`](https://developer.mozilla.org/en-US/docs/Web/API/Element/after)__   
+  this method inserts an element after some other element.
+
+  - eg.:  
+    *we create an `<h3>` and add some text*   
+    HTML
+    ```
+    <h1>Title</h1>
+    <img class="firstImage" src="https://wikipedia.org/dog.png">
+    ```
+    JS
+    ```
+    const h3 = document.createElement('h3');
+    
+    //add text
+    h3.innerText = 'I am h3!!!';
+
+    //select h1
+    const h1 = document.querySelector('h1');
+
+    //insert <h3> after <h1>
+    h1.after(h3);
+    ```
+    HTML
+    ```
+    <h1>Title</h1>
+    <h3>I am h3!!!</h3>
+    <img class="firstImage" src="https://wikipedia.org/dog.png">
+    ```
+
+#### __[`.before`](https://developer.mozilla.org/en-US/docs/Web/API/Element/before)__   
+  this method inserts an element before some other element. Basically works the same as `.after` method.
+
+   ---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+
+<br>
