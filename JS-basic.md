@@ -4828,6 +4828,19 @@ We use DOM manipulation when we want to modify parts of the page when the user i
 - __[innerHTML](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#innerhtml)__    
 - __[difference between `innerText` vs `innerHTML` vs `textContent`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-difference-between-innertext-vs-innerhtml-vs-textcontent)__   
 - __[attributes & properties](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties)__   
+  - __[`getAttribute` & `setAttribute`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#accessing-attributes)__   
+  - __[`style`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#style)__   
+  - __[`classList`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#classlist)__  
+  - __[`.parentElement`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#parentelemment-access-a-parent-element)__   
+  - __[`.children`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#children-it-gives-the-parent-elements-children)__   
+  - __[`next/previousSibling`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#nextsibling-and-previoussibling)__
+  - __[`next/previousElementSibling`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#nextelementsibling-and-previouselementsibling)__   
+  - __[`Document.createElement`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#documentcreateelement)__   
+  - __[`appendChild`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#appendchild)__   
+  - __[`append`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#append)__   
+  - __[`prepend`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#prepend)__   
+  - __[`insertAdjacentElement`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#insertadjacentelement)__   
+  - __[`after`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#after)__ and __[`before`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#before)__
 
 
 <br>
@@ -5161,7 +5174,7 @@ So, for instance we have a text-box: `<input id="the-input" type="text" value="N
 
 <br>
 
-#### __[Accessing attributes](https://www.tutorialrepublic.com/javascript-tutorial/javascript-dom-get-set-attributes.php)__:
+## __[Accessing attributes](https://www.tutorialrepublic.com/javascript-tutorial/javascript-dom-get-set-attributes.php)__:
   - eg.:   
     *selecting an image from a page, it has 2 attributes here, an `id` and a `src`*   
     HTML
@@ -5189,7 +5202,7 @@ So, for instance we have a text-box: `<input id="the-input" type="text" value="N
 
 <br>
 
-###### [`getAttribute`](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute)   
+## [`getAttribute`](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute)   
 this method returns the value of a specified attribute on the element.   
 So when we use `getAttribute`, the __method is getting the content directly from the HTML itself__.
   - eg.:   
@@ -5213,7 +5226,7 @@ So when we use `getAttribute`, the __method is getting the content directly from
 
   <br>
 
-###### [`setAttribute`](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)   
+## [`setAttribute`](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)   
   Sets the value of an attribute on the specified element. If the attribute already exists, the value is updated; otherwise a new attribute is added with the specified name and value.
 
   - we have to give 2 arguments: `Element.setAttribute(name, value);`
@@ -5236,7 +5249,7 @@ So when we use `getAttribute`, the __method is getting the content directly from
     // <a href="www.mdn.org">Example</a>
     ```
 
-###### [changing element with attributes](https://www.javascripttutorial.net/javascript-dom/javascript-setattribute/): 
+## [changing element with attributes](https://www.javascripttutorial.net/javascript-dom/javascript-setattribute/): 
 
   - eg.:   
     *[change the `<input type="checkbox>`](https://stackoverflow.com/questions/9093992/change-html-input-type-by-js/9094047) with the __type attribute__ to colorpicker*   
@@ -5268,7 +5281,7 @@ So when we use `getAttribute`, the __method is getting the content directly from
 
 <br>
 
-#### __[`style`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style)__:   
+## __[`style`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style)__:   
 the [`style`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style#getting_style_information) property.  
 
 - set the `style` properties throught the DOM
@@ -5487,7 +5500,7 @@ it is an easy way to get the current classes on an element, but also to manipula
 
 <br>
 
-#### __[`.parentElemment`](https://www.geeksforgeeks.org/html-dom-parentelement-property/)__: access a parent element   
+## __[`.parentElemment`](https://www.geeksforgeeks.org/html-dom-parentelement-property/)__: access a parent element   
   Every element has only __1 parent__ (can not have 2) (but we can have multiple children)
 
   - `element.parentElemment`
@@ -5525,7 +5538,7 @@ it is an easy way to get the current classes on an element, but also to manipula
 
 <br>
 
-#### __[`.children`](https://developer.mozilla.org/en-US/docs/Web/API/Element/children)__: it gives the parent elements children
+## __[`.children`](https://developer.mozilla.org/en-US/docs/Web/API/Element/children)__: it gives the parent elements children
 gives an HTML collection (looks liek an array but it's not an array! It is iterable!!!)    
   We can have multiple children!
 
@@ -5559,7 +5572,7 @@ gives an HTML collection (looks liek an array but it's not an array! It is itera
 
 <br>
 
- #### __[`.nextSibling`](https://developer.mozilla.org/en-US/docs/Web/API/Node/nextSibling)__ and __[`.previousSibling`](https://developer.mozilla.org/en-US/docs/Web/API/Node/previousSibling)__:    
+ ## __[`.nextSibling`](https://developer.mozilla.org/en-US/docs/Web/API/Node/nextSibling)__ and __[`.previousSibling`](https://developer.mozilla.org/en-US/docs/Web/API/Node/previousSibling)__:    
 they allow us to navigate from one element to an adjacent sibling.   
 __They give us the corresponding DOM Node__! Not HTML elements. 
 
@@ -5585,7 +5598,7 @@ __They give us the corresponding DOM Node__! Not HTML elements.
       ```
    
   
- ####  __[`.nextElementSibling`](https://developer.mozilla.org/en-US/docs/Web/API/Element/nextElementSibling)__ and __[`.previousElementSibling`](https://developer.mozilla.org/en-US/docs/Web/API/Element/previousElementSibling)__:   
+ ##  __[`.nextElementSibling`](https://developer.mozilla.org/en-US/docs/Web/API/Element/nextElementSibling)__ and __[`.previousElementSibling`](https://developer.mozilla.org/en-US/docs/Web/API/Element/previousElementSibling)__:   
   they allow us to navigate from one element to an adjacent sibling.   
   gives us the actual element sibling!
   
@@ -5615,7 +5628,7 @@ __They give us the corresponding DOM Node__! Not HTML elements.
 
 <br>
 
-#### __[`Document.createElement`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)__:
+## __[`Document.createElement`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)__:
 this method can create a new DOM element.  
 It creates an empty element.
 So, when we create an element after we fill it (update it) with content (it can be a text or image, etc).
@@ -5659,7 +5672,7 @@ So, when we create an element after we fill it (update it) with content (it can 
 
 <br>
 
-####  __[`.appendChild`](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)__    
+## __[`.appendChild`](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)__    
 This method appends a node as the __last child of a node__.
 
   - eg.:    
@@ -5698,7 +5711,7 @@ This method appends a node as the __last child of a node__.
 
 <br>
 
-####  __[`.append`](https://developer.mozilla.org/en-US/docs/Web/API/Element/append)__   
+## __[`.append`](https://developer.mozilla.org/en-US/docs/Web/API/Element/append)__   
 this method is used to insert Node objects after the last child of the ParentNode.   
 It allows us to __insert more than one thing at a time__ so we can have two different nodes to insert or multiple different elements we have created.
 
@@ -5741,7 +5754,7 @@ It allows us to __insert more than one thing at a time__ so we can have two diff
 
 <br>
 
-####  __[`.prepend`](https://developer.mozilla.org/en-US/docs/Web/API/Element/prepend)__   
+## __[`.prepend`](https://developer.mozilla.org/en-US/docs/Web/API/Element/prepend)__   
 This method allows us to insert something as __the first child__ of some elements (like at the beginning).
 
   - eg.:   
@@ -5777,7 +5790,7 @@ This method allows us to insert something as __the first child__ of some element
 
 <br>
 
-####  __[`.insertAdjacentElement`](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement)__   
+## __[`.insertAdjacentElement`](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement)__   
 this method inserts a given element node at a given position relative to the element it is invoked upon.
 
 - we have to specify the [position](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement#parameters):   
@@ -5824,7 +5837,7 @@ this method inserts a given element node at a given position relative to the ele
 
 <br>
 
-#### __[`.after`](https://developer.mozilla.org/en-US/docs/Web/API/Element/after)__   
+## __[`.after`](https://developer.mozilla.org/en-US/docs/Web/API/Element/after)__   
   this method inserts an element after some other element.
 
   - eg.:  
@@ -5854,7 +5867,7 @@ this method inserts a given element node at a given position relative to the ele
     <img class="firstImage" src="https://wikipedia.org/dog.png">
     ```
 
-#### __[`.before`](https://developer.mozilla.org/en-US/docs/Web/API/Element/before)__   
+## __[`.before`](https://developer.mozilla.org/en-US/docs/Web/API/Element/before)__   
   this method inserts an element before some other element. Basically works the same as `.after` method.
 
   ---
