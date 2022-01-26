@@ -4381,7 +4381,7 @@ For instance: a *`document.body` is the object representing the `<body>` tag.*
 __all parts of the *DOM tree* is a "node"__, but also the text content from those elements and attributes can be "nodes" as well. These individual parts of the document are known as "nodes". So a "node" can be simply an HTML element. The __DOM is a tree structure that represents the HTML of the website, and every HTML element is a "node"__.     
 💡 The *topmost node* is the root node (Document Node) of the DOM tree, which has one child, the `<html>`.   
 💡 Elements are one type of *node*, so to be accurate, we call the Element Nodes. Only element nodes can be parents..  
-Most common __node types__:  
+Most common __[node types](https://www.youtube.com/watch?v=y3itGTCseAk)__:  
   - Element Node
   - Text Node
   - Comment Node(s)
