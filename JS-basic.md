@@ -5098,12 +5098,12 @@ The `textContent` property __returns the text with spacing, but without inner el
   - __[`.children`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#children-it-gives-the-parent-elements-children)__   
   - __[`next/previousSibling`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#nextsibling-and-previoussibling)__
   - __[`next/previousElementSibling`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#nextelementsibling-and-previouselementsibling)__   
-  - __[`Document.createElement`]()__   
-  - __[`appendChild`]()__   
-  - __[`append`]()__   
-  - __[`prepend`]()__   
-  - __[`insertAdjacentElement`]()__   
-  - __[`after`]()__ and __[`before`]()_
+  - __[`Document.createElement`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#documentcreateelement)__   
+  - __[`appendChild`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#appendchild)__   
+  - __[`append`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#append)__   
+  - __[`prepend`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#prepend)__   
+  - __[`insertAdjacentElement`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#insertadjacentelement)__   
+  - __[`after`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#after)__ and __[`before`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#before)__   
   
 
 
