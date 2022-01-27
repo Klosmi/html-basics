@@ -4841,6 +4841,8 @@ We use DOM manipulation when we want to modify parts of the page when the user i
   - __[`prepend`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#prepend)__   
   - __[`insertAdjacentElement`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#insertadjacentelement)__   
   - __[`after`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#after)__ and __[`before`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#before)__
+  - __[`removeChild`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#removechild)__
+  - __[`remove`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#remove)__ 
 
 
 <br>
@@ -5117,8 +5119,8 @@ The `textContent` property __returns the text with spacing, but without inner el
   - __[`prepend`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#prepend)__   
   - __[`insertAdjacentElement`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#insertadjacentelement)__   
   - __[`after`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#after)__ and __[`before`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#before)__  
-  - __[`removeChild`]()__
-  - __[`remove`]()__ 
+  - __[`removeChild`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#removechild)__
+  - __[`remove`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#remove)__ 
   
 
 
