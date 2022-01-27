@@ -5116,7 +5116,9 @@ The `textContent` property __returns the text with spacing, but without inner el
   - __[`append`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#append)__   
   - __[`prepend`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#prepend)__   
   - __[`insertAdjacentElement`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#insertadjacentelement)__   
-  - __[`after`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#after)__ and __[`before`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#before)__   
+  - __[`after`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#after)__ and __[`before`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#before)__  
+  - __[`removeChild`]()__
+  - __[`remove`]()__ 
   
 
 
@@ -5875,3 +5877,67 @@ this method inserts a given element node at a given position relative to the ele
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `Attributes & properties`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties) OR [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
 
 <br>
+
+## __[`removeChild`](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild)__
+this method removes a child node from the DOM and returns the removed node.   
+So the way that it works is that we don't actually remove the particular element we have selected. __We remove a child from an element❗️__
+
+- call the method on the parents of what we want to remove (hence the name remove child).
+
+- syntax: `parent.removeChild(child);`
+
+- [eg.:](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild#examples)  
+  *If we want to remove an `<li>`, we can't just select the the `<li>` and `removeChild`. Instead, we have to select the parent, the `<ul>`, and then call remove child and pass in the `<li>`.*   
+  HTML
+  ```
+  <ul>
+    <li>List 1</li>
+    <li>List 2</li>
+    <li>List 3</li>
+  </ul>
+  ```
+  JS
+  ```
+  const ul = document.querySelector('ul');
+  const li = document.querySelector('li');
+
+  ul.removeChild(li)      // ← removes the FIRST <li>
+  ```
+  *a __'one-go-way'__, commonly used: call the parent of the child __[`parentElement`](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement)__, and then remove the child, all in one line.*
+  ```
+  const li = document.querySelector('li');
+
+  li.parentElement.removeChild(li)
+  ```
+
+  ---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `Attributes & properties`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties) OR [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+
+
+## __[`remove`](https://developer.mozilla.org/en-US/docs/Web/API/Element/remove)__   
+This method removes the element from the tree it belongs to.   
+So, we call on the actual thing we want to remove, and we don't have to worry about the parent or the child.
+
+- syntax: `node.remove()`  
+
+- [eg.:](https://developer.mozilla.org/en-US/docs/Web/API/Element/remove#examples)   
+  *remove the image*    
+  HTML
+  ```
+  <body>
+    <img class="image" src="wikipedia.org/dog.png">
+  </body>
+  ```
+  JS
+  ```
+  const img =document.querySelector('img');
+
+  img.remove();
+  // images has been removed
+  ```
+  
+  ---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `Attributes & properties`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties) OR [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+
