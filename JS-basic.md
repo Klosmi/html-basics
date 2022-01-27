@@ -5888,6 +5888,8 @@ So the way that it works is that we don't actually remove the particular element
 
 - syntax: `parent.removeChild(child);`
 
+- has full browser support (Internet Explor too)
+
 - [eg.:](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild#examples)  
   *If we want to remove an `<li>`, we can't just select the the `<li>` and `removeChild`. Instead, we have to select the parent, the `<ul>`, and then call remove child and pass in the `<li>`.*   
   HTML
@@ -5922,6 +5924,8 @@ This method removes the element from the tree it belongs to.
 So, we call on the actual thing we want to remove, and we don't have to worry about the parent or the child.
 
 - syntax: `node.remove()`  
+
+-  has no full browser support (Internet Explor does not support it)
 
 - [eg.:](https://developer.mozilla.org/en-US/docs/Web/API/Element/remove#examples)   
   *remove the image*    
