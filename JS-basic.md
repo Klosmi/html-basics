@@ -5947,3 +5947,13 @@ So, we call on the actual thing we want to remove, and we don't have to worry ab
 
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `Attributes & properties`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties) OR [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
 
+<br>
+
+# [DOM events](https://developer.mozilla.org/en-US/docs/web/api/event)    
+creating interactive websites: responding to user events (inputs  and actions), so running a code when a user does something.
+
+  ---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+
+<br>
