@@ -5952,7 +5952,7 @@ So, we call on the actual thing we want to remove, and we don't have to worry ab
 # [DOM events](https://developer.mozilla.org/en-US/docs/web/api/event)    
 creating interactive websites: responding to user events (inputs  and actions), so running a code when a user does something.
 
-- __[inline events]()__   
+- __[inline events](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#inline-events)__   
 - __[`addEventListener`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#addeventlistener)__
 
 
@@ -5963,7 +5963,7 @@ creating interactive websites: responding to user events (inputs  and actions), 
 <br>
 
 
-## __[inline events](https://www.htmlgoodies.com/javascript/working-with-inline-event-handlers/)__:     
+## __[inline events](https://www.htmlgoodies.com/javascript/working-with-inline-event-handlers/)__        
 Inline events are bound to an element by their attribute name, which starts with the “on” prefix. Not all event types may be bound to all elements.
   
 
