@@ -5957,3 +5957,204 @@ creating interactive websites: responding to user events (inputs  and actions), 
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
 
 <br>
+
+
+## __[events](https://www.htmlgoodies.com/javascript/working-with-inline-event-handlers/)__:     
+Inline events are bound to an element by their attribute name, which starts with the “on” prefix. Not all event types may be bound to all elements.
+
+- [`addEventListener`]()
+
+<br>
+
+__[Event references](https://developer.mozilla.org/en-US/docs/Web/Events#event_listing)__    
+include a lot of properties we can use 
+  
+  - __[`onlcick`](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick)__
+
+  - __[`onmouseover`](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onmouseover)__
+
+  - __[`onmouseenter`](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onmouseenter)__
+
+  etc.
+
+<br> 
+
+When a user clicks on a button something will happen. How to do it? There are 3 approaches: 
+  - 1. write a code into the tag
+  - 2. write a code in a JS file using a selector and function
+  - 3. using the `addEventListener` method.  
+
+  __1. way (BAD PRACTICE)__:    
+  write the code in the tag:     
+  (makes our markup longer, makes it difficult to write and so on, in short: it sucks.) 
+
+  - eg.:   
+  *user click on the button. We ad an attribute to the `<button>` tag, named `onclick`*   
+  *between the quotes in `onclick=""` I can write code, that I want to run when the user clicks.*
+    HTML + JS
+    ```
+    <button onclick="alert('You clicked!')">Click me!</button>
+
+    <!-- Alert pops up with the 'You clicked!' message -->
+    ```
+
+<br>
+
+__2. way__ :  
+  we write the code in our JS file.   
+  We need to have elements what we can select (with querySelector, or other selectors).
+
+  - eg.:   
+    *when user click on the button, something will happen. We select a button using its `id` in JS.*   
+    HTML
+    ```
+    <button id="myBtn">Click me!</button>
+    ```
+    JS   
+    *Using `onclick` property, often people use an inline function expression*   
+    *__We are setting a property to be a function❗️__*   
+    *The function is never executed, it is __called by the__ `onclick` __property__ when the user clicks.*
+    ```
+    const btn = document.querySelector('#myBtn');
+
+    //set the property
+    btn.onclick = function() {
+      console.log("You clicked!")
+    }
+
+    // when we click on the button, it runs the function
+    // 'You clicked!'
+
+    // to see if it is set to a function, we write:
+    btn.onclick; 
+    // f ()  { console.log("You clicked!") }
+    ```
+    *we can add an `onmouseenter` property, when a mouse enters the zone, it calls the function.*   
+    *Also, we can write a function separately (here the `shout()` function), and then pass it into the`onmouseenter` property.*
+    ```
+    btn.onclick = function(){
+      console.log("You clicked!")
+    }
+
+    function shout(){
+      console.log("HELLLLOOOO!!!")
+    }
+
+    btn.onmouseenter = shout;
+    ```
+
+  - 💡When we use these properties, what we supposed to do is __set the `onclick` property to a function itself.__    
+  So the value should be a function, it should reference a function.     
+    - eg.:  
+      *we can click on the `<h1>Events</h1>` title*   
+      JS
+      ```
+      document.querySelector('h1').onclick = function () {
+        alert('You have clicked on the title');
+      }
+      ``` 
+      *if we DON'T set the property `onlcick` into a function, the code will execute right away.   
+      That is why we have to set the property `onclick` to a function (as we have done above).*
+      ```
+      // this DOES NOT WORK!!!!!!
+      document.querySelector('h1').onclick = alert(('You have clicked on the title');
+      ```
+
+# [DOM events](https://developer.mozilla.org/en-US/docs/web/api/event)    
+creating interactive websites: responding to user events (inputs  and actions), so running a code when a user does something.
+
+  ---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `DOM events`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties)
+
+<br>
+
+__3. way__
+
+## __[`addEventListener`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)__  
+this method sets up a function that will be called whenever the specified event is delivered to the target. 
+
+So: we can then pass in any sort of event.   
+If we want to listen for a click, a double click, a mouse enter, etc. we can just pass in that string 'click', 'mouseover', etc., and then the second argument is our __callback function__, the code that we want to run when that event actually occurs.
+
+- syntax: `something.addEventListener('what to listen for', function() 
+{ the call back function, the code what we want to run } )`
+
+- eg.:   
+  *using `addEventListener` on a `<button id="button2">Click</button>`*   
+  JS
+  ```
+  // select the button
+  const btn = document.querySelector('#button2');
+
+  // set addEventListener
+
+  btn.addEventListener('click', function() {
+    alert("Clicked!")
+  })
+  ```
+- a great advantage of `addEventListener` is that we can combine lines, and it executes them withouth overriting it:
+  - eg.:   
+    *we have two functions, when we click on a `<button>` one prints out 'Hello!' the other 'Goodbye!', and we want them to appear one after the other.*   
+    *Using the `addEventListener` the 'Hello!' will not be overwrite by 'Goodbye!'. __We can have as many callbacks as we want!__*   
+    JS
+    ```
+    // select button
+    const btn = document.querySelector('button');
+
+    // create 2 functions
+    function hello() {
+      console.log('Hello!')
+    }
+
+    function bye() {
+      console.log('Goodbye!')
+    }
+
+    // pass the function to the addEventListener
+    btn.addEventListener('click', hello)
+    btn.addEventListener('click', bye)
+
+    // Hello!
+    // Goodbye!
+    ```
+    *But with another way, by approaching property on the object directly (as it is below) we can see that CAN NOT HAVE MORE THAN ONE the same `btn` object. Because the second function will overwrite the first function.*
+    ```
+    btn.onclick = hello;
+    btn.onclick = bye;
+    // Goodbye!         // ← we only getting 'Goodbye!'
+    ```
+
+- __[the option parameter](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#parameters)__   
+An object that specifies characteristics about the event listener. 
+__`addEventListener(type, listener, options)`__
+
+  option objects:
+  - once:   
+    A boolean value indicating that the listener should be invoked at most once after being added. If true, the listener would be automatically removed when invoked.
+  - passive
+  - signal
+
+- eg.:   
+  *the first function will run the callback only once, then it removes the `eventListener`, but the second one stays as we didn't include the __`once` option object__*  
+  JS
+  ```
+  const btn = document.querySelector('button');
+  
+  function hello() {
+      console.log('Hello!')
+    }
+
+  function bye() {
+      console.log('Goodbye!')
+    } 
+
+  btn.addEventListener('click', hello, { once : true })
+  btn.addEventListener('click', bye)  
+
+  // click the button 3 times
+  // 1. 'Hello!'
+  // 1. 'Goodbye!'
+  // 2. 'Goodbye!'
+  // 3. 'Goodbye!'
+  ```
