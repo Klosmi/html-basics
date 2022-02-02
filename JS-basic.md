@@ -5956,9 +5956,9 @@ creating interactive websites: responding to user events (inputs  and actions), 
 - __[`addEventListener`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#addeventlistener)__
 
 
-  ---
+---
 
-  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `DOM events`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
 
 <br>
 
@@ -5969,16 +5969,16 @@ Inline events are bound to an element by their attribute name, which starts with
 
 <br>
 
-__[Event references](https://developer.mozilla.org/en-US/docs/Web/Events#event_listing)__    
+- __[Event references](https://developer.mozilla.org/en-US/docs/Web/Events#event_listing)__    
 include a lot of properties we can use 
   
-  - __[`onlcick`](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick)__
+  - *[`onlcick`](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick)*
 
-  - __[`onmouseover`](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onmouseover)__
+  - *[`onmouseover`](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onmouseover)*
 
-  - __[`onmouseenter`](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onmouseenter)__
+  - *[`onmouseenter`](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onmouseenter)*
 
-  etc.
+  - *etc.*
 
 <br> 
 
@@ -6063,7 +6063,7 @@ __2. way__ :
       document.querySelector('h1').onclick = alert(('You have clicked on the title');
       ```
 
---
+---
 
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `DOM events`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
 
@@ -6159,7 +6159,7 @@ __`addEventListener(type, listener, options)`__
   // 3. 'Goodbye!'
   ```
  
- --
+ ---
 
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `DOM events`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
 
