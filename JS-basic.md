@@ -5952,6 +5952,10 @@ So, we call on the actual thing we want to remove, and we don't have to worry ab
 # [DOM events](https://developer.mozilla.org/en-US/docs/web/api/event)    
 creating interactive websites: responding to user events (inputs  and actions), so running a code when a user does something.
 
+- __[inline events]()__   
+- __[`addEventListener`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#addeventlistener)__
+
+
   ---
 
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
@@ -5959,10 +5963,9 @@ creating interactive websites: responding to user events (inputs  and actions), 
 <br>
 
 
-## __[events](https://www.htmlgoodies.com/javascript/working-with-inline-event-handlers/)__:     
+## __[inline events](https://www.htmlgoodies.com/javascript/working-with-inline-event-handlers/)__:     
 Inline events are bound to an element by their attribute name, which starts with the “on” prefix. Not all event types may be bound to all elements.
-
-- [`addEventListener`]()
+  
 
 <br>
 
@@ -6060,12 +6063,9 @@ __2. way__ :
       document.querySelector('h1').onclick = alert(('You have clicked on the title');
       ```
 
-# [DOM events](https://developer.mozilla.org/en-US/docs/web/api/event)    
-creating interactive websites: responding to user events (inputs  and actions), so running a code when a user does something.
+--
 
-  ---
-
-  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `DOM events`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties)
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `DOM events`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
 
 <br>
 
@@ -6158,3 +6158,9 @@ __`addEventListener(type, listener, options)`__
   // 2. 'Goodbye!'
   // 3. 'Goodbye!'
   ```
+ 
+ --
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `DOM events`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
+
+<br>
