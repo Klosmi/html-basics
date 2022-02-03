@@ -6007,10 +6007,10 @@ When a user clicks on a button something will happen. How to do it? There are 3 
 
 __2. way__ :  
   we write the code in our JS file.   
-  We need to have elements what we can select (with querySelector, or other selectors).
+  We need to have elements that we can select (with `querySelector` or other __selectors__).
 
   - eg.:   
-    *when user click on the button, something will happen. We select a button using its `id` in JS.*   
+    *when user click on the button, something will happen. We select a button using its `id` in JS.*     
     HTML
     ```
     <button id="myBtn">Click me!</button>
@@ -6018,7 +6018,7 @@ __2. way__ :
     JS   
     *Using `onclick` property, often people use an inline function expression*   
     *__We are setting a property to be a function❗️__*   
-    *The function is never executed, it is __called by the__ `onclick` __property__ when the user clicks.*
+    *The function is never executed, it is __called by the__ `onclick` __property__ when the user clicks.*   
     ```
     const btn = document.querySelector('#myBtn');
 
