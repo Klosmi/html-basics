@@ -6048,7 +6048,7 @@ __2. way__ :
     btn.onmouseenter = shout;
     ```
 
-  - 💡When we use these properties, what we supposed to do is __set the `onclick` property to a function itself.__    
+  - 💡When we use these properties, what we supposed to do is __set that specific property__ (eg. the `onclick` property) __to a function.__    
   So the value should be a function, it should reference a function.     
     - eg.:  
       *we can click on the `<h1>Events</h1>` title*   
