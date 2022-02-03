@@ -6062,7 +6062,7 @@ __2. way__ :
       That is why we have to set the property `onclick` to a function (as we have done above).*
       ```
       // this DOES NOT WORK!!!!!!
-      document.querySelector('h1').onclick = alert(('You have clicked on the title');
+      document.querySelector('h1').onclick = alert('You have clicked on the title');
       ```
 
 ---
