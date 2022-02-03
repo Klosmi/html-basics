@@ -5983,7 +5983,7 @@ includes lots of properties we can use
 <br> 
 
 When a user clicks on a button something will happen. How to do it? There are 3 approaches: 
-   1. write a code into the tag
+   1. write a code into the <tag>
    2. write a code in a JS file using a selector and function
    3. using the `addEventListener` method. 
 
