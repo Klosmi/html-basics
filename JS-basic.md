@@ -6076,7 +6076,7 @@ __3. way__
 ## __[`addEventListener`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)__  
 this method sets up a function that will be called whenever the specified event is delivered to the target.     
 So: we can pass in any sort of event.   
-If we want to listen for a click, a double click, a mouse enter, etc. we can just pass in that string 'click', 'mouseover', etc., and then the second argument is our __callback function__, the code that we want to run when that event actually occurs.
+If we want to listen for a click, a doubleclick, etc. __we can just pass in that string__ (like 'click', 'doubleclick', etc.) and add the second argument which is our __callback function__ (the code that we want to run when that event actually occurs).
 
 - syntax: `something.addEventListener('what to listen for', function() 
 { the call back function, the code what we want to run } )`
