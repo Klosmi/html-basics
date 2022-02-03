@@ -6010,7 +6010,7 @@ __2. way__ :
   We need to have elements that we can select (with `querySelector` or other __selectors__).
 
   - eg.:   
-    *when user click on the button, something will happen. We select a button using its `id` in JS.*     
+    *When a user clicks on the button, something will happen. In out JS file we select a button using its `id`.*     
     HTML
     ```
     <button id="myBtn">Click me!</button>
