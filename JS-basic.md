@@ -6097,7 +6097,7 @@ If we want to listen for a click, a doubleclick, etc. __we can just pass in that
 - a great advantage of `addEventListener` is that we can combine lines, and it executes them withouth overwriting them (eg. overwrite the first line when it gets to the second):
   - eg.:   
     *we have two functions, when we click on a `<button>` one prints out 'Hello!' the other 'Goodbye!', and we want them to appear one after the other.*   
-    *Using the `addEventListener` the 'Hello!' will not be overwrite by 'Goodbye!'. __We can have as many callbacks as we want!__*   
+    *Using the `addEventListener` the 'Hello!' will not be overwrittem by 'Goodbye!'. It means that __we can have as many callbacks as we want!__*   
     JS
     ```
     // select button
