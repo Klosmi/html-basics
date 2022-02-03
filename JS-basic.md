@@ -6071,7 +6071,7 @@ __2. way__ :
 
 <br>
 
-__3. way__
+__3. way__ :
 
 ## __[`addEventListener`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)__  
 this method sets up a function that will be called whenever the specified event is delivered to the target.     
