@@ -5970,7 +5970,7 @@ Inline events are bound to an element by their attribute name, which starts with
 <br>
 
 - __[Event references](https://developer.mozilla.org/en-US/docs/Web/Events#event_listing)__    
-include a lot of properties we can use 
+includes lots of properties we can use 
   
   - *[`onlcick`](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick)*
 
