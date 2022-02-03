@@ -5995,7 +5995,7 @@ When a user clicks on a button something will happen. How to do it? There are 3 
 
   - eg.:   
   *The user clicks on the button. We add an attribute to the `<button>` tag which is named `onclick`.*      
-  *Between the quotes in `onclick=""` we can write the code that we want to run when the user clicks.*
+  *Between the quotes in `onclick=""` we can write the code that we want to run when the user clicks.*   
     HTML + JS
     ```
     <button onclick="alert('You clicked!')">Click me!</button>
