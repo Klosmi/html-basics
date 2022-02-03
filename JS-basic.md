@@ -6119,7 +6119,7 @@ If we want to listen for a click, a doubleclick, etc. __we can just pass in that
     // Hello!
     // Goodbye!
     ```
-    *But with another way, by approaching property on the object directly (as it is below) we can see that CAN NOT HAVE MORE THAN ONE the same `btn` object. Because the second function will overwrite the first function.*
+    *But with another way, by approaching property on the object directly (as it is below) we can see that it CAN NOT HAVE MORE THAN ONE. on the same `btn` object. Because the second function will overwrite the first function.*
     ```
     btn.onclick = hello;
     btn.onclick = bye;
