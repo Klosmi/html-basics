@@ -2032,6 +2032,9 @@ __Functions are reusable pieces of code__, chunks of code, they __have a name__ 
 
 - 2 steps: (1.) 🛠 __define__ and then (2.) ⏯ __call__ 
 
+- *💡 It's a good habit, that when we have some functionality that could stand alone,  so a distinct thing (something that does something) to move it into a separate function.* 
+
+
 - __[defining a function](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#defining-a-function)__   
   __[arguments](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#arguments)__   
   __[return](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#return)__   
@@ -2041,8 +2044,6 @@ __Functions are reusable pieces of code__, chunks of code, they __have a name__ 
   __[returning functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#returning-functions-)__   
   __[defining methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#defining-methods-)__   
   __[the `this`keyword](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#this-)__   
-
-- *💡 It's a good habit, that when we have some functionality that could stand alone,  so a distinct thing (something that does something) to move it into a separate function.* 
 
 <br>
 
