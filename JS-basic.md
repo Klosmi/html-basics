@@ -5288,7 +5288,7 @@ So when we use `getAttribute`, the __method is getting the content directly from
 ## __[`style`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style)__:   
 the [`style`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style#getting_style_information) property.  
 
-- set the `style` properties throught the DOM
+- sets the `style` properties throught the DOM
 
 - If we select an element and we add __`.style`__, we can see that this object contains a bunch of properties corresponding to all the individual CSS properties (like *`color`* or *`font-size`*, etc). 
 
