@@ -2026,7 +2026,7 @@ So this method gives the values of a key-value pairs.
 __Functions are reusable pieces of code__, chunks of code, they __have a name__ to them and __we can use them execute them at a later point__.   
 *(Not all functions have names)*
 
-- reusable chunks of code, so we can use a function any time once we defined a function.
+- reusable chunks of code, so we can use a function any time once we defined a function. 
 
 - modular:  we can pass in some sort of input that will impact the output.
 
@@ -2041,6 +2041,8 @@ __Functions are reusable pieces of code__, chunks of code, they __have a name__ 
   __[returning functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#returning-functions-)__   
   __[defining methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#defining-methods-)__   
   __[the `this`keyword](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#this-)__   
+
+- *💡 It's a good habit, that when we have some functionality that could stand alone,  so a distinct thing (something that does something) to move it into a separate function.* 
 
 <br>
 
