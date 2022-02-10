@@ -6174,3 +6174,65 @@ __`addEventListener(type, listener, options)`__
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `DOM events`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
 
 <br>
+
+## __[`this.` as an event handler](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#as_a_dom_event_handler)__
+when a function is used as an event handler, its `this` is set to the element on which the listener is placed.
+
+  - eg.:   
+    *We have 3 buttons and 3 `<h1>` titles, and we change their background when we click on them*   
+    HTML
+    ```
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+
+    <h1>Click me!</h1>
+    <h1>Click me!</h1>
+    <h1>Click me!</h1>
+    ```
+    JS   
+    ```
+    // select all the <button>s
+    const buttons = document.querySelectorAll('button');
+
+    // select all the <h1>s
+    const titles = document.querySelectorAll('h1');
+
+    // loop over all the <button>s
+    for (let btn of buttons){
+      btn.addEventListener('click', function(){
+        btn.style.backgroundColor = 'red';       // button's background turns to red
+        btn.style.color = 'blue';                // button's text turns to blue
+      })
+    }
+
+    // loop over all the <h1>s
+    for (let h1 of titles){
+      h1.addEventListener('click', function(){
+        h1.style.backgroundColor = 'red';
+        btn.style.color = 'blue';       
+      })
+    }
+    ```
+    *__Using `this`__ we can save lines, and put all the repetitive code lines into a separate function (here: `colors()`)`* 
+
+    *We replace the function in the `...addEventListener('click', function() {...})` with the function we have created separetaly (`colors()`) → ...addEventListener('click', colors())`*  
+    ```
+    function colors() {
+      this.style.backgroundColor = 'red';     // the 'this' becomes the 'btn' and the 'h1'
+      this.style.color = 'blue';
+    }
+
+    for (let btn of buttons){
+      btn.addEventListener('click', colors(){
+    }
+    for (h1 btn of titles){
+      btn.addEventListener('click', colors(){
+    }
+    ```
+    
+ ---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `DOM events`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
+
+<br>    
