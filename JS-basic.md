@@ -6176,7 +6176,7 @@ __`addEventListener(type, listener, options)`__
 <br>
 
 ## __[`this.` as an event handler](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#as_a_dom_event_handler)__
-when a function is used as an event handler, its `this` is set to the element on which the listener is placed.
+when a function is used as an *event handler*, its `this` is set to the element on which the listener is placed.
 
   - eg.:   
     *We have 3 buttons and 3 `<h1>` titles, and we change their background when we click on them*   
