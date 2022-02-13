@@ -5956,7 +5956,8 @@ So, we call on the actual thing we want to remove, and we don't have to worry ab
 creating interactive websites: responding to user events (inputs  and actions), so running a code when a user does something.
 
 - __[inline events](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#inline-events)__   
-- __[`addEventListener`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#addeventlistener)__
+- __[`addEventListener`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#addeventlistener)__   
+- __['this' as event handler](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#this-as-an-event-handler)__
 
 
 ---
