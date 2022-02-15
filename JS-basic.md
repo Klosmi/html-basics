@@ -6293,7 +6293,7 @@ The __event type__ *(keydown, keypress, or keyup)* __identifies what kind of key
 <br> 
 
 - eg.:    
-  *The user PRESS DOWN a button on the keyboard, so typing in the `<input type="text" >`, and that creates the 'keydown' event, and it prints "You pushed key down!"*  
+  *The user PRESSes DOWN a button on the keyboard, so typing in the `<input type="text" >`, and that creates the 'keydown' event, and it prints "You pushed key down!"*  
   JS   
   ```
   // select input
@@ -6310,7 +6310,7 @@ The __event type__ *(keydown, keypress, or keyup)* __identifies what kind of key
   // ("You pushed key down!")
   //  …etc
   ```
-  *Now we use 'keyup', The user press a button on the keyboard DOWN and UP.*   
+  *Now we use 'key up', The user press a button on the keyboard and the release it → UP.*   
   ```
    input.addEventListener('keyup', function() {
     console.log("It is a key up!");
