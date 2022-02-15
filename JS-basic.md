@@ -6310,7 +6310,7 @@ The __event type__ *(keydown, keypress, or keyup)* __identifies what kind of key
   // ("You pushed key down!")
   //  …etc
   ```
-  *Now we use 'key up', The user press a button on the keyboard and the release it → UP.*   
+  *Now we use 'key up'. The user press a button on the keyboard and the release it → UP.*   
   ```
    input.addEventListener('keyup', function() {
     console.log("It is a key up!");
@@ -6324,7 +6324,7 @@ The __event type__ *(keydown, keypress, or keyup)* __identifies what kind of key
 
   <br>
 __What key is pressed?__    
-we use the `event` object in the call back function. The `keyboardEvent` object has several objects. We are looking for 2 here: the *'key'* and the *'code'*.
+To find it out, we use the `event` object in the call back function. The `keyboardEvent` object has several objects, here we are looking for 2 specific: the *'key'* and the *'code'*. Using them we can knwo what buttons were used on the keyboard.
 
 - eg.:  
  *If we want to know what key was pressed on the `<input>`, we look into the __keyboardEvent__ object*   
