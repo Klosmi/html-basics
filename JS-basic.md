@@ -5958,7 +5958,8 @@ creating interactive websites: responding to user events (inputs  and actions), 
 - __[inline events](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#inline-events)__   
 - __[`addEventListener`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#addeventlistener)__   
 - __[`this` as event handler](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#this-as-an-event-handler)__.  
-- __[Event Objects]()__
+- __[Event Objects](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#event-objects)__   
+  - [keyboard events]()
 
 
 ---
