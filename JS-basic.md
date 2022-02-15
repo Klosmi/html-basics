@@ -5957,7 +5957,8 @@ creating interactive websites: responding to user events (inputs  and actions), 
 
 - __[inline events](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#inline-events)__   
 - __[`addEventListener`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#addeventlistener)__   
-- __[`this` as event handler](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#this-as-an-event-handler)__
+- __[`this` as event handler](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#this-as-an-event-handler)__.  
+- __[Event Objects]()__
 
 
 ---
@@ -6237,3 +6238,147 @@ when a function is used as an *event handler*, its `this` is set to the element 
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `DOM events`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
 
 <br>    
+
+## __[Event Objects]()__
+Event Object Represents is an object that contains information about an event that has occurred.   
+
+When an *event listener’s* event occurs and it calls its associated function, it also passes a single argument to the function (a reference to the event object). The event object contains a number of properties that describe the event that occurred.   
+The event object is automaitcally passed every single time in to our callback function. 
+So it is basically an obejct which contains information about the event.
+
+- eg.:   
+  *We create a `<button>` click event. The event object is automaitcally passed into our callback function. We can capture it as putting a paramter (name it `event`, but it can be anything) into our callback function.*   
+  JS
+  ```
+  document.querySelector('button').addEventListener('click', function (event){
+    console.log(event);       //← event is an object, it contains information about the object ❗️
+  })
+
+  // PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, …}
+    isTrusted: true
+    altKey: false
+    altitudeAngle: 1.5707963267948966
+    azimuthAngle: 0
+    bubbles: true
+    button: 0
+    buttons: 0
+    cancelBubble: false
+    cancelable: true
+    clientX: 28         // ← realtive to the window (coordinates)
+    clientY: 17         // ← realtive to the window (coordinates)
+    type: "click"       // event type
+    …etc
+  ```
+
+ ---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `DOM events`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
+
+<br>    
+
+#### __[KeyboardEvent](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)__   
+__*KeyboardEvent objects* describe a user interaction with the keyboard.__    
+Each event describes a single interaction between the user and a key on the keyboard.   
+The __event type__ *(keydown, keypress, or keyup)* __identifies what kind of keyboard activity occurred__.
+
+- keydown
+- keypress
+- keyup
+
+<br> 
+
+- eg.:    
+  *The user PRESS DOWN a button on the keyboard, so typing in the `<input type="text" >`, and that creates the 'keydown' event, and it prints "You pushed key down!"*  
+  JS   
+  ```
+  // select input
+  const input = document.querySelector('input');
+
+  input.addEventListener('keydown', function() {
+    console.log("You pushed key down!");
+  })
+
+  // typing randomly: asdf+enter // ← 'keydown' event occurs
+  // ("You pushed key down!")
+  // ("You pushed key down!")
+  // ("You pushed key down!")
+  // ("You pushed key down!")
+  //  …etc
+  ```
+  *Now we use 'keyup', The user press a button on the keyboard DOWN and UP.*   
+  ```
+   input.addEventListener('keyup', function() {
+    console.log("It is a key up!");
+  })
+
+  // 3 times we release the keys
+  // "It is a key up!"
+  // "It is a key up!"
+  // "It is a key up!"
+  ```
+
+  <br>
+__What key is pressed?__    
+we use the `event` object in the call back function. The `keyboardEvent` object has several objects. We are looking for 2 here: the *'key'* and the *'code'*.
+
+- eg.:  
+ *If we want to know what key was pressed on the `<input>`, we look into the __keyboardEvent__ object*   
+ JS
+ ```
+  // select 'input'
+  const input = document.querySelector('input');
+
+  input.addEventListener('keydown', function(event) {
+        console.log(event);
+      })
+
+    // prints out he keydown event object. We pressed "a" button. 
+    // KeyboardEvent {...}
+    // "KeyA", ....
+    // ...
+    // code: "KeyA"           // ← the "location" on the keyboard
+    // detail: 0
+    // eventPhase: 0
+    // isComposing: false
+    // key: "a"               // ← the character that was generated 
+    // keyCode: 65
+  ```
+  *If we want to listen for the global keyboardEvent, we ca nuse `window`.*   
+  *__We want to jnow what key is pressed, what the `key` object__: we add the `code` after the `event`.*
+  ```
+  window.addEventListener('keydown', function (event) {
+    console.log(event.code);        // ← it will show the 'code'
+  }) 
+  
+  // we just type on the window somewhere (up, right, left arrows)
+  // ArrowUp
+  // ArrowRight
+  // ArrowLeft
+  ```
+  *If we want to ignore all keyboard buttons, excepet the arrow button (lets say we make a game), we use the [`switch statement`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#switch-statement)*
+  ```
+  window.addEventListener('keydown', function (event) {
+    switch(event.code){
+      case 'ArrowUp':
+        console.log("you pressed UP!");
+        break;
+      case 'ArrowLeft':
+        console.log("you pressed LEFT!");
+        break;
+      default:
+        console.log("Ignored");
+    }       
+  }) 
+
+  // pressing keyboardbuttons calls the 'default. Pressing the 'up arrow' then 'left arrow':
+  // "Ignored"
+  // "Ignored"
+  // "you pressed UP!"
+  // "you pressed LEFT!"
+  ```
+  
+  ---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `DOM events`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
+
+<br>     
