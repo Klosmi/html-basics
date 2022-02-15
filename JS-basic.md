@@ -6242,10 +6242,11 @@ when a function is used as an *event handler*, its `this` is set to the element 
 <br>    
 
 ## __[Event Objects](https://www.codecademy.com/courses/build-interactive-websites/lessons/dom-events/exercises/event-object-property)__
-Event Object Represents is an object that contains information about an event that has occurred.   
+Event Object Represents is an object that contains information about an event that has occurred.     
 
 When an *event listener’s* event occurs and it calls its associated function, it also passes a single argument to the function (a reference to the event object). The event object contains a number of properties that describe the event that occurred.   
-The event object is automaitcally passed every single time in to our callback function. 
+
+__The event object is automaitcally passed every single time in to our callback function.__    
 So it is basically an obejct which contains information about the event.
 
 *[read more about this topic](https://medium.com/launch-school/javascript-lets-talk-about-events-572ecce968d0)*
