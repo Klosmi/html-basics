@@ -5960,7 +5960,7 @@ creating interactive websites: responding to user events (inputs  and actions), 
 - __[`this` as event handler](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#this-as-an-event-handler)__.  
 - __[Event Objects](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#event-objects)__   
 - __[`keyboardEvent`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#keyboardevent)__
-- __[]()__   
+- __[`Event.preventDefault`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#eventpreventdefault-using-a-form)__   
 -
 
 
@@ -6412,6 +6412,19 @@ This method cancels the event if it is cancelable, meaning that the default acti
   *Let's have a form that a user can submit, but we basically prevent it from changing the page, using the `event.preventDefault` method.*   
   *So we stay on the same page and we do something with the form data.*   
   JS
+  ```
+  // selecting the <form> id
+  const form = document.querySelector('#locations');
+
+  // adding eventListener when the form is submitted
+  form.addEventListener('submit', function(event){
+      event.preventDefault()      // ←  it prevents the default behavior triggered by a given event.
+      console.log("Form is submitted!");
+  })
+  
+  // result: 
+  // the event is fired, the page doesn't go to ".../location?", it stays.
+  // "Form is submitted!"
   ```
 
   ---
