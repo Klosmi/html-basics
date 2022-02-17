@@ -6398,7 +6398,7 @@ __This method cancels the event if it is cancelable, meaning that the default ac
 
   *Let's say we don't want to lead us to another page* 
 
-  *So how does it work? In HTML, when the `action` attribute is set to something (here "local") that is where the data (what we put in the `input`) will be sent to. And our browser window end up at that location as default behaviour*
+  *So how does it work? In HTML, when the `action` attribute is set to something (here "local") that is where the data (what we put in the `<input>`) will be sent to. And our browser window end up at that location as default behaviour*
   HTML  
   ```
   <form action="/local" id="localID">
