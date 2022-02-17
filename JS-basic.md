@@ -6394,14 +6394,14 @@ __This method cancels the event if it is cancelable, meaning that the default ac
 *(Like clicking on a "Submit" button, prevent it from submitting a form)*
 
 - eg.:   
-  *When we click to "Submit" in the `<form>`, it leads us to another page: `.../location?`*    
+  *When we click to "Submit" in the `<form>`, it leads us to another page: `.../local?`*    
 
   *Let's say we don't want to lead us to another page* 
 
   *So how does it work? In HTML, when the `action` attribute is set to something (here "local") that is where the data (what we put in the `input`) will be sent to. And our browser window end up at that location as default behaviour*
   HTML  
   ```
-  <form action="/location" id="locations">
+  <form action="/local" id="localID">
     <input type="text">
     <button>Submit</button>
   </form>
@@ -6413,7 +6413,7 @@ __This method cancels the event if it is cancelable, meaning that the default ac
   JS
   ```
   // selecting the <form> id
-  const form = document.querySelector('#locations');
+  const form = document.querySelector('#localID');
 
   // adding eventListener when the form is submitted
   form.addEventListener('submit', function(event){
