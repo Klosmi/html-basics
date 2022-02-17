@@ -6417,7 +6417,7 @@ __This method cancels the event if it is cancelable, meaning that the default ac
 
   // adding eventListener when the form is submitted
   form.addEventListener('submit', function(event){
-      event.preventDefault()      // ←  it prevents the default behavior triggered by a given event.
+      event.preventDefault()                      // ← prevents the default behavior triggered by a given event
       console.log("Form is submitted!");
   })
   
