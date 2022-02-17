@@ -6281,7 +6281,7 @@ So it is basically an obejct which contains information about the event.
 
 <br>    
 
-#### __[KeyboardEvent](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)__   
+## __[KeyboardEvent](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)__   
 __*KeyboardEvent objects* describe a user interaction with the keyboard.__    
 Each event describes a single interaction between the user and a key on the keyboard.   
 The __event type__ *(keydown, keypress, or keyup)* __identifies what kind of keyboard activity occurred__.
@@ -6386,4 +6386,35 @@ To find it out, we use the `event` object in the call back function. The `keyboa
 
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `DOM events`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
 
-<br>     
+<br>  
+
+## __[`Event.preventDefault` (using a `<form>`)](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)__
+This method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.
+
+(Like clicking on a "Submit" button, prevent it from submitting a form)
+
+- eg.:   
+  *When we click to `Subm it` in the `form`, it leads us to another page: `.../location?`*    
+
+  *Let's say we don't want to lead us to another page* 
+
+  *So how does it work? In HTML, when the `action` attribute is set to something (here "local") that is where the data (what we put in the `input`) will be sent to. And our browser window end up at that location as default behaviour*
+  HTML  
+  ```
+  <form action="/location" id="locations">
+    <input type="text">
+    <button>Submit</button>
+  </form>
+
+  <!-- we click on the "Submit" → it goes to another page ".../local?" -->
+  ```
+  *Let's have a form that a user can submit, but we basically prevent it from changing the page, using the `event.preventDefault` method.*   
+  *So we stay on the same page and we do something with the form data.*   
+  JS
+  ```
+
+  ---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `DOM events`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
+
+<br>  
