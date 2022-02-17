@@ -6390,7 +6390,7 @@ To find it out, we use the `event` object in the call back function. The `keyboa
 <br>  
 
 ## __[`Event.preventDefault` (using a `<form>`)](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)__
-This method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.
+__This method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.__
 
 (Like clicking on a "Submit" button, prevent it from submitting a form)
 
