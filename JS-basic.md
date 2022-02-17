@@ -6394,7 +6394,7 @@ __This method cancels the event if it is cancelable, meaning that the default ac
 *(Like clicking on a "Submit" button, prevent it from submitting a form)*
 
 - eg.:   
-  *When we click to "Submit"` in the `form`, it leads us to another page: `.../location?`*    
+  *When we click to "Submit" in the `<form>`, it leads us to another page: `.../location?`*    
 
   *Let's say we don't want to lead us to another page* 
 
