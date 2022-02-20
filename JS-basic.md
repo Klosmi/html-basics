@@ -6433,8 +6433,8 @@ __This method cancels the event if it is cancelable, meaning that the default ac
 
   - __[`input.value`](https://www.geeksforgeeks.org/html-input-value-attribute/)__ attribute
 
-  - eg.: 
-  *We are trying to make a list, with the words we write in the `<input>`. So when we hit the 'submit' button we want to take that value extracted from the form, and appear in a `<ul>` list on the page.*   
+  - eg.:    
+  *We want to make a list with the words we write in the `<input>`. So when we hit the 'submit' button we want to take that value extracted from the `<form>` and appear in a `<ul>` list on the page.*   
   *So we want to append different items to the `<ul>` list.*   
   HTML
   ```
