@@ -6429,7 +6429,7 @@ __This method cancels the event if it is cancelable, meaning that the default ac
  <br>
  
  
-- How can we __extract data from the form__?
+- How can we __extract data from the `<form>`__?
 
   - __[`input.value`](https://www.geeksforgeeks.org/html-input-value-attribute/)__ attribute
 
