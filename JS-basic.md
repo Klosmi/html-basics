@@ -6425,6 +6425,102 @@ __This method cancels the event if it is cancelable, meaning that the default ac
   // the event is fired, the page doesn't go to ".../local?", the page stays.
   // "Form is submitted!"
   ```
+  
+ <br>
+ 
+ 
+- How can we __extract data from the form__?
+
+  - __[`input.value`](https://www.geeksforgeeks.org/html-input-value-attribute/)__ attribute
+
+  - eg.: 
+  *We are trying to make a list, with the words we write in the `<input>`. So when we hit the 'submit' button we want to take that value extracted from the form, and appear in a `<ul>` list on the page.*   
+  *So we want to append different items to the `<ul>` list.*   
+  HTML
+  ```
+  <!-- we add a UL under the <form> where the submitted value will appear -->
+
+    <form action="/location" id="locations">
+        <input type="text" id="itemType">
+        <button>Submit</button>
+    </form>
+
+    <h2>List of items</h2>
+    <ul id="items"></ul>
+   ``` 
+   JS
+   *we select the `<input>`'s value. We use `input.value`, and thei __`value`__ attribute shows the value of the `<input>`, shows what is currently in the `<input>`.*
+   ```
+   // selecting the <form> id
+   const form = document.querySelector('#locations');
+   
+   // selecting the input
+   const input = document.querySelector('#itemType');
+
+   form.addEventListener('submit', function(event){
+      event.preventDefault()      
+      console.log("Form is submitted!");
+  })
+
+
+   // ❗️ if we write in the console input.value, it shows what is currently in the input
+   // ❗️ when input is empty → input.value = ""
+   ```
+  *When we click the 'submit', we want to take that input value and then make a new `<li>`. Then clear the `<input>`.*    
+  JS
+  ```
+  form.addEventListener('submit', function(event){
+    event.preventDefault()      
+    console.log("Form is submitted!");
+    console.log(input.value);     // ← it shows what is currently in the input
+  })
+  ```
+  *Now, we ahve to make a new `<li>` with the value what's in the `<input>`.*    
+  JS
+  ```
+  // selecting the <form> id
+   const form = document.querySelector('#locations');
+ 
+  // selecting the input
+   const input = document.querySelector('#itemType');
+
+  // selecting the <ul id="items">
+  const list  = document.querySelector('#items');
+
+  form.addEventListener('submit', function(event){
+    event.preventDefault()      
+    console.log("Form is submitted!");
+    // console.log(input.value);    
+    
+    const itemType = input.value;     //←  what's in the <input> we want to save it to a variable
+    
+    const newLI = document.createElement("LI");   // ← creating a new empty `<li>`
+
+    newLI.innerText = itemType; // ← add the itemType to the empty `<li>` (newLI)
+    
+    list.append(newLI);         // ← we have to show the 'item' on the page, we have to append it to the 'const list' (the <ul>) 
+  })
+  ```
+  *Now, we have to __reset the input form__ so it goes back to empty: `input.value = ''`*   
+  JS
+  ```
+  form.addEventListener('submit', function(event){
+    event.preventDefault()      
+    console.log("Form is submitted!");
+    // console.log(input.value);    
+    const itemType = input.value;    
+    const newLI = document.createElement("LI");  
+    newLI.innerText = itemType;  
+    list.append(newLI); 
+    input.value = ""           // ← reset the input form      
+  })
+  ```
+  *The process we did:*   
+  *1.* *We prevented the default behavior so that the form doesn't go to another page.*    
+  *2.* *Then we take the value from the input.*   
+  *3.* *Then we extracted the value and then we made an empty `<li>`. We added that value into the empty `<li>`.*   
+  *4.* *Then we append that to our `<ul>`.*    
+  *5.* *Then we reset the `<input>` form to empty.*
 
   ---
 
