@@ -6436,6 +6436,7 @@ __This method cancels the event if it is cancelable, meaning that the default ac
   - eg.:    
   *We want to make a list with the words we write in the `<input>`. So when we hit the 'submit' button we want to take that value extracted from the `<form>` and appear in a `<ul>` list on the page.*   
   *So we want to append different items to the `<ul>` list.*   
+  *Our goal is that when we click the 'submit', we want to take that input value and then make a new `<li>`. Then clear, reset the `<input>`.*    
   HTML
   ```
   <!-- we add a <ul> under the <form> where the submitted value will appear -->
@@ -6450,9 +6451,8 @@ __This method cancels the event if it is cancelable, meaning that the default ac
    ```     
    *We select the `<input>`'s value. We use `input.value`, and thei __`value`__ attribute shows the value of the `<input>`, shows what is currently in the `<input>`.*       
    *❗️ If we write in the console `input.value`, it shows what is currently in the `<input>`.*   
-   *❗️ When input is empty → `input.value = ""`*   
-   *Our goal is that when we click the 'submit', we want to take that input value and then make a new `<li>`. Then clear, reset the `<input>`.*    
-  JS
+   *❗️ When input is empty → `input.value = ""`*    
+   JS
   ```
   // selecting the <form> id
    const form = document.querySelector('#localID');
