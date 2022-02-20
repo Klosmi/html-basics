@@ -6438,7 +6438,7 @@ __This method cancels the event if it is cancelable, meaning that the default ac
   *So we want to append different items to the `<ul>` list.*   
   HTML
   ```
-  <!-- we add a UL under the <form> where the submitted value will appear -->
+  <!-- we add a <ul> under the <form> where the submitted value will appear -->
 
     <form action="/location" id="locations">
         <input type="text" id="itemType">
