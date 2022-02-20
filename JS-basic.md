@@ -6447,9 +6447,9 @@ __This method cancels the event if it is cancelable, meaning that the default ac
 
     <h2>List of items</h2>
     <ul id="items"></ul>
-   ``` 
-   JS
-   *we select the `<input>`'s value. We use `input.value`, and thei __`value`__ attribute shows the value of the `<input>`, shows what is currently in the `<input>`.*
+   ```     
+   *we select the `<input>`'s value. We use `input.value`, and thei __`value`__ attribute shows the value of the `<input>`, shows what is currently in the `<input>`.*       
+   JS 
    ```
    // selecting the <form> id
    const form = document.querySelector('#locations');
