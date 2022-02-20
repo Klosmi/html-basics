@@ -6495,23 +6495,29 @@ __This method cancels the event if it is cancelable, meaning that the default ac
   *Now, we have to __reset the input form__ so it goes back to empty: `input.value = ''`*   
   JS
   ```
-  form.addEventListener('submit', function(event){
-    event.preventDefault()      
-    console.log("Form is submitted!");
-    // console.log(input.value);    
-    const itemType = input.value;    
-    const newLI = document.createElement("LI");  
-    newLI.innerText = itemType;  
-    list.append(newLI); 
-    input.value = ""           // ← reset the input form      
+  form.addEventListener('submit', function(event){   // 1.
+    event.preventDefault() 
+    
+    console.log("Form is submitted!");     
+    
+    const itemType = input.value;                    // 2.
+    
+    const newLI = document.createElement("LI");      // 3.
+    
+    newLI.innerText = itemType;                      // 4.
+    
+    list.append(newLI);                              // 5. 
+    
+    input.value = ""                                 // 6.  reset the input form     
   })
   ```
   *The process we did:*   
   *1.* *We prevented the default behavior so that the form doesn't go to another page.*    
   *2.* *Then we take the value from the input.*   
-  *3.* *Then we extracted the value and then we made an empty `<li>`. We added that value into the empty `<li>`.*   
-  *4.* *Then we append that to our `<ul>`.*    
-  *5.* *Then we reset the `<input>` form to empty.*
+  *3.* *Then we extracted the value and then we made an empty `<li>`.*   
+  *4.* *Then we added the value into the empty `<li>`.*   
+  *5.* *Then we append that to our `<ul>`.*    
+  *6.* *Then we reset the `<input>` form to empty.*
 
   ---
 
