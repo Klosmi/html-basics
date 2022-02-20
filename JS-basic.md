@@ -6440,9 +6440,9 @@ __This method cancels the event if it is cancelable, meaning that the default ac
   ```
   <!-- we add a <ul> under the <form> where the submitted value will appear -->
 
-    <form action="/location" id="locations">
-        <input type="text" id="itemType">
-        <button>Submit</button>
+    <form action="/local" id="localID">
+      <input type="text">
+      <button>Submit</button>
     </form>
 
     <h2>List of items</h2>
@@ -6452,7 +6452,7 @@ __This method cancels the event if it is cancelable, meaning that the default ac
    JS 
    ```
    // selecting the <form> id
-   const form = document.querySelector('#locations');
+   const form = document.querySelector('#localID');
    
    // selecting the input
    const input = document.querySelector('#itemType');
@@ -6479,7 +6479,7 @@ __This method cancels the event if it is cancelable, meaning that the default ac
   JS
   ```
   // selecting the <form> id
-   const form = document.querySelector('#locations');
+   const form = document.querySelector('#localID');
  
   // selecting the input
    const input = document.querySelector('#itemType');
