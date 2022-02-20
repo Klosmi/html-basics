@@ -6466,16 +6466,16 @@ __This method cancels the event if it is cancelable, meaning that the default ac
    // ❗️ if we write in the console input.value, it shows what is currently in the input
    // ❗️ when input is empty → input.value = ""
    ```
-  *When we click the 'submit', we want to take that input value and then make a new `<li>`. Then clear the `<input>`.*    
+  *Our goal is that when we click the 'submit', we want to take that input value and then make a new `<li>`. Then clear, reset the `<input>`.*    
   JS
   ```
   form.addEventListener('submit', function(event){
     event.preventDefault()      
     console.log("Form is submitted!");
-    console.log(input.value);     // ← it shows what is currently in the input
+    console.log(input.value);     // ← it shows what is currently in the input in the console (not on the page!)
   })
   ```
-  *Now, we ahve to make a new `<li>` with the value what's in the `<input>`.*    
+  *Now, we have to make a new `<li>` with the value what's in the `<input>`.*    
   JS
   ```
   // selecting the <form> id
