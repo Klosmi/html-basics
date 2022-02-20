@@ -6449,26 +6449,17 @@ __This method cancels the event if it is cancelable, meaning that the default ac
     <ul id="items"></ul>
    ```     
    *we select the `<input>`'s value. We use `input.value`, and thei __`value`__ attribute shows the value of the `<input>`, shows what is currently in the `<input>`.*       
-   JS 
-   ```
-   // selecting the <form> id
-   const form = document.querySelector('#localID');
-   
-   // selecting the input
-   const input = document.querySelector('#itemType');
-
-   form.addEventListener('submit', function(event){
-      event.preventDefault()      
-      console.log("Form is submitted!");
-  })
-
-
-   // ❗️ if we write in the console input.value, it shows what is currently in the input
-   // ❗️ when input is empty → input.value = ""
-   ```
-  *Our goal is that when we click the 'submit', we want to take that input value and then make a new `<li>`. Then clear, reset the `<input>`.*    
+   *❗️ if we write in the console input.value, it shows what is currently in the input*   
+   *❗️ when input is empty → input.value = ""*   
+   *Our goal is that when we click the 'submit', we want to take that input value and then make a new `<li>`. Then clear, reset the `<input>`.*    
   JS
   ```
+  // selecting the <form> id
+   const form = document.querySelector('#localID');
+   
+  // selecting the input
+   const input = document.querySelector('#itemType');
+   
   form.addEventListener('submit', function(event){
     event.preventDefault()      
     console.log("Form is submitted!");
