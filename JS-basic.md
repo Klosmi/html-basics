@@ -5683,7 +5683,7 @@ So, when we create an element after we fill it (update it) with content (it can 
 This method appends a node as the __last child of a node__.
 
   - eg.:    
-    *(continue from the previous example at `Document.createElement`)*   
+    *(continue from the previous example at [`Document.createElement`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#documentcreateelement))*   
     *We have to select something (`<body>`) to append to my new image (we gave to `newImg`).*   
     JS
     ```
