@@ -6521,6 +6521,42 @@ __This method cancels the event if it is cancelable, meaning that the default ac
   *5.* *Then we append that to our `<ul>`.*    
   *6.* *Then we reset the `<input>` form to empty.*
 
+<br>
+
+  - another eg.:   
+      *`<form>` element contains 2 `<input>` elements, 1 for quantity and 1 for product. We want to add the product and qulaity next to each other, into a new `<li>` after each time we submit.*   
+    HTML
+    ```
+    <h1>Grocery List</h1>
+    <form action="/nowhere">
+        <label for="item">Enter A Product</label>
+        <input type="text" id="product" name="product">
+        <label for="item">Enter A Quantity</label>
+        <input type="number" id="qty" name="qty">
+        <button>Submit</button>
+    </form>
+    
+    <ul id="list"></ul>
+    ```
+    JS
+    ```
+    const form = document.querySelector('form');            // selecting the <form>
+    const product = document.querySelector('#product');     // selecting the product <input>
+    const qty = document.querySelector('#qty');             // selecting the qunatity <input>
+    const list = document.querySelector('#list');           // selecting the <ul> list
+
+    form.addEventListener('submit', function(event){
+       event.preventDefault();                              // prevent form
+       const productName = product.value;                   // we take the value from the product input
+       const qtyName = qty.value;                           // we take the value from the qunatity input
+       const newList = document.createElement('li');        // we create a new empty <li>
+       newList.innerText = `${productName}, ${qtyName}`;    // we using template literals to put product and qty next to eachother + we add them to the <li>
+       list.appendChild(newList);                           // we append it to our `<ul>`
+
+       product.value= "";                                   // we reset the product input   
+       qty.value= "";                                       // we reset the quantity input
+    });
+    ```
   ---
 
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `DOM events`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
