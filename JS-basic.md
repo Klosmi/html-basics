@@ -5961,8 +5961,8 @@ creating interactive websites: responding to user events (inputs  and actions), 
 - __[Event Objects](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#event-objects)__   
 - __[`keyboardEvent`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#keyboardevent)__
 - __[`Event.preventDefault`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#eventpreventdefault-using-a-form)__   
+  - __[`input.value`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#inputvalue-attribute)__
 -
-
 
 ---
 
