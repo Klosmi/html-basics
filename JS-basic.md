@@ -5706,7 +5706,7 @@ This method appends a node as the __last child of a node__.
     *using `classList.add`*     
     JS   
     ```
-    newImg.classList.add('fistImage');
+    newImg.classList.add('firstImage');
 
     // The HTML 👇 
     // <img src="https://en.wikipedia.org/American_Eskimo_Dog.jpg">  
