@@ -6449,7 +6449,7 @@ __This method cancels the event if it is cancelable, meaning that the default ac
     <h2>List of items</h2>
     <ul id="items"></ul>
    ```     
-   *We select the `<input>`'s value. We use `input.value`, and thei __`value`__ attribute shows the value of the `<input>`, shows what is currently in the `<input>`.*       
+   *We select the `<input>`'s value. We use `input.value`, and the __`value`__ attribute shows the value of the `<input>`, shows what is currently in the `<input>`.*       
    *❗️ If we write in the console `input.value`, it shows what is currently in the `<input>`.*   
    *❗️ When input is empty → `input.value = ""`*    
    JS
