@@ -6442,7 +6442,7 @@ __This method cancels the event if it is cancelable, meaning that the default ac
   <!-- we add a <ul> under the <form> where the submitted value will appear -->
 
     <form action="/local" id="localID">
-      <input type="text" id="itemType">
+      <input type="text" id="itemInput" name="itemName">
       <button>Submit</button>
     </form>
 
@@ -6458,7 +6458,7 @@ __This method cancels the event if it is cancelable, meaning that the default ac
    const form = document.querySelector('#localID');
    
   // selecting the input
-   const input = document.querySelector('#itemType');
+   const input = document.querySelector('#itemInput');
    
   form.addEventListener('submit', function(event){
     event.preventDefault()      
@@ -6472,8 +6472,10 @@ __This method cancels the event if it is cancelable, meaning that the default ac
   // selecting the <form> id
    const form = document.querySelector('#localID');
  
-  // selecting the input
-   const input = document.querySelector('#itemType');
+  // selecting the input 💡 there are 2 ways to select the input. 1.'#id', 2.'name' element
+   const input = document.querySelector('#itemInput')    // ← 1. selecting by '#id'
+  // const input = localID.elements.itemName;            // ← 2. selecting by 'name': (form's "#id") + (elements) + (input's "name")
+
 
   // selecting the <ul id="list">
   const list  = document.querySelector('#list');
