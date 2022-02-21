@@ -1,4 +1,4 @@
-[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+__[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)__
 
 ---
 
@@ -6551,8 +6551,7 @@ __This method cancels the event if it is cancelable, meaning that the default ac
        const qtyName = qty.value;                           // we take the value from the qunatity input
        const newList = document.createElement('li');        // we create a new empty <li>
        newList.innerText = `${productName}, ${qtyName}`;    // we using template literals to put product and qty next to eachother + we add them to the <li>
-       list.appendChild(newList);                           // we append the newList <li> to our `<ul>`
-
+       list.append(newList);                                // we append the <li> (newList) to our <ul> (#list)
        product.value= "";                                   // we reset the product input   
        qty.value= "";                                       // we reset the quantity input
     });
