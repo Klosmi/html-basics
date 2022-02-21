@@ -5820,7 +5820,7 @@ this method inserts a given element node at a given position relative to the ele
   const h2 = document.createElement('h2');
   // <h2></h2>
 
-  //put sem text there
+  //put some text there
   h2.append("Hello nice people!");
   // <h2>Hello nice people!</h2>
 
