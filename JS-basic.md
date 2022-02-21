@@ -6442,7 +6442,7 @@ __This method cancels the event if it is cancelable, meaning that the default ac
   <!-- we add a <ul> under the <form> where the submitted value will appear -->
 
     <form action="/local" id="localID">
-      <input type="text">
+      <input type="text" id="itemType">
       <button>Submit</button>
     </form>
 
