@@ -6447,7 +6447,7 @@ __This method cancels the event if it is cancelable, meaning that the default ac
     </form>
 
     <h2>List of items</h2>
-    <ul id="items"></ul>
+    <ul id="list"></ul>
    ```     
    *We select the `<input>`'s value. We use `input.value`, and the __`value`__ attribute shows the value of the `<input>`, shows what is currently in the `<input>`.*       
    *❗️ If we write in the console `input.value`, it shows what is currently in the `<input>`.*   
@@ -6475,8 +6475,8 @@ __This method cancels the event if it is cancelable, meaning that the default ac
   // selecting the input
    const input = document.querySelector('#itemType');
 
-  // selecting the <ul id="items">
-  const list  = document.querySelector('#items');
+  // selecting the <ul id="list">
+  const list  = document.querySelector('#list');
 
   form.addEventListener('submit', function(event){
     event.preventDefault()      
