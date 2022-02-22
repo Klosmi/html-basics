@@ -6561,3 +6561,97 @@ __This method cancels the event if it is cancelable, meaning that the default ac
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `DOM events`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
 
 <br>  
+
+## __[Change Event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)__
+The change event is fired for `<input>`, `<select>`, and `<textarea>` elements when an alteration to the element's value is committed by the user.   
+Unlike the input event, the change event is not necessarily fired for each alteration to an element's value.
+
+- eg.:   
+  *An `<h1>` and an `<input>`. Let's say we want to do something every time this input is updated.*   
+  *The __change input only fires__ when we actually "blur" the input, which means leaving it the input, not clicking in it, __when we click away from the input__.*   
+  HTML
+  ```
+  <h1>Type something below: </h1>
+  <input type="text">
+  ```
+  JS
+  *We type soemthing into the `<input>` __nothing happens__.   We run the code, and it only prints out the "Change event has occured" text when we click away from the input.*
+  ```
+  // selecting the <input>
+  const input = document.querySelector('input');
+
+  // listen for the change event❗️
+  input.adEventListener('change', function(event){
+      console.log("Change event has occured");
+  })
+  ```
+  *Changing the `<input>` means changing the value (what we type in into the `<input>`). __Change event__ only runs when we blur out (not when we type in the `<input>`).*
+
+  💡 So thinking of it whatever you leave in that `<input>`, and it is __different__ than it was when you entered the `<input>`. So not whatever you see changing in that `<input>`.
+
+---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `DOM events`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
+
+<br>  
+
+## __[Input Event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)__    
+The input event fires when the value of an `<input>`, `<select>`, or `<textarea>` element has been changed.   
+*(Clicking away and or in doesn't matter.)*
+
+The `input event` fires as soon as we type something in the `<input>`.
+
+- eg.:   
+ *When we change the value in the `<input>`, that fires the `event`.*   
+  HTML
+  ```
+  <h1>Type something below: </h1>
+  <input type="text">
+  ```
+  JS
+  *We type soemthing into the `<input>` and it fires the event, it prints out the "Input event event has occured".*
+  ```
+  // selecting the <input>
+  const input = document.querySelector('input');
+
+  // listen for the input event❗️
+  input.adEventListener('input', function(event){
+      console.log("Input event has occured");
+  })
+  ```
+
+-  another eg.:   
+    *Updating `<h1>` with the value what we type into the `<input>`*   
+    HTML
+    ```
+    <h1>Type something below: </h1>
+    <input type="text">
+    ```
+    JS
+    *We have input in a variable and we update the `<h1>`, whatever the `value` is (`input.value`).*   
+    *So whenever the value changes inside of the `<input>` (input event) we take that value (`input.value`) and update the `<h1>` to display it (`innerText`).*
+    ```
+    // selecting the `<input>`
+    const input = document.querySelector('input');
+
+    // selecting the <h1>
+    const h1 = document.querySelector('h1');
+
+    // listen for the input event❗️
+    input.adEventListener('input', function(event){
+        h1.innerText = input.value;
+    })          
+    ```
+    *We type "HELLO" into the `<input>` and the `<h1>` textt becomes "HELLO" as well.*
+     HTML
+      ```
+      <h1>HELLO</h1>
+      <!-- we type "Hello" -->
+      <input type="text">
+      ```
+      
+ ---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `DOM events`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
+
+<br>  
