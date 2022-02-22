@@ -5961,8 +5961,8 @@ creating interactive websites: responding to user events (inputs  and actions), 
 - __[Event Objects](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#event-objects)__   
 - __[`keyboardEvent`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#keyboardevent)__
 - __[`Event.preventDefault`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#eventpreventdefault-using-a-form)__   
-- __[`input.value`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#inputvalue-attribute)__
-- __[`Change Event`]()__ & __['Input Event']()__ 
+- __[`input.value`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#inputvalue)__
+- __[`Change Event`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#change-event)__ & __[`Input Event`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#input-event)__ 
 
 ---
 
@@ -6440,7 +6440,8 @@ __This method cancels the event if it is cancelable, meaning that the default ac
 ## __[`input.value`](https://www.geeksforgeeks.org/html-input-value-attribute/)__
 The value attribute for <input> element in HTML is used to specify the initial value of the input element.
 
-- *(continued from the previous exmaples)* eg.:    
+- *([continued from the previous exmaples](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#eventpreventdefault-using-a-form
+)* eg.:    
   *We want to make a list with the words we write in the `<input>`. So when we hit the 'submit' button we want to take that value extracted from the `<form>` and appear in a `<ul>` list on the page.*   
   *So we want to append different items to the `<ul>` list.*   
   *Our goal is that when we click the 'submit', we want to take that input value and then make a new `<li>`. Then clear, reset the `<input>`.*    
