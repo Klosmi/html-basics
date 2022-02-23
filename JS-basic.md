@@ -6690,7 +6690,7 @@ The `input event` fires as soon as we type something in the `<input>`.
   - syntax: __`event.stopPropagation();`__
 
   - eg.:   
-    *We have a `<button>` inside a `<div>`. When we click on the `<button>` it changes the background color to blue.
+    *We have a `<button>` inside a `<div>`. When we click on the `<button>` it should change the background color to blue.
     When we click on the `<div>` it hides the `<div>` (so hides also the background color and `<button>`)*    
     HTML
     ```
