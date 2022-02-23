@@ -5963,6 +5963,7 @@ creating interactive websites: responding to user events (inputs  and actions), 
 - __[`Event.preventDefault`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#eventpreventdefault-using-a-form)__   
 - __[`input.value`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#inputvalue)__
 - __[`Change Event`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#change-event)__ & __[`Input Event`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#input-event)__ 
+- __[Event Bubbling]()__
 
 ---
 
@@ -6658,6 +6659,73 @@ The `input event` fires as soon as we type something in the `<input>`.
       <input type="text">
       ```
       
+ ---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `DOM events`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
+
+<br>  
+
+
+## __[Event Bubbling](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_bubbling_and_capture)__
+  When an event is triggered first on an element, and that element has a parent element, which also has a parent element, etc, and they all have events, all these event are triggered.    
+  
+  __We describe this by saying that the event bubbles up from the innermost element that was clicked.__ (So the bubbling start from the buttom towards the top.)
+
+
+- eg.:    
+  *We have a `<button>` insode of a `<p>` paragpraph, which is inside of a `<section>`. All element have an `onclick` event.*  
+  HTML
+  ```
+  <section onclick="alert('Section clicked!')">
+    <p onclick="alert('Paragpraph clicked!')">
+      <button onclick="alert('Button clicked!')">Click!</button>
+    </p>
+  </section>  
+  ```
+  *When we click on the `<button>`, it creates __bubbling__, because `<button>` triggers the `<p>`, and then the `<section>`.* 
+  
+- __[`event.stopPropagation`](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation)__: 
+  a method that stops the bubbling
+
+  - syntax: __`event.stopPropagation();`__
+
+  - eg.:   
+    *We have a `<button>` inside a `<div>`. When we click on the `<button>` it changes the background color to blue.
+    When we click on the `<div>` it hides the `<div>` (so hides also the background color and `<button>`)*    
+    HTML
+    ```
+    <div id="container">
+        Please Hide me!
+        <button id="changeColor">Change Color</button>
+    </div>
+    ``` 
+    *We include a CSS class `.hide` whichhas a `display: none;`. We use this the JS by `classList` property.*   
+    CSS
+    ```
+    .hide {
+      display: none;
+    }
+    ```
+    JS    
+    *When we click on the `<div>` element (which has the text: "Please Hide me!") it hides the `<div>` and its child `<button>`.*
+    *Since the `<button>` is inside of a `<div>`, when we click on the `<button>` it triggers the `<div>` instead of changing the background color, it hides all the elements → bubbling.*   
+    *__To stop that bubbling, we include the `event.stopPropagation()`__*
+    ```
+    const button = document.querySelector('#changeColor');
+    const container = document.querySelector('#container');
+
+    button.addEventListener('click', function (event) {
+        container.style.backgroundColor = "blue";   // blue background
+        event.stopPropagation();                    // stop the bubbling
+    })
+
+    // we get the current class (.hide) on the <div> element
+    container.addEventListener('click', function () { 
+        container.classList.add('hide');
+    }) 
+    ```
+    *So what happens is that when we click on the `<button>` the last line of its function is the `event.stopPropagation();` which stops the bubbling.*
+
  ---
 
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `DOM events`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
