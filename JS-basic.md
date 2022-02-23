@@ -6699,7 +6699,7 @@ The `input event` fires as soon as we type something in the `<input>`.
         <button id="changeColor">Change Color</button>
     </div>
     ``` 
-    *We include a CSS class `.hide` which has a `display: none;`. We use this the JS by `classList` property.*   
+    *We include a CSS class `.hide` which has a `display: none;`. We use this with the `classList` property in the JS file.*   
     CSS
     ```
     .hide {
