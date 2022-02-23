@@ -6720,7 +6720,6 @@ The `input event` fires as soon as we type something in the `<input>`.
     })
 
     container.addEventListener('click', function () {     // we get the current class (.hide) on the <div> element
-
         container.classList.add('hide');
     }) 
     ```
