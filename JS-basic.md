@@ -5963,7 +5963,7 @@ creating interactive websites: responding to user events (inputs  and actions), 
 - __[`Event.preventDefault`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#eventpreventdefault-using-a-form)__   
 - __[`input.value`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#inputvalue)__
 - __[`Change Event`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#change-event)__ & __[`Input Event`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#input-event)__ 
-- __[Event Bubbling]()__
+- __[Event Bubbling](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#event-bubbling)__
 
 ---
 
