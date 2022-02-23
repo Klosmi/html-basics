@@ -6715,12 +6715,12 @@ The `input event` fires as soon as we type something in the `<input>`.
     const container = document.querySelector('#container');
 
     button.addEventListener('click', function (event) {
-        container.style.backgroundColor = "blue";   // blue background
-        event.stopPropagation();                    // stop the bubbling
+        container.style.backgroundColor = "blue";         // blue background
+        event.stopPropagation();                          // stop the bubbling
     })
 
-    // we get the current class (.hide) on the <div> element
-    container.addEventListener('click', function () { 
+    container.addEventListener('click', function () {     // we get the current class (.hide) on the <div> element
+
         container.classList.add('hide');
     }) 
     ```
