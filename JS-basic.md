@@ -5963,7 +5963,7 @@ creating interactive websites: responding to user events (inputs  and actions), 
 - __[`Event.preventDefault`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#eventpreventdefault-using-a-form)__   
 - __[`input.value`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#inputvalue)__
 - __[`Change Event`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#change-event)__ & __[`Input Event`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#input-event)__ 
-- __[Event Bubbling](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#event-bubbling)__
+- __[Event Bubbling & `stopPropagation`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#event-bubbling)__
 
 ---
 
@@ -6684,7 +6684,7 @@ The `input event` fires as soon as we type something in the `<input>`.
   ```
   *When we click on the `<button>`, it creates __bubbling__, because `<button>` triggers the `<p>`, and then the `<section>`.* 
   
-- __[`event.stopPropagation`](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation)__: 
+#### __[`event.stopPropagation`](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation)__: 
   a method that stops the bubbling
 
   - syntax: __`event.stopPropagation();`__
