@@ -6583,7 +6583,7 @@ Unlike the input event, the change event is not necessarily fired for each alter
   <h1>Type something below: </h1>
   <input type="text">
   ```
-  JS
+  JS    
   *We type soemthing into the `<input>` __nothing happens__.   We run the code, and it only prints out the "Change event has occured" text when we click away from the input.*
   ```
   // selecting the <input>
