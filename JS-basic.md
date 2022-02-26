@@ -6636,7 +6636,7 @@ The `input event` fires as soon as we type something in the `<input>`.
     <h1>Type something below: </h1>
     <input type="text">
     ```
-    JS
+    JS    
     *We have input in a variable and we update the `<h1>`, whatever the `value` is (`input.value`).*   
     *So whenever the value changes inside of the `<input>` (input event) we take that value (`input.value`) and update the `<h1>` to display it (`innerText`).*
     ```
