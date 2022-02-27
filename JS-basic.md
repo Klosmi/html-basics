@@ -6651,7 +6651,7 @@ The `input event` fires as soon as we type something in the `<input>`.
         h1.innerText = input.value;
     })          
     ```
-    *We type "HELLO" into the `<input>` and the `<h1>` textt becomes "HELLO" as well.*
+    *We type "HELLO" into the `<input>` and the `<h1>` textt becomes "HELLO" as well.*    
      HTML
       ```
       <h1>HELLO</h1>
