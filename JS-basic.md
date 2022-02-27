@@ -1774,7 +1774,7 @@ If outer loop has 3, the inner loop runs 3 times its own full cycle.
 <br>
 
 ## [while loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)   
-  one syntax: __`while`__ and then insode of the parentheses, a __(single condition)__.
+  one syntax: __`while`__ and then inside of the parentheses, a __(single condition)__.
   - while loops contue running as long as the test condition is true.
   - the addition, subtract, multiply, etc. operation are in the loop's body!
   - while loops are preferred __when we don't know how many times we are going to iterate__    
@@ -4162,7 +4162,7 @@ extract values from __objects__.
 
 - __`{}`__ using curlybraces
 
-- the name matters (how we access the value insode of the object)
+- the name matters (how we access the value inside of the object)
 
 - it doesn't change the object
 
@@ -6673,7 +6673,7 @@ The `input event` fires as soon as we type something in the `<input>`.
 
 
 - eg.:    
-  *We have a `<button>` insode of a `<p>` paragpraph, which is inside of a `<section>`. All element have an `onclick` event.*  
+  *We have a `<button>` inside of a `<p>` paragpraph, which is inside of a `<section>`. All element have an `onclick` event.*  
   HTML
   ```
   <section onclick="alert('Section clicked!')">
