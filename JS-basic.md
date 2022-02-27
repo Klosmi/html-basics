@@ -6773,7 +6773,7 @@ form.addEventListener('submit', function(event){
   const item = input.value;                     //←  what's in the <input> we want to save it to a variable
   const newLI = document.createElement("LI");   // ← creating a new empty `<li>`
   newLI.innerText = itemType;                   // ← add the itemType to the empty `<li>` (newLI)
-  list.append(newLI);                           // ← weto append it to the 'const list' (the <ul>) to show on the page
+  list.append(newLI);                           // ← we append <li> to the 'const list' (the <ul>) to show on the page
   input.value = ""                              // reset the input form     
 })
 ```
