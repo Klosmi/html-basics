@@ -6730,3 +6730,77 @@ The `input event` fires as soon as we type something in the `<input>`.
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `DOM events`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
 
 <br>  
+
+## __[Event delegation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_delegation)__
+  It adds the event listeners to the parent elements.
+
+  So instead of attaching the event listeners directly to the child element(s) (eg. a `<button>`), you *delegate* the listening __to the parent element__ (eg. `<div>`).   
+  When a `<button>` is clicked, the listener of the parent element catches the bubbling event.   
+
+  The event delegation is a useful pattern because you can listen for events on multiple elements using one event handler.
+
+- eg.:   
+ *Let's say we can add comments by writing a text into an `<input>`. Every comment gets a new `<li>` elemtnt (that is how we'll see on the page)*   
+ *By clicking them, we want to remove them (using the `element.remove()` method)*      
+ HTML
+```
+<form action="/local" id="localID">
+    <input type="text" id="itemInput" name="itemName">
+    <button>Submit</button>
+</form>
+
+<h2>List of items</h2>
+<ul id="list"></ul>
+```
+JS
+```
+// selecting the <form>
+const form = document.querySelector('#localID');
+
+// selecting the <input>
+const input = document.querySelector('#itemInput');
+
+// selecting the <input> with its ID
+const input = document.querySelector('#itemInput')
+
+// selecting the <ul id="list">
+const list  = document.querySelector('#list');
+
+
+form.addEventListener('submit', function(event){
+  event.preventDefault()  
+  const item = input.value;     //←  what's in the <input> we want to save it to a variable
+  const newLI = document.createElement("LI");   // ← creating a new empty `<li>`
+  newLI.innerText = itemType; // ← add the itemType to the empty `<li>` (newLI)
+  list.append(newLI);         // ← we have to show the 'item' on the page, so we have to append it to the 'const list' (the <ul>) 
+  input.value = ""                                 // reset the input form     
+})
+```
+*EVENT DELEGATION*   
+*By clicking on the `<li>`, which is just created, we can delete that `<li>`. So to do this we select the `<li>`'s parent the `<ul>`.*   
+*Since each `<li>` is under the `<ul>`, we can 'click' on the `<li>` and it will work. But we have to specify which `<li>` are we clicking.*    
+*To tell the borwser which `<li>` we 'click', we have to use the __'target' property__ (part of the __'event' object__)*
+*__The 'target' property shows which `<li>` we are clicking on__*
+```
+// select <ul>
+const list  = document.querySelector('#list'); 
+
+// listening for the 'click' on the <ul>. 
+
+list.addEvenetListener('click', function(event){
+  // we have to make sure that we click on is an <li> type
+  // then we remove that <li> type
+  if(event.target.nodeName === 'LI') {
+  event.target.remove()         // the thing which we clicked on + remove it
+  }
+})
+```
+*💡 the `event.target.nodeName`: the way we can get this is by writing the `console.dir(event.target)`. Then we can see in the console, all the properties of the `<li>` object. Among these properties, we can see the [`nodeName`](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeName).* 
+
+- [useful to read about event delegation](https://dmitripavlutin.com/javascript-event-delegation/)
+
+---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `DOM events`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
+
+<br>  
