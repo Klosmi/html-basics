@@ -6770,11 +6770,11 @@ const list  = document.querySelector('#list');
 
 form.addEventListener('submit', function(event){
   event.preventDefault()  
-  const item = input.value;     //←  what's in the <input> we want to save it to a variable
+  const item = input.value;                     //←  what's in the <input> we want to save it to a variable
   const newLI = document.createElement("LI");   // ← creating a new empty `<li>`
-  newLI.innerText = itemType; // ← add the itemType to the empty `<li>` (newLI)
-  list.append(newLI);         // ← we have to show the 'item' on the page, so we have to append it to the 'const list' (the <ul>) 
-  input.value = ""                                 // reset the input form     
+  newLI.innerText = itemType;                   // ← add the itemType to the empty `<li>` (newLI)
+  list.append(newLI);                           // ← weto append it to the 'const list' (the <ul>) to show on the page
+  input.value = ""                              // reset the input form     
 })
 ```
 *EVENT DELEGATION*   
