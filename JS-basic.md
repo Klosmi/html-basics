@@ -6779,7 +6779,7 @@ form.addEventListener('submit', function(event){
 ```
 *EVENT DELEGATION*   
 *By clicking on the `<li>`, which is just created, we can delete that `<li>`. So to do this we select the `<li>`'s parent the `<ul>`.*   
-*Since each `<li>` is under the `<ul>`, we can 'click' on the `<li>` and it will work. But we have to specify which `<li>` are we clicking.*    
+*Since each `<li>` is under the `<ul>`, we can 'click' on the `<li>` and it will work. But we have to specify which `<li>` we are clicking on.*    
 *To tell the borwser which `<li>` we 'click', we have to use the __'target' property__ (part of the __'event' object__)*
 *__The 'target' property shows which `<li>` we are clicking on__*
 ```
