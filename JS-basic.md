@@ -6617,7 +6617,7 @@ The `input event` fires as soon as we type something in the `<input>`.
   <h1>Type something below: </h1>
   <input type="text">
   ```
-  JS
+  JS    
   *We type soemthing into the `<input>` and it fires the event, it prints out the "Input event event has occured".*
   ```
   // selecting the <input>
