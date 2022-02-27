@@ -5964,6 +5964,7 @@ creating interactive websites: responding to user events (inputs  and actions), 
 - __[`input.value`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#inputvalue)__
 - __[`Change Event`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#change-event)__ & __[`Input Event`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#input-event)__ 
 - __[Event Bubbling & `stopPropagation`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#event-bubbling)__
+- __[Event Delegation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#event-delegation)__
 
 ---
 
