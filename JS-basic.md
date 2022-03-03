@@ -6597,7 +6597,10 @@ Unlike the input event, the change event is not necessarily fired for each alter
   ```
   *Changing the `<input>` means changing the value (what we type in into the `<input>`). __Change event__ only runs when we blur out (not when we type in the `<input>`).*
 
-  💡 So thinking of it whatever you leave in that `<input>`, and it is __different__ than it was when you entered the `<input>`. So not whatever you see changing in that `<input>`.
+  💡 So thinking of it whatever you leave in that `<input>`, and it is __different__ than it was when you entered the `<input>`. So not whatever you see changing in that `<input>`. 
+  
+  💡 The `change` event is very useful when we use a [`<select>`]() (HTML Select element).
+  
 
 ---
 
