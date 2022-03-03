@@ -841,7 +841,7 @@ A truthy value is a value that is considered true when encountered in a Boolean 
 
 - eg.:   
   Truthy   
-  since everything is truythy excpe twhen falsy, when you write something to the input, is going to be true.
+  since everything is truthy except when falsy, when you write something to the input, is going to be true.
   ```
   const userInput = prompt("Enter smthing");
 
