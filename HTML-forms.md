@@ -27,7 +27,7 @@
 
 &nbsp;
 ## The (form) `input elements`:
-- **[`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)** :
+#### **[`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)** :
   - is used to create a variety of different form controls.
   - there are 20+ possible types of inputs (like date pickers, color picker, password input, text input, checkboxes, etc.)
   - [`<input>` attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes):
@@ -44,7 +44,7 @@
  
  &nbsp;
 
-- **[`<label>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)** : represents a caption for an item in a user interface. 
+#### **[`<label>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)** : represents a caption for an item in a user interface. 
   - really important in terms of **accessibility**!!! The label element **associates** a direct connection between some `input` or some `form control` and a `text`. The screen reader also reads out when the user is focused on the form input.
 
   - To associate the `<label>` with an `<input>` element, you need to give the `<input>` an `id` attribute. The `<label>` needs a `for` attribute whose value is the same as the input's `id`.
@@ -77,7 +77,7 @@
               ![](label-username.png)                                                                  
  &nbsp;
 
-- **[`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)**  
+#### **[`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)**  
 A `<button>` represents a clickable button, used to submit forms or anywhere in a document for accessible, standard button functionality.   
 Also, `<button>` not necesseraly has to be inside of a form (eg. a "sign up" button, links).     
 *(However, if it is inside the `<form>`, as `<button>Submit me!</button>` or `<button type="submit">Submit me!</button>`, it automaitcally submits the form.      
@@ -118,7 +118,7 @@ But if you want a button which does not submit the form - but it is inside the f
            *`username = Joe`, so that is the name that will be used to send the data to the server, it is a __pair: name ➕ value__.  (value is what you write in the input)*  
            ![](nameattribute.png)
                                                                       
-- [**checkbox**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox) : `<input type="checkbox">`   
+#### [**checkbox**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox) : `<input type="checkbox">`   
   A check box allowing single values to be selected/deselected.	
     - you can specify if the checkbox is `checked` or  not.   
       eg.:
@@ -150,7 +150,7 @@ But if you want a button which does not submit the form - but it is inside the f
        ```                                                                                                      
        ![](radiobuttons-01.png)
                                                             
-- **[`<select>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)** : 
+#### **[`<select>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)** : 
     ```
       <select name="pets" id="pet-select">
         <option value="">--Please choose an option--</option>
@@ -176,7 +176,7 @@ But if you want a button which does not submit the form - but it is inside the f
 <u>[many other `<input>` elements can be found here.](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
 So here's a little selection, which might be useful: </u>
 
-- [**range**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range) : `<input type="range">`   
+#### [**range**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range) : `<input type="range">`   
   - we can control the "min" and "max" values (eg. `min="0" max="100"`)   
    eg.: *the starting value is value="25". Range is between 0 and 100. It goes up by 2.*                                                                 
     ```
@@ -198,7 +198,7 @@ So here's a little selection, which might be useful: </u>
    ```                                                                                          
   ![](number.png)
                                                                                               
-- [**textarea**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea) : `<textarea id="story" name="story" rows="1" cols="40"> This is a textarea...
+#### [**textarea**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea) : `<textarea id="story" name="story" rows="1" cols="40"> This is a textarea...
 </textarea>` 
   - It is a multiline text input. (You can type a paragraph)
   - **❗️It is NOT an input element❗️** *(there is not `<input>`)*   
@@ -219,14 +219,14 @@ So here's a little selection, which might be useful: </u>
   - server side validation *(after the submit button the server verifies if the data meets the expectations)*
 
   ## Basics of the built in validations
-  - [required](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/required) 👉  HTML attribute  
+  #### [required](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/required) 👉  HTML attribute  
     Adding the `required` attribute to any input will indicate that the user must specify a value for the input before the owning form can be submitted.
 
     - we can specify the length of an `<input type=text>` with `minlength="4"` and `maxlength="30"` (+ add `required`).
 
     - for numeric values length specification use `min` and `max`
 
-  - [pattern](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/pattern) 👉 HTML attribute  
+  #### [pattern](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/pattern) 👉 HTML attribute  
   The pattern attribute specifies a regular expression __([regex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet))__ the form control's value should match.    
     eg.:`^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,63}$`
     - we can use already built in pattern matching:      
