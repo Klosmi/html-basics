@@ -120,8 +120,8 @@ But if you want a button which does not submit the form - but it is inside the f
                                                                       
 #### [**checkbox**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox) : `<input type="checkbox">`   
   A check box allowing single values to be selected/deselected.	
-    - you can specify if the checkbox is `checked` or  not.   
-      eg.:
+    - you can specify if the checkbox is `checked` or  not.      
+      eg.:   
         ```
         <form action="/anything">
           <input type="checkbox" name="agree_conditions" id="agree" checked>
