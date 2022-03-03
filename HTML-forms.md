@@ -52,7 +52,7 @@
 
 - Alternatively, you can nest the `<input>` directly inside the `<label>`, in which case the <u>**for**</u> and id attributes are not needed because the association is implicit.
 
-- <u>**`<label>` attributes**</u>:
+- <u>__`<label>` attributes__</u>:
     - [**`for`**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label#attr-for) : basically it answers the question of what the `<label>` is for?  
     - The first element in the document with an `id` matching the value of the `for` attribute, that is the labeled control for this label element.  
     - __If you nest the `<input>` inside of the label, you don't need to use the `for` attribute (and the `id`)❗️__ However it is a less common standard (styling is less easy).   
@@ -66,16 +66,16 @@
 
 <br>
                                                                   
-- **`id`** : <u>**is in the `<input>`!!!**</u> the value (what name we give to the *id*) should be the same of the **for** attribute's value. So we set the *id*'s value to the *for*'s value.💡 
-                                                                
-      - eg.: the `label`'s `for="username"` need to match with the `input`'s `id="username"`.
-        ```
-        <form action="/whatever">
-          <label for="username">Enter a username:</label>
-          <input id="username" type="text" placeholder="Type your username">
-        </form>
-        ```
-        ![](label-username.png)                                                                  
+  - **`id`** : <u>**is in the `<input>`!!!**</u> the value (what name we give to the *id*) should be the same of the **for** attribute's value. So we set the *id*'s value to the *for*'s value.💡 
+
+        - eg.: the `label`'s `for="username"` need to match with the `input`'s `id="username"`.
+          ```
+          <form action="/whatever">
+            <label for="username">Enter a username:</label>
+            <input id="username" type="text" placeholder="Type your username">
+          </form>
+          ```
+          ![](label-username.png)                                                                  
 
 <br>
 
