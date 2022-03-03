@@ -63,19 +63,17 @@
               <input type="number" placeholder="Enter a number!">               
             </label>
             ```
+                                                                
+    - **`id`** : <u>**is in the `<input>`!!!**</u> the value (what name we give to the *id*) should be the same of the **for** attribute's value. So we set the *id*'s value to the *for*'s value.💡 
 
-<br>
-                                                                  
-  - **`id`** : <u>**is in the `<input>`!!!**</u> the value (what name we give to the *id*) should be the same of the **for** attribute's value. So we set the *id*'s value to the *for*'s value.💡 
-
-        - eg.: the `label`'s `for="username"` need to match with the `input`'s `id="username"`.
-          ```
-          <form action="/whatever">
-            <label for="username">Enter a username:</label>
-            <input id="username" type="text" placeholder="Type your username">
-          </form>
-          ```
-          ![](label-username.png)                                                                  
+          - eg.: the `label`'s `for="username"` need to match with the `input`'s `id="username"`.
+            ```
+            <form action="/whatever">
+              <label for="username">Enter a username:</label>
+              <input id="username" type="text" placeholder="Type your username">
+            </form>
+            ```
+            ![](label-username.png)                                                                  
 
 <br>
 
