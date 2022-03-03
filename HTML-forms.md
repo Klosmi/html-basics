@@ -25,7 +25,8 @@
           </form>                                  
         ```
 
-&nbsp;
+<br>
+  
 ## The (form) `input elements`:
 #### **[`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)** :
   - is used to create a variety of different form controls.
@@ -42,7 +43,7 @@
         ```   
         ![](input.png)                     
  
- &nbsp;
+<br>
 
 #### **[`<label>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)** : represents a caption for an item in a user interface. 
   - really important in terms of **accessibility**!!! The label element **associates** a direct connection between some `input` or some `form control` and a `text`. The screen reader also reads out when the user is focused on the form input.
@@ -63,7 +64,7 @@
               </label>
               ```
 
-        <br>
+<br>
                                                                   
         - **`id`** : <u>**is in the `<input>`!!!**</u> the value (what name we give to the *id*) should be the same of the **for** attribute's value. So we set the *id*'s value to the *for*'s value.💡 
                                                                 
@@ -75,7 +76,8 @@
               </form>
               ```
               ![](label-username.png)                                                                  
- &nbsp;
+
+<br>
 
 #### **[`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)**  
 A `<button>` represents a clickable button, used to submit forms or anywhere in a document for accessible, standard button functionality.   
@@ -130,7 +132,7 @@ But if you want a button which does not submit the form - but it is inside the f
         ```  
         ![](checkbox-01.png)                    
 
-- [**radiobutton**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio) : `<input type="radio">`   
+#### [**radiobutton**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio) : `<input type="radio">`   
   The `radiobutton` allowing only one single value to be selected out of multiple choices with the same `name` value.  
   In  a group of `radiobuttons` you can only select one (so they are connected).
     - They are associated by the **same `name`**, so they are pointing to the same thing.
@@ -171,6 +173,7 @@ But if you want a button which does not submit the form - but it is inside the f
     - it can be preselected with the attribute `selected`.
                                                                                                                                                       
     - you can [change the default appearance](https://www.youtube.com/watch?v=bB14uo0Tu5A) with CSS like in this video
+
 <br>
                                                                                                                                                       
 <u>[many other `<input>` elements can be found here.](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
@@ -188,7 +191,7 @@ So here's a little selection, which might be useful: </u>
     ![](range-01.png)
                                                                                           
 
-- [**number**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number) : <input type="number" min="10" max="1000"  placeholder="num">  elements of type number are used to let the user enter a number.   
+#### [**number**](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number) : <input type="number" min="10" max="1000"  placeholder="num">  elements of type number are used to let the user enter a number.   
   eg.:
    ```
      <form action="/anything"> 
@@ -208,7 +211,8 @@ So here's a little selection, which might be useful: </u>
     <textarea id="request" cols="30" rows="10" name="requests" placeholder="Write something here."></textarea>                                                                                                         
     ```
     ![](textarea.png)                                                                                              
- &nbsp;
+
+<br>                                                                                                  <br>
 
   ---
   # [FORM Validations](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation#what_is_form_validation)
