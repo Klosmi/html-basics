@@ -6808,3 +6808,96 @@ list.addEvenetListener('click', function(event){
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `DOM events`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
 
 <br>  
+
+
+# [Asynchronous JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing)    
+Synchronous JS:   
+JS is a single-threaded programming language which means __only one thing can happen at a time.__ That is, the JS engine can only process one statement at a time in a __single thread__.   
+That is why we can’t perform long operations (such as network access) without blocking the main thread.
+
+__[Asynchronous JS](https://blog.bitsrc.io/understanding-asynchronous-javascript-the-event-loop-74cd408419ff):__   
+using asynchronous JavaScript (such as callbacks, promises, and async/await), we can perform long network requests __without blocking the main thread__.
+
+
+## __[Call Stack](https://developer.mozilla.org/en-US/docs/Glossary/Call_stack)__   
+Is a mechanism for JS interpreter (in a browser) to keep track of its place (to know where it is) in a script that calls multiple functions.
+
+So, this is how JavaScript knows where it is (like a bookmarker): what function is currently being run and what functions are called from within that function, etc.
+
+__Stack__:  
+ is a basic data structure in computer science.
+
+ LIFO: last in, first out    
+ *(the last thing we added to the top, and that's the first thing that we remove)*
+ 
+ <br>
+
+ __How the call stack works?__   
+ 1. When a script calls a function, the interpreter adds it to the call stack and then starts doing (carrying out) the function.
+
+ 2. Any functions that are called by that function are also added to the call stack further up, and run where their calls are reached.
+
+ 3. When the current function is finished, then the interpreter takes it off the stack and it continues the execution where it left off in the last code listing.
+
+- eg.:   
+  *We have a function that call another function.*   
+  *`function isRightTriangle(a,b,c)` can't give us an answer, it has to call `function square(x)`, and this has to call the `function multiply(x,y)`*  
+  *Then `function multiply(x,y)` gives a value and removes from the stack, the value goes to `function square(x)` then the function removed from the stack, and fially the velue 9 goes to `isRightTriangle(9,b,c)`.*   
+  *And it starts againn.*
+  ```
+  function multiply(x,y) {            // ← 1. x=3 * y=3 | 2. x=4 * y=4 | 3. x=5 * y=5
+      return x * y;
+  }
+
+  function square(x) {                // first its x=3 | x=4 | x=5
+                                      // ←then 1. returns the value from the multiply(x, y) x=9 | 2. x=16 | 3. x=25
+      return multiply(x,x);
+  }
+
+  function isRightTriangle(a,b,c) {     // 9 , 16 , 25   
+      return square(a) + square(b) === square(c);
+  }
+
+  isRightTriangle(3,4,5)
+
+  // true   // because 9 + 16 = 25  ← square(3) + square(4) === square(5)
+  ```
+  *So how does the stack works?*    
+  1. `isRightTriangle(3,4,5)`    
+     `square(a) + square(b) === square(c);`  
+     *the __1st__ thing that has to be evaluated is __`square(a)`__, which is `sqaure(3)`. That's added onto the __call stack__.*
+  2. *call stack:*    
+   `sqaure(3)`   
+   `multiply(3,3)`    
+   *This then calls `multiply(x,y)` (where x = 3  and y = 3).*   
+  3. `multiply(3,3)`   
+     `3  * 3`   
+    *__Returns: `9`__, and there is no new function call, __so it is removed from the call stack.__*   
+    *So now, it goes back:*   
+  1. `square(a)` has a value `9` (not `3` anymore)
+      *so `square()` is able to return `9` as well.*   
+      *It is removed from the call stack.*         
+  2. `isRightTriangle(9,b,c)`    
+     `square(9) + square(b) === square(c);`      
+  *Then it moves on, to `square(b)` and then `square(c)`.*   
+  *Then finally it can do the math `square(9) + square(16) === square(25);`*
+
+
+  __JavaScript adds the function calls to the call stack and then it removes them whenever a value is returned.__
+
+  (check it out [here](http://latentflip.com/loupe/?code=ZnVuY3Rpb24gbXVsdGlwbHkoeCx5KSB7CiAgICBjb25zb2xlLmxvZyhgZmlyc3Q6ICR7eCAqIHl9YCk7CiAgICByZXR1cm4geCAqIHk7CiAgICAKfQoKZnVuY3Rpb24gc3F1YXJlKHgpIHsKICAgIGNvbnNvbGUubG9nKGBzZWNvbmQ6ICR7bXVsdGlwbHkoeCx4KX1gKTsKICAgIHJldHVybiBtdWx0aXBseSh4LHgpOwp9CgpmdW5jdGlvbiBpc1JpZ2h0VHJpYW5nbGUoYSxiLGMpewogICAgY29uc29sZS5sb2coYHRoaXJkOiAke3NxdWFyZShhKSArIHNxdWFyZShiKSA9PT0gc3F1YXJlKGMpfWApOwogICAgcmV0dXJuIHNxdWFyZShhKSArIHNxdWFyZShiKSA9PT0gc3F1YXJlKGMpOwp9Cgppc1JpZ2h0VHJpYW5nbGUoMyw0LDUp!!!))
+    
+ <br> 
+
+   💡 How to use the DEBUG?    
+   When we have call our index.html which has our app.js file, we can use Chrome's Dev Tool to debug it.    
+   Open the Dev tool and open the __Sources__ panel, and there on *Pages*, and select the app.js.     
+   Here we can click on the line number, which adds a Breakpoint. The breakpoint stops our code at that line where we clicked.   
+   Now line by line we can go throught the code.
+
+
+---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+  
+<br>
