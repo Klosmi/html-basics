@@ -48,7 +48,7 @@
 19. [JS: DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)   
 20. [JS: Attributes & Properties](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties)   
 21. [JS: DOM events](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
-22. [JS: Asynchronous JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing)
+22. [JS: Asynchronous JavaScript](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
 
 
 <br>
