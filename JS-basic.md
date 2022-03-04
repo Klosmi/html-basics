@@ -6888,8 +6888,8 @@ __Stack__:
     
  <br> 
 
-   💡 How to use the [DEBUG](https://developer.chrome.com/docs/devtools/javascript/#sources-ui)?    
-   Use Chrome's Dev Tool to debuug. Open the Dev tool and open the __Sources__ panel, and there on *Pages*, and select the page (here app.js) we want to debug.        
+   💡 How to __[debug](https://developer.chrome.com/docs/devtools/javascript/#sources-ui)__?    
+   Use Chrome's Dev Tool to debug. Open the Dev tool and open the __Sources__ panel, and there on *Pages*, and select the page (here app.js) we want to debug.        
    Here we can click on the code's line number (on the left), which adds a Breakpoint. This breakpoint stops our code at that line where we clicked.   
    Now line by line we can go throught the code, and read the `code` and the `breakpoint` (on the right panel).
 
