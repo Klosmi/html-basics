@@ -6849,9 +6849,8 @@ __Stack__:
       return x * y;
   }
 
-  function square(x) {                // first its x=3 | x=4 | x=5
-                                      // ←then 1. returns the value from the multiply(x, y) x=9 | 2. x=16 | 3. x=25
-      return multiply(x,x);
+  function square(x) {                // first its x=3 | x=4 | x=5                  /
+      return multiply(x,x);           // ← then 1. returns the value from the multiply(x, y) x=9 | 2. x=16 | 3. x=25
   }
 
   function isRightTriangle(a,b,c) {     // 9 , 16 , 25   
@@ -6867,16 +6866,16 @@ __Stack__:
      `square(a) + square(b) === square(c);`  
      *the __1st__ thing that has to be evaluated is __`square(a)`__, which is `sqaure(3)`. That's added onto the __call stack__.*
   2. *call stack:*    
-   `sqaure(3)`   
-   `multiply(3,3)`    
+   `sqaure(x)`   
+   `return multiply(x,x);`, *where x = 3*.      
    *This then calls `multiply(x,y)` (where x = 3  and y = 3).*   
   3. `multiply(3,3)`   
      `3  * 3`   
-    *__Returns: `9`__, and there is no new function call, __so it is removed from the call stack.__*   
-    *So now, it goes back:*   
+    *__Returns: `9`__, and there is no new function call, __so `multiply(3,3)` is removed from the call stack.__*   
+    *So now, it goes back with the `a`'s value `9`:*   
   1. `square(a)` has a value `9` (not `3` anymore)
-      *so `square()` is able to return `9` as well.*   
-      *It is removed from the call stack.*         
+      *so `square(a)` is able to return `9` as well.*   
+      *`square(9)` is removed from the call stack.*         
   2. `isRightTriangle(9,b,c)`    
      `square(9) + square(b) === square(c);`      
   *Then it moves on, to `square(b)` and then `square(c)`.*   
