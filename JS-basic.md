@@ -6862,7 +6862,7 @@ __Stack__:
 
   // true   // because 9 + 16 = 25  ← square(3) + square(4) === square(5)
   ```
-  *So how does the stack works?*    
+  *So how does the stack work?*    
   1. `isRightTriangle(3,4,5)`    
      `square(a) + square(b) === square(c);`  
      *the __1st__ thing that has to be evaluated is __`square(a)`__, which is `sqaure(3)`. That's added onto the __call stack__.*
