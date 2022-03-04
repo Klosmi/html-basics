@@ -6888,11 +6888,10 @@ __Stack__:
     
  <br> 
 
-   💡 How to use the DEBUG?    
-   When we have call our index.html which has our app.js file, we can use Chrome's Dev Tool to debug it.    
-   Open the Dev tool and open the __Sources__ panel, and there on *Pages*, and select the app.js.     
-   Here we can click on the line number, which adds a Breakpoint. The breakpoint stops our code at that line where we clicked.   
-   Now line by line we can go throught the code.
+   💡 How to use the [DEBUG](https://developer.chrome.com/docs/devtools/javascript/#sources-ui)?    
+   Use Chrome's Dev Tool to debuug. Open the Dev tool and open the __Sources__ panel, and there on *Pages*, and select the page (here app.js) we want to debug.        
+   Here we can click on the code's line number (on the left), which adds a Breakpoint. This breakpoint stops our code at that line where we clicked.   
+   Now line by line we can go throught the code, and read the `code` and the `breakpoint` (on the right panel).
 
 
 ---
