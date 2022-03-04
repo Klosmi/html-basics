@@ -6842,7 +6842,7 @@ __Stack__:
 - eg.:   
   *We have a function that call another function.*   
   *`function isRightTriangle(a,b,c)` can't give us an answer, it has to call `function square(x)`, and this has to call the `function multiply(x,y)`*  
-  *Then `function multiply(x,y)` gives a value and removes from the stack, the value goes to `function square(x)` then the function removed from the stack, and finally the velue 9 goes to `isRightTriangle(9,b,c)`.*   
+  *Then `function multiply(x,y)` gives a value and this function get removed from the stack, the value goes to `function square(x)` then the function removed from the stack, and finally the velue 9 goes to `isRightTriangle(9,b,c)`.*   
   *And it starts againn.*
   ```
   function multiply(x,y) {            // ← 1. x=3 * y=3 | 2. x=4 * y=4 | 3. x=5 * y=5
