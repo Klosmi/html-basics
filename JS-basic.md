@@ -6847,7 +6847,7 @@ The stack is processed from top to bottom.
    *We are calling the `second()` (on line 10.). It call the `function second()` on lin 6 but it doesn't return right away, it has to call `function first()` on line 1, it returns the string "First" on line 2.*    
    *The stack is the following:*    
    *Starts at line 9, then line 6 (the return) then line 2. Line 2 returns so it is popped of because the top value of the stack is removed. Then it goes back at line 6, we return the string and then its popped of and then we are at line 10.*. 
-   *__the last thingwhic is added to the top__ (`function first()`) __is the first thing to come off__ → FIFO*
+   *__the last thingwhic is added to the top__ (`function first()`) __is the first thing to come off__ → LIFO*
    ```
    1. function first() {
    2.   return "First"
