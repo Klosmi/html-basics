@@ -6834,11 +6834,32 @@ __Stack__:
  <br>
 
  __How the call stack works?__   
- 1. When a script calls a function, the interpreter adds it to the call stack and then starts doing (carrying out) the function.
+ 1. When a script calls a function (invoke a function), the interpreter adds it to the call stack and then starts doing (carrying out) the function.
 
  2. Any functions that are called by that function are also added to the call stack further up, and run where their calls are reached.
 
- 3. When the current function is finished, then the interpreter takes it off the stack and it continues the execution where it left off in the last code listing.
+ 3. When the current function is returned, the interpreter takes it off the stack and it continues the execution where it left off in the last code listing.
+
+So the most recently invoked function is on the top of the stack.   
+The bottom of the stack is the is the first function invoked.   
+The stack is processed from top to bottom.   
+ - eg.:   
+   *We are calling the `second()` (on line 10.). It call the `function second()` on lin 6 but it doesn't return right away, it has to call `function first()` on line 1, it returns the string "First" on line 2.*    
+   *The stack is the following:*    
+   *Starts at line 9, then line 6 (the return) then line 2. Line 2 returns so it is popped of because the top value of the stack is removed. Then it goes back at line 6, we return the string and then its popped of and then we are at line 10.*. 
+   *__the last thingwhic is added to the top__ (`function first()`) __is the first thing to come off__ → FIFO*
+   ```
+   1. function first() {
+   2.   return "First"
+   3.  }
+   4.
+   5.  function second() {
+   6.   return first() + "Second!";
+   7.  }
+   8.
+   10.  second();
+   11.  // "First Second!"
+   ```
 
 - eg.:   
   *We have a function that call another function.*   
