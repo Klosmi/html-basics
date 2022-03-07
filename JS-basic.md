@@ -6844,10 +6844,10 @@ So the most recently invoked function is on the top of the stack.
 The bottom of the stack is the is the first function invoked.   
 The stack is processed from top to bottom.   
  - eg.:   
-   *We are calling the `second()` (on line 10.). It call the `function second()` on lin 6 but it doesn't return right away, it has to call `function first()` on line 1, it returns the string "First" on line 2.*    
+   *We are calling the `second()` (on line 10.). It calls the `function second()` on lin 6 but it doesn't return right away, it has to call `function first()` on line 1, it returns the string "First" on line 2.*    
    *The stack is the following:*    
-   *Starts at line 9, then line 6 (the return) then line 2. Line 2 returns so it is popped of because the top value of the stack is removed. Then it goes back at line 6, we return the string and then its popped of and then we are at line 10.*. 
-   *__the last thingwhic is added to the top__ (`function first()`) __is the first thing to come off__ → LIFO*
+   *Starts at line 9, then line 6 (the return) then line 2. Line 2 returns so it's popped of because the top value of the stack is removed. Then it goes back at line 6, we return the string and then it's popped of and then we are at line 10.*. 
+   *__the last thing which is added to the top__ (`function first()`) __is the first thing to come off__ → LIFO*
    ```
    1. function first() {
    2.   return "First"
