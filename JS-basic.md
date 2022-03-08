@@ -6935,7 +6935,7 @@ The stack is processed from top to bottom.
 ## __[Single Threaded](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Concepts#javascript_is_single-threaded )__
 A [thread](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Concepts#threads) is basically a single process that a program can use to complete tasks. Each thread can only do a single task at once❗️
 
-Single thread means that there is one thing (one line of code) in JavaScript that can run on a process at any given point. It cannot de multitasking, doing things simultaneously.
+Single thread means that there is one thing (one line of code) in JavaScript that can run on a process at any given point. It cannot do multitasking, doing things simultaneously.
 
 
 Even though JavaScript can only run 1 line at a time, that could slow down things → bad user experiences.
