@@ -6822,6 +6822,11 @@ using asynchronous JavaScript (such as callbacks, promises, and async/await), we
 - __[Single Threaded ](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#single-threaded)__
 - __[Web API](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#web-api)__
 
+---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+  
+<br>
 
 ## __[Call Stack](https://developer.mozilla.org/en-US/docs/Glossary/Call_stack)__   
 is a mechanism for JS interpreter (in a browser) to keep track of its place (to know where it is) in a script that calls multiple functions.
@@ -6922,7 +6927,7 @@ The stack is processed from top to bottom.
 
 ---
 
-  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go up to Asynchronous JS](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
   
 <br>
 
@@ -6963,7 +6968,7 @@ But there are ways around this issue:
 
 ---
 
-  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go up to Asynchronous JS](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
   
 <br>
 
@@ -6997,6 +7002,6 @@ web APIs are generally methods that we can call from JS and they are handed off 
 
 ---
 
-  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go up to Asynchronous JS](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
   
 <br>
