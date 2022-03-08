@@ -6818,9 +6818,9 @@ That is why we can’t perform long operations (such as network access) without 
 __[Asynchronous JS](https://blog.bitsrc.io/understanding-asynchronous-javascript-the-event-loop-74cd408419ff):__   
 using asynchronous JavaScript (such as callbacks, promises, and async/await), we can perform long network requests __without blocking the main thread__.
 
-- __[Call Stack]()__
-- __[Single Threaded ]()__
-- __[Web API]()__
+- __[Call Stack](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#call-stack)__
+- __[Single Threaded ](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#single-threaded)__
+- __[Web API](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#web-api)__
 
 
 ## __[Call Stack](https://developer.mozilla.org/en-US/docs/Glossary/Call_stack)__   
@@ -6927,7 +6927,7 @@ The stack is processed from top to bottom.
 <br>
 
 
-## __[Single Threaded ](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Concepts#javascript_is_single-threaded )__
+## __[Single Threaded](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Concepts#javascript_is_single-threaded )__
 A [thread](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Concepts#threads) is basically a single process that a program can use to complete tasks. Each thread can only do a single task at once❗️
 
 Single thread means that there is one thing (one line of code) in JavaScript that can run on a process at any given point. It cannot de multitasking, doing things simultaneously.
