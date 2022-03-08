@@ -6818,6 +6818,10 @@ That is why we can’t perform long operations (such as network access) without 
 __[Asynchronous JS](https://blog.bitsrc.io/understanding-asynchronous-javascript-the-event-loop-74cd408419ff):__   
 using asynchronous JavaScript (such as callbacks, promises, and async/await), we can perform long network requests __without blocking the main thread__.
 
+- __[Call Stack]()__
+- __[Single Threaded ]()__
+- __[Web API]()__
+
 
 ## __[Call Stack](https://developer.mozilla.org/en-US/docs/Glossary/Call_stack)__   
 is a mechanism for JS interpreter (in a browser) to keep track of its place (to know where it is) in a script that calls multiple functions.
@@ -6914,6 +6918,81 @@ The stack is processed from top to bottom.
    Use Chrome's Dev Tool to debug. Open the Dev tool and open the __Sources__ panel, and there on *Pages*, and select the page (here app.js) we want to debug.        
    Here we can click on the code's line number (on the left), which adds a Breakpoint. This breakpoint stops our code at that line where we clicked.   
    Now line by line we can go throught the code, and read the `code` and the `breakpoint` (on the right panel).
+
+
+---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+  
+<br>
+
+
+## __[Single Threaded ](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Concepts#javascript_is_single-threaded )__
+A [thread](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Concepts#threads) is basically a single process that a program can use to complete tasks. Each thread can only do a single task at once❗️
+
+Single thread means that there is one thing (one line of code) in JavaScript that can run on a process at any given point. It cannot de multitasking, doing things simultaneously.
+
+
+Even though JavaScript can only run 1 line at a time, that could slow down things → bad user experiences.
+But there are ways around this issue:   
+
+- __[`setTimeout()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#settimeout)__ : running a code after a delay
+  - eg.:   
+    *How that code works if JS is singlethreaded?*   
+    *The execution of the lines should run from the first line to the last. But here the (`setTimeout()`) prints out the last. Because JS hands over this task to the browser. That is a web API function*  
+    ```
+    console.log("I am the first line")
+
+    setTimeout(function() {
+      console.log("I am the second line")
+    }, 3000)
+
+    console.log("I am the third line")
+
+    // I am the first line
+    // I am the third line
+    // I am the second line
+    ```
+    *The browser is doing the work. Browsers are not written in JS, so they can do certain tasks that JS can't. That is how eg. `setTimeout()` is printed on the last line.*
+
+    <br>
+
+- Browseres come with Web APIs that are able to handle certain tasks in the background (like making request or `setTimeout`)
+- The JS call stack recognizes these Web API functions and passes the off to the browser to take care of
+- Once the browser finishes those taks, they return and are pushed onto the stack as a callback.
+
+---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+  
+<br>
+
+## __[Web API](https://developer.mozilla.org/en-US/docs/Web/API)__
+web APIs are generally methods that we can call from JS and they are handed off to the browser.   
+*(eg.: `setTimeout()`, JS can't do t, the browser does it.)*
+
+- eg.:   
+  *JS pass `setTimeout()` off to the Web APIs, to the browser. Because it is a web API function*    
+  *After the 3 seconds, the JS goes back and runs the next thing the 2nd line which is (`console.log("3rd")`).*   
+  *After 3 seconds, `setTimeout()` is printed out.*
+    ```
+    console.log("1st")
+
+    setTimeout(function() {
+      console.log("2nd")
+    }, 3000)
+
+    console.log("3rd")
+
+    // 1st
+    // 3rd
+    // 2nd
+    ```
+  The concept of the callback: passing a function in that is not executed right away, but executed later.
+
+<br>
+
+  💡 The `setTimeout()` adds to the call stack immediately, the callback passed to the `setTimeout()` will be added after the delay.
 
 
 ---
