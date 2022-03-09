@@ -6997,8 +6997,8 @@ web APIs are generally methods that we can call from JS and they are handed off 
 
 <br>
 
-  💡 The `setTimeout()` adds to the call stack immediately, the callback passed to the `setTimeout()` will be added after the delay.
-
+  💡 The `setTimeout()` adds to the call stack immediately, the callback passed to the `setTimeout()` will be added after the delay.     
+  💡 More about the [__`setTimeout`__ in relation with the __Call Stack__](https://www.javascripttutorial.net/javascript-bom/javascript-settimeout/)
 
 ---
 
