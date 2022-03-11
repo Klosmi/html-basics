@@ -7074,6 +7074,8 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
 
     *It can get ugly, when we want to do something when it works or not, so we start nesting other callbacks.*
 
+<br>
+
     *Here we have a `requestCallback` function with 3 properties. First is a `URL` request (hellowebsite.com), the other 2 are callbacks, 1 for `succes` and 1 for `failure`.* 
     *In case of `hellowebsite.com/page1`, we need to nest another function for `hellowebsite.com/page2`, if 'page2' works or not, and for `page3`, and so on.*
 
@@ -7113,6 +7115,9 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
     // Here is your URL: hellowebsite.com/page1
     // Connection timeout
     ```
+ 
+ That is when promise comes in.
+    __[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)__
 
 ---
 
