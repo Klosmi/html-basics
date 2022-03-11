@@ -6821,6 +6821,8 @@ using asynchronous JavaScript (such as callbacks, promises, and async/await), we
 - __[Call Stack](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#call-stack)__
 - __[Single Threaded ](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#single-threaded)__
 - __[Web API](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#web-api)__
+- __[Callback hell]()__
+- __[Promise]()__
 
 ---
 
@@ -6999,6 +7001,69 @@ web APIs are generally methods that we can call from JS and they are handed off 
 
   💡 The `setTimeout()` adds to the call stack immediately, the callback passed to the `setTimeout()` will be added after the delay.     
   💡 More about the [__`setTimeout`__ in relation with the __Call Stack__](https://www.javascripttutorial.net/javascript-bom/javascript-settimeout/)
+
+---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go up to Asynchronous JS](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
+  
+<br>
+
+
+## __[Callback hell](https://www.geeksforgeeks.org/what-is-callback-hell-in-node-js/)__  
+Because we have to call callbacks inside callbacks, we get a deeply nested functions, which is much harder to read and debug. This is sometimes called "callback hell" or the "pyramid of doom" (because the indentation looks like a pyramid on its side).
+  - eg.:   
+    *We have a `setTimeout`, which after 2 sec changes the background to red. In that `setTimeout` we have another `setTimeout` which after 2 sec changes the background to orange. In that `setTimeout` we have another which after 2 sec changes the background to yellow, and another `setTimeout` which after 2 sec changes the background to green, etc.*
+    ```
+    setTimeout( () => {
+      document.body.style.backgroundColor = 'red';
+        setTimeout( () => {
+          document.body.style.backgroundColor = 'orange';
+            setTimeout( () => {
+              document.body.style.backgroundColor = 'yellow';
+                setTimeout( () => {
+                  document.body.style.backgroundColor = 'green';
+                }, 2000)              
+            }, 2000)          
+        }, 2000)
+    }, 2000)
+    ```
+    *We want to re-use this code, maybe we want to change the delays... To avoid writing again this long code, we set it to a function.*   
+
+    *In that `colorSwitch` function, we have to pass in the __color we want ot change to__ and pass in the __delay__ (so we can change the time), and pass in a __call back__ wich tells the function __what to do next__ (lets name it `whatToDoNext`).* 
+
+    *So we make a function (`whatToDoNext`). With this technique we can easily add nested callbacks inside of the setTimeout, and it permets us to easily set the callback, like set them to the same delay time. It's much clearer.*
+    ```
+    const colorSwitch = (setColor, delay, whatToDoNext) => {
+      setTimeout(()=> {
+        document.body.style.backgroundColor = setColor;
+    // 💡
+        whatToDoNext && whatToDoNext();
+      }, delay)
+    }
+
+    // calling the function
+    // whatToDoNext() is after the delay time, as an anonymus function
+    colorSwitch('blue', 3000, function() {
+      colorSwitch('black', 2000, function() {
+      })
+    })
+    ```
+    *💡 the __`whatToDoNext && whatToDoNext`__:* 
+
+    *It checks if the variable `whatToDoNext` does exist (has a value assigned to it). AND (&&) check if invoking that variable (here that function) returns a truthy value. If both of those checks return `true`, then proceed with the statement.*   
+
+    *If we remove the `whatToDoNext && whatToDoNext()` part the code will work, but it will break when it will reach the end.*
+
+---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go up to Asynchronous JS](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
+  
+<br>
+
+## __[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)__
+Promises are objects that represent the eventual completion, the eventual success or failure of some operation (some async operation).   
+So a promise is a returned object to which you attach callbacks, instead of passing callbacks into a function.
+
 
 ---
 
