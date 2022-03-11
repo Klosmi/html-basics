@@ -7067,7 +7067,7 @@ So a promise is a returned object to which you attach callbacks, instead of pass
 
 - The *promises* keeps the nested branching path, but it makes it nicer.
 
-Here's an example, when it is NOT nice, super complicated:   
+Here's an example, when our code is NOT nice, deeply nested → complicated:   
 - eg.:  
     *Here we are imitating a request, which somitmes it works, somitems it doesn't.*
     *We have 2 callbacks. One for when the request works, one when it doesn't.*  
