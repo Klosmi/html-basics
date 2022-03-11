@@ -7116,8 +7116,8 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
     // Connection timeout
     ```
  
- That is when promise comes in.
-    __[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)__
+ That is when we use `promise`:   
+ __[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)__
 
 ---
 
