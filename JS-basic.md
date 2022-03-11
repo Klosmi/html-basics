@@ -6821,8 +6821,8 @@ using asynchronous JavaScript (such as callbacks, promises, and async/await), we
 - __[Call Stack](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#call-stack)__
 - __[Single Threaded ](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#single-threaded)__
 - __[Web API](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#web-api)__
-- __[Callback hell]()__
-- __[Promise]()__
+- __[Callback hell](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-hell)__
+- __[Promise](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise)__
 
 ---
 
