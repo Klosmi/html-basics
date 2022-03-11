@@ -7061,9 +7061,58 @@ Because we have to call callbacks inside callbacks, we get a deeply nested funct
 <br>
 
 ## __[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)__
-Promises are objects that represent the eventual completion, the eventual success or failure of some operation (some async operation).   
+__Promises are objects that represent the eventual completion, the eventual success or failure of some operation (some async operation).__
+
 So a promise is a returned object to which you attach callbacks, instead of passing callbacks into a function.
 
+- The *promises* keeps the nested branching path, but it makes it nicer.
+
+Here's an example, when it is NOT nice, super complicated:   
+- eg.:  
+    *Here we are imitating a request, which somitmes it works, somitems it doesn't.*
+    *We have 2 callbacks. One for when the request works, one when it doesn't.*  
+
+    *It can get ugly, when we want to do something when it works or not, so we start nesting other callbacks.*
+
+    *Here we have a `requestCallback` function with 3 properties. First is a `URL` request (hellowebsite.com), the other 2 are callbacks, 1 for `succes` and 1 for `failure`.* 
+    *In case of `hellowebsite.com/page1`, we need to nest another function for `hellowebsite.com/page2`, if 'page2' works or not, and for `page3`, and so on.*
+
+    *This example is based on a random number (`Math.random`): where the imitating a `delay` which is between 500 ms - 4000 ms (if it's more than 4000 ms it's a failure, but shorter is a success).*
+    ```
+    const requestCallback = (url, success, failure) => {
+      const delay = Math.floor(Math.random() * 4500) + 500;
+      setTimeout(() => {
+          if (delay > 4000) {
+              failure('Connection timeout')
+          } else {
+              success(`Here is your URL: ${url}`)
+          }
+      }, delay)
+    }
+
+
+    // calling the function. 3 arguments, the last 2 are callBack functions
+
+    requestCallback('hellowebsite.com/page1', 
+        function(response) {
+          console.log(response);                    // response refers to requestCallback = (..,success..)
+        },
+          requestCallback('hellowebsite.com/page2', // this is the second request
+              function(response){     
+                console.log(response); 
+              },
+              function(error){
+                 console.log(error); 
+              }),               
+        function(error) {
+          console.log(error);                       // error refers to requestCallback = (..,.., failure)
+                                                    // if at any point failes it stops
+    })
+
+    // result
+    // Here is your URL: hellowebsite.com/page1
+    // Connection timeout
+    ```
 
 ---
 
