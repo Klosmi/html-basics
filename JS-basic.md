@@ -7069,8 +7069,8 @@ So a promise is a returned object to which you attach callbacks, instead of pass
 
 Here's an example, when our code is NOT nice, deeply nested → complicated:   
 - eg.:  
-    *Here we are imitating a request, which somitmes it works, somitems it doesn't.*
-    *We have 2 callbacks. One for when the request works, one when it doesn't.*  
+    *Here we are imitating a request, which sometimes it works, sometimes it doesn't.*
+    *We have 2 callbacks. 1 for when the request works, 1 when it doesn't.*  
 
     *It can get ugly, when we want to do something when it works or not, so we start nesting other callbacks.*
 
