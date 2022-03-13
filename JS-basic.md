@@ -7151,7 +7151,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
     `[[Prototype]]: Promise)...`)
 
 - eg.:   
-  *Here we are imitating a request, which sometimes works, sometimes doesn't. Inside teh `requestPromise` function we have 2 callbacks. 1 for when the request works, 1 when it doesn't.* 
+  *Here we are imitating a request, which sometimes works, sometimes doesn't. Inside the `requestPromise` function we have 2 callbacks. 1 for when the request fulfilled, 1 when it's rejected.* 
 
   *Here the `requestPromise` function doesn't expect any callbacks to pass in (as properties), we only pass the `(url)` property.*
   ```
