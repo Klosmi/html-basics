@@ -7062,7 +7062,6 @@ Because we have to call callbacks inside callbacks, we get a deeply nested funct
 
 ## __[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)__
 __Promises are objects that represent the eventual completion, the eventual success or failure of some operation (some async operation).__
-
 So a promise is a returned object to which you attach callbacks, instead of passing callbacks into a function.
 
 - The *promises* keeps the nested branching path, but it makes it nicer.
@@ -7074,6 +7073,9 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
 
     *It can get ugly, when we want to do something when it works or not, so we start nesting other callbacks.*
 
+(skip to the code: 
+    [`promise`]()   
+    [.then()` and `.catch()`]()
 <br>
 
 *Here we have a `request` function with 3 properties. First is a `URL` request (hellowebsite.com), the other 2 are callbacks, 1 for `succes` and 1 for `failure`.* 
@@ -7116,8 +7118,167 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
   // Connection timeout
   ```
  
- That is when we use `promise`:   
- __[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)__
+ That is when we use `promise`:    
+#### __[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)__   
+ 
+- `promise` is just an object:    
+  it the __eventual__ guarantee of either a value or an error.   
+  It's the eventual resolution of something good or bad.   
+  __Promises__ represent this __asynchronous value that eventually will be resolved or rejected__.
+    
+- `promise`s have three possible mutually exclusive __[states](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md#states)__:   
+    - __pending__: initial state, neither fulfilled nor rejected. *(at the beginning)*__ Waiting for something__.
+    - __fulfilled__: meaning that the operation was completed successfully. *(= success)*   
+    `promise.then(f)`
+    - __rejected__: meaning that the operation failed. *(= failure)*    
+    `promise.then(undefined, r)` 
+
+  We say that a *`promise` is settled if it is not pending*, i.e. if it is either fulfilled or rejected. (Being settled is not a state, just a linguistic convenience.) 
+
+- `promise`s have 2 possible mutually exclusive __[fates](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md#fates)__:   
+    - __resolved__: if the `promise` is trying to resolve or reject has no effect:    
+    i.e. the promise has been "locked in" to either follow another promise, or has been fulfilled or rejected.
+    - __unresolved__: if the `promise` is not resolved:    
+    i.e. if trying to resolve or reject it will have an impact on the promise.
+
+<br>
+
+- we can __run a code when a `promise` is *rejected* or when it is *resolved*__.
+
+- the way `promise` works:   
+  we are __attaching callbacks to the object__ (to the `promise` itself), rather than passing callbacks into a function.   
+  We wait the function to return a promise object.
+  (We get this object → `Promise` 
+    `{<fulfilled>}`
+    `[[Prototype]]: Promise)...`)
+
+- eg.:   
+  *Here we are imitating a request, which sometimes works, sometimes doesn't. Inside teh `requestPromise` function we have 2 callbacks. 1 for when the request works, 1 when it doesn't.* 
+
+  *Here the `requestPromise` function doesn't expect any callbacks to pass in (as properties), we only pass the `(url)` property.*
+  ```
+  const requestPromise = (url) => {
+      return new Promise((resolve, reject) => {
+          const delay = Math.floor(Math.random() * (4500)) + 500;
+          setTimeout(() => {
+              if (delay > 4000) {
+                  reject('Connection Timeout :(')
+              } else {
+                  resolve(`Here is your URL: ${url}`)
+              }
+          }, delay)
+      })
+  }
+
+  requestPromise('something');
+  
+  //Promise 
+    {<pending>}
+    [[Prototype]]: Promise
+    [[PromiseState]]: "fulfilled"
+    ...
+  const hello = request('hello');
+  hello;
+  // Promise {<fulfilled>: 'Here is your URL: '}
+  //  [[Prototype]]: Promise
+  //  [[PromiseState]]: "fulfilled"
+  //  [[PromiseResult]]: "Here is your URL: "  
+  ```
+
+##### __`.then()`__
+
+- eg.:
+  *__the way it works__*   
+  *The requestPromise function*
+  ```
+   const requestPromise = (url) => {
+      return new Promise((resolve, reject) => {
+          const delay = Math.floor(Math.random() * (4500)) + 500;
+          setTimeout(() => {
+              if (delay > 4000) {
+                  reject('Connection Timeout :(')
+              } else {
+                  resolve(`Here is your URL: ${url}`)
+              }
+          }, delay)
+      })
+  }
+  ```
+  *__If the `promise` is fulfilled, we attach `.then()` and we pass a callback in `.then(callback () => ...)`__*
+  ```
+  // calling 'requestPromise()' : we pass an actual URL site
+
+  requestPromise('website.com/api/page1);   //← gives an object
+  
+
+  // save it to a variable
+
+  const request = requestPromise('website.com/api/page1');
+
+
+  // if the 'promise' is fulfilled, we pass a callback
+
+  request.then( function(){
+    console.log("👍 worked");
+  })
+  // 👍 worked
+
+  // check that the promise is fulfilled
+  request;
+  // [[Prototype]]: Promise
+  // [[PromiseState]]: "fulfilled"
+  // [[PromiseResult]]: "Here is your URL: website.com/api/page1"
+  ```
+ ##### __`.catch()`__
+ 
+ - eg.:   
+    *(following the previous example)*    
+    *__We can run code__ also, __when the `promise` is rejected, using `catch()`__. We can pass a callabck in to `catch()`.*
+
+    *__If the promise is resovled it runs: `.then(()=>{})`__❗️*   
+    *__If the promise is rejected it runs: `.catch(()=>{})__❗️*
+    ```
+    // it tell us that the promise is rejected
+    request;
+    //1 Uncaught (in promise) Connection Timeout :(
+    //	Promise.then (async)		
+    //  (anonymous)  
+
+    request                         //← request here is an object
+      .then( function(){            //← .then() is a method on the object
+        console.log("👍 worked");   
+      })
+      .catch( function() {       //← .catch() is a method on the object
+        console.log("👎 error");    
+      })
+    ```
+
+- we can __chain__ the methods (so we don't have to save the function into a variable)   
+  - eg.:  
+    *following the previous example(s)* 
+    *cahingin `.then()` and `.catch()`*  
+    ```
+    requestPromise('website.com/api/page1')       //← returns a promise object
+        .then( function(){          
+          console.log("👍 worked");  
+          requestPromise('website.com/api/page2') //← nest a '/page2'
+        })
+            .then( function(){                    //← '/page2' works
+                console.log("👍 worked 2");   
+            })
+            .catch( function(){                 //← '/page2' doesn't work
+                onsole.log("👎 error 2");
+            })
+        .catch( function() {       
+          console.log("👎 error");    
+        })
+
+    
+    // if it is fulfilled '/page1' and '/page2'
+    // 👍 worked
+    // 👍 worked 2   
+    ```
+    *Here `requestPromise(function(){})`, here we are not passing it into `requestPromise(function(){}), instead, we are calling it `.then()` and `.catch()` methods on the returned promise object.*
 
 ---
 
