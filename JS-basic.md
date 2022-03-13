@@ -7169,14 +7169,17 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
   }
 
   requestPromise('something');
-  
-  //Promise 
+ 
+  // Promise 
     {<pending>}
     [[Prototype]]: Promise
     [[PromiseState]]: "fulfilled"
     ...
+    
+    
   const hello = request('hello');
   hello;
+  
   // Promise {<fulfilled>: 'Here is your URL: '}
   //  [[Prototype]]: Promise
   //  [[PromiseState]]: "fulfilled"
