@@ -7064,7 +7064,7 @@ Because we have to call callbacks inside callbacks, we get a deeply nested funct
 __Promises are objects that represent the eventual completion, the eventual success or failure of some operation (some async operation).__
 So a promise is a returned object to which you attach callbacks, instead of passing callbacks into a function.
 
-- The *promises* keeps the nested branching path, but it makes it nicer.
+- *promises* keep the nested branching path, but they make it nicer.
 
 __👇skip to:     
     [`promise`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise-1)__     
