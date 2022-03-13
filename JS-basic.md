@@ -7121,8 +7121,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
 #### __[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)__   
  
 - `promise` is just an object:    
-  it the __eventual__ guarantee of either a value or an error.   
-  It's the eventual resolution of something good or bad.   
+  it the __eventual__ guarantee of either a value or an error.      
   __Promises__ represent this __asynchronous value that eventually will be resolved or rejected__.
     
 - `promise`s have three possible mutually exclusive __[states](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md#states)__:   
