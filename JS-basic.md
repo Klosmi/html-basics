@@ -7223,7 +7223,9 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
   })
   // 👍 worked
 
+
   // check that the promise is fulfilled
+  
   request;
   // [[Prototype]]: Promise
   // [[PromiseState]]: "fulfilled"
