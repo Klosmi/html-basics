@@ -7077,7 +7077,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
 
     *It can get ugly, when we want to do something when it works or not, so we start nesting other callbacks.*
 
-    *Here we have a `request` function with 3 properties. First is a `URL` request (hellowebsite.com), the other 2 are callbacks, 1 for `succes` and 1 for `failure`.* 
+    *Here we have a `request` function with 3 properties. First is a `URL` request (hellowebsite.com/page1), the other 2 are callbacks, 1 for `succes` and 1 for `failure`.* 
     *In case of `hellowebsite.com/page1`, we need to nest another function for `hellowebsite.com/page2`, if 'page2' works or not, and for `page3`, and so on.*
 
     *This example is based on a random number (`Math.random`): where the imitating a `delay` which is between 500 ms - 4000 ms (if it's more than 4000 ms it's a failure, but shorter is a success).*
