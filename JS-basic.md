@@ -7066,6 +7066,10 @@ So a promise is a returned object to which you attach callbacks, instead of pass
 
 - The *promises* keeps the nested branching path, but it makes it nicer.
 
+__👇skip to: 
+    [`promise`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise-1)__     
+    __[`.then()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#then)__ and __[`.catch()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#catch)__
+
 Here's an example, when our code is NOT nice, deeply nested → complicated:   
 - eg.:  
     *Here we are imitating a request, which sometimes it works, sometimes it doesn't.*
@@ -7073,53 +7077,45 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
 
     *It can get ugly, when we want to do something when it works or not, so we start nesting other callbacks.*
 
-<br>
+    *Here we have a `request` function with 3 properties. First is a `URL` request (hellowebsite.com), the other 2 are callbacks, 1 for `succes` and 1 for `failure`.* 
+    *In case of `hellowebsite.com/page1`, we need to nest another function for `hellowebsite.com/page2`, if 'page2' works or not, and for `page3`, and so on.*
 
-__👇skip to: 
-    [`promise`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise-1)__     
-    __[`.then()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#then)__ and __[`.catch()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#catch)__
-    
-<br>
-
-*Here we have a `request` function with 3 properties. First is a `URL` request (hellowebsite.com), the other 2 are callbacks, 1 for `succes` and 1 for `failure`.* 
-*In case of `hellowebsite.com/page1`, we need to nest another function for `hellowebsite.com/page2`, if 'page2' works or not, and for `page3`, and so on.*
-
-*This example is based on a random number (`Math.random`): where the imitating a `delay` which is between 500 ms - 4000 ms (if it's more than 4000 ms it's a failure, but shorter is a success).*
-  ```
-  const request = (url, success, failure) => {
-    const delay = Math.floor(Math.random() * 4500) + 500;
-    setTimeout(() => {
-        if (delay > 4000) {
-            failure('Connection timeout')
-        } else {
-            success(`Here is your URL: ${url}`)
-        }
-    }, delay)
-  }
+    *This example is based on a random number (`Math.random`): where the imitating a `delay` which is between 500 ms - 4000 ms (if it's more than 4000 ms it's a failure, but shorter is a success).*
+    ```
+    const request = (url, success, failure) => {
+      const delay = Math.floor(Math.random() * 4500) + 500;
+      setTimeout(() => {
+          if (delay > 4000) {
+              failure('Connection timeout')
+          } else {
+              success(`Here is your URL: ${url}`)
+          }
+      }, delay)
+    }
 
 
-  // calling the function. 3 arguments, the last 2 are callBack functions
+    // calling the function. 3 arguments, the last 2 are callBack functions
 
-  request('hellowebsite.com/page1', 
-      function(response) {
-        console.log(response);                    // response refers to request = (..,success..)
-      },
-        request('hellowebsite.com/page2', // this is the second request
-            function(response){     
-              console.log(response); 
-            },
-            function(error){
-               console.log(error); 
-            }),               
-      function(error) {
-        console.log(error);                       // error refers to request = (..,.., failure)
-                                                  // if at any point failes it stops
-  })
+    request('hellowebsite.com/page1', 
+        function(response) {
+          console.log(response);                    // response refers to request = (..,success..)
+        },
+          request('hellowebsite.com/page2', // this is the second request
+              function(response){     
+                console.log(response); 
+              },
+              function(error){
+                 console.log(error); 
+              }),               
+        function(error) {
+          console.log(error);                       // error refers to request = (..,.., failure)
+                                                    // if at any point failes it stops
+    })
 
-  // result
-  // Here is your URL: hellowebsite.com/page1
-  // Connection timeout
-  ```
+    // result
+    // Here is your URL: hellowebsite.com/page1
+    // Connection timeout
+    ```
  
  That is when we use `promise`:    
 #### __[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)__   
