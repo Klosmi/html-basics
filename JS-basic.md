@@ -7073,9 +7073,12 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
 
     *It can get ugly, when we want to do something when it works or not, so we start nesting other callbacks.*
 
-(skip to the code: 
-    [`promise`]()   
-    [.then()` and `.catch()`]()
+<br>
+
+__👇skip to the code: 
+    [`promise`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise-1)__     
+    __[`.then(https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#then)`__ and __[`.catch()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#catch)__
+    
 <br>
 
 *Here we have a `request` function with 3 properties. First is a `URL` request (hellowebsite.com), the other 2 are callbacks, 1 for `succes` and 1 for `failure`.* 
