@@ -7188,8 +7188,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
 
 ##### __`.then()`__
 
-- eg.:
-  *__the way it works__*   
+- eg.:   
   *The requestPromise function*
   ```
    const requestPromise = (url) => {
