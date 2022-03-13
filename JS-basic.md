@@ -7066,7 +7066,7 @@ So a promise is a returned object to which you attach callbacks, instead of pass
 
 - The *promises* keeps the nested branching path, but it makes it nicer.
 
-__👇skip to: 
+__👇skip to:     
     [`promise`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise-1)__     
     __[`.then()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#then)__ and __[`.catch()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#catch)__
 
