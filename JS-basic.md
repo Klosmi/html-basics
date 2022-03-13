@@ -7237,7 +7237,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
     *(following the previous example)*    
     *__We can run code__ also, __when the `promise` is rejected, using `catch()`__. We can pass a callback in to `catch()`.*
 
-    __*If the promise is resovled it runs: `.then(()=>{})`*__ *❗️*  
+    __*If the promise is fulfilled it runs: `.then(()=>{})`*__ *❗️*  
     __*If the promise is rejected it runs: `.catch(()=>{})*__ *❗️*
     ```
     // it tell us that the promise is rejected
