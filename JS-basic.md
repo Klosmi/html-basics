@@ -7124,7 +7124,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
   it the __eventual__ guarantee of either a value or an error.      
   __Promises__ represent this __asynchronous value that eventually will be resolved or rejected__.
     
-- `promise`s have three possible mutually exclusive __[states](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md#states)__:   
+- `promise`s have 3 possible mutually exclusive __[states](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md#states)__:   
     - __pending__: initial state, neither fulfilled nor rejected. *(at the beginning)*__ Waiting for something__.
     - __fulfilled__: meaning that the operation was completed successfully. *(= success)*   
     `promise.then(f)`
