@@ -7141,7 +7141,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
 
 <br>
 
-- we can __run a code when a `promise` is *rejected* or when it is *resolved*__.
+- we can __run a code when a `promise` is *rejected* or when it is *fulfilled*__.
 
 - the way `promise` works:   
   we are __attaching callbacks to the object__ (to the `promise` itself), rather than passing callbacks into a function.   
