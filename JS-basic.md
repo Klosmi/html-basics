@@ -7235,10 +7235,10 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
  
  - eg.:   
     *(following the previous example)*    
-    *__We can run code__ also, __when the `promise` is rejected, using `catch()`__. We can pass a callabck in to `catch()`.*
+    *__We can run code__ also, __when the `promise` is rejected, using `catch()`__. We can pass a callback in to `catch()`.*
 
-    *__If the promise is resovled it runs: `.then(()=>{})`__❗️*   
-    *__If the promise is rejected it runs: `.catch(()=>{})__❗️*
+    __*If the promise is resovled it runs: `.then(()=>{})`*__ *❗️*  
+    __*If the promise is rejected it runs: `.catch(()=>{})*__ *❗️*
     ```
     // it tell us that the promise is rejected
     request;
