@@ -7108,9 +7108,8 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
               function(error){
                  console.log(error); 
               }),               
-        function(error) {
-          console.log(error);                       // error refers to request = (..,.., failure)
-                                                    // if at any point failes it stops
+        function(error) {                           // error refers to request = (..,.., failure) => { }...
+          console.log(error);                       // if at any point failes it stops                                              
     })
 
     // result
