@@ -7068,7 +7068,8 @@ So a promise is a returned object to which you attach callbacks, instead of pass
 
 __👇skip to:     
     [`promise`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise-1)__     
-    __[`.then()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#then)__ and __[`.catch()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#catch)__         __[`return` - the clean code](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#return-%EF%B8%8F)__
+    __[`.then()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#then)__ and __[`.catch()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#catch)__      
+__[`return` - the clean code](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#return-%EF%B8%8F)__
 
 Here's an example, when our code is NOT nice, deeply nested → complicated:   
 - eg.:  
