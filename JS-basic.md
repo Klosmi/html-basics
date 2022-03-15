@@ -7099,9 +7099,9 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
 
     request('hellowebsite.com/page1', 
         function(response) {
-          console.log(response);                    // response refers to request = (..,success..)
+          console.log(response);                    // response refers to request = (url,success,failure) => { }...
         },
-          request('hellowebsite.com/page2', // this is the second request
+          request('hellowebsite.com/page2',         // this is the second request
               function(response){     
                 console.log(response); 
               },
