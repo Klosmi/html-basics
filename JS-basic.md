@@ -6868,8 +6868,8 @@ The stack is processed from top to bottom.
    6.   return first() + "Second!";
    7.  }
    8.
-   10.  second();
-   11.  // "First Second!"
+   9.  second();
+   10.  // "First Second!"
    ```
 
 - eg.:   
