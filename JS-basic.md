@@ -7238,15 +7238,15 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
     *__We can run code__ also, __when the `promise` is rejected, using `catch()`__. We can pass a callback in to `catch()`.*
 
     __*If the promise is fulfilled it runs: `.then(()=>{})`*__ *❗️*  
-    __*If the promise is rejected it runs: `.catch(()=>{})*__ *❗️*
+    __*If the promise is rejected it runs: `.catch(()=>{})`*__ *❗️*
     ```
     // it tell us that the promise is rejected
-    request;
+    requestPromise;
     //1 Uncaught (in promise) Connection Timeout :(
     //	Promise.then (async)		
     //  (anonymous)  
 
-    request                         //← request here is an object
+    requestPromise                         //← request here is an object
       .then( function(){            //← .then() is a method on the object
         console.log("👍 worked");   
       })
@@ -7281,6 +7281,42 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
     // 👍 worked 2   
     ```
     *Here `requestPromise(function(){})`, here we are not passing it into `requestPromise(function(){}), instead, we are calling it `.then()` and `.catch()` methods on the returned promise object.*
+    
+<br> 
+
+- So what is the point of using __`promise`__ ?    
+  __Instead of *nesting*, we can *chain* events on__ ❗️
+ (So there is no need to nest → avoiding the [callback hell]())
+
+#### __return__ (❗️) 
+ - eg.:   
+  *continuing the previous example*       
+  *We __return a promise__ from within the `.then(callback)`. That allows us to chain things together.*    
+  *Note that, we are passing a `data` in the function, because in real, a promise can be rejected and resolved with a value passed to it.*  
+    ```
+    requestPromise('website.com/api/page1')               //← returns a promise object
+        .then( function(data){ 
+          console.log(data)     // ← data = `Here is your URL: ${url}`  
+          console.log("👍 worked 1");  
+          return requestPromise('website.com/api/page2')  //← we RETURN the promise
+        })
+        .then(function(data){
+          console.log(data)
+          console.log("👍 worked 2");                     
+          return requestPromise('website.com/api/page3')   
+        })
+        .catch( function(error){     // ← data = 'Connection Timeout :('
+          console.log(error)
+          console.log("👎 error 1"); 
+        })
+
+    // Here is your fake data from website.com/api/page1
+    // 👍 worked 1
+    // Connection Timeout :(
+    // 👎 error 1    
+    ```
+    *We have only one `.catch()`, so if at any point one of the promises is rejected, it hits the `.catch()` on the end of the code*.
+    
 
 ---
 
