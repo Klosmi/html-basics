@@ -7286,7 +7286,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
 
 - So what is the point of using __`promise`__ ?    
   __Instead of *nesting*, we can *chain* events on__ ❗️
- (So there is no need to nest → avoiding the [callback hell]())
+ (So there is no need to nest → avoiding the [callback hell](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-hell))
 
 #### __return__ (❗️) 
  - eg.:   
