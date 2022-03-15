@@ -7081,7 +7081,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
     *Here we have a `request` function with 3 properties. First is a `URL` request (hellowebsite.com/page1), the other 2 are callbacks, 1 for `succes` and 1 for `failure`.*    
     *In case of `hellowebsite.com/page1`, we need to nest another function for `hellowebsite.com/page2`, if 'page2' works or not, and for `page3`, and so on.*   
 
-    *This example is based on a random number (`Math.random`): it imitates a `delay` which is between 500 ms - 4000 ms (if it's more than 4000 ms it's a failure, but shorter is a success).*
+    *This example is based on a random number (`Math.random`): it imitates a `delay` which is between 500 ms - 4000 ms (if it's more than 4000 ms it's a failure, but less than 4000ms is a success).*
     ```
     const request = (url, success, failure) => {
       const delay = Math.floor(Math.random() * 4500) + 500;
