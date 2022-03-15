@@ -7297,7 +7297,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
     ```
     requestPromise('website.com/api/page1')               //← returns a promise object
         .then( function(data){ 
-          console.log(data)     // ← data = `Here is your URL: ${url}`  
+          console.log(data)                               // ← data = `Here is your URL: ${url}`  
           console.log("👍 worked 1");  
           return requestPromise('website.com/api/page2')  //← we RETURN the promise
         })
@@ -7306,10 +7306,11 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
           console.log("👍 worked 2");                     
           return requestPromise('website.com/api/page3')   
         })
-        .catch( function(error){     // ← data = 'Connection Timeout :('
+        .catch( function(error){                          // ← data = 'Connection Timeout :('
           console.log(error)
           console.log("👎 error 1"); 
         })
+
 
     // Here is your fake data from website.com/api/page1
     // 👍 worked 1
