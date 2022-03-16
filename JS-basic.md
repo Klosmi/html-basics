@@ -7186,7 +7186,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
   
 ---
 
-  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go up to Asynchronous JS](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to beginning of Promises](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise) or [👆 go up to Asynchronous JS](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
   
 <br>  
 
@@ -7324,7 +7324,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
     
 ---
 
-  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go up to Asynchronous JS](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to beginning of Promises](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise) or [👆 go up to Asynchronous JS](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
   
 <br>
 
@@ -7434,6 +7434,6 @@ The Promise constructor is primarily used to wrap functions that do not already 
 
 ---
 
-  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go up to Asynchronous JS](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to beginning of Promises](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise) or [👆 go up to Asynchronous JS](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
   
 <br>
