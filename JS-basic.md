@@ -7066,10 +7066,10 @@ So a promise is a returned object to which you attach callbacks, instead of pass
 
 - *promises* keep the nested branching path, but they make it [nicer](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#return-%EF%B8%8F).
 
-__👇skip to:     
-    [`promise`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise-1)__     
-    __[`.then()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#then)__ and __[`.catch()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#catch)__      
-__[`return` - the clean code](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#return-%EF%B8%8F)__
+__👇 devided into parts:     
+   - [`promise`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise-1)__     
+   - __[`.then()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#then)__ and __[`.catch()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#catch)__    - __[`return` - the clean code](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#return-%EF%B8%8F)__
+   -  __[`new Promise` - creating promises]()
 
 Here's an example, when our code is NOT nice, deeply nested → complicated:   
 - eg.:  
@@ -7185,6 +7185,12 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
   //  [[PromiseState]]: "fulfilled"
   //  [[PromiseResult]]: "Here is your URL: "  
   ```
+  
+---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go up to Asynchronous JS](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
+  
+<br>  
 
 ##### __`.then()`__
 
@@ -7318,6 +7324,10 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
     ```
     *We have only one `.catch()`, so if at any point one of the promises is rejected, it hits the `.catch()` on the end of the code*.
     
+---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go up to Asynchronous JS](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
+  
 <br>
 
 #### __[`new Promise` - constructing a promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/Promise)__    
