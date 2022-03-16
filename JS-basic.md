@@ -2879,7 +2879,7 @@ __Array methods accept a function as its arguments.__
 
 ## __[forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)__   
 __accepts a callback function__.
-__It to runs a function__, (so run some code) __once per item in some array__.   
+__It runs a function__, (so run some code) __once per item in some array__.   
 So we pass in a function, and that function will be called once per item, where each item is going to be passed into the function automatically.
 
 - eg.: 
