@@ -7318,6 +7318,111 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
     ```
     *We have only one `.catch()`, so if at any point one of the promises is rejected, it hits the `.catch()` on the end of the code*.
     
+<br>
+
+#### __[`new Promise` - constructing a promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/Promise)__    
+
+The Promise constructor is primarily used to wrap functions that do not already support promises.
+
+- Syntax: `new Promise(executor)`
+
+- eg.:    
+  *The __`new Promise` expects us to pass in a function, which has 2 parameters__.*  
+
+  *The 1st paramter is a function that resolves the promise, the 2nd rejects it.*  
+
+  *If at any point we call `resolve` the promise object will be resolved, and the same logic with `reject`.*
+
+  *fulfilled*
+  ```
+  new Promise(function(resolve, reject) {
+    resolve();
+  })
+
+  // Promise {<fulfilled>: undefined}
+  //  [[Prototype]]: Promise
+  //  [[PromiseState]]: "fulfilled"
+  ```
+  *rejected*
+  ```
+  new Promise(function(resolve, reject) {
+    reject();
+  })
+
+  // Promise {<rejected>: undefined}
+  //  [[Prototype]]: Promise
+  //  [[PromiseState]]: "rejected"
+  ```
+  *pending (until we call resolve or reject inside of the function)*
+  ```
+  new Promise(function(resolve, reject) {
+    
+  })
+
+  // Promise {<pending>}
+  //  [[Prototype]]: Promise
+  //  [[PromiseState]]: "pending"
+  ```
+  *Let's make a request, which will be resolved after 1000 ms.*    
+  *Process: we [`return`]() our `new Promise` function, inside we give a `setTimeout` and inside we call `resolve()`, which will resolve after 1000 ms, if the `const num` variable is true or false*
+
+  ```
+  function myRequest(url) {
+    return new Promise((resolve, reject) => {
+      const num = Math.floor(Math.random() * 10)
+      setTimeout(function() {
+        if (num < 7) {
+          resolve(`Your site is: ${url}`);
+        } 
+          reject('Request error');
+        
+      }, 1000)
+    })
+  }
+
+  //call myRequest with a URL and add a '.then()' and '.catch()'
+  myRequest('mysite.com/page1')
+    .then((data) => {
+      console.log('Fulfilled the request!');
+      console.log(data);
+    })
+    .catch((error) => {
+      console.log('It is an error!');
+      console.log(error);
+    })
+
+  
+  // Promise {<pending>}
+  // Fulfilled the request!
+  // Your site is: mysite.com/page1
+  ```
+
+- eg.:    
+  *Let's see that in real practice*    
+  *The [color background]() changing program*   
+  HTML
+  ```
+  <body>
+    <script src="app.js"></script>
+  </body>
+  ```
+  JS   
+  *Here we will not call `reject`, because we are only resolving the colours*
+  ```
+  // creatng a function with a new promise
+
+  function delayedColorChange (color, delay) {
+
+    return new Promise((resolve, reject) => {
+    setTimeout(()=>{
+        document.body.style.backgroundColor = color;
+        resolve();
+    }, delay)
+    })
+  }
+
+
+  // calling the promise, chainging the '
 
 ---
 
