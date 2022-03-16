@@ -7066,7 +7066,7 @@ So a promise is a returned object to which you attach callbacks, instead of pass
 
 - *promises* keep the nested branching path, but they make it [nicer](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#return-%EF%B8%8F).
 
-__👇 devided into parts:--     
+__👇 devided into parts:__     
    - __[`promise`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise-1)__     
    - __[`.then()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#then)__ and __[`.catch()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#catch)__    - __[`return` - the clean code](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#return-%EF%B8%8F)__
    - __[`new Promise` - creating promises](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#new-promise---constructing-a-promise)__
@@ -7375,7 +7375,7 @@ The Promise constructor is primarily used to wrap functions that do not already 
   //  [[PromiseState]]: "pending"
   ```
   *Let's make a request, which will be resolved after 1000 ms.*    
-  *Process: we [`return`]() our `new Promise` function, inside we give a `setTimeout` and inside we call `resolve()`, which will resolve after 1000 ms, if the `const num` variable is true or false*
+  *Process: we [`return`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#return-%EF%B8%8F) our `new Promise` function, inside we give a `setTimeout` and inside we call `resolve()`, which will resolve after 1000 ms, if the `const num` variable is true or false*
 
   ```
   function myRequest(url) {
