@@ -7066,8 +7066,8 @@ So a promise is a returned object to which you attach callbacks, instead of pass
 
 - *promises* keep the nested branching path, but they make it [nicer](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#return-%EF%B8%8F).
 
-__👇 devided into parts:     
-   - [`promise`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise-1)__     
+__👇 devided into parts:--     
+   - __[`promise`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise-1)__     
    - __[`.then()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#then)__ and __[`.catch()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#catch)__    - __[`return` - the clean code](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#return-%EF%B8%8F)__
    - __[`new Promise` - creating promises](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#new-promise---constructing-a-promise)__
 
@@ -7117,8 +7117,9 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
     // Connection timeout
     ```
  
- That is when we use `promise`:    
-#### __[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)__   
+ That is when we use `promise`:  
+ 
+### __[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)__   
  
 - `promise` is just an object:    
   it the __eventual__ guarantee of either a value or an error.      
@@ -7192,7 +7193,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
   
 <br>  
 
-##### __`.then()`__
+### __`.then()`__
 
 - eg.:   
   *The requestPromise function*
@@ -7237,7 +7238,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
   // [[PromiseState]]: "fulfilled"
   // [[PromiseResult]]: "Here is your URL: website.com/api/page1"
   ```
- ##### __`.catch()`__
+ #### __`.catch()`__
  
  - eg.:   
     *(following the previous example)*    
@@ -7294,7 +7295,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
   __Instead of *nesting*, we can *chain* events on__ ❗️
  (So there is no need to nest → avoiding the [callback hell](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-hell))
 
-#### __return__ (❗️) 
+### __return__ (❗️) 
  - eg.:   
   *continuing the previous example*       
   *We __return a promise__ from within the `.then(callback)`. That allows us to chain things together.*    
@@ -7330,7 +7331,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
   
 <br>
 
-#### __[`new Promise` - constructing a promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/Promise)__    
+### __[`new Promise` - constructing a promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/Promise)__    
 
 The Promise constructor is primarily used to wrap functions that do not already support promises.
 
