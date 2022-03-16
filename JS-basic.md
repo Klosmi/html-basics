@@ -7410,7 +7410,7 @@ The Promise constructor is primarily used to wrap functions that do not already 
 
 - eg.:    
   *Let's see that in real practice*    
-  *The [color background]() changing program*   
+  *The [color background](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-hell) changing program*   
   HTML
   ```
   <body>
