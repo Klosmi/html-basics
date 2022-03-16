@@ -7066,7 +7066,7 @@ So a promise is a returned object to which you attach callbacks, instead of pass
 
 - *promises* keep the nested branching path, but they make it [nicer](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#return-%EF%B8%8F).
 
-__👇 devided into parts:__     
+__👇 this topic's parts:__     
    - __[`promise`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise-1)__     
    - __[`.then()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#then)__ and __[`.catch()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#catch)__    - __[`return` - the clean code](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#return-%EF%B8%8F)__
    - __[`new Promise` - creating promises](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#new-promise---constructing-a-promise)__
