@@ -6813,7 +6813,7 @@ list.addEvenetListener('click', function(event){
 # [Asynchronous JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing)    
 Synchronous JS:   
 JS is a single-threaded programming language which means __only one thing can happen at a time.__ That is, the JS engine can only process one statement at a time in a __single thread__.   
-That is why we can’t perform long operations (such as network access) without blocking the main thread.
+This is why we can’t perform long operations (such as network access) without blocking the main thread.
 
 __[Asynchronous JS](https://blog.bitsrc.io/understanding-asynchronous-javascript-the-event-loop-74cd408419ff):__   
 using asynchronous JavaScript (such as callbacks, promises, and async/await), we can perform long network requests __without blocking the main thread__.
