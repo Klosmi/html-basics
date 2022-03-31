@@ -7029,31 +7029,31 @@ Because we have to call callbacks inside callbacks, we get a deeply nested funct
     ```
     *We want to re-use this code, maybe we want to change the delays... To avoid writing again this long code, we set it to a function.*   
 
-    *In that `colorSwitch` function, we have to pass in the __color we want ot change to__ and pass in the __delay__ (so we can change the time), and pass in a __call back__ wich tells the function __what to do next__ (lets name it `whatToDoNext`).* 
+    *In that `colorSwitch` function, we have to pass in the __color we want ot change to__ and pass in the __delay__ (so we can change the time), and pass in a __call back__ wich tells the function __what to do next__ (lets name it `next`).* 
 
     *So we make a function (`whatToDoNext`). With this technique we can easily add nested callbacks inside of the setTimeout, and it permets us to easily set the callback, like set them to the same delay time. It's much clearer.*
     ```
-    const colorSwitch = (setColor, delay, whatToDoNext) => {
+    const colorSwitch = (setColor, delay, next) => {
       setTimeout(()=> {
         document.body.style.backgroundColor = setColor;
-        whatToDoNext && whatToDoNext();
+        next && next();
       }, delay)
     }
 
 
     // calling the function
-    // whatToDoNext() is after the delay time, as an anonymus function
+    // "next" is after the delay time, as an anonymus function
     
     colorSwitch('blue', 3000, function() {
       colorSwitch('black', 2000, function() {
       })
     })
     ```
-    *💡 the __`whatToDoNext && whatToDoNext`__:* 
+    *💡 the __`next && next`__:* 
 
-    *It checks if the variable `whatToDoNext` does exist (has a value assigned to it). AND (&&) check if invoking that variable (here that function) returns a truthy value. If both of those checks return `true`, then proceed with the statement.*   
+    *It checks if the variable `next` does exist (has a value assigned to it). AND (&&) checks if invoking that variable (here that function) returns a truthy value. If both of those checks gives `true`, then proceed with the statement.*   
 
-    *If we remove the `whatToDoNext && whatToDoNext()` part the code will work, but it will break when it will reach the end.*
+    *If we remove the `next && next()` part the code will work, but it will break when it will reach the end.*
 
 ---
 
