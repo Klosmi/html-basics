@@ -7036,7 +7036,6 @@ Because we have to call callbacks inside callbacks, we get a deeply nested funct
     const colorSwitch = (setColor, delay, whatToDoNext) => {
       setTimeout(()=> {
         document.body.style.backgroundColor = setColor;
-    // 💡
         whatToDoNext && whatToDoNext();
       }, delay)
     }
