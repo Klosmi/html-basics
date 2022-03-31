@@ -6965,7 +6965,7 @@ But there are ways around this issue:
     <br>
 
 - Browseres come with Web APIs that are able to handle certain tasks in the background (like making request or `setTimeout`)
-- The JS call stack recognizes these Web API functions and passes the off to the browser to take care of
+- The JS call stack recognizes these Web API functions and passes off to the browser to take care of
 - Once the browser finishes those taks, they return and are pushed onto the stack as a callback.
 
 ---
