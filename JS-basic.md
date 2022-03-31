@@ -7011,7 +7011,8 @@ web APIs are generally methods that we can call from JS and they are handed off 
 
 ## __[Callback hell](https://www.geeksforgeeks.org/what-is-callback-hell-in-node-js/)__  
 Because we have to call callbacks inside callbacks, we get a deeply nested functions, which is much harder to read and debug. This is sometimes called "callback hell" or the "pyramid of doom" (because the indentation looks like a pyramid on its side).
-  - eg.:   
+  - eg.:  
+    *Background-color changing program*      
     *We have a `setTimeout`, which after 2 sec changes the background to red. In that `setTimeout` we have another `setTimeout` which after 2 sec changes the background to orange. In that `setTimeout` we have another which after 2 sec changes the background to yellow, and another `setTimeout` which after 2 sec changes the background to green, etc.*
     ```
     setTimeout( () => {
