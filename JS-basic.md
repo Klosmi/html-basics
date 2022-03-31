@@ -7251,7 +7251,8 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
     __*If the promise is fulfilled it runs: `.then(()=>{})`*__ *❗️*  
     __*If the promise is rejected it runs: `.catch(()=>{})`*__ *❗️*
     ```
-    // it tell us that the promise is rejected
+    // it tells us that the promise is rejected
+    
     requestPromise;
     //1 Uncaught (in promise) Connection Timeout :(
     //	Promise.then (async)		
