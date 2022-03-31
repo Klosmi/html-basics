@@ -7431,12 +7431,11 @@ The Promise constructor is primarily used to wrap functions that do not already 
   // creatng a function with a new promise
 
   function delayedColorChange (color, delay) {
-
     return new Promise((resolve, reject) => {
-    setTimeout(()=>{
-        document.body.style.backgroundColor = color;
-        resolve();
-    }, delay)
+      setTimeout(()=>{
+         document.body.style.backgroundColor = color;
+         resolve();
+      }, delay)
     })
   }
 
