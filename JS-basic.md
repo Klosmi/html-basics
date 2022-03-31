@@ -6833,7 +6833,7 @@ using asynchronous JavaScript (such as callbacks, promises, and async/await), we
 ## __[Call Stack](https://developer.mozilla.org/en-US/docs/Glossary/Call_stack)__   
 is a mechanism for JS interpreter (in a browser) to keep track of its place (to know where it is) in a script that calls multiple functions.
 
-So, this is how JavaScript knows where it is (like a bookmarker): what function is currently being run and what functions are called from within that function, etc.   
+So, this is how JavaScript knows where is is (like a bookmarker): what function is currently being run and what functions are called from within that function, etc.   
 In other words, JS keeps track of the history of things that are waiting to be returned, so __which functions have been invoked but are not done yet__. Call Stack is the structure which stores that *(data structure)*.
 
 __Stack__:  
