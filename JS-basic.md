@@ -6857,7 +6857,7 @@ The stack is processed from top to bottom.
  - eg.:   
    *We are calling the `second()` (on line 9). It calls the `function second()` on line 5, on line 6 the return doesn't return right away, because it has to call `function first()` on line 1, which returns the string "First" on line 2. Then it popps off, goes to line 6, return the string, popps off, and at line 10 we have the function invocations's result.*    
    *The stack is the following:*    
-   *Starts at line 9, then line 6 (the return) then line 2. Line 2 returns so it's popped of because the top value of the stack is removed. Then it goes back at line 6, we return the string and then it's popped of and then we are at line 10.*. 
+   *Starts at line 9, then line 6 (the return) then line 2. Line 2 returns so it's popped of because the top value of the stack is removed. Then it goes back at line 6, we return the string and then it's popped of and then we are at line 10.*    
    *__the last thing which is added to the top__ (`function first()`) __is the first thing to come off__ → LIFO*
    ```
    1. function first() {
