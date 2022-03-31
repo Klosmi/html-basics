@@ -7259,10 +7259,10 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
     // (anonymous)  
 
     requestPromise                         //← request here is an object
-      .then( function(){            //← .then() is a method on the object
+      .then( function(){                   //← .then() is a method on the object
         console.log("👍 worked");   
       })
-      .catch( function() {       //← .catch() is a method on the object
+      .catch( function() {                 //← .catch() is a method on the object
         console.log("👎 error");    
       })
     ```
