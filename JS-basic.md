@@ -7219,7 +7219,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
   ```
   // calling 'requestPromise()' : we pass an actual URL site
 
-  requestPromise('website.com/api/page1);   //← gives an object
+  requestPromise('website.com/api/page1');   //← gives an object
   
 
   // save it to a variable
