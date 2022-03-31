@@ -7396,7 +7396,9 @@ The Promise constructor is primarily used to wrap functions that do not already 
     })
   }
 
+
   //call myRequest with a URL and add a '.then()' and '.catch()'
+  
   myRequest('mysite.com/page1')
     .then((data) => {
       console.log('Fulfilled the request!');
