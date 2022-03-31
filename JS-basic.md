@@ -7272,15 +7272,15 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
     *following the previous example(s)* 
     *chaining `.then()` and `.catch()`*  
     ```
-    requestPromise('website.com/api/page1')       //← returns a promise object
+    requestPromise('website.com/api/page1')         //← returns a promise object
         .then( function(){          
           console.log("👍 worked");  
-          requestPromise('website.com/api/page2') //← nest a '/page2'
+          requestPromise('website.com/api/page2')   //← nest a '/page2'
         })
-            .then( function(){                    //← '/page2' works
+            .then( function(){                      //← '/page2' works
                 console.log("👍 worked 2");   
             })
-            .catch( function(){                 //← '/page2' doesn't work
+            .catch( function(){                     //← '/page2' doesn't work
                 onsole.log("👎 error 2");
             })
         .catch( function() {       
