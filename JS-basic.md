@@ -7111,9 +7111,14 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
           console.log(error);                       // if at any point failes it stops                                              
     })
 
-    // possible results
+    // possible results:
     // Here is your URL: hellowebsite.com/page2
     // Here is your URL: hellowebsite.com/page1
+    // or:
+    // Here is your URL: hellowebsite.com/page1
+    // Connection timeout
+    // or:
+    // Connection timeout
     ```
  
  That is when we use `promise`:  
