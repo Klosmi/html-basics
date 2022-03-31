@@ -7292,7 +7292,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
     // 👍 worked
     // 👍 worked 2   
     ```
-    *Here `requestPromise(function(){})` which we are not passing it into `requestPromise(function(){}), instead, we are calling it `.then()` and `.catch()` methods on the returned promise object.*
+    *Here  we are not passing the `requestPromise(function(){})` function into the `requestPromise(function(){}) function, instead we are calling it `.then()` and `.catch()` methods on the returned promise object.*
     
 <br> 
 
