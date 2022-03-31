@@ -7031,7 +7031,7 @@ Because we have to call callbacks inside callbacks, we get a deeply nested funct
 
     *In that `colorSwitch` function, we have to pass in the __color we want ot change to__ and pass in the __delay__ (so we can change the time), and pass in a __call back__ wich tells the function __what to do next__ (lets name it `next`).* 
 
-    *So we make a function (`whatToDoNext`). With this technique we can easily add nested callbacks inside of the setTimeout, and it permets us to easily set the callback, like set them to the same delay time. It's much clearer.*
+    *So we make a function (`next`). With this technique we can easily add nested callbacks inside of the setTimeout, and it permets us to easily set the callback, like set them to the same delay time. It's much clearer.*
     ```
     const colorSwitch = (setColor, delay, next) => {
       setTimeout(()=> {
