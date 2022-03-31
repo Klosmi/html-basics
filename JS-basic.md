@@ -7254,8 +7254,8 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
     // it tells us that the promise is rejected
     
     requestPromise;
-    //1 Uncaught (in promise) Connection Timeout :(
-    //	Promise.then (async)		
+    // 1 Uncaught (in promise) Connection Timeout :(
+    //  Promise.then (async)		
     //  (anonymous)  
 
     requestPromise                         //← request here is an object
