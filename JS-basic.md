@@ -7270,7 +7270,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
 - we can __chain__ the methods (so we don't have to save the function into a variable)   
   - eg.:  
     *following the previous example(s)* 
-    *cahingin `.then()` and `.catch()`*  
+    *chaining `.then()` and `.catch()`*  
     ```
     requestPromise('website.com/api/page1')       //← returns a promise object
         .then( function(){          
