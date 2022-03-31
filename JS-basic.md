@@ -7255,8 +7255,8 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
     
     requestPromise;
     // 1 Uncaught (in promise) Connection Timeout :(
-    //  Promise.then (async)		
-    //  (anonymous)  
+    // Promise.then (async)		
+    // (anonymous)  
 
     requestPromise                         //← request here is an object
       .then( function(){            //← .then() is a method on the object
