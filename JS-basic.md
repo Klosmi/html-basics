@@ -6852,7 +6852,7 @@ __Stack__:
  3. When the current function is returned, the interpreter takes it off the stack and it continues the execution where it left off in the last code listing.
 
 So the most recently invoked function is on the top of the stack.   
-The bottom of the stack is the is the first function invoked.   
+The bottom of the stack is the first function invoked.   
 The stack is processed from top to bottom.   
  - eg.:   
    *We are calling the `second()` (on line 10.). It calls the `function second()` on line 5, on line 6 the return doesn't return right away, because it has to call `function first()` on line 1, which returns the string "First" on line 2. Then it popps off, goes to line 6, return the string, popps off, and at line 10 we have the function invocations's result.*    
