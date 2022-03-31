@@ -6976,7 +6976,7 @@ But there are ways around this issue:
 
 ## __[Web API](https://developer.mozilla.org/en-US/docs/Web/API)__
 web APIs are generally methods that we can call from JS and they are handed off to the browser.   
-*(eg.: `setTimeout()`, JS can't do t, the browser does it.)*
+*(eg.: `setTimeout()`, JS can't do it, the browser does it.)*
 
 - eg.:   
   *JS pass `setTimeout()` off to the Web APIs, to the browser. Because it is a web API function*    
