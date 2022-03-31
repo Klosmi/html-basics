@@ -7441,8 +7441,19 @@ The Promise constructor is primarily used to wrap functions that do not already 
   }
 
 
-  // calling the promise, chainging the '
+  // calling the promise, chainging the '.then()'
 
+  delayedColorChange('red', 1000)
+  .then(()=>{
+    return delayedColorChange('orange', 1000)
+  })
+  .then(()=> {
+    return delayedColorChange('green', 1000)
+  })
+  .then(()=> {
+    return delayedColorChange('blue', 1000)
+  })
+  ```
 ---
 
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to beginning of Promises](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise) or [👆 go up to Asynchronous JS](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
