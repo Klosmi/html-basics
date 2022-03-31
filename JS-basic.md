@@ -6878,8 +6878,8 @@ The stack is processed from top to bottom.
   *Then `function multiply(x,y)` gives a value and this function get removed from the stack, the value goes to `function square(x)` then the function removed from the stack, and finally the velue 9 goes to `isRightTriangle(9,b,c)`.*   
   *And it starts over again.*
   ```
-  function multiply(x,x) {            // ← 1. x=3 * x=3 | 2. x=4 * x=4 | 3. x=5 * x=5
-      return x * x;
+  function multiply(x,y) {            // ← 1. x=3 * y=3 | 2. x=4 * y=4 | 3. x=5 * y=5. Note: x and y can named anything else, it could be x and x as well.
+      return x * y;
   }
 
   function square(x) {                // first its x=3 | x=4 | x=5
