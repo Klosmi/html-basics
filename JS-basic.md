@@ -7094,6 +7094,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
 
 
     // calling the function. 3 arguments, the last 2 are callBack functions
+    // so it looks like this:  request('hellowebsite.com/page1', function(response) {…2nd request…},  function(error){…message…} )
 
     request('hellowebsite.com/page1', 
         function(response) {
