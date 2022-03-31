@@ -6879,8 +6879,7 @@ The stack is processed from top to bottom.
   *And it starts over again.*
   ```
   function multiply(x,y) {            // ← 1. x=3 * y=3 | 2. x=4 * y=4 | 3. x=5 * y=5  
-                                      // (Note: x and y can named anything else, it could be x and x, a and b, c c, etc.)
-      return x * y;
+      return x * y;                   // (Note: x and y can named anything else, it could be x and x, a and b, c c, etc.)
   }
 
   function square(x) {                // first its x=3 | x=4 | x=5
