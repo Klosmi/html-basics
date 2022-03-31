@@ -7041,8 +7041,10 @@ Because we have to call callbacks inside callbacks, we get a deeply nested funct
       }, delay)
     }
 
+
     // calling the function
     // whatToDoNext() is after the delay time, as an anonymus function
+    
     colorSwitch('blue', 3000, function() {
       colorSwitch('black', 2000, function() {
       })
