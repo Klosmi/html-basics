@@ -6882,7 +6882,7 @@ The stack is processed from top to bottom.
       return x * y;
   }
 
-  function square(x) {                // first its x=3 | x=4 | x=5                  /
+  function square(x) {                // first its x=3 | x=4 | x=5
       return multiply(x,x);           // ← then 1. returns the value from the multiply(x, y) x=9 | 2. x=16 | 3. x=25
   }
 
