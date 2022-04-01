@@ -7473,8 +7473,8 @@ we use the __`async` key word__ to __declare a function, an async function__.
 
 - when we declare the `async` function, it __automatically returns a `promise`__ ❗️
 
-  - if the functions returns a value → the `promise` will be fulfilled
-  - if the functions throws an exception → the `promise` will be rejected   
+  - if the function returns a value → the `promise` will be fulfilled
+  - if the function throws an exception → the `promise` will be rejected   
 
 - syntax: `async function name() { … }`
 
