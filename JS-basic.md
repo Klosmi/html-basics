@@ -7087,20 +7087,21 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
       const delay = Math.floor(Math.random() * 4500) + 500;
       setTimeout(() => {
           if (delay > 4000) {
-              failure('Connection timeout')
+              failure('Connection timeout')         // it is a function call
           } else {
-              success(`Here is your URL: ${url}`)
+              success(`Here is your URL: ${url}`)   // it is a function call
           }
       }, delay)
     }
 
 
-    // calling the function. 3 arguments, the last 2 are callBack functions
+    // calling the function. 3 arguments, the last 2 are callBack functions.   
+    // The last 2 arguments refer to the failure and success functions
     // so it looks like this:  request('URL', function(response){…2nd request…}, function(error){…message…} )
 
     request('hellowebsite.com/page1', 
-        function(response) {
-          console.log(response);                    // response refers to request = (url,success,failure) => { }...
+        function(response) {                        // response refers to request = (url,success,failure) => { }...
+          console.log(response);                    
         },
           request('hellowebsite.com/page2',         // this is the second request
               function(response){     
