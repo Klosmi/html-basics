@@ -7523,9 +7523,12 @@ __Promise fulfilled__
   // Promise {<fulfilled>: undefined}
   ```
 
-__Promise rejected__
-  - [`throw`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)ing an error.   
-    more about [`throw`](https://stackoverflow.com/questions/46295340/what-is-the-difference-between-throw-foo-throw-errorfoo-throw-new-e/46295341#46295341)
+__Promise rejected__   
+  - __[`throw`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)ing__ an error:   
+    The `throw` keyword should be used when we want to handle an error, and nothing else should be run after that. (To return a value as a normal function operation instead, then return should be used.)  
+  - So, the `throw` statement defines a custom error (user defined error).  
+  The execution of the current function stops (the statements after `throw` won't be executed), and control will be passed to the first `catch` block in the call stack. If there is no `catch.` the program will terminate.   
+    - More about [`throw`](https://stackoverflow.com/questions/46295340/what-is-the-difference-between-throw-foo-throw-errorfoo-throw-new-e/46295341#46295341)
 
 - eg.:   
   *Throwing an error is a wy to reject a `promise`*   
