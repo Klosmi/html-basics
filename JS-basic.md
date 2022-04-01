@@ -7458,3 +7458,121 @@ The Promise constructor is primarily used to wrap functions that do not already 
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to beginning of Promises](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise) or [👆 go up to Asynchronous JS](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
   
 <br>
+
+## __[Async Keyword](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)__
+
+- async functions makes our code cleaner *(syntactic sugar, means make code easier to read)*.
+
+- async functions make promises prettier
+
+- the `async` keyword:   
+we use the __`async` key word__ to __declare a function, an async function__.   
+(It stands for asynchronous.)
+
+- when we declare the `async` function, it __automatically returns a `promise`__ ❗️
+
+  - if the functions returns a value → the `promise` will be fulfilled
+  - if the functions throws an exception → the `promise` will be rejected   
+
+- syntax: `async function name() { … }`
+
+- eg.:   
+  *`async` returns a promise automatically. We don't have to write`return new Promise…`*
+  ```
+  // declaring function as an async function
+
+  async function hi() {
+  }
+
+  //calling hi()
+  hi();
+
+  // returns a promise (automatically):
+  // [[Prototype]]: Promise
+  // [[PromiseState]]: "fulfilled"
+  // [[PromiseResult]]: undefined       // undefined because there is no value
+  ```
+ 
+- eg.:   
+  *Declaring `async` function and returning a value. When our function returns a value, then the promise will be fulfilled with that value.*
+  ```
+  const name = async() => {
+    return 'John Doe';
+  }
+
+  name();
+
+  // Promise {<fulfilled>: 'John Doe'}
+  ```
+
+__Promise fulfilled__
+- eg.:    
+  *We can chain the `async` function, because technically it is a promise.*
+  ```
+    const name = async() => {
+    return 'John Doe';
+  }
+
+  name().then((data) => {
+    console.log('async function resolved: ',data);
+  });
+
+  // async function resolved: John Doe
+  // Promise {<fulfilled>: undefined}
+  ```
+
+__Promise rejected__
+  - [`throw`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)ing an error
+
+- eg.:   
+  *Throwing an error is a wy to reject a `promise`*   
+  *The error can be: a syntax error, or our defined error.*
+  ```
+  // we can just throw a string as an error.
+
+  const name = async() => {
+    throw 'Sorry for this error!'
+    return 'John Doe';
+  }
+
+  name();
+
+  // it's still a promise, and we get an error
+  // Uncaught (in promise) Error: Sorry for this error!
+  // at name (<anonymous>:2:11)
+  // at <anonymous>:6:3
+  ```
+
+
+  - eg.:      
+    *A login example (however there is nothing asynchronous in our code here).*        
+    *__chaining__ using the `.catch` and the `.then`!*       
+    ```
+    // login function takes 2 paramteres
+
+    async function login(username, password) {
+      if (!username || !password)           // if there is no username OR password throw message
+        throw 'No username or no password'
+      if (password === 'Password')
+        return 'Hello!'
+    }
+
+    login('User01', 'Password')
+      .then(message => {
+        console.log('You logged in!!')
+        console.log(message)
+      })
+      .catch(error =>{
+        console.log('Error')
+        console.log(error)
+      })
+
+    // You logged in!!
+    // Hello!
+    ```
+    
+  ---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to beginning of Promises](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise) or [👆 go up to Asynchronous JS](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
+  
+<br>  
