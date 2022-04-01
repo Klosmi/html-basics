@@ -7463,7 +7463,7 @@ The Promise constructor is primarily used to wrap functions that do not already 
 
 ## __[`async` Keyword](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)__
 
-- async functions makes our code cleaner *(syntactic sugar, means make code easier to read)*.
+- async functions make our code cleaner *(syntactic sugar, means make code easier to read)*.
 
 - async functions make promises prettier
 
