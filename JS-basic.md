@@ -7524,7 +7524,8 @@ __Promise fulfilled__
   ```
 
 __Promise rejected__
-  - [`throw`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)ing an error
+  - [`throw`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)ing an error.   
+    more about [`throw`](https://stackoverflow.com/questions/46295340/what-is-the-difference-between-throw-foo-throw-errorfoo-throw-new-e/46295341#46295341)
 
 - eg.:   
   *Throwing an error is a wy to reject a `promise`*   
