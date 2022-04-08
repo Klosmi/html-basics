@@ -7550,7 +7550,7 @@ __Promise rejected__
   ```
 
 
-  - eg.:      
+- eg.:      
     *A login example (however there is nothing asynchronous in our code here).*        
     *__chaining__ using the `.catch` and the `.then`!*       
     ```
