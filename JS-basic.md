@@ -7531,7 +7531,7 @@ __Promise rejected__
     - More about [`throw`](https://stackoverflow.com/questions/46295340/what-is-the-difference-between-throw-foo-throw-errorfoo-throw-new-e/46295341#46295341)
 
 - eg.:   
-  *Throwing an error is a wy to reject a `promise`*   
+  *Throwing an error is a way to reject a `promise`*   
   *The error can be: a syntax error, or our defined error.*
   ```
   // we can just throw a string as an error.
