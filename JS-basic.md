@@ -7511,7 +7511,7 @@ __Promise fulfilled__
 - eg.:    
   *We can chain the `async` function, because technically it is a promise.*
   ```
-    const name = async() => {
+  const name = async() => {
     return 'John Doe';
   }
 
