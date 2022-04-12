@@ -7615,8 +7615,7 @@ the `await` keyword pauses the execution of our `async` function, and wait for a
     await delayedColorChange('green', 1000) 
     await delayedColorChange('blue', 1000) 
     return "Now, the promise is fulfilled"    // ← promise isn't fulfilled until it gets to this return 
-                                              // it's fulfilled because it returned a value
-  }
+  }                                           // it's fulfilled because it returned a value
 
   // call the function
   colorChange();
