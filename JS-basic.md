@@ -7581,4 +7581,92 @@ __Promise rejected__
 
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to beginning of Promises](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise) or [👆 go up to Asynchronous JS](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
   
-<br>  
+<br> 
+
+## __[`await` keyword](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)__
+the `await` keyword pauses the execution of our `async` function, and wait for a `promise` to be fulfilled __before__ continuing on.
+
+- we can only use the `await` keyword inside of a function declared with `async`. So it __only works in an `async` function__.
+
+- eg.:   
+  *The [background-color changing](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-hell) program* 
+
+  *But now, we use the `async` function declaration and await.* 
+
+  *Whe we use the `await` keyword, it's going to wait for a promise to be fulfilled. That means thatthings will just __pause until__ a promise is fulfilled after X second.*
+  ```
+  // creatng a function with a new promise
+
+  const delayedColorChange = (color, delay) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            document.body.style.backgroundColor = color;
+            resolve();
+        }, delay)
+    })
+  }
+
+  // calling it with async function declaration
+
+  async function colorChange(){
+    await delayedColorChange('red', 1000)     // ← returns a promise. await = pause
+    await delayedColorChange('orange', 1000)  // ← returns a promise
+    await delayedColorChange('green', 1000) 
+    await delayedColorChange('blue', 1000) 
+    return "Now, the promise is fulfilled"    // ← promise isn't fulfilled until it gets to this return 
+                                              // it's fulfilled because it return a value
+  }
+
+  // call the function
+  colorChange();
+  ```
+  *We can console.log a message after `colorChange()` is done.*   
+  *the `colorChange()`'s awaitt prmoises are only resulved until they reach teh `return`.*
+  ```
+  async function printColorChange() {
+    await colorChange();                // waits until the promise is fulfilled
+    console.log("End of color changes");
+  }
+
+  // call the function 
+
+  printColorChange();
+  ```
+ 
+- When promises are resolved with information we use mostly `await`. We `await` some request.  
+
+  - eg.:   
+    *We use this request modell, when a promise is fulfilled with some data (request). (You can see the previous version [here](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#then))*    
+    *The data from `requestPromise` is `await`ed, stored in a variable `let data`.*
+    ```
+    const requestPromise = (url) => {
+      return new Promise((resolve, reject) => {
+            const delay = Math.floor(Math.random() * (4500)) 
+            + 500;
+            setTimeout(() => {
+                if (delay > 4000) {
+                    reject('Connection Timeout :(')
+                } else {
+                    resolve(`Here is your URL: ${url}`)
+                }
+              }, delay)
+          })
+      }
+
+    // here we await for the request
+
+    async function waitingRequest() {
+      let data = await requestPromise('/page1');
+      console.log(data);
+    }
+
+    waitingRequest();
+
+    // Here is your URL: /page1
+    ```
+    
+  ---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to beginning of Promises](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise) or [👆 go up to Asynchronous JS](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
+  
+<br> 
