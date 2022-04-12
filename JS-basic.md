@@ -7594,7 +7594,7 @@ the `await` keyword pauses the execution of our `async` function, and wait for a
 
   *But now, we use the `async` function declaration and await.* 
 
-  *Whe we use the `await` keyword, it's going to wait for a promise to be fulfilled. That means thatthings will just __pause until__ a promise is fulfilled after X second.*
+  *Whe we use the `await` keyword, it's going to wait for a promise to be fulfilled. That means it will just __pause until__ a promise is fulfilled after X second.*
   ```
   // creatng a function with a new promise
 
