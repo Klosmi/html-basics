@@ -6824,7 +6824,7 @@ using asynchronous JavaScript (such as callbacks, promises, and async/await), we
 - __[Callback hell](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-hell)__
 - __[Promise](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise)__   
 - __[The `aync` keyword](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#async-keyword)__
-- __[The `await` keyword](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#await-keyword)__
+- __[The `await` keyword](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#await-keyword)__ & __[error handling]()__
 
 ---
 
@@ -7665,6 +7665,59 @@ the `await` keyword pauses the execution of our `async` function, and wait for a
     // Here is your URL: /page1
     ```
     
+  ---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to beginning of Promises](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise) or [👆 go up to Asynchronous JS](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
+  
+<br> 
+
+#### __[error handling in `async` functions](https://javascript.info/async-await#error-handling)__   
+in the case of a rejection, `await` promise throws the error
+
+- We can __catch these errors using [`try..catch`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) statement__:   
+   - If the code in the try block throws an exception then the code in the catch block will be executed.   
+
+
+- eg.:   
+  *We make the time longer, to have an error for sure.*   
+  *The `try` block's code results in an error being thrown, we can catch is with the `catch`, so we can handle that error.*   
+  *The `error` in the `catch(error)` refers to the error itself (like a "Reference error").*
+  ```
+  const requestPromise = (url) => {
+    return new Promise((resolve, reject) => {
+          const delay = 4500; 
+          setTimeout(() => {
+              if (delay > 4000) {
+                  reject('Connection Timeout')        //← the value that our promise was rejected with.
+              } else {
+                  resolve(`Here is your URL: ${url}`)
+              }
+            }, delay)
+        })
+  }
+
+  // here we await for the request
+
+  async function waitingRequest() {
+      try {                             // ← what we are trying to do
+        let data = await requestPromise('/page1');
+        console.log(data);              //← data = "Here is your URL: /page1"
+        let data2 = await requestPromise('/page2');
+        console.log(data2);
+
+      } catch(error)  {
+        console.log('We catch the error!')
+        console.log('error is: ', error)             // ← error message itself: Connection Timeout
+      }
+
+  }
+
+  waitingRequest();
+
+  // We catch the error!
+  // error is:  Connection Timeout
+  ```
+
   ---
 
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to beginning of Promises](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise) or [👆 go up to Asynchronous JS](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
