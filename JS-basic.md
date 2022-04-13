@@ -7679,7 +7679,7 @@ in the case of a rejection, `await` promise throws the error
 
 
 - eg.:   
-  *We make the time longer, to have an error for sure.*   
+  *We make the time longer, to have an error for sure : `const delay = 4500; `.*   
   *The `try` block's code results in an error being thrown, we can catch is with the `catch`, so we can handle that error.*   
   *The `error` in the `catch(error)` refers to the error itself (like a "Reference error").*
   ```
