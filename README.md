@@ -21,7 +21,7 @@
 19. [SASS](https://github.com/Klosmi/html-basics/blob/master/sass.md)
 20. [BEM - naming your CSS](https://github.com/Klosmi/html-basics/blob/master/BEM.md)
 21.  <a href="https://github.com/css-modules/css-modules" target="_blank">About CSS Modules </a><sup>external link</sup>
-22. [Inspiration sites for web design](https://github.com/Klosmi/html-basics/blob/master/inspiration.md#webdesign-insoiration-sites)
+22. [Inspiration sites for web design](https://github.com/Klosmi/html-basics/blob/master/inspiration.md#webdesign-insoiration-sites)   
 
 
 <br>
@@ -48,7 +48,8 @@
 19. [JS: DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)   
 20. [JS: Attributes & Properties](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties)   
 21. [JS: DOM events](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
-22. [JS: Asynchronous JavaScript](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
+22. [JS: Asynchronous JavaScript](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)   
+23. [JS: AJAX]()
 
 
 <br>
