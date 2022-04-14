@@ -7723,3 +7723,13 @@ in the case of a rejection, `await` promise throws the error
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to beginning of Promises](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise) or [👆 go up to Asynchronous JS](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
   
 <br> 
+
+# [AJAX](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX)    
+AJAX = Asynchronous JavaScript and XML
+
+
+---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+  
+<br> 
