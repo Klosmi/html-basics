@@ -7791,7 +7791,7 @@ __Interface not for humans, but for applications!__
 ## __[JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON)__
  __JavaScript Object Notation__
 
- JSONis just a format for sending data for, for sending information from an API to, our browser for instance.
+ JSON is just a format for sending data for, for sending information from an API to, our browser for instance.
 
  It is a data-interchange format.    
   
