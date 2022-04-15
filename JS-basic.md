@@ -7789,7 +7789,7 @@ __Interface not for humans, but for applications!__
 <br> 
 
 ## __[JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON)__
- JavaScript Object Notation
+ __JavaScript Object Notation__
 
  JSONis just a format for sending data for, for sending information from an API to, our browser for instance.
 
