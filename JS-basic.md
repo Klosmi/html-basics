@@ -7725,11 +7725,32 @@ in the case of a rejection, `await` promise throws the error
 <br> 
 
 # [AJAX](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX)    
-AJAX = Asynchronous JavaScript and XML
+AJAX = __Asynchronous JavaScript And [XML](https://developer.mozilla.org/en-US/docs/Web/XML/XML_introduction)__   
+*(XML = Extensible Markup Language)*
+
+(Correctly would be AJAJ, since XML is depricated, we use JSON instead)
+
+- AJAX refers to:   
+ a) making requests to load information *(behind the scenes)*        
+ b) to send information    
+ c) to save something on a given website    
+ d) interacting with a server
+
+- So the idea of AJAX is: creating applications where using JavaScript we can load data / we can fetch information / we can send data somewhere, to save something to a database. ANd does all this behind the scenes.
+
+- There's no need to refresh the page, because we can make a request to the API every X minutes.   
+What the API sends back is pure information in a JSON format.
+
+ - eg.:     
+  the infint scroll on instagram, reddit, etc.    
+  live searching (google) it gives suggestions while typing
+
+ - dev.tool → __network__ tab:   
+  shows requests that have been made on a given page, new information that has been loaded.
 
 
 ---
 
-  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to AJAX]()
   
 <br> 
