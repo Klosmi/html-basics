@@ -7777,7 +7777,7 @@ So we can make requests to particular URLs, which we usually call __endpoints__.
 
 Web APIs are like a *portal into a different application or database*.
 
-(Interface not for humans, but for applications.)
+__Interface not for humans, but for applications!__
 
  -  When we make requests using JavaScript, AJAX requests, we are looking the data (not the HTML, CSS).
 
