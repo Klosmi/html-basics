@@ -7751,7 +7751,7 @@ What the API sends back is pure information in a JSON format.
 - __[API](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#api)__  
   __[JSON](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#json)__     
   __[API management tools](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#api-management-tools--platforms---http-requests)__    
-  __[HTTP Verbs]()__   
+  __[HTTP Verbs](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#http-verbs)__   
   
 
 ---
