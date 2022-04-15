@@ -7759,7 +7759,7 @@ What the API sends back is pure information in a JSON format.
 <br> 
 
 ## __[API](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction#what_are_apis)__   
-  Application Programming Interfaces   
+  __Application Programming Interfaces__   
 
   API is very broad term that refers to any interface for one computer to interact or communicate with another software.
 
