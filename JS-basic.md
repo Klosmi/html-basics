@@ -7795,7 +7795,7 @@ __Interface not for humans, but for applications!__
 
  It is a data-interchange format.    
   
--  [JSON](https://www.json.org/json-en.html) possible values *not exactly the same as in JS*:   
+-  [JSON](https://www.json.org/json-en.html) possible values are *not exactly the same as in JS*:   
    - object, array, string, number, "true", "false", "null"
    - ❗️ undefined is not a valid JSON (it's valid in JavaScript)
 
