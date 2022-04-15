@@ -7750,7 +7750,9 @@ What the API sends back is pure information in a JSON format.
 
 - __[API](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#api)__  
   __[JSON](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#json)__     
-  __[API management tools](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#api-management-tools--platforms---http-requests)__
+  __[API management tools](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#api-management-tools--platforms---http-requests)__    
+  __[HTTP Verbs]()__   
+  
 
 ---
 
@@ -7891,3 +7893,35 @@ it is the same as Postman, but it is opensource and free.
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to AJAX](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax)
   
 <br> 
+
+## __[HTTP Verbs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)__   
+  HTTP defines a set of request methods to indicate the desired action to be performed for a given resource. 
+
+  - Each verb is a different type of request.
+
+    - __[GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET)__ request :    
+    to get or retrieve information, it's just a way of getting stuff from an API.
+
+    - __[HEAD](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/HEAD)__
+
+    - __[POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST)__ request :   
+    to send data somewhere, trying to *post* data. The data we are sending is going to be saved somewhere / stored in a database / have an impact on a server.
+
+    - __[PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT)__
+
+    - __[DELETE](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE)__ request :    
+      to delete something via an API.
+
+    _ __[CONNECT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/CONNECT)__
+
+    - __[OPTIONS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/OPTIONS)__
+
+    - __[TRACE](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/TRACE)__
+
+    - __[PATCH](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PATCH)__
+
+ ---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to AJAX](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax)
+  
+<br>
