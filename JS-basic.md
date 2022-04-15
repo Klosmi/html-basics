@@ -7736,7 +7736,7 @@ AJAX = __Asynchronous JavaScript And [XML](https://developer.mozilla.org/en-US/d
  c) to save something on a given website    
  d) interacting with a server
 
-- So the idea of AJAX is: creating applications where by using JavaScript we can load data / we can fetch information / we can send data somewhere, to save something to a database. ANd does all this behind the scenes.
+- So the idea of AJAX is: creating applications where by using JavaScript we can load data / we can fetch information / we can send data somewhere, to save something to a database. And all this happens behind the scenes.
 
 - There's no need to refresh the page, because we can make a request to the API every X minutes.   
 What the API sends back is pure information in a JSON format.
