@@ -7769,7 +7769,11 @@ What the API sends back is pure information in a JSON format.
 __[Web API](https://www.geeksforgeeks.org/what-is-web-api-and-why-we-use-it/)__   
 Web apps are interfaces that are Web based __(HTTP based)__.    With a Web API we are referring to an interface that occurs over HTTP.
 
-So we can make requests to particular URLs, which we usually call endpoints.
+So we can make requests to particular URLs, which we usually call __endpoints__.    
+
+💡An __[endpoint](https://www.w3.org/TR/wsdl20/#Endpoint)__ is the URL where your service can be accessed by a client application (eg.: `https://catfact.ninja/fact`).
+
+
 
 Web APIs are like a *portal into a different application or database*.
 
@@ -7881,9 +7885,7 @@ it is the same as Postman, but it is opensource and free.
     "length": 67
   }
   ```
-  💡An __[endpoint](https://www.w3.org/TR/wsdl20/#Endpoint)__ is the URL where your service can be accessed by a client application (eg.: `https://catfact.ninja/fact`).
-
-
+ 
  ---
 
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to AJAX](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax)
