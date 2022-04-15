@@ -7742,8 +7742,8 @@ AJAX = __Asynchronous JavaScript And [XML](https://developer.mozilla.org/en-US/d
 What the API sends back is pure information in a JSON format.
 
  - eg.:     
-  the infint scroll on instagram, reddit, etc.    
-  live searching (google) it gives suggestions while typing
+  *The infint scroll on instagram, reddit, etc.*       
+  *The live searching (google) it gives suggestions while typing*
 
  - dev.tool → __network__ tab:   
   shows requests that have been made on a given page, new information that has been loaded.
