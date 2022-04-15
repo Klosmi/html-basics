@@ -7748,9 +7748,144 @@ What the API sends back is pure information in a JSON format.
  - dev.tool → __network__ tab:   
   shows requests that have been made on a given page, new information that has been loaded.
 
+- __[API]()__
+- __[JSON]()__
+- __[API management tools]()__
 
 ---
 
-  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to AJAX]()
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+  
+<br> 
+
+## __[API](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction#what_are_apis)__   
+  Application Programming Interfaces   
+
+  API is very broad term that refers to any interface for one computer to interact or communicate with another software.
+
+ - An API allows to create complex functionality __more easily__.    
+   An API abstracts more complex code away from you, providing some __easier syntax__ to use in its place.
+
+__[Web API](https://www.geeksforgeeks.org/what-is-web-api-and-why-we-use-it/)__   
+Web apps are interfaces that are Web based __(HTTP based)__.    With a Web API we are referring to an interface that occurs over HTTP.
+
+So we can make requests to particular URLs, which we usually call endpoints.
+
+Web APIs are like a *portal into a different application or database*.
+
+(Interface not for humans, but for applications.)
+
+ -  When we make requests using JavaScript, AJAX requests, we are looking the data (not the HTML, CSS).
+
+
+---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to AJAX](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax)
+  
+<br> 
+
+## __[JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON)__
+ JavaScript Object Notation
+
+ JSONis just a format for sending data for, for sending information from an API to, our browser for instance.
+
+ It is a data-interchange format.    
+  
+-  [JSON](https://www.json.org/json-en.html) possible values *not exactly the same as in JS*:   
+   - object, array, string, number, "true", "false", "null"
+   - ❗️ undefined is not a valid JSON (it's valid in JavaScript)
+
+- It's a way of formatting data that is consistent and predictable and it's very __similar to JavaScript__.  
+
+- Syntax:
+  - key-value pairs
+  - curly braces `{}`
+  - every key has to be a __"double quoted string"__
+
+- eg.:   
+  ```
+  {
+    "stringKey" : "string value",
+    "intigerKey" : 2022,
+    "booleanKey" : true,
+    "arrayKey" : [
+      "array01",
+      "array02",
+      "array03"
+    ]
+  }
+  ```
+
+- __[`JSON.parse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)__:   
+The __`JSON.parse()` method__  to turns JSON into a valid JavaScript object.
+
+  - eg.:   
+    *turning a JSON into a JAvaScript obejct with the `JSON.parse()` method*   
+    ```
+    const json = '{"result":true, "count":42}';
+    
+    JSON.parse(json);
+
+    // result: true, count: 42
+    ``` 
+    *To extract the data*
+    ```
+    const json = '{"result":true, "count":42}';
+    
+    // save it to a variable
+    const obj =  JSON.parse(json);
+
+    obj.count;
+
+    // 42
+    ``` 
+
+
+- __[`JSON.stringify()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)__:   
+The JSON.stringify() method converts a JavaScript object or value to a JSON string.    
+  - It is useful when we want to send information to an API and API needs the data as JSON.
+
+  - eg.:   
+    *Turn a JavaScript object into a valid JSON*   
+    ```
+    const object = {phone : 'mobile', color : 'silver', isWorking : true, number : undefined}
+
+    // calling the method
+    JSON.stringify(object);
+
+    // '{"phone":"mobile","color":"silver","isWorking":true}'
+    ```
+ 
+ ---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to AJAX](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax)
+  
+<br> 
+
+## __[API Management Tools & Platforms - HTTP requests](https://www.talend.com/resources/what-is-api-management/)__     
+We can use tools to make requests, to save requests, helps us make API calls and to test out different API requests.    
+
+__[postman](https://www.postman.com/)__   
+it is an API platform for building and using APIs.
+    
+__[hoppscotch](https://hoppscotch.io/)__    
+it is the same as Postman, but it is opensource and free.
+
+- eg.:   
+  *We send a URL with a base API (.../api) → `https://catfact.ninja/fact` via Postman (we place the URL into the GET and click send).*    
+  *What we get, is a JSON, it is the __response__*   
+  *It looks like this...*
+  ```
+  {
+    "fact": "Fossil records from two million years ago show evidence of jaguars.",
+    "length": 67
+  }
+  ```
+  💡An __[endpoint](https://www.w3.org/TR/wsdl20/#Endpoint)__ is the URL where your service can be accessed by a client application (eg.: `https://catfact.ninja/fact`).
+
+
+ ---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to AJAX](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax)
   
 <br> 
