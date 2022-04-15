@@ -7824,7 +7824,7 @@ __Interface not for humans, but for applications!__
 The __`JSON.parse()` method__  to turns JSON into a valid JavaScript object.
 
   - eg.:   
-    *turning a JSON into a JAvaScript obejct with the `JSON.parse()` method*   
+    *turning a JSON into a JavaScript obejct with the `JSON.parse()` method*   
     ```
     const json = '{"result":true, "count":42}';
     
