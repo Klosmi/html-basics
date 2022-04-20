@@ -68,7 +68,7 @@
 - *so __[when to use ID and when to use Class?](https://www.developintelligence.com/blog/2016/04/css-class-vs-id-which-one-to-use/#When-to-Use-Class-vs-ID-in-CSS)__*
     
 - [Descendant combinator (selectors)](https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator) : are represented by a single space ( ) character, it **combines** two selectors *(not with comma, but with white space)*. Selectors that utilize a descendant combinator are called descendant selectors. 
-    -  also called as *generic descendent* selector
+    -  also called as *generic descendant* selector
   
     -  so you can select elements which are nested inside of an other elements.
   
