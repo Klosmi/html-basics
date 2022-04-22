@@ -7900,6 +7900,8 @@ it is the same as Postman, but it is opensource and free.
 
 ## __[HTTP Verbs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)__   
   HTTP defines a set of request methods to indicate the desired action to be performed for a given resource. 
+  
+  - 💡 a [very useful article](https://www.freecodecamp.org/news/http-request-methods-explained/) about the topic of HTTP Requests.
 
   - Each verb is a different type of request.
 
