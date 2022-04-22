@@ -7933,10 +7933,11 @@ So __it is a code that is come back in an HTTP response, and it has a meaning.__
 
 - they are grouped in 5 classes:
   - __Informational responses__ ([100–199](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#information_responses))
-  - 
+ 
   - __Successful responses__ ([200–299](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#successful_responses))
       - [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200) : the most common. It means that the request has succeeded. 
       - [201](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/201) : when we create something successfully with a POST request.
+  
   - __Redirection messages__ ([300–399](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#redirection_messages)) :   
       __do soemthing with rederiction.__    
       Eg.: *google.co instead of google.com → redirect to google.com*  
