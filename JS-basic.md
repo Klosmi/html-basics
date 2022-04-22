@@ -7967,3 +7967,51 @@ So __it is a code that is come back in an HTTP response, and it has a meaning.__
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to AJAX](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax)
   
 <br>
+
+## __[Query Strings]()__
+  A [query string](https://en.wikipedia.org/wiki/Query_string) is __the portion of a URL where data is passed to a web application and/or back-end database__.  
+
+  So we can include a lot of information in a URL, and each endpoint means something different.
+
+  - eg.:    
+   `https://example.com/over?field1=value1&field2=value2`
+   The UR: `https://example.com/over`   
+   The __query string__ : `?field1=value1&field2=value2`
+  
+  Some API endpoints have variables in the URL, something that can change in the URL.
+
+  - parts of the [URL](https://medium.com/@joseph.pyram/9-parts-of-a-url-that-you-should-know-89fea8e11713)
+
+  - __`id`__ (can be `:id` or `{{id}}` or `<id>`):    
+    it is a common variable, it tells us to replace this with an actual ID.
+    - eg.:  
+      *`:id` indicting that we cn replace it with something, here like a number.*     
+      *Many times there is a documentation of the given [API](https://swapi.dev/documentation), where tehy explain what is what.*  
+      ```
+      https://swapi.dev/api/people/:id/
+      ```
+      we can replace the `:id` with a number
+      ```
+      https://swapi.dev/api/people/7
+      ```
+      and it gives us something (here a spceific resource, the 7th person eg).
+
+  - __[`?`](https://en.wikipedia.org/wiki/Query_string#Structure)__   
+    at the and of the URL there is `?` (question mark) starts the quesry string, where a lots of key-value pairs can be found:    
+    __key `=` value__    
+    These key-value pairs are sparated by `&` (ampersands).
+
+    - eg.:   
+      `https://example.com/over?color=blue&material=wood`
+
+  
+  - eg.:   
+    `https://developer.mozilla.org/en-US/?q=react`
+    The server of mozzilla, is looking for a *value* `q` and use what it finds under `q` as the __search term__ (query).   
+    Here the API finds a lot of React search results.
+
+ ---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to AJAX](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax)
+  
+<br>
