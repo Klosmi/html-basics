@@ -7971,8 +7971,8 @@ So __it is a code that is come back in an HTTP response, and it has a meaning.__
   
 <br>
 
-## __[Query Strings]()__
-  A [query string](https://en.wikipedia.org/wiki/Query_string) is __the portion of a URL where data is passed to a web application and/or back-end database__.  
+## __[Query Strings](https://en.wikipedia.org/wiki/Query_string)__
+  A query string is __the portion of a URL where data is passed to a web application and/or back-end database__.  
 
   So we can include a lot of information in a URL, and each endpoint means something different.
 
