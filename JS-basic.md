@@ -7748,11 +7748,11 @@ What the API sends back is pure information in a JSON format.
  - dev.tool → __network__ tab:   
   shows requests that have been made on a given page, new information that has been loaded.
 
-- __[API](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#api)__  
-  __[JSON](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#json)__     
-  __[API management tools](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#api-management-tools--platforms---http-requests)__    
-  __[HTTP Verbs](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#http-verbs)__   
-  __[HTTP response status codes](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#http-response-status-codes)__
+- [API](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#api)  
+  [JSON](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#json)     
+  [API management tools](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#api-management-tools--platforms---http-requests)    
+  [HTTP Verbs](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#http-verbs)   
+  [HTTP response status codes](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#http-response-status-codes)
   
 
 ---
