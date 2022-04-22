@@ -7752,7 +7752,10 @@ What the API sends back is pure information in a JSON format.
   [JSON](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#json)     
   [API management tools](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#api-management-tools--platforms---http-requests)    
   [HTTP Verbs](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#http-verbs)   
-  [HTTP response status codes](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#http-response-status-codes)
+  [HTTP response status codes](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#http-response-status-codes)   
+  [Query Strings]()   
+  
+  
   
 
 ---
