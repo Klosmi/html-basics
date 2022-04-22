@@ -8018,3 +8018,43 @@ So __it is a code that is come back in an HTTP response, and it has a meaning.__
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to AJAX](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax)
   
 <br>
+
+
+## __[HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)__   
+*HTTP headers* let the __client__ and the __server__ pass __additional information__ with an HTTP request or response.  
+
+So, __headers are an additional way of passing information with a given request and also with a response__. 
+
+*Sort of metadata, little add on details of your request.*
+
+- __HTTP headers are key-value pairs__
+
+- For example, the *Accept-** headers indicate the allowed and preferred formats of the response. Other headers can be used to supply authentication credentials (e.g. Authorization), to control caching, or to get information about the user agent or referrer, etc.
+
+- dev.tool → *network tab* : in the __headers__ tab → : 
+  - __Request Headers__:     
+    - here are the request headers that were sent
+    - we can see key-value pairs, which are __pairs of information that go along with the request__.   
+      (eg.: *`cookie: user=E1011034406231; remember=true;`*)
+
+  - __[Response Headers](https://developer.mozilla.org/en-US/docs/Glossary/Response_header)__:   
+    - information comming back from the server
+    - __so an HTTP response which doesn't relate to the content of the message__   
+    (eg.: *Age*, *Location* or *Server* are used to give a more detailed context of the response).
+
+    - the server that tells us more about the content, the language, the data type, the format (HTMLor JSON), etc.
+
+- eg.:   
+  *Using Postman and custom Headers*   
+  *From [this](https://icanhazdadjoke.com/) API, we type API endpoints (URL) to the GET request.*    
+  *To adjust the response formatting, so if we want JSON (or HTML, or plain text), we need to specify the Header called 'Accept'*   
+  *→ we add the key and then the value information:*   
+  *we set the `key: Accept` | `value: application/json`*
+
+- some APIs can require from us to send a Header or multiple Headers along with our request. We can do this via code or using Postman.
+
+ ---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to AJAX](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax)
+  
+<br>
