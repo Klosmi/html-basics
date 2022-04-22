@@ -7953,12 +7953,14 @@ So __it is a code that is come back in an HTTP response, and it has a meaning.__
 
 
  - eg.:   
-  *Client error responses __404__* : when we asking for an end point that doesn't exist (like a misspelled URL).  
+  *Client error responses __404__*      
+  When we asking for an end point that doesn't exist (like a misspelled URL).  
  It means that the API doesn't know what we are asking → it sends an HTML 404.    
  By opening the DEV tool:we can see on the `devtool/netwrok` part that status is 404.
 
  - eg.:   
-  *Client error responses __405__* : it means that endpoint exists, but it doesn't support whatever we tried to do a post instead of a get (method not allowed).
+  *Client error responses __405__*      
+  It means that endpoint exists, but it doesn't support whatever we tried to do a post instead of a get (method not allowed).
   
  ---
 
