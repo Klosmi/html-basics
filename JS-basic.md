@@ -7752,6 +7752,7 @@ What the API sends back is pure information in a JSON format.
   __[JSON](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#json)__     
   __[API management tools](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#api-management-tools--platforms---http-requests)__    
   __[HTTP Verbs](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#http-verbs)__   
+  __[HTTP response status codes]()__
   
 
 ---
@@ -7912,7 +7913,7 @@ it is the same as Postman, but it is opensource and free.
     - __[DELETE](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE)__ request :    
       to delete something via an API.
 
-    _ __[CONNECT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/CONNECT)__
+    - __[CONNECT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/CONNECT)__
 
     - __[OPTIONS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/OPTIONS)__
 
@@ -7920,6 +7921,42 @@ it is the same as Postman, but it is opensource and free.
 
     - __[PATCH](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PATCH)__
 
+ ---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to AJAX](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax)
+  
+<br>
+
+## __[HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)__    
+HTTP response status codes indicate whether a specific HTTP request has been successfully completed.    
+So __it is a code that is come back in an HTTP response, and it has a meaning.__  
+
+- they are grouped in 5 classes:
+  - Informational responses ([100–199](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#information_responses))
+  - Successful responses ([200–299](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#successful_responses))
+      - [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200) : the most common. It means that the request has succeeded. 
+      - [201](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/201) : when we create something successfully with a POST request.
+  - Redirection messages ([300–399](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#redirection_messages)) :   
+      __do soemthing with rederiction.__    
+      Eg.: *google.co instead of google.com → redirect to google.com*  
+
+  - Client error responses ([400–499](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#client_error_responses)):    
+  __These are all status codes that indicate something the user or the client side did wrong.__   
+      - [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400) : Bad request. It means that the server cannot process the request due to something that is perceived to be a client error 
+      - [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401) : Unauthorized. It means that the client request has not been completed because it lacks valid authentication credentials for the requested resource.
+      - [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404) : Not found. It means that the server cannot find the requested resource.
+
+  - Server error responses ([500–599](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#server_error_responses)) :    
+  __these are the server side errors.__ When somethig went wrong on the server side, rather than on the clinet side. (Something wrong on the API side).
+
+ *all which start with `2` are ususally good (succesfull). `200` is the moste common*
+
+ - eg.: *Client error responses __404__* : when we asking for an end point that doesn't exist (like a misspelled URL).  
+ It means that the API doesn't know what we are asking → it sends an HTML 404.    
+ By opening the DEV tool:we can see on the `devtool/netwrok` part that status is 404.
+
+ - eg.: *Client error responses __405__* : it means that endpoint exists, but it doesn't support whatever we tried to do a post instead of a get (method not allowed).
+  
  ---
 
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to AJAX](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax)
