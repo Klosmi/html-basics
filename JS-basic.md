@@ -8024,8 +8024,7 @@ So __it is a code that is come back in an HTTP response, and it has a meaning.__
 
 
 ## __[HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)__   
-*HTTP headers* let the __client__ and the __server__ pass __additional information__ with an HTTP request or response.   
-__HTTP headers are a lot of key-pair information shared between the client and the server to set up a lot of stuff behind the scenes__, like caching-related data (which helps make data persistent in your browser even if you reload the page), authorization data (which proves you are who you're saying you are when accessing restricted-access webpages) and so on. 
+__[HTTP headers](https://www.ionos.com/digitalguide/hosting/technical-matters/http-header/) are a lot of key-pair information shared between the client and the server to set up a lot of stuff behind the scenes__, like caching-related data (which helps make data persistent in your browser even if you reload the page), authorization data (which proves you are who you're saying you are when accessing restricted-access webpages) and so on. 
 
 So, __headers are an additional way of passing information with a given request and also with a response__. 
 
