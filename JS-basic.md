@@ -7935,7 +7935,7 @@ it is the same as Postman, but it is opensource and free.
 
 ## __[HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)__    
 HTTP response status codes indicate whether a specific HTTP request has been successfully completed.    
-So __it is a code that is come back in an HTTP response, and it has a meaning.__  
+So __it is a code that comes back in an HTTP response, and it has a meaning.__  
 
 - they are grouped in 5 classes:
   - __Informational responses__ ([100–199](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#information_responses))
