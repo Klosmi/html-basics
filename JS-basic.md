@@ -7955,7 +7955,7 @@ So __it is a code that comes back in an HTTP response, and it has a meaning.__
       - [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404) : Not found. It means that the server cannot find the requested resource.
 
   - __Server error__ responses ([500–599](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#server_error_responses)) :    
-  __these are the server side errors.__ When somethig went wrong on the server side, rather than on the clinet side. (Something wrong on the API side).
+  __these are the server side errors.__ When somethig went wrong on the server side, rather than on the client side. (Something is wrong on the API side).
 
 
  - eg.:   
