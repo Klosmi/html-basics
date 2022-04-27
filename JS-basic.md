@@ -8032,7 +8032,7 @@ So, __headers are an additional way of passing information with a given request 
 
 - __HTTP headers are key-value pairs__
 
-- eg.: the *Accept-* headers indicate the allowed and preferred formats of the response. Other headers can be used to supply authentication credentials (e.g. Authorization), to control caching, or to get information about the user agent or referrer, etc.
+- eg.: the *Accept-* headers indicate the allowed and preferred formats of the response. Other headers can be used to supply authentication credentials (e.g. Authorization), to control caching, or to get information about the [user agent](https://developer.mozilla.org/en-US/docs/Glossary/User_agent) or referrer, etc.
 
 - dev.tool → *network tab* : in the __headers__ tab → : 
   - __Request Headers__:     
