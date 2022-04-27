@@ -8037,7 +8037,7 @@ So, __headers are an additional way of passing information with a given request 
 - dev.tool → *network tab* : in the __headers__ tab → : 
   - __Request Headers__:     
     - here are the request headers that were sent
-    - we can see key-value pairs, which are __pairs of information that go along with the request__.   
+    - we can see key-value pairs, which are __pairs of information that goes along with the request__.   
       (eg.: *`cookie: user=E1011034406231; remember=true;`*)
 
   - __[Response Headers](https://developer.mozilla.org/en-US/docs/Glossary/Response_header)__:   
