@@ -6677,7 +6677,7 @@ The `input event` fires as soon as we type something in the `<input>`.
 
 
 - eg.:    
-  *We have a `<button>` inside of a `<p>` paragpraph, which is inside of a `<section>`. All element have an `onclick` event.*  
+  *We have a `<button>` inside of a `<p>` paragpraph, which is inside of a `<section>`. All the elements have an `onclick` event.*  
   HTML
   ```
   <section onclick="alert('Section clicked!')">
