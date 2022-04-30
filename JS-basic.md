@@ -8093,7 +8093,7 @@ Is a way of sending request via JavaScript.
   // Loaded!
   // ▸ XMLHttpRequest                                         //← XMLHttpRequest object
        response:...
-    🔹 responseText:...                                        //← it is a text (string), we have to convert it to JS object
+    🔹 responseText:...                                       //← it is a text (string), we have to convert it to JS object
        responseType: ""                                                                 
   ```
   *We `console.log` the `responseText` → we get a long string.* 
