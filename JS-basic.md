@@ -7755,6 +7755,7 @@ What the API sends back is pure information in a JSON format.
   [HTTP response status codes](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#http-response-status-codes)   
   [Query Strings](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#query-strings)    
   [HTTP Headers](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#http-headers)    
+  [XHR - XMLHttpRequest]()     
   
   
   
@@ -8056,6 +8057,92 @@ So, __headers are an additional way of passing information with a given request 
 
 - some APIs can require from us to send a Header or multiple Headers along with our request. We can do this via code or using Postman.
 
+ ---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to AJAX](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax)
+  
+<br>
+
+## __[XHR = XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)__
+Is a way of sending request vie JavaScript.
+
+- There's no support for `promises`, so we lots of callbacks, so it is messy.
+- The capitalization makes it difficult (like here: XMLHttpRequest)
+- clunky syntaxes
+
+- here the "original way" of seinding the request:
+ - eg.:  
+  *The way that we make a request is by creating a new `XMLHttpRequest` __object__ and save it to a variable (`request`).*    
+
+  *Then we add the `open` method with the `("GET", "URL")` GET request and the URL.*  
+
+  *After we opend it, we have to send it (`variable.sned();`).*
+
+  *Before, we add 2 `EventListener` callbacks: `variable.onload` and `variable.onerror`.*
+  ```
+  const request = new XMLHttpRequest();  //← creating a request object
+
+  request.onload = function() {
+    console.log("Loaded!");
+    console.log(this);                    //← this = the request object
+  }
+  request.onerror = function() {
+    console.log("ERROR!");
+    console.log(this);                    //← this = the request object
+  }
+
+  request.open("GET", "https://swapi.dev/api/planets/1/"); // ← open a request
+  request.send();                          // ← send the request
+
+  // we send it, and the result:
+  // Loaded!
+  // ▸ XMLHttpRequest                       // XMLHttpRequest object
+      response:...
+      responseText:...                      // this is a text (string), we have to convert it ti JS object
+      responseType: ""                                                                 
+  ```
+  *We are `console.log` the `responseText` and we se it's a long string.* 
+  *We have turn it into a JS object, by __parsing__ because it is a __string__ (__we can not access other wise__,`request[height]` would NOT work!!!)*
+  ```
+  const request = new XMLHttpRequest();  //← creating a request object
+
+  request.onload = function() {
+    console.log("Loaded!");
+    console.log(this.responseText);
+    const variable = JSON.parse(this.responseText);  //  variable is a JS object here 
+                                                    // JSON.parse() is a method object      
+  }
+  request.onerror = function() {
+    console.log("ERROR!");
+    console.log(this);                    //← this = the request object
+  }
+
+  request.open("GET", "https://swapi.dev/api/planets/1/"); // ← open a request
+  request.send();                          // ← send the request
+
+  // we send it, and the result:
+  // Loaded!
+  // {"name":"Tatooine","rotation_period":"23",,"population":"200000",...}                                       // it's an object: key-value pairs, now we canextract the values.
+  ```
+  *Note [JSON.parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) method*
+  *After the `const variable = JSON.parse(this.responseText);` we received a JS object, key-value pairs. We can extract the value: `console.log(variable.name, variable.height)`*
+  ```
+  .
+  .
+  .
+  request.onload = function() {
+    console.log("Loaded!");
+    const variable = JSON.parse(this.responseText)
+    console.log(variable.name, variable.population) ;                            
+  }     // extracting the values by using the key
+  .
+  .
+  .
+
+  // Loaded!
+  // Tatooine 200000
+  ```
+  
  ---
 
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to AJAX](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax)
