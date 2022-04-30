@@ -8187,7 +8187,8 @@ Is a way of sending request via JavaScript.
     //                   url: "https://swapi.dev/api/planets/1/"
     //                 ▸ [[Prototype]]: Response
     ```
-    *Because we don't have the data in the returned Response obejct's body, we use `response.json()` method. So the `response.json() method is added on to the `fetch()` response object, and it also returnes a `promise`.*   
+    *Because we don't have the data in the returned Response obejct's body, we use `response.json()` method.*    
+    *So the `response.json() method is added on to the `fetch()` response object, and it also returnes a `promise`.*   
     *Since the `response.json()` method returnes a `promise`, we can chain a `.then()`.*   
     ```
     fetch("https://swapi.dev/api/planets/1/")
