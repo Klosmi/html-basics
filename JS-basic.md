@@ -7756,6 +7756,7 @@ What the API sends back is pure information in a JSON format.
   [Query Strings](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#query-strings)    
   [HTTP Headers](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#http-headers)    
   [XHR - XMLHttpRequest](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#xhr--xmlhttprequest)     
+  [Fetch API](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#fetch-api)     
   
   
   
