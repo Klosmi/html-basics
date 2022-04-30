@@ -8099,7 +8099,7 @@ Is a way of sending request via JavaScript.
   *We `console.log` the `responseText` → we get a long string.*    
   *We have turn it into a JS object by __parsing__ because it is a __string__ (__we can not access the value such as__ eg.: `request[population]`, this doesn't work!!!)*
   ```
-  const request = new XMLHttpRequest();                      //← creating a request object
+  const request = new XMLHttpRequest();                       //← creating a request object
 
   request.onload = function() {
     console.log("Loaded!");
@@ -8117,7 +8117,7 @@ Is a way of sending request via JavaScript.
 
   // we send it and the result is:
   // Loaded!
-  // {"name":"Tatooine","rotation_period":"23",,"population":"200000",...}   //← it's an object: key-value pairs → now we canextract the values.
+  // {"name":"Tatooine","rotation_period":"23",,"population":"200000",...}   //← it's an object: key-value pairs → now we can extract the values.
   ```
   *Note [JSON.parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) method*
   *After the `const variable = JSON.parse(this.responseText);` we received a JS object, key-value pairs. We can extract the value: `console.log(variable.name, variable.population)`*
