@@ -8223,7 +8223,7 @@ Is a way of sending request via JavaScript.
     ```
     *So what happens:*   
     *1. `fetch("https://URL")` returns a promise → either fulfilled or rejected*  
-    *2. if it is fulfilled, we call and return the `response.json()` method → return a promise*  
+    *2. if it is fulfilled, we call and return the `response.json()` method → returns a promise*  
 
     <br>
 
