@@ -8232,14 +8232,14 @@ Is a way of sending request via JavaScript.
     *(We can make these requests independently, so they don't depend on each other, thus the 2nd request can fulfilled without worrying about the 1st request.)*   
     *__We just add a `fetch(URL2nd Request)` below the `response.json()`'s `.then()` method.__*
     ```
-    fetch("https://swapi.dev/api/planets/1/")         //← 1st request
+    fetch("https://swapi.dev/api/planets/1/")                   //← 1st request
         .then( response =>  {                      
           console.log("1st request!");  
           return response.json()
         })
         .then( data => {
             console.log("1st response: ", data);  
-            return fetch("https://swapi.dev/api/planets/2/");   //← 2nd request
+            return fetch("https://swapi.dev/api/planets/2/");   //← 2nd request, only runs if the 1st request fulfilled
         })
           .then( response =>{
               console.log("2nd request!!!");
