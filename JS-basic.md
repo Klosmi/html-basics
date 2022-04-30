@@ -8096,7 +8096,7 @@ Is a way of sending request via JavaScript.
     🔹 responseText:...                                       //← it is a text (string), we have to convert it to JS object
        responseType: ""                                                                 
   ```
-  *We `console.log` the `responseText` → we get a long string.* 
+  *We `console.log` the `responseText` → we get a long string.*    
   *We have turn it into a JS object by __parsing__ because it is a __string__ (__we can not access such as__ eg.: `request[population]`, this doesn't work!!!)*
   ```
   const request = new XMLHttpRequest();                      //← creating a request object
