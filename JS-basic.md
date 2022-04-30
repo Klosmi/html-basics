@@ -8081,6 +8081,7 @@ Is a way of sending request via JavaScript.
     console.log("Loaded!");
     console.log(this);                                        //← 'this' is the request object
   }
+  
   request.onerror = function() {
     console.log("ERROR!");
     console.log(this);                                        //← 'this' is the request object
@@ -8104,9 +8105,9 @@ Is a way of sending request via JavaScript.
   request.onload = function() {
     console.log("Loaded!");
     console.log(this.responseText);
-    const variable = JSON.parse(this.responseText);           //← variable is a JS object here | JSON.parse() is a method object
-                                                                    
+    const variable = JSON.parse(this.responseText);           //← variable is a JS object here | JSON.parse() is a method object                                       
   }
+  
   request.onerror = function() {
     console.log("ERROR!");
     console.log(this);                                        //← "this" is the request object
