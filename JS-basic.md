@@ -8189,7 +8189,7 @@ Is a way of sending request via JavaScript.
     ```
     *Because we don't have the data in the returned Response obejct's body, we use `response.json()` method.*    
     *So the `response.json()` method is added on to the `fetch()` response object, and it also returnes a `promise`.*   
-    *Since the `response.json()` method returnes a `promise`, we can chain a `.then()`.*   
+    *Since the `response.json()` method returnes a `promise`, we can chain a `.then()` method.*   
     ```
     fetch("https://swapi.dev/api/planets/1/")
       .then(response =>  {                      
