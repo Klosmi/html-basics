@@ -8201,7 +8201,7 @@ Is a way of sending request via JavaScript.
       })
 
     // Fulfilled!!! Response {type: 'cors', url: 'https://swapi.dev/api/planets/1/', redirected: false, status: 200, ok: true, …}
-    //JSON is DONE!!! {name: 'Tatooine', rotation_period: '23', orbital_period:     //← we get back the data'304', diameter: '10465', climate: 'arid', …}
+    // JSON is DONE!!! {name: 'Tatooine', rotation_period: '23', orbital_period:     //← we get back the data'304', diameter: '10465', climate: 'arid', …}
     ```
     *A NICER refactured way for the above code is to not to use the `response.json()` in a single line.*   
     *We put a `return` before the `response.json()`, and place the `.then(data =>...)` below, outside of the other `.then()`method.*
