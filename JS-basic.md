@@ -8169,7 +8169,7 @@ Is a way of sending request via JavaScript.
       .then(response =>  {                      //← fulfilled, we get a response object
         console.log("Fulfilled!!!", response);  //← it will show "Fulfilled!!!" and we display the "response" 
       })  
-      .cathc(error => {
+      .catch(error => {
         console.log("Error!!!", error);
       })
 
@@ -8196,7 +8196,7 @@ Is a way of sending request via JavaScript.
         console.log("Fulfilled!!!", response);  
         response.json().then(data => console.log("JSON is DONE!!!", data));      //← json() method |  we can use any name instead of the "data" 
       })  
-      .cathc(error => {
+      .catch(error => {
         console.log("Error!!!", error);
       })
 
@@ -8214,7 +8214,7 @@ Is a way of sending request via JavaScript.
       .then(data => {
           console.log("We got back these data: ", data);
           })     
-      .cathc(error => {
+      .catch(error => {
         console.log("Error!!!", error);
       })
 
@@ -8248,7 +8248,7 @@ Is a way of sending request via JavaScript.
           .then( data => {
               console.log("2nd response: ", data);  
           })
-        .cathc( error => {
+        .catch( error => {
             console.log("Error!!!", error);
         })
 
