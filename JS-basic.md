@@ -8166,7 +8166,7 @@ Is a way of sending request via JavaScript.
     
     ```
     fetch("https://swapi.dev/api/planets/1/")
-      .then(response =>  {                      //← is it is fulfilled, we get a response object
+      .then(response =>  {                      //← fulfilled, we get a response object
         console.log("Fulfilled!!!", response);  //← will show "Fulfilled" and we display the "response" 
       })  
       .cathc(error => {
