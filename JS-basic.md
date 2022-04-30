@@ -8174,9 +8174,9 @@ Is a way of sending request via JavaScript.
       })
 
     // Fulfilled!!! ▸ Response                  //← Response is an object   
-    //                 ▸ body: ReadableStream   //← normally is should contain the value (JSON)
-                                                // incomplete body → we don't have the data, because the HTTP request was made before this is resolved.
-                                                Resolved as soon as it could.
+    //                 ▸ body: ReadableStream   //← normally it should contain the value (JSON)
+                                                // So it is an incomplete body → we don't have the data, because the HTTP request was made before this is resolved.
+                                                // Resolved as soon as it could.
     //                   bodyUsed: false
     //                 ▸ headers: Headers {}    //← these are the response headers
     //                   ok: true
