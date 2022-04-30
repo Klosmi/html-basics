@@ -8119,8 +8119,9 @@ Is a way of sending request via JavaScript.
   // Loaded!
   // {"name":"Tatooine","rotation_period":"23",,"population":"200000",...}   //← it's an object: key-value pairs → now we can extract the values.
   ```
-  *Note [JSON.parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) method*
-  *After the `const variable = JSON.parse(this.responseText);` we received a JS object, key-value pairs. We can extract the value: `console.log(variable.name, variable.population)`*
+  *Note [JSON.parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) method*.  
+  *After the `const variable = JSON.parse(this.responseText);` we received a JS object, key-value pairs.*    
+  ❗️*We can extract the value: `console.log(variable.name, variable.population)`*
   ```
   .
   .
