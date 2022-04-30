@@ -8145,3 +8145,143 @@ Is a way of sending request via JavaScript.
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to AJAX](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax)
   
 <br>
+
+## __[Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)__   
+  it allows us to make requests using a the `fetch()` function, and it supports promises.   
+
+  So it is an improved and newer way of making requests via JavaScript, because it supports `promises` and async functions (compared to XMLHttpRequest, which doesn't really.)
+
+  - syntax: `fetch("https://here we place the URL")`
+
+  - eg.:   
+    *We just call `fetch("our URL")`, and it turns back a pending promise.*
+    ```
+    fetch("https://swapi.dev/api/planets/1/");
+
+    // ▸ Promise {<pending>}
+    ```
+    
+    *We add `.then()` and `.catch()`*   
+    
+    ```
+    fetch("https://swapi.dev/api/planets/1/")
+      .then(response =>  {                      //← is it is fulfilled, we get a response object
+        console.log("Fulfilled!!!", response);  //← will show "Fulfilled" and we display the "response" 
+      })  
+      .cathc(error => {
+        console.log("Error!!!", error);
+      })
+
+    // Fulfilled!!! ▸ Response                  //← Response is an object   
+    //                 ▸ body: ReadableStream   //← normally is should contain the value (JSON)
+                                                // incomplete body → we don't have the data, because the HTTP request was made before this is resolved.
+                                                Resolved as soon as it could.
+    //                   bodyUsed: false
+    //                 ▸ headers: Headers {}    //← these are the response headers
+    //                   ok: true
+    //                   redirected: false
+    //                   status: 200
+    //                   statusText: ""
+    //                   type: "cors"
+    //                   url: "https://swapi.dev/api/planets/1/"
+    //                 ▸ [[Prototype]]: Response
+    ```
+    *Because we don't have the data in the returned Response obejct's body, we use `response.json()` method. So the `response.json() method is added on to the `fetch()` response object, and it also returnes a `promise`.*   
+    *Since the `response.json()` method returnes a `promise`, we can chain a `.then()`.*   
+    ```
+    fetch("https://swapi.dev/api/planets/1/")
+      .then(response =>  {                      
+        console.log("Fulfilled!!!", response);  
+        response.json().then(data => console.log("JSON is DONE!!!", data));      //← json() method |  we can use any name instead of the "data" 
+      })  
+      .cathc(error => {
+        console.log("Error!!!", error);
+      })
+
+    // Fulfilled!!! Response {type: 'cors', url: 'https://swapi.dev/api/planets/1/', redirected: false, status: 200, ok: true, …}
+    //JSON is DONE!!! {name: 'Tatooine', rotation_period: '23', orbital_period:     //← we get back the data'304', diameter: '10465', climate: 'arid', …}
+    ```
+    *A NICER refactured way for the above code is to not to use the `response.json()` in a single line.*   
+    *We put a `return` before the `response.json()`, and place the `.then(data =>...)` below, outside of the other `.then()`method.*
+    ```
+    fetch("https://swapi.dev/api/planets/1/")
+      .then(response =>  {                      
+        console.log("Fulfilled!!!", response);  
+        return response.json()
+      })
+      .then(data => {
+          console.log("We got back these data: ", data);
+          })     
+      .cathc(error => {
+        console.log("Error!!!", error);
+      })
+
+    // Fulfilled!!! Response {type: 'cors', url: 'https://swapi.dev/api/planets/1/', redirected: false, status: 200, ok: true, …}
+    // We got back these data:  {name: 'Tatooine', rotation_period: '23', orbital_period: '304', diameter: '10465', climate: 'arid', …}  
+    ```
+    *So what happens:*   
+    *1. `fetch("https://URL")` returns a promise → either fulfilled or rejected*  
+    *2. if it is fulfilled, we call and return the `response.json()` method → return a promise*  
+
+    <br>
+
+    *When we want a __2nd request__, we don't have to do complicated nesting.*       
+    *The 1st request has to be fulfilled inorder to get to the 2nd request.*      
+    *We can make these requests independently, so they don't depend on each other, thus the 2nd request can fulfilled without worrying about the 1st reuest.*   
+    *__We just add a `fetch(URL2nd Request)` below the `response.json()`'s `.then()` method.__*
+    ```
+    fetch("https://swapi.dev/api/planets/1/")         //← 1st request
+        .then( response =>  {                      
+          console.log("1st request!");  
+          return response.json()
+        })
+        .then( data => {
+            console.log("1st response: ", data);  
+            return fetch("https://swapi.dev/api/planets/2/");   //← 2nd request
+        })
+          .then( response =>{
+              console.log("2nd request!!!");
+              return response.json()
+          })
+          .then( data => {
+              console.log("2nd response: ", data);  
+          })
+        .cathc( error => {
+            console.log("Error!!!", error);
+        })
+
+
+    // 1st request
+    // 1st response  {name: 'Tatooine', rotation_period: '23', orbital_period: '304', diameter: '10465', climate: 'arid', …}
+    // 2nd request!!!
+    // 2nd response  {name: 'Alderaan', rotation_period: '24', orbital_period: '364', diameter: '12500', climate: 'temperate', …}
+    ```
+    *Let's refactor the code above using the `async()` function.*   
+    ```
+    const loadStarWarsPlanets = async () => {
+      try {
+        const response = await fetch("https://swapi.dev/api/planets/1/");                 // ← 1st request
+        const data = await response.json()
+        console.log(data);
+
+        const response2 = await fetch("https://swapi.dev/api/planets/2/");                 // ← 2nd request
+        const data2 = await response2.json()
+        console.log(data2);
+      } catch (error) {
+        console.log("Error!!!", error);
+      }
+    }
+
+    // call the function
+    loadStarWarsPlanets();
+
+
+    // {name: 'Tatooine', rotation_period: '23', orbital_period: '304', diameter: '10465', climate: 'arid', …}
+    // {name: 'Alderaan', rotation_period: '24', orbital_period: '364', diameter: '12500', climate: 'temperate', …}
+    ```
+
+---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to AJAX](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax)
+  
+<br>
