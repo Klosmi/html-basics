@@ -8067,7 +8067,7 @@ So, __headers are an additional way of passing information with a given request 
 ## __[XHR = XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)__
 Is a way of sending request via JavaScript.
 
-- There's no support for `promises`, so we lots of callbacks, so it is messy.
+- There's no support for `promises`, so we have lots of callbacks, so it is messy.
 - The capitalization makes it difficult (like here: XMLHttpRequest)
 - clunky syntaxes
 - eg.:  
