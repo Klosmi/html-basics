@@ -7993,7 +7993,7 @@ So __it is a code that comes back in an HTTP response, and it has a meaning.__
   - __`id`__ (can be `:id` or `{{id}}` or `<id>`):    
     it is a common variable, it tells us to replace this with an actual ID.
     - eg.:  
-      *`:id` indicting that we cn replace it with something, here like a number.*     
+      *`:id` indicting that we can replace it with something, here like a number.*     
       *Many times there is a documentation of the given [API](https://swapi.dev/documentation), where tehy explain what is what.*  
       ```
       https://swapi.dev/api/people/:id/
