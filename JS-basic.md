@@ -8005,7 +8005,7 @@ So __it is a code that comes back in an HTTP response, and it has a meaning.__
       and it gives us something (here a spceific resource, the 7th person eg).
 
   - __[`?`](https://en.wikipedia.org/wiki/Query_string#Structure)__   
-    at the and of the URL there is `?` (question mark) starts the quesry string, where a lots of key-value pairs can be found:    
+    at the and of the URL there is `?` (question mark) starts the query string, where a lots of key-value pairs can be found:    
     __key `=` value__    
     These key-value pairs are sparated by `&` (ampersands).
 
