@@ -7201,7 +7201,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
   
 <br>  
 
-### __`.then()`__
+### __[`.then()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)__
 
 - eg.:   
   *The requestPromise function*
