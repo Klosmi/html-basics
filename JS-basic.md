@@ -7637,7 +7637,7 @@ the `await` keyword pauses the execution of our `async` function, and wait for a
   colorChange();
   ```
   *We can console.log a message after `colorChange()` is done.*   
-  *The `colorChange()`'s await prmoises are only fulfilled until they reach the `return "Now, the promise is fulfilled"`.*
+  *The `colorChange()`'s await promises are only fulfilled until they reach the `return "Now, the promise is fulfilled"`.*
   ```
   async function printColorChange() {
     await colorChange();                // waits until the promise is fulfilled
