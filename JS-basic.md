@@ -7246,7 +7246,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
   // [[PromiseState]]: "fulfilled"
   // [[PromiseResult]]: "Here is your URL: website.com/api/page1"
   ```
- #### __`.catch()`__
+ ### __`.catch()`__
  
  - eg.:   
     *(following the previous example)*    
@@ -7310,6 +7310,20 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
   *We __[return](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#return) a promise__ from within the `.then(callback)`. __That allows us to chain things together.__*    
   *Note that, we are passing a `data` in the function, because in real, a promise can be rejected and resolved with a value passed to it.*  
     ```
+    const requestPromise = (url) => {
+    return new Promise((resolve, reject) => {
+        const delay = Math.floor(Math.random() * (4500)) + 500;
+        setTimeout(() => {
+            if (delay > 4000) {
+                reject('Connection Timeout :(')
+            } else {
+                resolve(`Here is your URL: ${url}`)
+                }
+            }, delay)
+        })
+    }
+    
+    
     requestPromise('website.com/api/page1')               //← returns a promise object
         .then( function(data){ 
           console.log(data)                               // ← data = `Here is your URL: ${url}`  
