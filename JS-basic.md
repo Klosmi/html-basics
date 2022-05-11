@@ -7201,7 +7201,9 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
   
 <br>  
 
-### __[`.then()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)__
+### __[`.then()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)__    
+The `then()` method returns a Promise.    
+It takes up to two arguments: callback functions for the success and failure cases of the Promise.
 
 - eg.:   
   *The requestPromise function*
@@ -7246,7 +7248,8 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
   // [[PromiseState]]: "fulfilled"
   // [[PromiseResult]]: "Here is your URL: website.com/api/page1"
   ```
- ### __`.catch()`__
+ ### __[`.catch()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch)__    
+ The `catch()` method returns a Promise and deals with rejected cases only.
  
  - eg.:   
     *(following the previous example)*    
