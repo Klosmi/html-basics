@@ -6948,7 +6948,7 @@ But there are ways around this issue:
 - __[`setTimeout()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#settimeout)__ : running a code after a delay
   - eg.:   
     *How that code works if JS is singlethreaded?*   
-    *The execution of the lines should run from the first line to the last. But here the (`setTimeout()`) prints out the last. Because JS hands over this task to the browser. That is a web API function*  
+    *The execution of the lines should run from the first line to the last. But here the (`setTimeout()`) prints out the last. Because JS hands over this task to the browser. __That is a web API function__❗️*  
     ```
     console.log("I am the first line")
 
