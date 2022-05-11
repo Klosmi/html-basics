@@ -7327,7 +7327,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
         })
 
 
-    // Here is your fake data from website.com/api/page1
+    // Here is your URL: website.com/api/page1
     // 👍 worked 1
     // Connection Timeout :(
     // 👎 error 1    
