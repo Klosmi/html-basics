@@ -7065,8 +7065,8 @@ Because we have to call callbacks inside callbacks, we get a deeply nested funct
 <br>
 
 ## __[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)__
-__Promises are objects that represent the eventual completion, the eventual success or failure of some operation (some async operation).__
-So a promise is a returned object to which you attach callbacks, instead of passing callbacks into a function.
+Promises are objects that represent the eventual completion, the eventual success or failure of some operation (some async operation).
+__So a promise is a returned object to which you attach callbacks, instead of passing callbacks into a function.__
 
 - *promises* keep the nested branching path, but they make it [nicer](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#return-%EF%B8%8F).
 
