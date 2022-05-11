@@ -7305,8 +7305,7 @@ Here's an example, when our code is NOT nice, deeply nested → complicated:
  (So there is no need to nest → avoiding the [callback hell](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-hell))
 
 ### __return__ (❗️) 
- - eg.:   
-  *continuing the previous example*       
+ - eg.:     
   *We __[return](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#return) a promise__ from within the `.then(callback)`. __That allows us to chain things together.__*    
   *Note that, we are passing a `data` in the function, because in real, a promise can be rejected and resolved with a value passed to it.*  
     ```
