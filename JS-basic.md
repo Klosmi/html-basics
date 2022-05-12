@@ -8245,7 +8245,7 @@ Is a way of sending request via JavaScript.
 
     *When we want a __2nd request__, we don't have to do complicated nesting.*       
     *The 1st request has to be fulfilled inorder to get to the 2nd request.*      
-    *(We can make these requests independently, so they don't depend on each other, thus the 2nd request can fulfilled without worrying about the 1st request.)*   
+    *(We can make these requests independently, so they don't depend on each other, thus the 2nd request can be fulfilled without worrying about the 1st request.)*   
     *__We just add a `fetch(URL2nd Request)` below the `response.json()`'s `.then()` method.__*
     ```
     fetch("https://swapi.dev/api/planets/1/")                   //← 1st request
