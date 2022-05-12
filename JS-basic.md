@@ -8203,7 +8203,7 @@ Is a way of sending request via JavaScript.
     //                   url: "https://swapi.dev/api/planets/1/"
     //                 ▸ [[Prototype]]: Response
     ```
-    *We don't have the data in the Response object's bodym because the `promise` is fulfilled as soon as Fetch receives any headers.*   
+    *We don't have the data in the Response object's body because the `promise` (`.then(response =>  {...}`) is fulfilled as soon as Fetch receives any headers.*   
     *Because we don't have the data in the returned Response obejct's body, we use `response.json()` method.*    
     *So the `response.json()` method is added on to the `fetch()` response object, and it also returnes a `promise`.*   
     *Since the `response.json()` method returnes a `promise`, we can chain a `.then()` method.*   
