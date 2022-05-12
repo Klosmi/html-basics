@@ -8190,7 +8190,7 @@ Is a way of sending request via JavaScript.
       })
 
     // Fulfilled!!! ▸ Response                  //← Response is an object   
-    //                 ▸ body: ReadableStream   //← normally it should contain the value (JSON)
+    //              💡 ▸ body: ReadableStream   //← normally it should contain the value (JSON)
                                                 // So it is an incomplete body → we don't have the data, because the HTTP request was made before this is resolved.
                                                 // Resolved as soon as it could.
     //                   bodyUsed: false
@@ -8204,7 +8204,7 @@ Is a way of sending request via JavaScript.
     //                 ▸ [[Prototype]]: Response
     ```
     *We don't have the data in the Response object's body because the `promise` (`.then(response =>  {...}`) is fulfilled as soon as Fetch receives any headers.*   
-    *Because we don't have the data in the returned Response obejct's body, we use `response.json()` method.*    
+  💡*Note: the `ReadableStream` means that we actually need to read it and pass it. There's a method on the Response called `response.json()`.*.     
     *So the `response.json()` method is added on to the `fetch()` response object, and it also returnes a `promise`.*   
     *Since the `response.json()` method returnes a `promise`, we can chain a `.then()` method.*   
     ```
