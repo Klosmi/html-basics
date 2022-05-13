@@ -7606,6 +7606,8 @@ the `await` keyword pauses the execution of our `async` function, and wait for a
 
 - we can only use the `await` keyword inside of a function declared with `async`. So it __only works in an `async` function__.
 
+- `then` and `catch` methods belong to the Promise. When using `await` the value gets unwrapped from the `promise`. We can imagine that a promise is some sort of container/box data type. If we remove the `await`, it returns a `promise` which then can be `then`able or `catch`able.
+
 - eg.:   
   *The [background-color changing](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-hell) program* 
 
