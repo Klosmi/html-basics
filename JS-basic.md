@@ -6825,7 +6825,7 @@ using asynchronous JavaScript (such as callbacks, promises, and async/await), we
 - __[Promise](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise)__   
 - __[The `aync` keyword](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#async-keyword)__
 - __[The `await` keyword](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#await-keyword)__   
-- __[`try..catch` statement and error handling](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#error-handling-in-async-functions)__
+- __[`try..catch` statement and error handling](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-trycatch-statement-and-error-handling-in-async-functions)__
 
 ---
 
