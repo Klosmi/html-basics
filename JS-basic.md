@@ -7694,10 +7694,11 @@ in the case of a rejection, `await` promise throws the error.
 
 <br> 
 
- __The [`try..catch`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) statement__:    
+__The [`try..catch`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) statement__:
+ 
    The `try...catch` statement marks a try block and a catch block.   
    If the code in the try block throws an exception then the code in the catch block will be executed.   
-   -   
+     
      - eg.:   
        *How [`try..catch` works](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch#try_it).*  
        *In the `try` block we an error in the console.log, so it goes to the `catch` block, and prints the `catch` block's error message.*.  
@@ -7714,7 +7715,7 @@ in the case of a rejection, `await` promise throws the error.
 
 - eg.:   
   *We make the time longer, to have an error for sure : `const delay = 4500; `.*   
-  *The `try` block's code results in an error being thrown, we can catch it with the `catch`, so we can handle that error.*   
+  *If the `try` block's code has an error (throws an error), we can catch it with the `catch`, so we can handle that error.*   
   *The `error` in the `catch(error)` refers to the error itself (here "Connection Timeout").*
   ```
   const requestPromise = (url) => {
