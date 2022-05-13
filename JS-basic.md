@@ -8296,7 +8296,7 @@ Is a way of sending request via JavaScript.
     // 2nd request!!!
     // 2nd response  {name: 'Alderaan', rotation_period: '24', orbital_period: '364', diameter: '12500', climate: 'temperate', …}
     ```
-    *Let's refactor the code above using the `async()` function and [`try..catch`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-trycatch-statement-and-error-handling-in-async-functions).*   
+    *Let's refactor the code above using the [`async()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#async-keyword) function and [`try..catch`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-trycatch-statement-and-error-handling-in-async-functions).*   
     ```
     const loadStarWarsPlanets = async () => {
       try {
@@ -8307,6 +8307,7 @@ Is a way of sending request via JavaScript.
         const response2 = await fetch("https://swapi.dev/api/planets/2/");                 // ← 2nd request
         const data2 = await response2.json()
         console.log(data2);
+        
       } catch (error) {
         console.log("Error!!!", error);
       }
