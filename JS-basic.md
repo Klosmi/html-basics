@@ -8278,7 +8278,7 @@ Is a way of sending request via JavaScript.
     // 2nd request!!!
     // 2nd response  {name: 'Alderaan', rotation_period: '24', orbital_period: '364', diameter: '12500', climate: 'temperate', …}
     ```
-    *Let's refactor the code above using the `async()` function.*   
+    *Let's refactor the code above using the `async()` function and [`try..catch`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-trycatch-statement-and-error-handling-in-async-functions).*   
     ```
     const loadStarWarsPlanets = async () => {
       try {
