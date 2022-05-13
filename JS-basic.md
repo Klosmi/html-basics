@@ -8242,7 +8242,7 @@ Is a way of sending request via JavaScript.
     *1. as a start `fetch()` sends a request to this ("https://URL") URL first, then it returns a promise, which promise either fulfilled or rejected.*   
     *2. if it is fulfilled, we get into the `.then()`, we print out a `console.log()` message, and we __call and return the `response.json()` method__.*    
     *3. `response.json()` method reads the response object (ReadableStream), and then this `response.json()`method __returns a promise__*   
-    *4. after the return, we chain on the `.then()` and `.ctach()`.*   
+    *4. after the return, we chain on the `.then()` and `.catch()`.*   
 
     <br>
 
