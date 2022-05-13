@@ -7695,8 +7695,22 @@ in the case of a rejection, `await` promise throws the error.
 <br> 
 
  __The [`try..catch`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) statement__:    
+   The `try...catch` statement marks a try block and a catch block.   
    If the code in the try block throws an exception then the code in the catch block will be executed.   
+   -   
+     - eg.:   
+       *How [`try..catch` works](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch#try_it).*  
+       *In the `try` block we an error in the console.log, so it goes to the `catch` block, and prints the `catch` block's error message.*.  
+        ```
+        try {
+          console.log(hello);             //← it should be "hello" with quotes.
 
+        } catch (error) {
+           console.error(error);
+         }  
+
+        // ReferenceError: hello is not defined
+        ```
 
 - eg.:   
   *We make the time longer, to have an error for sure : `const delay = 4500; `.*   
