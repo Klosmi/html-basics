@@ -7704,13 +7704,13 @@ __The [`try..catch`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Ref
    *In the `try` block we an error in the console.log, so it goes to the `catch` block, and prints the `catch` block's error message.*.  
     ```
     try {
-      console.log(hello);             //← it should be "hello" with quotes.
+      console.log(hello);                      //← it should be "hello" with quotes.
 
-    } catch (error) {
-       console.error(error);
+    } catch {
+       console.error("Catch the error!");     //← Note: the console.error() method outputs an error message to the Web console.
      }  
 
-    // ReferenceError: hello is not defined
+    // ReferenceError: Catch the error!
     ```
 
 - eg.:   
