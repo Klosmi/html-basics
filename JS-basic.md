@@ -8239,8 +8239,10 @@ Is a way of sending request via JavaScript.
     // We got back these data:  {name: 'Tatooine', rotation_period: '23', orbital_period: '304', diameter: '10465', climate: 'arid', …}  
     ```
     *So what happens:*   
-    *1. `fetch("https://URL")` returns a promise → either fulfilled or rejected*  
-    *2. if it is fulfilled, we call and return the `response.json()` method → returns a promise*  
+    *1. `fetch()` returns a promise: sends a request to this ("https://URL") URL first, then it returns a promise, which promise either fulfilled or rejected.*
+    *2. if it is fulfilled, we get intot the `.then()`, we print out a `console.log()` message, and we __call and return the `response.json()` method__.* 
+    *3. `response.json()` method reads the response object (ReadableStream), and then this `response.json()`method __returns a promise__*
+    *4. after the return, we chain on the `.then()` and `.ctach()`.*
 
     <br>
 
