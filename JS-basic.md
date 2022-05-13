@@ -7710,7 +7710,7 @@ __The [`try..catch`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Ref
        console.error("Catch the error!");     //← Note: the console.error() method outputs an error message to the Web console.
      }  
 
-    // ReferenceError: Catch the error!
+    //❌ ▸ Catch the error!
     ```
 
 - eg.:   
