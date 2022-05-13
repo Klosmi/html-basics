@@ -7690,7 +7690,10 @@ the `await` keyword pauses the execution of our `async` function, and wait for a
 
 ## __[the `try..catch` statement and error handling in `async` functions](https://javascript.info/async-await#error-handling)__   
 in the case of a rejection, `await` promise throws the error.   
-→ we can catch them with `try...catch`:   
+→ we can catch them with `try...catch`.
+
+<br> 
+
  __The [`try..catch`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) statement__:    
    If the code in the try block throws an exception then the code in the catch block will be executed.   
 
