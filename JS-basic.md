@@ -8269,7 +8269,7 @@ Is a way of sending request via JavaScript.
     <br>
 
 Clear explanation:    
-So when we send a request with `fetch` we wait for a response from the server, and then we handle the response with the 1st `.then()` (its chained to the `fetch()` call).   
+So when we __send a request with `fetch`__ we wait for a __response from the server__, and then__ we handle that response from the server with the 1st `.then()`__ (its chained to the `fetch()` call).   
   Inside of the 1st `.then()` we can access the server's response. __We get response back the moment the server sends back headers.__ (Some servers might send back only headers, or headers and some data other than what we originally expected (like an error message)).     
 If the __response status is ok__ (200 status code) then __we can expect to get back some data (in the body property) from the server__.   
 `fetch()` gives us the body property as a `ReadableStream` (from the [Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API)), which gives us a lot of options for how we can interpret that data:    
