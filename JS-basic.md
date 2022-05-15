@@ -8202,8 +8202,8 @@ Is a way of sending request via JavaScript.
     *We add `.then()` and `.catch()`*   
     
     ```
-    fetch("https://swapi.dev/api/planets/1/")
-      .then(response =>  {                      //← fulfilled, we get a response object
+    fetch("https://swapi.dev/api/planets/1/")   //← we send a request with 'fetch', and we wait for a response from the server
+      .then(response =>  {                      //← we handle the response with the 1st.then() wich is chained to the 'fetch()'
         console.log("Fulfilled!!!", response);  //← it will show "Fulfilled!!!" and we display the "response" 
       })  
       .catch(error => {
@@ -8229,9 +8229,9 @@ Is a way of sending request via JavaScript.
     *So the `response.json()` method is added on to the `fetch()`'s response object, and it also returnes a `promise`.*   
     *Since the `response.json()` method returnes a `promise`, we can chain a `.then()` method.*   
     ```
-    fetch("https://swapi.dev/api/planets/1/")
-      .then(response =>  {                      
-        console.log("Fulfilled!!!", response);  
+    fetch("https://swapi.dev/api/planets/1/")         //← we send a request with 'fetch', and we wait for a response from the server
+      .then(response =>  {                            //← we handle the response with this .then(). Inside the 'then()' we can access the server's response... 
+        console.log("Fulfilled!!!", response);        //...we get back the response the moment the server sends back headers
         response.json().then(data => console.log("JSON is DONE!!!", data));      //← json() method |  we can use any name instead of the "data" 
       })  
       .catch(error => {
@@ -8258,46 +8258,60 @@ Is a way of sending request via JavaScript.
 
     // Fulfilled!!! Response {type: 'cors', url: 'https://swapi.dev/api/planets/1/', redirected: false, status: 200, ok: true, …}
     // We got back these data:  {name: 'Tatooine', rotation_period: '23', orbital_period: '304', diameter: '10465', climate: 'arid', …}  
+    
     ```
     *__So what happens:__*   
     *1. as a start `fetch()` sends a request to this ("https://URL") URL first, then it returns a promise, which promise either fulfilled or rejected.*   
-    *2. if it is fulfilled, we get into the `.then()`, we print out a `console.log()` message, and we __call and return the `response.json()` method__.*    
+    *2. if it is fulfilled, we get into the 1st `.then()`, we print out a `console.log()` message, and we __call and return the `response.json()` method__.*    
     *3. `response.json()` method reads the response object (ReadableStream), and then this `response.json()`method __returns a promise__*   
     *4. after the return, we chain on the `.then()` and `.catch()`.*   
 
     <br>
 
-    *When we want a __2nd request__, we don't have to do complicated nesting.*       
-    *The 1st request has to be fulfilled inorder to get to the 2nd request.*      
-    *(We can make these requests independently, so they don't depend on each other, thus the 2nd request can be fulfilled without worrying about the 1st request.)*   
-    *__We just add a `fetch(URL2nd Request)` below the `response.json()`'s `.then()` method.__*
-    ```
-    fetch("https://swapi.dev/api/planets/1/")                   //← 1st request
-        .then( response =>  {                      
-          console.log("1st request!");  
-          return response.json()
+Clear explanation:
+So when we send a request with `fetch` we wait for a response from the server, and then we handle the response with the 1st `.then()` (its chained to the `fetch()` call).   
+  Inside of the 1st `.then()` we can access the server's response. __We get response back the moment the server sends back headers.__ (Some servers might send back only headers, or headers and some data other than what we originally expected (like an error message)).     
+If the __response status is ok__ (200 status code) then __we can expect to get back some data (in the body property) from the server__.   
+`fetch()` gives us the body property as a `ReadableStream` (from the [Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API)), which gives us a lot of options for how we can interpret that data:    
+    - we can get the data back as a blob, text, json, etc.    
+*(For certain kinds of data this can give us the ability to process it as it comes in, such as a video. In the past we had to wait for the entire video file to be sent over, but now we can process the `ReadableStream` and that allows us to play the video as its data becomes available = the Streams API)*. 
+*(For certain kinds of data this can give us the ability to process it as it comes in, such as a video. In the past we had to wait for the entire video file to be sent over, but now we can process the `ReadableStream` and that allows us to play the video as its data becomes available = the Streams API.)*      
+  Most common use cases, we are just expecting back JSON data that we can parse and render to the page or do some sort of update to the page based on the data we get back. 
+
+<br>
+
+  *When we want a __2nd request__, we don't have to do complicated nesting.*       
+  *The 1st request has to be fulfilled inorder to get to the 2nd request.*      
+  *(We can make these requests independently, so they don't depend on each other, thus the 2nd request can be fulfilled without worrying about the 1st request.)*   
+  *__We just add a `fetch(URL2nd Request)` below the `response.json()`'s `.then()` method.__*
+  
+  ```
+  fetch("https://swapi.dev/api/planets/1/")                   //← 1st request
+      .then( response =>  {                      
+        console.log("1st request!");  
+        return response.json()
+      })
+      .then( data => {
+          console.log("1st response: ", data);  
+          return fetch("https://swapi.dev/api/planets/2/");   //← 2nd request, only runs if the 1st request fulfilled
+      })
+        .then( response =>{
+            console.log("2nd request!!!");
+            return response.json()
         })
         .then( data => {
-            console.log("1st response: ", data);  
-            return fetch("https://swapi.dev/api/planets/2/");   //← 2nd request, only runs if the 1st request fulfilled
+            console.log("2nd response: ", data);  
         })
-          .then( response =>{
-              console.log("2nd request!!!");
-              return response.json()
-          })
-          .then( data => {
-              console.log("2nd response: ", data);  
-          })
-        .catch( error => {
-            console.log("Error!!!", error);
-        })
+      .catch( error => {
+          console.log("Error!!!", error);
+      })
 
 
-    // 1st request
-    // 1st response  {name: 'Tatooine', rotation_period: '23', orbital_period: '304', diameter: '10465', climate: 'arid', …}
-    // 2nd request!!!
-    // 2nd response  {name: 'Alderaan', rotation_period: '24', orbital_period: '364', diameter: '12500', climate: 'temperate', …}
-    ```
+  // 1st request
+  // 1st response  {name: 'Tatooine', rotation_period: '23', orbital_period: '304', diameter: '10465', climate: 'arid', …}
+  // 2nd request!!!
+  // 2nd response  {name: 'Alderaan', rotation_period: '24', orbital_period: '364', diameter: '12500', climate: 'temperate', …}
+  ```
     *Let's refactor the code above using the [`async()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#async-keyword) function and [`try..catch`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-trycatch-statement-and-error-handling-in-async-functions).*   
     ```
     const loadStarWarsPlanets = async () => {
