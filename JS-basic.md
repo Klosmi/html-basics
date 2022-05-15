@@ -8311,30 +8311,31 @@ If the __response status is ok__ (200 status code) then __we can expect to get b
   // 2nd request!!!
   // 2nd response  {name: 'Alderaan', rotation_period: '24', orbital_period: '364', diameter: '12500', climate: 'temperate', …}
   ```
-    *Let's refactor the code above using the [`async()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#async-keyword) function and [`try..catch`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-trycatch-statement-and-error-handling-in-async-functions).*   
-    ```
-    const loadStarWarsPlanets = async () => {
-      try {
-        const response = await fetch("https://swapi.dev/api/planets/1/");                 // ← 1st request
-        const data = await response.json()
-        console.log(data);
+ 
+*Let's refactor the code above using the [`async()`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#async-keyword) function and [`try..catch`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#the-trycatch-statement-and-error-handling-in-async-functions).*   
+  ```
+  const loadStarWarsPlanets = async () => {
+    try {
+      const response = await fetch("https://swapi.dev/api/planets/1/");                 // ← 1st request
+      const data = await response.json()
+      console.log(data);
 
-        const response2 = await fetch("https://swapi.dev/api/planets/2/");                 // ← 2nd request
-        const data2 = await response2.json()
-        console.log(data2);
-        
-      } catch (error) {
-        console.log("Error!!!", error);
-      }
+      const response2 = await fetch("https://swapi.dev/api/planets/2/");                 // ← 2nd request
+      const data2 = await response2.json()
+      console.log(data2);
+
+    } catch (error) {
+      console.log("Error!!!", error);
     }
+  }
 
-    // call the function
-    loadStarWarsPlanets();
+  // call the function
+  loadStarWarsPlanets();
 
 
-    // {name: 'Tatooine', rotation_period: '23', orbital_period: '304', diameter: '10465', climate: 'arid', …}
-    // {name: 'Alderaan', rotation_period: '24', orbital_period: '364', diameter: '12500', climate: 'temperate', …}
-    ```
+  // {name: 'Tatooine', rotation_period: '23', orbital_period: '304', diameter: '10465', climate: 'arid', …}
+  // {name: 'Alderaan', rotation_period: '24', orbital_period: '364', diameter: '12500', climate: 'temperate', …}
+  ```
 
 ---
 
