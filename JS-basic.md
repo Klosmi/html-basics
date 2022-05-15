@@ -8187,7 +8187,7 @@ Is a way of sending request via JavaScript.
 ## __[Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)__   
   it allows us to make requests using a the `fetch()` function, and it supports promises.   
 
-  So it is an improved and newer way of making requests via JavaScript, because it supports `promises` and async functions (compared to XMLHttpRequest, which doesn't really.)
+  - it supports `promises` and async functions (compared to XMLHttpRequest, which doesn't really.)
 
   - syntax: `fetch("https://here we place the URL")`
 
@@ -8203,8 +8203,8 @@ Is a way of sending request via JavaScript.
     
     ```
     fetch("https://swapi.dev/api/planets/1/")   //← we send a request with 'fetch', and we wait for a response from the server
-      .then(response =>  {                      //← we handle the response with the 1st.then() wich is chained to the 'fetch()'
-        console.log("Fulfilled!!!", response);  //← it will show "Fulfilled!!!" and we display the "response" 
+      .then(response =>  {                      //← we handle the response with this .then() wich is chained to the 'fetch()'
+        console.log("Fulfilled!!!", response);  //← if the response status is ok, it will show "Fulfilled!!!" and we display the "response" 
       })  
       .catch(error => {
         console.log("Error!!!", error);
@@ -8212,8 +8212,7 @@ Is a way of sending request via JavaScript.
 
     // Fulfilled!!! ▸ Response                  //← Response is an object   
     //              💡 ▸ body: ReadableStream   //← normally it should contain the value (JSON)
-                                                // So it is an incomplete body → we don't have the data, because the HTTP request was made before this is resolved.
-                                                // Resolved as soon as it could.
+    //                                          // here it is an incomplete body → we don't have the data, because the HTTP request was made before this is resolved. 
     //                   bodyUsed: false
     //                 ▸ headers: Headers {}    //← these are the response headers
     //                   ok: true
@@ -8224,8 +8223,9 @@ Is a way of sending request via JavaScript.
     //                   url: "https://swapi.dev/api/planets/1/"
     //                 ▸ [[Prototype]]: Response
     ```
-    *We don't have the data in the Response object's body because the `promise` (`.then(response =>  {...}`) is fulfilled as soon as `fetch("https://...)` receives any headers.*   
-  💡*Note: the `ReadableStream` means that we actually need to read it and pass it. There's a method on the Response called `response.json()`.*.     
+    *`fetch()` sends a request: we wait for a response from the server and then we handle it with the `.then()` which is chained to the `fetch()` call.*   
+    *So, __inside of the `.then()` we can access the server's response__. We get the response back the moment the server sends back headers. (Here we don't have the data in the `body` because the `promise` is fulfilled as soon as `fetch("https://...)` receives any headers.).  Because some servers might send back only headers, or headers and some data other than what we originally expected (like an error message).*    
+   💡*Note: the `ReadableStream` means that we actually need to read it and pass it. There's a method on the Response called `response.json()`.*.     
     *So the `response.json()` method is added on to the `fetch()`'s response object, and it also returnes a `promise`.*   
     *Since the `response.json()` method returnes a `promise`, we can chain a `.then()` method.*   
     ```
@@ -8262,7 +8262,7 @@ Is a way of sending request via JavaScript.
     ```
     *__So what happens:__*   
     *1. as a start `fetch()` sends a request to this ("https://URL") URL first, then it returns a promise, which promise either fulfilled or rejected.*   
-    *2. if it is fulfilled, we get into the 1st `.then()`, we print out a `console.log()` message, and we __call and return the `response.json()` method__.*    
+    *2. if it is fulfilled, we get into the 1st `.then()`, we __call it and return the `response.json()` method__.*    
     *3. `response.json()` method reads the response object (ReadableStream), and then this `response.json()`method __returns a promise__*   
     *4. after the return, we chain on the `.then()` and `.catch()`.*   
 
