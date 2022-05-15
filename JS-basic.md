@@ -8268,14 +8268,13 @@ Is a way of sending request via JavaScript.
 
     <br>
 
-Clear explanation:
+Clear explanation:    
 So when we send a request with `fetch` we wait for a response from the server, and then we handle the response with the 1st `.then()` (its chained to the `fetch()` call).   
   Inside of the 1st `.then()` we can access the server's response. __We get response back the moment the server sends back headers.__ (Some servers might send back only headers, or headers and some data other than what we originally expected (like an error message)).     
 If the __response status is ok__ (200 status code) then __we can expect to get back some data (in the body property) from the server__.   
 `fetch()` gives us the body property as a `ReadableStream` (from the [Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API)), which gives us a lot of options for how we can interpret that data:    
     - we can get the data back as a blob, text, json, etc.    
-*(For certain kinds of data this can give us the ability to process it as it comes in, such as a video. In the past we had to wait for the entire video file to be sent over, but now we can process the `ReadableStream` and that allows us to play the video as its data becomes available = the Streams API)*. 
-*(For certain kinds of data this can give us the ability to process it as it comes in, such as a video. In the past we had to wait for the entire video file to be sent over, but now we can process the `ReadableStream` and that allows us to play the video as its data becomes available = the Streams API.)*      
+*(For certain kinds of data this can give us the ability to process it as it comes in, such as a video. In the past we had to wait for the entire video file to be sent over, but now we can process the `ReadableStream` and that allows us to play the video as its data becomes available = the Streams API)*.      
   Most common use cases, we are just expecting back JSON data that we can parse and render to the page or do some sort of update to the page based on the data we get back. 
 
 <br>
