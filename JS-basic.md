@@ -8370,7 +8370,7 @@ it's a separate library, made for HTTP requests (creating requests and working w
   </body>
   ```
   JS   
-  *instead of calling `fetch()`, we call `axios.get(URL`, which makes a request AND parses the JSON*       
+  *Instead of calling `fetch()`, we call `axios.get(URL`, which makes a request AND parses the JSON.*       
   *We chain the `.then()` to see what is the response.*   
   *We add a `.catch()` if there is an error.*
   ```
