@@ -7686,6 +7686,7 @@ the `await` keyword pauses the execution of our `async` function, and wait for a
     // Here is your URL: /page1
     ```
     
+    💡 [good video about `await` vs `.then()`](https://www.youtube.com/watch?v=V_Kr9OSfDeU)
   ---
 
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to beginning of Promises](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#promise) or [👆 go up to Asynchronous JS](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)
