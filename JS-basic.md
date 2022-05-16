@@ -8386,8 +8386,8 @@ it's a separate library, made for HTTP requests (creating requests and working w
   // it gives us a promise! See the response object below, filled with data (because it parses the JSON behind the scence)
   // Our response:  ▼{data: {…}, status: 200, statusText: '', headers: {…}, config: {…}, …}
   // ▼ data:   
-  //      birth_year: "19BBY"
-  //      created: "2014-12-09T13:50:51.644000Z"
+  //      climate: "arid"
+  //      created: "2014-12-09T13:50:49.641000Z"
   ```
   *__Refactoring to `async` function format!__*
   ```
