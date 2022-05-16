@@ -7604,11 +7604,11 @@ __Promise rejected__
 ## __[`await` keyword](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)__
 the `await` keyword pauses the execution of our `async` function, and wait for a `promise` to be fulfilled __before__ continuing on.
 
-- we can only use the `await` keyword inside of a function declared with `async`. For `await` we need to get a function, and `async function` and inside that we have our `await`. So `await` is much cleaner than if using `.then()`.
+- we can only use the `await` keyword inside of a function declared with `async`. For `await` we need to get a function, and `async function` and inside that we have our `await`. So `await` does the same job as `.then()`, but cleaner.
 
 - __async__ is an easy to use and understand approach of returning promises. It __is used to return the new promise in a simpler way__.
 
-- `then` and `catch` methods belong to the Promise. When using `await` (we not using `then()` anymore) the value gets unwrapped from the `promise`. We can imagine that a promise is some sort of container/box data type. If we remove the `await`, it returns a `promise` which then can be `then`able or `catch`able.
+- `then` and `catch` methods belong to the Promise. When using `await the value gets unwrapped from the `promise`. We can imagine that a promise is some sort of container/box data type. If we remove the `await`, it returns a `promise` which then can be `then`able or `catch`able.
 
 - eg.:   
   *The [background-color changing](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-hell) program* 
