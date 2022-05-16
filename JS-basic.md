@@ -8427,7 +8427,7 @@ it's a separate library, made for HTTP requests (creating requests and working w
   getStarWarsPlanets(4);        //← we can add our number
 
   //► { name: 'Hoth', rotation_period: '23', orbital_period: '549', diameter: '7200', climate: 'frozen', …}
-climate: "frozen"
+  //      climate: "frozen"
   ```
 
 ---
