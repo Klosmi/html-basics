@@ -8400,7 +8400,7 @@ it's a separate library, made for HTTP requests (creating requests and working w
 
   // {name: 'Tatooine', rotation_period: '23', orbital_period: '304', diameter: '10465', climate: 'arid', …}
   //    climate: "arid"
-  //      created: "2014-12-09T13:50:49.641000Z"
+  //    created: "2014-12-09T13:50:49.641000Z"
   ```
   *We make it with an `id`, so we can write our numbers there, when we call the function.*
   ```
