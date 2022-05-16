@@ -7796,7 +7796,8 @@ What the API sends back is pure information in a JSON format.
   [Query Strings](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#query-strings)    
   [HTTP Headers](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#http-headers)    
   [XHR - XMLHttpRequest](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#xhr--xmlhttprequest)     
-  [Fetch API](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#fetch-api)     
+  [Fetch API](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#fetch-api)      
+  [Axios]()     
   
   
   
@@ -8338,6 +8339,95 @@ If the __response status is ok__ (200 status code) then __we can expect to get b
 
   // {name: 'Tatooine', rotation_period: '23', orbital_period: '304', diameter: '10465', climate: 'arid', …}
   // {name: 'Alderaan', rotation_period: '24', orbital_period: '364', diameter: '12500', climate: 'temperate', …}
+  ```
+
+---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to AJAX](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax)
+  
+<br>
+
+## [Axios](https://github.com/axios/axios#installing) 
+it's a separate library, made for HTTP requests (creating requests and working with them), to make it easy and simple.
+
+- behind the scenes, it uses fetch in the browser
+
+- we can install this library ([see on the gitHub](https://github.com/axios/axios#installing)), or we can just use this CDN script in our HTML:   
+  `<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>`
+
+- the big advantage, that it is already parses the JSON (`response.json()`). So in the promise object, we already have data (it's not empty).
+
+- *Axios* has [methods](https://github.com/axios/axios#note-commonjs-usage)
+
+- eg.:   
+  *Make a `get` request we use `.get` + `URL`*   
+  HTML
+  ```
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="app.js"></script>
+  </body>
+  ```
+  JS   
+  *instead of calling `fetch()`, we call `axios.get(URL, which makes a request AND parses the JSON*      
+  *We chain the `.then()` to see what is the response.*   
+  *We add a `.catch()` if there is an error.*
+  ```
+  axios
+    .get("https://swapi.dev/api/planets/1")
+    .then((response) => {
+      console.log("Our response: ", response);
+    })
+    .catch((e) => {
+      console.log("ERROR! ", e);
+    });
+  
+  // it gives us a promise! See the response object below, filled with data (because it parses the JSON behind the scence)
+  // Our response:  ▼{data: {…}, status: 200, statusText: '', headers: {…}, config: {…}, …}
+  // ▼ data:   
+  //      birth_year: "19BBY"
+  //      created: "2014-12-09T13:50:51.644000Z"
+  ```
+  *__Refactoring to `async` function format!__*
+  ```
+  const getStarWarsPlanets = async () => {
+      const response = await axios.get(`https://swapi.dev/api/planets/1/`);
+      console.log(response.data);
+  };
+
+  getStarWarsPlanets();
+
+  // {name: 'Tatooine', rotation_period: '23', orbital_period: '304', diameter: '10465', climate: 'arid', …}
+  //    climate: "arid"
+  //      created: "2014-12-09T13:50:49.641000Z"
+  ```
+  *We make it with an `id`, so we can write our numbers there, when we call the function.*
+  ```
+  const getStarWarsPlanets = async (id) => {
+      const response = await axios.get(`https://swapi.dev/api/planets/${id}/`);
+      console.log(response.data);
+  };
+
+  getStarWarsPlanets(3);        //← we can add our number
+
+  //► { name: 'Yavin IV', rotation_period: '24', orbital_period: '4818', diameter: '10200', climate: 'temperate, tropical', …}
+  ```
+  *__Best practice__: wrap it into a `try..catch`.*
+  ```
+  const getStarWarsPlanets = async (id) => {
+    try{
+      const response = await axios.get(`https://swapi.dev/api/planets/${id}/`);
+      console.log(response.data);
+    } catch(error){
+      console.log("Error!", error);
+    }
+  };
+
+  getStarWarsPlanets(4);        //← we can add our number
+
+  //► { name: 'Hoth', rotation_period: '23', orbital_period: '549', diameter: '7200', climate: 'frozen', …}
+climate: "frozen"
   ```
 
 ---
