@@ -8430,7 +8430,7 @@ it's a separate library, made for HTTP requests (creating requests and working w
   //      climate: "frozen"
   ```
 
-__Axios vs `fetch()`__
+__[Axios vs `fetch()`](https://blog.logrocket.com/axios-vs-fetch-best-http-requests/))__
 ```
 // axios
 axios.get('https://api.github.com/orgs/axios')
@@ -8448,7 +8448,6 @@ fetch('https://api.github.com/orgs/axios')
   })
   .catch(error => console.error(error));
 ```
-💡 [interesting article on axios vs fetch()](https://blog.logrocket.com/axios-vs-fetch-best-http-requests/)
 
 
 ---
