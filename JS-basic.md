@@ -8430,6 +8430,8 @@ it's a separate library, made for HTTP requests (creating requests and working w
   //      climate: "frozen"
   ```
 
+💡 [interesting article on axios vs fetch()](https://blog.logrocket.com/axios-vs-fetch-best-http-requests/)
+
 ---
 
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to AJAX](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax)
