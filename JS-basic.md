@@ -8350,7 +8350,7 @@ If the __response status is ok__ (200 status code) then __we can expect to get b
 ## [Axios](https://github.com/axios/axios#installing) 
 it's a separate library, made for HTTP requests (creating requests and working with them), to make it easy and simple.
 
-- behind the scenes, it uses fetch in the browser
+- behind the scenes, it uses `fetch()` in the browser
 
 - we can install this library ([see on the gitHub](https://github.com/axios/axios#installing)), or we can just use this CDN script in our HTML:   
   `<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>`
