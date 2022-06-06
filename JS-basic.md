@@ -8189,7 +8189,7 @@ Is a way of sending request via JavaScript.
 <br>
 
 ## __[Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)__   
-  it allows us to make requests using a the `fetch()` function, and it supports promises.   
+  it allows us to make requests using a the `fetch()` function.  
 
   - it supports `promises` and async functions (compared to XMLHttpRequest, which doesn't really.)
 
