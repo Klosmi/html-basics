@@ -8504,115 +8504,114 @@ fetch('https://api.github.com/orgs/axios')
   //            length: 2
   //            [[Prototype]]: HTMLFormControlsCollection
   ```
- *We want to get the `input` value, so we use the elements property (what we can see in the above example). We get the input value with that line `form.elements.query.value`.*
- ```
-  const form = document.querySelector('#searchForm');
+   *We want to get the `input` value, so we use the elements property (what we can see in the above example). We get the input value with that line `form.elements.query.value`.*
+   ```
+    const form = document.querySelector('#searchForm');
 
-  form.addEventListener('submit', function (event){
-    event.preventDefault()
-    const searchTerm = form.elements.query.value;
-  })
+    form.addEventListener('submit', function (event){
+      event.preventDefault()
+      const searchTerm = form.elements.query.value;
+    })
 
- // searchTerm gives back what we type in the searchbar, eg. we type "hello"
- // output is:
- // hello 
- ```
- *We are doing the API call* 
- *We add `axios.get('URL')`*     
- *So the API eg.: `https://api.tvmaze.com/search/shows?q=girls`, where the `q` is the query string.*    
- *Our plan is that what the user types in the searchbar, it will be the `q`'s value (eg. `q = ${what the user types here}`).*  
- *We make it an `async` functio so we can use the `await`.
-  ```
-  const form = document.querySelector('#searchForm');
+   // searchTerm gives back what we type in the searchbar, eg. we type "hello"
+   // output is:
+   // hello 
+   ```
+   *We are doing the API call* 
+   *We add `axios.get('URL')`*     
+   *So the API eg.: `https://api.tvmaze.com/search/shows?q=girls`, where the `q` is the query string.*    
+   *Our plan is that what the user types in the searchbar, it will be the `q`'s value (eg. `q = ${what the user types here}`).*  
+   *We make it an `async` functio so we can use the `await`.
+    ```
+    const form = document.querySelector('#searchForm');
 
-  form.addEventListener('submit', async function (event){
-    event.preventDefault()
-    const searchTerm = form.elements.query.value;
-    const response = await axios.get(`https://api.tvmaze.com/search/shows?q=${searchTerm}`)
-    console.log(response.data);
-  })
+    form.addEventListener('submit', async function (event){
+      event.preventDefault()
+      const searchTerm = form.elements.query.value;
+      const response = await axios.get(`https://api.tvmaze.com/search/shows?q=${searchTerm}`)
+      console.log(response.data);
+    })
 
-  // we type 'chicken' in the search bar, the output is:
-  //► (10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}
-  ]   //← an array with 10 different shows
-  // open the first one [0]:
-  //  ► 0:
-  //      score: 0.70269716
-  //      ► show:                             //← 'show' is a property
-  //          averageRuntime: 15
-  //          dvdCountry: null
-  //          ended: null
-  //          externals: {tvrage: 5027, thetvdb: 75734, imdb: 'tt0437745'}
-  //          genres: (2) ['Comedy', 'Science-Fiction']
-  //          id: 686
-  //          image: {medium: 'https://static.tvmaze.com/uploads/images/medium_portrait/5/14886.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/5/14886.jpg'}
-  //      ► [[Prototype]]: Object
-  ```
-  *We acces the the 'show' property's image.*
-  ```
-  const form = document.querySelector('#searchForm');
+    // we type 'chicken' in the search bar, the output is:
+    //► (10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]   //← an array with 10 different shows
+    // open the first one [0]:
+    //  ► 0:
+    //      score: 0.70269716
+    //      ► show:                             //← 'show' is a property
+    //          averageRuntime: 15
+    //          dvdCountry: null
+    //          ended: null
+    //          externals: {tvrage: 5027, thetvdb: 75734, imdb: 'tt0437745'}
+    //          genres: (2) ['Comedy', 'Science-Fiction']
+    //          id: 686
+    //          image: {medium: 'https://static.tvmaze.com/uploads/images/medium_portrait/5/14886.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/5/14886.jpg'}
+    //      ► [[Prototype]]: Object
+    ```
+    *We acces the the 'show' property's image.*
+    ```
+    const form = document.querySelector('#searchForm');
 
-  form.addEventListener('submit', async function (event){
-    event.preventDefault()
-    const searchTerm = form.elements.query.value;
-    const response = await axios.get(`https://api.tvmaze.com/search/shows?q=${searchTerm}`) 
-    const img = document.createElement('img');
-    img.src = response.data[0].show.image.medium      //← this gives back the image's url
-    document.body.append(img)                         //← append the img to the body
-  })
-
-  // it adds the searched show's image on the page
-  ```
-  *To get all the images for the search sho, we need to use a loop.*    
-  *We create a separate function (we cal it `makeImages`) for the loop.*   
-  *So for each show we make a new image and then we set its source. Instead of the `response.data` we set `result.shows`, where the `show` is comming from the API itself.*
-  ```
-  const form = document.querySelector('#searchForm');
-
-  form.addEventListener('submit', async function (event){
-    event.preventDefault()
-    const searchTerm = form.elements.query.value;
-    const response = await axios.get(`https://api.tvmaze.com/search/shows?q=${searchTerm}`) 
-    makeImages(response.data)
-
-  })
-
-  // a loop function
-
-  const makeImages = (shows) => {       //← shows: each element in the array
-    for (let result of shows){
+    form.addEventListener('submit', async function (event){
+      event.preventDefault()
+      const searchTerm = form.elements.query.value;
+      const response = await axios.get(`https://api.tvmaze.com/search/shows?q=${searchTerm}`) 
       const img = document.createElement('img');
-      img.src = result.show.image.medium      //← show is from the API
-      document.body.append(img)                        
-    }
-  }
-  ```
-  *There are cases when there is no image (image is Null). We add some logic for these cases, using `if`.*   
-  *Also, we empty the `input`!*
-  ```
-  const form = document.querySelector('#searchForm');
+      img.src = response.data[0].show.image.medium      //← this gives back the image's url
+      document.body.append(img)                         //← append the img to the body
+    })
 
-  form.addEventListener('submit', async function (event){
-    event.preventDefault()
-    const searchTerm = form.elements.query.value;
-    const response = await axios.get(`https://api.tvmaze.com/search/shows?q=${searchTerm}`) 
-    makeImages(response.data)
-    form.elements.query.value = '';         // empty the input
+    // it adds the searched show's image on the page
+    ```
+    *To get all the images for the search sho, we need to use a loop.*    
+    *We create a separate function (we cal it `makeImages`) for the loop.*   
+    *So for each show we make a new image and then we set its source. Instead of the `response.data` we set `result.shows`, where the `show` is comming from the API itself.*
+    ```
+    const form = document.querySelector('#searchForm');
 
-  })
+    form.addEventListener('submit', async function (event){
+      event.preventDefault()
+      const searchTerm = form.elements.query.value;
+      const response = await axios.get(`https://api.tvmaze.com/search/shows?q=${searchTerm}`) 
+      makeImages(response.data)
 
-  // a loop function
+    })
 
-  const makeImages = (shows) => {       
-    for (let result of shows){
-      if(result.show.image){          // if there is image, the block runs, otherwise ignore.
+    // a loop function
+
+    const makeImages = (shows) => {       //← shows: each element in the array
+      for (let result of shows){
         const img = document.createElement('img');
-        img.src = result.show.image.medium      
+        img.src = result.show.image.medium      //← show is from the API
         document.body.append(img)                        
       }
     }
-  }
-  ```
+    ```
+    *There are cases when there is no image (image is Null). We add some logic for these cases, using `if`.*   
+    *Also, we empty the `input`!*
+    ```
+    const form = document.querySelector('#searchForm');
+
+    form.addEventListener('submit', async function (event){
+      event.preventDefault()
+      const searchTerm = form.elements.query.value;
+      const response = await axios.get(`https://api.tvmaze.com/search/shows?q=${searchTerm}`) 
+      makeImages(response.data)
+      form.elements.query.value = '';         // empty the input
+
+    })
+
+    // a loop function
+
+    const makeImages = (shows) => {       
+      for (let result of shows){
+        if(result.show.image){          // if there is image, the block runs, otherwise ignore.
+          const img = document.createElement('img');
+          img.src = result.show.image.medium      
+          document.body.append(img)                        
+        }
+      }
+    }
+    ```
 
 <br>
 
