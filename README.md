@@ -50,7 +50,7 @@
 21. [JS: DOM events](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-events)
 22. [JS: Asynchronous JavaScript](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#asynchronous-javascript)   
 23. [JS: AJAX](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax)   
-24. [JS: OOP - Object-oriented Programming]()
+24. [JS: OOP - Object-oriented Programming](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
 
 
 <br>
