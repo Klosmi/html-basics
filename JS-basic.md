@@ -8621,7 +8621,7 @@ eg.:
 *multiple query strings*
 `https://api.tvmaze.com/schedule?country=US&date=2014-12-01`
 
-- With Axios we can set a so coalled *config object*:    
+- With Axios we can set a so called *config object*:    
   `{ params: { q: searchTerm } }
 
 - `{ params : { own object with key-value pairs}, headers: { wn object with key-value pairs} }` is set it to its own object → `{ q: searchTerm }`. We can add several things, like headers, etc.
