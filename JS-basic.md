@@ -8682,4 +8682,8 @@ __Prototypes__ are the mechanism by which JavaScript objects inherit features fr
    - `__proto__` is a reference to the blueprint objet: the prototype.
 
 
-[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax)
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP]([https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming))
+
+<br>
