@@ -8485,7 +8485,7 @@ fetch('https://api.github.com/orgs/axios')
   ```
   JS   
   *Listening for the `submit` event obejct.* 
-  *The [`event.preventDefault()`](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) prevents the default behavior of the page being reloaded when you submit the form. So if we don't use `event.preventDefault()` on a form `submit` event listener, then when we click the submit button (to submit the form) it would reload the page.*
+  *The [`event.preventDefault()`](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) prevents the default behavior of the page being reloaded when we submit the form. So if we don't use `event.preventDefault()` on a form `submit` event listener, then when we click the submit button (to submit the form) it would reload the page.*
   ```
   const form = document.querySelector('#searchForm');
   form.addEventListener('submit', function (event){
