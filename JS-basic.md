@@ -7608,7 +7608,7 @@ the `await` keyword pauses the execution of our `async` function, and wait for a
 
 - __async__ is an easy to use and understand approach of returning promises. It __is used to return the new promise in a simpler way__.
 
-- `then` and `catch` methods belong to the Promise. When using `await` the value gets unwrapped from the `promise`. We can imagine that a promise is some sort of container/box data type. If we remove the `await`, it returns a `promise` which then can be `then`able or `catch`able.
+- `then` and `catch` methods belong to the Promise. When using `await` the value gets unwrapped from the `promise`. We can imagine that a promise is some sort of container/box data type. If we remove the `await`, it returns a `promise` which then can be "`then`able" or "`catch`able".
 
 - eg.:   
   *The [background-color changing](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#callback-hell) program* 
