@@ -8449,7 +8449,8 @@ fetch('https://api.github.com/orgs/axios')
   .catch(error => console.error(error));
 ```
 
- [A video about Axios](https://www.youtube.com/watch?v=qM4G1Ai2ZpE)
+ [A video about Axios](https://www.youtube.com/watch?v=qM4G1Ai2ZpE).  
+ [Another Axios video "crash course"](https://www.youtube.com/watch?v=6LyagkoRWYA)
  
 ---
 
