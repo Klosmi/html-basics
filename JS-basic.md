@@ -8504,7 +8504,7 @@ fetch('https://api.github.com/orgs/axios')
   //            length: 2
   //            [[Prototype]]: HTMLFormControlsCollection
   ```
- *We want to get the `inpu` value, so we use the elements property (what we can see in the above example). We get the input value with that line `form.elements.query.value`.*
+ *We want to get the `input` value, so we use the elements property (what we can see in the above example). We get the input value with that line `form.elements.query.value`.*
  ```
   const form = document.querySelector('#searchForm');
 
