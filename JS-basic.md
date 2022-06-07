@@ -8562,7 +8562,7 @@ fetch('https://api.github.com/orgs/axios')
 
     // it adds the searched show's image on the page
     ```
-    *To get all the images for the search sho, we need to use a loop.*    
+    *To get all the images for the search show, we need to use a loop.*    
     *We create a separate function (we cal it `makeImages`) for the loop.*   
     *So for each show we make a new image and then we set its source. Instead of the `response.data` we set `result.shows`, where the `show` is comming from the API itself.*
     ```
