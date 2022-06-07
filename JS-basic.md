@@ -7797,7 +7797,8 @@ What the API sends back is pure information in a JSON format.
   [HTTP Headers](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#http-headers)    
   [XHR - XMLHttpRequest](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#xhr--xmlhttprequest)     
   [Fetch API](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#fetch-api)      
-  [Axios](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#axios)     
+  [Axios](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#axios)    
+  [A search app using Axios](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#search-app-with-axios)   
   
   
   
