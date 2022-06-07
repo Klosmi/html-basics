@@ -8457,3 +8457,214 @@ fetch('https://api.github.com/orgs/axios')
   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to AJAX](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax)
   
 <br>
+
+## __Search app with Axios__
+
+
+- eg.:    
+  *We are making a search form, where we use an [API of TV shows](https://www.tvmaze.com/api#show-search), so we can search for TV shows. The image of the searched show will be displayed on our page.*       
+  HTML
+  ```
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Show Search</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <h1>TV Show Search</h1>
+    <form id="searchFrom">
+      <input type="text" placeholder="TV Show Title" name="query">
+      <button>Search</button>
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+  ```
+  JS   
+  *Listening for the `submit` event obejct.* 
+  *The [`event.preventDefault()`](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) prevents the default behavior of the page being reloaded when you submit the form. So if we don't use `event.preventDefault()` on a form `submit` event listener, then when we click the submit button (to submit the form) it would reload the page.*
+  ```
+  const form = document.querySelector('#searchForm');
+  form.addEventListener('submit', function (event){
+    event.preventDefault()
+    console.dir(form)
+  })
+
+  // ► form#searchForm
+  //    0: input
+  //    1: button
+  //       ...   
+  //      ►  elements: HTMLFormControlsCollection(2)      //← elements property
+  //            0: input
+  //            1: button
+  //            query: input                              //← we gave the name "query"
+  //            length: 2
+  //            [[Prototype]]: HTMLFormControlsCollection
+  ```
+ *We want to get the `inpu` value, so we use the elements property (what we can see in the above example). We get the input value with that line `form.elements.query.value`.*
+ ```
+  const form = document.querySelector('#searchForm');
+
+  form.addEventListener('submit', function (event){
+    event.preventDefault()
+    const searchTerm = form.elements.query.value;
+  })
+
+ // searchTerm gives back what we type in the searchbar, eg. we type "hello"
+ // output is:
+ // hello 
+ ```
+ *We are doing the API call* 
+ *We add `axios.get('URL')`*     
+ *So the API eg.: `https://api.tvmaze.com/search/shows?q=girls`, where the `q` is the query string.*    
+ *Our plan is that what the user types in the searchbar, it will be the `q`'s value (eg. `q = ${what the user types here}`).*  
+ *We make it an `async` functio so we can use the `await`.
+  ```
+  const form = document.querySelector('#searchForm');
+
+  form.addEventListener('submit', async function (event){
+    event.preventDefault()
+    const searchTerm = form.elements.query.value;
+    const response = await axios.get(`https://api.tvmaze.com/search/shows?q=${searchTerm}`)
+    console.log(response.data);
+  })
+
+  // we type 'chicken' in the search bar, the output is:
+  //► (10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}
+  ]   //← an array with 10 different shows
+  // open the first one [0]:
+  //  ► 0:
+  //      score: 0.70269716
+  //      ► show:                             //← 'show' is a property
+  //          averageRuntime: 15
+  //          dvdCountry: null
+  //          ended: null
+  //          externals: {tvrage: 5027, thetvdb: 75734, imdb: 'tt0437745'}
+  //          genres: (2) ['Comedy', 'Science-Fiction']
+  //          id: 686
+  //          image: {medium: 'https://static.tvmaze.com/uploads/images/medium_portrait/5/14886.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/5/14886.jpg'}
+  //      ► [[Prototype]]: Object
+  ```
+  *We acces the the 'show' property's image.*
+  ```
+  const form = document.querySelector('#searchForm');
+
+  form.addEventListener('submit', async function (event){
+    event.preventDefault()
+    const searchTerm = form.elements.query.value;
+    const response = await axios.get(`https://api.tvmaze.com/search/shows?q=${searchTerm}`) 
+    const img = document.createElement('img');
+    img.src = response.data[0].show.image.medium      //← this gives back the image's url
+    document.body.append(img)                         //← append the img to the body
+  })
+
+  // it adds the searched show's image on the page
+  ```
+  *To get all the images for the search sho, we need to use a loop.*    
+  *We create a separate function (we cal it `makeImages`) for the loop.*   
+  *So for each show we make a new image and then we set its source. Instead of the `response.data` we set `result.shows`, where the `show` is comming from the API itself.*
+  ```
+  const form = document.querySelector('#searchForm');
+
+  form.addEventListener('submit', async function (event){
+    event.preventDefault()
+    const searchTerm = form.elements.query.value;
+    const response = await axios.get(`https://api.tvmaze.com/search/shows?q=${searchTerm}`) 
+    makeImages(response.data)
+
+  })
+
+  // a loop function
+
+  const makeImages = (shows) => {       //← shows: each element in the array
+    for (let result of shows){
+      const img = document.createElement('img');
+      img.src = result.show.image.medium      //← show is from the API
+      document.body.append(img)                        
+    }
+  }
+  ```
+  *There are cases when there is no image (image is Null). We add some logic for these cases, using `if`.*   
+  *Also, we empty the `input`!*
+  ```
+  const form = document.querySelector('#searchForm');
+
+  form.addEventListener('submit', async function (event){
+    event.preventDefault()
+    const searchTerm = form.elements.query.value;
+    const response = await axios.get(`https://api.tvmaze.com/search/shows?q=${searchTerm}`) 
+    makeImages(response.data)
+    form.elements.query.value = '';         // empty the input
+
+  })
+
+  // a loop function
+
+  const makeImages = (shows) => {       
+    for (let result of shows){
+      if(result.show.image){          // if there is image, the block runs, otherwise ignore.
+        const img = document.createElement('img');
+        img.src = result.show.image.medium      
+        document.body.append(img)                        
+      }
+    }
+  }
+  ```
+
+<br>
+
+__Making API calls with multiple query strings__
+
+eg.:    
+*multiple query strings*
+`https://api.tvmaze.com/schedule?country=US&date=2014-12-01`
+
+- With Axios we can set a so coalled *config object*:    
+  `{ params: { q: searchTerm } }
+
+- `{ params : { own object with key-value pairs}, headers: { wn object with key-value pairs} }` is set it to its own object → `{ q: searchTerm }`. We can add several things, like headers, etc.
+
+- Every key value pair in the `{ q: something }` will be added to the query string
+
+- let see in practice:   
+  *We create a `const config` where we store the config params.*
+  ```
+  const form = document.querySelector('#searchForm');
+
+  form.addEventListener('submit', async function (event){
+    event.preventDefault()
+    const searchTerm = form.elements.query.value;
+    const config = { params: { q: searchTerm } };             //← we have the params
+    const response = await axios.get(`http://api.tvmaze.com/search/shows`, config);                  //← we added the params
+    makeImages(response.data)
+    form.elements.query.value = '';         // empty the input
+
+  })
+
+  // a loop function
+
+  const makeImages = (shows) => {
+    for (let result of shows) {
+      if (result.show.image) {          // if there is image, the block runs, otherwise ignore.
+          const img = document.createElement('IMG');
+          img.src = result.show.image.medium;
+          document.body.append(img)
+        }
+    }
+  }
+  ```
+  A little explanation about this example:      
+  - The name `config` is a variable name that we arbitrarily chose. 
+  - `config` it holds an object with the `params` key which the axios request will understand when we pass it as an argument. 
+  - The key `q` is something that the particular API that we are using expects. 
+  - To know what `params` we can pass to an API, we need to study the API documentation for the __route/address__ that we are sending a request to - that way we can know of all the options/params supported by the API endpoint in question.
+
+💡 about the __[`params`](https://github.com/axios/axios#request-config)__, how to use, etc. we can read the details in the __Axios doc__.
+
+---
+
+  [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to AJAX](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax)
+  
+<br>
