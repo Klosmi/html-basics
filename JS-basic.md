@@ -8500,7 +8500,7 @@ fetch('https://api.github.com/orgs/axios')
   //      ►  elements: HTMLFormControlsCollection(2)      //← elements property
   //            0: input
   //            1: button
-  //            query: input                              //← we gave the name "query"
+  //            query: input                              //← we gave the name "query" in the <form> (name ="query")
   //            length: 2
   //            [[Prototype]]: HTMLFormControlsCollection
   ```
