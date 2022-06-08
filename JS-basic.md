@@ -8685,27 +8685,26 @@ __Prototypes__ are the mechanism by which JavaScript objects inherit features fr
    - So rather than having a separate method on every single array called push, filter, concat, find, etc. , there is one prototype. Each array has a reference to that prototype, with a special property called `__proto__`❗️
    - __`__proto__` is a reference to the blueprint objet: the prototype__.
 
-   - eg.:      
-    *lets examine an other type of JS obejct the, `document.body`*
-    
-    ```
-    const body = document.body;
-
-    console.dir(body);
-
-    // ► body                           //←  we can see properties that are specific to this body
-    //    ...
-    //    background: ""
-    //    baseURI: "chrome://newtab/"
-    //    bgColor: ""
-    //    ...
-    //    ► __proto__: HTMLBodyElement   //← at the bottom there is __proto__
-    //        aLink: (...)               //← __proto__ is an HTML body element, it has different methods and properties
-    //        background: (...)
-    //        bgColor: (...)
-    //        link: (...)
-    //        ...
-    ```
+   - eg.:       
+    *lets examine an other type of JS obejct the `document.body`*. 
+      ```
+      const body = document.body;
+      
+      console.dir(body);
+      
+      // ► body                           //←  we can see properties that are specific to this body
+      //    ...
+      //    background: ""
+      //    baseURI: "chrome://newtab/"
+      //    bgColor: ""
+      //    ...
+      //    ► __proto__: HTMLBodyElement   //← at the bottom there is __proto__
+      //        aLink: (...)               //← __proto__ is an HTML body element, it has different methods and properties
+      //        background: (...)
+      //        bgColor: (...)
+      //        link: (...)
+      //        ...
+      ```
 
 - eg.:   
   *__`Array.prototype`__*    
@@ -8724,6 +8723,7 @@ __Prototypes__ are the mechanism by which JavaScript objects inherit features fr
 - eg.:    
   *__`String.prototype`__*   
   *We cen see a bunch of string methods.*
+  
   ```
   String.prototype;
 
