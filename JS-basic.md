@@ -8674,13 +8674,124 @@ eg.:
 ## [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)   
 __Prototypes__ are the mechanism by which JavaScript objects inherit features from one another. 
 
-   - Objects can have a prototype object which acts as a template object. So it means that certain objects eg.:  an array, have a a lot of methods.
+   - Prototypes are template objects (a bunch of methods).
 
-   - [`__proto__`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto#description) :  it is a property that references the array prototype. So a prototype is the *template object* for eg.: arrays. It contains a bunch of methods typically.   
-   So all of these methods that every array will have access to❗️ 
-   - So rather than having a separate method on every single array called push. filter, concat, find, etc. , there is one prototype. Each array has a reference to that prototype, with a special property called `__proto__`❗️
-   - `__proto__` is a reference to the blueprint objet: the prototype.
+   - We can create multiple objects that share the same prototype (so they all have acces to the same methods).
 
+   - Objects can have a prototype object which acts as a template object. So it means is that certain objects eg.:  an array, have a a lot of methods.
+
+   - [`__proto__`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto#description) :  it is a property that __references__ the array prototype. So a prototype is the *template object* for in this case, arrays. It contains a bunch of methods typically.   
+   Every array have access to all of these methods❗️ 
+   - So rather than having a separate method on every single array called push, filter, concat, find, etc. , there is one prototype. Each array has a reference to that prototype, with a special property called `__proto__`❗️
+   - __`__proto__` is a reference to the blueprint objet: the prototype__.
+
+   - eg.:   
+    *lets examine an other type of JS obejct the, `document.body`*
+    ```
+    const body = document.body;
+
+    console.dir(body);
+
+    // ► body                           //←  we can see properties that are specific to this body
+    //    ...
+    //    background: ""
+    //    baseURI: "chrome://newtab/"
+    //    bgColor: ""
+    //    ...
+    //    ► __proto__: HTMLBodyElement   //← at the bottom there is __proto__
+    //        aLink: (...)               //← __proto__ is an HTML body element, it has different methods and properties
+    //        background: (...)
+    //        bgColor: (...)
+    //        link: (...)
+    //        ...
+    ```
+
+- eg.:   
+  *__`Array.prototype`__*    
+  *With capital 'A', it is an individual instance of an array. We can see everything on that array prototype.*
+  ```
+  Array.prototype;
+
+  // ► [constructor: ƒ, concat: ƒ, copyWithin: ƒ, fill: ƒ, find: ƒ, …]
+  //    ► at: ƒ at()
+  //    ► concat: ƒ concat()
+  //    ► constructor: ƒ Array()
+  //    ► copyWithin: ƒ copyWithin()
+  //      ...
+  ```
+
+- eg.: 
+  *__`String.prototype`__*   
+  *We cen see a bunch of string methods.*
+  ```
+  String.prototype;
+
+  // ► String {'', constructor: ƒ, anchor: ƒ, big: ƒ, blink: ƒ, …}    // bunch of string methods 
+  //   ►  anchor: ƒ anchor()
+  //   ►  at: ƒ at()
+  //   ►  big: ƒ big()
+  //      ...
+  ```
+
+  __We can add our own methods__
+  - eg.:
+    *Adding our own methods, `foobar` to `String.prototype`.*
+    ```
+    String.prototype.foobar = () => { console.log("Hello!") }
+
+    //nothing happened. 
+    //But if we look the String.prototype, it has a property 'foobar'
+
+    String.prototype;
+
+    // ► String {'', constructor: ƒ, anchor: ƒ, big: ƒ, blink: ƒ, …}   
+    //   ►  🔹foobar  
+    //   ►  anchor: ƒ anchor()
+    //   ►  at: ƒ at()
+    //      ...
+    ```
+    *Lets make a new string and add our new string method 'foobar()'.*
+    ```
+    const dog = "Black";
+
+    dog.foobar();
+
+    // "Hello!"
+    ```
+
+    __Adding and defining our own method on the `String.prototype`__
+
+    - eg.:   
+      *Creating a method `hello` on the String.prototype object, so it will be in the String.prototype.*
+      ```
+      String.prototype.hello = function() {
+        console.log(`Good day ${this}!!!`);
+      };
+
+      // just typing a string and adding our method
+      "John Doe".hello();
+
+      // "Good day John Doe!!!"
+      ```
+
+    __Overwriting our method to an Array.prototype__*(same process is valed for other prototypes, like String.prototype)*
+    - eg.:
+      *Overwriteiny an existing `pop` method on the Array.prototype*
+      ```
+      Array.prototype.pop = function() {
+        return "Say hi to this array";
+      };
+
+      // calling an array
+
+      [3, 4, 5].pop;
+
+      // instead of popping
+      // "Say hi to this array"
+      ```
+
+💡 The difference between `String.prototype` or `Array.prototype` vs. `__proto__`:    
+`String.prototype` is the actual prototype object, where `__proto__` inside a string or array or etc. is a reference to the `String. prototype` (or `Array.prototype`, or other stuff).
 
 ---
 
