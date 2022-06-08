@@ -8674,7 +8674,7 @@ eg.:
 ## [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)   
 __Prototypes__ are the mechanism by which JavaScript objects inherit features from one another. 
 
-   - Objects can have a prototype object which acts as a template object. So it means is that certain objects eg.:  an array, have a a lot of methods.
+   - Objects can have a prototype object which acts as a template object. So it means that certain objects eg.:  an array, have a a lot of methods.
 
    - [`__proto__`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto#description) :  it is a property that references the array prototype. So a prototype is the *template object* for in this case, arrays. It contains a bunch of methods typically.   
    So all of these methods that every array will have access to❗️ 
