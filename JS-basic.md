@@ -8685,8 +8685,9 @@ __Prototypes__ are the mechanism by which JavaScript objects inherit features fr
    - So rather than having a separate method on every single array called push, filter, concat, find, etc. , there is one prototype. Each array has a reference to that prototype, with a special property called `__proto__`❗️
    - __`__proto__` is a reference to the blueprint objet: the prototype__.
 
-   - eg.:   
+   - eg.:      
     *lets examine an other type of JS obejct the, `document.body`*
+    
     ```
     const body = document.body;
 
@@ -8720,7 +8721,7 @@ __Prototypes__ are the mechanism by which JavaScript objects inherit features fr
   //      ...
   ```
 
-- eg.: 
+- eg.:    
   *__`String.prototype`__*   
   *We cen see a bunch of string methods.*
   ```
@@ -8734,7 +8735,7 @@ __Prototypes__ are the mechanism by which JavaScript objects inherit features fr
   ```
 
   __We can add our own methods__
-  - eg.:
+  - eg.:   
     *Adding our own methods, `foobar` to `String.prototype`.*
     ```
     String.prototype.foobar = () => { console.log("Hello!") }
@@ -8761,7 +8762,7 @@ __Prototypes__ are the mechanism by which JavaScript objects inherit features fr
 
     __Adding and defining our own method on the `String.prototype`__
 
-    - eg.:   
+   - eg.:      
       *Creating a method `hello` on the String.prototype object, so it will be in the String.prototype.*
       ```
       String.prototype.hello = function() {
@@ -8775,7 +8776,7 @@ __Prototypes__ are the mechanism by which JavaScript objects inherit features fr
       ```
 
     __Overwriting our method to an Array.prototype__*(same process is valed for other prototypes, like String.prototype)*
-    - eg.:
+    - eg.:    
       *Overwriteiny an existing `pop` method on the Array.prototype*
       ```
       Array.prototype.pop = function() {
