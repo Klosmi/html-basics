@@ -8690,10 +8690,10 @@ __What is an object__:
 <br>
 
 ## __[the 4 core concepts of OOP](https://medium.com/@khmel87/javascript-four-principles-of-object-oriented-programming-cd81a04262cb#:~:text=There%20are%20four%20main%20principles,abstraction%2C%20inheritance%2C%20and%20polymorphism.)__
-[encapsulation]()   
-[abstraction]()   
-[inheritance]()   
-[polymorphism]()   
+[encapsulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#encapsulation)   
+[abstraction](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#abstraction)   
+[inheritance](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#inheritance)   
+[polymorphism](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#polymorphism)   
 
 <br>
 
