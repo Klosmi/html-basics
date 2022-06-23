@@ -8670,6 +8670,117 @@ eg.:
 <br>
 
 # [OOP- Object-oriented Programming](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_programming)    
+An Object is a unique entity that contains property and methods.   
+- the characteristics of an Object are called as Property, in Object-Oriented Programming and the actions are called methods.
+- an Object is an instance of a class. Objects are everywhere in JavaScript almost every element is an Object whether it is a function, array, and string.  
+
+<br>
+
+__What is an object__:   
+- In OOP we combine a groupd related functions and variables into a unit, and this unit is called an __object__.    
+- We refer the object's variables as __properties__. 
+- We refer the object's functions as __methods__.    
+`function() variable` → function() is method and variable is property.   
+
+- eg.:    
+  A car:    
+  it has properties: color, model.   
+  it has methods: start(), stop(), move()
+
+<br>
+
+## __[the 4 core concepts of OOP](https://medium.com/@khmel87/javascript-four-principles-of-object-oriented-programming-cd81a04262cb#:~:text=There%20are%20four%20main%20principles,abstraction%2C%20inheritance%2C%20and%20polymorphism.)__
+[encapsulation]()   
+[abstraction]()   
+[inheritance]()   
+[polymorphism]()   
+
+<br>
+
+### __[encapsulation](https://www.javatpoint.com/javascript-oops-encapsulation)__   
+encapsulation is: we group related variables and functions that operate on the variables into objects.    
+So, in other words binding the data (variables) with the functions acting on that data. 
+
+- reduce complexity
+- increase reusbaility
+
+- eg.:  
+  *Calculate the wage of an employee.*   
+  *This is a procedural implementation: variables on one side, function(s) on the other side.*  
+  ```
+  let baseSalary = 30000;
+  let overTime =  10;
+  let rate = 20;
+
+  function getWage(baseSalary, overTime, rate) {
+    return baseSalary + (overTime * rate);
+  }
+  ```
+  *Let's mturn this to an OOP way, so we create an `employee` object.*   
+  ```
+  let employee = {
+    let baseSalary = 30000,   // ← property of the object
+    let overTime =  10,
+    let rate = 20,
+    getWage: function () {
+      return this.baseSalary + (this.overTime * this.rate);
+    }
+  };
+
+  employee.getWage();
+  ```
+
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
+
+<br>
+
+### __[abstraction](https://www.javatpoint.com/javascript-oops-abstraction)__
+ is a way of hiding the implementation details and showing only the functionality to the users. In other words, it ignores the irrelevant details and shows only the required one.
+
+ - simpler interface of the objects:   
+ using only a few properties and methods
+ - reduces the impact of change:   
+ the change on an object doesn't impact the rest of the application.   
+
+ <br>
+
+ - reduce complexity
+ - isolate the impact of changes in the code
+
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
+
+<br>
+
+ ### __[inheritance](https://www.tutorialsteacher.com/javascript/inheritance-in-javascript)__
+inheritance allows us to eliminate redundant code.      
+So, using less code: we define an object, and other objects can inherit those properties and methods.   
+
+- eg.: we have several HTML elements lik button, checkbox, select. We define an htmlElement object, and help other objects inherit those methods and properties which are deifned in the htmlElement object.
+
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
+
+<br>
+
+
+### __[polymorphism](https://www.javatpoint.com/javascript-oops-polymorphism#:~:text=The%20polymorphism%20is%20a%20core,data%20members%20with%20the%20methods.)__   
+(ploly = many, morph = form)   
+it is a technique that allows us to get rid of long `if and else` or `switch and case` statements.   
+
+- defining a specific method on several objects, and that specific method behaves differently depending on the object we are referencing.
+
+- refactor ugly if/else and switch/case statements
+
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
+
+<br>
 
 ## [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)   
 __Prototypes__ are the mechanism by which JavaScript objects inherit features from one another. 
