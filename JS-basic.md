@@ -8897,21 +8897,6 @@ circle.draw;
 
 <br>
 
-## [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)   
-__Prototypes__ are the mechanism by which JavaScript objects inherit features from one another. 
-
-   - Prototypes are template objects (a bunch of methods).
-
-   - We can create multiple objects that share the same prototype (so they all have acces to the same methods).
-
-   - Objects can have a prototype object which acts as a template object. So it means is that certain objects eg.:  an array, have a a lot of methods.
-
----
-
-[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
-
-<br>
-
 ## __[Constructor Property](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor)__   
     every object in JS has a property called `constructor`.  
     `constructor` references a function which was used to construct (create) an object.
