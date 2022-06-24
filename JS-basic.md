@@ -8782,6 +8782,160 @@ it is a technique that allows us to get rid of long `if and else` or `switch and
 
 <br>
 
+## __[Creating Objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_programming#classes_and_instances)__
+
+__creating an obejct using the [`object literal syntax`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer), referred as `{}`__ ❗️
+
+(An object in JS is a collection of key:value pairs.)
+
+- eg.:   
+  *Creating object with the: [object literal syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer).*   
+  *Creating a circle object.*    
+  *This object has 3 members: `radius`, `location` and `draw`.*   
+  *`draw` is a function, so we refer to it as a method.*
+  *`radius` and `location` are properties.*
+  ```
+  const circle = {
+    radius : 1,
+    location : {
+      x : 1,
+      y : 1
+    },
+    draw : function() {
+      console.log("Drawing a circle");
+    }
+  };
+  ```
+  *We can access the `circle`'s members with the `.` dot notation.*   
+  *Here we are calling the `draw()` method.*
+  ```
+  circle.draw();
+
+  // Drawing a circle
+  ```
+  
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
+
+<br>
+
+## __[Defining Object with Factories](https://en.wikipedia.org/wiki/Factory_(object-oriented_programming)#:~:text=In%20object%2Doriented%20programming%20(OOP,assumed%20to%20be%20%22new%22.)__    
+In object-oriented programming (OOP), a factory is an object for creating other objects – formally a factory is a function or method that returns objects of a varying prototype or class[1] from some method call, which is assumed to be "new"
+
+- if an Object has 1 or more method, we call it as object has behaviour (like a person).
+
+- if an Object doesn't have a behaviour, the way we construct is to use the __factory function__.
+
+- eg.:    
+*The circle object (which has no behavious).*
+```
+ const circle = {
+    radius : 1,
+  };
+```
+*We use actory or cunstructor function to create the circle object.*   
+*We add teh `draw()` method.*
+```
+//Factory Function
+
+function createCircle(radius){
+   return {
+    radius,                         //← normally it is "radius : radius", if key and value are the same name, we can just use one name.
+    draw: function(){
+      console.log("Drawing a circle");
+    }
+  };
+}
+
+const circle = createCircle(1);    // (1) is the radius
+
+circle.draw;
+
+// ƒ (){
+//    console.log("Drawing a circle");
+//  }
+```
+
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
+
+<br>
+
+## __[Creating Object with Contructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/Object)__
+
+
+- in a constructor function we use Uppercase for names
+
+- eg.:   
+  *The `this` keyword sets the properties of the Circle object*   
+  *`this` is the object that executing the code.*   
+  *`this` + `.` dot notation to set various properties on that object.*
+  ```
+  function Circle(radius){
+    this.radius = radius;     // set the radius property = to the radius argument
+    this.draw = function() {
+      console.log("Drawing a circle");
+    }
+  }
+  ```
+  *To create the circle, we use the `new` operator to call the `Circle` function, and pass the argument (`1`).*    
+  ```
+  const myCircle = new Circle(1);
+  ```
+
+1. the `new` operator creates an empty object (like `{}`).   
+2. Then it sets the `this` to point to that empty object. (By default `this` points to the global object. In the browser it is the `window` object.)  So, we use the `new` operator thus we don't call the global object.
+3. Finally `this` returns the object from the function (here: from the `Circle(radius)` function).
+
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
+
+<br>
+
+## [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)   
+__Prototypes__ are the mechanism by which JavaScript objects inherit features from one another. 
+
+   - Prototypes are template objects (a bunch of methods).
+
+   - We can create multiple objects that share the same prototype (so they all have acces to the same methods).
+
+   - Objects can have a prototype object which acts as a template object. So it means is that certain objects eg.:  an array, have a a lot of methods.
+
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
+
+<br>
+
+## __[Constructor Property](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor)__   
+    every object in JS has a property called `constructor`.  
+    `constructor` references a function which was used to construct (create) an object.
+
+- `Object()` function is a built-in constructor function 
+
+- when we create an object using the object literal syntax `{}`, the JS engine uses the `Object()` constructor function (internally).
+
+- eg.:    
+  *x's obejct literal `{}` references the `Object()` constructor*   
+  *`new String;` instead we use the string literal  `''` or `""`.*    
+  *`new Boolean;`instead we use boolean literals, `true` or `false`.*      
+  *`new Number;` instead we use number literal `1, 2, 3` etc.*    
+  ```
+  let x = {}
+
+  //JS engine translates it: let x = new Object()
+  ```
+
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
+
+<br>
+
+
 ## [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)   
 __Prototypes__ are the mechanism by which JavaScript objects inherit features from one another. 
 
