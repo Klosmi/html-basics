@@ -8694,6 +8694,8 @@ __What is an object__:
 [abstraction](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#abstraction)   
 [inheritance](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#inheritance)   
 [polymorphism](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#polymorphism)   
+[Creating Objects](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#creating-objects)   
+[Defining Object with Factories]()
 
 <br>
 
@@ -8820,7 +8822,7 @@ __creating an obejct using the [`object literal syntax`](https://developer.mozil
 
 <br>
 
-## __[Defining Object with Factories](https://en.wikipedia.org/wiki/Factory_(object-oriented_programming)#:~:text=In%20object%2Doriented%20programming%20(OOP,assumed%20to%20be%20%22new%22.)__    
+## __[Defining Object with Factories](\https://en.wikipedia.org/wiki/Factory_(object-oriented_programming)\)__    
 In object-oriented programming (OOP), a factory is an object for creating other objects – formally a factory is a function or method that returns objects of a varying prototype or class[1] from some method call, which is assumed to be "new"
 
 - if an Object has 1 or more method, we call it as object has behaviour (like a person).
