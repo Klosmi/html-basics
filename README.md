@@ -52,8 +52,6 @@
 23. [JS: AJAX](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#ajax)   
 24. [JS: OOP - Object-oriented Programming](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
 
-<br>)
-
 
 <br>
 
