@@ -8695,7 +8695,9 @@ __What is an object__:
 [inheritance](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#inheritance)   
 [polymorphism](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#polymorphism)   
 [Creating Objects](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#creating-objects)   
-[Defining Object with Factories]()
+[Defining Object with Factories](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#defining-object-with-factories)    
+[Creating Object with Contructor](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#creating-object-with-contructor)    
+[Constructor Property](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#constructor-property)
 
 <br>
 
@@ -8890,6 +8892,21 @@ circle.draw;
 1. the `new` operator creates an empty object (like `{}`).   
 2. Then it sets the `this` to point to that empty object. (By default `this` points to the global object. In the browser it is the `window` object.)  So, we use the `new` operator thus we don't call the global object.
 3. Finally `this` returns the object from the function (here: from the `Circle(radius)` function).
+
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
+
+<br>
+
+## [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)   
+__Prototypes__ are the mechanism by which JavaScript objects inherit features from one another. 
+
+   - Prototypes are template objects (a bunch of methods).
+
+   - We can create multiple objects that share the same prototype (so they all have acces to the same methods).
+
+   - Objects can have a prototype object which acts as a template object. So it means is that certain objects eg.:  an array, have a a lot of methods.
 
 ---
 
