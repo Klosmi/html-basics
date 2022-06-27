@@ -8689,7 +8689,6 @@ __What is an object__:
 
 <br>
 
-## __[the 4 core concepts of OOP](https://medium.com/@khmel87/javascript-four-principles-of-object-oriented-programming-cd81a04262cb#:~:text=There%20are%20four%20main%20principles,abstraction%2C%20inheritance%2C%20and%20polymorphism.)__
 [encapsulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#encapsulation)   
 [abstraction](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#abstraction)   
 [inheritance](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#inheritance)   
@@ -8703,7 +8702,9 @@ __What is an object__:
 
 <br>
 
-### __[encapsulation](https://www.javatpoint.com/javascript-oops-encapsulation)__   
+## __[the 4 core concepts of OOP](https://medium.com/@khmel87/javascript-four-principles-of-object-oriented-programming-cd81a04262cb#:~:text=There%20are%20four%20main%20principles,abstraction%2C%20inheritance%2C%20and%20polymorphism.)__
+
+### 1. __[encapsulation](https://www.javatpoint.com/javascript-oops-encapsulation)__   
 encapsulation is: we group related variables and functions that operate on the variables into objects.    
 So, in other words binding the data (variables) with the functions acting on that data. 
 
@@ -8742,7 +8743,7 @@ So, in other words binding the data (variables) with the functions acting on tha
 
 <br>
 
-### __[abstraction](https://www.javatpoint.com/javascript-oops-abstraction)__
+### 2. __[abstraction](https://www.javatpoint.com/javascript-oops-abstraction)__
  is a way of hiding the implementation details and showing only the functionality to the users. In other words, it ignores the irrelevant details and shows only the required one.
 
  - simpler interface of the objects:   
@@ -8761,7 +8762,7 @@ So, in other words binding the data (variables) with the functions acting on tha
 
 <br>
 
- ### __[inheritance](https://www.tutorialsteacher.com/javascript/inheritance-in-javascript)__
+ ### 3. __[inheritance](https://www.tutorialsteacher.com/javascript/inheritance-in-javascript)__
 inheritance allows us to eliminate redundant code.      
 So, using less code: we define an object, and other objects can inherit those properties and methods.   
 
@@ -8774,7 +8775,7 @@ So, using less code: we define an object, and other objects can inherit those pr
 <br>
 
 
-### __[polymorphism](https://www.javatpoint.com/javascript-oops-polymorphism#:~:text=The%20polymorphism%20is%20a%20core,data%20members%20with%20the%20methods.)__   
+### 4. __[polymorphism](https://www.javatpoint.com/javascript-oops-polymorphism#:~:text=The%20polymorphism%20is%20a%20core,data%20members%20with%20the%20methods.)__   
 (ploly = many, morph = form)   
 it is a technique that allows us to get rid of long `if and else` or `switch and case` statements.   
 
