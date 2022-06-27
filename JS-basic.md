@@ -8803,12 +8803,12 @@ __creating an obejct using the [`object literal syntax`](https://developer.mozil
   *`radius` and `location` are properties.*
   ```
   const circle = {
-    radius : 1,
-    location : {
+    radius : 1,                           //← property
+    location : {                          //← property
       x : 1,
       y : 1
     },
-    draw : function() {
+    draw : function() {                   //← method
       console.log("Drawing a circle");
     }
   };
