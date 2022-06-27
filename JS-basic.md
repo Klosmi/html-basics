@@ -8699,7 +8699,7 @@ __What is an object__:
 [Creating Object with Contructor](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#creating-object-with-contructor)    
 [Constructor Property](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#constructor-property)   
 []()   
-[]()    
+[Value vs Reference Type]()    
 
 <br>
 
