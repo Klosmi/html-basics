@@ -9043,21 +9043,6 @@ The main difference between the two is that passing by value happens when assign
 
 <br>
 
-## [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)   
-__Prototypes__ are the mechanism by which JavaScript objects inherit features from one another. 
-
-   - Prototypes are template objects (a bunch of methods).
-
-   - We can create multiple objects that share the same prototype (so they all have acces to the same methods).
-
-   - Objects can have a prototype object which acts as a template object. So it means is that certain objects eg.:  an array, have a a lot of methods.
-
----
-
-[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
-
-<br>
-
 ## __[Constructor Property](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor)__   
     every object in JS has a property called `constructor`.  
     `constructor` references a function which was used to construct (create) an object.
@@ -9083,6 +9068,146 @@ __Prototypes__ are the mechanism by which JavaScript objects inherit features fr
 
 <br>
 
+## __[Functions = Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)__
+functions are first-class objects in JS, because they can have properties and methods just like any other object.     
+What distinguishes functions from other objects is that functions can be called.
+
+- eg.:   
+  *We can add properties and/or methods to our function, just as we do it with other objects.*
+  ```
+  function Circle(radius){
+    this.radius = radius;     
+    this.draw = function() {
+      console.log("Drawing a circle");
+    }
+  }
+
+  Circle.name;        //← adding a property
+  Circle.length;      //← adding a property
+  
+  //'Circle'
+  // 1
+  ```
+  *We add the `.call()` method to the `Circle` function.*   
+  *With `call()` we can call a function.*  
+
+  * Circle.call({}, argument) → we have to pass an empty objects. The `this.something` in the `function Circle(radius)` references that `{}` empty object in the `Circle.call({}, argument)`.
+  ```
+   function Circle(radius){
+    this.radius = radius;     
+    this.draw = function() {
+      console.log("Drawing a circle");
+    }
+  }
+
+  Circle.call({}, 1);           //this expression is exactly this `const circle = new Circle(1);`❗️    
+
+  const circle = new Circle(1);     //(1) is the argument
+  ```
+  *So the `Circle.call({}, 1);` expression is exactly `const circle = new Circle(1);`.*   
+  *Because, when we use the `new` operator, it interannyl creates an empty object `{}`, and pass it as the first argument to the `call()` method.*
+  ```
+  //with apply method we can pass an array to the function as an argument
+
+  Circle.apply({}, [1, 2, 3, 4]);  
+  Circle.call({}, 1);  
+
+  ```
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
+
+<br>
+
+## __[Value vs Reference Type](https://dmitripavlutin.com/value-vs-reference-javascript/#:~:text=In%20JavaScript%2C%20you%20can%20pass,by%20reference%20when%20assigning%20objects.)__
+We can pass by __value__ and by __reference__ in JS.    
+The main difference between the two is that passing by value happens when assigning primitives while passing by reference when assigning objects.
+
+- we have 2 categories of types:   
+  1. Value Type (aslo called primitives)  
+      - number, string, boolean, symbol, undefined, null
+  2. Reference Types
+      - object
+      - function
+      - array
+
+💡 Primitives are copied by their value.
+💡 Objects are copied by their reference.
+
+*So technically in JS we have primitives and objects.*
+
+- eg.:   
+  *We deinfe 2 primitves, `x` and `y`, they are __2 independent variables__ ❗️*  
+
+  *The value (`10`) is stored in `x`. When we copy the `x`, we copy the value what `x` stores, it is copied ont the `y` variable.*    
+  *So they are completely independent from eachother.*
+  ```
+  let x = 10;
+  let y = x;
+
+  x = 20;
+
+  x;
+  // 20
+
+  y;
+  // 10
+  ```
+  *Now, we are using a reference type (an object).*    
+  *When we use the {value: 10} obejct, the object is not stored in the `x` variable.*   
+  *`{value: 10}` object is stored somewhere else in the memory.*   
+  *The address of the memory location is stored in the `x` variable (not the value).*    
+  *When we copy `x` into the `y`, it is the address (reference) what is copied. → `x` & `y` are pointing to the same object in the memory.*
+  ```
+  let x = {value: 10};        //← an object, key-value pairs
+  let y = x;
+
+  x.value = 20;
+
+  x; 
+  // {value: 20};
+
+  y;
+  // {value: 20};
+  ```
+
+- eg.:   
+  *Primitives are copied by their value.*  
+  *When we call `increase(number)`, its value is copied on to the function's paramter `  function increase(number)`. The `number++`'s scope is local in the function.*   
+  *The `number++` insode the function is independent from the `let number = 10`.*  
+  *The `console.log(number);` is basically dealing woth the `let number = 10;` and not the function's `number++`. Because they are independent.*
+  ```
+  let number = 10;
+
+  function increase(number) {
+    number++;
+  }
+
+  increase(number);       //← call increase() and pass the number as an argument
+  console.log(number);
+  // 10;
+  ```
+  *Now lets ude an object `let obj = {value: 10};`*   
+  *`function increase(obj)` is pointing to the same object (reference to the same object) as `let obj = {value: 10};`.*    
+  *So these are not independent copies.*
+  ```
+  let obj = {value: 10};
+
+  function increase(obj) {
+    obj.value++;
+  }
+
+  increase(obj);
+  console.log(obj);
+
+  // {value: 11}
+  ```
+
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
+
+<br>
 
 ## [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)   
 __Prototypes__ are the mechanism by which JavaScript objects inherit features from one another. 
