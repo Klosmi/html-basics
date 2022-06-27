@@ -8698,7 +8698,7 @@ __What is an object__:
 [Defining Object with Factories](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#defining-object-with-factories)    
 [Creating Object with Contructor](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#creating-object-with-contructor)    
 [Constructor Property](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#constructor-property)   
-[]()   
+[Functions are Objects](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#functions--objects-1)   
 [Value vs Reference Type]()    
 
 <br>
