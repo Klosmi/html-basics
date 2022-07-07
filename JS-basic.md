@@ -9210,6 +9210,84 @@ The main difference between the two is that passing by value happens when assign
 
 <br>
 
+## __[Adding/Removing Properties](https://www.geeksforgeeks.org/how-to-add-and-remove-properties-from-objects-in-javascript/)__
+objects are dynamic: after we created an object we can add extra properties in them pr delete some properties.
+
+### __Adding properties__
+- eg.:   
+  *We have the `circle` object, and we want to add something, a new property which holds a text.*    
+  *We can add this property whenever we need it, we don't have to define it before.*   
+  ```
+   function Circle(radius){
+    this.radius = radius;     
+    this.draw = function() {
+      console.log("Drawing a circle");
+    }
+  }
+
+  const circle = new Circle(10);
+
+  // add a new property to the circle object
+
+  circle.location = { x: 1};      //← we set it to { x: 1};
+
+  circle;
+  //► Circle {radius: 10, location: {…}, draw: ƒ}
+  // ► draw: ƒ ()
+  // ► location: {x: 1}
+  // ►  radius: 10
+  ```
+*Accessing properties with `[]` bracket notatition.*   
+*Using `[]` and a string `['reference_a_property']` to reference the property.*
+```
+circle.['location'] = {x: 1};  //← same as circle.location = { x: 1};
+
+circle;
+//► Circle {radius: 10, location: {…}, draw: ƒ}
+// ► draw: ƒ ()
+// ► location: {x: 1}
+// ►  radius: 10
+```
+*Bracket notation is useful when we want to access dynamically the name of the portoprty (so when we don't know the name of that property).*   
+```
+const propertyName = 'location';
+circle.[propertyName] = { x: 1};
+```
+
+<br>
+
+#### __Deleting properties__
+using the `delete` operator and reference the property name.
+
+- eg.:   
+  **
+  ```
+     function Circle(radius){
+    this.radius = radius;     
+    this.draw = function() {
+      console.log("Drawing a circle");
+    }
+  }
+  const circle = new Circle(10);
+
+  circle.location = { x: 1};      //← we set it to { x: 1};
+
+  // DELETE the property
+
+  delete circle.location;
+
+  // we can also use the bracket `[]` notation instead of the `.` dot notation
+
+  delete circle.['location'];
+  ```
+
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
+
+<br>
+
+
 ## [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)   
 __Prototypes__ are the mechanism by which JavaScript objects inherit features from one another. 
 
