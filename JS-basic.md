@@ -8832,7 +8832,7 @@ __creating an obejct using the [`object literal syntax`](https://developer.mozil
 <br>
 
 ## __[Defining Object with Factories](https://www.javascripttutorial.net/javascript-factory-functions/)__    
-In object-oriented programming (OOP), a factory is an object for creating other objects – formally a factory is a function or method that returns objects of a varying prototype or class[1] from some method call, which is assumed to be "new"
+In object-oriented programming (OOP), a factory is an object for creating other objects – formally a factory is a function or method that returns objects of a varying prototype or class from some method call, which is assumed to be "new".
 
 - if an Object has 1 or more method, we call it as object has behaviour (like a person).
 
