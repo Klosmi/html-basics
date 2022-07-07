@@ -8702,6 +8702,7 @@ __What is an object__:
 [Adding/Removing Properties](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#addingremoving-properties) →  *[(adding)](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#adding-properties)* | *[(removing)](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#deleting-properties)*   
 [Enumerating Properties](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#enumerating-properties)    
 [Private Properties and Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#private-properties-and-methods)    
+[Getters and Setters](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#getters-and-setters)
 
 
 <br>
