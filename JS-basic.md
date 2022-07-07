@@ -855,7 +855,7 @@ A truthy value is a value that is considered true when encountered in a Boolean 
 - eg.:   
   Falsy
   ```
-  if (0) {  // null, NaN, undefined aslo Falsy
+  if (0) {  // null, NaN, undefined also Falsy
     console.log("Truthy!");
   } else {
     console.log("Falsy");
@@ -8963,7 +8963,7 @@ We can pass by __value__ and by __reference__ in JS.
 The main difference between the two is that passing by value happens when assigning primitives while passing by reference when assigning objects.
 
 - we have 2 categories of types:   
-  1. Value Type (aslo called primitives)  
+  1. Value Type (also called primitives)  
       - number, string, boolean, symbol, undefined, null
   2. Reference Types
       - object
