@@ -9288,6 +9288,94 @@ using the `delete` operator and reference the property name.
 
 <br>
 
+## __[Enumerating Properties](https://www.oreilly.com/library/view/javascript-the-definitive/9781449393854/ch06s05.html)__   
+Instead of testing for the existence of individual properties, we sometimes want to iterate through (or enumerate) a list of all the properties of an object. This is usually done with the for/in loop.   
+
+- eg.:  
+  *[Enumerating](https://www.merriam-webster.com/dictionary/enumeration) the circle object.*
+  ```
+  function Circle(radius){
+    this.radius = radius;     
+    this.draw = function() {
+      console.log("Drawing a circle");
+    }
+  }
+  const circle = new Circle(10);
+
+  for (key in circle){
+    console.log(key);
+  }
+
+  // radius
+  // draw
+  ```
+  *To get the __value__ of the properties with iteration, we can use the bracket `[]` notation.*   
+  ```
+  function Circle(radius){
+    this.radius = radius;     
+    this.draw = function() {
+      console.log("Drawing a circle");
+    }
+  }
+
+  const circle = new Circle(10);
+  for (key in circle){
+    console.log(key, circle[key]);
+  }
+
+  // radius 10
+  // draw ƒ () {
+  //    console.log("Drawing a circle");
+  //  }
+  ```
+  *If we want ot get __only_ the properties and not the methods. This case, we can use the `typeof` operator, to check the type of the value.*
+  ```
+  function Circle(radius){
+    this.radius = radius;     
+    this.draw = function() {
+      console.log("Drawing a circle");
+    }
+  }
+
+  const circle = new Circle(10);
+
+  for (key in circle){
+    if (typeof circle[key] !== 'function')
+      console.log(key, circle[key]);
+  }
+
+  // radius 10
+  ```
+  The [`Object.keys`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) method:   
+  *Another approach to get all the keys of an object, by using the Object which has a method `keys` and we pass the `circle` object. This returns all the keys of the `circle` object as an array.*
+  ```
+  function Circle(radius){
+    this.radius = radius;     
+    this.draw = function() {
+      console.log("Drawing a circle");
+    }
+  }
+
+  const circle = new Circle(10);
+
+  Object.keys(circle);
+
+  //► (2) ['radius', 'draw']
+  ```
+  *Check for the existence of propert or a methodin an obejct we is the `in` operator.*   
+  ```
+  if ('radius' in circle) {
+    console.log('Circle has a radius.');
+  }
+
+  // Circle has a radius.
+  ```
+
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
+
+<br>
 
 ## [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)   
 __Prototypes__ are the mechanism by which JavaScript objects inherit features from one another. 
