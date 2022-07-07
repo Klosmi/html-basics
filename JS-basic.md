@@ -9330,7 +9330,7 @@ Instead of testing for the existence of individual properties, we sometimes want
   //    console.log("Drawing a circle");
   //  }
   ```
-  *If we want ot get __only_ the properties and not the methods. This case, we can use the `typeof` operator, to check the type of the value.*
+  *If we want ot get __only__ the properties and not the methods. This case, we can use the `typeof` operator, to check the type of the value.*
   ```
   function Circle(radius){
     this.radius = radius;     
