@@ -9454,6 +9454,99 @@ It is useful, because by hiding complexity, eg.: we do not expose our methods, i
 
 <br>
 
+
+## __[Getters and Setters](https://javascript.info/property-accessors)__
+they are object properties, precisely *accessor properties*.   
+They are essentially functions that execute on *getting* and *setting* a value, but look like regular properties to an external code.
+
+### [Getter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get)   
+The get syntax binds an object property to a function that will be called when that property is looked up.   
+
+A `get`ter is a function to read a property.
+
+- eg.:    
+  *We have a private property (in OOP point of view) `let defaultLocation`. We can not access it outside of the `Circle` object.*    
+  *But we want to be able to read this `defaultLocation` (we don't want to modify it).*   
+  [Object.defineProperty](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty):  defines a new property directly on an object.   
+  *The 1st argument of this method is the obejct that we want to add a new property to: here is the `this`, the new Circle object.*    
+  *The 2nd argument is the nem of our property: `'defaultLocation'`*    
+  *The 3rd argument is an object,.which has a key:value pair → the key is `get`, the value is a `function`. In this function we return the `defaultLocation`.*
+  ```
+  function Circle(radius){
+    this.radius = radius;  
+
+    let defaultLocation = {x: 0, y: 0};
+
+
+    this.draw = function() {
+      console.log("Drawing a circle");             
+    }
+
+    Object.defineProperty(this, 'defaultLocation', {
+      get : function() {
+        return defaultLocation;   //← defaultLocation is a closure of the inner function
+      }
+    })
+  }   
+
+  const circle = new Circle(10);
+  circle;
+
+  //▼ Circle {radius: 10, draw: ƒ}
+  //  draw: ƒ ()
+  //  radius: 10
+  //  defaultLocation: Object     //← get function is executed, the result is x: 0. y:0
+  //    x: 0
+  //    y: 0
+  //    ► [[Prototype]]: Object
+  //  ► get defaultLocation: ƒ () //← defaultLocation also stored here: a getter function (used to read a property)
+  //  ► [[Prototype]]: Object
+  ```
+
+### [Setter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set)   
+The set syntax binds an object property to a function to be called when there is an attempt to set that property.   
+
+
+We want to change the value of the `defaultLocation` function from the outside.   
+
+- eg.: 
+  *We have to define a `setter` in the Object.defineProperty, to ba able to modify the `defaultLocation` form the outside of the object.*      
+  ```
+  function Circle(radius){
+    this.radius = radius;  
+
+    let defaultLocation = {x: 0, y: 0};
+
+
+    this.draw = function() {
+      console.log("Drawing a circle");             
+    }
+
+    Object.defineProperty(this, 'defaultLocation', {
+      get : function() {
+        return defaultLocation;   //← defaultLocation is a closure of the inner function
+      },
+      set : function(value) {
+       // put here some validation 
+        if (!value.x || !value.y)   //← ifvalue.x is falsy or value.y is falsy
+          throw new Error('Invalid location');;         //← Error is a built in constructor
+        defaultLocation = value;
+      } 
+    })
+  } 
+
+  const circle = new Circle(10);
+  circle.defaultLocation = 1;
+
+  // Error: Invalid location
+  ```
+
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
+
+<br>
+
 ## [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)   
 __Prototypes__ are the mechanism by which JavaScript objects inherit features from one another. 
 
