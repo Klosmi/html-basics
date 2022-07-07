@@ -8836,7 +8836,7 @@ In object-oriented programming (OOP), a factory is an object for creating other 
 
 - if an Object has 1 or more method, we call it as object has behaviour (like a person).
 
-- if an Object doesn't have a behaviour, the way we construct is to use the __factory function__.
+- when a function creates and returns a new object, it is called a factory function. By using the factory function, we can create any number of the eg.: `circle` objects without duplicating code.
 
 - eg.:    
 *The circle object (which has no behaviour).*
@@ -8845,7 +8845,7 @@ In object-oriented programming (OOP), a factory is an object for creating other 
     radius : 1,
   };
 ```
-*We use actory or cunstructor function to create the circle object.*   
+*We use factory or cunstructor function to create the circle object.*   
 *We add teh `draw()` method.*
 ```
 //Factory Function
