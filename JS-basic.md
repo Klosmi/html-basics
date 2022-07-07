@@ -8727,7 +8727,7 @@ So, in other words binding the data (variables) with the functions acting on tha
     return baseSalary + (overTime * rate);
   }
   ```
-  *Let's mturn this to an OOP way, so we create an `employee` object.*   
+  *Let's turn this to an OOP way, so we create an `employee` object.*   
   ```
   let employee = {
     let baseSalary = 30000,   // ← property of the object
@@ -8780,7 +8780,7 @@ So, using less code: we define an object, and other objects can inherit those pr
 
 
 ### 4. __[polymorphism](https://www.javatpoint.com/javascript-oops-polymorphism#:~:text=The%20polymorphism%20is%20a%20core,data%20members%20with%20the%20methods.)__   
-(ploly = many, morph = form)   
+(poly = many, morph = form)   
 it is a technique that allows us to get rid of long `if and else` or `switch and case` statements.   
 
 - defining a specific method on several objects, and that specific method behaves differently depending on the object we are referencing.
