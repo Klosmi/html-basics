@@ -8839,7 +8839,7 @@ In object-oriented programming (OOP), a factory is an object for creating other 
 - if an Object doesn't have a behaviour, the way we construct is to use the __factory function__.
 
 - eg.:    
-*The circle object (which has no behavious).*
+*The circle object (which has no behaviour).*
 ```
  const circle = {
     radius : 1,
