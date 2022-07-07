@@ -8929,7 +8929,7 @@ What distinguishes functions from other objects is that functions can be called.
   *We add the `.call()` method to the `Circle` function.*   
   *With `call()` we can call a function.*  
 
-  * Circle.call({}, argument) → we have to pass an empty objects. The `this.something` in the `function Circle(radius)` references that `{}` empty object in the `Circle.call({}, argument)`.
+  *Circle.call({}, argument) → we have to pass an empty objects. The `this.something` in the `function Circle(radius)` references that `{}` empty object in the `Circle.call({}, argument)`.*
   ```
    function Circle(radius){
     this.radius = radius;     
@@ -8943,7 +8943,7 @@ What distinguishes functions from other objects is that functions can be called.
   const circle = new Circle(1);     //(1) is the argument
   ```
   *So the `Circle.call({}, 1);` expression is exactly `const circle = new Circle(1);`.*   
-  *Because, when we use the `new` operator, it interannyl creates an empty object `{}`, and pass it as the first argument to the `call()` method.*
+  *Because, when we use the `new` operator, it internally creates an empty object `{}`, and pass it as the first argument to the `call()` method.*
   ```
   //with apply method we can pass an array to the function as an argument
 
