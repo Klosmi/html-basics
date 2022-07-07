@@ -8699,6 +8699,7 @@ __What is an object__:
 [Constructor Property](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#constructor-property)   
 [Functions are Objects](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#functions--objects-1)   
 [Value vs Reference Type](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#value-vs-reference-type-1)    
+[Adding/Removing Properties](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#addingremoving-properties)   [(adding)](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#adding-properties) | [(removing)](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#deleting-properties)   
 
 <br>
 
