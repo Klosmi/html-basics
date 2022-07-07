@@ -8689,10 +8689,10 @@ __What is an object__:
 
 <br>
 
-[encapsulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#encapsulation)   
-[abstraction](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#abstraction)   
-[inheritance](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#inheritance)   
-[polymorphism](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#polymorphism)   
+[encapsulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#1-encapsulation)   
+[abstraction](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#2-abstraction)   
+[inheritance](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#3-inheritance)   
+[polymorphism](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#4-polymorphism)   
 [Creating Objects](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#creating-objects)   
 [Defining Object with Factories](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#defining-object-with-factories)    
 [Creating Object with Contructor](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#creating-object-with-contructor)    
