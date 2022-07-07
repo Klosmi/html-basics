@@ -9379,6 +9379,80 @@ Instead of testing for the existence of individual properties, we sometimes want
 
 <br>
 
+## __[Private Properties and Methods](https://javascript.info/private-protected-properties-methods)__    
+One of the most important principles of object oriented programming – delimiting internal interface from the external one.   
+
+### [Abstraction](https://developer.mozilla.org/en-US/docs/Glossary/Abstraction)
+Abstraction means that hide the details and complexity and show only the essentials.   
+
+It is useful, because by hiding complexity, eg.: we do not expose our methods, it won't be modifiably from the outside. Thus we avoid that making changes from the outside can create errors in our complex program. We can tell where exactly we allow to modify that method.
+
+- eg.:   
+  *In the `Circle` object we want to hide the `defaultLocation` and the `optimumLocation` because they are the complexity of this object.*     *Instead we expose only the essentials: `radius` and `draw`.*  
+  ```
+  function Circle(radius){
+    this.radius = radius; 
+
+    this.defaultLocation = {x: 0, y: 0};
+    this.optimumLocation = function (){
+      console.log('Very complex function.');
+    } 
+
+    this.draw = function() {
+      this.optimumLocation;
+    }
+  }
+  ```
+  *So, we set the `this.defaultLocation` as a local property of the `Circle` object by using the `let`. With this technique it is only accessible in the object (outside it dies).*     
+  *We convert `optimumLocation` to a private method: `let optimumLocation`.* 
+  ```
+  function Circle(radius){
+    this.radius = radius;  
+
+    let defaultLocation = {x: 0, y: 0};
+    let optimumLocation = function (){
+      console.log('Very complex function.');
+    }   
+
+    this.draw = function() {
+      console.log("Drawing a circle");
+    }
+  }  
+  ```
+  [Closure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures): closure is a function that references variables in the outer scope from its inner scope.   
+  *We have the `draw` function inside of the `Circle` function. `optimumLocation` is defined in the `Circle` so it is accessible in the `draw` function.*   
+  ```
+  function Circle(radius){
+    this.radius = radius;  
+
+    let defaultLocation = {x: 0, y: 0};
+    let optimumLocation = function (factor){
+      console.log('Very complex function.');
+    }   
+
+    this.draw = function() {
+      optimumLocation(0.1);           //← closure
+      console.log("Drawing a circle");
+
+      this.radius;                    //← we want to use members of the Circle, we have to use `this`
+    }
+  }   
+
+  // we can not access outside the 'defaultLocation' and 'optimumLocation'. We can only access 'radius' and 'draw'.
+  const circle = new Circle(10);
+  circle.draw();
+
+
+  // Very complex function.
+  // Drawing a circle
+  ```
+
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
+
+<br>
+
 ## [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)   
 __Prototypes__ are the mechanism by which JavaScript objects inherit features from one another. 
 
