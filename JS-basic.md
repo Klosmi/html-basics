@@ -480,7 +480,7 @@ __The difference between null and undifined__:
 
 - **contains properties and methods for mathematical constants and functions.** (It’s not a function object.)
 
-- (an obejct is a collection of properties and methods.)
+- (an object is a collection of properties and methods.)
 
 - Math's [properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math#static_properties) and [methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math#static_methods) :
 
@@ -1541,7 +1541,7 @@ the aim of looping is to repeat some functionality.
   - __[while](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#while-loop)__
   - __[for... of](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#for--of)__
   - __[for... in](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#for--in)__
-  - __[Object methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#special-obejct-methods)__:    
+  - __[Object methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#special-object-methods)__:    
       [Object.keys()](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#objectkeys) • [Object.values()](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#objectvalues) • [Object.entries()](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#objectentries)
 
 ## [for loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
@@ -1939,7 +1939,7 @@ iterates __over__ an object, so all enumerable properties of an object that are 
 
 [👆go up to Loops](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-loops-)
 
-## __special Obejct methods__:
+## __special Object methods__:
   ### __[`Object.keys()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)__
   __method__ returns an array of a given object's own enumerable property __names__, iterated in the same order that a normal loop would.   
   So it give the key of key-value pairs.
@@ -2747,8 +2747,8 @@ a cup has design, weight, a material it is made of, etc.
  - most common situation to use `this`: we typically use inside of an object in a method.
  - the value of [`this`](https://alligator.io/js/this-keyword/#four-rules) differs depending on how a function is invoked (how it is called), so we can’t know the value of `this` just by looking at the function itself, but we need to know the context in which the function is invoked.
  - So, the `this` references the object that is executing the current function.  
- - If a function is part of an obejct, it is called a method → If the function is a method in an object, `this` references that object itself.   
-   Otherwise, if that function is a regular function, so it's not part of an obejct, `this` references the global object, the `window`. 
+ - If a function is part of an object, it is called a method → If the function is a method in an object, `this` references that object itself.   
+   Otherwise, if that function is a regular function, so it's not part of an object, `this` references the global object, the `window`. 
 
  - eg.:   
     *creating an object `person`, it has a method `fullname()`*   
@@ -6250,7 +6250,7 @@ Event Object Represents is an object that contains information about an event th
 When an *event listener’s* event occurs and it calls its associated function, it also passes a single argument to the function (a reference to the event object). The event object contains a number of properties that describe the event that occurred.   
 
 __The event object is automaitcally passed every single time in to our callback function.__    
-So it is basically an obejct which contains information about the event.
+So it is basically an object which contains information about the event.
 
 *[read more about this topic](https://medium.com/launch-school/javascript-lets-talk-about-events-572ecce968d0)*
 
@@ -7875,7 +7875,7 @@ __Interface not for humans, but for applications!__
 The __`JSON.parse()` method__  to turns JSON into a valid JavaScript object.
 
   - eg.:   
-    *turning a JSON into a JavaScript obejct with the `JSON.parse()` method*   
+    *turning a JSON into a JavaScript object with the `JSON.parse()` method*   
     ```
     const json = '{"result":true, "count":42}';
     
@@ -8484,7 +8484,7 @@ fetch('https://api.github.com/orgs/axios')
   </body>
   ```
   JS   
-  *Listening for the `submit` event obejct.* 
+  *Listening for the `submit` event object.* 
   *The [`event.preventDefault()`](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) prevents the default behavior of the page being reloaded when we submit the form. So if we don't use `event.preventDefault()` on a form `submit` event listener, then when we click the submit button (to submit the form) it would reload the page.*
   ```
   const form = document.querySelector('#searchForm');
@@ -8796,7 +8796,7 @@ it is a technique that allows us to get rid of long `if and else` or `switch and
 
 ## __[Creating Objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_programming#classes_and_instances)__
 
-__creating an obejct using the [`object literal syntax`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer), referred as `{}`__ ❗️
+__creating an object using the [`object literal syntax`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer), referred as `{}`__ ❗️
 
 (An object in JS is a collection of key:value pairs.)
 
@@ -8994,7 +8994,7 @@ The main difference between the two is that passing by value happens when assign
   // 10
   ```
   *Now, we are using a reference type (an object).*    
-  *When we use the {value: 10} obejct, the object is not stored in the `x` variable.*   
+  *When we use the {value: 10} object, the object is not stored in the `x` variable.*   
   *`{value: 10}` object is stored somewhere else in the memory.*   
   *The address of the memory location is stored in the `x` variable (not the value).*    
   *When we copy `x` into the `y`, it is the address (reference) what is copied. → `x` & `y` are pointing to the same object in the memory.*
@@ -9058,7 +9058,7 @@ The main difference between the two is that passing by value happens when assign
 - when we create an object using the object literal syntax `{}`, the JS engine uses the `Object()` constructor function (internally).
 
 - eg.:    
-  *x's obejct literal `{}` references the `Object()` constructor*   
+  *x's object literal `{}` references the `Object()` constructor*   
   *`new String;` instead we use the string literal  `''` or `""`.*    
   *`new Boolean;`instead we use boolean literals, `true` or `false`.*      
   *`new Number;` instead we use number literal `1, 2, 3` etc.*    
@@ -9160,7 +9160,7 @@ The main difference between the two is that passing by value happens when assign
   // 10
   ```
   *Now, we are using a reference type (an object).*    
-  *When we use the {value: 10} obejct, the object is not stored in the `x` variable.*   
+  *When we use the {value: 10} object, the object is not stored in the `x` variable.*   
   *`{value: 10}` object is stored somewhere else in the memory.*   
   *The address of the memory location is stored in the `x` variable (not the value).*    
   *When we copy `x` into the `y`, it is the address (reference) what is copied. → `x` & `y` are pointing to the same object in the memory.*
@@ -9366,7 +9366,7 @@ Instead of testing for the existence of individual properties, we sometimes want
 
   //► (2) ['radius', 'draw']
   ```
-  *Check for the existence of propert or a methodin an obejct we is the `in` operator.*   
+  *Check for the existence of propert or a methodin an object we is the `in` operator.*   
   ```
   if ('radius' in circle) {
     console.log('Circle has a radius.');
@@ -9469,7 +9469,7 @@ A `get`ter is a function to read a property.
   *We have a private property (in OOP point of view) `let defaultLocation`. We can not access it outside of the `Circle` object.*    
   *But we want to be able to read this `defaultLocation` (we don't want to modify it).*   
   [Object.defineProperty](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty):  defines a new property directly on an object.   
-  *The 1st argument of this method is the obejct that we want to add a new property to: here is the `this`, the new Circle object.*    
+  *The 1st argument of this method is the object that we want to add a new property to: here is the `this`, the new Circle object.*    
   *The 2nd argument is the nem of our property: `'defaultLocation'`*    
   *The 3rd argument is an object,.which has a key:value pair → the key is `get`, the value is a `function`. In this function we return the `defaultLocation`.*
   ```
@@ -9563,7 +9563,7 @@ __Prototypes__ are the mechanism by which JavaScript objects inherit features fr
    - __`__proto__` is a reference to the blueprint objet: the prototype__.
 
    - eg.:       
-    *lets examine an other type of JS obejct the `document.body`*. 
+    *lets examine an other type of JS object the `document.body`*. 
       ```
       const body = document.body;
       
