@@ -9027,7 +9027,7 @@ The main difference between the two is that passing by value happens when assign
   console.log(number);
   // 10;
   ```
-  *Now lets ude an object `let obj = {value: 10};`*   
+  *Now lets use an object `let obj = {value: 10};`*   
   *`function increase(obj)` is pointing to the same object (reference to the same object) as `let obj = {value: 10};`.*    
   *So these are not independent copies.*
   ```
