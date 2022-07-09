@@ -1298,7 +1298,7 @@ __The order:__
 
 
    - eg.:
-      * we expect that it will sort ascending, but becuase it uses teh 1st digit, the result is different*
+      * we expect that it will sort ascending, but becuase it uses the 1st digit, the result is different*
       ```
       let numbers = [1, 42, 7000, -5, 6, 0];
       numbers.sort();
@@ -8036,7 +8036,7 @@ So __it is a code that comes back in an HTTP response, and it has a meaning.__
     it is a common variable, it tells us to replace this with an actual ID.
     - eg.:  
       *`:id` indicting that we can replace it with something, here like a number.*     
-      *Many times there is a documentation of the given [API](https://swapi.dev/documentation), where tehy explain what is what.*  
+      *Many times there is a documentation of the given [API](https://swapi.dev/documentation), where they explain what is what.*  
       ```
       https://swapi.dev/api/people/:id/
       ```
@@ -8847,7 +8847,7 @@ In object-oriented programming (OOP), a factory is an object for creating other 
   };
 ```
 *We use factory or cunstructor function to create the circle object.*   
-*We add teh `draw()` method.*
+*We add the `draw()` method.*
 ```
 //Factory Function
 
