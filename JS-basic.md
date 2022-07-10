@@ -9548,6 +9548,20 @@ We want to change the value of the `defaultLocation` function from the outside.
 
 <br>
 
+## __[Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)__    
+Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but also have some syntax and semantics that are not shared with ES5 class-like semantics.
+
+We use class when we need many objects of the same type.
+
+So class is a template for an object in the code. It makes it easier, quicker and more reliable to build several objects of the same type (called *instances of the same class*).
+
+- eg.:   
+  *Defining a Class*. 
+  ```
+  class Book {
+  }
+  ```
+
 ## [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)   
 __Prototypes__ are the mechanism by which JavaScript objects inherit features from one another. 
 
