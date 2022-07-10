@@ -9561,6 +9561,42 @@ So class is a template for an object in the code. It makes it easier, quicker an
   class Book {
   }
   ```
+  *For this class, we want each Book to have a title, an author and a number of pages. To do this, we use what is called a constructor.*
+  ```
+  class Book {
+    constructor(title, author, pages) {
+    }
+  }
+  ```
+  💡 *The constructor of a class is the function that is called when a new instance of that class is created with the keyword `new`.*    
+  *We use the `this` keyword and the dot notation to assign the title, author and number of pages received to this instance.*
+  ```
+  class Book {
+    constructor(title, author, pages) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+     }
+  }
+  ```
+  *Here, the keyword `this` refers to the new instance. So it uses the dot notation to assign the received values to the corresponding keys.
+  *Now that the class is complete, we can create instances with the keyword `new`.*
+  ```  
+  let myBook = new Book("The Lord of the Rings", "J. R. R. Tolkien", 1250);    
+   //creating the following object ↓
+  {
+      title: "The Lord of the Rings",
+      author: "J. R. R. Tolkien",
+      pages: 1250
+  }
+  ```
+  *With a Book class, we can easily and quickly create new Book objects.*
+  
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
+
+<br>  
 
 ## [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)   
 __Prototypes__ are the mechanism by which JavaScript objects inherit features from one another. 
