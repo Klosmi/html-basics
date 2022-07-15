@@ -9579,7 +9579,7 @@ So class is a template for an object in the code. It makes it easier, quicker an
      }
   }
   ```
-  *Here, the keyword `this` refers to the new instance. So it uses the dot notation to assign the received values to the corresponding keys.
+  *Here, the keyword `this` refers to the new instance. So it uses the dot notation to assign the received values to the corresponding keys.*
   *Now that the class is complete, we can create instances with the keyword `new`.*
   ```  
   let myBook = new Book("The Lord of the Rings", "J. R. R. Tolkien", 1250);    
