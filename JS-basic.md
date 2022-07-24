@@ -5361,7 +5361,7 @@ __The style object does not contain styles from our stylesheets__ ❗️ It's em
 - Try to avoid writing styles in line❗️ so there is a better way to make changes to apply new styles to elements, which is to use a class.
 
 - We __can't__ get the information about the HTML elments' style with the `.style` property.   
-But to the current styles of any element we can use the `window.getComputedStyle(element)` object. It gives the *computed style* (so once the page is loaded and the browser computed all the styles).   
+But to the current styles of any element we can use the __`window.getComputedStyle(element)`__ object. It gives the *computed style* (so once the page is loaded and the browser computed all the styles).   
 It is not a selector!
 
   - eg.:  
@@ -5390,6 +5390,9 @@ It is not a selector!
     // and then convert it back to string.
     ```
 
+So the `getComputedStyle` method can access the final properties that are being applied to an element without having to manually access the CSS files and/or JavaScript DOM manipulation files.       
+It is useful, when it is difficult to check what class/selector was applied when multiple selectors are added to the same element. So with `window.getComputedStyle(element)` we can know what *'won'* the specificity conflicts.
+    
   ---
 
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `Attributes & properties`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties) OR [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
