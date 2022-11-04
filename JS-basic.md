@@ -4926,7 +4926,7 @@ The `textContent` property is very similar to the `innerText` property. But it's
 __The `textContent` property __returns__ every element, every piece of content inside the selected HTML element (shows everything which is in the markup).__   
 But `innerText` property doesn't show everything what is in the markup (eg. if we had something by setting something to `display: none`, `innerText` doesn't show it).
 
-- So `textContent` is give us everything, whereas `innerText is actually sensitive to what is showing at the moment.
+- So `textContent` is give us everything, whereas `innerText` is actually sensitive to what is showing at the moment.
 
 
 - `textContent` returns every element in the `node`. In contrast, `innerText` is aware of styling and won't return the text of "hidden" elements.   
