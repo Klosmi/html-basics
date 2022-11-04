@@ -1627,7 +1627,7 @@ __for loop__ expression is this:
 
 <br>
 
-- when writing a loop always make sure that how your loop will end, to avoid infinte loops.
+- when writing a loop always make sure that how your loop will end, to avoid infinite loops.
 
 <br>
 
@@ -7785,7 +7785,7 @@ AJAX = __Asynchronous JavaScript And [XML](https://developer.mozilla.org/en-US/d
 What the API sends back is pure information in a JSON format.
 
  - eg.:     
-  *The infint scroll on instagram, reddit, etc.*       
+  *The infinite scroll on instagram, reddit, etc.*       
   *The live searching (google) it gives suggestions while typing*
 
  - dev.tool → __network__ tab:   
