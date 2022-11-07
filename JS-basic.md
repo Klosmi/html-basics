@@ -8976,7 +8976,7 @@ The main difference between the two is that passing by value happens when assign
       - function
       - array
 
-💡 Primitives are copied by their value.     
+💡 Primitives are copied by their value.         
 💡 Objects are copied by their reference.
 
 *So technically in JS we have primitives and objects.*
