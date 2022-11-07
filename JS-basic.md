@@ -4934,7 +4934,7 @@ But `innerText` property doesn't show everything what is in the markup (eg. if w
 - syntax: `document.querySelector('p').textContent`
 
 - eg.:   
-  *let's take the  `<b>` tag which is inside of the `<p>` tag. Let's set it to `display:none`. So the word (consectetur) is hidden now*   
+  *let's take the  `<b>` tag which is inside of the `<p>` tag. Let's set it to `display:none`. So the word (`<b>consectetur</b>`) is hidden now*   
   *But with `textContent` we can still see it*   
   HTML
   ```
