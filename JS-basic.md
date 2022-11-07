@@ -7875,7 +7875,7 @@ __Interface not for humans, but for applications!__
   ```
 
 - __[`JSON.parse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)__:   
-The __`JSON.parse()` method__  to turns JSON into a valid JavaScript object.
+The __`JSON.parse()` method__  to turn JSON into a valid JavaScript object.
 
   - eg.:   
     *turning a JSON into a JavaScript object with the `JSON.parse()` method*   
