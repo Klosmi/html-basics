@@ -9258,7 +9258,7 @@ circle;
 // ► location: {x: 1}
 // ►  radius: 10
 ```
-*Bracket notation is useful when we want to access dynamically the name of the portoprty (so when we don't know the name of that property).*   
+*Bracket notation is useful when we want to access dynamically the name of the property (so when we don't know the name of that property).*   
 ```
 const propertyName = 'location';
 circle.[propertyName] = { x: 1};
