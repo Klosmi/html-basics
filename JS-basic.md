@@ -8999,7 +8999,7 @@ The main difference between the two is that passing by value happens when assign
   // 10
   ```
   *Now, we are using a reference type (an object).*    
-  *When we use the {value: 10} object, the object is not stored in the `x` variable.*   
+  *When we use the `{value: 10}` object, the object is not stored in the `x` variable.*   
   *`{value: 10}` object is stored somewhere else in the memory.*   
   *The address of the memory location is stored in the `x` variable (not the value).*    
   *When we copy `x` into the `y`, it is the address (reference) what is copied. → `x` & `y` are pointing to the same object in the memory.*
