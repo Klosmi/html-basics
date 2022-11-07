@@ -5228,7 +5228,7 @@ So when we use `getAttribute`, the __method is getting the content directly from
     link.getAttribute('href');
     // '/wiki/Asia'          ← value directly from the HTML
     ```
-    There is a difference: `getAttribute` takes the value (/wiki/Asia) directly from the HTML. Whereas when we access a property directly on an element like `link.href` that is going to be the JS object.  
+    There is a difference: `getAttribute` takes the value (/wiki/Asia) directly from the HTML. Whereas when we access a property directly on an element like `link.href` that is going to the JS object.  
     So, we get different value
 
   <br>
