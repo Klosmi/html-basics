@@ -7709,7 +7709,7 @@ __The [`try..catch`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Ref
      
  - eg.:   
    *How [`try..catch` works](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch#try_it).*  
-   *In the `try` block we an error in the console.log, so it goes to the `catch` block, and prints the `catch` block's error message.*.  
+   *In the `try` block we have an error in the console.log, so it goes to the `catch` block, and prints the `catch` block's error message.*.  
     ```
     try {
       console.log(hello);                      //← it should be "hello" with quotes.
