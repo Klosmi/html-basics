@@ -8776,7 +8776,7 @@ So, in other words binding the data (variables) with the functions acting on tha
 inheritance allows us to eliminate redundant code.      
 So, using less code: we define an object, and other objects can inherit those properties and methods.   
 
-- eg.: we have several HTML elements lik button, checkbox, select. We define an htmlElement object, and help other objects inherit those methods and properties which are deifned in the htmlElement object.
+- eg.: we have several HTML elements like button, checkbox, select. We define an htmlElement object, and help other objects inherit those methods and properties which are deifned in the htmlElement object.
 
 ---
 
