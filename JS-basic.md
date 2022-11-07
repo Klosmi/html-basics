@@ -8628,7 +8628,7 @@ eg.:
 - With Axios we can set a so called *config object*:    
   `{ params: { q: searchTerm } }`
 
-- `{ params : { own object with key-value pairs}, headers: { wn object with key-value pairs} }` is set it to its own object → `{ q: searchTerm }`. We can add several things, like headers, etc.
+- `{ params : { own object with key-value pairs}, headers: { own object with key-value pairs} }` is set it to its own object → `{ q: searchTerm }`. We can add several things, like headers, etc.
 
 - Every key value pair in the `{ q: something }` will be added to the query string
 
