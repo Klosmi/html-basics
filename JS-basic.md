@@ -9142,15 +9142,15 @@ The main difference between the two is that passing by value happens when assign
       - function
       - array
 
-💡 Primitives are copied by their value.
+💡 Primitives are copied by their value.       
 💡 Objects are copied by their reference.
 
 *So technically in JS we have primitives and objects.*
 
 - eg.:   
-  *We define 2 primitves, `x` and `y`, they are __2 independent variables__ ❗️*  
+  *We define 2 primitives, `x` and `y`, they are __2 independent variables__ ❗️*        
 
-  *The value (`10`) is stored in `x`. When we copy the `x`, we copy the value what `x` stores, it is copied ont the `y` variable.*    
+  *The value (`10`) is stored in `x`. When we copy the `x`, we copy the value what `x` stores, it is copied ont the `y` variable.*          
   *So they are completely independent from eachother.*
   ```
   let x = 10;
