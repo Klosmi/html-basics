@@ -9055,8 +9055,8 @@ The main difference between the two is that passing by value happens when assign
 <br>
 
 ## __[Constructor Property](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor)__   
-    every object in JS has a property called `constructor`.  
-    `constructor` references a function which was used to construct (create) an object.
+  every object in JS has a property called `constructor`.  
+  `constructor` references a function which was used to construct (create) an object.
 
 - `Object()` function is a built-in constructor function 
 
