@@ -9104,7 +9104,7 @@ What distinguishes functions from other objects is that functions can be called.
 
   * Circle.call({}, argument) → we have to pass an empty objects. The `this.something` in the `function Circle(radius)` references that `{}` empty object in the `Circle.call({}, argument)`.
   ```
-   function Circle(radius){
+  function Circle(radius){
     this.radius = radius;     
     this.draw = function() {
       console.log("Drawing a circle");
@@ -9228,7 +9228,7 @@ objects are dynamic: after we created an object we can add extra properties in t
   *We have the `circle` object, and we want to add something, a new property which holds a text.*    
   *We can add this property whenever we need it, we don't have to define it before.*   
   ```
-   function Circle(radius){
+  function Circle(radius){
     this.radius = radius;     
     this.draw = function() {
       console.log("Drawing a circle");
@@ -9272,7 +9272,7 @@ using the `delete` operator and reference the property name.
 - eg.:   
   *Removing the 'location' property.*
   ```
-     function Circle(radius){
+  function Circle(radius){
     this.radius = radius;     
     this.draw = function() {
       console.log("Drawing a circle");
