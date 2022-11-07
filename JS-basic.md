@@ -6258,7 +6258,7 @@ So it is basically an object which contains information about the event.
 *[read more about this topic](https://medium.com/launch-school/javascript-lets-talk-about-events-572ecce968d0)*
 
 - eg.:   
-  *We create a `<button>` click event. The event object is automaitcally passed into our callback function. We can capture it as putting a paramter (name it `event`, but it can be anything) into our callback function.*   
+  *We create a `<button>` click event. The event object is automaitcally passed into our callback function. We can capture it as putting a parameter (name it `event`, but it can be anything) into our callback function.*   
   JS
   ```
   document.querySelector('button').addEventListener('click', function (event){
@@ -7369,7 +7369,7 @@ The Promise constructor is primarily used to wrap functions that do not already 
 - eg.:    
   *The __`new Promise` expects us to pass in a function, which has 2 parameters__.*  
 
-  *The 1st paramter is a function that resolves the promise, the 2nd rejects it.*  
+  *The 1st parameter is a function that resolves the promise, the 2nd rejects it.*  
 
   *If at any point we call `resolve` the promise object will be resolved, and the same logic with `reject`.*
 
@@ -7575,7 +7575,7 @@ __Promise rejected__
     *A login example (however there is nothing asynchronous in our code here).*        
     *__chaining__ using the `.catch` and the `.then`!*       
     ```
-    // login function takes 2 paramteres
+    // login function takes 2 parameters
 
     async function login(username, password) {
       if (!username || !password)           // if there is no username OR password throw message
@@ -9018,7 +9018,7 @@ The main difference between the two is that passing by value happens when assign
 
 - eg.:   
   *Primitives are copied by their value.*  
-  *When we call `increase(number)`, its value is copied on to the function's paramter `  function increase(number)`. The `number++`'s scope is local in the function.*   
+  *When we call `increase(number)`, its value is copied on to the function's parameter `  function increase(number)`. The `number++`'s scope is local in the function.*   
   *The `number++` insode the function is independent from the `let number = 10`.*  
   *The `console.log(number);` is basically dealing woth the `let number = 10;` and not the function's `number++`. Because they are independent.*
   ```
@@ -9184,9 +9184,9 @@ The main difference between the two is that passing by value happens when assign
 
 - eg.:   
   *Primitives are copied by their value.*  
-  *When we call `increase(number)`, its value is copied on to the function's paramter `  function increase(number)`. The `number++`'s scope is local in the function.*   
-  *The `number++` insode the function is independent from the `let number = 10`.*  
-  *The `console.log(number);` is basically dealing woth the `let number = 10;` and not the function's `number++`. Because they are independent.*
+  *When we call `increase(number)`, its value is copied on to the function's parameter `  function increase(number)`. The `number++`'s scope is local in the function.*   
+  *The `number++` inside the function is independent from the `let number = 10`.*  
+  *The `console.log(number);` is basically dealing with the `let number = 10;` and not the function's `number++`. Because they are independent.*
   ```
   let number = 10;
 
