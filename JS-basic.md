@@ -8525,7 +8525,7 @@ fetch('https://api.github.com/orgs/axios')
    *We add `axios.get('URL')`*     
    *So the API eg.: `https://api.tvmaze.com/search/shows?q=girls`, where the `q` is the query string.*    
    *Our plan is that what the user types in the searchbar, it will be the `q`'s value (eg. `q = ${what the user types here}`).*  
-   *We make it an `async` functio so we can use the `await`.
+   *We make it an `async` functio so we can use the `await`.*
     ```
     const form = document.querySelector('#searchForm');
 
