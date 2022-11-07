@@ -9221,7 +9221,7 @@ The main difference between the two is that passing by value happens when assign
 <br>
 
 ## __[Adding/Removing Properties](https://www.geeksforgeeks.org/how-to-add-and-remove-properties-from-objects-in-javascript/)__
-objects are dynamic: after we created an object we can add extra properties in them pr delete some properties.
+objects are dynamic: after we created an object we can add extra properties in them or delete some properties.
 
 ### __Adding properties__
 - eg.:   
