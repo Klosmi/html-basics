@@ -9518,7 +9518,7 @@ The set syntax __binds an object property to a function to be called when there 
 We want to change the value of the `defaultLocation` function from the outside.   
 
 - eg.:     
-  *We have to define a `setter` in the `Object.defineProperty`, to be able to modify the `defaultLocation` form the outside of the object.*      
+  *We have to define a `setter` in the `Object.defineProperty`, to be able to modify the `defaultLocation` from the outside of the object.*      
   ```
   function Circle(radius){
     this.radius = radius;  
