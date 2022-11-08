@@ -9614,7 +9614,8 @@ __Prototypes__ are the mechanism by which JavaScript objects inherit features fr
 
    - Objects can have a prototype object which acts as a template object. So it means is that certain objects eg.:  an array, have a a lot of methods.
 
-   - [`__proto__`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto#description) :  it is a property that __references__ the array prototype. So a prototype is the *template object* for in this case, arrays. It contains a bunch of methods typically.   
+   - [`__proto__`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto#description) :   __it is a property that *references* the array prototype.__     
+ So a prototype is the *template object* for in this case, arrays. It contains a bunch of methods typically.   
    Every array have access to all of these methods❗️ 
    - So rather than having a separate method on every single array called push, filter, concat, find, etc. , there is one prototype. Each array has a reference to that prototype, with a special property called `__proto__`❗️
    - __`__proto__` is a reference to the blueprint objet: the prototype__.
