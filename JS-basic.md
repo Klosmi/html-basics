@@ -8799,7 +8799,7 @@ __Prototypes__ are the mechanism by which JavaScript objects inherit features fr
 
 ---
 
-[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👇 jump to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
 
 <br>
 
