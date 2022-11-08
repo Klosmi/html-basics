@@ -9476,7 +9476,7 @@ A `get`ter is a function to read a property.
   [Object.defineProperty](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty):  defines a new property directly on an object.   
   *The 1st argument of this method is the object that we want to add a new property to: here is the `this`, the new Circle object.*    
   *The 2nd argument is the name of our property: `'defaultLocation'`*    
-  *The 3rd argument is an object,.which has a key:value pair → the key is `get`, the value is a `function`. In this function we return the `defaultLocation`.*
+  *The 3rd argument is an object which has a key:value pair → the key is `get`, the value is a `function`. In this function we return the `defaultLocation`.*
   ```
   function Circle(radius){
     this.radius = radius;  
