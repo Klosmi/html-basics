@@ -9510,7 +9510,7 @@ A `get`ter is a function to read a property.
   ```
 
 ### [Setter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set)   
-The set syntax binds an object property to a function to be called when there is an attempt to set that property.   
+The set syntax __binds an object property to a function to be called when there is an attempt to set that property.__   
 
 
 We want to change the value of the `defaultLocation` function from the outside.   
