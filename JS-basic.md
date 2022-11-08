@@ -9536,7 +9536,7 @@ We want to change the value of the `defaultLocation` function from the outside.
       },
       set : function(value) {
        // put here some validation 
-        if (!value.x || !value.y)   //← ifvalue.x is falsy or value.y is falsy
+        if (!value.x || !value.y)   //← if value.x is falsy or value.y is falsy
           throw new Error('Invalid location');;         //← Error is a built in constructor
         defaultLocation = value;
       } 
