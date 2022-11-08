@@ -9466,7 +9466,7 @@ they are object properties, precisely *accessor properties*.
 They are essentially functions that execute on *getting* and *setting* a value, but look like regular properties to an external code.
 
 ### [Getter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get)   
-The get syntax binds an object property to a function that will be called when that property is looked up.   
+The get syntax __binds an object property to a function that will be called when that property is looked up.__        
 
 A `get`ter is a function to read a property.
 
