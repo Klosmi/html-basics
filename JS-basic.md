@@ -9426,7 +9426,7 @@ It is useful, because by hiding complexity, eg.: we do not expose our methods, i
     }
   }  
   ```
-  [Closure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures): closure is a function that references variables in the outer scope from its inner scope.   
+  [Closure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures): __closure is a function that references variables in the outer scope from its inner scope.__     
   *We have the `draw` function inside of the `Circle` function. `optimumLocation` is defined in the `Circle` so it is accessible in the `draw` function.*   
   ```
   function Circle(radius){
