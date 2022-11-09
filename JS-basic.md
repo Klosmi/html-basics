@@ -9141,30 +9141,101 @@ Then we __return__ the `color` object.
 
 <br>
 
-## __[Creating Object with Contructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/Object)__
+## __[Constructor Function](https://www.programiz.com/javascript/constructor-function)__.  
 
-- in a constructor function we use Uppercase for names
+  - function name starts with capital letter `function Color()` → just indicating that it is a constructor function (function ot create objects)
+  - inside the function no return value
+  - referencing directly in the function when using `this`
 
+  The [__`new`__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new) operator❗️:       
+  to create an instance of a user-defined object type or of one of the built-in object types that has a constructor function.
+  
+  
 - eg.:   
-*The `this` keyword sets the properties of the Circle object*   
-*`this` is the object that executing the code.*   
-*`this` + `.` dot notation to set various properties on that object.*
     ```
-      function Circle(radius){
-        this.radius = radius;     // set the radius property = to the radius argument
-        this.draw = function() {
-          console.log("Drawing a circle");
-        }
-      }
+    function Color(r, g, b) {
+      this.r = r;
+      this.g = g;
+      this.b = b;
+    }
+    
+    Color(255, 0, 0)
+    // undefined
     ```
- *To create the circle, we use the `new` operator to call the `Circle` function, and pass the argument (`1`).*    
+    __But, when we call the `Color` function, but we call it with `new` before the function call it behaves differently.__
     ```
-    const myCircle = new Circle(1);
-    ```
+    function Color(r, g, b) {
+      this.r = r;
+      this.g = g;
+      this.b = b;
+    }
 
-1. the `new` operator creates an empty object (like `{}`).   
-2. Then it sets the `this` to point to that empty object. (By default `this` points to the global object. In the browser it is the `window` object.)  So, we use the `new` operator thus we don't call the global object.
-3. Finally `this` returns the object from the function (here: from the `Circle(radius)` function).
+    // it sets the constructor of `this` object to another object
+    // it creates a new object, set `this`
+    // so we give R B G to that new object
+    // return `this` at the end
+    new Color(255, 0, 0)
+
+    // we get an object, it has properties:​ b: 0 g: 0 r: 255
+    //► { r: 255, g: 0, b: 0 }
+    //  ►<prototype>: 
+    //     ►constructor: function Color(r, g, b)
+    ```
+    *If we don't use the `new` keyword, `this` referes to the window object.*    
+    
+    When a function is called with the `new` keyword, the function will be used as a constructor.    
+    `new` do the following things:
+
+1. Creates a blank, plain JavaScript object. For convenience, let's call it `newInstance`.    
+
+2. Points `newInstance`'s `[[Prototype]]` to the constructor function's `prototype` property, if the `prototype` is an Object. Otherwise, `newInstance` stays as a plain object with `Object.prototype` as its `[[Prototype]]`.    
+
+3. Executes the constructor function with the given arguments, binding `newInstance` as the `this` context (i.e. all references to `this` in the constructor function now refer to `newInstance`).
+4. If the constructor function returns a *non-primitive*, this return value becomes the result of the whole `new` expression. Otherwise, if the constructor function doesn't return anything or returns a *primitive*, `newInstance` is returned instead.    (Normally constructors don't return a value, but they can choose to do so to override the normal object creation process.)
+
+
+
+*So if we call `new Color(255, 0, 0)` and save that to a variable `const color1`, we have an object that has RGB, but not only that. It does not have that method RGB defined on the actual object, it's defined on the `prototype`.*
+```
+function Color(r, g, b) {
+      this.r = r;
+      this.g = g;
+      this.b = b;
+  }
+
+const color1 = new Color(255, 0, 0)
+
+color1
+//►Object { r: 255, g: 0, b: 0 }
+//  ​b: 0
+//  ​g: 0
+//  ​r: 255
+​//  ►<prototype>: Object { … }
+​​//      constructor: function Color(r, g, b)   //← the RGB method is defined on the prototype
+```
+*We can __add methods to the__ `Color` __prototype__: we define that method not on the prototype, but __outside of the constructor function__ (outsode of the `function Color(r,g,b){...}`).*   
+*So so that the methods are only defined one time (rather than on each individial color, as in the factory function ).*
+
+*We can have several color obejcts*
+```
+function Color(r, g, b) {
+      this.r = r;
+      this.g = g;
+      this.b = b;
+  }
+
+//we define the method outsode of the the constructor function❗️
+Color.prototype.rgb = function() {
+  const {r, g, b} = this;
+  return `rgb(${r}, ${g}, ${b})`;
+};
+
+const color1 = new Color(255, 0, 0);
+const color2 = new Color(10, 10, 10);
+const color3 = new Color(0, 0, 0);
+
+In short, __constructor__ method is more efficient tan the __factory__ approach where we returned a new object every time it was called.
+
 ---
 
 [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
