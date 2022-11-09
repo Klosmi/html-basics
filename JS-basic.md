@@ -9143,12 +9143,14 @@ Then we __return__ the `color` object.
 
 ## __[Constructor Function](https://www.programiz.com/javascript/constructor-function)__
 
+The [__`new`__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new) operator❗️:       
+  to create an instance of a user-defined object type or of one of the built-in object types that has a constructor function.   
+  
   - function name starts with capital letter `function Color()` → just indicating that it is a constructor function (function to create objects)
   - inside the function no return value
   - referencing directly in the function when using `this`
 
-  The [__`new`__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new) operator❗️:       
-  to create an instance of a user-defined object type or of one of the built-in object types that has a constructor function.
+  
   
   
 - eg.:   
