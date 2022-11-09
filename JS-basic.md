@@ -9054,7 +9054,7 @@ eg.:
   ```
 
 *We add a method in our factory function*   
-*Te factory name comes from this: we pass in some values, the factory makes an object and return it at the and, so we can use it.*
+*__The factory name comes from__ this: we pass in some values, the factory makes an object and return it at the and, so we can use it.*
 
   ```
   // factory function
