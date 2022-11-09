@@ -8829,7 +8829,7 @@ __What is an object__:
 [inheritance](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#3-inheritance)   
 [polymorphism](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#4-polymorphism)   
 [Creating Objects](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#creating-objects)   
-[Factory Functions]https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#factory-functions)    
+[Factory Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#factory-functions)    
 [Creating Object with Contructor](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#creating-object-with-contructor)    
 [Constructor Property](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#constructor-property)   
 [Functions are Objects](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#functions--objects-1)   
