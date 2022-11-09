@@ -9141,9 +9141,9 @@ Then we __return__ the `color` object.
 
 <br>
 
-## __[Constructor Function](https://www.programiz.com/javascript/constructor-function)__.  
+## __[Constructor Function](https://www.programiz.com/javascript/constructor-function)__
 
-  - function name starts with capital letter `function Color()` → just indicating that it is a constructor function (function ot create objects)
+  - function name starts with capital letter `function Color()` → just indicating that it is a constructor function (function to create objects)
   - inside the function no return value
   - referencing directly in the function when using `this`
 
@@ -9162,7 +9162,7 @@ Then we __return__ the `color` object.
     Color(255, 0, 0)
     // undefined
     ```
-    __But, when we call the `Color` function, but we call it with `new` before the function call it behaves differently.__
+    __But, when we call the `Color` function with `new` before the function call, it behaves differently.__
     ```
     function Color(r, g, b) {
       this.r = r;
