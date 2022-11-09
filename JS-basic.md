@@ -9131,30 +9131,28 @@ Then we __return__ the `color` object.
 
 ## __[Creating Object with Contructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/Object)__
 
-
 - in a constructor function we use Uppercase for names
 
 - eg.:   
-  *The `this` keyword sets the properties of the Circle object*   
-  *`this` is the object that executing the code.*   
-  *`this` + `.` dot notation to set various properties on that object.*
-  ```
-  function Circle(radius){
-    this.radius = radius;     // set the radius property = to the radius argument
-    this.draw = function() {
-      console.log("Drawing a circle");
-    }
-  }
-  ```
-  *To create the circle, we use the `new` operator to call the `Circle` function, and pass the argument (`1`).*    
-  ```
-  const myCircle = new Circle(1);
-  ```
+*The `this` keyword sets the properties of the Circle object*   
+*`this` is the object that executing the code.*   
+*`this` + `.` dot notation to set various properties on that object.*
+    ```
+      function Circle(radius){
+        this.radius = radius;     // set the radius property = to the radius argument
+        this.draw = function() {
+          console.log("Drawing a circle");
+        }
+      }
+    ```
+ *To create the circle, we use the `new` operator to call the `Circle` function, and pass the argument (`1`).*    
+    ```
+    const myCircle = new Circle(1);
+    ```
 
 1. the `new` operator creates an empty object (like `{}`).   
 2. Then it sets the `this` to point to that empty object. (By default `this` points to the global object. In the browser it is the `window` object.)  So, we use the `new` operator thus we don't call the global object.
 3. Finally `this` returns the object from the function (here: from the `Circle(radius)` function).
-
 ---
 
 [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
