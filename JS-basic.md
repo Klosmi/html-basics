@@ -9084,7 +9084,7 @@ eg.:
 💡 Check out [Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment):   
  this expression makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 
-*Let give the `hex` function to our factory function*   
+*Lets give the `hex` function to our factory function*   
 
   ```
   // factory function
