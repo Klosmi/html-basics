@@ -9004,118 +9004,122 @@ circle.draw;
 //    console.log("Drawing a circle");
 //  }
 
-Other, more in-depth example:
-eg.:    
+Other, more in-depth example:   
+eg.:       
 *This code converts RGB color to HEX colors*
-```
-function hex(r, g, b) {
-  return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
-}
+    ```
+    function hex(r, g, b) {
+      return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+    }
 
-// takes rgb values in the r, g, and b
-hex(255, 100, 25);
+    // takes rgb values in the r, g, and b
+    hex(255, 100, 25);
 
-//gives back:
-// "#ff6419" 
+    //gives back:
+    // "#ff6419" 
 
-//another function for rgb
-function rgb(r, g, b){
-  return `rgb(${r}, ${g}, ${b})`
-}
+    //another function for rgb
+    function rgb(r, g, b){
+      return `rgb(${r}, ${g}, ${b})`
+    }
 
-rgb(255,100,25)
+    rgb(255,100,25)
 
-//gives:
-//"rgb(255, 100, 25)" 
-```
+    //gives:
+    //"rgb(255, 100, 25)" 
+    ```
 *Instead of having 2 functions and each time we have to type the R, G, B numbers, we can createa a __factory function__. We can pass in R, G and B.*
-```
-// factory function
-function makeColor(r, g, b){
-  // color is an empty object, so we can add stuff to it
-  const color = {};
 
-  // the values of the makeColor(r, g, b) we can pass in
-  color.r = r;
-  color.g = g;
-  color.b = b;
+    ```
+    // factory function
+    function makeColor(r, g, b){
+      // color is an empty object, so we can add stuff to it
+      const color = {};
 
-  return color 
-}
+      // the values of the makeColor(r, g, b) we can pass in
+      color.r = r;
+      color.g = g;
+      color.b = b;
 
-makeColor(40, 50, 60);
+      return color 
+    }
 
-//▶︎ Object { r: 40, g: 50, b: 60 }
-```
+    makeColor(40, 50, 60);
+
+    //▶︎ Object { r: 40, g: 50, b: 60 }
+    ```
 *We add a method in our factory function*   
 *Te factory name comes from this: we pass in some values, the factory makes an object and return it at the and, so we can use it.*
-```
-// factory function
-function makeColor(r, g, b){
-  const color = {};
-  color.r = r;
-  color.g = g;
-  color.b = b;
 
-  // adding a method
-  color.rgb = function() { 
-    // instead of hard-coding, we add the `this ` keyword
-    //`this` refers to the object `const color = {};`
-    return `rgb(${this.r}, ${this.g}, ${this.b})`;
-    // or simply just destructure `const {r, g, b} = this;`
-  }
+    ```
+    // factory function
+    function makeColor(r, g, b){
+      const color = {};
+      color.r = r;
+      color.g = g;
+      color.b = b;
 
-  return color 
-}
+      // adding a method
+      color.rgb = function() { 
+        // instead of hard-coding, we add the `this ` keyword
+        //`this` refers to the object `const color = {};`
+        return `rgb(${this.r}, ${this.g}, ${this.b})`;
+        // or simply just destructure `const {r, g, b} = this;`
+      }
 
-const firstColor = makeColor(100,200,250);
-firstColor.rgb();
+      return color 
+    }
 
-//"rgb(100, 200, 250)" 
-```
+    const firstColor = makeColor(100,200,250);
+    firstColor.rgb();
+
+    //"rgb(100, 200, 250)" 
+    ```
 💡 Check out [Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment):   
  this expression makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 
 *Let give the `hex` function to our factory function*   
-```
-// factory function
-function makeColor(r, g, b){
-  const color = {};
-  color.r = r;
-  color.g = g;
-  color.b = b;
 
-  // rgb
-  color.rgb = function() { 
-    // using the destructuring assignment
-    const {r, g, b} = this;
-    return `rgb(${r}, ${g}, ${b})`;
-  };
+    ```
+    // factory function
+    function makeColor(r, g, b){
+      const color = {};
+      color.r = r;
+      color.g = g;
+      color.b = b;
 
-  //hex
-  color.hex = function() {
-    const {r, g, b} = this;
-    return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
-  }
+      // rgb
+      color.rgb = function() { 
+        // using the destructuring assignment
+        const {r, g, b} = this;
+        return `rgb(${r}, ${g}, ${b})`;
+      };
 
-  return color 
-}
+      //hex
+      color.hex = function() {
+        const {r, g, b} = this;
+        return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+      }
 
-const firstColor = makeColor(100,200,250);
-firstColor.hex();
+      return color 
+    }
 
-// "#64c8fa" 
-```
+    const firstColor = makeColor(100,200,250);
+    firstColor.hex();
+
+    // "#64c8fa" 
+    ```
 *It is also possible to chage the value, like the R's value*
-```
-const firstColor = makeColor(100,200,250);
-firstColor.r = 10
+  
+  ```
+  const firstColor = makeColor(100,200,250);
+  firstColor.r = 10
 
-// let's check the firstColor.rgb();
-firstColor.rgb();
+  // let's check the firstColor.rgb();
+  firstColor.rgb();
 
-//"rgb(10, 200, 250)"
-```
+  //"rgb(10, 200, 250)"
+  ```
 So the __factory function__ is a way of making objects based off of a pattern or a recipe.   
  
 So the fatory function makes us __an object__ `const color = {}`.     
