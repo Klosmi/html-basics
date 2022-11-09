@@ -9235,8 +9235,10 @@ Color.prototype.rgb = function() {
 const color1 = new Color(255, 0, 0);
 const color2 = new Color(10, 10, 10);
 const color3 = new Color(0, 0, 0);
+```
 
 In short, __constructor__ method is more efficient tan the __factory__ approach where we returned a new object every time it was called.
+
 
 ---
 
