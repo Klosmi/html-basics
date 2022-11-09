@@ -8982,7 +8982,7 @@ In object-oriented programming (OOP), a factory is an object for creating other 
     radius : 1,
   };
 ```
-*We use factory or cunstructor function to create the circle object.*   
+*We use factory function to create the circle object.*   
 *We add the `draw()` method.*
   ```
   //Factory Function
