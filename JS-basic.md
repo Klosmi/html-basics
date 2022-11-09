@@ -2575,7 +2575,7 @@ they are returning a function as a value from within a function.
 
 <br>
 
-- A __[factory function](https://www.codecademy.com/courses/introduction-to-javascript/lessons/advanced-objects/exercises/factory-functions)__: is a function that __returns an object and can be reused to make multiple object instances__.   
+- A __[factory function](https://www.codecademy.com/courses/introduction-to-javascript/lessons/advanced-objects/exercises/factory-functions)__: is a function that __returns an object and can be reused to make multiple object instances__ 
 Factory functions can also have parameters allowing us to customize the object that gets returned.
 
 - eg.:   
