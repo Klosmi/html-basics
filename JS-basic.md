@@ -9226,7 +9226,7 @@ function Color(r, g, b) {
       this.b = b;
   }
 
-//we define the method outsode of the the constructor function❗️
+//we define the method outside of the the constructor function❗️
 Color.prototype.rgb = function() {
   const {r, g, b} = this;
   return `rgb(${r}, ${g}, ${b})`;
