@@ -9179,7 +9179,7 @@ The [__`new`__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Referenc
     new Color(255, 0, 0)
 
     // we get an object:​ b: 0 g: 0 r: 255
-    //► { r: 255, g: 0, b: 0 } →  that object has properties because we assigned them using the `this` (this.r = r, etc.).
+    //► { r: 255, g: 0, b: 0 } → that object has properties because we assigned them using the `this` (this.r = r, etc.)
     //  ►<prototype>:  → the `new` created a constructor in the __proto__ (as below Step 2. describes)
     //     ►constructor: function Color(r, g, b)
     ```
@@ -9190,13 +9190,13 @@ The [__`new`__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Referenc
     The `new` do the following things:
 
 1. Creates a blank, plain JavaScript object.;    
-2. Links (sets the constructor of) this object to another object;     
+2. Links (sets the constructor of) this object to another object → this allows us to add methods no to the individual objects, instances, but to the __prototype__;     
 3. Passes the newly created object from *Step 1* as the `this` context;    
 4. Returns `this` if the function doesn't return its own object.;
 
 
 
-*So if we call `new Color(255, 0, 0)` and save that to a variable `const color1`, we have an object that has RGB, but not only that. It does not have that method RGB defined on the actual object, it's defined on the `prototype`.*
+*So if we call `new Color(255, 0, 0)` and save that to a variable `const color1`, we have an object that has RGB, but not only that. It does not have that method RGB defined on the actual object (or instance), it's defined on the __`prototype`__. (See Step 2. above)*
 ```
 function Color(r, g, b) {
       this.r = r;
@@ -9235,6 +9235,7 @@ const color1 = new Color(255, 0, 0);
 const color2 = new Color(10, 10, 10);
 const color3 = new Color(0, 0, 0);
 ```
+*So, we define the __method__ outside of the constructor function, so the method will be defined on the __protoype__.*.   
 
 In short, __constructor__ method is more efficient than the __factory__ approach where we return a new object every time it is called.
 
