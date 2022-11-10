@@ -9900,7 +9900,7 @@ So class is a template for an object in the code. It makes it easier, quicker an
   - *Using upercase letter for the name*
   - *__Always__ add in a __`constructor`__. It is like a `constructor` function (we can add arguments to it).*    
     *In this example, the `contructor` executes immediately when a new color is created. Arguments here are the constructor's `(r, g, b)`*
-  - *Usualy in the `constructor` we use the `.this`. So `this` refer to a `new Object`.*
+  - *Usualy in the `constructor` we use the `.this`. So `this` refers to a `new Object`.*
   ```
   class Color {
     constructor(r, g, b, name){
@@ -9917,7 +9917,7 @@ So class is a template for an object in the code. It makes it easier, quicker an
 
   // "Constructor runs first"  // ← constructor(r, g, b)
   ```
-  *Lest run the `color1`*
+  *Lets run the `color1`*
   *We can see it is an object.   
   *The properties we added in the `constructor` are storing the value on the object.*
   ```
