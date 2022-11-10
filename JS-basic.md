@@ -9190,13 +9190,13 @@ The [__`new`__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Referenc
     The `new` do the following things:
 
 1. Creates a blank, plain JavaScript object.;    
-2. Links (sets the constructor of) this object to another object → this allows us to add methods no to the individual objects, instances, but to the __prototype__;     
+2. Links (sets the constructor of) this object to another object → this allows us to add methods no to the individual objects, instances, but to the __[prototype](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#object-prototype---introduction-to-oop)__;     
 3. Passes the newly created object from *Step 1* as the `this` context;    
 4. Returns `this` if the function doesn't return its own object.;
 
 
 
-*So if we call `new Color(255, 0, 0)` and save that to a variable `const color1`, we have an object that has RGB, but not only that. It does not have that method RGB defined on the actual object (or instance), it's defined on the __`prototype`__. (See Step 2. above)*
+*So if we call `new Color(255, 0, 0)` and save that to a variable `const color1`, we have an object that has RGB, but not only that. It does not have that method RGB defined on the actual object (or instance), it's defined on the __[`prototype`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#object-prototype---introduction-to-oop)__. (See Step 2. above)*
 ```
 function Color(r, g, b) {
       this.r = r;
@@ -9214,7 +9214,7 @@ color1
 ​//  ►<prototype>: Object { … }
 ​​//      constructor: function Color(r, g, b)   //← the RGB method is defined on the prototype
 ```
-*We can __add different methods to the__ `Color` __prototype__: we define that method __outside of the constructor function__ (outside of the `function Color(r,g,b){...}`).*      
+*We can __add different methods to the__ `Color` __[prototype](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#object-prototype---introduction-to-oop)__: we define that method __outside of the constructor function__ (outside of the `function Color(r,g,b){...}`).*      
 *So so that the methods are only defined once (rather than on each individial color as in the factory function ).*
 
 *Also, we can have several color obejcts*
@@ -9235,7 +9235,7 @@ const color1 = new Color(255, 0, 0);
 const color2 = new Color(10, 10, 10);
 const color3 = new Color(0, 0, 0);
 ```
-*So, we define the __method__ outside of the constructor function, so the method will be defined on the __protoype__.*.   
+*So, we define the __method__ outside of the constructor function, so the method will be defined on the __[protoype](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#object-prototype---introduction-to-oop)__.*.   
 
 In short, __constructor__ method is more efficient than the __factory__ approach where we return a new object every time it is called.
 
