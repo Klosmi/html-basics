@@ -9898,9 +9898,9 @@ So class is a template for an object in the code. It makes it easier, quicker an
 
 - *Defining a Class, using the __[`class`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#class_declarations)__ keyword*.    
   - *Using upercase letter for the name*
-  - *__Always__ add in a __`constructor`__. It is like a `constructor` function (we can edd arguments to it).*    
+  - *__Always__ add in a __`constructor`__. It is like a `constructor` function (we can add arguments to it).*    
     *In this example, the `contructor` executes immediately when a new color is created. Arguments here are the constructor's `(r, g, b)`*
-  - *Usualy in the onstructor we use the `.this`. So `this` refer to a `new Object`.*
+  - *Usualy in the `constructor` we use the `.this`. So `this` refer to a `new Object`.*
   ```
   class Color {
     constructor(r, g, b, name){
@@ -9908,7 +9908,7 @@ So class is a template for an object in the code. It makes it easier, quicker an
       this.r = r;               // these are properties on
       this.g = g;               // on the `new Color()` object
       this.b = b;
-      this.name = name;         // this.r this.name, etc. can be called anything else 
+      this.name = name;         // r, g, b, name can be called anything else. Usually we give the same name.
     }
   }
   
