@@ -9235,7 +9235,34 @@ const color1 = new Color(255, 0, 0);
 const color2 = new Color(10, 10, 10);
 const color3 = new Color(0, 0, 0);
 ```
-*So, we define the __method__ outside of the constructor function, so the method will be defined on the __[protoype](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#object-prototype---introduction-to-oop)__.*.   
+*So, we define the __method__ outside of the constructor function, so the method will be defined on the __[protoype](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#object-prototype---introduction-to-oop)__.*.     
+
+*Lets define another method, an `rgba`, where `a` is the opacity.*    
+*We set `a` as a default of 1.0 in the function parameter.*
+```
+function Color(r, g, b) {
+      this.r = r;
+      this.g = g;
+      this.b = b;
+  }
+
+Color.prototype.rgb = function() {
+  const {r, g, b} = this;
+  return `rgb(${r}, ${g}, ${b})`;
+};
+
+Color.prototype.rgba = function(a = 1.0) {
+  const {r, g, b} = this;
+  return `rgb(${r}, ${g}, ${b}, ${a})`;
+};
+
+const color1 = new Color(255, 0, 0);
+color1.rgb();
+// rgb(255, 0, 0)"
+
+color1.rgba();
+// rgba(255, 0, 0, 1)
+```
 
 In short, __constructor__ method is more efficient than the __factory__ approach where we return a new object every time it is called.
 
