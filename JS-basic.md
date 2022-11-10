@@ -9214,7 +9214,7 @@ color1
 ​//  ►<prototype>: Object { … }
 ​​//      constructor: function Color(r, g, b)   //← the RGB method is defined on the prototype
 ```
-*We can __add deifferent methods to the__ `Color` __prototype__: we define that method __outside of the constructor function__ (outside of the `function Color(r,g,b){...}`).*      
+*We can __add different methods to the__ `Color` __prototype__: we define that method __outside of the constructor function__ (outside of the `function Color(r,g,b){...}`).*      
 *So so that the methods are only defined once (rather than on each individial color as in the factory function ).*
 
 *Also, we can have several color obejcts*
