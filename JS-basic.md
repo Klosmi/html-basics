@@ -9185,7 +9185,7 @@ The [__`new`__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Referenc
     ```
     *If we don't use the `new` keyword, `this` referes to the window object (check it by writing `console.log(this)` in the `function Color(r,g,b){...}`).*    
     
-    When a function is called with the `new` keyword, the function will be used as a constructor.   
+    When we call a function with `new` before the function call, that function will be used as a constructor.    
     
     The `new` do the following things:
 
