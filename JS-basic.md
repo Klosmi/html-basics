@@ -9189,12 +9189,10 @@ The [__`new`__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Referenc
     
     The `new` do the following things:
 
-1. Creates a blank, plain JavaScript object. For convenience, let's call it `myinstance`.    
-
-2. Points `myinstance`'s `[[Prototype]]` to the constructor function's `prototype` property, if the `prototype` is an Object. Otherwise, `myinstance` stays as a plain object with `Object.prototype` as its `[[Prototype]]`.    
-
-3. Executes the constructor function with the given arguments, binding `myinstance` as the `this` context (i.e. all references to `this` in the constructor function now refer to `myinstance`).
-4. If the constructor function returns a *non-primitive*, this return value becomes the result of the whole `new` expression. Otherwise, if the constructor function doesn't return anything or returns a *primitive*, `myinstance` is returned instead.    (Normally constructors don't return a value, but they can choose to do so to override the normal object creation process.)
+1. Creates a blank, plain JavaScript object.;    
+2. Links (sets the constructor of) this object to another object;     
+3. Passes the newly created object fro; *Step 1* as the `this` context;    
+4. Returns `this` if the function doesn't return its own object.;
 
 
 
