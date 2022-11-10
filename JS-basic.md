@@ -9917,8 +9917,8 @@ So class is a template for an object in the code. It makes it easier, quicker an
 
   // "Constructor runs first"  // ← constructor(r, g, b)
   ```
-  *Lets run the `color1`*
-  *We can see it is an object.   
+  *Lets run the `color1`*    
+  *We can see it is an object.*   
   *The properties we added in the `constructor` are storing the value on the object.*
   ```
   color1;
