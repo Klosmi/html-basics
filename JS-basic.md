@@ -9238,7 +9238,9 @@ const color3 = new Color(0, 0, 0);
 *So, we define the __method__ outside of the constructor function, so the method will be defined on the __[protoype](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#object-prototype---introduction-to-oop)__.*.     
 
 *Lets define another method, an `rgba`, where `a` is the opacity.*    
-*We set `a` as a default of 1.0 in the function parameter.*
+*We set `a` as a default of 1.0 in the function parameter.*    
+*Note that `a` is the argument passed to the class method because we are not defined it on the `constructor`.*      
+*In case if we want to use the `a` value anywhere else then we can consider that as `a` class variable and set it the `constructor`.*
 ```
 function Color(r, g, b) {
       this.r = r;
