@@ -8678,7 +8678,7 @@ __Prototypes__ are the mechanism by which JavaScript objects inherit features fr
 
    - Prototypes are template objects (a bunch of methods).
 
-   - We can create multiple objects that share the same prototype (so they all have acces to the same methods).
+   - __We can create multiple objects that share the same prototype (so they all have acces to the same methods).__ This is the key conept of it, that brings us to OOP.    
 
    - Objects can have a prototype object which acts as a template object. So it means is that certain objects eg.:  an array, have a a lot of methods.
 
