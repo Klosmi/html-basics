@@ -9178,9 +9178,9 @@ The [__`new`__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Referenc
     // return `this` at the end
     new Color(255, 0, 0)
 
-    // we get an object...:​ b: 0 g: 0 r: 255
-    //► { r: 255, g: 0, b: 0 } →  ...and that object has properties because we assigned them using the `this` (this.r = r, etc.).
-    //  ►<prototype>: 
+    // we get an object:​ b: 0 g: 0 r: 255
+    //► { r: 255, g: 0, b: 0 } →  that object has properties because we assigned them using the `this` (this.r = r, etc.).
+    //  ►<prototype>:  → the `new` created a constructor in the __proto__ (as below Step 2. describes)
     //     ►constructor: function Color(r, g, b)
     ```
     *If we don't use the `new` keyword, `this` referes to the window object (check it by writing `console.log(this)` in the `function Color(r,g,b){...}`).*    
