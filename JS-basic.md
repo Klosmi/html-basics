@@ -9237,7 +9237,7 @@ const color2 = new Color(10, 10, 10);
 const color3 = new Color(0, 0, 0);
 ```
 
-In short, __constructor__ method is more efficient tan the __factory__ approach where we returned a new object every time it was called.
+In short, __constructor__ method is more efficient than the __factory__ approach where we return a new object every time it is called.
 
 
 ---
