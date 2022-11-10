@@ -9931,8 +9931,8 @@ So class is a template for an object in the code. It makes it easier, quicker an
   ​//  ► <prototype>: Object { … }
   //      constructor: class Color { constructor(r, g, b, name) }
   ```
-  *Lets add methods! The real advantage of making classes.* 
-  *the method we add (`mymethod()`) is now on every color, but not on the instances. (So it's only on the `prototype`, not on the color1.)*   
+  *Lets add methods! The real advantage of making classes.*.    
+  *The method we add (`mymethod()`) is now on every color, but not on the instances. (So it's only on the `prototype`, not on, here the `color1`.)*   
   ```
   class Color {
     constructor(r, g, b, name){
