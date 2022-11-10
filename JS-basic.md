@@ -9890,49 +9890,109 @@ We want to change the value of the `defaultLocation` function from the outside.
 <br>
 
 ## __[Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)__    
-Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but also have some syntax and semantics that are not shared with ES5 class-like semantics.
+Classes are a template for creating objects.
 
 We use class when we need many objects of the same type.
 
-So class is a template for an object in the code. It makes it easier, quicker and more reliable to build several objects of the same type (called *instances of the same class*).
+So class is a template for an object in the code. It makes it easier, quicker and more reliable to build several objects of the same type (called *instances of the same class*).   
 
-- eg.:   
-  *Defining a Class*. 
+- *Defining a Class, using the __[`class`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#class_declarations)__ keyword*.    
+  - *Using upercase letter for the name*
+  - *__Always__ add in a __`constructor`__. It is like a `constructor` function (we can edd arguments to it).*    
+    *In this example, the `contructor` executes immediately when a new color is created. Arguments here are the constructor's `(r, g, b)`*
+  - *Usualy in the onstructor we use the `.this`. So `this` refer to a `new Object`.*
   ```
-  class Book {
-  }
-  ```
-  *For this class, we want each Book to have a title, an author and a number of pages. To do this, we use what is called a constructor.*
-  ```
-  class Book {
-    constructor(title, author, pages) {
+  class Color {
+    constructor(r, g, b, name){
+      console.log("Constructor runs first")
+      this.r = r;               // these are properties on
+      this.g = g;               // on the `new Color()` object
+      this.b = b;
+      this.name = name;         // this.r this.name, etc. can be called anything else 
     }
   }
-  ```
-  💡 *The constructor of a class is the function that is called when a new instance of that class is created with the keyword `new`.*    
-  *We use the `this` keyword and the dot notation to assign the title, author and number of pages received to this instance.*
-  ```
-  class Book {
-    constructor(title, author, pages) {
-        this.title = title;
-        this.author = author;
-        this.pages = pages;
-     }
-  }
-  ```
-  *Here, the keyword `this` refers to the new instance. So it uses the dot notation to assign the received values to the corresponding keys.*
-  *Now that the class is complete, we can create instances with the keyword `new`.*
-  ```  
-  let myBook = new Book("The Lord of the Rings", "J. R. R. Tolkien", 1250);    
-   //creating the following object ↓
-  {
-      title: "The Lord of the Rings",
-      author: "J. R. R. Tolkien",
-      pages: 1250
-  }
-  ```
-  *With a Book class, we can easily and quickly create new Book objects.*
   
+  // new Color() object we get returned
+  const color1 = new Color(255, 0, 0, 'red-color');
+
+  // "Constructor runs first"  // ← constructor(r, g, b)
+  ```
+  *Lest run the `color1`*
+  *We can see it is an object.   
+  *The properties we added in the `constructor` are storing the value on the object.*
+  ```
+  color1;
+
+  //► Object { r: 255, g: 0, b: 0, name: "red-color" }
+  //    b: 0
+  //    g: 0
+  //    name: "red-color"
+  //    r: 255
+  ​//  ► <prototype>: Object { … }
+  //      constructor: class Color { constructor(r, g, b, name) }
+  ```
+  *Lets add methods! The real advantage of making classes.* 
+  *the method we add (`mymethod()`) is now on every color, but not on the instances. (So it's only on the `prototype`, not on the color1.)*   
+  ```
+  class Color {
+    constructor(r, g, b, name){
+      this.r = r;               
+      this.g = g;               
+      this.b = b;
+      this.name = name;  
+    }
+
+    mymethod(){
+      return `Hello color ${this.name}!`;
+    }
+  }
+
+  const color1 = new Color(255, 0, 0, 'red-color');
+  color1;
+  //▶︎ Object { r: 255, g: 0, b: 0, name: "red-color" }
+  //    b: 0
+  //    g: 0
+  //    name: "red-color"
+  //    r: 255
+  //    ▶︎<prototype>: Object { … }
+  //      constructor: class Color { constructor(r, g, b, name) }
+  //      mymethod: function mymethod()
+  ```
+  *Lets execute `color1.mymethod();`*
+  ```
+  color1.mymethod();
+
+  // "Hello color red-color!"
+  ```
+  *Lets make another color*
+  ```
+  const color1 = new Color(255, 0, 0, 'red-color');
+  const color2 = new Color(50, 50, 50, 'grey-color');
+
+  color2.mymethod();
+  // "Hello color grey-color!"
+  ```
+  *Lets create another method, which gives back the RGB colors*
+  ```
+  class Color {
+    constructor(r, g, b, name){
+      this.r = r;               
+      this.g = g;               
+      this.b = b;
+      this.name = name;  
+    }
+
+    rgb(){
+      return `rgb(${this.r}, ${this.g}, ${this.b})`;
+    }
+  }
+
+  const color1 = new Color(255, 0, 0, 'red-color');
+  color1.rgb();
+
+  // "rgb(255, 0, 0)" 
+  ```
+
 ---
 
 [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
