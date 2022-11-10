@@ -9183,7 +9183,7 @@ The [__`new`__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Referenc
     //  ►<prototype>: 
     //     ►constructor: function Color(r, g, b)
     ```
-    *If we don't use the `new` keyword, `this` referes to the window object (check it by writing `console.log(this)` int the `Color` function).*    
+    *If we don't use the `new` keyword, `this` referes to the window object (check it by writing `console.log(this)` in the `function Color(r,g,b){...}`).*    
     
     When a function is called with the `new` keyword, the function will be used as a constructor.   
     
