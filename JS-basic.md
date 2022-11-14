@@ -9938,7 +9938,7 @@ An object may be different in several ways, and __each realized variation of tha
       this.r = r;               // these are properties on
       this.g = g;               // on the `new Color()` object
       this.b = b;
-      this.name = name;         // r, g, b, name can be called anything else. Usually we give the same name.
+      this.name = name;         // this.r, this.name can be called anything else. Usually we give the same name.
     }
   }
   
