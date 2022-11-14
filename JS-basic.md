@@ -9923,7 +9923,8 @@ Classes are a template for creating objects.
 
 We use class when we need many objects of the same type.
 
-So class is a template for an object in the code. It makes it easier, quicker and more reliable to build several objects of the same type (called *instances of the same class*).   
+So class is a template for an object in the code. It makes it easier, quicker and more reliable to build several objects of the same type (called *instances of the same class*).     
+An object may be different in several ways, and __each realized variation of that object is an instance.__ The __creation of a realized instance is called instantiation.__        
 
 - *Defining a Class, using the __[`class`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#class_declarations)__ keyword*.    
   - *Using upercase letter for the name*
@@ -9961,7 +9962,8 @@ So class is a template for an object in the code. It makes it easier, quicker an
   //      constructor: class Color { constructor(r, g, b, name) }
   ```
   *Lets add methods! The real advantage of making classes.*.    
-  *The method we add (`mymethod()`) is now on every color, but not on the instances. (So it's only on the `prototype`, not on, here the `color1`.)*   
+  *The method we add (`mymethod()`) is now on every color, but not on the instances. (So it's only on the `prototype`, not on, here the `color1`.)*    
+  *In other words, __there is only one copy of the__ `mymethod` __method across all instances__ of `color1`, or if we have several instances, like `color2`, etc.
   ```
   class Color {
     constructor(r, g, b, name){
