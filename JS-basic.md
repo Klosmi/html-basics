@@ -9128,7 +9128,7 @@ eg.:
   //"rgb(10, 200, 250)"
   ```
 
-So the __factory function__ is a way of making objects based off of a pattern or a recipe.   
+So the __factory function__ is a way of making objects based on a pattern or a recipe.   
  
 So the fatory function makes us __an object__ `const color = {}`.     
 `const color = {}` object starts empty, but the we add some __properties__ `color.r = r; color.g = g; color.b = b;`.    
