@@ -10051,8 +10051,11 @@ An object may be different in several ways, and __each realized variation of tha
   // ""rgb(255, 0, 0, 0.5)" 
   ```
   
-*Call a method within a method:since `rgb`and `rgba` methods are almost the same w can refactor it, so we can create an inner function which we can call in these methods.*
-*(We use also destructor for the sake of simplicity)*    
+*__Call a method within a method__:   
+ since `rgb`and `rgba` methods are almost the same w can refactor it, so we can create an inner function which we can call in these methods.*    
+ 
+*(We use also destructor for the sake of simplicity)*   
+
 *Note: the `this` keyword points to that individual object (eg. color1) that was created, and any properties and methods inside it.    
 Since the `innerRGB` is a method from that object, when we use `this.innerRGB`, __even inside other methods, the `this` still points to the object itself__, then looks for any methods with that name, finding a match.*
 
