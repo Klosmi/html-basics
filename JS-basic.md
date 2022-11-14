@@ -10052,7 +10052,7 @@ An object may be different in several ways, and __each realized variation of tha
   ```
   
 *__Call a method within a method__:   
- since `rgb`and `rgba` methods are almost the same w can refactor it, so we can create an inner function which we can call in these methods.*    
+ since `rgb`and `rgba` methods are almost the same we can refactor it, so we can create an inner function which we can call in these methods.*    
  
 *(We use also destructor for the sake of simplicity)*   
 
