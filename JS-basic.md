@@ -10086,7 +10086,12 @@ Since the `innerRGB` is a method from that object, when we use `this.innerRGB`, 
   
 *So here we defined the pattern for every colour.*      
 *We are assigning properties to each color object (`color1, etc.`), not to the prototype, but to the color object.*      
-*The methods inside the Class are added to the prototype automatically.*
+*The methods inside the Class are added to the prototype automatically.*   
+
+Useful links to better understand classes:   
+[Classes in JS](https://www.javascriptinstitute.org/javascript-tutorial/classes-in-javascript/)     
+[Classes basics](https://javascript.info/class)    
+
 
 ---
 
