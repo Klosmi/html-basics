@@ -10003,7 +10003,8 @@ An object may be different in several ways, and __each realized variation of tha
   color2.mymethod();
   // "Hello color grey-color!"
   ```
-  *Lets create another method, which gives back the RGB colors*
+  *Lets create another method instead of `myethod`, and this new method gives back the RGB colors*   
+  *The `this` when we're inside of a class, it refers to the instance of the class, the individual `color1`, `color2`, etc. object.*.  
   ```
   class Color {
     constructor(r, g, b, name){
@@ -10023,7 +10024,61 @@ An object may be different in several ways, and __each realized variation of tha
 
   // "rgb(255, 0, 0)" 
   ```
+  *We can add another method next to the `rgb` method, an `rgba`.*
+  ```
+  class Color {
+    constructor(r, g, b, name){
+      this.r = r;               
+      this.g = g;               
+      this.b = b;
+      this.name = name;  
+    }
 
+    rgb(){
+      return `rgb(${this.r}, ${this.g}, ${this.b})`;
+    }
+    
+    rgba(a = 1.0) {    // set the a to 1.0 as a default, since it`s not in the constructor
+      return `rgb(${this.r}, ${this.g}, ${this.b}, ${a})`;
+  }
+}
+
+  const color1 = new Color(255, 0, 0, 'red-color');
+  color1.rgba(0.5);
+
+  // ""rgb(255, 0, 0, 0.5)" 
+  ```
+  *Call a mtehod within a method:since `rgb`and `rgba` methods are almost the same w can refactor it, so we can create an inner function which we can call in these methods.*
+  *(We use also destructor for the sake of simplicity)*    
+  *Note: the `this` keyword points to that individual object (eg. color1) that was created, and any properties and methods inside it.    
+  Since the `innerRGB` is a method from that object, when we use `this.innerRGB`, __even inside other methods, the `this` still points to the object itself__, then looks for any methods with that name, finding a match.*. 
+  ```
+  class Color {
+    constructor(r, g, b, name){
+      this.r = r;               
+      this.g = g;               
+      this.b = b;
+      this.name = name;  
+    }
+
+    innerRGB(){
+    const {r, g, b} = this;     // destructor
+    return `${r}, ${g}, ${b} `
+    }
+
+    rgb(){
+      return `rgb(${this.innerRGB()})`;
+    }
+    
+      rgba(a = 1.0) {   
+        return `rgb(${this.innerRGB()}, ${a})`;
+    }
+  }
+  ```
+  *So here we defined the pattern for every colour.*      
+  *We are assigning properties to each color object (`color1, etc.`), not to the prototype, but to the color object.*      
+  *The methods inside the Class are added to the prototype automatically.*
+  
 ---
 
 [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
