@@ -10024,7 +10024,9 @@ An object may be different in several ways, and __each realized variation of tha
 
   // "rgb(255, 0, 0)" 
   ```
+  
   *We can add another method next to the `rgb` method, an `rgba`.*
+  
   ```
   class Color {
     constructor(r, g, b, name){
@@ -10040,11 +10042,11 @@ An object may be different in several ways, and __each realized variation of tha
     
     rgba(a = 1.0) {    // set the a to 1.0 as a default, since it`s not in the constructor
       return `rgb(${this.r}, ${this.g}, ${this.b}, ${a})`;
-  }
-}
+      }
+    }
 
-  const color1 = new Color(255, 0, 0, 'red-color');
-  color1.rgba(0.5);
+      const color1 = new Color(255, 0, 0, 'red-color');
+      color1.rgba(0.5);
 
   // ""rgb(255, 0, 0, 0.5)" 
   ```
