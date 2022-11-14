@@ -9930,7 +9930,8 @@ An object may be different in several ways, and __each realized variation of tha
   - *Using upercase letter for the name*
   - *__Always__ add in a __`constructor`__. It is like a `constructor` function (we can add arguments to it).*    
     *In this example, the `contructor` is a function which executes immediately when a new color is created (instantiate a new instance). Arguments here are the constructor's `(r, g, b)`*
-  - *Usualy in the `constructor` we use the `.this`. So `this` refers to a `new Object` (that we instantiate, like the `color1`).*
+  - *Usualy in the `constructor` we use the `.this`. So `this` refers to a `new Object` (that we instantiate, like the `color1`).*           
+  -  *We can also add methods to the constructor, like `this.aMethod();`, so not only values like `this.value = value`.*
   ```
   class Color {
     constructor(r, g, b, name){
