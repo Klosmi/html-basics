@@ -9919,7 +9919,7 @@ We want to change the value of the `defaultLocation` function from the outside.
 <br>
 
 ## __[Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)__    
-Classes are a template for creating objects.
+Class ia a template for creating objects.
 
 We use class when we need many objects of the same type.
 
