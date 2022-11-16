@@ -8838,7 +8838,8 @@ __What is an object__:
 [Enumerating Properties](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#enumerating-properties)    
 [Private Properties and Methods](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#private-properties-and-methods)    
 [Getters and Setters](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#getters-and-setters)     
-[Classes](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#classes)     
+[Classes](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#classes)    
+[`extends` and `super` (the basics of inheritence)](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#extends-and-super-the-basics-of-inheritance)    
 
 
 <br>
@@ -10099,7 +10100,7 @@ Useful links to better understand classes:
 
 <br>  
 
-## __[Extends](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends)__ and __[Super](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super) [(the basic of inheritance)](https://www.programiz.com/javascript/inheritance)__   
+## __[Extends](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends)__ and __[Super](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super) [(the basics of inheritance)](https://www.programiz.com/javascript/inheritance)__   
 
 __`extends`__ keyword is used in class declarations or class expressions to create a class that is a child of another class.    
 
