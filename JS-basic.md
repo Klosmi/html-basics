@@ -10049,7 +10049,7 @@ An object may be different in several ways, and __each realized variation of tha
       const color1 = new Color(255, 0, 0, 'red-color');
       color1.rgba(0.5);
 
-  // "rgb(255, 0, 0, 0.5)" 
+  // "rgba(255, 0, 0, 0.5)" 
   ```
   
 *__Call a method within a method__:   
