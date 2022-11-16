@@ -10070,12 +10070,12 @@ Since the `innerRGB` is a method from that object, when we use `this.innerRGB`, 
     }
 
     innerRGB(){
-    const {r, g, b} = this;     // destructor
+    const {r, g, b} = this;               // destructor
     return `${r}, ${g}, ${b} `
     }
 
     rgb(){
-      return `rgb(${this.innerRGB()})`;
+      return `rgb(${this.innerRGB()})`;   //`this` still points to the object itself
     }
     
       rgba(a = 1.0) {   
