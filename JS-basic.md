@@ -10041,7 +10041,7 @@ An object may be different in several ways, and __each realized variation of tha
       return `rgb(${this.r}, ${this.g}, ${this.b})`;
     }
     
-    rgba(a = 1.0) {    // set the a to 1.0 as a default, since it`s not in the constructor
+    rgba(a = 1.0) {    // set the a=1.0 as a default, since it`s not in the constructor
       return `rgb(${this.r}, ${this.g}, ${this.b}, ${a})`;
       }
     }
@@ -10049,7 +10049,7 @@ An object may be different in several ways, and __each realized variation of tha
       const color1 = new Color(255, 0, 0, 'red-color');
       color1.rgba(0.5);
 
-  // ""rgb(255, 0, 0, 0.5)" 
+  // "rgb(255, 0, 0, 0.5)" 
   ```
   
 *__Call a method within a method__:   
