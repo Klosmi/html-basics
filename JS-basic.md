@@ -9962,7 +9962,7 @@ An object may be different in several ways, and __each realized variation of tha
   ​//  ► <prototype>: Object { … }
   //      constructor: class Color { constructor(r, g, b, name) }
   ```
-  *Lets add methods! The real advantage of making classes.*.    
+  *Lets add methods! The real advantage of making classes.*     
   *The method we add (`mymethod()`) is now on every color, but not on the instances. (So it's only on the `prototype`, not on, here the `color1`.)*    
   *In other words, __there is only one copy of the__ `mymethod` __method across all instances__ of `color1`, or if we have several instances, like `color2`, etc.*
   ```
