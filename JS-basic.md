@@ -8825,6 +8825,7 @@ __What is an object__:
 <br>
 
 [Creating Objects](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#creating-objects)   
+[Value vs Reference Type](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#value-vs-reference-type)
 [Factory Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#factory-functions)    
 [Constructor Functions](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#constructor-function)    
 [Classes](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#classes)    
