@@ -8872,6 +8872,96 @@ __creating an object using the [`object literal syntax`](https://developer.mozil
 
 <br>
 
+## __[Value vs Reference Type](https://dmitripavlutin.com/value-vs-reference-javascript/#:~:text=In%20JavaScript%2C%20you%20can%20pass,by%20reference%20when%20assigning%20objects.)__
+We can pass by __value__ and by __reference__ in JS.    
+The main difference between the two is that passing by value happens when assigning primitives while passing by reference when assigning objects.
+
+- we have 2 categories of types:   
+  1. Value Type (aslo called primitives)  
+      - number, string, boolean, symbol, undefined, null
+  2. Reference Types
+      - object
+      - function
+      - array
+
+💡 Primitives are copied by their value.       
+💡 Objects are copied by their reference.
+
+*So technically in JS we have primitives and objects.*
+
+- eg.:   
+  *We define 2 primitives, `x` and `y`, they are __2 independent variables__ ❗️*        
+
+  *The value (`10`) is stored in `x`. When we copy the `x`, we copy the value what `x` stores, it is copied ont the `y` variable.*          
+  *So they are completely independent from eachother.*
+  ```
+  let x = 10;
+  let y = x;
+
+  x = 20;
+
+  x;
+  // 20
+
+  y;
+  // 10
+  ```
+  *Now, we are using a reference type (an object).*    
+  *When we use the {value: 10} object, the object is not stored in the `x` variable.*   
+  *`{value: 10}` object is stored somewhere else in the memory.*   
+  *The address of the memory location is stored in the `x` variable (not the value).*    
+  *When we copy `x` into the `y`, it is the address (reference) what is copied. → `x` & `y` are pointing to the same object in the memory.*
+  ```
+  let x = {value: 10};        //← an object, key-value pairs
+  let y = x;
+
+  x.value = 20;
+
+  x; 
+  // {value: 20};
+
+  y;
+  // {value: 20};
+  ```
+
+- eg.:   
+  *Primitives are copied by their value.*  
+  *When we call `increase(number)`, its value is copied on to the function's parameter `  function increase(number)`. The `number++`'s scope is local in the function.*   
+  *The `number++` inside the function is independent from the `let number = 10`.*  
+  *The `console.log(number);` is basically dealing with the `let number = 10;` and not the function's `number++`. Because they are independent.*
+  ```
+  let number = 10;
+
+  function increase(number) {
+    number++;
+  }
+
+  increase(number);       //← call increase() and pass the number as an argument
+  console.log(number);
+  // 10;
+  ```
+  *Now lets use an object `let obj = {value: 10};`*   
+  *`function increase(obj)` is pointing to the same object (reference to the same object) as `let obj = {value: 10};`.*    
+  *So these are not independent copies.*
+  ```
+  let obj = {value: 10};
+
+  function increase(obj) {
+    obj.value++;
+  }
+
+  increase(obj);
+  console.log(obj);
+
+  // {value: 11}
+  ```
+
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
+
+<br>
+
 ## [Factory Functions](https://www.geeksforgeeks.org/what-are-factory-functions-in-javascript/) 
 In object-oriented programming (OOP), a factory is an object for creating other objects – formally a factory is a function that returns objects of a varying prototype or class from some method call.
 
@@ -9054,9 +9144,7 @@ The [__`new`__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Referenc
   - inside the function no return value
   - referencing directly in the function when using `this`
 
-  
-  
-  
+
 - eg.:   
     ```
     function Color(r, g, b) {
@@ -9179,95 +9267,6 @@ In short, __constructor__ method is more efficient than the __factory__ approach
 
 <br>
 
-## __[Value vs Reference Type](https://dmitripavlutin.com/value-vs-reference-javascript/#:~:text=In%20JavaScript%2C%20you%20can%20pass,by%20reference%20when%20assigning%20objects.)__
-We can pass by __value__ and by __reference__ in JS.    
-The main difference between the two is that passing by value happens when assigning primitives while passing by reference when assigning objects.
-
-- we have 2 categories of types:   
-  1. Value Type (aslo called primitives)  
-      - number, string, boolean, symbol, undefined, null
-  2. Reference Types
-      - object
-      - function
-      - array
-
-💡 Primitives are copied by their value.       
-💡 Objects are copied by their reference.
-
-*So technically in JS we have primitives and objects.*
-
-- eg.:   
-  *We define 2 primitives, `x` and `y`, they are __2 independent variables__ ❗️*        
-
-  *The value (`10`) is stored in `x`. When we copy the `x`, we copy the value what `x` stores, it is copied ont the `y` variable.*          
-  *So they are completely independent from eachother.*
-  ```
-  let x = 10;
-  let y = x;
-
-  x = 20;
-
-  x;
-  // 20
-
-  y;
-  // 10
-  ```
-  *Now, we are using a reference type (an object).*    
-  *When we use the {value: 10} object, the object is not stored in the `x` variable.*   
-  *`{value: 10}` object is stored somewhere else in the memory.*   
-  *The address of the memory location is stored in the `x` variable (not the value).*    
-  *When we copy `x` into the `y`, it is the address (reference) what is copied. → `x` & `y` are pointing to the same object in the memory.*
-  ```
-  let x = {value: 10};        //← an object, key-value pairs
-  let y = x;
-
-  x.value = 20;
-
-  x; 
-  // {value: 20};
-
-  y;
-  // {value: 20};
-  ```
-
-- eg.:   
-  *Primitives are copied by their value.*  
-  *When we call `increase(number)`, its value is copied on to the function's parameter `  function increase(number)`. The `number++`'s scope is local in the function.*   
-  *The `number++` inside the function is independent from the `let number = 10`.*  
-  *The `console.log(number);` is basically dealing with the `let number = 10;` and not the function's `number++`. Because they are independent.*
-  ```
-  let number = 10;
-
-  function increase(number) {
-    number++;
-  }
-
-  increase(number);       //← call increase() and pass the number as an argument
-  console.log(number);
-  // 10;
-  ```
-  *Now lets use an object `let obj = {value: 10};`*   
-  *`function increase(obj)` is pointing to the same object (reference to the same object) as `let obj = {value: 10};`.*    
-  *So these are not independent copies.*
-  ```
-  let obj = {value: 10};
-
-  function increase(obj) {
-    obj.value++;
-  }
-
-  increase(obj);
-  console.log(obj);
-
-  // {value: 11}
-  ```
-
----
-
-[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
-
-<br>
 
 ## __[Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)__    
 Class is a template for creating objects.
