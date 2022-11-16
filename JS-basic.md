@@ -10098,3 +10098,185 @@ Useful links to better understand classes:
 [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
 
 <br>  
+
+## __[Extends](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends)__ and __[Super](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super) [(the basic of inheritance)](https://www.programiz.com/javascript/inheritance)__   
+
+__`extends`__ keyword is used in class declarations or class expressions to create a class that is a child of another class.    
+
+__`super`__ keyword is used to access properties on an object literal or class's [`[Prototype]`], or invoke a superclass's constructor.
+
+- This 2 keyewords are bothe dealing with __subclasses__.
+
+- To understand this 2 keywords, let's go back to the basics.  
+
+eg.:    
+*Let's create 2 very basic classes `Cat` and `Dog`*
+```
+class Cat {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  eat() {
+    return `${this.name} is eating`;
+  }
+}
+
+const lucy = new Cat('Lucy', 9);
+lucy;
+//► Object { name: "Lucy", age: 9 }
+
+lucy.eat();
+// "Lucy is eating"
+
+
+//other class
+
+class Dog {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  eat() {
+    return `${this.name} is eating`;
+  }
+}
+
+const bingo = new Dog("Bingo", 10);
+bingo; 
+//► Object { name: "Bingo", age: 10 }
+
+bingo.eat()
+//"Bingo is eating"
+```
+*Lets add osme more methods `meow` and `bark`*
+```
+class Cat {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  eat() {
+    return `${this.name} is eating`;
+  }
+  meow(){
+    return 'Meow meow!'
+  }
+}
+
+
+class Dog {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  eat() {
+    return `${this.name} is eating`;
+  }
+  bark(){
+    return 'Woof!!!'
+  }
+}
+```
+*There is a lot of duplicated code looking the 2 classes.*   
+*One option is to create a __parent__ class (lets name it `Pets`), which holds the functionalaites of the `Cat` and `Dog` classes.*  
+*But: we have to __extend__ the functionality of `Pets`, we have to __include__ it tothe `Cat` and `Dog` class, otherwise the instances of `Cat` and `Dog` are empty.*
+```
+class Pets {
+    constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  eat() {
+    return `${this.name} is eating`;
+  }
+}
+
+class Cat extends Pets{     // extending the Pets class functionality
+    meow(){
+    return 'Meow meow!'
+  }
+}
+
+class Dog extends Pets{
+  bark(){
+    return 'Woof!!!'
+  }
+}
+
+lucy.eat();
+// "Lucy is eating" 
+
+bingo.eat();
+// "Bingo is eating" 
+```
+So `extends` use the constructor of the "parent" class __if it doesn't find a constructor on the "child" class__.   
+
+*If `extends` find a method on the "child" class with the same name as in the "pparent" class, the "child" class's methods will run.*
+eg.:
+```
+class Pets {
+    constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  eat() {
+    return `${this.name} is eating`;
+  }
+}
+
+class Cat extends Pets{ 
+    meow(){
+    return 'Meow meow!'
+  }
+  eat() {
+    return `${this.name} wnats some cat food.`;
+  }
+}
+
+lucy.eat();
+// "Lucy wnats some cat food." 
+```
+
+__`super` to references the class that we are extending from.
+So, when we wnat to add some additional proeprty to the constructor for the "child" class, which the "parent" calss doesn't have. 
+
+eg.:   
+*We add a `color` proerty to the `Car` class's constructor.* 
+*But we don't want to repeat the `this.name`, and `.this.age`. We just need the `this.color`. This is when we can use `super`.*      
+```
+class Pets {
+    constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  eat() {
+    return `${this.name} is eating`;
+  }
+}
+
+class Cat extends Pets{ 
+   constructor(name, age, color) {
+    super(name, age);               // using super
+    this.color = color
+  }
+    meow(){
+    return 'Meow meow!'
+  }
+  eat() {
+    return `${this.name} wnats some cat food.`;
+  }
+}
+
+const lucy = new Cat('Lucy', 9, 'black');
+lucy;
+//► Object { name: "Lucy", age: 9 , "black}
+```
+
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
+
+<br>  
