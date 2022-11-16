@@ -9927,7 +9927,7 @@ So class is a template for an object in the code. It makes it easier, quicker an
 An object may be different in several ways, and __each realized variation of that object is an instance.__ The __creation of a realized instance is called instantiation.__        
 
 - *Defining a Class, using the __[`class`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#class_declarations)__ keyword*.    
-  - *Using upercase letter for the name*
+  - *Using uppercase letter for the name*
   - *__Always__ add in a __`constructor`__. It is like a `constructor` function (we can add arguments to it).*    
     *In this example, the `contructor` is a function which executes immediately when a new color is created (instantiate a new instance). Arguments here are the constructor's `(r, g, b)`*
   - *Usualy in the `constructor` we use the `.this`. So `this` refers to a `new Object` (that we instantiate, like the `color1`).*           
