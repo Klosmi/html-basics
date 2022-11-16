@@ -9928,7 +9928,7 @@ An object may be different in several ways, and __each realized variation of tha
 
 - *Defining a Class, using the __[`class`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#class_declarations)__ keyword*.    
   - *Using uppercase letter for the name*
-  - *__Always__ add in a __`constructor`__. It is like a `constructor` function (we can add arguments to it).*    
+  - *__Always__ add in a __[`constructor`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#constructor-function)__. It is like a `constructor` function (we can add arguments to it).*    
     *In this example, the `contructor` is a function which executes immediately when a new color is created (instantiate a new instance). Arguments here are the constructor's `(r, g, b)`*
   - *Usualy in the `constructor` we use the `.this`. So `this` refers to a `new Object` (that we instantiate, like the `color1`).*           
   -  *We can also add methods to the constructor, like `this.aMethod();`, so not only values like `this.value = value`.*
