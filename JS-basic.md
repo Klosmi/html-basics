@@ -10004,7 +10004,7 @@ An object may be different in several ways, and __each realized variation of tha
   color2.mymethod();
   // "Hello color grey-color!"
   ```
-  *Lets create another method instead of `myethod`, and this new method gives back the RGB colors*   
+  *Lets create another method instead of `mymethod`, and this new method gives back the RGB colors*   
   *The `this` when we're inside of a class, it refers to the instance of the class, the individual `color1`, `color2`, etc. object.*.  
   ```
   class Color {
