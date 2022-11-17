@@ -1831,7 +1831,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 
 <br>
 
-[👆back to top](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#other-useful-css-properties-)
+[👆back to top](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#other-useful-css-properties)
 
 <br>
 
@@ -2021,7 +2021,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 
     <br>
     
-[👆back to top](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#other-useful-css-properties-)
+[👆back to top](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#other-useful-css-properties)
 
 <br>
 
@@ -2272,7 +2272,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
       
       <br>
       
-[👆back to top](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#other-useful-css-properties-)
+[👆back to top](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#other-useful-css-properties)
 
   <br>
   
@@ -2487,7 +2487,7 @@ Some of the most common values:
   
   <br>
 
-  [👆back to top](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
+  [👆back to top](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties)
 
  <br>
   
@@ -2512,7 +2512,7 @@ Use and reference to the **MDN** docs.
     
 ---
   
-[👆back to top](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)   **OR** [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
+[👆back to top](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties)   **OR** [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
 
 <br>
 	    
