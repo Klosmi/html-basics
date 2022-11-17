@@ -2894,7 +2894,13 @@ In this case, if the content is more than the mentioned height, than it [overflo
     ## Useful Links
   - __[Live examples 1](https://scalablecss.com/bem-css-examples/)__ 
   - __[Live examples 2](https://scalablecss.com/bem-blocks-within-blocks/#nesting-blocks-within-blocks)__  : this is a pretty good explanation. 💡
-  - __[Methodology Documentation](https://en.bem.info/methodology/)__	      
+  - __[Methodology Documentation](https://en.bem.info/methodology/)__	  
+	      
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
+
+<br>	      
 
 # Links collection 🔗
 
