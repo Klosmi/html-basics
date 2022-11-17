@@ -3599,21 +3599,21 @@ In other words: grid items (*contents*) are distributed along the *main axis* an
 
   <br> 
 
-  **[Defining Grid, explaining Rows and Columns](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#defining-grid-explaining-rows-and-columns)**
+  **[Defining Grid, explaining Rows and Columns](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#defining-grid-explaining-rows-and-columns)**
 
-  **[Sizing and Numbering](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#sizing-and-numbering)**
+  **[Sizing and Numbering](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#sizing-and-numbering)**
 
-  **[The model - implicit / explicit](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#the-model)**
+  **[The model - implicit / explicit](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#the-model)**
 
-  **[Grid Tracks, Lines, Cells, Areas](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#grid-track-lines-cells-areas)**
+  **[Grid Tracks, Lines, Cells, Areas](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#grid-track-lines-cells-areas)**
 
-  **[Positionings](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#positionings)**
+  **[Positionings](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#positionings)**
 
-  **[Namings](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#naming)**
+  **[Namings](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#naming)**
   
-  **[Grid Gap](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#grid-gaps-gutters-)**
+  **[Grid Gap](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#grid-gaps-gutters-)**
   
-  **[Useful Links](https://github.com/Klosmi/html-basics/blob/master/CSS-Grid.md#links)**
+  **[Useful Links](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#links-2)**
 
   <br>
     
