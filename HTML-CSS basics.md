@@ -1003,7 +1003,13 @@ Some CSS properties inhereted by child elements, if they're not set on that elem
   ```
 
 - inheritance is always from the parent element in the document tree, even when the parent element is not the containing block.
+
 ---
+									 ---
+   [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
+
+<br>
+									 
  
 # [CSS Devtools *in chrome*](https://developer.chrome.com/docs/devtools/css/) 
   - right click 👉 __inspect elements__
