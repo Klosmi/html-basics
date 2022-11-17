@@ -2505,6 +2505,8 @@ Use and reference to the **MDN** docs.
 [👆back to top](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)   **OR** [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
 
 <br>
+	    
+# CSS Simple tricks and useful stuffs 🤓	      
 
 **[How to center an element on a page (with flex)?](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#how-to-center-an-element-on-a-page-)   
 [Basic navbar](https://github.com/Klosmi/html-basics/blob/master/CSS-center_an_element.md#basic-navbar-)   
