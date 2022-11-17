@@ -1676,7 +1676,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 
 <br>
 
-[👆back to top](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#other-useful-css-properties-)
+[👆back to top](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#other-useful-css-properties)
 
 <br>
 
