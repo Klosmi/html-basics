@@ -470,12 +470,13 @@ So here's a little selection, which might be useful: </u>
   - server side validation *(after the submit button the server verifies if the data meets the expectations)*
 
   ## Basics of the built in validations
-  #### [required](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/required) 👉  HTML attribute  
-    Adding the `required` attribute to any input will indicate that the user must specify a value for the input before the owning form can be submitted.
+  #### [required](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/required) 👉  HTML attribute
+												  
+Adding the `required` attribute to any input will indicate that the user must specify a value for the input before the owning form can be submitted.
 
-    - we can specify the length of an `<input type=text>` with `minlength="4"` and `maxlength="30"` (+ add `required`).
+  - we can specify the length of an `<input type=text>` with `minlength="4"` and `maxlength="30"` (+ add `required`).
 
-    - for numeric values length specification use `min` and `max`
+  - for numeric values length specification use `min` and `max`
 
 <br>
                               
