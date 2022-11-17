@@ -1,3 +1,5 @@
+__[👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)__
+
 # Inline vs Block
 - **By default, inline elements do not force a new line to begin in the document flow** 
 
