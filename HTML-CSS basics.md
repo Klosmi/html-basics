@@ -4863,7 +4863,7 @@ Maps hold **pairs of keys and values**, and make it easy to look up a value by i
 The expression before the `:` is the key, and the expression after is the value associated with that key. The keys must be unique, but the values may be duplicated.
 
 In the [SASS documentation](https://sass-lang.com/documentation/values/maps#using-maps) it shows to use maps with the **`.`** **(where I have to use the [`@use`](https://sass-lang.com/documentation/at-rules/use))**, rather than with **`-`** which I found in [other sources](https://github.com/sass/sass/blob/main/accepted/module-system.md#built-in-modules-1) and it works witout the `@use`.      
-[It is a useful discussion](https://stackoverflow.com/questions/64210390/sass-map-get-doesnt-work-map-get-does-what-gives) to see the difference between the above mentioned 2 ways
+[Here is a discussion](https://stackoverflow.com/questions/64210390/sass-map-get-doesnt-work-map-get-does-what-gives) to see the difference between the above mentioned 2 ways.
 
 **Some main `map` functions (with `.`):**   
 for better compatibility reasons to get access to map.get you must explicitly import the map module using the __@use keyword.__
