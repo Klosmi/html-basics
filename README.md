@@ -17,14 +17,14 @@
 16. [CSS Box Model-Units - `em` & `rem`](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#css-box-model---units-in-depth-focus-on-relative-units-)     
 17. [CSS Some useful properties - extra](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#other-useful-css-properties-)     
 18. [CSS Simple tricks and useful stuffs 🤓](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#css-simple-tricks-and-useful-stuffs-)
-19. [CSS BEM methodology](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#bem-methodology)     
-20. [CSS Links and collections - reset your CSS](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#links-collection-)        
-21. [CSS Flexbox](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#css---flexbox)     
-22. [CSS Grid](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#css-grid)     
-23. [CSS Responsive design - @media queries](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#css---responsive-design)      
-24. [SASS](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#the-basics-of--sass-syntactically-awesome-stylesheets)       
+19. [CSS Links and collections - reset your CSS](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#links-collection-)        
+20. [CSS Flexbox](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#css---flexbox)     
+21. [CSS Grid](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#css-grid)     
+22. [CSS Responsive design - @media queries](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#css---responsive-design)      
+23. [SASS](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#the-basics-of--sass-syntactically-awesome-stylesheets) 
+24. [CSS BEM methodology](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#bem-methodology)     
 25. [OOCSS - Object Oriented CSS](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#oocss---object-oriented-css)     
-26.  <a href="https://github.com/css-modules/css-modules" target="_blank">About CSS Modules </a><sup>external link</sup>
+26. <a href="https://github.com/css-modules/css-modules" target="_blank">About CSS Modules </a><sup>external link</sup>
 27. [Inspiration sites for web design](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#webdesign-inspiration-sites)     
 
 <br>
