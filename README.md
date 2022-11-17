@@ -15,7 +15,7 @@
 14. [CSS Box Model: content (box) ・ border ・ padding ・ margin](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#css-box-model)    
 15. [CSS Box Model: display property](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#css-box-model---display-property)     
 16. [CSS Box Model-Units - `em` & `rem`](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#css-box-model---units-in-depth-focus-on-relative-units-)     
-17. [CSS Some useful properties - extra](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#other-useful-css-properties-)     
+17. [CSS Some useful properties - extra](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#other-useful-css-properties)     
 18. [CSS Simple tricks and useful stuffs 🤓](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#css-simple-tricks-and-useful-stuffs-)
 19. [CSS Links and collections - reset your CSS](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#links-collection-)        
 20. [CSS Flexbox](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#css---flexbox)     
