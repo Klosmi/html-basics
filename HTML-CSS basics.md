@@ -1310,9 +1310,9 @@ In the Chrome Devtool this is the *🟠orange color* (when inspecting an element
 # [CSS Box Model - Display Property](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
 it sets whether an element is treated as a **block element** or an **inline element** and the layout used for its children, such as **flow layout**, **grid** or **flex**.
 
-> Reminding: an [__inline element__](https://github.com/Klosmi/html-basics/blob/master/inlene-vs-block.md) is going to fit alongside other elements in the same line (is not pushing everyone else onto a separate line). It takes out the minimum amount of space.
+> Reminding: an [__inline element__](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#inline-vs-block) is going to fit alongside other elements in the same line (is not pushing everyone else onto a separate line). It takes out the minimum amount of space.
 > 
-> However a [__block level element__](https://github.com/Klosmi/html-basics/blob/master/inlene-vs-block.md) is pushing everyone else onto a separate line, it is something that it wants to exist on its own line, its own "block".
+> However a [__block level element__](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#inline-vs-block) is pushing everyone else onto a separate line, it is something that it wants to exist on its own line, its own "block".
 
 1. **Block** - [changing element levels](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements#changing_element_levels): *(`display: inline;`)*:   
     Block elements break the flow of a document.   
