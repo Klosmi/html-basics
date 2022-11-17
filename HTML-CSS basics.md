@@ -1598,15 +1598,15 @@ __Relative length units__ specify a length __relative to another length__.
    [👈 go back](https://github.com/Klosmi/html-basics#html-and-css--basics)
 
 
-# [(Other) Useful CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) :    
+# [(Other) Useful CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)   
 these are a few CSS properties which are nice to know, but not crucial for the basic knowledge.
 
-**[Alpha Channel + Opacity](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#alpha-channel--opacity)   
-[Position](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#position)   
-[Transition](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#transition)   
-[Transform](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#transform)  
-[Background](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#background)   
-[Some Extras](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#some-extras)**   
+**[Alpha Channel + Opacity](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#alpha-channel--opacity)   
+[Position](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#position)   
+[Transition](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#transition)   
+[Transform](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#transform)  
+[Background](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#background)   
+[Some Extras](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#some-extras)**   
 
 ---
 ## [Alpha Channel](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity) + [Opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
@@ -1676,7 +1676,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 
 <br>
 
-[👆back to top](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
+[👆back to top](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#other-useful-css-properties-)
 
 <br>
 
@@ -1831,7 +1831,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 
 <br>
 
-[👆back to top](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
+[👆back to top](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#other-useful-css-properties-)
 
 <br>
 
@@ -2021,7 +2021,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 
     <br>
     
-[👆back to top](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
+[👆back to top](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#other-useful-css-properties-)
 
 <br>
 
@@ -2272,7 +2272,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
       
       <br>
       
-[👆back to top](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#other-useful-css-properties-)
+[👆back to top](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#other-useful-css-properties-)
 
   <br>
   
@@ -2281,7 +2281,7 @@ these are a few CSS properties which are nice to know, but not crucial for the b
 ## [Background](https://developer.mozilla.org/en-US/docs/Web/CSS/background) 
 The background (shorthand CSS) property sets all **background style properties at once**, such as **color**, **image**, **origin** and **size**, or **repeat method**.
 
-[More about the `background` property below 👇](https://github.com/Klosmi/html-basics/blob/master/CSS-extra-properties.md#the-background-shorthand-property)
+[More about the `background` property below 👇](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#the-background-shorthand-property)
 
 - [`background` values on this link](https://developer.mozilla.org/en-US/docs/Web/CSS/background#values)   
 Some of the most common values:
