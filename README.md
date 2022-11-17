@@ -1,6 +1,6 @@
 # [HTML](https://html.spec.whatwg.org/#a-quick-introduction-to-html) and [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) -basics
 
-1. [HTML Inline elements vs block elements](https://github.com/Klosmi/html-basics/blob/master/inlene-vs-block.md)
+1. [HTML Inline elements vs block elements](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#inline-vs-block)
 2. [HTML Semantics](https://github.com/Klosmi/html-basics/blob/master/HTML-semantic%20markup.md)
 3. [HTML Unrelated elements & HTML enitites](https://github.com/Klosmi/html-basics/blob/master/HTML-unrelated-elements-entities.md)
 4. [HTML Tables](https://github.com/Klosmi/html-basics/blob/master/HTML-tables_01.md) 
