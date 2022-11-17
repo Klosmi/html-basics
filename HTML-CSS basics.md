@@ -2840,15 +2840,15 @@ In this case, if the content is more than the mentioned height, than it [overflo
 <br>
 
 **Flexbox properties:**  
-1. **[display: flex](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#1-display-flex-)**
-2. **[flex-direction](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#2-flex-direction-)**
-3. **[justify-content](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#3-justify-content-)**
-4. **[flex-wrap](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#4-flex-wrap-)**
-5. **[align-items](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#5-align-items-)**
-6. **[align-content](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#6-align-content-)**
-7. **[align-self](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#7-align-self-)**
-8. **[flex sizing properties: flex-basis ・ flex-grow ・ flex-shrink](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#8-flex-sizing-properties-flex-basis----flex-grow--flex-shrink)**
-9. **[flex - The shorthand property](https://github.com/Klosmi/html-basics/blob/master/CSS-FlexBox.md#9-the-short-hand-property---flex-)**
+1. **[display: flex](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#1-display-flex-)**
+2. **[flex-direction](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#2-flex-direction-)**
+3. **[justify-content](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#3-justify-content-)**
+4. **[flex-wrap](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#4-flex-wrap-)**
+5. **[align-items](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#5-align-items-)**
+6. **[align-content](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#6-align-content-)**
+7. **[align-self](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#7-align-self-)**
+8. **[flex sizing properties: flex-basis ・ flex-grow ・ flex-shrink](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#8-flex-sizing-properties-flex-basis----flex-grow--flex-shrink)**
+9. **[flex - The shorthand property](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#9-the-short-hand-property---flex-)**
 
 
 <br>
