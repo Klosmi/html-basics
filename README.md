@@ -56,8 +56,10 @@
 24. [JS: Object-Prototype - an introduction to OOP](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#object-prototype---introduction-to-oop)
 25. [JS: OOP - Object-oriented Programming](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#oop--object-oriented-programming)
 
-
 <br>
+
+# [Terminal]() -basics  
+1. [Terminologies]()
 
 <sup>*These are my personal notes*
 *I can not guarantee that it's perfect, feel free to let me know if there is something what sould be fiexd.*
