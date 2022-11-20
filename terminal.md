@@ -1,3 +1,8 @@
+__[👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)__
+
+---
+
+
 # The [Terminal](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line)
  is a text based interface, is a device that gives us access to the console of our computer.   
 
