@@ -20,8 +20,8 @@ it is the most popular Shell.
 The other is [Z-Shell](https://zsh.sourceforge.io/):   
 it is a newer shell, it has newer freatures compare to bash.
 
-[👈 go back](https://github.com/Klosmi/html-basics#terminal--basics)
-
 ---
+
+[👈 go back](https://github.com/Klosmi/html-basics#terminal--basics)
 
 <br>
