@@ -25,3 +25,44 @@ it is a newer shell, it has newer freatures compare to bash.
 [👈 go back](https://github.com/Klosmi/html-basics#terminal--basics)
 
 <br>
+
+# [Basic commands: `LS`, `PWD`, etc.](https://www.earthdatascience.org/workshops/setup-earth-analytics-python/introduction-to-bash-shell/#:~:text=cd%20~%20(the%20tilde).,in%20which%20the%20Terminal%20opens)      
+__Home Directory__ ► __`~`__ :     
+the default directory (the default location) in which the Terminal opens.    
+ (Usually our user account directory. If we have 5 accounts, each account has its own home directory.)    
+
+- tilde __`~`__ is a shortcut way of referencig our home directory (if we want to "go home").   
+
+<br>
+
+__List__ ► __`ls`__ :    
+a list of the current contents of the directory that we are in at the moment.      
+command: __`ls`__  ► brings back to your home directory
+ 
+ <br>
+
+__Print Working Directory__ ► __`pwd`__ :     
+ a quick way of orientating, shows which directory we are, so that's how we now where we are.
+
+ <br>
+
+__Change Directory__ ▶︎ __`cd`__ :   
+to move forward or backwards.   
+tpye: `cd` and then some directory that we want to change directories into.    
+ - eg.:   `cd DirectoryName` 
+
+To __back up a directory__ : __`cd ..`__ (cd followed by __`..`__) 
+
+ - eg.:   
+  *We are in the /Code/Mydirectory/Foldername/*   
+  *We want to go back to Mydirectory*  
+  *We type:* `cd ..` *and we are in /Code/Mydirectory/* .    
+  *If we write it again* `cd ..` *we go back to /Code/ directory.*
+
+
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#terminal--basics)
+
+<br>
+
