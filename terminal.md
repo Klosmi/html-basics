@@ -9,7 +9,7 @@ __[👈 go back](https://github.com/Klosmi/html-basics#terminal--basics)__
  ## __[Shell](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/Shell#:~:text=A%20shell%20is%20a%20program,block%2C%20similar%20to%20code%20examples.)__
 The shell is the name of the program that runs in the terminal.    
 
-(Way back, the terminal was a harware and the program that was running on the terminal was the Shell.)
+(Way back, the terminal was a hardware and the program that was running on the terminal was the Shell.)
 
 
 There are different Shells that run on the terminal.
