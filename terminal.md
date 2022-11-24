@@ -17,8 +17,8 @@ There are different Shells that run on the terminal.
 ## __[Bash](https://opensource.com/resources/what-bash)__  
 it is the most popular Shell.
 
-The other is [Z-Shell](https://zsh.sourceforge.io/):   
-it is a newer shell, it has newer freatures compare to bash.
+The other is __[Z-Shell](https://zsh.sourceforge.io/)__:   
+it is a newer shell, it has newer freatures compared to __bash__.
 
 ---
 
