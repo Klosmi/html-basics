@@ -59,7 +59,8 @@
 <br>
 
 # [Terminal](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line) -basics  
-1. [Terminologies](https://github.com/Klosmi/html-basics/blob/master/terminal.md)
+1. [Terminologies](https://github.com/Klosmi/html-basics/blob/master/terminal.md)    
+2. [Commands]()    
 
 <sup>*These are my personal notes*
 *I can not guarantee that it's perfect, feel free to let me know if there is something what sould be fiexd.*
