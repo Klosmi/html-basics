@@ -66,3 +66,76 @@ To __back up a directory__ : __`cd ..`__ (cd followed by __`..`__)
 
 <br>
 
+# [Absolute vs. Relative path](https://www.mygreatlearning.com/bash/tutorials/bash-relative-and-absolute-path) 
+
+__Relative__: to access a directory is realtive where we are.   
+- eg.:    
+  *We want to access `hello` directory from `/Users/mydirectory/hello`.*     
+  *We are at `mydirectory`*    
+  *The realtive path to access `hello` directory is the following:*     
+  ```
+  Users/mydirectory/
+
+  cd hello
+  ```
+  *so when we write `cd hello`, it will find that directory. It __only works if that specific directory is in the directory where we are__*    
+  *So the directory is __realtive to where we are__.
+
+<br>
+
+__Absolute__: we can __access a specific directory from anywhere__ in our machine.    
+
+- abolute path always start with a slash __`/`__.
+- eg.:      
+  *We want to access `mydirectory` directory from `/Users/mydirectory/hello`.*    
+  *We are at `hello` directory.* .  
+  *The _ansolute way to acces `mydirectory` is the followoing:*    
+  ```
+  cd Users/mydirectory
+  ```
+  *It doesn!t matter where we are, it is not relaitve to our current location.*
+
+ <br> 
+
+Go to __Root directory__:  
+is the first __`/`__.   
+- `cd /` . bring us to our root directory.    
+
+- eg.:
+  *The slash `/` before the `Users`.*
+  ```
+  /Users/mydirectory/hello
+
+  cd /
+
+  ls
+
+  Applications Users        home         Library      Volumes      System       private      usr
+  ```
+
+<br> 
+
+Go to __Home directory__:   
+Write __`cd ~`__ and it brngs us to our home directory.   
+- The tilde __`~`__ always signifies our home directory.
+
+
+- eg.:
+  *We are at the root directory. We want to go to our home directory.*  
+  ```
+  / cd ~
+
+  ~
+
+  ls
+
+  Applications         Movies               
+  Desktop              Pictures             
+  Documents            Downloads        Public               Library            
+  ```
+
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#terminal--basics)
+
+<br>
