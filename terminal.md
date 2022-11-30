@@ -68,18 +68,18 @@ To __back up a directory__ : __`cd ..`__ (cd followed by __`..`__)
 
 # [Absolute vs. Relative path](https://www.mygreatlearning.com/bash/tutorials/bash-relative-and-absolute-path) 
 
-__Relative__: to access a directory is realtive where we are.   
+__Relative__: to access a directory is relative where we are.   
 - eg.:    
   *We want to access `hello` directory from `/Users/mydirectory/hello`.*     
   *We are at `mydirectory`*    
-  *The realtive path to access `hello` directory is the following:*     
+  *The relative path to access `hello` directory is the following:*     
   ```
   Users/mydirectory/
 
   cd hello
   ```
   *so when we write `cd hello`, it will find that directory. It __only works if that specific directory is in the directory where we are__*    
-  *So the directory is __realtive to where we are__.
+  *So the directory is __relative to where we are__.
 
 <br>
 
