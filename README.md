@@ -65,4 +65,4 @@
 
 <sup>*These are my personal notes*
 *I can not guarantee that it's perfect, feel free to let me know if there is something that should or must be fiexd.*
-*Several parts are gathered from different sites and online/offline courses, no intention to harm any copyrights. Web is open and (or at least should be) free after all.* ;)</sup>
+*Several parts are gathered from different sites and online/offline courses, no intention to harm any copyrights. Web is open, (or at least should be) free and should be accessible to everyone.* ;)</sup>
