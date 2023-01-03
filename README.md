@@ -64,5 +64,5 @@
 3. [Absolute vs Relative path](https://github.com/Klosmi/html-basics/blob/master/terminal.md#absolute-vs-relative-path)     
 
 <sup>*These are my personal notes*
-*I can not guarantee that it's perfect, feel free to let me know if there is something what sould be fiexd.*
-*Several parts are gathered from different sites and courses, no intention to harm any copyrights. Web is open and (or at least should be) free after all.* ;)</sup>
+*I can not guarantee that it's perfect, feel free to let me know if there is something that should or must be fiexd.*
+*Several parts are gathered from different sites and online/offline courses, no intention to harm any copyrights. Web is open and (or at least should be) free after all.* ;)</sup>
