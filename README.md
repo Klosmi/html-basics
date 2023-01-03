@@ -25,7 +25,7 @@
 24. [CSS BEM methodology](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#bem-methodology)     
 25. [OOCSS - Object Oriented CSS](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#oocss---object-oriented-css)     
 26. <a href="https://github.com/css-modules/css-modules" target="_blank">About CSS Modules </a><sup>external link</sup>
-27. [Inspiration sites for web design](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#webdesign-inspiration-sites)     
+27. [Inspirationel sites for web design](https://github.com/Klosmi/html-basics/blob/master/HTML-CSS%20basics.md#webdesign-inspiration-sites)     
 
 <br>
 
