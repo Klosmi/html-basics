@@ -99,7 +99,7 @@ __Absolute__: we can __access a specific directory from anywhere__ in our machin
 
 Go to __Root directory__:  
 is the first __`/`__.   
-- `cd /` . bring us to our root directory.    
+- `cd /` bring us to our root directory.    
 
 - eg.:
   *The slash `/` before the `Users`.*
