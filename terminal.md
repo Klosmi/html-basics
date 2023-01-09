@@ -244,7 +244,7 @@ after the `man` we can type tha name of a command we want to get information abo
  💡 using `ls -a` lists the hidden files
 
 
- - we can __combine the flags__ (❗️) of a specigic command   
+ - we can __combine the flags__ (❗️) of a specific command   
    - eg.:   
      *We combine the `ls` command's flag `-l` + `-a`. Where`-l` gives long list and `-a` shows hidden files.*    
      ```
