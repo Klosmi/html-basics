@@ -183,3 +183,76 @@ mkdir Cats
 [👈 go back](https://github.com/Klosmi/html-basics#terminal--basics)
 
 <br>
+
+
+# [man command](https://www.freecodecamp.org/news/command-line-for-beginners/#:~:text=In%20a%20similar%20way%2C%20the%20man%20command%20will%20return%20info%20about%20any%20particular%20command.) = Manual command   
+
+__`man`__ : short for manual, it is a help command.  
+after the `man` we can type tha name of a command we want to get information about
+
+- eg.:    
+  *We want to get information about the `ls` command*    
+  ```
+  man ls
+
+
+  // that's what we get
+
+  NAME
+     ls – list directory contents
+
+
+  SYNOPSIS
+      ls [-@ABCFGHILOPRSTUWabcdefghiklmnopqrstuvwxy1%,] [--color=when] [-D format] [file ...]
+
+
+  DESCRIPTION
+      For each operand that names a file of a type other than directory, ls displays its name as well as any requested, associated information.  For each operand that names a
+      file of type directory, ls displays the names of files contained within that directory, as well as any requested, associated information.
+      ... etc.
+
+
+  The following options are available:
+
+     -@      Display extended attribute keys and sizes in long (-l) output.
+
+     -A      Include directory entries whose names begin with a dot (‘.’) except for . and ...  Automatically set for the super-user unless -I is specified.
+
+     -B      Force printing of non-printable characters (as defined by ctype(3) and current locale settings) in file names as \xxx, where xxx is the numeric value of the
+             character in octal.  This option is not defined in IEEE Std 1003.1-2008 (“POSIX.1”).
+
+     -C      Force multi-column output; this is the default when output is to a terminal.
+    
+     ... etc.
+
+  ```
+
+  __[flags](https://www.ibm.com/docs/en/aix/7.2?topic=names-command-flags)__ ❗️     
+  Flags are almost like arguments in a function, __options__ or sort of different parameters for how we want to work with the specific command.  So *flags* modify the behavior of the command.
+  
+
+  On the example above, we can see `-a`, `-B`, `-d`, etc. These are called flags of the specific command (in this case these are the flags of the `ls` command).   
+   
+   - eg.:    
+     *the `-S` flag of `ls`*    
+     ```
+     -S   Sort by size (largest file first) before sorting the operands in lexicographical order.   
+     ```
+
+ 💡 *to quit from the manual type `q`*
+
+ 💡 using `ls -a` lists the hidden files
+
+
+ - we can __combine the flags__ (❗️) of a specigic command   
+   - eg.:   
+     *We combine the `ls` command's flag `-l` + `-a`. Where`-l` gives long list and `-a` shows hidden files.*    
+     ```
+     ls -la
+     ```
+     
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#terminal--basics)
+
+<br>
