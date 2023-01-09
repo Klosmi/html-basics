@@ -188,7 +188,7 @@ mkdir Cats
 # [man command](https://www.freecodecamp.org/news/command-line-for-beginners/#:~:text=In%20a%20similar%20way%2C%20the%20man%20command%20will%20return%20info%20about%20any%20particular%20command.) = Manual command   
 
 __`man`__ : short for manual, it is a help command.  
-after the `man` we can type tha name of a command we want to get information about
+after the `man` we can type the name of a command we want to get information about.
 
 - eg.:    
   *We want to get information about the `ls` command*    
