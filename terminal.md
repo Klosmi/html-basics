@@ -139,3 +139,47 @@ Write __`cd ~`__ and it brngs us to our home directory.
 [👈 go back](https://github.com/Klosmi/html-basics#terminal--basics)
 
 <br>
+
+# [Make new Directories](https://openclassrooms.com/en/courses/4614926-learn-the-command-line-in-terminal/4634361-create-your-first-directory)
+
+ __`mkdir`__ : (make directory) it creates a new empty folder.
+
+ - eg.:   
+ *Make a new folder named `Cats`*     
+```
+mkdir Cats
+```
+
+- __multiple sub direcotries__ in one go:
+
+  *Make 2 folders, __subdirectories__ in the `Cats` folder.*    
+  *To make all at once, we can separate the folder names we create by space.*    
+  ```
+  //go to Cats folder
+  cd Cats
+  ls
+  mkdir Dogs Birds
+  ```
+
+- directory in different path:    
+  *To make a folder in a different path, in an other location, like a folder up.*   
+  ```
+  mkdir ../Mice
+  ```
+
+- quick way of making directory and it's subdirectory:
+  *In the `Cats` folder we create 2 folders, Rats folder and Beavers folder*    
+  ```
+  Cats/Rats Beavers
+
+  // list the Cats` folder content
+  ls
+
+  Rats                 Beavers                
+  ```
+
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#terminal--basics)
+
+<br>
