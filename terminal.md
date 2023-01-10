@@ -300,49 +300,6 @@ However, the `man touch` manual says:
 
 <br>
 
-# [touch command - create files](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/#:~:text=a%20text%20file-,Command%3A%20touch,-What%20it%20does)
-
-__`touch`__ : create file(s)   
-However, the `man touch` manual says:    
-  *The touch utility __sets the modification and access times of files__.*     
-  *__If any file does not exist, it is created with default permissions.__*    
-
-- how to use `touch`:  
-
-  `touch + space + `filename` (with extension, like  `filename.txt`)
-
-  - eg.:    
-    *Create an HTML file*    
-    ```
-    touch Redcat.html
-
-    // check if it's created
-    ls
-
-    Redcat.html 
-    ```
-
-- Make __multiple files__ at once
-  - eg.:   
-    *Create a folder named `Projects`, and go into it with `cd Projects`*    
-    *Create html, css, js files*   
-    ```
-    mkdir Projects
-
-    cd Projects
-
-    touch index.html styles.css app.js
-
-    ls
-    index.html    styles.css    app.js
-    ```
-
----
-
-[👈 go back](https://github.com/Klosmi/html-basics#terminal--basics)
-
-<br>
-
 # [`rm` & `rmdir` command - delete files / folders](https://www.webservertalk.com/rm-and-rmdir-commands)    
 __`rm`__ : remove a file or folder     
 
