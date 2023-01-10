@@ -63,7 +63,8 @@
 2. [Basic Commands (`LS`, `PWD`, etc.)](https://github.com/Klosmi/html-basics/blob/master/terminal.md#basic-commands-ls-pwd-etc)     
 3. [Absolute vs Relative path](https://github.com/Klosmi/html-basics/blob/master/terminal.md#absolute-vs-relative-path)      
 4. [mkdir = Make new Directories](https://github.com/Klosmi/html-basics/blob/master/terminal.md#make-new-directories)           
-5. [man command = manual](https://github.com/Klosmi/html-basics/blob/master/terminal.md#man-command--manual-command)      
+5. [man command = manual](https://github.com/Klosmi/html-basics/blob/master/terminal.md#man-command--manual-command) 
+6. [touch command - create/update file(s)](https://github.com/Klosmi/html-basics/blob/master/terminal.md#touch-command---create-files)     
 
 <sup>*These are my personal notes*
 *I can not guarantee that it's perfect, feel free to let me know if there is something that should or must be fiexd.*
