@@ -1,4 +1,4 @@
-__[👈 go back](https://github.com/Klosmi/html-basics#terminal--basics)__
+__[👈 go back](https://github.com/Klosmi/html-basics#terminal-command-line--basics)__
 
 ---
 
@@ -22,7 +22,7 @@ it is a newer shell, it has newer freatures compared to __bash__.
 
 ---
 
-[👈 go back](https://github.com/Klosmi/html-basics#terminal--basics)
+[👈 go back](https://github.com/Klosmi/html-basics#terminal-command-line--basics)
 
 <br>
 
@@ -62,7 +62,7 @@ To __back up a directory__ : __`cd ..`__ (cd followed by __`..`__)
 
 ---
 
-[👈 go back](https://github.com/Klosmi/html-basics#terminal--basics)
+[👈 go back](https://github.com/Klosmi/html-basics#terminal-command-line--basics)
 
 <br>
 
@@ -136,7 +136,7 @@ Write __`cd ~`__ and it brngs us to our home directory.
 
 ---
 
-[👈 go back](https://github.com/Klosmi/html-basics#terminal--basics)
+[👈 go back](https://github.com/Klosmi/html-basics#terminal-command-line--basics)
 
 <br>
 
@@ -180,7 +180,7 @@ mkdir Cats
 
 ---
 
-[👈 go back](https://github.com/Klosmi/html-basics#terminal--basics)
+[👈 go back](https://github.com/Klosmi/html-basics#terminal-command-line--basics)
 
 <br>
 
@@ -253,7 +253,7 @@ after the `man` we can type the name of a command we want to get information abo
      
 ---
 
-[👈 go back](https://github.com/Klosmi/html-basics#terminal--basics)
+[👈 go back](https://github.com/Klosmi/html-basics#terminal-command-line--basics)
 
 <br>
 
@@ -296,7 +296,7 @@ However, the `man touch` manual says:
 
 ---
 
-[👈 go back](https://github.com/Klosmi/html-basics#terminal--basics)
+[👈 go back](https://github.com/Klosmi/html-basics#terminal-command-line--basics)
 
 <br>
 
@@ -372,6 +372,5 @@ Once you `rm` a file, it is permanently deleted.
       
 ---
 
-[👈 go back](https://github.com/Klosmi/html-basics#terminal--basics)
+[👈 go back](https://github.com/Klosmi/html-basics#terminal-command-line--basics)
 
-<br>
