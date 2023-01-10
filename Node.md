@@ -8,8 +8,18 @@ In other words, Node JS is an implementation of JS that runs outside of the brow
 
 It doesn't rely on other languages, it uses JavaScript. *(Before JS was only running on web browsers.)*
 
+Some examples of what is built or uses with Node JS: 
+- Web Servers
+- Command Line Tools (application that run in command line, eg. npm)
+- Native Apps (eg. VSCode, Slack is a Node application)
+- Games
+- Netflix uses it
+- etc.
+
 ---
 
 [👈 go back](https://github.com/Klosmi/html-basics#node-js--basics)
 
 <br>
+
+
