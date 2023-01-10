@@ -59,7 +59,8 @@
 <br>
 
 # [Node JS](https://nodejs.org/en/about/) -basics   
-1. [What is Node JS?](https://github.com/Klosmi/html-basics/blob/master/Node.md#what-is-node-js)    
+1. [What is Node JS?](https://github.com/Klosmi/html-basics/blob/master/Node.md#what-is-node-js)      
+2. [REPL](https://github.com/Klosmi/html-basics/blob/master/Node.md#repl)     
 
 <br>
 
