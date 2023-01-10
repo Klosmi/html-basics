@@ -396,7 +396,7 @@ Once you `rm` a file, it is permanently deleted.
       ```
 
   - __`rm -rf` + `directory name`__     
-    this delete a directory which contains file(s)   
+    this command deletes a directory which contains file(s)   
 
     Note, using `rm` with flags `rf` 
 
