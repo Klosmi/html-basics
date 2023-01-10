@@ -86,7 +86,7 @@ The REPL session provides a convenient way to quickly test simple JS code.
 
 <br>
 
-# [How to run Node files](https://www.brainstormcreative.co.uk/node-js/how-to-run-a-node-js-file/#:~:text=Run%20a%20Node%20js%20file%20in%20terminal%20%2F,to%20your%20node%20project%203%20Type%20node%20filename.js)   
+# [How to run files in Node?](https://www.brainstormcreative.co.uk/node-js/how-to-run-a-node-js-file/#:~:text=Run%20a%20Node%20js%20file%20in%20terminal%20%2F,to%20your%20node%20project%203%20Type%20node%20filename.js)   
 Write code in a JS file, instead of in the Terminal.
 
 - eg.:   
