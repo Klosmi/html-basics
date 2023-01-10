@@ -61,6 +61,7 @@
 # [Node JS](https://nodejs.org/en/about/) -basics   
 1. [What is Node JS?](https://github.com/Klosmi/html-basics/blob/master/Node.md#what-is-node-js)      
 2. [REPL](https://github.com/Klosmi/html-basics/blob/master/Node.md#repl)     
+3. [How to run files in Node?](https://github.com/Klosmi/html-basics/blob/master/Node.md#how-to-run-files-in-node)    
 
 <br>
 
