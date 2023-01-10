@@ -257,7 +257,7 @@ after the `man` we can type the name of a command we want to get information abo
 
 <br>
 
-#[touch command - create files](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/#:~:text=a%20text%20file-,Command%3A%20touch,-What%20it%20does)
+# [touch command - create files](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/#:~:text=a%20text%20file-,Command%3A%20touch,-What%20it%20does)
 
 __`touch`__ : create file(s)   
 However, the `man touch` manual says:    
