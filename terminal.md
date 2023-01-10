@@ -343,7 +343,7 @@ However, the `man touch` manual says:
 
 <br>
 
-# [`rm` command - delete files / folders](https://www.webservertalk.com/rm-and-rmdir-commands)    
+# [`rm` & rmdir command - delete files / folders](https://www.webservertalk.com/rm-and-rmdir-commands)    
 __`rm`__ : remove a file or folder     
 
 Once you `rm` a file, it is permanently deleted.
