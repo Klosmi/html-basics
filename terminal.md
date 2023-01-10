@@ -384,7 +384,7 @@ Once you `rm` a file, it is permanently deleted.
 
 - deleting __directory__ (folder(s))   
 
-  - `rmdir` + `directory name`   
+  - __`rmdir` + `directory name`__   
     It only works if the directory is empty.
 
     (With `rm` + `directory` would give a sort of error)
@@ -395,7 +395,8 @@ Once you `rm` a file, it is permanently deleted.
       rmdir Projects
       ```
 
-  - `rm -rf` + `directory name` : this delete a directory which contains file(s)   
+  - __`rm -rf` + `directory name`__     
+    this delete a directory which contains file(s)   
 
     Note, using `rm` with flags `rf` 
 
