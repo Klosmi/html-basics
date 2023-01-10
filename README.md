@@ -58,7 +58,7 @@
 
 <br>
 
-# [Terminal](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line) -basics  
+# [Terminal (command line)](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line) -basics  
 1. [Terminologies](https://github.com/Klosmi/html-basics/blob/master/terminal.md)    
 2. [Basic Commands (`LS`, `PWD`, etc.)](https://github.com/Klosmi/html-basics/blob/master/terminal.md#basic-commands-ls-pwd-etc)     
 3. [Absolute vs Relative path](https://github.com/Klosmi/html-basics/blob/master/terminal.md#absolute-vs-relative-path)      
