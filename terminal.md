@@ -299,3 +299,121 @@ However, the `man touch` manual says:
 [👈 go back](https://github.com/Klosmi/html-basics#terminal--basics)
 
 <br>
+
+# [touch command - create files](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/#:~:text=a%20text%20file-,Command%3A%20touch,-What%20it%20does)
+
+__`touch`__ : create file(s)   
+However, the `man touch` manual says:    
+  *The touch utility __sets the modification and access times of files__.*     
+  *__If any file does not exist, it is created with default permissions.__*    
+
+- how to use `touch`:  
+
+  `touch + space + `filename` (with extension, like  `filename.txt`)
+
+  - eg.:    
+    *Create an HTML file*    
+    ```
+    touch Redcat.html
+
+    // check if it's created
+    ls
+
+    Redcat.html 
+    ```
+
+- Make __multiple files__ at once
+  - eg.:   
+    *Create a folder named `Projects`, and go into it with `cd Projects`*    
+    *Create html, css, js files*   
+    ```
+    mkdir Projects
+
+    cd Projects
+
+    touch index.html styles.css app.js
+
+    ls
+    index.html    styles.css    app.js
+    ```
+
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#terminal--basics)
+
+<br>
+
+# [`rm` command - delete files / folders](https://www.webservertalk.com/rm-and-rmdir-commands)    
+__`rm`__ : remove a file or folder     
+
+Once you `rm` a file, it is permanently deleted.
+
+- how to use:   
+  `rm` + space + `filename`   
+
+  - eg.:   
+    *Delete the previously created html file*   
+    ```
+    cd Projects
+
+    ls
+    index.html    styles.css    app.js
+
+    // remove❗️
+    rm index.html
+
+    ls
+    styles.css    app.js
+    ```
+
+- remove multiple files    
+  - eg.:   
+    *Remove the css and js files*   
+    ```
+    cd Projects
+
+    ls
+    styles.css    app.js
+
+    // remove❗️
+    rm styles.css app.js
+
+    ls
+    // empty directory
+    ```
+
+- deleting __directory__ (folder(s))   
+
+  - `rmdir` + `directory name`   
+    It only works if the directory is empty.
+
+    (With `rm` + `directory` would give a sort of error)
+
+    - eg.:   
+      *Remove the previously created `Projects` folder*    
+      ```
+      rmdir Projects
+      ```
+
+  - `rm -rf` + `directory name` : this delete a directory which contains file(s)   
+
+    Note, using `rm` with flags `rf` 
+
+    `r`  = recursive (it means that removes everything, nested folders as well, different levels)    
+    `f`  = force` (it means removing without asking)
+
+    - eg.:    
+      *Removing a folder which contains files*   
+      ```
+      // Assume Projects exists and contains 3 files 
+      ls
+      Projects
+
+      rm -rf Projects
+      ```
+      
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#terminal--basics)
+
+<br>
