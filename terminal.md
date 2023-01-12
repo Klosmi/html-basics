@@ -609,7 +609,7 @@ So it means that `fs` has a [synchronous](https://nodejs.org/dist/latest-v18.x/d
     - eg.:    
       *The ASYNCHRONOUS way:*   
       *Lets [try it out](https://nodejs.org/dist/latest-v18.x/docs/api/fs.html#fsmkdirpath-options-callback), how does `fs.mkdir` work*   
-      *Note: we use the `require` function (explanation [see below](https://github.com/Klosmi/html-basics/edit/master/terminal.md#require))*  
+      *Note: we use the `require` function (explanation [see below](https://github.com/Klosmi/html-basics/blob/master/terminal.md#require))*  
       Terminal
       *creating the JS file*
       ```
@@ -652,7 +652,7 @@ So it means that `fs` has a [synchronous](https://nodejs.org/dist/latest-v18.x/d
     - eg.:   
       *The SYNCHRONOUS way:*   
       *Lets try it ou, how does [`fs.mkdirSync`](https://nodejs.org/dist/latest-v18.x/docs/api/fs.html#fsmkdirsyncpath-options)work*   
-      *Note: we use the `require` function (explanation [see below](https://github.com/Klosmi/html-basics/edit/master/terminal.md#require))*   
+      *Note: we use the `require` function (explanation [see below](https://github.com/Klosmi/html-basics/blob/master/terminal.md#require))*   
       JS
       ```
       // we have to require the module
