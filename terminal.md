@@ -411,7 +411,8 @@ Write code in a JS file, instead of in the Terminal.
 
   ### __[Process](https://nodejs.org/dist/latest-v18.x/docs/api/process.html)__ 
   is an object which provides information about, and control over, the current Node.js process.   
-  This includes:    
+  This includes: 
+  
     - the version of Node,  
     - it has methods to get input and write to the standard output (output in the console)
     - memory usage, 
