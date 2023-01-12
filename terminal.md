@@ -413,11 +413,11 @@ Write code in a JS file, instead of in the Terminal.
   is an object which provides information about, and control over, the current Node.js process.   
   This includes: 
   
-    - the version of Node,  
-    - it has methods to get input and write to the standard output (output in the console)
-    - memory usage, 
-    - information about the current working directory where the user is running the script in.
-    - etc.
+  - the version of Node,  
+  - it has methods to get input and write to the standard output (output in the console)
+  - memory usage, 
+  - information about the current working directory where the user is running the script in.
+  - etc.
 
   We type `process` in the terminal, itis always available, it is a big object with methods and properties.
    - eg.:   
