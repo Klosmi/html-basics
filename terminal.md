@@ -429,7 +429,7 @@ Write code in a JS file, instead of in the Terminal.
 # [`process` . `argv`]()
 
   ### __[Process](https://nodejs.org/dist/latest-v18.x/docs/api/process.html)__ 
-  is an object which provides information about, and control over, the current Node.js process.   
+  is an object which provides information about, and control over the current Node.js process.   
   This includes: 
   
   - the version of Node,  
