@@ -73,7 +73,7 @@ __Relative__: to access a directory is relative where we are.
   *We want to access `hello` directory from `/Users/mydirectory/hello`.*     
   *We are at `mydirectory`*    
   *The relative path to access `hello` directory is the following:*     
-  Terminal    
+   Terminal        
   ```
   Users/mydirectory/
 
@@ -90,7 +90,7 @@ __Absolute__: we can __access a specific directory from anywhere__ in our machin
 - eg.:      
   *We want to access `mydirectory` directory from `/Users/mydirectory/hello`.*    
   *We are at `hello` directory.* .  
-  *The _ansolute way to acces `mydirectory` is the followoing:*    
+  *The _ansolute way to acces `mydirectory` is the followoing:*      
    Terminal    
   ```
   cd Users/mydirectory
