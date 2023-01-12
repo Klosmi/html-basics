@@ -91,7 +91,7 @@ __Absolute__: we can __access a specific directory from anywhere__ in our machin
   *We want to access `mydirectory` directory from `/Users/mydirectory/hello`.*    
   *We are at `hello` directory.* .  
   *The _ansolute way to acces `mydirectory` is the followoing:*    
-  Terminal
+   Terminal
   ```
   cd Users/mydirectory
   ```
@@ -105,7 +105,7 @@ is the first __`/`__.
 
 - eg.:
   *The slash `/` before the `Users`.*    
-  Terminal
+   Terminal
   ```
   /Users/mydirectory/hello
 
@@ -123,9 +123,9 @@ Write __`cd ~`__ and it brngs us to our home directory.
 - The tilde __`~`__ always signifies our home directory.
 
 
-- eg.:
+- eg.:    
   *We are at the root directory. We want to go to our home directory.*    
-  Terminal
+   Terminal
   ```
   / cd ~
 
