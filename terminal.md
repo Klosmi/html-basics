@@ -26,6 +26,7 @@ it is a newer shell, it has newer freatures compared to __bash__.
 
 <br>
 
+
 # [Basic commands: `LS`, `PWD`, etc.](https://www.earthdatascience.org/workshops/setup-earth-analytics-python/introduction-to-bash-shell/#:~:text=cd%20~%20(the%20tilde).,in%20which%20the%20Terminal%20opens)      
 __Home Directory__ ► __`~`__ :     
 the default directory (the default location) in which the Terminal opens.    
