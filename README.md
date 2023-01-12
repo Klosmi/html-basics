@@ -62,6 +62,9 @@
 1. [What is Node JS?](https://github.com/Klosmi/html-basics/blob/master/Node.md#what-is-node-js)      
 2. [REPL](https://github.com/Klosmi/html-basics/blob/master/Node.md#repl)     
 3. [How to run files in Node?](https://github.com/Klosmi/html-basics/blob/master/Node.md#how-to-run-files-in-node)    
+4. [Running Node Files](https://github.com/Klosmi/html-basics/blob/master/terminal.md#running-node-files)     
+5. [`process` . `argv`](https://github.com/Klosmi/html-basics/blob/master/terminal.md#process--argv)     
+6. [`node:fs` - File System Module](https://github.com/Klosmi/html-basics/blob/master/terminal.md#nodefs---file-system-module)
 
 <br>
 
@@ -73,12 +76,12 @@
 5. [man command - manual](https://github.com/Klosmi/html-basics/blob/master/terminal.md#man-command--manual-command) 
 6. [touch command - create/update file(s)](https://github.com/Klosmi/html-basics/blob/master/terminal.md#touch-command---create-files)   
 7. [rm & rmdir - delete file(s) and directories](https://github.com/Klosmi/html-basics/blob/master/terminal.md#rm--rmdir-command---delete-files--folders)     
-8. [Running Node Files](https://github.com/Klosmi/html-basics/blob/master/terminal.md#running-node-files)     
-9. [`process` . `argv`](https://github.com/Klosmi/html-basics/blob/master/terminal.md#process--argv)     
-10. [`node:fs` - File System Module](https://github.com/Klosmi/html-basics/blob/master/terminal.md#nodefs---file-system-module)
+
 
 <br>
+
 <br>
+
 
 <sup>*These are my personal notes*
 *I can not guarantee that it's perfect, feel free to let me know if there is something that should or must be fiexd.*
