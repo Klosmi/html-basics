@@ -374,3 +374,36 @@ Once you `rm` a file, it is permanently deleted.
 
 [👈 go back](https://github.com/Klosmi/html-basics#terminal-command-line--basics)
 
+<br>
+
+# [Running Node files](https://www.brainstormcreative.co.uk/node-js/how-to-run-a-node-js-file/#:~:text=Run%20a%20Node%20js%20file%20in%20terminal%20%2F,to%20your%20node%20project%203%20Type%20node%20filename.js)   
+Write code in a JS file, instead of in the Terminal.
+
+- eg.:   
+  *creating a JS file in the Terminal (bash or zsh mode)*   
+    ```
+    touch myScript.js
+    ```
+  *in the JS file we write a simple test code*    
+    ```
+    for (let i = 0; i < 5; i++){
+      console.log("Hello!");
+    }
+    ```
+  *and to run it in Node, we write `node` + `the name of our file`, in this case `node myscript.js`*
+    ```
+    node myscript.js
+
+    Hello!
+    Hello!
+    Hello!
+    Hello!
+    Hello!
+    ```
+
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#terminal-command-line--basics)
+
+<br>
+
