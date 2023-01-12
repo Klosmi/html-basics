@@ -420,47 +420,47 @@ Write code in a JS file, instead of in the Terminal.
   - etc.
 
   We type `process` in the terminal, it is always available (it is a big object with lots of methods and properties).
-   - eg.:   
-    *Let's type `process` when we are in Node*   
-    Terminal
-    ```
-    > process
+ - eg.:   
+   *Let's type `process` when we are in Node*   
+   Terminal
+   ```
+   > process
 
-      process {
-        version: 'v18.13.0',
-        versions: {
-          node: '18.13.0',
-          v8: '10.2.154.23-node.21',
-          uv: '1.44.2',
-          zlib: '1.2.13',
-          brotli: '1.0.9',
-          ares: '1.18.1',
-          modules: '108',
-          nghttp2: '1.51.0',
-          napi: '8',
-          llhttp: '6.0.10',
-          uvwasi: '0.0.13',
-          openssl: '3.0.7+quic',
-          cldr: '42.0',
-          icu: '72.1',
-          tz: '2022f',
-          unicode: '15.0',
-          ngtcp2: '0.8.1',
-          nghttp3: '0.7.0'
-        },
-        arch: 'x64',
-        platform: 'darwin',
-        release: {
-          name: 'node',
-          lts: 'Hydrogen',
-          sourceUrl: 'https://nodejs.org/download/release/v18.13.0/node-v18.13.0.tar.gz',
-          headersUrl: 'https://nodejs.org/download/release/v18.13.0/node-v18.13.0-headers.tar.gz'
-        },
-        ...
-        ...
-        ...
-        etc
-    ```
+     process {
+       version: 'v18.13.0',
+       versions: {
+         node: '18.13.0',
+         v8: '10.2.154.23-node.21',
+         uv: '1.44.2',
+         zlib: '1.2.13',
+         brotli: '1.0.9',
+         ares: '1.18.1',
+         modules: '108',
+         nghttp2: '1.51.0',
+         napi: '8',
+         llhttp: '6.0.10',
+         uvwasi: '0.0.13',
+         openssl: '3.0.7+quic',
+         cldr: '42.0',
+         icu: '72.1',
+         tz: '2022f',
+         unicode: '15.0',
+         ngtcp2: '0.8.1',
+         nghttp3: '0.7.0'
+       },
+       arch: 'x64',
+       platform: 'darwin',
+       release: {
+         name: 'node',
+         lts: 'Hydrogen',
+         sourceUrl: 'https://nodejs.org/download/release/v18.13.0/node-v18.13.0.tar.gz',
+         headersUrl: 'https://nodejs.org/download/release/v18.13.0/node-v18.13.0-headers.tar.gz'
+       },
+       ...
+       ...
+       ...
+       etc
+   ```
 
   - eg.:   
     *Let's use a process __property__ like `release`, `version`*
