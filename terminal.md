@@ -590,3 +590,162 @@ And then the third one at index of two in ARG.
 [👈 go back](https://github.com/Klosmi/html-basics#terminal-command-line--basics)
 
 <br>
+
+# [`node:fs` - File System Module](https://nodejs.org/dist/latest-v18.x/docs/api/fs.html)
+
+it is a built-in Node.js module that allows us to __interact with the [file system](https://www.w3schools.com/nodejs/nodejs_filesystem.asp)__ on our computer.  
+
+This means __we can use fs to read and write files, create and delete directories, and more__.   
+So it has lots of methods. 
+
+<br>
+
+There are 2 different ways of reading files or making folders, deleting files and folders, etc.    
+
+So it means that `fs` has a [synchronous]https://nodejs.org/dist/latest-v18.x/docs/api/fs.html#synchronous-example) and an [asynchronous](https://nodejs.org/dist/latest-v18.x/docs/api/fs.html#callback-example) version:      
+  - __asynchronous__ form:   
+   it always take a completion callback as its last arguments. 
+
+    - eg.:    
+      *The ASYNCHRONOUS way:*   
+      *Lets [try it out](https://nodejs.org/dist/latest-v18.x/docs/api/fs.html#fsmkdirpath-options-callback), how does `fs.mkdir` work*   
+      *Note: we use the `require` function (explanation [see below](https://github.com/Klosmi/html-basics/edit/master/terminal.md#require))*  
+      Terminal
+      *creating the JS file*
+      ```
+      touch web.js
+      ``` 
+      JS
+      ```
+      // we have to require the module
+      const fs = require('fs');
+
+      fs.mkdir('directoryAsyncWay', { recursive: true }, (err) => {
+        console.log('We are in the callback')
+        if (err) throw err;       //← it throws an error if there is an error
+        });
+        console.log('We are after mkdir in the file');
+      ```
+      Terminal
+      *call the JS file*   
+      *Because it is asynchronous, the "After mkdir in the file - 2nd" printed out 1st.*    
+      *When the directory is created (mkdir), then the callback ran: "In the callback - 1st" printed out.* 
+      ```
+      node web.js
+
+      // After mkdir in the file - 2nd     //←printed out 1st
+      // In the callback - 1st             //←printed out last
+      ```
+      *Verify that directory is created*   
+      Terminal
+      ```
+      ls
+
+      directoryAsyncWay   //← directory created, it's an empty folder
+      ```
+
+  - __synchronous__ form:   
+   it will block the entire process - stops any other code - until they complete halting all connections.      
+  (So, exceptions that occur using synchronous operations are thrown immediately and must be handled with *try and catch*.)  
+  This is eg. the [`fs.mkdirSync(path[, options])`](https://nodejs.org/dist/latest-v18.x/docs/api/fs.html#fsmkdirsyncpath-options)
+
+    - eg.:   
+      *The SYNCHRONOUS way:*   
+      *Lets try it ou, how does [`fs.mkdirSync`](https://nodejs.org/dist/latest-v18.x/docs/api/fs.html#fsmkdirsyncpath-options)work*   
+      *Note: we use the `require` function (explanation [see below](https://github.com/Klosmi/html-basics/edit/master/terminal.md#require))*   
+      JS
+      ```
+      // we have to require the module
+      const fs = require('fs');
+
+      fs.mkdirSync('directorySyncWay')     //← the directory name
+      console.log('After mkdir in the file');
+      ```
+      *It executes in a row: creates the directory 1st, print out the message 2nd*
+      Terminal
+      ```
+      node web.js
+
+      // After mkdir in the file
+      ```
+      *Verify that directory is created*    
+      Terminal
+      ```
+      ls
+      directorySyncWay   //← directory created
+      ```
+
+
+### [Require](https://www.w3schools.com/nodejs/nodejs_filesystem.asp)   
+`require` is a function that is used to import the functionality of a Node.js module. So it allows us to include and use code from another JavaScript file in our current file. It is a way to reuse code. 
+
+We use `require` to include a module in our code by __passing the name or path of the module as a string argument__.    
+  eg.:     
+  *to include the built-in `fs` module*   
+  JS
+  ```
+  const fs = require('fs');
+  ```
+
+In other words: since __`fs` is a module__, practically that means we have to __require__, by default it is not defined (unlike `process` which is always on the scope). 
+
+<br> 
+
+Practice by using the synchronous way of creating files and directory:
+  
+  - *We make a Node script that creates our standard HTML, CSS and JavaScript file(s) in a new folder.*    
+  *(What our script does: make a folder, make files, put the files in the folder)*    
+
+    *create the JS file*
+    Terminal
+    ```
+    touch web.js
+    ```
+    *Using argv with index 2 (check it at the [argv]() section).*
+    *Creating the folder. If folder name undefined will be named as 'Project'*
+    JS
+    ```
+    const fs = require('fs');
+    // folder name, if it is undefined than it called 'Project'
+    const folderName = process.argv[2] || 'Project'
+
+    fs.mkdirSync(folderName);        //← the directory name
+    ```
+    *Creating the files, they will be placed in the folder.*   
+    *We are using the [`fs.writeFile(file, data[, options], callback)`](https://nodejs.org/dist/latest-v18.x/docs/api/fs.html#fswritefilefile-data-options-callback) method, it writes data to a file (if already exists, it replaces the file).*      
+    *Now we just create empty files.*
+    JS
+    ```
+    const fs = require('fs');
+    // folder name, if it is undefined than it called 'Project'
+    const folderName = process.argv[2] || 'Project'
+
+    // try and catch as best safety practice
+    try {
+        fs.mkdirSync(folderName);        //← the directory name
+        //to go inside of that directory: use string templateliteral
+        fs.writeFileSync(`${folderName}/index.html`, '')
+        fs.writeFileSync(`${folderName}/app.js`, '')
+        fs.writeFileSync(`${folderName}/styles.css`, '')
+    } catch(e) {
+        console.log("Sorry, it's an error");
+        console.log(e);
+    }
+    ```
+    *We name the directory `myProject`, and it will create the 3 files in that directory.*
+    Terminal
+    ```
+    node web.js myproject
+    ls
+    myproject
+
+    cd myproject
+    ls
+    app.js     index.html     styles.css
+    ```
+    
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#terminal-command-line--basics)
+
+<br>
