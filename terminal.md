@@ -73,6 +73,7 @@ __Relative__: to access a directory is relative where we are.
   *We want to access `hello` directory from `/Users/mydirectory/hello`.*     
   *We are at `mydirectory`*    
   *The relative path to access `hello` directory is the following:*     
+  Terminal
   ```
   Users/mydirectory/
 
@@ -90,6 +91,7 @@ __Absolute__: we can __access a specific directory from anywhere__ in our machin
   *We want to access `mydirectory` directory from `/Users/mydirectory/hello`.*    
   *We are at `hello` directory.* .  
   *The _ansolute way to acces `mydirectory` is the followoing:*    
+  Terminal
   ```
   cd Users/mydirectory
   ```
@@ -102,7 +104,8 @@ is the first __`/`__.
 - `cd /` bring us to our root directory.    
 
 - eg.:
-  *The slash `/` before the `Users`.*
+  *The slash `/` before the `Users`.*    
+  Terminal
   ```
   /Users/mydirectory/hello
 
@@ -121,7 +124,8 @@ Write __`cd ~`__ and it brngs us to our home directory.
 
 
 - eg.:
-  *We are at the root directory. We want to go to our home directory.*  
+  *We are at the root directory. We want to go to our home directory.*    
+  Terminal
   ```
   / cd ~
 
@@ -146,6 +150,7 @@ Write __`cd ~`__ and it brngs us to our home directory.
 
  - eg.:   
  *Make a new folder named `Cats`*     
+ Terminal
 ```
 mkdir Cats
 ```
@@ -154,6 +159,7 @@ mkdir Cats
 
   *Make 2 folders, __subdirectories__ in the `Cats` folder.*    
   *To make all at once, we can separate the folder names we create by space.*    
+  Terminal
   ```
   //go to Cats folder
   cd Cats
@@ -169,6 +175,7 @@ mkdir Cats
 
 - quick way of making directory and it's subdirectory:
   *In the `Cats` folder we create 2 folders, Rats folder and Beavers folder*    
+  Terminal
   ```
   Cats/Rats Beavers
 
@@ -191,7 +198,8 @@ __`man`__ : short for manual, it is a help command.
 after the `man` we can type the name of a command we want to get information about.
 
 - eg.:    
-  *We want to get information about the `ls` command*    
+  *We want to get information about the `ls` command*   
+  Terminal
   ```
   man ls
 
@@ -247,6 +255,7 @@ after the `man` we can type the name of a command we want to get information abo
  - we can __combine the flags__ (❗️) of a specific command   
    - eg.:   
      *We combine the `ls` command's flag `-l` + `-a`. Where`-l` gives long list and `-a` shows hidden files.*    
+     Terminal
      ```
      ls -la
      ```
@@ -270,6 +279,7 @@ However, the `man touch` manual says:
 
   - eg.:    
     *Create an HTML file*    
+    Terminal
     ```
     touch Redcat.html
 
@@ -283,6 +293,7 @@ However, the `man touch` manual says:
   - eg.:   
     *Create a folder named `Projects`, and go into it with `cd Projects`*    
     *Create html, css, js files*   
+    Terminal
     ```
     mkdir Projects
 
@@ -310,6 +321,7 @@ Once you `rm` a file, it is permanently deleted.
 
   - eg.:   
     *Delete the previously created html file*   
+    Terminal
     ```
     cd Projects
 
@@ -326,6 +338,7 @@ Once you `rm` a file, it is permanently deleted.
 - remove multiple files    
   - eg.:   
     *Remove the css and js files*   
+    Terminal
     ```
     cd Projects
 
@@ -346,11 +359,12 @@ Once you `rm` a file, it is permanently deleted.
 
     (With `rm` + `directory` would give a sort of error)
 
-    - eg.:   
-      *Remove the previously created `Projects` folder*    
-      ```
-      rmdir Projects
-      ```
+   - eg.:   
+     *Remove the previously created `Projects` folder*    
+     Terminal
+     ```
+     rmdir Projects
+     ```
 
   - __`rm -rf` + `directory name`__     
     this command deletes a directory which contains file(s)   
@@ -360,15 +374,16 @@ Once you `rm` a file, it is permanently deleted.
     `r`  = recursive (it means that removes everything, nested folders as well, different levels)    
     `f`  = force` (it means removing without asking)
 
-    - eg.:    
-      *Removing a folder which contains files*   
-      ```
-      // Assume Projects exists and contains 3 files 
-      ls
-      Projects
+   - eg.:    
+     *Removing a folder which contains files*   
+     Terminal
+     ```
+     // Assume Projects exists and contains 3 files 
+     ls
+     Projects
 
-      rm -rf Projects
-      ```
+     rm -rf Projects
+     ```
       
 ---
 
@@ -381,16 +396,19 @@ Write code in a JS file, instead of in the Terminal.
 
 - eg.:   
   *creating a JS file in the Terminal (bash or zsh mode)*   
+   Terminal
     ```
     touch myScript.js
     ```
   *in the JS file we write a simple test code*    
+   JS
     ```
     for (let i = 0; i < 5; i++){
       console.log("Hello!");
     }
     ```
-  *and to run it in Node, we write `node` + `the name of our file`, in this case `node myscript.js`*
+  *and to run it in Node, we write `node` + `the name of our file`, in this case `node myscript.js`*    
+   Terminal
     ```
     node myscript.js
 
@@ -463,7 +481,8 @@ Write code in a JS file, instead of in the Terminal.
    ```
 
   - eg.:   
-    *Let's use a process __property__ like `release`, `version`*
+    *Let's use a process __property__ like `release`, `version`*     
+    Terminal
     ```
     > process.release
     {
@@ -478,7 +497,8 @@ Write code in a JS file, instead of in the Terminal.
     ```
   
   - eg.:   
-    *Let's use a process __method__ like `cwd` (path we are currently working)'*
+    *Let's use a process __method__ like `cwd` (path we are currently working)*    
+    Terminal
     ```
      process.cwd()
     '/Users/Documents/Node/MyLibrary'
@@ -487,12 +507,14 @@ Write code in a JS file, instead of in the Terminal.
 __[args]()__ represents the list of arguments that were passed in when invoking the function.
 
 - eg.:   
-  *We create a new JS file (args.js) and we write the following code into it and call it from the Terminal*    
+  *We create a new JS file (args.js) and we write the following code into it and call it from the Terminal*      
+  JS
   ```
   console.log("Hello there!")
   console.log(process.argv)
   ```
   *It looks like this in the Termnial*    
+  Terminal
   ```
   node args.js
 
@@ -515,7 +537,8 @@ __[args]()__ represents the list of arguments that were passed in when invoking 
   So basically it means that we can pass in arguments to a script (not to a function, but it is a similar idea). 
    - eg.:    
     *We have our node scripts `args.js` and then we can __pass arguments__ separated by space `argument01` `argument02` `argument03`*   
-    *The arguments we just gave are all __added to the `argv` array__*
+    *The arguments we just gave are all __added to the `argv` array__*     
+    Terminal
      ```
      node args.js argument01 argument02 argument03
 
@@ -529,7 +552,7 @@ __[args]()__ represents the list of arguments that were passed in when invoking 
     *Create another JS file, named `sayHi.js`, and it will say hello to the arguments we pass in to the `argv`.*    
     Terminal 
     ```
-    // JS file
+    // create JS file
     touch sayHi.js
 
     // give any number of arguemnts
