@@ -61,10 +61,9 @@
 # [Node JS](https://nodejs.org/en/about/) -basics   
 1. [What is Node JS?](https://github.com/Klosmi/html-basics/blob/master/Node.md#what-is-node-js)      
 2. [REPL](https://github.com/Klosmi/html-basics/blob/master/Node.md#repl)     
-3. [How to run files in Node?](https://github.com/Klosmi/html-basics/blob/master/Node.md#how-to-run-files-in-node)    
-4. [Running Node Files](https://github.com/Klosmi/html-basics/blob/master/terminal.md#running-node-files)     
-5. [`process` . `argv`](https://github.com/Klosmi/html-basics/blob/master/terminal.md#process--argv)     
-6. [`node:fs` - File System Module](https://github.com/Klosmi/html-basics/blob/master/terminal.md#nodefs---file-system-module)
+3. [How to run files in Node?](https://github.com/Klosmi/html-basics/blob/master/Node.md#running-node-files)    
+4. [`process` . `argv`](https://github.com/Klosmi/html-basics/blob/master/Node.md#process--argv)     
+5. [`node:fs` - File System Module](https://github.com/Klosmi/html-basics/blob/master/Node.md#nodefs---file-system-module)
 
 <br>
 
