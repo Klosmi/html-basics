@@ -415,7 +415,7 @@ Write code in a JS file, instead of in the Terminal.
   
   - the version of Node,  
   - it has methods to get input and write to the standard output (output in the console)
-  - memory usage, 
+  - memory usage 
   - information about the current working directory where the user is running the script in.
   - etc.
 
