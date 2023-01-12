@@ -407,3 +407,155 @@ Write code in a JS file, instead of in the Terminal.
 
 <br>
 
+# [`process` . `argv`]()
+
+  ### __[Process](https://nodejs.org/dist/latest-v18.x/docs/api/process.html)__ 
+  is an object which provides information about, and control over, the current Node.js process.   
+  This includes: 
+    - the verion of Node, 
+    - it has methods to get input and write to the standard output (output in the console)
+    - memory usage, 
+    - information about the current working directory where the user is running the script in.
+    - etc.
+
+  We type `process` in the terminal, itis always available, it is a big object with methods and properties.
+   - eg.:   
+    *Let's type `process` when we are in Node*
+    ```
+    > process
+
+      process {
+        version: 'v18.13.0',
+        versions: {
+          node: '18.13.0',
+          v8: '10.2.154.23-node.21',
+          uv: '1.44.2',
+          zlib: '1.2.13',
+          brotli: '1.0.9',
+          ares: '1.18.1',
+          modules: '108',
+          nghttp2: '1.51.0',
+          napi: '8',
+          llhttp: '6.0.10',
+          uvwasi: '0.0.13',
+          openssl: '3.0.7+quic',
+          cldr: '42.0',
+          icu: '72.1',
+          tz: '2022f',
+          unicode: '15.0',
+          ngtcp2: '0.8.1',
+          nghttp3: '0.7.0'
+        },
+        arch: 'x64',
+        platform: 'darwin',
+        release: {
+          name: 'node',
+          lts: 'Hydrogen',
+          sourceUrl: 'https://nodejs.org/download/release/v18.13.0/node-v18.13.0.tar.gz',
+          headersUrl: 'https://nodejs.org/download/release/v18.13.0/node-v18.13.0-headers.tar.gz'
+        },
+        ...
+        ...
+        ...
+        etc
+    ```
+
+  - eg.:   
+    *Let's use a process __property__ like `release`, `version`*
+    ```
+    > process.release
+    {
+      name: 'node',
+      lts: 'Hydrogen',
+      sourceUrl: 'https://nodejs.org/download/release/v18.13.0/node-v18.13.0.tar.gz',
+      headersUrl: 'https://nodejs.org/download/release/v18.13.0/node-v18.13.0-headers.tar.gz'
+    }
+
+    > process.version
+    'v18.13.0'
+    ```
+  
+  - eg.:   
+    *Let's use a process __method__ like `cwd` (path we are currently working)'*
+    ```
+     process.cwd()
+    '/Users/Documents/Node/MyLibrary'
+    ```
+
+__[args]()__ represents the list of arguments that were passed in when invoking the function.
+
+- eg.:   
+  *We create a new JS file (args.js) and we write the following code into it and call it from the Terminal*    
+  ```
+  console.log("Hello there!")
+  console.log(process.argv)
+  ```
+  *It looks like this in the Termnial*    
+  ```
+  node args.js
+
+  Hello there!
+  [
+  '/Users/Documents/bin/v14.15.0/bin/node',   //← executable path 
+  '/Users/Documents/Node/MyLibrary/args.js'   //← the path to the file
+  ]
+  ```
+
+  ### So, what is __[`process.argv`](https://nodejs.org/dist/latest-v18.x/docs/api/process.html#processargv)__ ?     
+  In short:     
+  it is a way to get arguments in the comand line.   
+  In detail:   
+  it is a property that returns an __array__ containing the command-line arguments passed when the Node.js process was launched. So, it means __we can pass elements as an argument__, and it will add it to the `argv`.   
+  - 1st element is the [process.execPath](https://nodejs.org/dist/latest-v18.x/docs/api/process.html#processexecpath) (that's where the node executable is)   
+  - 2nd element is the JavaScript file that we are executing. 
+  - any remaining elements are the additional command-line arguments     
+
+  So basically it means that we can pass in arguments to a script (not to a function, but it is a similar idea). 
+   - eg.:    
+    *We have our node scripts `args.js` and then we can __pass arguments__ separated by space `argument01` `argument02` `argument03`*   
+    *The arguments we just gave are all __added to the `argv` array__*
+     ```
+     node args.js argument01 argument02 argument03
+
+      '/Users/Documents/bin/v14.15.0/bin/node',   //← executable path 
+      '/Users/Documents/Node/MyLibrary/args.js',  //← the path to the file
+      'argument01',    //← arguments added to the argv array
+      'argument02',
+      'argument03'
+     ```
+    *With another example, let's see how can we use these arguments.*   
+    *Create another JS file, named `sayHi.js`, and it will say hello to the arguments we pass in to the `argv`.*    
+    Terminal 
+    ```
+    // JS file
+    touch sayHi.js
+
+    // give any number of arguemnts
+    node sayHi.js John Paul Ringo
+    ```    
+    JS file   
+    ```
+    const args = process.argv.slice(2)  //← slice from index of 2
+    
+    //loop over args, and say hi! to each argument
+    for(let arg of args){
+      console.log(`Hi ${arg} !`)
+    }
+    ```
+    Terminal    
+    *give any number of arguemnts, hit enter*
+    ```
+    node sayHi.js John Paul Ringo
+
+    // result
+
+    Hi John !
+    Hi Paul !
+    Hi Ringo !
+    ```
+    
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#terminal-command-line--basics)
+
+<br>
