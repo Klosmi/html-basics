@@ -149,11 +149,11 @@ Write __`cd ~`__ and it brngs us to our home directory.
  __`mkdir`__ : (make directory) it creates a new empty folder.
 
  - eg.:   
- *Make a new folder named `Cats`*     
- Terminal
-```
-mkdir Cats
-```
+  *Make a new folder named `Cats`*     
+  Terminal
+  ```
+  mkdir Cats
+  ```
 
 - __multiple sub direcotries__ in one go:
 
