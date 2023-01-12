@@ -73,8 +73,8 @@
 5. [man command = manual](https://github.com/Klosmi/html-basics/blob/master/terminal.md#man-command--manual-command) 
 6. [touch command - create/update file(s)](https://github.com/Klosmi/html-basics/blob/master/terminal.md#touch-command---create-files)   
 7. [rm & rmdir - delete file(s) and directories](https://github.com/Klosmi/html-basics/blob/master/terminal.md#rm--rmdir-command---delete-files--folders)     
-8. [Running Node Files]()     
-9. [[`process` . `argv`]()
+8. [Running Node Files](https://github.com/Klosmi/html-basics/blob/master/terminal.md#running-node-files)     
+9. [`process` . `argv`]()
 
 <sup>*These are my personal notes*
 *I can not guarantee that it's perfect, feel free to let me know if there is something that should or must be fiexd.*
