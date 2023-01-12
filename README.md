@@ -77,6 +77,9 @@
 9. [`process` . `argv`](https://github.com/Klosmi/html-basics/blob/master/terminal.md#process--argv)     
 10. [`node:fs` - File System Module](https://github.com/Klosmi/html-basics/blob/master/terminal.md#nodefs---file-system-module)
 
+<br>
+<br>
+
 <sup>*These are my personal notes*
 *I can not guarantee that it's perfect, feel free to let me know if there is something that should or must be fiexd.*
 *Several parts are gathered from different sites and online/offline courses, no intention to harm any copyrights. Web is open, (or at least should be) free and should be accessible to everyone.* ;)</sup>
