@@ -243,6 +243,7 @@ after the `man` we can type the name of a command we want to get information abo
    
    - eg.:    
      *the `-S` flag of `ls`*    
+     Terminal      
      ```
      -S   Sort by size (largest file first) before sorting the operands in lexicographical order.   
      ```
