@@ -595,7 +595,7 @@ And then the third one at index of two in ARG.
 
 it is a built-in Node.js module that allows us to __interact with the [file system](https://www.w3schools.com/nodejs/nodejs_filesystem.asp)__ on our computer.  
 
-This means __we can use fs to read and write files, create and delete directories, and more__.   
+This means __we can use `fs` to read and write files, create and delete directories, and more__.   
 So it has lots of methods. 
 
 <br>
