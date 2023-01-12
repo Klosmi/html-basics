@@ -150,10 +150,10 @@ Write __`cd ~`__ and it brngs us to our home directory.
 
  - eg.:   
   *Make a new folder named `Cats`*     
-  Terminal
-  ```
-  mkdir Cats
-  ```
+   Terminal    
+   ```
+   mkdir Cats
+   ```
 
 - __multiple sub direcotries__ in one go:
 
