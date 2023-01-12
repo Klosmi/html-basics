@@ -421,7 +421,8 @@ Write code in a JS file, instead of in the Terminal.
 
   We type `process` in the terminal, it is always available (it is a big object with lots of methods and properties).
    - eg.:   
-    *Let's type `process` when we are in Node*
+    *Let's type `process` when we are in Node*   
+    Terminal
     ```
     > process
 
