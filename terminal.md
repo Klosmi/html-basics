@@ -604,7 +604,7 @@ There are 2 different ways of reading files or making folders, deleting files an
 
 So it means that `fs` has a [synchronous](https://nodejs.org/dist/latest-v18.x/docs/api/fs.html#synchronous-example) and an [asynchronous](https://nodejs.org/dist/latest-v18.x/docs/api/fs.html#callback-example) version:      
   - __asynchronous__ form:   
-   it always take a completion callback as its last arguments. 
+   it always takes a completion callback as its last arguments. 
 
     - eg.:    
       *The ASYNCHRONOUS way:*   
