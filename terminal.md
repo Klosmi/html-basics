@@ -419,7 +419,7 @@ Write code in a JS file, instead of in the Terminal.
   - information about the current working directory where the user is running the script in.
   - etc.
 
-  We type `process` in the terminal, itis always available, it is a big object with methods and properties.
+  We type `process` in the terminal, it is always available (it is a big object with lots of methods and properties).
    - eg.:   
     *Let's type `process` when we are in Node*
     ```
