@@ -103,7 +103,7 @@ Go to __Root directory__:
 is the first __`/`__.   
 - `cd /` bring us to our root directory.    
 
-- eg.:
+- eg.:    
   *The slash `/` before the `Users`.*    
    Terminal    
   ```
