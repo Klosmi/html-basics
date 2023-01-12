@@ -558,7 +558,12 @@ __[args]()__ represents the list of arguments that were passed in when invoking 
 
     // give any number of arguemnts
     node sayHi.js John Paul Ringo
-    ```    
+    ``` 
+    *Note the `slice(2)`. We use it because we need the 3rd argument (John, Paul, etc.). 1st one is the executable path. The 2nd one is the path to the file. The 3rd one at index of two in `argv` (the John, Paul, etc.).*
+
+The second one is the path to the file.
+
+And then the third one at index of two in ARG. 
     JS file   
     ```
     const args = process.argv.slice(2)  //← slice from index of 2
