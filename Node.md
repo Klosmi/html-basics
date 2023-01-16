@@ -444,3 +444,143 @@ Practice by using the synchronous way of creating files and directory:
 
 <br>
 
+# [`module.exports`](https://www.tutorialsteacher.com/nodejs/nodejs-module-exports)     
+ `exports` is an object. So it exposes whatever we assigned to it as a `module`.   
+ For example, if we assign a string literal then it will expose that string literal as a module.
+
+ <br>
+
+## The way [`module.exports`](https://nodejs.org/dist/latest-v18.x/docs/api/modules.html#moduleexports) works with `require`   
+When we require a file, we are not going to get anything from that specific JS file *unless* in that specific file we explicitly say what we want to export out of the file.   
+- eg.:    
+  *Let's creat 2 JS files. One called math.js the other called app.js.*   
+  *math.js has some basic functions*    
+  JS (math.js)
+  ```
+  const add = (x, y) => x + y;
+  const PI = 3.14159;
+  const square = x => x * x;
+  ```
+  *In app.js we `require` the math.js file.*   
+  *So we can `require` an exisiting file, not only built in modules.*    
+  *We have to use `./` before the file name in the require line. `.` dot is the specific directory where our file which we requiring is placed.*    
+  *Also, we don't have to us the `.js` after the file name.*   
+  JS (app.js)
+  ```
+  const math = require('./math');
+  console.log(math);
+  ```
+  *When we run app.js in the Terminal, we recieve an empty obejct `{}`. So require worked.*   
+  Terminal   
+  ```
+  > node app.js
+
+  {}
+  ```
+When we require a file, we not going to get anything from the specific JS file unless in that specific JS file we explicitly say what we want to export out of the file.     
+By __default, it is the `module.exports`__, an empty object. 
+ - eg.:   
+    *So, in our math.js and app.js example, we have to say what we want to export.*   
+    *So here, we set the functions to the `module.exports`, so th app.js file can require those functions*    
+    JS math.js
+    ```
+    const add = (x, y) => x + y;
+    const PI = 3.14159;
+    const square = x => x * x;
+
+    module.exports.add = add;
+    module.exports.PI = PI;
+    module.exports.square = square;
+    ```   
+    *Now, we have access to thses functions. Lets run the app.js in the Terminal.*   
+    Terminal    
+    ```
+    > node app.js
+    
+    { add: [Function: add], PI: 3.14159, square: [Function: square] }
+    ```
+    *We can specify what we want to print out in the app.js console.log → here `(math.squre(5))`*   
+    JS app.js
+    ```
+    const math = require('./math');
+    console.log(math.squre(5));
+    ```
+    *We receive the sqaure of 5*
+    Terminal   
+    ```
+    > node app.js
+
+    25
+    ```
+    *Shorter ways of adding functions to the `module.exports`*    
+    *1st way is create an object with all the functions*   
+    JS math.js   
+    ```
+    const add = (x, y) => x + y;
+    const PI = 3.14159;
+    const square = x => x * x;  
+
+    const math = {
+      add: add,
+      PI: PI,
+      square: square
+    }
+    module.exports = math;
+    ```
+    *2nd way add functions directly onto the `module.exports`*   
+    ```
+    module.exports.add = (x, y) => x + y;
+    module.exports.PI = 3.14159;
+    module.exports.square = x => x * x;  
+    ```
+
+  ## [`exports` shortcut](https://nodejs.org/dist/latest-v18.x/docs/api/modules.html#moduleexports:~:text=x.a)%3B-,exports%20shortcut,-%23)   
+  The module allows a shortcut, so that `module.exports.f = ...` can be written more succinctly as `exports.f = ....`    
+  However, be aware that like any variable, if a new value is assigned to exports, it is no longer bound to module.exports.   
+
+  So it's just a quick reference to `module.exports`.   
+  - eg.:   
+    *the shortcut `exports`*  
+    JS math.js
+    ```
+    const add = (x, y) => x + y;
+    const PI = 3.14159;
+    const square = x => x * x; 
+
+    exports.PI = PI;
+    exports.square = square;
+    ```
+    JS app.js  
+    ```
+    const math = require('./math');
+    console.log(math.PI);
+    console.log(math.square(5));
+    ```
+    Terminal
+    ```
+    3.14159
+    25
+    ```
+    *But, if we assign a string literal, it will think `exports` just a variable, and give ans error.   
+    JS math.js 
+    ```
+    const add = (x, y) => x + y;
+    const PI = 3.14159;
+    const square = x => x * x; 
+
+    exports = "Hello!";
+    exports.PI = PI;
+    exports.square = square;  
+    ```
+    Terminal   
+    ```
+    > app.js
+
+    TypeError: math.square is not a function...
+    ```
+     
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#node-js--basics)
+
+<br>  
