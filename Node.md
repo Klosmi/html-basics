@@ -450,7 +450,7 @@ Practice by using the synchronous way of creating files and directory:
 
  <br>
 
-## The way [`module.exports`](https://nodejs.org/dist/latest-v18.x/docs/api/modules.html#moduleexports) works with `require`   
+## The way [`module.exports`](https://nodejs.org/dist/latest-v18.x/docs/api/modules.html#moduleexports) works with [`require`](https://github.com/Klosmi/html-basics/blob/master/Node.md#require)   
 When we require a file, we are not going to get anything from that specific JS file *unless* in that specific file we explicitly say what we want to export out of the file.   
 - eg.:    
   *Let's creat 2 JS files. One called math.js the other called app.js.*   
