@@ -561,7 +561,7 @@ By __default, it is the `module.exports`__, an empty object.
     3.14159
     25
     ```
-    *But, if we assign a string literal, it will think `exports` just a variable, and give ans error.   
+    *But, if we assign a string literal, it will think `exports` just a variable, and give ans error.*   
     JS math.js 
     ```
     const add = (x, y) => x + y;
