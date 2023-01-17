@@ -585,7 +585,7 @@ By __default, it is the `module.exports`__, an empty object.
 
 <br>  
 
-# [Require an enitre Directory](https://lavalite.org/blog/require-all-files-in-the-folder-in-nodejs)
+# [Require an entire Directory](https://lavalite.org/blog/require-all-files-in-the-folder-in-nodejs)
   to require all the content from a directory.   
   __In Node the main file for a specific directory is called the `index.js`__    
  
