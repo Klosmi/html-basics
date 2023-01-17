@@ -77,6 +77,7 @@
 5. [man command - manual](https://github.com/Klosmi/html-basics/blob/master/terminal.md#man-command--manual-command) 
 6. [touch command - create/update file(s)](https://github.com/Klosmi/html-basics/blob/master/terminal.md#touch-command---create-files)   
 7. [rm & rmdir - delete file(s) and directories](https://github.com/Klosmi/html-basics/blob/master/terminal.md#rm--rmdir-command---delete-files--folders)     
+8. [NPM](https://github.com/Klosmi/html-basics/blob/master/Node.md#npm).   
 
 
 <br>
