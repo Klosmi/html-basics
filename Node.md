@@ -592,7 +592,7 @@ By __default, it is the `module.exports`__, an empty object.
   When we require an enitre directory, Node is looking for the `index.js` file. What the index.js exports, that specific directory is exporting❗️
 
 - eg.:    
-  *We have a directory (colors), inside we have 3 files (blue.js, yellow.js, red.js)*   
+  *We have a directory (`colors`), inside we have 3 files (`blue.js`, `yellow.js`, `red.js`)*   
   *Each file is just an `exports`, very simple objects.*   
  
   JS blue.js
