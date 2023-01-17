@@ -589,7 +589,7 @@ By __default, it is the `module.exports`__, an empty object.
   to require all the content from a directory.   
   __In Node the main file for a specific directory is called the `index.js`__    
  
-  When we require an enitry directory, Node is looking for the `index.js` file. What the index.js exports, that specific directory is exporting❗️
+  When we require an enitre directory, Node is looking for the `index.js` file. What the index.js exports, that specific directory is exporting❗️
 
 - eg.:    
   *We have a directory (colors), inside we have 3 files (blue.js, yellow.js, red.js)*   
@@ -675,7 +675,7 @@ By __default, it is the `module.exports`__, an empty object.
   ]
   ```
 
-  Requiring an entiry directory is useful when we working with packeges.
+  Requiring an entire directory is useful when we working with packeges.
   
   
   ---
