@@ -584,3 +584,102 @@ By __default, it is the `module.exports`__, an empty object.
 [👈 go back](https://github.com/Klosmi/html-basics#node-js--basics)
 
 <br>  
+
+[Require an enitre Directory](https://lavalite.org/blog/require-all-files-in-the-folder-in-nodejs)
+  to require all the content from a directory.   
+  __In Node the main file for a specific directory is called the `index.js`__    
+ 
+  When we require an enitry directory, Node is looking for the `index.js` file. What the index.js exports, that specific directory is exporting❗️
+
+- eg.:    
+  *We have a directory (colors), inside we have 3 files (blue.js, yellow.js, red.js)*   
+  *Each file is just an `exports`, very simple objects.*   
+ 
+  JS blue.js
+  ```
+  module.exports = {
+    name: "navy blue",
+    tone: "saturated"
+  } 
+  ```
+  JS yellow.js
+  ```
+  module.exports = {
+    name: "lemon",
+    tone: "light"
+  }
+  ``` 
+  JS red.js
+  ```
+  module.exports = {
+    name: "velvet",
+    tone: "dark"
+  }
+  ```
+  *We combine all the 3 files, put them in an array in another file (index.js).*    
+  JS index.js
+  ```
+  //require the files
+  const blue = require('./blue');
+  const yellow = require('./yellow');
+  const red = require('./red');
+
+  // combine into an array
+  const mainColors = [blue, yellow, red];
+  console.log(mainColors);
+  ```   
+  *Check in the Terminal. It prints out an object.*    
+  Terminal
+  ```
+  > index.js
+
+  [
+    { name: 'navy blue', tone: 'saturated' },
+    { name: 'lemon', tone: 'light' },
+    { name: 'velvet', tone: 'dark' }
+  ]
+  ```
+  *`module.exports` the `mainColors` object in the `index.js` files* 
+  JS index.js
+  ```
+  //require the files
+  const blue = require('./blue');
+  const yellow = require('./yellow');
+  const red = require('./red');
+
+  //combine into an array
+  const mainColors = [blue, yellow, red];
+
+  //exports
+  module.exports = mainColors;
+  ```
+  *outside of the `colors` directory in another file (app.js), we `require` the index.js file's `mainColors` object*    
+
+  JS app.js
+  ```
+  //require
+  const allColors = require('./colors');
+  console.log(allColors);
+  ```  
+  *We verify it by console.log(). It prints out what the index.js file exports*    
+
+  Terminal
+  ```
+  > cd colors
+  > node app.js
+
+  [
+    { name: 'navy blue', tone: 'saturated' },
+    { name: 'lemon', tone: 'light' },
+    { name: 'velvet', tone: 'dark' }
+  ]
+  ```
+
+  Requiring an entiry directory is useful when we working with packeges.
+  
+  
+  ---
+
+[👈 go back](https://github.com/Klosmi/html-basics#node-js--basics)
+
+<br>  
