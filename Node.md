@@ -683,3 +683,36 @@ By __default, it is the `module.exports`__, an empty object.
 [👈 go back](https://github.com/Klosmi/html-basics#node-js--basics)
 
 <br>  
+
+# [NPM](https://docs.npmjs.com/about-npm)    
+**N**ode **P**ackage **M**anager   
+__npm__ is the world's largest software registry.   
+npm is 2 things:  
+__npm is an open source library__ of thousands of packeges published by other developers that we can use.   
+__npm is a command line tool__, to easily install and manage those packages in our Node projects.    
+
+Eg. React and Express have npm packages.
+
+When we installed `node` we automatically have `npm`.
+- eg.:   
+  *In the Terminal we type `npm`*   
+
+  Terminal
+  ```
+  > npm
+
+  npm <command>
+  Usage:
+
+  npm install        install all the dependencies in your project
+  npm install <foo>  add the <foo> dependency to your project
+  npm test           run this project's tests
+  etc...
+
+  All commands:
+  access, adduser, audit, bin, bugs, cache, ci, completion, etc...
+  ```
+  
+---
+
+[👈 go back](https://github.com/Klosmi/html-basics#node-js--basics)
