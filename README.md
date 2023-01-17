@@ -65,7 +65,8 @@
 4. [`process` . `argv`](https://github.com/Klosmi/html-basics/blob/master/Node.md#process--argv)     
 5. [`node:fs` - File System Module](https://github.com/Klosmi/html-basics/blob/master/Node.md#nodefs---file-system-module)
 6. [`module.exports`](https://github.com/Klosmi/html-basics/blob/master/Node.md#moduleexports)    
-7. [Require Directory](https://github.com/Klosmi/html-basics/blob/master/Node.md#require-an-entire-directory)
+7. [Require Directory](https://github.com/Klosmi/html-basics/blob/master/Node.md#require-an-entire-directory)   
+8. [NPM](https://github.com/Klosmi/html-basics/blob/master/Node.md#npm)    
 
 <br>
 
@@ -77,7 +78,6 @@
 5. [man command - manual](https://github.com/Klosmi/html-basics/blob/master/terminal.md#man-command--manual-command) 
 6. [touch command - create/update file(s)](https://github.com/Klosmi/html-basics/blob/master/terminal.md#touch-command---create-files)   
 7. [rm & rmdir - delete file(s) and directories](https://github.com/Klosmi/html-basics/blob/master/terminal.md#rm--rmdir-command---delete-files--folders)     
-8. [NPM](https://github.com/Klosmi/html-basics/blob/master/Node.md#npm).   
 
 
 <br>
