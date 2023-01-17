@@ -64,7 +64,8 @@
 3. [How to run files in Node?](https://github.com/Klosmi/html-basics/blob/master/Node.md#running-node-files)    
 4. [`process` . `argv`](https://github.com/Klosmi/html-basics/blob/master/Node.md#process--argv)     
 5. [`node:fs` - File System Module](https://github.com/Klosmi/html-basics/blob/master/Node.md#nodefs---file-system-module)
-6. [`module.exports`](https://github.com/Klosmi/html-basics/blob/master/Node.md#moduleexports)
+6. [`module.exports`](https://github.com/Klosmi/html-basics/blob/master/Node.md#moduleexports)    
+7. [Require Directory](https://github.com/Klosmi/html-basics/blob/master/Node.md#require-an-entire-directory)
 
 <br>
 
