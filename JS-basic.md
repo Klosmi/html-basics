@@ -982,7 +982,7 @@ So the way it works: we write __`x ? y : z`__, where __x__, __y__, and __z__ are
 When our code is executed, __x__ is evaluated as either “truthy” or “falsy.” If __x__ is truthy, then the entire ternary operator returns __y__. If __x__ is falsy, then the entire ternary operator returns __z__.   
 
 - eg.:    
-  *If `age` is >= to `drinkingAge`, then we get the `Buy Drink` message, otherwise we get `'Do Teen Stuff` message.*
+  *If `age` is >= to `drinkingAge`, then we get the `Buy Drink` message, otherwise we get `Do Teen Stuff` message.*
   
   ```
   let drinkingAge = 18;
