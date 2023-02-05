@@ -978,22 +978,24 @@ __The order:__
 # [Conditional (ternary) operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) 
 The conditional (ternary) operator is the only JS operator that takes three operands: a condition followed by a question mark (?), then an expression to execute if the condition is truthy followed by a colon (:), and finally the expression to execute if the condition is falsy. This operator is frequently used as an alternative to an if...else statement.   
 
-So the way it works: we write __`x ? y : z`__, where __x__, __y__, and __z__ are all JS expressions. When our code is executed, __x__ is evaluated as either “truthy” or “falsy.” If __x__ is truthy, then the entire ternary operator returns __y__. If __x__ is falsy, then the entire ternary operator returns __z__. 
+So the way it works: we write __`x ? y : z`__, where __x__, __y__, and __z__ are all JS expressions.    
+When our code is executed, __x__ is evaluated as either “truthy” or “falsy.” If __x__ is truthy, then the entire ternary operator returns __y__. If __x__ is falsy, then the entire ternary operator returns __z__.   
 
-- eg.:   
+- eg.:
+  *If `age` is >= to `drinkingAge`, then we get the `Buy Drink` message, otherwise we get `'Do Teen Stuff` message.*
+  
   ```
-  function getFee(isMember) {
-    return (isMember ? '$2.00' : '$10.00');
-  }
+  let drinkingAge = 18;
 
-  console.log(getFee(true));
-  // Expected output: "$2.00"
+  function canYouDrink(age) {
+      return age >= drinkingAge ? 'Buy Drink' : 'Do Teen Stuff'
+    }
 
-  console.log(getFee(false));
-  // Expected output: "$10.00"
+  console.log(canYouDrink(21));  // age >= drinkingAg expression is true
+  // Buy Drink
 
-  console.log(getFee(null));
-  // Expected output: "$10.00"
+  console.log(canYouDrink(16));  // age >= drinkingAg expression is false
+  // Do Teen Stuff
   ```
 
 <br>
