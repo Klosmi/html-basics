@@ -3018,8 +3018,8 @@ But `Map` is __then generates a new array using__ the result, using __the return
 *(to map an array from one state to another)*
 
 - eg.:   
-  *The return value, which is coming back from callback function `Map`, is taking and adding into a new array. The new array returns and then I can save it under a new variable (const doubles).*
-  *Here, I double every intiger*
+  *The return value, which is coming back from callback function `Map`, is taking and adding into a new array. The new array returns and then we can save it under a new variable (const doubles).*
+  *Here, we double every intiger*
   ```
   const numbers = [1, 2, 3, 4,];
 
