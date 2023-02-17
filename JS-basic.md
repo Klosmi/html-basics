@@ -9211,10 +9211,10 @@ The [__`new`__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Referenc
     
     The `new` do the following things:
 
-step 1. Creates a blank, plain JavaScript object.;    
-step 2. Links (sets the constructor of) this object to another object → this allows us to add methods no to the individual objects, instances, but to the __[prototype](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#object-prototype---introduction-to-oop)__;     
-step 3. Passes the newly created object from *Step 1* as the `this` context;    
-step. 4. Returns `this` if the function doesn't return its own object.;
+ - step 1. Creates a blank, plain JavaScript object.;    
+ - step 2. Links (sets the constructor of) this object to another object → this allows us to add methods no to the individual objects, instances, but to the __[prototype](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#object-prototype---introduction-to-oop)__;     
+ - step 3. Passes the newly created object from *Step 1* as the `this` context;    
+ - step. 4. Returns `this` if the function doesn't return its own object.;
 
 
 
