@@ -9154,7 +9154,7 @@ eg.:
 
 So the __factory function__ is a way of making objects based on a pattern or a recipe.   
  
-So the fatory function makes us __an object__ `const color = {}`.     
+The factory function makes us __an object__ `const color = {}`.     
 `const color = {}` object starts empty, but the we add some __properties__ `color.r = r; color.g = g; color.b = b;`.    
 Then we add some __methods__ `color.rgb = function() { ... }` and `color.hex = function() { ... }`.     
 Then we __return__ the `color` object.
@@ -9169,7 +9169,7 @@ Then we __return__ the `color` object.
 
 The [__`new`__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new) operator❗️:       
   to create an instance of a user-defined object type or of one of the built-in object types that has a constructor function.     
-  So Constructor functions are used to define a blueprint or template for creating multiple objects with the same properties and methods.  
+  So Constructor functions are used to define a blueprint or a template for creating multiple objects with the same properties and methods.  
   
   - function name starts with capital letter `function Color()` → just indicating that it is a constructor function (function to create objects)
   - inside the function no return value
@@ -9213,7 +9213,7 @@ The [__`new`__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Referenc
     The `new` do the following things:
 
  - step __1__. Creates a blank, plain JavaScript object.;    
- - step __2__. Links (sets the constructor of) this object to another object → this allows us to add methods no to the individual objects, instances, but to the __[prototype](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#object-prototype---introduction-to-oop)__;     
+ - step __2__. Links (sets the constructor of) this object to another object → this allows us to add methods not to the individual objects, instances, but to the __[prototype](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#object-prototype---introduction-to-oop)__;     
  - step __3__. Passes the newly created object from *Step 1* as the `this` context;    
  - step __4__. Returns `this` if the function doesn't return its own object.;
 
@@ -9238,7 +9238,7 @@ color1
 ​​//      constructor: function Color(r, g, b)   //← the RGB method is defined on the prototype
 ```
 *We can __add different methods to the__ `Color` __[prototype](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#object-prototype---introduction-to-oop)__: we define that method __outside of the constructor function__ (outside of the `function Color(r,g,b){...}`).*      
-*So so that the methods are only defined once (rather than on each individial color as in the factory function ).*
+*So that the methods are only defined once (rather than on each individial color as in the factory function ).*
 
 *Also, we can have several color obejcts*
 ```
@@ -9258,7 +9258,7 @@ const color1 = new Color(255, 0, 0);
 const color2 = new Color(10, 10, 10);
 const color3 = new Color(0, 0, 0);
 ```
-*So, we define the __method__ outside of the constructor function, so the method will be defined on the __[protoype](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#object-prototype---introduction-to-oop)__.*.     
+*We define the __method__ outside of the constructor function, so the method will be defined on the __[protoype](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#object-prototype---introduction-to-oop)__.*.     
 
 *Lets define another method, an `rgba`, where `a` is the opacity.*    
 *We set `a` as a default of 1.0 in the function parameter.*    
@@ -9289,7 +9289,7 @@ color1.rgba();
 // rgba(255, 0, 0, 1)
 ```
 
-In short, __constructor__ method is more efficient than the __factory__ approach where we return a new object every time it is called.
+In short, __constructor__ method is more efficient than the __[factory](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#factory-functions)__ approach where we return a new object every time it is called.
 
 
 ---
@@ -9310,17 +9310,17 @@ An object may be different in several ways, and __each realized variation of tha
 - *Defining a Class, using the __[`class`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#class_declarations)__ keyword*.    
   - *Using uppercase letter for the name*
   - *__Always__ add in a __[`constructor`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#constructor-function)__. It is like a `constructor` function (we can add arguments to it).*    
-    *In this example, the `contructor` is a function which executes immediately when a new color is created (instantiate a new instance). Arguments here are the constructor's `(r, g, b)`*
+    *In this example, the `constructor` is a function which executes immediately when a new color is created (instantiate a new instance). Arguments here are the constructor's `(r, g, b)`*
   - *Usualy in the `constructor` we use the `.this`. So `this` refers to a `new Object` (that we instantiate, like the `color1`).*           
   -  *We can also add methods to the constructor, like `this.someKindOfMethod();`, so not only values like `this.value = value`.*
   ```
   class Color {
     constructor(r, g, b, name){
       console.log("Constructor runs first")
-      this.r = r;               // these are properties on
-      this.g = g;               // on the `new Color()` object
+      this.r = r;               //* these are properties 
+      this.g = g;               //* on the `new Color()` object
       this.b = b;
-      this.name = name;         // this.r, this.name can be called anything else. Usually we give the same name.
+      this.name = name;         //* this.r, this.name can be called anything else. Usually we give the same name.
     }
   }
   
@@ -9486,7 +9486,7 @@ __`extends`__ keyword is used in class declarations or class expressions to crea
 
 __`super`__ keyword is used to access properties on an object literal or class's [`[Prototype]`], or invoke a superclass's constructor.
 
-- This 2 keyewords are bothe dealing with __subclasses__.
+- This 2 keyewords are both dealing with __subclasses__.
 
 - To understand this 2 keywords, let's go back to the basics.  
 
@@ -9532,7 +9532,7 @@ bingo;
 bingo.eat()
 //"Bingo is eating"
 ```
-*Lets add osme more methods `meow` and `bark`*
+*Lets add some more methods `meow` and `bark`*
 ```
 class Cat {
   constructor(name, age) {
@@ -9561,9 +9561,9 @@ class Dog {
   }
 }
 ```
-*There is a lot of duplicated code looking the 2 classes.*   
-*One option is to create a __parent__ class (lets name it `Pets`), which holds the functionalaites of the `Cat` and `Dog` classes.*  
-*But: we have to __extend__ the functionality of `Pets`, we have to __include__ it tothe `Cat` and `Dog` class, otherwise the instances of `Cat` and `Dog` are empty.*
+*There is a lot of duplicated code in the 2 classes.*   
+*One option is to create a __parent__ class (lets name it `Pets`), which holds the functionalaties of the `Cat` and `Dog` classes.*  
+*But: we have to __extend__ the functionality of `Pets`, we have to __include__ it to the `Cat` and `Dog` class, otherwise the instances of `Cat` and `Dog` are empty.*
 ```
 class Pets {
     constructor(name, age) {
@@ -9595,7 +9595,7 @@ bingo.eat();
 ```
 So `extends` use the constructor of the "parent" class __if it doesn't find a constructor on the "child" class__.   
 
-*If `extends` find a method on the "child" class with the same name as in the "pparent" class, the "child" class's methods will run.*
+*If `extends` find a method on the "child" class with the same name as in the "parent" class, the "child" class's methods will run.*
 eg.:
 ```
 class Pets {
@@ -9613,20 +9613,20 @@ class Cat extends Pets{
     return 'Meow meow!'
   }
   eat() {
-    return `${this.name} wnats some cat food.`;
+    return `${this.name} wants some cat food.`;
   }
 }
 
 lucy.eat();
-// "Lucy wnats some cat food." 
+// "Lucy wants some cat food." 
 ```
 
-__`super` to references the class that we are extending from.
-So, when we wnat to add some additional proeprty to the constructor for the "child" class, which the "parent" calss doesn't have. 
+__`super`__ to references the class that we are extending from.     
+When we want to add some additional property to the constructor for the "child" class, which the "parent" calss doesn't have. 
 
 eg.:   
-*We add a `color` proerty to the `Car` class's constructor.* 
-*But we don't want to repeat the `this.name`, and `.this.age`. We just need the `this.color`. This is when we can use `super`.*      
+*We add a `color` property to the `Car` class's constructor.* 
+*But we don't want to repeat the `this.name`, and `this.age`. We just need the `this.color`. This is when we can use `super`.*      
 ```
 class Pets {
     constructor(name, age) {
@@ -9647,7 +9647,7 @@ class Cat extends Pets{
     return 'Meow meow!'
   }
   eat() {
-    return `${this.name} wnats some cat food.`;
+    return `${this.name} wants some cat food.`;
   }
 }
 
