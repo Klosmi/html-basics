@@ -1158,7 +1158,7 @@ __The order:__
 <br>
 
 - __[`includes()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)__ 
-  returns **true or false**. It tel us if an array includes a certain value.
+  returns **true or false**. It tels us if an array includes a certain value.
 
   - eg.:   
     *does `arrayA` includes `'b'` ?*
