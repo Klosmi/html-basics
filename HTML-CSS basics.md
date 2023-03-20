@@ -4618,7 +4618,7 @@ It's a way to modularize your CSS and help keep things easier to maintain.
 
 - to include it into our main SCSS, we use   
        **`@use './reset' as *;`**    
-       💡 note that the no need to include now the `.scss` part
+       💡 note that no need to include now the `.scss` part at the end
  - eg.:
       ```
         @use './reset' as *;
