@@ -4357,7 +4357,7 @@ is an extension language for CSS.
 Sass lets you write clean, sustainable CSS code and solve the repetition and maintenance problems which are in traditional CSS.
 
 - Sass must first be converted, or __compiled__, to CSS before the browser can directly understand it
-- compiling means: to converting code to lower level code so that it can be executed. 
+- compiling means: converting code to lower level code so that it can be executed. 
 
 - by __compiling SCSS to CSS__, it can be __interpreted by your browser__ and the results will appear on a webpage.
 
