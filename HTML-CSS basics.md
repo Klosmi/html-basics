@@ -4821,7 +4821,7 @@ The operation has to be the same type❗️
 
 - plain css it is the **[`calc()`](https://developer.mozilla.org/en-US/docs/Web/CSS/calc())**
 - eg.:   
-  in SASS no need touse the  CSS `calc(80% - 20%)`, it just simple:
+  in SASS no need to use the  CSS `calc(80% - 20%)`:
     ```
     .container {
       width: 100% - 20%;
