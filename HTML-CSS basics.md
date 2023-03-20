@@ -4671,7 +4671,7 @@ It's a way to modularize your CSS and help keep things easier to maintain.
 <br>
 
 #### __[mixins: $arguments + @include:](https://sass-lang.com/documentation/at-rules/mixin#arguments)__
-- like function mixins can also have arguemnts
+- like function mixins can also have arguments
 - arguments allows their behavior to be customized each time they’re called.
 
 - list of **`($variable)`** names surrounded by parentheses
@@ -4993,7 +4993,7 @@ for better compatibility reasons to get access to map.get you must explicitly im
         ```    
 -  __map-remove()__ :  
   - this function removes a single or multiple keys from the map, then output the map itself.
-  - it requires several arguemnts:
+  - it requires several arguments:
     first: the map (variable eg: `map1`), second: key we want to remove (eg: `value`).
       - eg.:
         ```
