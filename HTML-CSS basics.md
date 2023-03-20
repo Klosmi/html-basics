@@ -4724,7 +4724,7 @@ It's a way to modularize your CSS and help keep things easier to maintain.
   - so, __whatever style we put after the `@include`, that goes to the `@content` section__.
 
   - eg.:   
-     - the `maxi-width: $mobile`, we can give a size to the `$mobile` later or define it before.
+     - the `max-width: $mobile`, we can give a size to the `$mobile` later or define it before.
      - see the __`@content`__: we can define it when we `@include` it.
     ```
      $mobile: 800px;
