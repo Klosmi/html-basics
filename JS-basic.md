@@ -4863,6 +4863,7 @@ We use DOM manipulation when we want to modify parts of the page when the user i
   - __[`getAttribute` & `setAttribute`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#accessing-attributes)__   
   - __[`style`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#style)__   
   - __[`classList`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#classlist)__  
+  - __[`setPoperty`]()__
   - __[`.parentElement`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#parentelemment-access-a-parent-element)__   
   - __[`.children`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#children-it-gives-the-parent-elements-children)__   
   - __[`next/previousSibling`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#nextsibling-and-previoussibling)__
@@ -5534,6 +5535,33 @@ it is an easy way to get the current classes on an element, but also to manipula
   ```
 
   ---
+
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `Attributes & properties`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties) OR [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
+
+<br>
+
+## __[`.setProperty`](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/setProperty)__    
+It is a JavaScript method that allows us to __set or update the value__ of a CSS property for a given element.     
+The method takes __2 arguments__:    
+1. the name of the CSS property we want to set or update   
+2. the new value we want to assign to that property. 
+
+- eg.:    
+  *We can use `setProperty` to set the background color of a div element*   
+  *So we're selecting the `<div>` element with a class of `my-div` using `document.querySelector`, and then using `setProperty` to set the `background-color` property of the div to red.  
+  HTML  
+  ```
+  <div class="my-div">
+    <p> Hello! </p>
+  </div>
+  ```
+  JS
+  ```
+  const myDiv = document.querySelector('.my-div');
+  myDiv.style.setProperty('background-color', 'red');
+  ```
+  
+---
 
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics) or [👆 go to top to `Attributes & properties`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#attributes--properties) OR [👆go up to JS DOM manipulation](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#dom-manipulation)
 
