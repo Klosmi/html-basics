@@ -4863,7 +4863,7 @@ We use DOM manipulation when we want to modify parts of the page when the user i
   - __[`getAttribute` & `setAttribute`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#accessing-attributes)__   
   - __[`style`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#style)__   
   - __[`classList`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#classlist)__  
-  - __[`setPoperty`]()__
+  - __[`setPoperty`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#setproperty)__
   - __[`.parentElement`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#parentelemment-access-a-parent-element)__   
   - __[`.children`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#children-it-gives-the-parent-elements-children)__   
   - __[`next/previousSibling`](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#nextsibling-and-previoussibling)__
