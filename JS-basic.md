@@ -1927,7 +1927,7 @@ iterates over arrays and other iterable objects.
 
 - when you do need an __index__ it is better to use a for loop❗️ O
 
-- with `for...of`__you __can't__ iterate over a __{ key-value } pair__, it gives an error.
+- with `for...of` __you __can't__ iterate over a __{ key-value } pair__, it gives an error.
 
 <br>
 
