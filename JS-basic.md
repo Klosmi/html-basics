@@ -1559,6 +1559,99 @@ __The order:__
 
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
+
+# [JS: Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration) :
+
+
+*Destructuring* is a feature in JavaScript that helps make our code cleaner and easier to read by allowing us to extract properties from objects or items from arrays more efficiently.   
+
+Normally, we access properties by typing out the full path, like `object.property`, which can become repetitive and make our code harder to read. *Destructuring* solves this problem by letting us pull out specific properties from an object or elements from an array and assign them to variables in just one line.   
+This makes our code shorter, more readable, and more efficient.   
+
+**Example 1: Accessing Properties Without Destructuring** 
+
+```
+  const car = {
+    brand: 'Toyota', // "brand" is the property name, 'Toyota' is the value
+    year: 2020,   // "year" is the property name, 2020 is the value
+  };
+  
+  console.log(car.brand);  // Outputs: Toyota
+  console.log(car.year); // Outputs: 2020
+```
+**Example 2: Using Destructuring to Simplify Code**   
+To shorten our codee, we can use destructuring to extract properties directly from an object:
+
+```
+  const car = {
+    brand: 'Toyota',
+    year: 2020,
+  };
+  
+  // Destructuring to extract properties
+  const { brand, year } = auto;   
+  
+  console.log(brand);  // Outputs: Toyota
+  console.log(year); // Outputs: 2020
+```
+Inside these brackets we must specify the name of the properties that should be extracted from the object.      
+This solution will allow us to use the value without referencing the entire chain of objects. But what if we want to grab multiple properties from an object?   
+
+**Example 3: Extracting Multiple Properties**    
+Destructuring allows us to extract multiple properties in 1 statement, making it easy to access only the data you need:  
+*these structurings can be applied to any of the variable keywords.*
+
+```
+  const car = {
+    brand: 'Toyota',
+    year: 2020,
+    color: 'blue',
+  };
+  
+  // Extracting the 'brand' and 'color' properties
+  const { brand, color } = auto;
+  
+  console.log(brand); // Outputs: Toyota
+  console.log(color);  // Outputs: blue
+```
+
+**Example 4: Renaming Variables with Destructuring**   
+If we want to assign the extracted properties to variables with different names, we can do this as well because JavaScript will extract properties from a given object. We can extract multiple properties by separating each property with a comma.
+
+```
+  const car = {
+    brand: 'Toyota',
+    year: 2020,
+    color: 'blue',
+  };
+  
+  // Renaming 'brand' to 'carBrand' and 'year' to 'modelYear'
+  const { brand: carBrand, year: modelYear } = car;
+  
+  console.log(carBrand);     // Outputs: Toyota
+  console.log(modelYear);    // Outputs: 2020
+
+```
+
+**Example 5: Using Destructuring with Default Values**   
+We can provide default values when destructuring in case a property does not exist.
+
+```
+  const car = {
+    brand: 'Toyota',
+    year: 2020,
+  };
+  
+  // 'color' property does not exist, so 'color' will take the default value 'black'
+  const { brand, year, color = 'black' } = car;
+  
+  console.log(brand); // Outputs: Toyota
+  console.log(year); // Outputs: 2020
+  console.log(color); // Outputs: black
+```
+
+---
+   [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
    
 # [JS: Loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration) :
 the aim of looping is to repeat some functionality.
