@@ -1589,7 +1589,7 @@ To shorten our code, we can use destructuring to extract properties directly fro
   };
   
   // Destructuring to extract properties
-  const { brand, year } = auto;   
+  const { brand, year } = car;   
   
   console.log(brand);  // Outputs: Toyota
   console.log(year); // Outputs: 2020
@@ -1609,7 +1609,7 @@ Destructuring allows us to extract multiple properties in 1 statement, making it
   };
   
   // Extracting the 'brand' and 'color' properties
-  const { brand, color } = auto;
+  const { brand, color } = car;
   
   console.log(brand); // Outputs: Toyota
   console.log(color);  // Outputs: blue
