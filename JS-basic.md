@@ -4135,7 +4135,7 @@ __bonus: about the `arguments` object__
 The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.   
 
 So, it's a way of unpacking, singling out values from arrays.  
-Unpacking mean put values into ditinct variables.
+Unpacking means put values into distinct variables.
 
 A short syntax to unpack:    
 __values from arrays__ and __properties from objects__ into distinct variables.
