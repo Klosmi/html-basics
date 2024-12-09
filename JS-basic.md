@@ -1580,7 +1580,7 @@ This makes our code shorter, more readable, and more efficient.
   console.log(car.year); // Outputs: 2020
 ```
 **Example 2: Using Destructuring to Simplify Code**   
-To shorten our codee, we can use destructuring to extract properties directly from an object:
+To shorten our code, we can use destructuring to extract properties directly from an object:
 
 ```
   const car = {
