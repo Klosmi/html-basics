@@ -1616,7 +1616,7 @@ Destructuring allows us to extract multiple properties in 1 statement, making it
 ```
 
 **Example 4: Renaming Variables with Destructuring**   
-If we want to assign the extracted properties to variables with different names, we can do this as well because JavaScript will extract properties from a given object. We can extract multiple properties by separating each property with a comma.
+If we want to assign the extracted properties to variables with different names, we can rename them during destructuring. Multiple properties can be extracted by separating them with commas.
 
 ```
   const car = {
