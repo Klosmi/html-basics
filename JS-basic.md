@@ -1579,6 +1579,9 @@ This makes our code shorter, more readable, and more efficient.
   console.log(car.brand);  // Outputs: Toyota
   console.log(car.year);   // Outputs: 2020
 ```
+
+<br>
+
 **Example 2: Using Destructuring to Simplify Code**   
 To shorten our code, we can use destructuring to extract properties directly from an object:
 
@@ -1597,6 +1600,8 @@ To shorten our code, we can use destructuring to extract properties directly fro
 Inside these brackets we must specify the name of the properties that should be extracted from the object.      
 This solution will allow us to use the value without referencing the entire chain of objects. But what if we want to grab multiple properties from an object?   
 
+<br>
+
 **Example 3: Extracting Multiple Properties**    
 Destructuring allows us to extract multiple properties in 1 statement, making it easy to access only the data we need:  
 *these structurings can be applied to any of the variable keywords.*
@@ -1614,6 +1619,8 @@ Destructuring allows us to extract multiple properties in 1 statement, making it
   console.log(brand);  // Outputs: Toyota
   console.log(color);  // Outputs: blue
 ```
+
+<br>
 
 **Example 4: Renaming Variables with Destructuring**     
 Renaming variables during destructuring can be useful to avoid naming conflicts, especially when extracting properties that share the same name as other variables in our code. This helps maintain clarity and prevents errors caused by unintentionally overwriting existing variables.   
@@ -1634,6 +1641,7 @@ If we want to assign the extracted properties to variables with different names,
   console.log(modelYear);    // Outputs: 2020
 
 ```
+<br>
 
 **Example 5: Using Destructuring with Default Values**   
 We can provide default values when destructuring in case a property does not exist. This ensures that the variable receives a fallback value if the property is missing, which can help avoid unexpected undefined errors in your code.
@@ -1652,6 +1660,8 @@ We can provide default values when destructuring in case a property does not exi
   console.log(color);   // Outputs: black
 ```
 
+<br>
+
 **Example 6: Handling Undefined Values**    
 When destructuring an object that might not have a specific property, providing a default value ensures the variable doesn't end up as undefined.
 
@@ -1668,6 +1678,7 @@ When destructuring an object that might not have a specific property, providing 
 ```
 This way, even if the `year` property is missing from the car object, the variable year will still have a defined value.   
 
+<br>
 
 **Example 7: Destructuring Arrays**   
 Arrays can have their values extracted using destructuring.
@@ -1686,6 +1697,8 @@ If we want to extract the second car in the array, we can do it like this:
 const [, secondCar] = cars;    // secondCar is 'Honda'
 ```
 This destructuring assigns values from the `cars` array to variables based on their position in the array.
+
+<br>
 
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
