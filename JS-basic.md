@@ -1598,7 +1598,7 @@ Inside these brackets we must specify the name of the properties that should be 
 This solution will allow us to use the value without referencing the entire chain of objects. But what if we want to grab multiple properties from an object?   
 
 **Example 3: Extracting Multiple Properties**    
-Destructuring allows us to extract multiple properties in 1 statement, making it easy to access only the data you need:  
+Destructuring allows us to extract multiple properties in 1 statement, making it easy to access only the data we need:  
 *these structurings can be applied to any of the variable keywords.*
 
 ```
