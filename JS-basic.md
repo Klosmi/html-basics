@@ -1573,11 +1573,11 @@ This makes our code shorter, more readable, and more efficient.
 ```
   const car = {
     brand: 'Toyota', // "brand" is the property name, 'Toyota' is the value
-    year: 2020,   // "year" is the property name, 2020 is the value
+    year: 2020,      // "year" is the property name, 2020 is the value
   };
   
   console.log(car.brand);  // Outputs: Toyota
-  console.log(car.year); // Outputs: 2020
+  console.log(car.year);   // Outputs: 2020
 ```
 **Example 2: Using Destructuring to Simplify Code**   
 To shorten our code, we can use destructuring to extract properties directly from an object:
@@ -1592,7 +1592,7 @@ To shorten our code, we can use destructuring to extract properties directly fro
   const { brand, year } = car;   
   
   console.log(brand);  // Outputs: Toyota
-  console.log(year); // Outputs: 2020
+  console.log(year);   // Outputs: 2020
 ```
 Inside these brackets we must specify the name of the properties that should be extracted from the object.      
 This solution will allow us to use the value without referencing the entire chain of objects. But what if we want to grab multiple properties from an object?   
@@ -1611,11 +1611,13 @@ Destructuring allows us to extract multiple properties in 1 statement, making it
   // Extracting the 'brand' and 'color' properties
   const { brand, color } = car;
   
-  console.log(brand); // Outputs: Toyota
+  console.log(brand);  // Outputs: Toyota
   console.log(color);  // Outputs: blue
 ```
 
-**Example 4: Renaming Variables with Destructuring**   
+**Example 4: Renaming Variables with Destructuring**     
+Renaming variables during destructuring can be useful to avoid naming conflicts, especially when extracting properties that share the same name as other variables in our code. This helps maintain clarity and prevents errors caused by unintentionally overwriting existing variables.   
+
 If we want to assign the extracted properties to variables with different names, we can rename them during destructuring. Multiple properties can be extracted by separating them with commas.
 
 ```
@@ -1634,10 +1636,10 @@ If we want to assign the extracted properties to variables with different names,
 ```
 
 **Example 5: Using Destructuring with Default Values**   
-We can provide default values when destructuring in case a property does not exist.
+We can provide default values when destructuring in case a property does not exist. This ensures that the variable receives a fallback value if the property is missing, which can help avoid unexpected undefined errors in your code.
 
 ```
-  const car = {
+ const car = {
     brand: 'Toyota',
     year: 2020,
   };
@@ -1645,10 +1647,45 @@ We can provide default values when destructuring in case a property does not exi
   // 'color' property does not exist, so 'color' will take the default value 'black'
   const { brand, year, color = 'black' } = car;
   
-  console.log(brand); // Outputs: Toyota
-  console.log(year); // Outputs: 2020
-  console.log(color); // Outputs: black
+  console.log(brand);   // Outputs: Toyota
+  console.log(year);    // Outputs: 2020
+  console.log(color);   // Outputs: black
 ```
+
+**Example 6: Handling Undefined Values**    
+When destructuring an object that might not have a specific property, providing a default value ensures the variable doesn't end up as undefined.
+
+```
+ const car = {
+    brand: 'Toyota',
+  };
+  
+  // 'year' property is missing, so 'year' will take the default value 2021
+  const { brand, year = 2021 } = car;
+  
+  console.log(brand);   // Outputs: Toyota
+  console.log(year);    // Outputs: 2021
+```
+This way, even if the `year` property is missing from the car object, the variable year will still have a defined value.   
+
+
+**Example 7: Destructuring Arrays**   
+Arrays can have their values extracted using destructuring.
+For example, let's create an array called `cars` with a list of car brands.   
+Unlike objects, arrays use numbered indexes. To extract a value, create a variable (e.g., firstCar) and use square brackets to reference the array.   
+Destructuring arrays extracts values in the order they are defined:   
+
+```
+  const cars = ['Toyota', 'Honda', 'BMW'];
+  const [firstCar] = cars;            // firstCar is 'Toyota'
+  const [firstCar, secondCar] = cars; // firstCar is 'Toyota', secondCar is 'Honda'
+```
+If we want to extract the second car in the array, we can do it like this:
+
+```
+const [, secondCar] = cars;    // secondCar is 'Honda'
+```
+This destructuring assigns values from the `cars` array to variables based on their position in the array.
 
 ---
    [👈 go back](https://github.com/Klosmi/html-basics#javascript--basics)
